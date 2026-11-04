@@ -1,0 +1,35 @@
+UTC: 2026-11-04T12:21:29.914423+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1.gpu_probe']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "python": "3.11.11",
+  "platform": "Linux",
+  "seed": 3407,
+  "scope": "CUDA/import smoke only, not model evaluation",
+  "torch": "2.2.2+cu121",
+  "torchvision": "0.17.2+cu121",
+  "numpy": "1.26.4",
+  "timm": "0.4.12",
+  "einops": "0.8.1",
+  "cv2": "4.9.0",
+  "selective_scan_cuda_core": "import OK",
+  "selective_scan": "import OK",
+  "torch_cuda_build": "12.1",
+  "cuda_available": true,
+  "device": "NVIDIA GeForce RTX 3090",
+  "compute_capability": [
+    8,
+    6
+  ],
+  "total_memory_bytes": 25769279488,
+  "smoke_elapsed_seconds": 0.4195874319999575,
+  "smoke_peak_allocated_bytes": 8521728,
+  "cuda_matmul": "PASS",
+  "failures": []
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 11.568
+Exit code: 0
