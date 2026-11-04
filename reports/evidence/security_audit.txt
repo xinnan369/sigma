@@ -11,3 +11,5 @@ weights/example.pth
 datasets/example.png
 Exit code: 0
 External upstream clone, .venv, datasets and weight payloads are not tracked.
+
+Publication follow-up audit: 32 tracked/staged files excluding this audit record inspected; no findings. Report/task/publication updates contain no payloads or credentials.

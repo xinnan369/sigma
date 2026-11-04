@@ -1,0 +1,66 @@
+Date: 2026-11-04 Asia/Shanghai
+Publication account: xinnan369; gh repository permissions push=true.
+Remote recheck before publication: no refs; repository still empty.
+git push -u origin main: exit 0; README-only af463ab892c6350192877f699e48b64f393ae3a2.
+git push -u origin codex/R0-bootstrap: exit 0.
+gh pr create --repo xinnan369/sigma --base main --head codex/R0-bootstrap --title "[R0] Bootstrap research bridge and Experiment 0 protocol" --body-file ../R0_PR_BODY.md
+Exit: 0. URL: https://github.com/xinnan369/sigma/pull/1
+Local repeat: PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q tests
+28 passed in 3.16s; exit 0.
+
+Initial CI failure at setup-python: no requirements.txt/pyproject.toml matched default pip-cache glob.
+Failure run: https://github.com/xinnan369/sigma/actions/runs/41824850455
+Fixed workflow cache-dependency-path: requirements-r0.txt.
+Verified PR CI run: https://github.com/xinnan369/sigma/actions/runs/41824939418
+Tested head: 6e159e8b79ba671158ed774b86dca1d080d30dfa
+Job conclusion: success; dependency install, pytest and environment check all succeeded.
+The following are actual selected pytest/environment step logs (other steps omitted):
+﻿2026-11-04T11:56:27.4541004Z ##[group]Run python -m pytest -q tests
+2026-11-04T11:56:27.4541416Z ^[[36;1mpython -m pytest -q tests^[[0m
+2026-11-04T11:56:27.4559720Z shell: /usr/bin/bash -e {0}
+2026-11-04T11:56:27.4560024Z env:
+2026-11-04T11:56:27.4560329Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-04T11:56:27.4560696Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-11-04T11:56:27.4561095Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-11-04T11:56:27.4561530Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-11-04T11:56:27.4561908Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-11-04T11:56:27.4562331Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-11-04T11:56:27.4562723Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-11-04T11:56:27.4563042Z ##[endgroup]
+2026-11-04T11:56:29.4694953Z ............................                                             [100%]
+2026-11-04T11:56:29.4695432Z 28 passed in 1.56s
+﻿2026-11-04T11:56:29.6698409Z ##[group]Run python experiments/exp0/env_check.py
+2026-11-04T11:56:29.6699065Z ^[[36;1mpython experiments/exp0/env_check.py^[[0m
+2026-11-04T11:56:29.6717215Z shell: /usr/bin/bash -e {0}
+2026-11-04T11:56:29.6717572Z env:
+2026-11-04T11:56:29.6717841Z   PYTEST_DISABLE_PLUGIN_AUTOLOAD: 1
+2026-11-04T11:56:29.6718229Z   pythonLocation: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-11-04T11:56:29.6718665Z   PKG_CONFIG_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib/pkgconfig
+2026-11-04T11:56:29.6719209Z   Python_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-11-04T11:56:29.6719617Z   Python2_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-11-04T11:56:29.6720051Z   Python3_ROOT_DIR: /opt/hostedtoolcache/Python/3.13.17/x64
+2026-11-04T11:56:29.6720448Z   LD_LIBRARY_PATH: /opt/hostedtoolcache/Python/3.13.17/x64/lib
+2026-11-04T11:56:29.6720797Z ##[endgroup]
+2026-11-04T11:56:30.5043426Z python: 3.13.17
+2026-11-04T11:56:30.5043983Z system: Linux-7.0.0-1017-azure-x86_64-with-glibc2.43
+2026-11-04T11:56:30.5044693Z numpy: installed
+2026-11-04T11:56:30.5044996Z pytest: installed
+2026-11-04T11:56:30.5045269Z torch: installed
+2026-11-04T11:56:30.5045545Z cv2: missing
+2026-11-04T11:56:30.5045790Z timm: missing
+2026-11-04T11:56:30.5046034Z einops: missing
+2026-11-04T11:56:30.5046315Z selective_scan_cuda_core: missing
+2026-11-04T11:56:30.5046636Z numpy_distribution_version: 2.3.5
+2026-11-04T11:56:30.5046946Z pytest_distribution_version: 9.2.0
+2026-11-04T11:56:30.5047252Z torch_distribution_version: 2.11.0+cpu
+2026-11-04T11:56:30.5047632Z opencv-python_distribution_version: missing
+2026-11-04T11:56:30.5047965Z timm_distribution_version: missing
+2026-11-04T11:56:30.5048284Z einops_distribution_version: missing
+2026-11-04T11:56:30.5048596Z torch_version: 2.11.0+cpu
+2026-11-04T11:56:30.5049117Z torch_cuda_build: None
+2026-11-04T11:56:30.5049377Z cudnn_version: None
+2026-11-04T11:56:30.5049668Z cuda_available: False
+2026-11-04T11:56:30.5049958Z git: git version 2.56.0 exit: 0
+2026-11-04T11:56:30.5050238Z nvidia-smi: missing
+2026-11-04T11:56:30.5050514Z nvcc: missing
+2026-11-04T11:56:30.5050877Z scope: inventory only; does not validate Sigma/CUDA kernels or MFNet readiness

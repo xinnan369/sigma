@@ -1,6 +1,6 @@
 # R0 执行报告
 
-执行日期：2026-11-04（Asia/Shanghai）。**本地实现、上游静态核查与测试完成；远端 main 初始化、分支推送和 PR 被实际 GitHub 写权限阻塞，R0 尚未完整交付。未合并，未作 PASS 验收结论。**
+执行日期：2026-11-04（Asia/Shanghai）。**本地实现、上游静态核查与测试完成；写权限恢复后，main 初始化和 feature 分支已推送，PR #1 已创建。等待 ChatGPT 验收，未合并，未作 PASS 验收结论。**
 
 ## 仓库与交接来源
 
@@ -8,11 +8,11 @@
 |---|---|
 | 目标仓库 | <https://github.com/xinnan369/sigma> |
 | 远端初始状态 | API size 0；`git ls-remote` 无 refs；main 未初始化 |
-| 本地 main 初始化 | `af463ab`，仅最小 README；完整 SHA 用 `git rev-parse main` 获取 |
+| main 初始化 | `af463ab892c6350192877f699e48b64f393ae3a2`，仅最小 README，已推送远端 |
 | 本地 feature 分支 | `codex/R0-bootstrap`，基于上述 main |
 | 已测试实现提交 | `fb8e315ab288302e0f34c5d874ece8b491d882a5`；后续仅补报告/发布证据 |
-| PR URL / PR head SHA | **NOT CREATED / NOT AVAILABLE**，不能将本地 commit 冒充远端 PR head |
-| 本地最终 head | 报告提交后由 `git rev-parse HEAD` 获取，并在最终交付和预备 PR 描述中提供；报告不嵌入自身 commit SHA |
+| PR URL | <https://github.com/xinnan369/sigma/pull/1>，base main，head codex/R0-bootstrap |
+| 最终 PR head SHA | 由 PR 描述和 `gh pr view 1 --json headRefOid` 提供；报告不嵌入自身 commit SHA |
 | 固定上游 HEAD | `98ba3c6938d29169bbd27f91519084bb462561df`，实际 checkout 且最终工作树干净 |
 | 交接包 | `sigma_R0_kickoff_20261104.zip` |
 | ZIP SHA256 | `088dae9b9a9ecc81010c22305e326122bfb43d0ca8e48056f147d88cceef8f13` |
@@ -27,7 +27,7 @@
 4. 新回归测试首次运行真实复现 9 个失败、1 个通过，修复后再新增 5 个输入/位移/种子负对照，最终原始 13 + 新增 15 = **28 passed**。
 5. 复核上游 MIT 许可并保存完整许可副本；逐文件 hash 对照 Git blob，无上游核心模型代码拷贝。核实共享编码器、Tiny 尺度、BHWC Hook 边界、CrossMamba 与 ConcatMamba 不同扫描路径、MFNet 灰度复制、官方 resize/滑窗和含类别 0 的 mIoU。详见 [UPSTREAM](../docs/UPSTREAM.md) 与 [源码证据](evidence/upstream_audit.txt)。
 6. 更新实验协议，明确官方 clean gate 与扰动插入位置、区域外指标分母、模块输出替换与 hidden-state 干预的区别；预定义的特征响应公式及其实现仍属于 R1。
-7. 添加 R0 版本清单、检查日志驱动和 CPU CI 工作流。CI 尚未远端执行，不能宣称通过；全新隔离环境安装也未验证，本机 venv 复用 host site-packages。
+7. 添加 R0 版本清单、检查日志驱动和 CPU CI 工作流。发布后发现 setup-python 默认缓存路径不识别 `requirements-r0.txt`，已显式设置 `cache-dependency-path`。修复后的 GitHub Ubuntu/Python 3.13 runner 已实际完成依赖安装、28 项测试和环境检查，全部成功；本机 venv 复用 host site-packages。
 
 ## 实际测试与环境
 
@@ -38,6 +38,7 @@
 | `python -m pytest -q tests`（原交接包） | 13 passed, 1 warning in 6.40s | 0 |
 | `python -m pytest -q tests/test_regressions.py`（修复前） | 9 failed, 1 passed in 3.19s | 1 |
 | `python -m pytest -q tests`（最终） | 28 passed in 3.14s | 0 |
+| `python -m pytest -q tests`（恢复发布时复跑） | 28 passed in 3.16s | 0 |
 | `python experiments/exp0/env_check.py` | inventory 成功；CUDA torch 不可用 | 0 |
 | `python -m compileall -q experiments tests tools` | 无输出 | 0 |
 | `python tools/run_r0_checks.py` | 以上最终三项逐项记录，均 0 | 0 |
@@ -60,7 +61,7 @@
 
 GPU 硬件和 toolkit 存在不等于当前 torch 支持 CUDA。环境检查的退出码 0 仅代表盘点完成。R0 单测在 CPU 上运行，不涉及真实模型特征、数据切分或语义分割分数；扰动 seed 用 3407，种子负对照用 3408。合成测试无训练/验证划分，也没有统计假设检验。
 
-## 远端发布阻塞与恢复步骤
+## 远端发布记录（原权限阻塞已解决）
 
 GitHub connector 和本机 `gh api` 均返回 `permissions.push=false`。connector 创建 main/README 返回 `403 Resource not accessible by integration`；本机 `git push -u origin main` 返回：
 
@@ -71,7 +72,7 @@ fatal: unable to access 'https://github.com/xinnan369/sigma.git/': The requested
 
 push 退出码 1。用户随后明确授权写入，本任务授权充分，但再次尝试和权限读取结果没有改变。此为服务端账号/集成权限问题，不能靠口头授权改变 token 权限。未向其他仓库推送、未新建 fork、未绕过权限，未启用 auto-merge。
 
-恢复需要将本机 gh 或 GitHub 集成切换为对目标仓库实际可写的账号。恢复后先重新读取远端：如果仍无 refs，推送本地 `main` 最小初始化提交，再推送 feature；若已出现他人提交，保留其内容，基于最新 main 协调后重新检查，禁止 force push 覆盖。
+用户完成 gh 登录切换后，实际 `gh api user --jq .login` 返回 `xinnan369`，目标仓库 `permissions.push=true`。GitHub 插件仍为只读，因此实际发布使用本机 gh/git。重新读取远端仍无 refs 后，按顺序推送本地 main 最小初始化提交与 feature 分支，没有覆盖他人提交，没有 force push。
 
 ```bash
 git ls-remote origin
@@ -80,7 +81,11 @@ git push -u origin codex/R0-bootstrap
 gh pr create --repo xinnan369/sigma --base main --head codex/R0-bootstrap --title "[R0] Bootstrap research bridge and Experiment 0 protocol" --body-file ../R0_PR_BODY.md
 ```
 
-以上是**待执行发布步骤**；PR 创建依赖尚未成功的两次推送，本轮未执行可成功的 PR 创建。提交 PR 后仍需等待 ChatGPT PASS 并核对 head SHA 与 CI，本轮不合并。
+以上发布命令现均已实际执行成功，退出码 0。PR 返回 <https://github.com/xinnan369/sigma/pull/1>，标题为 `[R0] Bootstrap research bridge and Experiment 0 protocol`。恢复发布时本地 pytest 再次 28 passed（3.16s），退出码 0。
+
+首次远端 push/PR CI 在 setup-python 的 pip 缓存阶段失败（未运行测试），原因是默认 glob 没有匹配非默认命名的 requirements-r0.txt。修复提交 `6e159e8` 将 `cache-dependency-path` 指向该文件。完整初次失败日志可审计于 <https://github.com/xinnan369/sigma/actions/runs/41824850455>；后续运行证据见 publication.txt 和 PR checks。提交 PR 后仍需等待 ChatGPT PASS 并核对 head SHA 与 CI，本轮不合并。
+
+修复后已验证的 PR CI：<https://github.com/xinnan369/sigma/actions/runs/41824939418>，head `6e159e8b79ba671158ed774b86dca1d080d30dfa`，结论 success。依赖安装、pytest（28 passed）和环境检查均成功，实际步骤日志保存在 [publication.txt](evidence/publication.txt)。此后仅修改报告、任务状态与发布证据；最终提交的 CI 再由 PR checks 核对。
 
 ## 安全检查与执行偏差
 
@@ -91,7 +96,7 @@ gh pr create --repo xinnan369/sigma --base main --head codex/R0-bootstrap --titl
 
 ## 未完成项目与 R1 gate
 
-- **R0 阻塞项：**远端 main 初始化、feature 推送、PR URL/head、远端 CI 以及 ChatGPT 验收均未完成。
+- **待验收：**main 初始化、feature 推送和 PR 创建已完成；ChatGPT 验收尚未进行。最新提交 CI 状态由 PR checks 和最终交付准确报告。
 - **NOT RUN：**真实 Sigma 实例化/权重加载、selective-scan CUDA 编译与 kernel tests、MFNet clean/corrupt mIoU、真实模块替换效果、逐步隐藏状态观测、bootstrap CI、非 SSM 公平对照。无 GPU 实验结果，无状态污染或创新性结论。
 - R1 设备/依赖/数据/checkpoint 清单和加载风险详见 UPSTREAM；先在兼容 CUDA torch 环境验证官方 clean gate，保存 MFNet split 和 checkpoint checksum，再实现完整成对推理、输入 Hook、响应统计和跨尺度坐标核对。当前工具还不能直接运行 Experiment 0 全流程。
 - 未进入合并阶段；只有后续 ChatGPT 明确 PASS 且所验 head 未变化、CI/测试无退化时，才能按已授权规则合并。
