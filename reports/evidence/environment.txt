@@ -1,0 +1,33 @@
+UTC: 2026-11-04T07:31:36.748968+00:00
+cwd: repository root
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+$ python experiments/exp0/env_check.py
+python: 3.13.2
+system: Windows-11-10.0.26200-SP0
+numpy: installed
+pytest: installed
+torch: installed
+cv2: installed
+timm: missing
+einops: missing
+selective_scan_cuda_core: missing
+numpy_distribution_version: 2.3.5
+pytest_distribution_version: 9.2.0
+torch_distribution_version: 2.11.0
+opencv-python_distribution_version: 4.13.0.92
+timm_distribution_version: missing
+einops_distribution_version: missing
+torch_version: 2.11.0+cpu
+torch_cuda_build: None
+cudnn_version: None
+cuda_available: False
+git: git version 2.53.0.windows.2 exit: 0
+nvidia-smi: NVIDIA GeForce RTX 3090, 610.88, 24576 MiB exit: 0
+nvcc: nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Wed_Oct_30_01:18:48_Pacific_Daylight_Time_2024
+Cuda compilation tools, release 12.6, V12.6.85
+Build cuda_12.6.r12.6/compiler.35059454_0 exit: 0
+scope: inventory only; does not validate Sigma/CUDA kernels or MFNet readiness
+
+Exit code: 0

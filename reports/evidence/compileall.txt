@@ -1,0 +1,6 @@
+UTC: 2026-11-04T07:31:36.922847+00:00
+cwd: repository root
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+$ python -m compileall -q experiments tests tools
+
+Exit code: 0
