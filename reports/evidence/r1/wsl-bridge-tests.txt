@@ -3,8 +3,8 @@ Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma
 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
 ..............................                                           [100%]
 30 passed in 3.78s
-wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL 
-N/ec localhost �Nt0
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
 
 
 Elapsed seconds: 9.713

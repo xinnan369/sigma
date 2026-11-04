@@ -5,8 +5,8 @@ PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
 ........................................................................ [ 75%]
 ................................................                         [100%]
 192 passed, 1728 deselected in 10.54s
-wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL 
-N/ec localhost �Nt0
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
 
 
 Elapsed seconds: 11.322

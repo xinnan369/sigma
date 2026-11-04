@@ -22,7 +22,10 @@ def sanitize(text: str) -> str:
     text = re.sub(r'/home/[^/\s]+', '<LINUX_HOME>', text)
     text = re.sub(r'("editable_project_location":\s*)"[^"]*"',
                   r'\1"<LOCAL_EDITABLE_PROJECT>"', text)
-    return re.sub(r'\x1b\[[0-9;]*m', '', text.replace('\x00', ''))
+    text = re.sub(r'\x1b\[[0-9;]*m', '', text.replace('\x00', ''))
+    text = text.replace('\r\n', '\n').replace('\r', '\n')
+    text = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]', '', text)
+    return '\n'.join(line.rstrip() for line in text.split('\n'))
 
 
 def main():
@@ -44,7 +47,7 @@ def main():
               f'Exit code: {result.returncode}\n')
     output = sanitize(output)
     args.output.parent.mkdir(exist_ok=True, parents=True)
-    args.output.write_text(output, encoding='utf-8')
+    args.output.write_text(output, encoding='utf-8', newline='\n')
     print(output)
     return result.returncode
 
