@@ -1,0 +1,8 @@
+UTC: 2026-11-04T07:31:33.078202+00:00
+cwd: repository root
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+$ python -m pytest -q tests
+............................                                             [100%]
+28 passed in 3.14s
+
+Exit code: 0

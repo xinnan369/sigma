@@ -1,0 +1,60 @@
+Date: 2026-11-04 Asia/Shanghai
+Command ledger: exact functional commands with local paths normalized.
+Repository inspections used GitHub connector plus git/gh. No secrets retained.
+
+Expand-Archive -LiteralPath <download>/sigma_R0_kickoff_20261104.zip -DestinationPath ./R0_handoff
+Exit: 0
+Handoff archive SHA256: 088dae9b9a9ecc81010c22305e326122bfb43d0ca8e48056f147d88cceef8f13
+Read: AGENTS.md, CODEX_INSTRUCTIONS.md, tasks/R0_bootstrap.md,
+docs/EXPERIMENT_0_PROTOCOL.md, remaining handoff docs/code/tests.
+
+gh api repos/xinnan369/sigma --jq '{default_branch, size, permissions}'
+Exit: 0; default_branch main, size 0, push false.
+git ls-remote https://github.com/xinnan369/sigma.git
+Exit: 0; no refs (empty repository).
+git clone https://github.com/xinnan369/sigma.git sigma
+Exit: 0; warning empty repository.
+GitHub connector create_file README.md, branch main
+Result: HTTP 403 Resource not accessible by integration.
+
+In local target clone:
+git config user.name Codex
+git config user.email codex@users.noreply.github.com
+git add README.md
+git commit -m 'Initialize research bridge'
+git branch -M main
+All exit: 0. Only README in root commit af463ab.
+git push -u origin main
+Exit: 1; HTTP 403 Permission to xinnan369/sigma.git denied to floomeer83felix-source.
+git switch -c codex/R0-bootstrap
+Exit: 0 (local branch only).
+Copied handoff files except duplicate README; expanded feature-branch README later.
+Remote push retried after user authorized writes: same HTTP 403.
+GitHub connector and gh repository permissions rechecked: push remains false.
+
+External upstream clone:
+git clone --no-checkout https://github.com/zifuwan/Sigma.git upstream-Sigma
+Exit: 0.
+git -C upstream-Sigma checkout --detach 98ba3c6938d29169bbd27f91519084bb462561df
+Interrupted: checkout unexpectedly invoked LFS smudge; partial downloads occurred.
+Cleanup command for external .git/lfs cache rejected by automatic approval:
+blocked by policy (no more specific reason supplied).
+git -C upstream-Sigma config --local lfs.skipdownloaderrors true
+git -C upstream-Sigma config --local lfs.fetchexclude '*'
+Exit: 0.
+After LFS process ended, removed stale index.lock (exit 0).
+Intermediate checkout refused untracked files left by interrupted checkout.
+GIT_LFS_SKIP_SMUDGE=1 git -C upstream-Sigma checkout -f --detach 98ba3c6938d29169bbd27f91519084bb462561df
+Exit: 0. Final clean status and source hashes in upstream_audit.txt.
+No model code or weights copied from external clone into target repository.
+
+python --version
+Exit: 0; Python 3.13.2.
+python -m pip show numpy pytest torch
+pytest missing; numpy 2.3.5 and torch 2.11.0 present (license output omitted).
+python -m venv --system-site-packages .venv
+python -m pip install pytest  [using .venv interpreter]
+Exit: 0 each; pytest 9.2.0 installed with iniconfig 2.3.1 and pluggy 1.7.0.
+This venv reused host numpy/torch and is not claimed to be isolated from host packages.
+Final inventories and verification are in environment.txt, pytest.txt, compileall.txt.
+Final check driver: python tools/run_r0_checks.py, using .venv interpreter.

@@ -1,0 +1,30 @@
+Audit date: 2026-11-04 Asia/Shanghai
+Static source audit; no model instantiated.
+First checkout triggered LFS accidentally; interrupted. Final checkout used GIT_LFS_SKIP_SMUDGE=1.
+$ git -C <upstream> rev-parse HEAD
+98ba3c6938d29169bbd27f91519084bb462561df
+Exit code: 0
+$ git -C <upstream> status --short
+
+Exit code: 0
+$ git -C <upstream> show -s --format=%H %s HEAD
+98ba3c6938d29169bbd27f91519084bb462561df Clean up author list and affiliations in README
+Exit code: 0
+SHA256 of reviewed source files:
+47789faea546712a957e895e02548a3a35c2bcbf332d9a114e85874cb4b5b6e3  LICENSE
+3037cf649d9c2c5cb8041146fed70914969e771da49b7c4ddc94bc4ba5a25d13  configs/config_MFNet.py
+2b4d2dfa3ada3a95152a7728277e9da77fffc2f3d46ebb06dd1e1c9ae9929695  models/builder.py
+2dcda26a436993eefa007827343a556b665e8d1af21360e2746ffa51b3298b05  models/encoders/dual_vmamba.py
+e91389cd7c6561df00c63d1d9549694ba5dba2ff20d154fcd814fcd36054241e  models/encoders/vmamba.py
+47951a3ebbe20cc94a26b095edc4d2c63d9bf442e919fdd9f0a24732c37a867b  eval.py
+89384207fc9fbed7fdef54b77e2c9419d9af48100ba54b39726d0e7056ece436  engine/evaluator.py
+e9593e14f370f5971cde43c75a2bb63ccf3ff2895fe22697c2c38014e8f4ba3f  dataloader/RGBXDataset.py
+41f31e4121388fa4067af8244e9fed5fed52718ef1840dd12cfffd203fa40956  dataloader/dataloader.py
+b4f4040552ab3efceea567841a1278fe37690743c6915f154739f4a4257104b9  utils/metric.py
+c241682ad03cf1aa06cd370fd5bd8e54178543f00bf5a2e7cf8b43f4ce29bdce  utils/visualize.py
+ec45b406af65cb7c8f9f3949902efde607937057c27ce200bda3fb46ef8da785  requirements.txt
+c751667db97c5a0b841eeb25097c3132ced7f6f1bf2dabaf064cc25bd26738df  README.md
+Working-tree pretrained files are LFS text pointers only:
+vssmbase_dp06_ckpt_epoch_241.pth: 134 bytes
+vssmsmall_dp03_ckpt_epoch_238.pth: 134 bytes
+vssmtiny_dp01_ckpt_epoch_292.pth: 133 bytes

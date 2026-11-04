@@ -1,0 +1,26 @@
+Date: 2026-11-04 Asia/Shanghai
+These are summaries transcribed from actual tool output, not complete failure tracebacks.
+
+Original handoff baseline (before adding regressions):
+$ python -m pytest -q tests
+13 passed, 1 warning in 6.40s
+Exit code: 0
+Warning: host anyio pytest plugin imports deprecated CallSpec2 in pytest 9.2.
+Subsequent runs disable third-party plugin autoload; no test warnings are suppressed.
+
+New review regressions against original implementations:
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+$ python -m pytest -q tests/test_regressions.py
+9 failed, 1 passed in 3.19s
+Exit code: 1
+Failures:
+- Gaussian independently perturbs copied Thermal channels (1).
+- Non-finite Gaussian sigma not rejected (2).
+- Non-finite/out-of-scale physical inputs not rejected (3).
+- Invalid metric mask silently coerced to bool (1).
+- Replacement tensor aliases caller/downstream in-place outputs (1).
+- Hook context manager / exception cleanup absent (1).
+The wrong-to-wrong disagreement/empty outside negative control passed (1).
+
+After fixes, 5 more shift/parameter/seed controls were added.
+Final full-suite output is retained separately in pytest.txt.
