@@ -1,0 +1,26 @@
+UTC: 2026-11-04T12:20:01.062505+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'experiments.r1.preflight', '--upstream', '../upstream-Sigma']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "evaluation": "NOT RUN",
+  "blockers": [
+    "dataset missing",
+    "checkpoint missing"
+  ],
+  "upstream_head": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "official_eval_sha256": "47951a3ebbe20cc94a26b095edc4d2c63d9bf442e919fdd9f0a24732c37a867b",
+  "mfnet_config_sha256": "3037cf649d9c2c5cb8041146fed70914969e771da49b7c4ddc94bc4ba5a25d13",
+  "source_hash_basis": "Git blobs (independent of checkout CRLF conversion)",
+  "dataset": {
+    "status": "NOT PROVIDED",
+    "sha256": null
+  },
+  "checkpoint": {
+    "status": "NOT PROVIDED",
+    "sha256": null
+  },
+  "scope": "Provenance/hash preflight only; CUDA, state_dict, pixels and split provenance still require validation"
+}
+
+Elapsed seconds: 0.452
+Exit code: 2

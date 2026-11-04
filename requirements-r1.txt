@@ -1,0 +1,21 @@
+# Linux/WSL R1 runtime. This run reused torch==2.2.2+cu121 and torchvision==0.17.2+cu121.
+# These differ from upstream's documented torch 2.2.1 environment; compatibility must be tested.
+numpy==1.26.4
+timm==0.4.12
+einops==0.8.1
+fvcore==0.1.5.post20221221
+opencv-python==4.9.0.80
+scipy==1.13.0
+easydict==1.13
+tqdm==4.67.1
+tensorboardX==2.6.2.2
+packaging==24.2
+pytest==8.3.5
+chardet==5.2.0
+yacs==0.1.8
+termcolor==2.5.0
+submitit==1.5.2
+seaborn==0.13.2
+ninja==1.11.1.3
+setuptools==75.8.2
+wheel==0.45.1

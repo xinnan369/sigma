@@ -1,0 +1,14 @@
+UTC: 2026-11-04T12:23:30.839961+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '/usr/local/cuda-12.6/bin/nvcc', '--version']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2024 NVIDIA Corporation
+Built on Tue_Oct_29_23:50:19_PDT_2024
+Cuda compilation tools, release 12.6, V12.6.85
+Build cuda_12.6.r12.6/compiler.35059454_0
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL 
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 0.100
+Exit code: 0

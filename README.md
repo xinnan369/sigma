@@ -1,6 +1,6 @@
 # RGB-X × Mamba：科研协作仓库
 
-这是 ChatGPT ↔ Codex 的研究交接仓库，关联上游 [zifuwan/Sigma](https://github.com/zifuwan/Sigma)。当前任务为 [R0](tasks/R0_bootstrap.md)：落地 Experiment 0 的工具、协议和测试，尚无真实 Sigma/MFNet 实验结果。
+这是 ChatGPT ↔ Codex 的研究交接仓库，关联上游 [zifuwan/Sigma](https://github.com/zifuwan/Sigma)。[R0](tasks/R0_bootstrap.md) 已通过验收并合并；当前任务为 [R1 — Sigma-Tiny + MFNet 真实基线复现](tasks/R1_sigma_clean_baseline.md)。GPU 兼容性验证已完成，真实 clean baseline 因参考资产缺失仍未运行，见 [R1 报告](reports/R1_REPORT.md) 和 [运行说明](docs/R1_RUNTIME.md)。
 
 执行记录见 [R0 报告](reports/R0_REPORT.md)，模型与许可核查见 [UPSTREAM](docs/UPSTREAM.md)，实验约定见 [Experiment 0](docs/EXPERIMENT_0_PROTOCOL.md)。交接包作者自检保留在 [STARTER_TESTS](reports/STARTER_TESTS.md)，它与本次本机执行证据分开。
 
