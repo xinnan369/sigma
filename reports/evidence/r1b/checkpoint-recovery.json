@@ -1,0 +1,35 @@
+{
+  "scope": "Official-author public channel audit; no messages sent",
+  "checks": [
+    {
+      "source": "https://github.com/zifuwan/Sigma",
+      "sigma_tiny_mfnet_links": [
+        "https://drive.google.com/file/d/1N9UU9G5K8qxKsZOuEzSLiCGXC5XCaMaU/view?usp=drive_link"
+      ]
+    },
+    {
+      "source": "https://github.com/zifuwan/Sigma-anonymous",
+      "sigma_tiny_mfnet_links": []
+    },
+    {
+      "source": "https://huggingface.co/api/models?author=zifuwan&limit=100",
+      "http_status": 200,
+      "model_ids": []
+    },
+    {
+      "source": "https://zifuwan.github.io/Sigma/",
+      "http_status": 200,
+      "drive_links": []
+    },
+    {
+      "source": "https://drive.google.com/file/d/1N9UU9G5K8qxKsZOuEzSLiCGXC5XCaMaU/view",
+      "http_status": 404,
+      "error_type": "HTTPError"
+    },
+    {
+      "source": "https://drive.google.com/drive/folders/1kfp3aXku-A9ZZfbFLi8DfYTBYrj7uiz1",
+      "http_status": 404,
+      "error_type": "HTTPError"
+    }
+  ]
+}

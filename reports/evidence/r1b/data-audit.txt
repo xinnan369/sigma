@@ -1,0 +1,37 @@
+UTC: 2026-11-05T13:17:06.645031+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1.audit_mfnet', '--root', '<ASSETS>/MFNet', '--manifest', 'reports/evidence/r1b/data-manifest.json']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "scope": "Real author-provided MFNet test assets; no preprocessing or label remapping applied",
+  "test_txt_sha256": "a236aa6ac7e55ec6b5e419b55c6934439611453939eee2c0bf7b0f0c34917c9d",
+  "sample_count": 393,
+  "expected_files": 1179,
+  "valid_file_records": 1179,
+  "errors": [],
+  "cv2_version": "4.9.0",
+  "mode_counts": {
+    "Label/L": 393,
+    "Modal/L": 393,
+    "RGB/RGB": 393
+  },
+  "class_pixel_counts": {
+    "0": 112023545,
+    "1": 4854504,
+    "2": 1345972,
+    "3": 1261567,
+    "4": 602620,
+    "5": 355314,
+    "6": 17794,
+    "7": 85246,
+    "8": 183038
+  },
+  "ignore_255_pixel_count": 0,
+  "manifest_digest_basis": "SHA256 of UTF-8 json.dumps(file_records, sort_keys=True, separators=(comma,colon))",
+  "file_records_sha256": "8230b56c0b3ae7b1999be317feb973d1cc8b599fd811f82d0e3c2c09f2c1429c"
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 59.255
+Exit code: 0
