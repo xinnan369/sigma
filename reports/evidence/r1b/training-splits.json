@@ -1,0 +1,20 @@
+[
+  {
+    "name": "train.txt",
+    "url": "https://drive.usercontent.google.com/download?id=15NAIp0T6YBpmiwOD_sHIQg9If2iJ8CnV&export=download",
+    "sha256": "e14ef52501a5d0000361e79acb42734f391427ac5a4164ad7864b0d2718269f7",
+    "count": 1568,
+    "unique": 1568,
+    "overlap_with_test": 0,
+    "flip_entries": 784
+  },
+  {
+    "name": "train2.txt",
+    "url": "https://drive.usercontent.google.com/download?id=1MCPdjVudBrksV5c0xyZs1KWYdYvPhsN-&export=download",
+    "sha256": "503cdbc99aaab424db5b1f33c5be1e163e46ec9df90256919ad05f1d3f6530c1",
+    "count": 1176,
+    "unique": 1176,
+    "overlap_with_test": 0,
+    "flip_entries": 0
+  }
+]

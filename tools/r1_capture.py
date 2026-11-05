@@ -20,6 +20,7 @@ def sanitize(text: str) -> str:
         text = text.replace(path, replacement).replace(path.replace('\\', '/'), replacement)
     text = re.sub(r'/mnt/[a-z]/Users/[^/\s]+', '<WINDOWS_HOME>', text)
     text = re.sub(r'/home/[^/\s]+', '<LINUX_HOME>', text)
+    text = re.sub(r'(?:[A-Za-z]:/download|/mnt/[a-z]/download)/sigma-r1-assets', '<ASSETS>', text)
     text = re.sub(r'("editable_project_location":\s*)"[^"]*"',
                   r'\1"<LOCAL_EDITABLE_PROJECT>"', text)
     text = re.sub(r'\x1b\[[0-9;]*m', '', text.replace('\x00', ''))

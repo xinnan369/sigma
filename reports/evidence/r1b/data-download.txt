@@ -1,0 +1,21 @@
+UTC: 2026-11-04T12:53:16.845443+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'experiments.r1.fetch_mfnet', '--root', '<ASSETS>/MFNet', '--workers', '12', '--index-output', '../R1b_download_index.json']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+RGB: 2390 source entries; matching fixed test IDs
+Modal: 2390 source entries; matching fixed test IDs
+Label: 2353 source entries; matching fixed test IDs
+100/1179 checked; failures=0
+200/1179 checked; failures=0
+300/1179 checked; failures=0
+400/1179 checked; failures=0
+500/1179 checked; failures=0
+600/1179 checked; failures=0
+700/1179 checked; failures=0
+800/1179 checked; failures=0
+900/1179 checked; failures=0
+1000/1179 checked; failures=0
+1100/1179 checked; failures=0
+1179/1179 checked; failures=0
+
+Elapsed seconds: 218.945
+Exit code: 0

@@ -1,0 +1,361 @@
+UTC: 2026-11-04T12:47:46.556014+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1.model_smoke', '--upstream', '<LINUX_HOME>/sigma-r1-upstream']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Failed loading checkpoint form pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth: invalid load key, 'v'.
+{
+  "scope": "Untrained synthetic execution smoke; NOT official checkpoint inference or mIoU",
+  "seed": 3407,
+  "segmentation_checkpoint": "NOT LOADED",
+  "exception": null,
+  "upstream_head": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "torch": "2.2.2+cu121",
+  "cuda_build": "12.1",
+  "device": "NVIDIA GeForce RTX 3090",
+  "dtype": "torch.float32",
+  "input_rgb": [
+    1,
+    3,
+    480,
+    640
+  ],
+  "input_thermal": [
+    1,
+    3,
+    480,
+    640
+  ],
+  "output": [
+    1,
+    9,
+    480,
+    640
+  ],
+  "parameters": 48287360,
+  "decoder_class": "MambaDecoder",
+  "warmup_runs": 1,
+  "measured_runs": 3,
+  "warmup_wall_seconds": 9.212521033000002,
+  "cuda_event_milliseconds": [
+    159.05381774902344,
+    160.5068817138672,
+    159.07411193847656
+  ],
+  "median_milliseconds": 159.07411193847656,
+  "measured_loop_wall_seconds": 0.47943389099999933,
+  "baseline_allocated_bytes": 223802368,
+  "peak_allocated_bytes": 604900352,
+  "peak_reserved_bytes": 889192448,
+  "modules": {
+    "backbone.cross_mamba.0": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          120,
+          160,
+          96
+        ],
+        [
+          1,
+          120,
+          160,
+          96
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          120,
+          160,
+          96
+        ],
+        [
+          1,
+          120,
+          160,
+          96
+        ]
+      ]
+    },
+    "backbone.channel_attn_mamba.0": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          120,
+          160,
+          96
+        ],
+        [
+          1,
+          120,
+          160,
+          96
+        ]
+      ],
+      "output_shapes": [
+        1,
+        120,
+        160,
+        96
+      ]
+    },
+    "backbone.cross_mamba.1": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          60,
+          80,
+          192
+        ],
+        [
+          1,
+          60,
+          80,
+          192
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          60,
+          80,
+          192
+        ],
+        [
+          1,
+          60,
+          80,
+          192
+        ]
+      ]
+    },
+    "backbone.channel_attn_mamba.1": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          60,
+          80,
+          192
+        ],
+        [
+          1,
+          60,
+          80,
+          192
+        ]
+      ],
+      "output_shapes": [
+        1,
+        60,
+        80,
+        192
+      ]
+    },
+    "backbone.cross_mamba.2": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          30,
+          40,
+          384
+        ],
+        [
+          1,
+          30,
+          40,
+          384
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          30,
+          40,
+          384
+        ],
+        [
+          1,
+          30,
+          40,
+          384
+        ]
+      ]
+    },
+    "backbone.channel_attn_mamba.2": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          30,
+          40,
+          384
+        ],
+        [
+          1,
+          30,
+          40,
+          384
+        ]
+      ],
+      "output_shapes": [
+        1,
+        30,
+        40,
+        384
+      ]
+    },
+    "backbone.cross_mamba.3": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          15,
+          20,
+          768
+        ],
+        [
+          1,
+          15,
+          20,
+          768
+        ]
+      ],
+      "output_shapes": [
+        [
+          1,
+          15,
+          20,
+          768
+        ],
+        [
+          1,
+          15,
+          20,
+          768
+        ]
+      ]
+    },
+    "backbone.channel_attn_mamba.3": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          15,
+          20,
+          768
+        ],
+        [
+          1,
+          15,
+          20,
+          768
+        ]
+      ],
+      "output_shapes": [
+        1,
+        15,
+        20,
+        768
+      ]
+    },
+    "decode_head.layers_up.0": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          15,
+          20,
+          768
+        ]
+      ],
+      "output_shapes": [
+        1,
+        30,
+        40,
+        384
+      ]
+    },
+    "decode_head.layers_up.1": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          30,
+          40,
+          384
+        ]
+      ],
+      "output_shapes": [
+        1,
+        60,
+        80,
+        192
+      ]
+    },
+    "decode_head.layers_up.2": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          60,
+          80,
+          192
+        ]
+      ],
+      "output_shapes": [
+        1,
+        120,
+        160,
+        96
+      ]
+    },
+    "decode_head.layers_up.3": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          120,
+          160,
+          96
+        ]
+      ],
+      "output_shapes": [
+        1,
+        120,
+        160,
+        96
+      ]
+    },
+    "decode_head.output": {
+      "calls": 4,
+      "input_shapes": [
+        [
+          1,
+          96,
+          480,
+          640
+        ]
+      ],
+      "output_shapes": [
+        1,
+        9,
+        480,
+        640
+      ]
+    }
+  },
+  "output_finite": true,
+  "status": "PASS"
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+04 20:47:16 Using backbone: V-MAMBA
+04 20:47:29 Using Mamba Decoder
+
+Elapsed seconds: 112.509
+Exit code: 0

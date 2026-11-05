@@ -1,0 +1,8 @@
+{
+  "scope": "VMamba initialization only; NOT Sigma-Tiny/MFNet segmentation checkpoint",
+  "source_url": "https://media.githubusercontent.com/media/zifuwan/Sigma/98ba3c6938d29169bbd27f91519084bb462561df/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth",
+  "bytes": 91649482,
+  "sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+  "matches_pinned_lfs_oid": true,
+  "elapsed_seconds": 7.350287600012962
+}
