@@ -1,3 +1,4 @@
 # R0 utility tests only; install torch separately from the appropriate wheel index.
 numpy==2.3.5
 pytest==9.2.0
+Pillow==11.3.0

@@ -1,0 +1,62 @@
+{
+  "scope": "Paraphrased public issue audit; no messages posted and no authors contacted",
+  "issues": [
+    {
+      "number": "50",
+      "url": "https://github.com/zifuwan/Sigma/issues/50",
+      "title": "预训练权重文件不存在",
+      "author_comments_present": false
+    },
+    {
+      "number": "49",
+      "url": "https://github.com/zifuwan/Sigma/issues/49",
+      "title": "Pretrained Weight 2",
+      "author_comments_present": false
+    },
+    {
+      "number": "48",
+      "url": "https://github.com/zifuwan/Sigma/issues/48",
+      "title": "Pretrained Weight",
+      "author_comments_present": true
+    },
+    {
+      "number": "47",
+      "url": "https://github.com/zifuwan/Sigma/issues/47",
+      "title": "Release Sigma artifacts (models, dataset) on Hugging Face",
+      "author_comments_present": false
+    },
+    {
+      "number": "43",
+      "url": "https://github.com/zifuwan/Sigma/issues/43",
+      "title": "Download vssmtiny_dp01_ckpt_epoch_292.pth",
+      "author_comments_present": true
+    },
+    {
+      "number": "26",
+      "url": "https://github.com/zifuwan/Sigma/issues/26",
+      "title": "error when downloading the pretrained VMamba weights",
+      "author_comments_present": true
+    },
+    {
+      "number": "8",
+      "url": "https://github.com/zifuwan/Sigma/issues/8",
+      "title": "Weights and demo hosting",
+      "author_comments_present": true
+    },
+    {
+      "number": "37",
+      "url": "https://github.com/zifuwan/Sigma/issues/37",
+      "title": "The training set of MFNet is merged from the training and validation set of the original MFNet?",
+      "author_comments_present": true
+    }
+  ],
+  "findings": {
+    "official_alternate_initialization_folder": "https://drive.google.com/drive/folders/1kfp3aXku-A9ZZfbFLi8DfYTBYrj7uiz1",
+    "alternate_folder_http": 404,
+    "contact_from_author_issue_8": "zifuw@andrew.cmu.edu",
+    "official_segmentation_checkpoint_recovered": false,
+    "github_releases": "No releases returned by GitHub API",
+    "hf_release_issue_47": "Request found, but no author-published artifact link in inspected discussion",
+    "training_split_caveat_issue_37": "Author recommends train.txt for fair comparisons; pinned config uses train2.txt, so independent retraining must explicitly distinguish these regimes."
+  }
+}
