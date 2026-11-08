@@ -1,0 +1,7 @@
+UTC: 2026-11-04T12:25:29.781510+00:00
+Command argv: ['nvidia-smi', '--query-gpu=name,driver_version,memory.total,memory.free', '--format=csv,noheader']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+NVIDIA GeForce RTX 3090, 610.88, 24576 MiB, 22770 MiB
+
+Elapsed seconds: 0.059
+Exit code: 0

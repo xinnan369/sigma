@@ -1,0 +1,41 @@
+UTC: 2026-11-04T12:20:58.579120+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'experiments.r1.check_sources']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "sources": [
+    {
+      "name": "sigma_tiny_mfnet_view",
+      "url": "https://drive.google.com/file/d/1N9UU9G5K8qxKsZOuEzSLiCGXC5XCaMaU/view",
+      "asset_sha256": null,
+      "scope": "HTTP page availability only; not downloaded asset verification",
+      "http_status": 404
+    },
+    {
+      "name": "sigma_tiny_mfnet_download",
+      "url": "https://drive.google.com/uc?export=download&id=1N9UU9G5K8qxKsZOuEzSLiCGXC5XCaMaU",
+      "asset_sha256": null,
+      "scope": "HTTP page availability only; not downloaded asset verification",
+      "http_status": 404
+    },
+    {
+      "name": "sigma_processed_datasets",
+      "url": "https://drive.google.com/drive/folders/1GD4LYF208h9-mHJ_lxW11UM0TPlRmv0z",
+      "asset_sha256": null,
+      "scope": "HTTP page availability only; not downloaded asset verification",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8"
+    },
+    {
+      "name": "mfnet_official_project",
+      "url": "https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/",
+      "asset_sha256": null,
+      "scope": "HTTP page availability only; not downloaded asset verification",
+      "http_status": 200,
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "local_assets": "NOT PROVIDED"
+}
+
+Elapsed seconds: 4.600
+Exit code: 2

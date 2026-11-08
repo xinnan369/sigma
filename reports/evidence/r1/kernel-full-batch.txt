@@ -1,0 +1,112 @@
+UTC: 2026-11-04T12:26:06.392579+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1.kernel_batch_check', '--upstream', '<LINUX_HOME>/sigma-r1-upstream']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "upstream_head": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "seed": 0,
+  "cases": [
+    {
+      "dtype": "torch.float32",
+      "nrows": 1,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.00029754638671875,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.float32",
+      "nrows": 2,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.00029754638671875,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.float32",
+      "nrows": 3,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.00029754638671875,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.float32",
+      "nrows": 4,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.00029754638671875,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.float16",
+      "nrows": 1,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.015625,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.float16",
+      "nrows": 2,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.015625,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.float16",
+      "nrows": 3,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.015625,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.float16",
+      "nrows": 4,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.015625,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "nrows": 1,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.0625,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "nrows": 2,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.0625,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "nrows": 3,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.0625,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    },
+    {
+      "dtype": "torch.bfloat16",
+      "nrows": 4,
+      "batch": 2,
+      "length": 257,
+      "forward_max_abs_diff": 0.0625,
+      "all_batch_forward_and_all_input_gradients": "PASS"
+    }
+  ],
+  "scope": "Synthetic full-batch kernel compatibility only; not Sigma/MFNet evaluation"
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 7.491
+Exit code: 0

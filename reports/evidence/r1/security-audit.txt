@@ -1,0 +1,8 @@
+Date: 2026-11-04 Asia/Shanghai
+Scope: 65 tracked/staged bridge files, before adding this audit record.
+UTF-8 text, <=1MiB, no dataset/weight/binary file extensions, known credential patterns, and private user-path checks.
+Findings: none.
+Largest file: reports/evidence/r1/dependency-install.txt (19647 bytes).
+Official test.txt payload is stored outside the bridge repository; only provenance/hash/count metadata is staged.
+No image/label triplets, checkpoint payloads, extension binaries, wheels, secrets or raw dataset directories are staged.
+This heuristic audit does not prove the absence of all possible secrets; diff and file-list review also performed.

@@ -1,0 +1,118 @@
+Actual installer stdout/stderr captured in external runtime log
+Command: python -m pip install -r <BRIDGE>/requirements-r1.txt
+Looking in indexes: https://mirrors.aliyun.com/pypi/simple/
+Requirement already satisfied: numpy==1.26.4 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 3)) (1.26.4)
+Collecting timm==0.4.12 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4))
+  Using cached https://mirrors.aliyun.com/pypi/packages/90/fc/606bc5cf46acac3aa9bd179b3954433c026aaf88ea98d6b19f5d14c336da/timm-0.4.12-py3-none-any.whl (376 kB)
+Requirement already satisfied: einops==0.8.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 5)) (0.8.1)
+Collecting fvcore==0.1.5.post20221221 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 6))
+  Using cached https://mirrors.aliyun.com/pypi/packages/a5/93/d056a9c4efc6c79ba7b5159cc66bb436db93d2cc46dca18ed65c59cc8e4e/fvcore-0.1.5.post20221221.tar.gz (50 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: opencv-python==4.9.0.80 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 7)) (4.9.0.80)
+Requirement already satisfied: scipy==1.13.0 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 8)) (1.13.0)
+Collecting easydict==1.13 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 9))
+  Downloading https://mirrors.aliyun.com/pypi/packages/05/ec/fa6963f1198172c2b75c9ab6ecefb3045991f92f75f5eb41b6621b198123/easydict-1.13-py3-none-any.whl (6.8 kB)
+Requirement already satisfied: tqdm==4.67.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 10)) (4.67.1)
+Collecting tensorboardX==2.6.2.2 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 11))
+  Downloading https://mirrors.aliyun.com/pypi/packages/44/71/f3e7c9b2ab67e28c572ab4e9d5fa3499e0d252650f96d8a3a03e26677f53/tensorboardX-2.6.2.2-py2.py3-none-any.whl (101 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 101.7/101.7 kB 2.6 MB/s eta 0:00:00
+Requirement already satisfied: packaging==24.2 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 12)) (24.2)
+Collecting pytest==8.3.5 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 13))
+  Downloading https://mirrors.aliyun.com/pypi/packages/30/3d/64ad57c803f1fa1e963a7946b6e0fea4a70df53c1a7fed304586539c2bac/pytest-8.3.5-py3-none-any.whl (343 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 343.6/343.6 kB 795.9 kB/s eta 0:00:00
+Collecting chardet==5.2.0 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 14))
+  Downloading https://mirrors.aliyun.com/pypi/packages/38/6f/f5fbc992a329ee4e0f288c1fe0e2ad9485ed064cac731ed2fe47dcc38cbf/chardet-5.2.0-py3-none-any.whl (199 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 199.4/199.4 kB 886.0 kB/s eta 0:00:00
+Collecting yacs==0.1.8 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 15))
+  Downloading https://mirrors.aliyun.com/pypi/packages/38/4f/fe9a4d472aa867878ce3bb7efb16654c5d63672b86dc0e6e953a67018433/yacs-0.1.8-py3-none-any.whl (14 kB)
+Collecting termcolor==2.5.0 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 16))
+  Downloading https://mirrors.aliyun.com/pypi/packages/7f/be/df630c387a0a054815d60be6a97eb4e8f17385d5d6fe660e1c02750062b4/termcolor-2.5.0-py3-none-any.whl (7.8 kB)
+Collecting submitit==1.5.2 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 17))
+  Downloading https://mirrors.aliyun.com/pypi/packages/dc/a4/90123871996bfb8a7148cd11d61e7a0ddc0118114c071730b3dc3a05c7bc/submitit-1.5.2-py3-none-any.whl (74 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 74.9/74.9 kB 5.0 MB/s eta 0:00:00
+Requirement already satisfied: seaborn==0.13.2 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (0.13.2)
+Collecting ninja==1.11.1.3 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 19))
+  Downloading https://mirrors.aliyun.com/pypi/packages/6b/35/a8e38d54768e67324e365e2a41162be298f51ec93e6bd4b18d237d7250d8/ninja-1.11.1.3-py3-none-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (422 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 422.9/422.9 kB 660.2 kB/s eta 0:00:00
+Collecting setuptools==75.8.2 (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 20))
+  Downloading https://mirrors.aliyun.com/pypi/packages/a9/38/7d7362e031bd6dc121e5081d8cb6aa6f6fedf2b67bf889962134c6da4705/setuptools-75.8.2-py3-none-any.whl (1.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.2/1.2 MB 459.8 kB/s eta 0:00:00
+Requirement already satisfied: wheel==0.45.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from -r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 21)) (0.45.1)
+Requirement already satisfied: torch>=1.4 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (2.2.2)
+Requirement already satisfied: torchvision in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (0.17.2)
+Requirement already satisfied: pyyaml>=5.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from fvcore==0.1.5.post20221221->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 6)) (6.0.1)
+Requirement already satisfied: Pillow in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from fvcore==0.1.5.post20221221->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 6)) (10.4.0)
+Collecting tabulate (from fvcore==0.1.5.post20221221->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 6))
+  Downloading https://mirrors.aliyun.com/pypi/packages/99/55/db07de81b5c630da5cbf5c7df646580ca26dfaefa593667fc6f2fe016d2e/tabulate-0.10.0-py3-none-any.whl (39 kB)
+Collecting iopath>=0.1.7 (from fvcore==0.1.5.post20221221->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 6))
+  Using cached https://mirrors.aliyun.com/pypi/packages/72/73/b3d451dfc523756cf177d3ebb0af76dc7751b341c60e2a21871be400ae29/iopath-0.1.10.tar.gz (42 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: protobuf>=3.20 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from tensorboardX==2.6.2.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 11)) (6.30.2)
+Collecting iniconfig (from pytest==8.3.5->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 13))
+  Downloading https://mirrors.aliyun.com/pypi/packages/56/43/4ca9e49d27a1fcf6bece6f6aec0ea46bb9112489b93d4b688fb415457bdb/iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Collecting pluggy<2,>=1.5 (from pytest==8.3.5->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 13))
+  Downloading https://mirrors.aliyun.com/pypi/packages/40/9e/2b38731e0fc536806f16490e1a12d7f0dc2a1235aa8cc07bcc75416a7daa/pluggy-1.7.0-py3-none-any.whl (27 kB)
+Collecting cloudpickle>=1.2.1 (from submitit==1.5.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 17))
+  Downloading https://mirrors.aliyun.com/pypi/packages/88/39/799be3f2f0f38cc727ee3b4f1445fe6d5e4133064ec2e4115069418a5bb6/cloudpickle-3.1.2-py3-none-any.whl (22 kB)
+Requirement already satisfied: typing_extensions>=3.7.4.2 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from submitit==1.5.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 17)) (4.13.0)
+Requirement already satisfied: pandas>=1.2 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (2.2.3)
+Requirement already satisfied: matplotlib!=3.6.1,>=3.4 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (3.10.1)
+Collecting portalocker (from iopath>=0.1.7->fvcore==0.1.5.post20221221->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 6))
+  Downloading https://mirrors.aliyun.com/pypi/packages/e8/43/bca094221a0f9f592fe1e982d090a92075aa302ecaa92c94cc6268a39b2c/portalocker-4.4.2-py3-none-any.whl (129 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 129.7/129.7 kB 7.2 MB/s eta 0:00:00
+Requirement already satisfied: contourpy>=1.0.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (1.3.1)
+Requirement already satisfied: cycler>=0.10 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (0.12.1)
+Requirement already satisfied: fonttools>=4.22.0 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (4.56.0)
+Requirement already satisfied: kiwisolver>=1.3.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (1.4.8)
+Requirement already satisfied: pyparsing>=2.3.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (3.2.3)
+Requirement already satisfied: python-dateutil>=2.7 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from matplotlib!=3.6.1,>=3.4->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (2.9.0.post0)
+Requirement already satisfied: pytz>=2020.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from pandas>=1.2->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (2025.2)
+Requirement already satisfied: tzdata>=2022.7 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from pandas>=1.2->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (2025.2)
+Requirement already satisfied: filelock in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (3.18.0)
+Requirement already satisfied: sympy in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (1.13.3)
+Requirement already satisfied: networkx in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (3.4.2)
+Requirement already satisfied: jinja2 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (3.1.6)
+Requirement already satisfied: fsspec in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (2025.3.0)
+Requirement already satisfied: nvidia-cuda-nvrtc-cu12==12.1.105 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (12.1.105)
+Requirement already satisfied: nvidia-cuda-runtime-cu12==12.1.105 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (12.1.105)
+Requirement already satisfied: nvidia-cuda-cupti-cu12==12.1.105 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (12.1.105)
+Requirement already satisfied: nvidia-cudnn-cu12==8.9.2.26 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (8.9.2.26)
+Requirement already satisfied: nvidia-cublas-cu12==12.1.3.1 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (12.1.3.1)
+Requirement already satisfied: nvidia-cufft-cu12==11.0.2.54 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (11.0.2.54)
+Requirement already satisfied: nvidia-curand-cu12==10.3.2.106 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (10.3.2.106)
+Requirement already satisfied: nvidia-cusolver-cu12==11.4.5.107 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (11.4.5.107)
+Requirement already satisfied: nvidia-cusparse-cu12==12.1.0.106 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (12.1.0.106)
+Requirement already satisfied: nvidia-nccl-cu12==2.19.3 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (2.19.3)
+Requirement already satisfied: nvidia-nvtx-cu12==12.1.105 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (12.1.105)
+Requirement already satisfied: triton==2.2.0 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (2.2.0)
+Requirement already satisfied: nvidia-nvjitlink-cu12 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from nvidia-cusolver-cu12==11.4.5.107->torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (12.8.93)
+Requirement already satisfied: six>=1.5 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from python-dateutil>=2.7->matplotlib!=3.6.1,>=3.4->seaborn==0.13.2->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 18)) (1.17.0)
+Requirement already satisfied: MarkupSafe>=2.0 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from jinja2->torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (2.1.5)
+Requirement already satisfied: mpmath<1.4,>=1.1.0 in <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages (from sympy->torch>=1.4->timm==0.4.12->-r <WINDOWS_HOME>/Documents/ChatGPT/mamba多模态/sigma/requirements-r1.txt (line 4)) (1.3.0)
+Building wheels for collected packages: fvcore, iopath
+  Building wheel for fvcore (setup.py): started
+  Building wheel for fvcore (setup.py): finished with status 'done'
+  Created wheel for fvcore: filename=fvcore-0.1.5.post20221221-py3-none-any.whl size=61397 sha256=386c408dbc4268d76b23f12c7e9ccb9f010e9da7f3976f1a816d7c980144c326
+  Stored in directory: <LINUX_HOME>/.cache/pip/wheels/c2/29/ad/710c905c763f1a981ac53f3721781b96d742c88b41c04b42b5
+  Building wheel for iopath (setup.py): started
+  Building wheel for iopath (setup.py): finished with status 'done'
+  Created wheel for iopath: filename=iopath-0.1.10-py3-none-any.whl size=31528 sha256=a35a703d3ecdd559285f61021a8a093e520cada4c19b967f82d52cbf9da52aae
+  Stored in directory: <LINUX_HOME>/.cache/pip/wheels/5c/e0/49/374d56037f806a8b77ef30d830abdcf2afc1b941631c0eeb2e
+Successfully built fvcore iopath
+Installing collected packages: easydict, yacs, termcolor, tensorboardX, tabulate, setuptools, portalocker, pluggy, ninja, iniconfig, cloudpickle, chardet, submitit, pytest, iopath, fvcore, timm
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 65.5.0
+    Uninstalling setuptools-65.5.0:
+      Successfully uninstalled setuptools-65.5.0
+  Attempting uninstall: timm
+    Found existing installation: timm 1.0.14
+    Not uninstalling timm at <LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages, outside environment <LINUX_HOME>/.venvs/sigma-r1-cu121
+    Can't uninstall 'timm'. No files were found to uninstall.
+Successfully installed chardet-5.2.0 cloudpickle-3.1.2 easydict-1.13 fvcore-0.1.5.post20221221 iniconfig-2.3.1 iopath-0.1.10 ninja-1.11.1.3 pluggy-1.7.0 portalocker-4.4.2 pytest-8.3.5 setuptools-75.8.2 submitit-1.5.2 tabulate-0.10.0 tensorboardX-2.6.2.2 termcolor-2.5.0 timm-0.4.12 yacs-0.1.8
+
+[notice] A new release of pip is available: 24.0 -> 26.3
+[notice] To update, run: <LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python -m pip install --upgrade pip
+
+Installer exit: 0 (setup script completed successfully)

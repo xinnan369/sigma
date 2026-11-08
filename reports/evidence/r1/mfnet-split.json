@@ -1,0 +1,11 @@
+{
+  "source_url": "https://drive.usercontent.google.com/download?id=1SlNee8aFtwJXyKtAPZ3umKtEFPfyLOOz&export=download",
+  "source_folder": "https://drive.google.com/drive/folders/1bD5b4xXkDBasOLhupUBDdw2rq9oogbu_",
+  "http_status": 200,
+  "bytes": 2751,
+  "sha256": "a236aa6ac7e55ec6b5e419b55c6934439611453939eee2c0bf7b0f0c34917c9d",
+  "sample_count": 393,
+  "unique_count": 393,
+  "images_and_labels": "NOT DOWNLOADED; no complete test triplets",
+  "reference_checkpoint": "HTTP 404; NOT AVAILABLE"
+}

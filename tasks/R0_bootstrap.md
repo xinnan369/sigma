@@ -1,6 +1,6 @@
 # R0 — 科研仓库初始化与 Experiment 0 基础验证
 
-**状态：本地实现与检查完成；权限阻塞已解决，main/feature 已推送，PR #1 已创建；待 ChatGPT 验收，未合并** · 优先级 P0 · 日期 2026-11-04
+**状态：ChatGPT PASS；PR #1 已 squash merge，main 提交 68b7dacce44a995bc821fdbcfd51b64bdef3daec** · 优先级 P0 · 日期 2026-11-04
 
 ## 本轮任务
 1. 在空仓库 `xinnan369/sigma` 的 `main` 上只创建最小 README 初始化提交，再创建分支 `codex/R0-bootstrap`。保留本交接包的目录和文件。

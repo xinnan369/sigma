@@ -1,0 +1,20 @@
+UTC: 2026-11-04T12:23:29.653650+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--cd', '<LINUX_HOME>/sigma-r1-upstream', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', 'eval.py', '--help']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+usage: eval.py [-h] [-e EPOCHS] [-d DEVICES] [-v] [--show_image]
+               [--save_path SAVE_PATH] [--dataset_name DATASET_NAME]
+
+options:
+  -h, --help            show this help message and exit
+  -e EPOCHS, --epochs EPOCHS
+  -d DEVICES, --devices DEVICES
+  -v, --verbose
+  --show_image, -s
+  --save_path SAVE_PATH, -p SAVE_PATH
+  --dataset_name DATASET_NAME, -n DATASET_NAME
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 10.589
+Exit code: 0
