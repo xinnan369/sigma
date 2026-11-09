@@ -1,0 +1,6 @@
+UTC: 2026-11-09T13:08:27.290591+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'compileall', '-q', 'experiments/r1d', 'tests/test_r1d_epoch.py']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+
+Elapsed seconds: 0.250
+Exit code: 0
