@@ -1,0 +1,11 @@
+UTC: 2026-11-09T07:13:04.914034+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'sha256sum', '<LINUX_HOME>/sigma-r1c-runs/pilot-3407/checkpoints/best.pt', '<LINUX_HOME>/sigma-r1c-runs/pilot-3407/checkpoints/last.pt']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+d1c8110ab7acb712f2b9da2fad4fac527ddb8e2ab7f33fed1044566bf609ca8f  <LINUX_HOME>/sigma-r1c-runs/pilot-3407/checkpoints/best.pt
+d1c8110ab7acb712f2b9da2fad4fac527ddb8e2ab7f33fed1044566bf609ca8f  <LINUX_HOME>/sigma-r1c-runs/pilot-3407/checkpoints/last.pt
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 2.771
+Exit code: 0

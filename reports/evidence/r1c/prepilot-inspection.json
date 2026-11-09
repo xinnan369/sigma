@@ -1,0 +1,43 @@
+{
+  "scope": "Actual CPU model construction and transfer initialization; no training/evaluation",
+  "initialization": {
+    "missing_keys": [
+      "outnorm0.weight",
+      "outnorm0.bias",
+      "outnorm1.weight",
+      "outnorm1.bias",
+      "outnorm2.weight",
+      "outnorm2.bias",
+      "outnorm3.weight",
+      "outnorm3.bias"
+    ],
+    "unexpected_keys": [
+      "classifier.norm.weight",
+      "classifier.norm.bias",
+      "classifier.head.weight",
+      "classifier.head.bias"
+    ],
+    "strict": false,
+    "scope": "VMamba backbone initialization, not segmentation checkpoint"
+  },
+  "coverage": {
+    "total_numel": 48287360,
+    "legacy_missing_numel": 6407808,
+    "tensor_count": 668,
+    "duplicate_count": 0,
+    "missing_count": 0
+  },
+  "versions": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "timm": "0.4.12",
+    "einops": "0.8.1",
+    "numpy": "1.26.4",
+    "opencv-python": "4.9.0.80",
+    "Pillow": "10.4.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "cuda_runtime": "12.1",
+  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "upstream_tracked_diff": "clean"
+}

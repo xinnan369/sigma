@@ -1,0 +1,19 @@
+{
+  "scope": "independent retraining pilot; NOT author checkpoint reproduction",
+  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+  "seed": 3407,
+  "microbatch": 1,
+  "accumulation": 8,
+  "max_updates": 13,
+  "validation_interval": 4,
+  "lr": 0.00006,
+  "weight_decay": 0.01,
+  "betas": [0.9, 0.999],
+  "precision": "fp32",
+  "scheduler": "constant-pilot-lr",
+  "device": "cuda:0",
+  "num_workers": 0,
+  "test_evaluation": false,
+  "best_selection": "maximum internal validation global-confusion mIoU including class 0; first wins ties"
+}

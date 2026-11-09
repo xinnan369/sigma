@@ -1,0 +1,28 @@
+UTC: 2026-11-09T07:09:33.510795+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r1c.data', '--root', '<ASSETS>/MFNet', '--output', 'reports/evidence/r1c']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d",
+  "errors": [],
+  "sample_count": 1960,
+  "file_count": 5880,
+  "class_pixels": [
+    553329338,
+    26024523,
+    7754734,
+    4177881,
+    3782512,
+    3126607,
+    802553,
+    1205553,
+    1908299
+  ],
+  "ignore_pixels": 0,
+  "cv2_version": "4.9.0"
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 240.298
+Exit code: 0

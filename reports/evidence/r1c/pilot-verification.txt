@@ -1,0 +1,137 @@
+UTC: 2026-11-09T07:13:01.993206+00:00
+Command argv: ['.venv/Scripts/python', '-c', 'import json\nimport math\nimport statistics\nfrom pathlib import Path\n\nroot = Path("reports/evidence/r1c")\npilot = root / "pilot"\nload = lambda p: json.loads(p.read_text(encoding="utf-8"))\nread_events = lambda name: [json.loads(line) for line in (pilot / name).read_text(encoding="utf-8").splitlines()]\nfirst = read_events("pilot-events.jsonl")\nresume = read_events("resume-events.jsonl")\nevents = first + resume\nupdates = [e for e in events if e["event"] == "update"]\ncheckpoints = {e["update"]: e for e in events if e["event"] == "checkpoint"}\nvalidations = [e for e in events if e["event"] == "validation"]\nrestored = next(e for e in resume if e["event"] == "restored")\ncompleted = [e for e in events if e["event"] == "complete"]\nsplit = load(root / "split.json")\ncoverage = load(pilot / "parameter-coverage.json")\nassert coverage == load(root / "prepilot-coverage.json")\nassert [e["update"] for e in completed] == [8, 13]\nassert [e["update"] for e in updates] == list(range(1, 14))\nassert [e["update"] for e in validations] == [4, 8, 12, 13]\nassert restored["update"] == 8 and restored["sampler_cursor"] == 64\nassert restored["checkpoint_sha256"] == checkpoints[8]["last_sha256"]\nassert restored["optimizer_state_tensor_count"] == coverage["tensor_count"]\nassert restored["strict_model_keys"] == "<All keys matched successfully>"\ntrain_ids = [sample for e in updates for sample in e["sample_ids"]]\nassert len(train_ids) == len(set(train_ids)) == 104\nassert set(train_ids) <= set(split["train_ids"])\nassert not {x.removesuffix("_flip") for x in train_ids} & set(split["validation_ids"])\nassert all(e["test_pixels_read"] == 0 for e in events if e["event"] == "start")\nassert all(e["sample_count"] == 79 and e["pixel_count"] == 79 * 480 * 640 for e in validations)\nassert all(e["microbatches"] == 8 and not (e["missing_gradient_names"] or e["zero_gradient_names"] or e["unchanged_parameter_names"]) for e in updates)\nassert all(math.isfinite(e["gradient_l2"]) and e["gradient_l2"] > 0 for e in updates)\nfor name in ("gradient-audit.json", "resume-gradient-audit.json"):\n    records = load(pilot / name)\n    assert len(records) == coverage["tensor_count"]\n    assert sum(x["numel"] for x in records.values()) == coverage["total_numel"]\n    assert all(x["gradient_seen"] and x["nonzero_seen"] and x["changed_seen"] for x in records.values())\nbest = max(validations, key=lambda e: e["miou_including_0"])\nassert completed[-1]["best"] == {"miou": best["miou_including_0"], "update": best["update"]}\ntimes = [t for e in updates for t in e["microstep_seconds"]]\nresult = {\n    "status": "PASS", "train_microsteps": len(times), "optimizer_updates": len(updates),\n    "resume_update": restored["update"], "resume_cursor": restored["sampler_cursor"],\n    "all_update_windows_finite_nonzero_gradients_and_changes_in_every_parameter_tensor": True,\n    "checkpoint_bytes": checkpoints[13]["last_bytes"],\n    "last_sha256": checkpoints[13]["last_sha256"],\n    "best_update": best["update"], "best_val_miou": best["miou_including_0"],\n    "best_val_predicted_class_0_pixels": sum(row[0] for row in best["confusion_matrix"]),\n    "best_val_pixels": best["pixel_count"],\n    "val_metrics": [{k:v for k,v in e.items() if k in ("update", "sample_count", "miou_including_0", "iou_0_to_8", "mean_pixel_loss", "seconds", "absent_union_classes")} for e in validations],\n    "train_window_loss": [e["optimized_pixel_mean_loss"] for e in updates],\n    "gradient_l2": [e["gradient_l2"] for e in updates],\n    "microstep_median_seconds": statistics.median(times),\n    "microstep_p95_seconds": statistics.quantiles(times,n=100,method="inclusive")[94],\n    "sum_training_update_seconds": sum(e["update_seconds_including_audit"] for e in updates),\n    "sum_validation_seconds": sum(e["seconds"] for e in validations),\n    "sum_checkpoint_save_and_hash_seconds": sum(e["save_and_hash_seconds"] for e in checkpoints.values()),\n    "sum_segment_seconds": sum(e["seconds"] for e in completed),\n    "peak_allocated_bytes": max(e["peak_allocated_bytes"] for e in completed),\n    "peak_reserved_bytes": max(e["peak_reserved_bytes"] for e in completed),\n    "test_evaluation": "NOT RUN",\n}\nout = json.dumps(result, indent=2, allow_nan=False)\n(root / "pilot-summary.json").write_text(out + "\\n",encoding="utf-8",newline="\\n")\nprint(out)']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "status": "PASS",
+  "train_microsteps": 104,
+  "optimizer_updates": 13,
+  "resume_update": 8,
+  "resume_cursor": 64,
+  "all_update_windows_finite_nonzero_gradients_and_changes_in_every_parameter_tensor": true,
+  "checkpoint_bytes": 580308439,
+  "last_sha256": "d1c8110ab7acb712f2b9da2fad4fac527ddb8e2ab7f33fed1044566bf609ca8f",
+  "best_update": 13,
+  "best_val_miou": 0.10314184074594987,
+  "best_val_predicted_class_0_pixels": 24250843,
+  "best_val_pixels": 24268800,
+  "val_metrics": [
+    {
+      "update": 4,
+      "iou_0_to_8": [
+        0.922984332296649,
+        1.8261888260984298e-06,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "miou_including_0": 0.10255401760949723,
+      "absent_union_classes": [],
+      "sample_count": 79,
+      "mean_pixel_loss": 0.46811607038924463,
+      "seconds": 16.181615695000005
+    },
+    {
+      "update": 8,
+      "iou_0_to_8": [
+        0.9231356944036055,
+        1.095710294198214e-05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "miou_including_0": 0.10257185016739417,
+      "absent_union_classes": [],
+      "sample_count": 79,
+      "mean_pixel_loss": 0.4096140820467019,
+      "seconds": 19.92413271999999
+    },
+    {
+      "update": 12,
+      "iou_0_to_8": [
+        0.9230624590804887,
+        0.0012914099849016972,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "miou_including_0": 0.10270598545171004,
+      "absent_union_classes": [],
+      "sample_count": 79,
+      "mean_pixel_loss": 0.37608839614481865,
+      "seconds": 16.119022951000034
+    },
+    {
+      "update": 13,
+      "iou_0_to_8": [
+        0.9229597336888435,
+        0.005316833024705298,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "miou_including_0": 0.10314184074594987,
+      "absent_union_classes": [],
+      "sample_count": 79,
+      "mean_pixel_loss": 0.3763621281169135,
+      "seconds": 16.259246238999992
+    }
+  ],
+  "train_window_loss": [
+    3.242900378704071,
+    1.542507462641772,
+    0.9678390383720398,
+    0.6157605911556043,
+    0.6647185008066153,
+    0.5500873979181051,
+    0.35794132947921753,
+    0.8900343024533642,
+    0.4491983408626822,
+    0.46082439388220126,
+    0.48585212204539985,
+    0.3460599238089487,
+    0.4392155435350206
+  ],
+  "gradient_l2": [
+    59.275866518948106,
+    39.83554261744021,
+    13.386989689123395,
+    6.312724982870769,
+    6.237766433835644,
+    4.420293534845311,
+    1.510250257854211,
+    9.913642759591442,
+    2.0342406484608517,
+    3.0147461951132066,
+    3.982616040868179,
+    1.7191092841897824,
+    2.751667254276633
+  ],
+  "microstep_median_seconds": 0.4163703835000092,
+  "microstep_p95_seconds": 0.6120344356500169,
+  "sum_training_update_seconds": 52.45333168399986,
+  "sum_validation_seconds": 68.48401760500002,
+  "sum_checkpoint_save_and_hash_seconds": 24.642198569000016,
+  "sum_segment_seconds": 146.391218262,
+  "peak_allocated_bytes": 7363910144,
+  "peak_reserved_bytes": 7577010176,
+  "test_evaluation": "NOT RUN"
+}
+
+Elapsed seconds: 0.159
+Exit code: 0

@@ -1,0 +1,23 @@
+UTC: 2026-11-08T15:12:31.591916+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1.runtime_fingerprint']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "scope": "Installed extension/interface provenance, not model checkpoint hashes",
+  "torch_version": "2.2.2+cu121",
+  "selective_scan_cuda_core": {
+    "filename": "selective_scan_cuda_core.cpython-311-x86_64-linux-gnu.so",
+    "sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e",
+    "loaded_from_new_r1_overlay": true
+  },
+  "selective_scan": {
+    "filename": "__init__.py",
+    "sha256": "c1238528d5b26040c63b2007ec7798b63afd403aac5c9f3dc902c9631e163bf1",
+    "loaded_from_new_r1_overlay": true
+  }
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 1.480
+Exit code: 0
