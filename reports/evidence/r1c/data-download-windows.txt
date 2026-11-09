@@ -1,0 +1,11 @@
+UTC: 2026-11-08T15:14:37.687688+00:00
+Command argv: ['.venv/Scripts/python', '-u', '-m', 'experiments.r1c.data', '--root', '<ASSETS>/MFNet', '--output', 'reports/evidence/r1c', '--download', '--download-only']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+RGB: 2390 public entries
+Modal: 2390 public entries
+Label: 2353 public entries
+100/5880 files; failures=0; seconds=74.1
+200/5880 files; failures=0; seconds=180.7
+
+Elapsed seconds: 316.106
+Exit code: 4294967295

@@ -1,0 +1,65 @@
+UTC: 2026-11-08T15:08:57.669764+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r1c.data', '--root', '<ASSETS>/MFNet', '--output', 'reports/evidence/r1c', '--download']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+Traceback (most recent call last):
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/urllib/request.py", line 1348, in do_open
+    h.request(req.get_method(), req.selector, req.data, headers,
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/http/client.py", line 1303, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/http/client.py", line 1349, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/http/client.py", line 1298, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/http/client.py", line 1058, in _send_output
+    self.send(msg)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/http/client.py", line 996, in send
+    self.connect()
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/http/client.py", line 1468, in connect
+    super().connect()
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/http/client.py", line 962, in connect
+    self.sock = self._create_connection(
+                ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/socket.py", line 863, in create_connection
+    raise exceptions[0]
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/socket.py", line 848, in create_connection
+    sock.connect(sa)
+OSError: [Errno 101] Network is unreachable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<BRIDGE>/experiments/r1c/data.py", line 164, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "<BRIDGE>/experiments/r1c/data.py", line 132, in main
+    index = public_index(fid)
+            ^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r1/fetch_mfnet.py", line 38, in public_index
+    with urllib.request.urlopen(url, timeout=45) as response:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/urllib/request.py", line 216, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/urllib/request.py", line 519, in open
+    response = self._open(req, data)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/urllib/request.py", line 536, in _open
+    result = self._call_chain(self.handle_open, protocol, protocol +
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/urllib/request.py", line 496, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/urllib/request.py", line 1391, in https_open
+    return self.do_open(http.client.HTTPSConnection, req,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/urllib/request.py", line 1351, in do_open
+    raise URLError(err)
+urllib.error.URLError: <urlopen error [Errno 101] Network is unreachable>
+
+Elapsed seconds: 45.671
+Exit code: 1

@@ -1,0 +1,7 @@
+UTC: 2026-11-08T15:14:06.095000+00:00
+Command argv: ['gh', 'pr', 'list', '--repo', 'xinnan369/sigma', '--state', 'merged', '--json', 'number,headRefOid,mergeCommit,mergedAt,baseRefName']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+[{"baseRefName":"main","headRefOid":"aa335e92f10515f5e3698e7b8e63355eda064b14","mergeCommit":{"oid":"83a8d6454a7bd6508e901a0aa13ac133923cb665"},"mergedAt":"2026-11-08T15:06:44Z","number":3},{"baseRefName":"main","headRefOid":"bb45419670f7385c6aca590878b741b8ca9c1879","mergeCommit":{"oid":"9fe51d16ebbb933df7bbedc40b53df86cd5d1901"},"mergedAt":"2026-11-08T15:06:15Z","number":2},{"baseRefName":"main","headRefOid":"3d300624cc5c9022ba83b9b8e059881dc44793d8","mergeCommit":{"oid":"68b7dacce44a995bc821fdbcfd51b64bdef3daec"},"mergedAt":"2026-11-04T12:10:17Z","number":1}]
+
+Elapsed seconds: 2.262
+Exit code: 0

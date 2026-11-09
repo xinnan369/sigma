@@ -1,0 +1,6 @@
+{
+  "training_test_exact_rgb_thermal_pair_duplicates": [],
+  "internal_train_val_exact_rgb_thermal_pair_duplicates": [],
+  "scope": "Exact file SHA256 pairs only; not a guarantee of scene/temporal independence",
+  "test_pixels_reopened": false
+}

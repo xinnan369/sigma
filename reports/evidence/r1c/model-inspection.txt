@@ -1,0 +1,57 @@
+UTC: 2026-11-08T15:13:50.041967+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1c.inspect_model', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--config', 'configs/R1c_pilot.json', '--output', 'reports/evidence/r1c']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+{
+  "scope": "Actual CPU model construction and transfer initialization; no training/evaluation",
+  "initialization": {
+    "missing_keys": [
+      "outnorm0.weight",
+      "outnorm0.bias",
+      "outnorm1.weight",
+      "outnorm1.bias",
+      "outnorm2.weight",
+      "outnorm2.bias",
+      "outnorm3.weight",
+      "outnorm3.bias"
+    ],
+    "unexpected_keys": [
+      "classifier.norm.weight",
+      "classifier.norm.bias",
+      "classifier.head.weight",
+      "classifier.head.bias"
+    ],
+    "strict": false,
+    "scope": "VMamba backbone initialization, not segmentation checkpoint"
+  },
+  "coverage": {
+    "total_numel": 48287360,
+    "legacy_missing_numel": 6407808,
+    "tensor_count": 668,
+    "duplicate_count": 0,
+    "missing_count": 0
+  },
+  "versions": {
+    "torch": "2.2.2",
+    "torchvision": "0.17.2",
+    "timm": "0.4.12",
+    "einops": "0.8.1",
+    "numpy": "1.26.4",
+    "opencv-python": "4.9.0.80",
+    "Pillow": "10.4.0"
+  },
+  "gpu": "NVIDIA GeForce RTX 3090",
+  "cuda_runtime": "12.1",
+  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "upstream_tracked_diff": "clean"
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+08 23:13:45 Using backbone: V-MAMBA
+08 23:13:48 Using Mamba Decoder
+08 23:13:48 Initing weights ...
+
+Elapsed seconds: 13.304
+Exit code: 0

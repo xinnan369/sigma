@@ -1,0 +1,6014 @@
+{
+  "backbone.vssm.patch_embed.0.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.046563148498535,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "backbone.vssm.patch_embed.0.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.36601585149765015,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.patch_embed.2.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.1453419029712677,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.patch_embed.2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.2015739530324936,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.layers.0.blocks.0.norm.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007925800047814846,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.layers.0.blocks.0.norm.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.012321563437581062,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.layers.0.blocks.0.op.x_proj_weight": {
+    "numel": 29184,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.356387734413147,
+    "max_nonzero_gradient_elements": 29184,
+    "max_changed_elements": 29183
+  },
+  "backbone.vssm.layers.0.blocks.0.op.dt_projs_weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.20620422065258026,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4607
+  },
+  "backbone.vssm.layers.0.blocks.0.op.dt_projs_bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.023074865341186523,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.0.blocks.0.op.A_logs": {
+    "numel": 12288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08858302235603333,
+    "max_nonzero_gradient_elements": 12288,
+    "max_changed_elements": 12287
+  },
+  "backbone.vssm.layers.0.blocks.0.op.Ds": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08598082512617111,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.0.blocks.0.op.in_proj.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.6098129153251648,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36864
+  },
+  "backbone.vssm.layers.0.blocks.0.op.conv2d.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.123943328857422,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "backbone.vssm.layers.0.blocks.0.op.conv2d.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.3382404148578644,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.0.blocks.0.op.out_norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.042162470519542694,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.0.blocks.0.op.out_norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.1235998198390007,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.0.blocks.0.op.out_proj.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.3941795825958252,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.vssm.layers.0.blocks.1.norm.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.008860361762344837,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.layers.0.blocks.1.norm.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.019861673936247826,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.layers.0.blocks.1.op.x_proj_weight": {
+    "numel": 29184,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.15778960287570953,
+    "max_nonzero_gradient_elements": 29184,
+    "max_changed_elements": 29183
+  },
+  "backbone.vssm.layers.0.blocks.1.op.dt_projs_weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05004788562655449,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "backbone.vssm.layers.0.blocks.1.op.dt_projs_bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.010728367604315281,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.0.blocks.1.op.A_logs": {
+    "numel": 12288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.026457587257027626,
+    "max_nonzero_gradient_elements": 12288,
+    "max_changed_elements": 12288
+  },
+  "backbone.vssm.layers.0.blocks.1.op.Ds": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03581386059522629,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.0.blocks.1.op.in_proj.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.2917979955673218,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36863
+  },
+  "backbone.vssm.layers.0.blocks.1.op.conv2d.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.2467554360628128,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "backbone.vssm.layers.0.blocks.1.op.conv2d.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08494417369365692,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.0.blocks.1.op.out_norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.013745879754424095,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.0.blocks.1.op.out_norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03348374739289284,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.0.blocks.1.op.out_proj.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.4092347025871277,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.vssm.layers.0.downsample.reduction.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.09925472736358643,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73727
+  },
+  "backbone.vssm.layers.0.downsample.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.018536128103733063,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.0.downsample.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.013976840302348137,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.1.blocks.0.norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004342173226177692,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.1.blocks.0.norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00473064323887229,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.1.blocks.0.op.x_proj_weight": {
+    "numel": 67584,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03223337605595589,
+    "max_nonzero_gradient_elements": 67584,
+    "max_changed_elements": 67581
+  },
+  "backbone.vssm.layers.1.blocks.0.op.dt_projs_weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.019117271527647972,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.vssm.layers.1.blocks.0.op.dt_projs_bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0027837897650897503,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.1.blocks.0.op.A_logs": {
+    "numel": 24576,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005491948686540127,
+    "max_nonzero_gradient_elements": 24576,
+    "max_changed_elements": 24559
+  },
+  "backbone.vssm.layers.1.blocks.0.op.Ds": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006121096201241016,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.1.blocks.0.op.in_proj.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.06975962221622467,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147450
+  },
+  "backbone.vssm.layers.1.blocks.0.op.conv2d.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04154139384627342,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3456
+  },
+  "backbone.vssm.layers.1.blocks.0.op.conv2d.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.023085888475179672,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.1.blocks.0.op.out_norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0036086328327655792,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 383
+  },
+  "backbone.vssm.layers.1.blocks.0.op.out_norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00703402329236269,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.1.blocks.0.op.out_proj.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.09019561111927032,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73727
+  },
+  "backbone.vssm.layers.1.blocks.1.norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004661022685468197,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.1.blocks.1.norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0053138118237257,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.layers.1.blocks.1.op.x_proj_weight": {
+    "numel": 67584,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04196031764149666,
+    "max_nonzero_gradient_elements": 67584,
+    "max_changed_elements": 67580
+  },
+  "backbone.vssm.layers.1.blocks.1.op.dt_projs_weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01914074458181858,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.vssm.layers.1.blocks.1.op.dt_projs_bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004912795498967171,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.1.blocks.1.op.A_logs": {
+    "numel": 24576,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.014825223945081234,
+    "max_nonzero_gradient_elements": 24576,
+    "max_changed_elements": 24576
+  },
+  "backbone.vssm.layers.1.blocks.1.op.Ds": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.013572114519774914,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.1.blocks.1.op.in_proj.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.09077035635709763,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147452
+  },
+  "backbone.vssm.layers.1.blocks.1.op.conv2d.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07058573514223099,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3456
+  },
+  "backbone.vssm.layers.1.blocks.1.op.conv2d.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04051709547638893,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.1.blocks.1.op.out_norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006219027563929558,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.1.blocks.1.op.out_norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03342282399535179,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.1.blocks.1.op.out_proj.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.09797689318656921,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73724
+  },
+  "backbone.vssm.layers.1.downsample.reduction.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.049720849841833115,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294898
+  },
+  "backbone.vssm.layers.1.downsample.norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0184323787689209,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.1.downsample.norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.012374822981655598,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.0.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0029042325913906097,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.0.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003717624582350254,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.0.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.008102442137897015,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172014
+  },
+  "backbone.vssm.layers.2.blocks.0.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00773677509278059,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73718
+  },
+  "backbone.vssm.layers.2.blocks.0.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0003366886230651289,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.0.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0010874447179958224,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 48023
+  },
+  "backbone.vssm.layers.2.blocks.0.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008357104961760342,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.0.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0244133360683918,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589792
+  },
+  "backbone.vssm.layers.2.blocks.0.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.017816388979554176,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.0.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.008515596389770508,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.0.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002213180297985673,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.0.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004560026805847883,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.0.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02517019212245941,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294894
+  },
+  "backbone.vssm.layers.2.blocks.1.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003093919949606061,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.1.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004131985362619162,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.1.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.019400931894779205,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172017
+  },
+  "backbone.vssm.layers.2.blocks.1.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01910647749900818,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73709
+  },
+  "backbone.vssm.layers.2.blocks.1.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0009423968149349093,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.1.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0025894688442349434,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 45329
+  },
+  "backbone.vssm.layers.2.blocks.1.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001171705313026905,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3068
+  },
+  "backbone.vssm.layers.2.blocks.1.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03939121216535568,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589784
+  },
+  "backbone.vssm.layers.2.blocks.1.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02626681514084339,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.1.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01507082674652338,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.1.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004214332439005375,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.1.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006980289239436388,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.1.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03939257562160492,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294900
+  },
+  "backbone.vssm.layers.2.blocks.2.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0023358275648206472,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.2.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0035486973356455564,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.2.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.021177679300308228,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172020
+  },
+  "backbone.vssm.layers.2.blocks.2.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0138159254565835,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73721
+  },
+  "backbone.vssm.layers.2.blocks.2.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007377805304713547,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.2.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003949932288378477,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 48299
+  },
+  "backbone.vssm.layers.2.blocks.2.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0003655856125988066,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3068
+  },
+  "backbone.vssm.layers.2.blocks.2.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03359854966402054,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589790
+  },
+  "backbone.vssm.layers.2.blocks.2.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.020381318405270576,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.2.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009177704341709614,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.2.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002110819797962904,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.2.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004140161443501711,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.2.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.032016512006521225,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294897
+  },
+  "backbone.vssm.layers.2.blocks.3.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0021263347007334232,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 383
+  },
+  "backbone.vssm.layers.2.blocks.3.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0029118936508893967,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.3.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03823170065879822,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172021
+  },
+  "backbone.vssm.layers.2.blocks.3.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01884201169013977,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73720
+  },
+  "backbone.vssm.layers.2.blocks.3.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0009317746153101325,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.3.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003255517454817891,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 48459
+  },
+  "backbone.vssm.layers.2.blocks.3.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004629829782061279,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3068
+  },
+  "backbone.vssm.layers.2.blocks.3.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.031135564669966698,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589791
+  },
+  "backbone.vssm.layers.2.blocks.3.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01917312666773796,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.3.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.008049475960433483,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.3.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001927780918776989,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 767
+  },
+  "backbone.vssm.layers.2.blocks.3.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003923117183148861,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.3.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0284656323492527,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294896
+  },
+  "backbone.vssm.layers.2.blocks.4.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00230087130330503,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.4.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00328457192517817,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.4.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.012894300743937492,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172019
+  },
+  "backbone.vssm.layers.2.blocks.4.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.014277380891144276,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73722
+  },
+  "backbone.vssm.layers.2.blocks.4.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005355719476938248,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.4.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001920771668665111,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 48808
+  },
+  "backbone.vssm.layers.2.blocks.4.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0010791444219648838,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.4.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03754435479640961,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589793
+  },
+  "backbone.vssm.layers.2.blocks.4.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.024932926520705223,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.4.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.013543050736188889,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.4.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0023309909738600254,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.4.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006296146661043167,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.4.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03262621909379959,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294900
+  },
+  "backbone.vssm.layers.2.blocks.5.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0021518960129469633,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.5.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004111038520932198,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.5.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.015218591317534447,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172020
+  },
+  "backbone.vssm.layers.2.blocks.5.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.016011809930205345,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73723
+  },
+  "backbone.vssm.layers.2.blocks.5.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006057191640138626,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.5.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004886677023023367,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 49134
+  },
+  "backbone.vssm.layers.2.blocks.5.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004998893709853292,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3068
+  },
+  "backbone.vssm.layers.2.blocks.5.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04580669105052948,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589794
+  },
+  "backbone.vssm.layers.2.blocks.5.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.026308273896574974,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.5.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.011304809711873531,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.5.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0022306262981146574,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 767
+  },
+  "backbone.vssm.layers.2.blocks.5.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0032169774640351534,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.5.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03325223550200462,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294899
+  },
+  "backbone.vssm.layers.2.blocks.6.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0015127194346860051,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.6.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0023905273992568254,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.6.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.047931864857673645,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172019
+  },
+  "backbone.vssm.layers.2.blocks.6.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01607469469308853,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73722
+  },
+  "backbone.vssm.layers.2.blocks.6.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005215688142925501,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.6.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003709017764776945,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 49013
+  },
+  "backbone.vssm.layers.2.blocks.6.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00024626130471006036,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.6.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.040235988795757294,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589795
+  },
+  "backbone.vssm.layers.2.blocks.6.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.020782072097063065,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.6.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009564416483044624,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.6.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002642890438437462,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 767
+  },
+  "backbone.vssm.layers.2.blocks.6.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003518582321703434,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.6.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.033215608447790146,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294899
+  },
+  "backbone.vssm.layers.2.blocks.7.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0012914742110297084,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.7.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00226791063323617,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.7.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03429215028882027,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172022
+  },
+  "backbone.vssm.layers.2.blocks.7.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02159612998366356,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73723
+  },
+  "backbone.vssm.layers.2.blocks.7.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006632144213654101,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.7.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006448614876717329,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 49146
+  },
+  "backbone.vssm.layers.2.blocks.7.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.000498460023663938,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.7.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.045026395469903946,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589795
+  },
+  "backbone.vssm.layers.2.blocks.7.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.027427654713392258,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.7.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007829961366951466,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.7.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004353661090135574,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.7.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00738301919773221,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.7.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.043551020324230194,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294900
+  },
+  "backbone.vssm.layers.2.blocks.8.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0012309037847444415,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.8.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0016472699353471398,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.layers.2.blocks.8.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.06126827746629715,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172028
+  },
+  "backbone.vssm.layers.2.blocks.8.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.023203512653708458,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73725
+  },
+  "backbone.vssm.layers.2.blocks.8.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0017903527477756143,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.8.op.A_logs": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006204404402524233,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 49091
+  },
+  "backbone.vssm.layers.2.blocks.8.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006088704685680568,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.vssm.layers.2.blocks.8.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04043418541550636,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589787
+  },
+  "backbone.vssm.layers.2.blocks.8.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02955012209713459,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.vssm.layers.2.blocks.8.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005878928117454052,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.8.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002631236333400011,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.8.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00913254078477621,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.2.blocks.8.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03777725249528885,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294904
+  },
+  "backbone.vssm.layers.2.downsample.reduction.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.010117822326719761,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179609
+  },
+  "backbone.vssm.layers.2.downsample.norm.weight": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005532570066861808,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1535
+  },
+  "backbone.vssm.layers.2.downsample.norm.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007676418754272163,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.3.blocks.0.norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004257726250216365,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.3.blocks.0.norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.000569766853004694,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.3.blocks.0.op.x_proj_weight": {
+    "numel": 491520,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009071619249880314,
+    "max_nonzero_gradient_elements": 491520,
+    "max_changed_elements": 491480
+  },
+  "backbone.vssm.layers.3.blocks.0.op.dt_projs_weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.010751927271485329,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294902
+  },
+  "backbone.vssm.layers.3.blocks.0.op.dt_projs_bias": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00037076129228807986,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6144
+  },
+  "backbone.vssm.layers.3.blocks.0.op.A_logs": {
+    "numel": 98304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.000852416327688843,
+    "max_nonzero_gradient_elements": 98304,
+    "max_changed_elements": 98246
+  },
+  "backbone.vssm.layers.3.blocks.0.op.Ds": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 8.954260556492954e-05,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6140
+  },
+  "backbone.vssm.layers.3.blocks.0.op.in_proj.weight": {
+    "numel": 2359296,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.008559538051486015,
+    "max_nonzero_gradient_elements": 2359296,
+    "max_changed_elements": 2359169
+  },
+  "backbone.vssm.layers.3.blocks.0.op.conv2d.weight": {
+    "numel": 13824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009305017068982124,
+    "max_nonzero_gradient_elements": 13824,
+    "max_changed_elements": 13824
+  },
+  "backbone.vssm.layers.3.blocks.0.op.conv2d.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001788428402505815,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.3.blocks.0.op.out_norm.weight": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008953640935942531,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1535
+  },
+  "backbone.vssm.layers.3.blocks.0.op.out_norm.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0022355355322360992,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.3.blocks.0.op.out_proj.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01329574454575777,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179592
+  },
+  "backbone.vssm.layers.3.blocks.1.norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0003007504274137318,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.3.blocks.1.norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00037631046143360436,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.layers.3.blocks.1.op.x_proj_weight": {
+    "numel": 491520,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009953906759619713,
+    "max_nonzero_gradient_elements": 491520,
+    "max_changed_elements": 491493
+  },
+  "backbone.vssm.layers.3.blocks.1.op.dt_projs_weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007507874630391598,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294891
+  },
+  "backbone.vssm.layers.3.blocks.1.op.dt_projs_bias": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00021280191140249372,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6144
+  },
+  "backbone.vssm.layers.3.blocks.1.op.A_logs": {
+    "numel": 98304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007770726224407554,
+    "max_nonzero_gradient_elements": 98304,
+    "max_changed_elements": 98167
+  },
+  "backbone.vssm.layers.3.blocks.1.op.Ds": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 5.016092836740427e-05,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6144
+  },
+  "backbone.vssm.layers.3.blocks.1.op.in_proj.weight": {
+    "numel": 2359296,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0081068966537714,
+    "max_nonzero_gradient_elements": 2359296,
+    "max_changed_elements": 2359181
+  },
+  "backbone.vssm.layers.3.blocks.1.op.conv2d.weight": {
+    "numel": 13824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005993555299937725,
+    "max_nonzero_gradient_elements": 13824,
+    "max_changed_elements": 13824
+  },
+  "backbone.vssm.layers.3.blocks.1.op.conv2d.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008404583786614239,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.3.blocks.1.op.out_norm.weight": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007583429687656462,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1535
+  },
+  "backbone.vssm.layers.3.blocks.1.op.out_norm.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0010892987484112382,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.vssm.layers.3.blocks.1.op.out_proj.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.012155264616012573,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179596
+  },
+  "backbone.vssm.outnorm0.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0478888638317585,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.outnorm0.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.06465655565261841,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "backbone.vssm.outnorm1.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.011510447598993778,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.outnorm1.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.021586429327726364,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.vssm.outnorm2.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007932012900710106,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.outnorm2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007542443927377462,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.vssm.outnorm3.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0012019290588796139,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.vssm.outnorm3.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0018927413038909435,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.0.op.in_proj.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.21204127371311188,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.cross_mamba.0.op.in_proj_modalx.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.2171127051115036,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.cross_mamba.0.op.conv2d.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.09536571055650711,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "backbone.cross_mamba.0.op.conv2d.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07127285748720169,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.0.op.out_proj_rgb.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.3312196433544159,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.cross_mamba.0.op.out_proj_e.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.36822474002838135,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.A_log_1": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 3.973325146944262e-05,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.A_log_2": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00012874121603090316,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.D_1": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.015626994892954826,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.D_2": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01423583272844553,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.x_proj_1.weight": {
+    "numel": 2688,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0022607743740081787,
+    "max_nonzero_gradient_elements": 2688,
+    "max_changed_elements": 2688
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.x_proj_2.weight": {
+    "numel": 2688,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008899245876818895,
+    "max_nonzero_gradient_elements": 2688,
+    "max_changed_elements": 2688
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.dt_proj_1.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 3.603144705266459e-06,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.dt_proj_1.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 8.07807646197034e-06,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.dt_proj_2.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 4.209427061141469e-06,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.dt_proj_2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.1060041288146749e-05,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.out_norm_1.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.015527977608144283,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.out_norm_1.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.017672255635261536,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.out_norm_2.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01503650564700365,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.0.op.CMA_ssm.out_norm_2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.017838377505540848,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.cross_mamba.1.op.in_proj.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.13310223817825317,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73727
+  },
+  "backbone.cross_mamba.1.op.in_proj_modalx.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.1239282414317131,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73723
+  },
+  "backbone.cross_mamba.1.op.conv2d.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03560076653957367,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3456
+  },
+  "backbone.cross_mamba.1.op.conv2d.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02165030874311924,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.cross_mamba.1.op.out_proj_rgb.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.18943379819393158,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73728
+  },
+  "backbone.cross_mamba.1.op.out_proj_e.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.19016465544700623,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73728
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.A_log_1": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.0985007722629234e-05,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.A_log_2": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 5.271481131785549e-05,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1534
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.D_1": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005821324419230223,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.D_2": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006045150570571423,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.x_proj_1.weight": {
+    "numel": 7680,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007377730216830969,
+    "max_nonzero_gradient_elements": 7680,
+    "max_changed_elements": 7680
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.x_proj_2.weight": {
+    "numel": 7680,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005910681211389601,
+    "max_nonzero_gradient_elements": 7680,
+    "max_changed_elements": 7680
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.dt_proj_1.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.063896888808813e-06,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.dt_proj_1.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 3.206997917004628e-06,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 382
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.dt_proj_2.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.950598172901664e-06,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.dt_proj_2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 7.265973636094714e-06,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 383
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.out_norm_1.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005819660145789385,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.out_norm_1.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006031887140125036,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.out_norm_2.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0061170137487351894,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.cross_mamba.1.op.CMA_ssm.out_norm_2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005889587569981813,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.cross_mamba.2.op.in_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03805496171116829,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294906
+  },
+  "backbone.cross_mamba.2.op.in_proj_modalx.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04481104016304016,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294905
+  },
+  "backbone.cross_mamba.2.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00924592837691307,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.cross_mamba.2.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007801355794072151,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.2.op.out_proj_rgb.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07130159437656403,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294908
+  },
+  "backbone.cross_mamba.2.op.out_proj_e.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07824898511171341,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294909
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.A_log_1": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 6.84195447320235e-06,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3070
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.A_log_2": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 4.903411536361091e-06,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.D_1": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0014946451410651207,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.D_2": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0016734435921534896,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.x_proj_1.weight": {
+    "numel": 24576,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0003567699168343097,
+    "max_nonzero_gradient_elements": 24576,
+    "max_changed_elements": 24576
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.x_proj_2.weight": {
+    "numel": 24576,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0003225042310077697,
+    "max_nonzero_gradient_elements": 24576,
+    "max_changed_elements": 24576
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.dt_proj_1.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.4598743973692763e-06,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18428
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.dt_proj_1.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.8994174954277696e-06,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 765
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.dt_proj_2.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 8.861628657541587e-07,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18430
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.dt_proj_2.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.1782606179622235e-06,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 764
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.out_norm_1.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0014990692725405097,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 767
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.out_norm_1.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0020393284503370523,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.out_norm_2.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0016524079255759716,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.2.op.CMA_ssm.out_norm_2.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0020828612614423037,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.cross_mamba.3.op.in_proj.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01622575893998146,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179623
+  },
+  "backbone.cross_mamba.3.op.in_proj_modalx.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.018545597791671753,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179623
+  },
+  "backbone.cross_mamba.3.op.conv2d.weight": {
+    "numel": 13824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0026769365649670362,
+    "max_nonzero_gradient_elements": 13824,
+    "max_changed_elements": 13824
+  },
+  "backbone.cross_mamba.3.op.conv2d.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001955297077074647,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.cross_mamba.3.op.out_proj_rgb.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02884611487388611,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179633
+  },
+  "backbone.cross_mamba.3.op.out_proj_e.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03117308020591736,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179633
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.A_log_1": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.5878973727012635e-06,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6134
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.A_log_2": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.2739218618662562e-05,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6129
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.D_1": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00041983413393609226,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1535
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.D_2": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004662211867980659,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.x_proj_1.weight": {
+    "numel": 86016,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00028511014534160495,
+    "max_nonzero_gradient_elements": 86016,
+    "max_changed_elements": 86015
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.x_proj_2.weight": {
+    "numel": 86016,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004298327839933336,
+    "max_nonzero_gradient_elements": 86016,
+    "max_changed_elements": 86016
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.dt_proj_1.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 7.708276257289981e-07,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73711
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.dt_proj_1.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 7.18394346677087e-07,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1524
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.dt_proj_2.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 4.033259756397456e-06,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73722
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.dt_proj_2.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 6.331240001600236e-06,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1530
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.out_norm_1.weight": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00041336988215334713,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.out_norm_1.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005138600245118141,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.out_norm_2.weight": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004425040679052472,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1535
+  },
+  "backbone.cross_mamba.3.op.CMA_ssm.out_norm_2.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005078816902823746,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.channel_attn_mamba.0.op.x_proj_weight": {
+    "numel": 5376,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007971868035383523,
+    "max_nonzero_gradient_elements": 5376,
+    "max_changed_elements": 5376
+  },
+  "backbone.channel_attn_mamba.0.op.dt_projs_weight": {
+    "numel": 2304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.0750464955199277e-06,
+    "max_nonzero_gradient_elements": 2304,
+    "max_changed_elements": 2304
+  },
+  "backbone.channel_attn_mamba.0.op.dt_projs_bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 4.130016350245569e-06,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 383
+  },
+  "backbone.channel_attn_mamba.0.op.A_logs": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 7.15726419002749e-05,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1534
+  },
+  "backbone.channel_attn_mamba.0.op.Ds": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0062116882763803005,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.channel_attn_mamba.0.op.in_proj.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.06817446649074554,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.channel_attn_mamba.0.op.in_proj_modalx.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07558747380971909,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "backbone.channel_attn_mamba.0.op.conv2d.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01842351444065571,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "backbone.channel_attn_mamba.0.op.conv2d.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.015303767286241055,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.channel_attn_mamba.0.op.conv2d_modalx.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03076513670384884,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "backbone.channel_attn_mamba.0.op.conv2d_modalx.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.013895680196583271,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.channel_attn_mamba.0.op.out_norm1.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005124605726450682,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.channel_attn_mamba.0.op.out_norm1.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006589174270629883,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.channel_attn_mamba.0.op.out_norm2.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007412235252559185,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.channel_attn_mamba.0.op.out_norm2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006236651912331581,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "backbone.channel_attn_mamba.0.op.out_proj.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.24412232637405396,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36864
+  },
+  "backbone.channel_attn_mamba.0.op.fc1.0.weight": {
+    "numel": 2304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006289251148700714,
+    "max_nonzero_gradient_elements": 2304,
+    "max_changed_elements": 2304
+  },
+  "backbone.channel_attn_mamba.0.op.fc1.2.weight": {
+    "numel": 2304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0013732104562222958,
+    "max_nonzero_gradient_elements": 2304,
+    "max_changed_elements": 2304
+  },
+  "backbone.channel_attn_mamba.0.op.fc2.0.weight": {
+    "numel": 2304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00814399030059576,
+    "max_nonzero_gradient_elements": 2304,
+    "max_changed_elements": 2304
+  },
+  "backbone.channel_attn_mamba.0.op.fc2.2.weight": {
+    "numel": 2304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0010753407841548324,
+    "max_nonzero_gradient_elements": 2304,
+    "max_changed_elements": 2304
+  },
+  "backbone.channel_attn_mamba.1.op.x_proj_weight": {
+    "numel": 15360,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0003623806987889111,
+    "max_nonzero_gradient_elements": 15360,
+    "max_changed_elements": 15359
+  },
+  "backbone.channel_attn_mamba.1.op.dt_projs_weight": {
+    "numel": 9216,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 7.415922596010205e-07,
+    "max_nonzero_gradient_elements": 9216,
+    "max_changed_elements": 9214
+  },
+  "backbone.channel_attn_mamba.1.op.dt_projs_bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.577087346049666e-06,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 763
+  },
+  "backbone.channel_attn_mamba.1.op.A_logs": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.1805552023579367e-05,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "backbone.channel_attn_mamba.1.op.Ds": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0019589453004300594,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.channel_attn_mamba.1.op.in_proj.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04308861121535301,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73728
+  },
+  "backbone.channel_attn_mamba.1.op.in_proj_modalx.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04365551099181175,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73728
+  },
+  "backbone.channel_attn_mamba.1.op.conv2d.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.010750499553978443,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3456
+  },
+  "backbone.channel_attn_mamba.1.op.conv2d.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0053550018928945065,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.channel_attn_mamba.1.op.conv2d_modalx.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009606312029063702,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3456
+  },
+  "backbone.channel_attn_mamba.1.op.conv2d_modalx.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004980634432286024,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.channel_attn_mamba.1.op.out_norm1.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002011155942454934,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.channel_attn_mamba.1.op.out_norm1.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002261651447042823,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.channel_attn_mamba.1.op.out_norm2.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0019887778908014297,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.channel_attn_mamba.1.op.out_norm2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0020452362950891256,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "backbone.channel_attn_mamba.1.op.out_proj.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.1320752203464508,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147453
+  },
+  "backbone.channel_attn_mamba.1.op.fc1.0.weight": {
+    "numel": 9216,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0029532168991863728,
+    "max_nonzero_gradient_elements": 9216,
+    "max_changed_elements": 9216
+  },
+  "backbone.channel_attn_mamba.1.op.fc1.2.weight": {
+    "numel": 9216,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008874753257259727,
+    "max_nonzero_gradient_elements": 9216,
+    "max_changed_elements": 9216
+  },
+  "backbone.channel_attn_mamba.1.op.fc2.0.weight": {
+    "numel": 9216,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004208405036479235,
+    "max_nonzero_gradient_elements": 9216,
+    "max_changed_elements": 9216
+  },
+  "backbone.channel_attn_mamba.1.op.fc2.2.weight": {
+    "numel": 9216,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007962753879837692,
+    "max_nonzero_gradient_elements": 9216,
+    "max_changed_elements": 9216
+  },
+  "backbone.channel_attn_mamba.2.op.x_proj_weight": {
+    "numel": 49152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00023868388962000608,
+    "max_nonzero_gradient_elements": 49152,
+    "max_changed_elements": 49152
+  },
+  "backbone.channel_attn_mamba.2.op.dt_projs_weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.4136300023892545e-06,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36853
+  },
+  "backbone.channel_attn_mamba.2.op.dt_projs_bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.9958210941695143e-06,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1531
+  },
+  "backbone.channel_attn_mamba.2.op.A_logs": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 8.44963506096974e-06,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6140
+  },
+  "backbone.channel_attn_mamba.2.op.Ds": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006084697670303285,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.channel_attn_mamba.2.op.in_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.015375307761132717,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294908
+  },
+  "backbone.channel_attn_mamba.2.op.in_proj_modalx.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.016560090705752373,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294903
+  },
+  "backbone.channel_attn_mamba.2.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0025669774040579796,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.channel_attn_mamba.2.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0017735526198521256,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.channel_attn_mamba.2.op.conv2d_modalx.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0027769377920776606,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6912
+  },
+  "backbone.channel_attn_mamba.2.op.conv2d_modalx.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0016135527985170484,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.channel_attn_mamba.2.op.out_norm1.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005378800560720265,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.channel_attn_mamba.2.op.out_norm1.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007267899927683175,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.channel_attn_mamba.2.op.out_norm2.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006854119128547609,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.channel_attn_mamba.2.op.out_norm2.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00072575913509354,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "backbone.channel_attn_mamba.2.op.out_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05454244837164879,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589821
+  },
+  "backbone.channel_attn_mamba.2.op.fc1.0.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0011321655474603176,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36864
+  },
+  "backbone.channel_attn_mamba.2.op.fc1.2.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00029600021662190557,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36862
+  },
+  "backbone.channel_attn_mamba.2.op.fc2.0.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0010415591532364488,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36864
+  },
+  "backbone.channel_attn_mamba.2.op.fc2.2.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00023450342996511608,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36862
+  },
+  "backbone.channel_attn_mamba.3.op.x_proj_weight": {
+    "numel": 172032,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00015046342741698027,
+    "max_nonzero_gradient_elements": 172032,
+    "max_changed_elements": 172031
+  },
+  "backbone.channel_attn_mamba.3.op.dt_projs_weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 5.482158371705736e-07,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147380
+  },
+  "backbone.channel_attn_mamba.3.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 5.474913677971927e-07,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3048
+  },
+  "backbone.channel_attn_mamba.3.op.A_logs": {
+    "numel": 12288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.5561339523628703e-06,
+    "max_nonzero_gradient_elements": 12288,
+    "max_changed_elements": 12270
+  },
+  "backbone.channel_attn_mamba.3.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00015834165969863534,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3070
+  },
+  "backbone.channel_attn_mamba.3.op.in_proj.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0061338539235293865,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179626
+  },
+  "backbone.channel_attn_mamba.3.op.in_proj_modalx.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006915654055774212,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179614
+  },
+  "backbone.channel_attn_mamba.3.op.conv2d.weight": {
+    "numel": 13824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006974269635975361,
+    "max_nonzero_gradient_elements": 13824,
+    "max_changed_elements": 13823
+  },
+  "backbone.channel_attn_mamba.3.op.conv2d.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004134743649046868,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.channel_attn_mamba.3.op.conv2d_modalx.weight": {
+    "numel": 13824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007556175114586949,
+    "max_nonzero_gradient_elements": 13824,
+    "max_changed_elements": 13823
+  },
+  "backbone.channel_attn_mamba.3.op.conv2d_modalx.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004239845147822052,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.channel_attn_mamba.3.op.out_norm1.weight": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0001549543667351827,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1535
+  },
+  "backbone.channel_attn_mamba.3.op.out_norm1.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00017972581554204226,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.channel_attn_mamba.3.op.out_norm2.weight": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00015789653116371483,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1534
+  },
+  "backbone.channel_attn_mamba.3.op.out_norm2.bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00017919745005201548,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "backbone.channel_attn_mamba.3.op.out_proj.weight": {
+    "numel": 2359296,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.021247556433081627,
+    "max_nonzero_gradient_elements": 2359296,
+    "max_changed_elements": 2359273
+  },
+  "backbone.channel_attn_mamba.3.op.fc1.0.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00043322014971636236,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147454
+  },
+  "backbone.channel_attn_mamba.3.op.fc1.2.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00010876238957280293,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147448
+  },
+  "backbone.channel_attn_mamba.3.op.fc2.0.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005340958596207201,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147455
+  },
+  "backbone.channel_attn_mamba.3.op.fc2.2.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00013982411473989487,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147453
+  },
+  "decode_head.layers_up.0.expand.weight": {
+    "numel": 1179648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07500497251749039,
+    "max_nonzero_gradient_elements": 1179648,
+    "max_changed_elements": 1179630
+  },
+  "decode_head.layers_up.0.norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0021316290367394686,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.0.norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0034496772568672895,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.0.scale1": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006598103791475296,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.0.scale2": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006149242166429758,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.0.norm1.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006481324089691043,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.0.norm1.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008016261854209006,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.0.op.x_proj_weight": {
+    "numel": 98304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004233278159517795,
+    "max_nonzero_gradient_elements": 98304,
+    "max_changed_elements": 98303
+  },
+  "decode_head.layers_up.1.blocks.0.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 6.06427192906267e-06,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73708
+  },
+  "decode_head.layers_up.1.blocks.0.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 4.3202785491303075e-06,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3046
+  },
+  "decode_head.layers_up.1.blocks.0.op.A_logs": {
+    "numel": 12288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.481996150687337e-05,
+    "max_nonzero_gradient_elements": 12288,
+    "max_changed_elements": 12271
+  },
+  "decode_head.layers_up.1.blocks.0.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00024914563982747495,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "decode_head.layers_up.1.blocks.0.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0226712916046381,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589813
+  },
+  "decode_head.layers_up.1.blocks.0.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008599776192568243,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6910
+  },
+  "decode_head.layers_up.1.blocks.0.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006965547800064087,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.0.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00046937374281696975,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.0.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005458570667542517,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.0.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01940571516752243,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294908
+  },
+  "decode_head.layers_up.1.blocks.0.conv_blk.cab.0.weight": {
+    "numel": 442368,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07501830905675888,
+    "max_nonzero_gradient_elements": 442368,
+    "max_changed_elements": 442359
+  },
+  "decode_head.layers_up.1.blocks.0.conv_blk.cab.0.bias": {
+    "numel": 128,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0016355813713744283,
+    "max_nonzero_gradient_elements": 128,
+    "max_changed_elements": 128
+  },
+  "decode_head.layers_up.1.blocks.0.conv_blk.cab.2.weight": {
+    "numel": 442368,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05816340819001198,
+    "max_nonzero_gradient_elements": 442368,
+    "max_changed_elements": 442354
+  },
+  "decode_head.layers_up.1.blocks.0.conv_blk.cab.2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0021540981251746416,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.0.conv_blk.cab.3.fc.0.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.028493424877524376,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "decode_head.layers_up.1.blocks.0.conv_blk.cab.3.fc.2.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005817176774144173,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4607
+  },
+  "decode_head.layers_up.1.blocks.0.norm2.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001698270090855658,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.0.norm2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0022959045600146055,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.1.scale1": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006731071975082159,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.1.scale2": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0062895724549889565,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.1.norm1.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005226552602835,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.1.norm1.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007277178228832781,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.1.op.x_proj_weight": {
+    "numel": 98304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00043085982906632125,
+    "max_nonzero_gradient_elements": 98304,
+    "max_changed_elements": 98302
+  },
+  "decode_head.layers_up.1.blocks.1.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 4.056658326589968e-06,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73713
+  },
+  "decode_head.layers_up.1.blocks.1.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.6484576665097848e-06,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3051
+  },
+  "decode_head.layers_up.1.blocks.1.op.A_logs": {
+    "numel": 12288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.2832419088226743e-05,
+    "max_nonzero_gradient_elements": 12288,
+    "max_changed_elements": 12272
+  },
+  "decode_head.layers_up.1.blocks.1.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00022169660951476544,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "decode_head.layers_up.1.blocks.1.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.019324006512761116,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589811
+  },
+  "decode_head.layers_up.1.blocks.1.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0009255675249733031,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6911
+  },
+  "decode_head.layers_up.1.blocks.1.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006289619486778975,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.1.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004080494400113821,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.1.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005475321668200195,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.1.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01983354054391384,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294910
+  },
+  "decode_head.layers_up.1.blocks.1.conv_blk.cab.0.weight": {
+    "numel": 442368,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08336395770311356,
+    "max_nonzero_gradient_elements": 442368,
+    "max_changed_elements": 442359
+  },
+  "decode_head.layers_up.1.blocks.1.conv_blk.cab.0.bias": {
+    "numel": 128,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0017084350110962987,
+    "max_nonzero_gradient_elements": 128,
+    "max_changed_elements": 128
+  },
+  "decode_head.layers_up.1.blocks.1.conv_blk.cab.2.weight": {
+    "numel": 442368,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.06541938334703445,
+    "max_nonzero_gradient_elements": 442368,
+    "max_changed_elements": 442358
+  },
+  "decode_head.layers_up.1.blocks.1.conv_blk.cab.2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0020430893637239933,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.1.conv_blk.cab.3.fc.0.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.030414165928959846,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "decode_head.layers_up.1.blocks.1.conv_blk.cab.3.fc.2.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005605463869869709,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4607
+  },
+  "decode_head.layers_up.1.blocks.1.norm2.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002089880406856537,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.1.norm2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0023650876246392727,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.2.scale1": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006882532499730587,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.2.scale2": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006666302215307951,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.2.norm1.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.000574718986172229,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.2.norm1.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006302754045464098,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.2.op.x_proj_weight": {
+    "numel": 98304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0002664453350007534,
+    "max_nonzero_gradient_elements": 98304,
+    "max_changed_elements": 98303
+  },
+  "decode_head.layers_up.1.blocks.2.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 3.289388587290887e-06,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73710
+  },
+  "decode_head.layers_up.1.blocks.2.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.613249307614751e-06,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3048
+  },
+  "decode_head.layers_up.1.blocks.2.op.A_logs": {
+    "numel": 12288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.0412405572424177e-05,
+    "max_nonzero_gradient_elements": 12288,
+    "max_changed_elements": 12266
+  },
+  "decode_head.layers_up.1.blocks.2.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00016704095469322056,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "decode_head.layers_up.1.blocks.2.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.017390508204698563,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589810
+  },
+  "decode_head.layers_up.1.blocks.2.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008581426227465272,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6911
+  },
+  "decode_head.layers_up.1.blocks.2.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006711237947456539,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.2.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00030962677556090057,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.2.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004899545456282794,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.2.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01633596420288086,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294911
+  },
+  "decode_head.layers_up.1.blocks.2.conv_blk.cab.0.weight": {
+    "numel": 442368,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0784997045993805,
+    "max_nonzero_gradient_elements": 442368,
+    "max_changed_elements": 442365
+  },
+  "decode_head.layers_up.1.blocks.2.conv_blk.cab.0.bias": {
+    "numel": 128,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0016168007859960198,
+    "max_nonzero_gradient_elements": 128,
+    "max_changed_elements": 128
+  },
+  "decode_head.layers_up.1.blocks.2.conv_blk.cab.2.weight": {
+    "numel": 442368,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05307659134268761,
+    "max_nonzero_gradient_elements": 442368,
+    "max_changed_elements": 442358
+  },
+  "decode_head.layers_up.1.blocks.2.conv_blk.cab.2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0019999216310679913,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.2.conv_blk.cab.3.fc.0.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02161884494125843,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "decode_head.layers_up.1.blocks.2.conv_blk.cab.3.fc.2.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0050441185012459755,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4606
+  },
+  "decode_head.layers_up.1.blocks.2.norm2.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0017509234603494406,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.2.norm2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0021456321701407433,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.3.scale1": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00690655829384923,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.3.scale2": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006532379426062107,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.3.norm1.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005144931492395699,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.3.norm1.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006625622045248747,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.3.op.x_proj_weight": {
+    "numel": 98304,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0003935445274692029,
+    "max_nonzero_gradient_elements": 98304,
+    "max_changed_elements": 98304
+  },
+  "decode_head.layers_up.1.blocks.3.op.dt_projs_weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 4.169139174337033e-06,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73710
+  },
+  "decode_head.layers_up.1.blocks.3.op.dt_projs_bias": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.8042188660037937e-06,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3047
+  },
+  "decode_head.layers_up.1.blocks.3.op.A_logs": {
+    "numel": 12288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.0325875337002799e-05,
+    "max_nonzero_gradient_elements": 12288,
+    "max_changed_elements": 12269
+  },
+  "decode_head.layers_up.1.blocks.3.op.Ds": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00022223356063477695,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "decode_head.layers_up.1.blocks.3.op.in_proj.weight": {
+    "numel": 589824,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.018862668424844742,
+    "max_nonzero_gradient_elements": 589824,
+    "max_changed_elements": 589813
+  },
+  "decode_head.layers_up.1.blocks.3.op.conv2d.weight": {
+    "numel": 6912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007561190286651254,
+    "max_nonzero_gradient_elements": 6912,
+    "max_changed_elements": 6911
+  },
+  "decode_head.layers_up.1.blocks.3.op.conv2d.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0004981638048775494,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.3.op.out_norm.weight": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00042077593388967216,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.3.op.out_norm.bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00043009474757127464,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.1.blocks.3.op.out_proj.weight": {
+    "numel": 294912,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.021505659446120262,
+    "max_nonzero_gradient_elements": 294912,
+    "max_changed_elements": 294907
+  },
+  "decode_head.layers_up.1.blocks.3.conv_blk.cab.0.weight": {
+    "numel": 442368,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08488013595342636,
+    "max_nonzero_gradient_elements": 442368,
+    "max_changed_elements": 442358
+  },
+  "decode_head.layers_up.1.blocks.3.conv_blk.cab.0.bias": {
+    "numel": 128,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0016971996519714594,
+    "max_nonzero_gradient_elements": 128,
+    "max_changed_elements": 128
+  },
+  "decode_head.layers_up.1.blocks.3.conv_blk.cab.2.weight": {
+    "numel": 442368,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.06458310782909393,
+    "max_nonzero_gradient_elements": 442368,
+    "max_changed_elements": 442350
+  },
+  "decode_head.layers_up.1.blocks.3.conv_blk.cab.2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0022036461159586906,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.3.conv_blk.cab.3.fc.0.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02687910571694374,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "decode_head.layers_up.1.blocks.3.conv_blk.cab.3.fc.2.weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00664976891130209,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "decode_head.layers_up.1.blocks.3.norm2.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002046584850177169,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.blocks.3.norm2.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0023799496702849865,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.1.upsample.linear.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.2614556550979614,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73728
+  },
+  "decode_head.layers_up.1.upsample.norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009812099859118462,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.1.upsample.norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.010303393006324768,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.0.scale1": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.017895905300974846,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.0.scale2": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.014757584780454636,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.0.norm1.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0017219799337908626,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.0.norm1.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002421012381091714,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.0.op.x_proj_weight": {
+    "numel": 30720,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0006406360771507025,
+    "max_nonzero_gradient_elements": 30720,
+    "max_changed_elements": 30720
+  },
+  "decode_head.layers_up.2.blocks.0.op.dt_projs_weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 7.121964245015988e-06,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18429
+  },
+  "decode_head.layers_up.2.blocks.0.op.dt_projs_bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 4.888971034233691e-06,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1528
+  },
+  "decode_head.layers_up.2.blocks.0.op.A_logs": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 3.510461829137057e-05,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6139
+  },
+  "decode_head.layers_up.2.blocks.0.op.Ds": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007834736607037485,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "decode_head.layers_up.2.blocks.0.op.in_proj.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.054791271686553955,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147452
+  },
+  "decode_head.layers_up.2.blocks.0.op.conv2d.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0045967851765453815,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3456
+  },
+  "decode_head.layers_up.2.blocks.0.op.conv2d.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002163391327485442,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.0.op.out_norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0015766894211992621,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.0.op.out_norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001797163626179099,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.0.op.out_proj.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05876828357577324,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73728
+  },
+  "decode_head.layers_up.2.blocks.0.conv_blk.cab.0.weight": {
+    "numel": 110592,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.30939391255378723,
+    "max_nonzero_gradient_elements": 110592,
+    "max_changed_elements": 110589
+  },
+  "decode_head.layers_up.2.blocks.0.conv_blk.cab.0.bias": {
+    "numel": 64,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007817222736775875,
+    "max_nonzero_gradient_elements": 64,
+    "max_changed_elements": 64
+  },
+  "decode_head.layers_up.2.blocks.0.conv_blk.cab.2.weight": {
+    "numel": 110592,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.12057167291641235,
+    "max_nonzero_gradient_elements": 110592,
+    "max_changed_elements": 110589
+  },
+  "decode_head.layers_up.2.blocks.0.conv_blk.cab.2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007293756119906902,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.0.conv_blk.cab.3.fc.0.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.06900981068611145,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "decode_head.layers_up.2.blocks.0.conv_blk.cab.3.fc.2.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005349012091755867,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "decode_head.layers_up.2.blocks.0.norm2.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007225882261991501,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.0.norm2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.010624285787343979,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.1.scale1": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01666100323200226,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.1.scale2": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.013737506233155727,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.1.norm1.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0020857432391494513,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.1.norm1.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0026072554755955935,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.1.op.x_proj_weight": {
+    "numel": 30720,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0005014802445657551,
+    "max_nonzero_gradient_elements": 30720,
+    "max_changed_elements": 30720
+  },
+  "decode_head.layers_up.2.blocks.1.op.dt_projs_weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.5933732129269629e-06,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18430
+  },
+  "decode_head.layers_up.2.blocks.1.op.dt_projs_bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.0730340111185797e-06,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1529
+  },
+  "decode_head.layers_up.2.blocks.1.op.A_logs": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 2.7917731131310575e-05,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6142
+  },
+  "decode_head.layers_up.2.blocks.1.op.Ds": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.000636594370007515,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "decode_head.layers_up.2.blocks.1.op.in_proj.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05516207963228226,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147453
+  },
+  "decode_head.layers_up.2.blocks.1.op.conv2d.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0030618703458458185,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3456
+  },
+  "decode_head.layers_up.2.blocks.1.op.conv2d.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002026078524067998,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.1.op.out_norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0013173262123018503,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.1.op.out_norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0015922533348202705,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.1.op.out_proj.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03990281745791435,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73727
+  },
+  "decode_head.layers_up.2.blocks.1.conv_blk.cab.0.weight": {
+    "numel": 110592,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.3010380268096924,
+    "max_nonzero_gradient_elements": 110592,
+    "max_changed_elements": 110592
+  },
+  "decode_head.layers_up.2.blocks.1.conv_blk.cab.0.bias": {
+    "numel": 64,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007984096184372902,
+    "max_nonzero_gradient_elements": 64,
+    "max_changed_elements": 64
+  },
+  "decode_head.layers_up.2.blocks.1.conv_blk.cab.2.weight": {
+    "numel": 110592,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.242545485496521,
+    "max_nonzero_gradient_elements": 110592,
+    "max_changed_elements": 110588
+  },
+  "decode_head.layers_up.2.blocks.1.conv_blk.cab.2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009128435514867306,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.1.conv_blk.cab.3.fc.0.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.15301184356212616,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "decode_head.layers_up.2.blocks.1.conv_blk.cab.3.fc.2.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005636908113956451,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "decode_head.layers_up.2.blocks.1.norm2.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.008715814910829067,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.1.norm2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.011747780255973339,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.2.scale1": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.016763754189014435,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.2.scale2": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01738518290221691,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.2.norm1.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0021741397213190794,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.2.norm1.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0027150323148816824,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.2.op.x_proj_weight": {
+    "numel": 30720,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007868831162340939,
+    "max_nonzero_gradient_elements": 30720,
+    "max_changed_elements": 30720
+  },
+  "decode_head.layers_up.2.blocks.2.op.dt_projs_weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 8.209559382521547e-06,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18429
+  },
+  "decode_head.layers_up.2.blocks.2.op.dt_projs_bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 6.908429895702284e-06,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1530
+  },
+  "decode_head.layers_up.2.blocks.2.op.A_logs": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 5.706576848751865e-05,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6139
+  },
+  "decode_head.layers_up.2.blocks.2.op.Ds": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0008334667072631419,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "decode_head.layers_up.2.blocks.2.op.in_proj.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.06659973412752151,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147453
+  },
+  "decode_head.layers_up.2.blocks.2.op.conv2d.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0029235584661364555,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3456
+  },
+  "decode_head.layers_up.2.blocks.2.op.conv2d.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0019254388753324747,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.2.op.out_norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0016829390078783035,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.2.op.out_norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001737701939418912,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.2.op.out_proj.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.045418135821819305,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73728
+  },
+  "decode_head.layers_up.2.blocks.2.conv_blk.cab.0.weight": {
+    "numel": 110592,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.24806877970695496,
+    "max_nonzero_gradient_elements": 110592,
+    "max_changed_elements": 110590
+  },
+  "decode_head.layers_up.2.blocks.2.conv_blk.cab.0.bias": {
+    "numel": 64,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00630420446395874,
+    "max_nonzero_gradient_elements": 64,
+    "max_changed_elements": 64
+  },
+  "decode_head.layers_up.2.blocks.2.conv_blk.cab.2.weight": {
+    "numel": 110592,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.14511840045452118,
+    "max_nonzero_gradient_elements": 110592,
+    "max_changed_elements": 110590
+  },
+  "decode_head.layers_up.2.blocks.2.conv_blk.cab.2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005908659193664789,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.2.conv_blk.cab.3.fc.0.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03636935353279114,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "decode_head.layers_up.2.blocks.2.conv_blk.cab.3.fc.2.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.010053067468106747,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "decode_head.layers_up.2.blocks.2.norm2.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009943898767232895,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.2.norm2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.008502591401338577,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.3.scale1": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.020913029089570045,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.3.scale2": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.019512679427862167,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.3.norm1.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002828984521329403,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.3.norm1.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0025727953761816025,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.3.op.x_proj_weight": {
+    "numel": 30720,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00045399117516353726,
+    "max_nonzero_gradient_elements": 30720,
+    "max_changed_elements": 30720
+  },
+  "decode_head.layers_up.2.blocks.3.op.dt_projs_weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.291389071411686e-05,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18427
+  },
+  "decode_head.layers_up.2.blocks.3.op.dt_projs_bias": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.4585195458494127e-05,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1526
+  },
+  "decode_head.layers_up.2.blocks.3.op.A_logs": {
+    "numel": 6144,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 8.870395686244592e-05,
+    "max_nonzero_gradient_elements": 6144,
+    "max_changed_elements": 6141
+  },
+  "decode_head.layers_up.2.blocks.3.op.Ds": {
+    "numel": 1536,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0007490396965295076,
+    "max_nonzero_gradient_elements": 1536,
+    "max_changed_elements": 1536
+  },
+  "decode_head.layers_up.2.blocks.3.op.in_proj.weight": {
+    "numel": 147456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05691426619887352,
+    "max_nonzero_gradient_elements": 147456,
+    "max_changed_elements": 147454
+  },
+  "decode_head.layers_up.2.blocks.3.op.conv2d.weight": {
+    "numel": 3456,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0027584577910602093,
+    "max_nonzero_gradient_elements": 3456,
+    "max_changed_elements": 3455
+  },
+  "decode_head.layers_up.2.blocks.3.op.conv2d.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0015841281274333596,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.3.op.out_norm.weight": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001384014030918479,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.3.op.out_norm.bias": {
+    "numel": 384,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0013500654604285955,
+    "max_nonzero_gradient_elements": 384,
+    "max_changed_elements": 384
+  },
+  "decode_head.layers_up.2.blocks.3.op.out_proj.weight": {
+    "numel": 73728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.043292734771966934,
+    "max_nonzero_gradient_elements": 73728,
+    "max_changed_elements": 73727
+  },
+  "decode_head.layers_up.2.blocks.3.conv_blk.cab.0.weight": {
+    "numel": 110592,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.1881643533706665,
+    "max_nonzero_gradient_elements": 110592,
+    "max_changed_elements": 110588
+  },
+  "decode_head.layers_up.2.blocks.3.conv_blk.cab.0.bias": {
+    "numel": 64,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004720183555036783,
+    "max_nonzero_gradient_elements": 64,
+    "max_changed_elements": 64
+  },
+  "decode_head.layers_up.2.blocks.3.conv_blk.cab.2.weight": {
+    "numel": 110592,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.11853175610303879,
+    "max_nonzero_gradient_elements": 110592,
+    "max_changed_elements": 110588
+  },
+  "decode_head.layers_up.2.blocks.3.conv_blk.cab.2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005021924152970314,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.3.conv_blk.cab.3.fc.0.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.033598288893699646,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "decode_head.layers_up.2.blocks.3.conv_blk.cab.3.fc.2.weight": {
+    "numel": 1152,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.008494637906551361,
+    "max_nonzero_gradient_elements": 1152,
+    "max_changed_elements": 1152
+  },
+  "decode_head.layers_up.2.blocks.3.norm2.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007022109813988209,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.blocks.3.norm2.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0061863744631409645,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.2.upsample.linear.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.6292810440063477,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "decode_head.layers_up.2.upsample.norm.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03512180969119072,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.2.upsample.norm.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.03011423908174038,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.0.scale1": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05542738363146782,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.0.scale2": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04955222085118294,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.0.norm1.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006373315118253231,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.0.norm1.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.009158642031252384,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.0.op.x_proj_weight": {
+    "numel": 10752,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0011282312916591763,
+    "max_nonzero_gradient_elements": 10752,
+    "max_changed_elements": 10752
+  },
+  "decode_head.layers_up.3.blocks.0.op.dt_projs_weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 7.032934263406787e-06,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4607
+  },
+  "decode_head.layers_up.3.blocks.0.op.dt_projs_bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 8.217456525017042e-06,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 760
+  },
+  "decode_head.layers_up.3.blocks.0.op.A_logs": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 9.68467429629527e-05,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3071
+  },
+  "decode_head.layers_up.3.blocks.0.op.Ds": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002461477415636182,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.3.blocks.0.op.in_proj.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.12133947759866714,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36864
+  },
+  "decode_head.layers_up.3.blocks.0.op.conv2d.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0097130062058568,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "decode_head.layers_up.3.blocks.0.op.conv2d.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0061471546068787575,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.0.op.out_norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004581574350595474,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.0.op.out_norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004899115767329931,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.0.op.out_proj.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.10975759476423264,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "decode_head.layers_up.3.blocks.0.conv_blk.cab.0.weight": {
+    "numel": 27648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.4666370749473572,
+    "max_nonzero_gradient_elements": 27648,
+    "max_changed_elements": 27647
+  },
+  "decode_head.layers_up.3.blocks.0.conv_blk.cab.0.bias": {
+    "numel": 32,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.018580330535769463,
+    "max_nonzero_gradient_elements": 32,
+    "max_changed_elements": 32
+  },
+  "decode_head.layers_up.3.blocks.0.conv_blk.cab.2.weight": {
+    "numel": 27648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.5067548751831055,
+    "max_nonzero_gradient_elements": 27648,
+    "max_changed_elements": 27647
+  },
+  "decode_head.layers_up.3.blocks.0.conv_blk.cab.2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.022018490359187126,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.0.conv_blk.cab.3.fc.0.weight": {
+    "numel": 288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.2454334795475006,
+    "max_nonzero_gradient_elements": 288,
+    "max_changed_elements": 288
+  },
+  "decode_head.layers_up.3.blocks.0.conv_blk.cab.3.fc.2.weight": {
+    "numel": 288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.04816775396466255,
+    "max_nonzero_gradient_elements": 282,
+    "max_changed_elements": 288
+  },
+  "decode_head.layers_up.3.blocks.0.norm2.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01829846389591694,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.0.norm2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.024559423327445984,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.1.scale1": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0659702867269516,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.1.scale2": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.066998690366745,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.1.norm1.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005837671924382448,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.1.norm1.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.006521148607134819,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.1.op.x_proj_weight": {
+    "numel": 10752,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0011971821077167988,
+    "max_nonzero_gradient_elements": 10752,
+    "max_changed_elements": 10752
+  },
+  "decode_head.layers_up.3.blocks.1.op.dt_projs_weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.3071774446871132e-05,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "decode_head.layers_up.3.blocks.1.op.dt_projs_bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.4514918802888133e-05,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 765
+  },
+  "decode_head.layers_up.3.blocks.1.op.A_logs": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00020495100761763752,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3071
+  },
+  "decode_head.layers_up.3.blocks.1.op.Ds": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.001618828042410314,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.3.blocks.1.op.in_proj.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.09229572117328644,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36863
+  },
+  "decode_head.layers_up.3.blocks.1.op.conv2d.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007469309028238058,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "decode_head.layers_up.3.blocks.1.op.conv2d.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004873431287705898,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.1.op.out_norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003603531513363123,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.1.op.out_norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0053767068311572075,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.1.op.out_proj.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.10693154484033585,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "decode_head.layers_up.3.blocks.1.conv_blk.cab.0.weight": {
+    "numel": 27648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.49873027205467224,
+    "max_nonzero_gradient_elements": 27648,
+    "max_changed_elements": 27648
+  },
+  "decode_head.layers_up.3.blocks.1.conv_blk.cab.0.bias": {
+    "numel": 32,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01888761669397354,
+    "max_nonzero_gradient_elements": 32,
+    "max_changed_elements": 32
+  },
+  "decode_head.layers_up.3.blocks.1.conv_blk.cab.2.weight": {
+    "numel": 27648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.3052685856819153,
+    "max_nonzero_gradient_elements": 27648,
+    "max_changed_elements": 27648
+  },
+  "decode_head.layers_up.3.blocks.1.conv_blk.cab.2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.020542241632938385,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.1.conv_blk.cab.3.fc.0.weight": {
+    "numel": 288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0853159949183464,
+    "max_nonzero_gradient_elements": 288,
+    "max_changed_elements": 288
+  },
+  "decode_head.layers_up.3.blocks.1.conv_blk.cab.3.fc.2.weight": {
+    "numel": 288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.05463503673672676,
+    "max_nonzero_gradient_elements": 282,
+    "max_changed_elements": 288
+  },
+  "decode_head.layers_up.3.blocks.1.norm2.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.01908314973115921,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.1.norm2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.024965636432170868,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.2.scale1": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08089911192655563,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.2.scale2": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07677577435970306,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.2.norm1.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0061158169992268085,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.2.norm1.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.007342081051319838,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.2.op.x_proj_weight": {
+    "numel": 10752,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0024143175687640905,
+    "max_nonzero_gradient_elements": 10752,
+    "max_changed_elements": 10752
+  },
+  "decode_head.layers_up.3.blocks.2.op.dt_projs_weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.3567362657340709e-05,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "decode_head.layers_up.3.blocks.2.op.dt_projs_bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.627745950827375e-05,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 767
+  },
+  "decode_head.layers_up.3.blocks.2.op.A_logs": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0001366264041280374,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3072
+  },
+  "decode_head.layers_up.3.blocks.2.op.Ds": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002063372638076544,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.3.blocks.2.op.in_proj.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.11791042238473892,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36863
+  },
+  "decode_head.layers_up.3.blocks.2.op.conv2d.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0074063935317099094,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "decode_head.layers_up.3.blocks.2.op.conv2d.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0053157564252614975,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.2.op.out_norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0038223639130592346,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.2.op.out_norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004471876658499241,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.2.op.out_proj.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.1399810016155243,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "decode_head.layers_up.3.blocks.2.conv_blk.cab.0.weight": {
+    "numel": 27648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.4360656142234802,
+    "max_nonzero_gradient_elements": 27648,
+    "max_changed_elements": 27648
+  },
+  "decode_head.layers_up.3.blocks.2.conv_blk.cab.0.bias": {
+    "numel": 32,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.016206953674554825,
+    "max_nonzero_gradient_elements": 32,
+    "max_changed_elements": 32
+  },
+  "decode_head.layers_up.3.blocks.2.conv_blk.cab.2.weight": {
+    "numel": 27648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.27146223187446594,
+    "max_nonzero_gradient_elements": 27648,
+    "max_changed_elements": 27648
+  },
+  "decode_head.layers_up.3.blocks.2.conv_blk.cab.2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.017434271052479744,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.2.conv_blk.cab.3.fc.0.weight": {
+    "numel": 288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.12242349237203598,
+    "max_nonzero_gradient_elements": 288,
+    "max_changed_elements": 288
+  },
+  "decode_head.layers_up.3.blocks.2.conv_blk.cab.3.fc.2.weight": {
+    "numel": 288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02466769516468048,
+    "max_nonzero_gradient_elements": 288,
+    "max_changed_elements": 288
+  },
+  "decode_head.layers_up.3.blocks.2.norm2.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.018327413126826286,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.2.norm2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.023249676451086998,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.3.scale1": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08141569793224335,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.3.scale2": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.076014444231987,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.3.norm1.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.003547262167558074,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.3.norm1.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.005236111115664244,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.3.op.x_proj_weight": {
+    "numel": 10752,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0015347482403740287,
+    "max_nonzero_gradient_elements": 10752,
+    "max_changed_elements": 10752
+  },
+  "decode_head.layers_up.3.blocks.3.op.dt_projs_weight": {
+    "numel": 4608,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 3.2957896110019647e-06,
+    "max_nonzero_gradient_elements": 4608,
+    "max_changed_elements": 4608
+  },
+  "decode_head.layers_up.3.blocks.3.op.dt_projs_bias": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 7.762095265206881e-06,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 766
+  },
+  "decode_head.layers_up.3.blocks.3.op.A_logs": {
+    "numel": 3072,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 6.208877312019467e-05,
+    "max_nonzero_gradient_elements": 3072,
+    "max_changed_elements": 3071
+  },
+  "decode_head.layers_up.3.blocks.3.op.Ds": {
+    "numel": 768,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0014051093021407723,
+    "max_nonzero_gradient_elements": 768,
+    "max_changed_elements": 768
+  },
+  "decode_head.layers_up.3.blocks.3.op.in_proj.weight": {
+    "numel": 36864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08744194358587265,
+    "max_nonzero_gradient_elements": 36864,
+    "max_changed_elements": 36864
+  },
+  "decode_head.layers_up.3.blocks.3.op.conv2d.weight": {
+    "numel": 1728,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.00716691929847002,
+    "max_nonzero_gradient_elements": 1728,
+    "max_changed_elements": 1728
+  },
+  "decode_head.layers_up.3.blocks.3.op.conv2d.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.004657369572669268,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.3.op.out_norm.weight": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.002675898838788271,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.3.op.out_norm.bias": {
+    "numel": 192,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0036234857980161905,
+    "max_nonzero_gradient_elements": 192,
+    "max_changed_elements": 192
+  },
+  "decode_head.layers_up.3.blocks.3.op.out_proj.weight": {
+    "numel": 18432,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.07130416482686996,
+    "max_nonzero_gradient_elements": 18432,
+    "max_changed_elements": 18432
+  },
+  "decode_head.layers_up.3.blocks.3.conv_blk.cab.0.weight": {
+    "numel": 27648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.44911009073257446,
+    "max_nonzero_gradient_elements": 27648,
+    "max_changed_elements": 27647
+  },
+  "decode_head.layers_up.3.blocks.3.conv_blk.cab.0.bias": {
+    "numel": 32,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.016621209681034088,
+    "max_nonzero_gradient_elements": 32,
+    "max_changed_elements": 32
+  },
+  "decode_head.layers_up.3.blocks.3.conv_blk.cab.2.weight": {
+    "numel": 27648,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.2335771769285202,
+    "max_nonzero_gradient_elements": 27648,
+    "max_changed_elements": 27648
+  },
+  "decode_head.layers_up.3.blocks.3.conv_blk.cab.2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.019802408292889595,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.3.conv_blk.cab.3.fc.0.weight": {
+    "numel": 288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08450029790401459,
+    "max_nonzero_gradient_elements": 288,
+    "max_changed_elements": 288
+  },
+  "decode_head.layers_up.3.blocks.3.conv_blk.cab.3.fc.2.weight": {
+    "numel": 288,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.02093605324625969,
+    "max_nonzero_gradient_elements": 288,
+    "max_changed_elements": 288
+  },
+  "decode_head.layers_up.3.blocks.3.norm2.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.020607873797416687,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.layers_up.3.blocks.3.norm2.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0227207038551569,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.norm_up.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.08179102092981339,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.norm_up.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.0864708423614502,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.up.linear1.weight": {
+    "numel": 9216,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.478824257850647,
+    "max_nonzero_gradient_elements": 9216,
+    "max_changed_elements": 9216
+  },
+  "decode_head.up.linear2.weight": {
+    "numel": 9216,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 1.4989750385284424,
+    "max_nonzero_gradient_elements": 9216,
+    "max_changed_elements": 9216
+  },
+  "decode_head.up.norm.weight": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.09565714001655579,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.up.norm.bias": {
+    "numel": 96,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.10079088062047958,
+    "max_nonzero_gradient_elements": 96,
+    "max_changed_elements": 96
+  },
+  "decode_head.output.weight": {
+    "numel": 864,
+    "gradient_seen": true,
+    "nonzero_seen": true,
+    "changed_seen": true,
+    "max_grad_l2": 0.6620801687240601,
+    "max_nonzero_gradient_elements": 864,
+    "max_changed_elements": 864
+  }
+}
