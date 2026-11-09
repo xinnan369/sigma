@@ -1,0 +1,10 @@
+UTC: 2026-11-09T14:11:48.175571+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'sha256sum', '<LINUX_HOME>/sigma-r1d-runs/epoch1-seed3407/checkpoints/last.pt']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+22cd84f647f6088e0d02f138e0dee98392ae5d0f74452ad00f02f2a8c8e6761b  <LINUX_HOME>/sigma-r1d-runs/epoch1-seed3407/checkpoints/last.pt
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 1.844
+Exit code: 0

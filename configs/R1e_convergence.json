@@ -1,0 +1,12 @@
+{
+  "version": "r1e-convergence-v1",
+  "max_epoch": 5,
+  "gate_epoch": 3,
+  "checkpoint_every_updates": 32,
+  "parent_checkpoint_sha256": "22cd84f647f6088e0d02f138e0dee98392ae5d0f74452ad00f02f2a8c8e6761b",
+  "best_metric": "miou_including_0",
+  "gate_max_miou_drop": 0.03,
+  "gate_loss_relative_slack": 0.2,
+  "gate_loss_absolute_slack": 0.02,
+  "gate_max_background_prediction": 0.98
+}

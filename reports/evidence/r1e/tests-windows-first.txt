@@ -1,0 +1,46 @@
+UTC: 2026-11-09T13:27:09.199061+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'pytest', '-q', 'tests']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+............................s.F.................                         [100%]
+================================== FAILURES ===================================
+___________ test_native_restore_preserves_adamw_rng_and_next_epoch ____________
+
+tmp_path = WindowsPath('<HOME>/AppData/Local/Temp/pytest-of-<LOCAL_USER>/pytest-148/test_native_restore_preserves_0')
+
+    def test_native_restore_preserves_adamw_rng_and_next_epoch(tmp_path):
+        original = setup()
+        for _ in range(STEPS):
+            original[3].next_window(8)
+            step(*original[:3])
+        path = tmp_path / 'last.pt'
+        save(path, *original, {'updates': STEPS}, [{'epoch': 1}], {'protocol': 'fixture'})
+        state = torch.load(path, map_location='cpu', weights_only=False)
+        resumed = setup()
+        restore(state, *resumed, 3407)
+        assert resumed[2].last_epoch == STEPS
+        resumed[3].advance_epoch()
+        original[3].advance_epoch()
+        assert resumed[3].order == original[3].order
+        step(*resumed[:3])
+>       restore(state, *original, 3407)
+
+tests\test_r1e_convergence.py:62:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+experiments\r1e\state.py:61: in restore
+    require(entry.keys() == {'step', 'exp_avg', 'exp_avg_sq'}
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+value = False, message = 'Incorrect AdamW state or step for parameter 0'
+
+    def require(value, message):
+        if not value:
+>           raise ValueError(message)
+E           ValueError: Incorrect AdamW state or step for parameter 0
+
+experiments\r1e\state.py:19: ValueError
+=========================== short test summary info ===========================
+FAILED tests/test_r1e_convergence.py::test_native_restore_preserves_adamw_rng_and_next_epoch
+1 failed, 46 passed, 1 skipped in 9.82s
+
+Elapsed seconds: 11.042
+Exit code: 1

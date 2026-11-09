@@ -1,0 +1,55 @@
+UTC: 2026-11-09T14:02:06.244802+00:00
+Command argv: ['.venv/Scripts/python', '-c', 'from pathlib import Path\nimport json\nimport numpy as np\nfrom PIL import Image\n\nsplit = json.loads(Path("reports/evidence/r1c/split.json").read_text())\nroot = Path("<ASSETS>/MFNet/Label")\ncounts = {"D": np.zeros(9, dtype=int), "N": np.zeros(9, dtype=int)}\npixels = np.zeros(9, dtype=np.int64)\nfor sample in split["validation_ids"]:\n    with Image.open(root / (sample + ".png")) as image:\n        values = np.asarray(image)\n    h = np.bincount(values.ravel(), minlength=9)\n    counts[sample[-1]] += h[:9] > 0\n    pixels += h[:9]\nref = json.loads(Path("reports/evidence/r1d/resume/validation.json").read_text())["r1d_epoch_1"]\nassert pixels.tolist() == [x["actual_pixels"] for x in ref["classes"]]\nresult = {"scope": "79 fixed validation labels; no test pixels", "pixel_counts": pixels.tolist(),\n          "images_with_class_by_suffix": {k: v.tolist() for k, v in counts.items()},\n          "images_with_class": (counts["D"] + counts["N"]).tolist()}\nout = json.dumps(result, indent=2)\nPath("reports/evidence/r1e/validation-support.json").write_text(out + "\\n", encoding="utf-8", newline="\\n")\nprint(out)']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "scope": "79 fixed validation labels; no test pixels",
+  "pixel_counts": [
+    22403708,
+    1095050,
+    343769,
+    108310,
+    127062,
+    111823,
+    16818,
+    43313,
+    18947
+  ],
+  "images_with_class_by_suffix": {
+    "D": [
+      41,
+      27,
+      30,
+      10,
+      21,
+      10,
+      2,
+      6,
+      1
+    ],
+    "N": [
+      38,
+      14,
+      33,
+      9,
+      14,
+      6,
+      0,
+      11,
+      1
+    ]
+  },
+  "images_with_class": [
+    79,
+    41,
+    63,
+    19,
+    35,
+    16,
+    2,
+    17,
+    2
+  ]
+}
+
+Elapsed seconds: 0.624
+Exit code: 0

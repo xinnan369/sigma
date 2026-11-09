@@ -1,0 +1,112 @@
+UTC: 2026-11-09T13:49:47.145184+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1e.audit', '--root', 'reports/evidence/r1e', '--checkpoint-dir', '<LINUX_HOME>/sigma-r1e-runs/convergence-seed3407/checkpoints', '--through', '3']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "audit": "PASS",
+  "through_epoch": 3,
+  "gate": {
+    "overall_miou": true,
+    "foreground_miou": true,
+    "validation_loss": true,
+    "background_share": true
+  },
+  "continue_to_5": true,
+  "by_epoch": [
+    {
+      "epoch": 2,
+      "updates": 177,
+      "samples": 1410,
+      "tail_pixels": [
+        172800,
+        76800
+      ],
+      "gradient_l2_range": [
+        0.4533023238182068,
+        7.994936943054199
+      ],
+      "zero_gradient_windows": 0,
+      "checkpoint": {
+        "event": "save",
+        "epoch": 2,
+        "cursor": 1410,
+        "updates": 354,
+        "sha256": "4c0e2a99c276ab8e5329f575c4c6338fcaabee2502bc2581abff286cc33deec4",
+        "bytes": 580314455,
+        "seconds": 1.423320235999995
+      },
+      "save_seconds": 25.350941887000147
+    },
+    {
+      "epoch": 3,
+      "updates": 177,
+      "samples": 1410,
+      "tail_pixels": [
+        76800,
+        172800
+      ],
+      "gradient_l2_range": [
+        0.403593510389328,
+        4.444943428039551
+      ],
+      "zero_gradient_windows": 0,
+      "checkpoint": {
+        "event": "save",
+        "epoch": 3,
+        "cursor": 1410,
+        "updates": 531,
+        "sha256": "944f3a3c0aefe4082b329c77a2ac161da41c9ce85882016d9b51f04600cebf03",
+        "bytes": 580316055,
+        "seconds": 1.3940256460000455
+      },
+      "save_seconds": 8.663485326
+    }
+  ],
+  "best": {
+    "epoch": 3,
+    "sha256": "944f3a3c0aefe4082b329c77a2ac161da41c9ce85882016d9b51f04600cebf03",
+    "bytes": 580316055
+  },
+  "restored": [
+    {
+      "event": "restored",
+      "epoch": 1,
+      "cursor": 1410,
+      "updates": 177,
+      "strict_model_keys": "<All keys matched successfully>",
+      "optimizer_states": 668,
+      "scheduler_step": 177,
+      "rng_streams": [
+        "python",
+        "numpy",
+        "torch",
+        "cuda",
+        "sampler"
+      ],
+      "missing_keys": [
+        "outnorm0.weight",
+        "outnorm0.bias",
+        "outnorm1.weight",
+        "outnorm1.bias",
+        "outnorm2.weight",
+        "outnorm2.bias",
+        "outnorm3.weight",
+        "outnorm3.bias"
+      ],
+      "unexpected_keys": [
+        "classifier.norm.weight",
+        "classifier.norm.bias",
+        "classifier.head.weight",
+        "classifier.head.bias"
+      ],
+      "strict": false,
+      "scope": "VMamba backbone initialization, not segmentation checkpoint"
+    }
+  ],
+  "test_evaluation": "NOT RUN"
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 2.068
+Exit code: 0
