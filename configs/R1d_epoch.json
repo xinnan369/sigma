@@ -1,0 +1,17 @@
+{
+  "epochs": 1,
+  "seed": 3407,
+  "precision": "fp32",
+  "microbatch": 1,
+  "accumulation": 8,
+  "lr": 0.00006,
+  "weight_decay": 0.01,
+  "betas": [0.9, 0.999],
+  "scheduler": "constant",
+  "checkpoint_every_updates": 32,
+  "test_evaluation": false,
+  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+  "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+  "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+}

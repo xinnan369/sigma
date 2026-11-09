@@ -1,0 +1,11 @@
+UTC: 2026-11-09T12:59:43.554462+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '/usr/lib/wsl/lib/nvidia-smi', '--query-gpu=name,driver_version,memory.total', '--format=csv']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 3090, 610.88, 24576 MiB
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 0.659
+Exit code: 0

@@ -1,0 +1,113 @@
+UTC: 2026-11-09T13:09:53.368203+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1d.audit_run', '--evidence', 'reports/evidence/r1d', '--checkpoint', '<LINUX_HOME>/sigma-r1d-runs/epoch1-seed3407/checkpoints/last.pt']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "status": "PASS",
+  "epoch": 1,
+  "train_samples": 1410,
+  "updates": 177,
+  "exact_seeded_permutation": true,
+  "test_evaluation": "NOT RUN",
+  "tail": {
+    "event": "update",
+    "epoch": 1,
+    "cursor": 1410,
+    "update": 177,
+    "sample_ids": [
+      "00891N_flip",
+      "00966N_flip"
+    ],
+    "microbatches": 2,
+    "losses": [
+      0.14244526624679565,
+      0.13664068281650543
+    ],
+    "valid_pixel_counts": [
+      76800,
+      76800
+    ],
+    "pixel_loss_sum": 21433.800888061523,
+    "mean_pixel_loss": 0.13954297453165054,
+    "class_pixels": [
+      129177,
+      19866,
+      1790,
+      2767,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "microstep_seconds": [
+      0.4093853649999346,
+      0.4175773870000512
+    ],
+    "window_seconds": 0.8837302519999639,
+    "gradient_l2": 5.702951431274414,
+    "gradient_tensor_count": 668,
+    "zero_gradient_names": [],
+    "lr": 6e-05,
+    "peak_allocated_bytes": 7363910144,
+    "peak_reserved_bytes": 7532969984
+  },
+  "epoch_mean_pixel_loss": 0.26398010546471345,
+  "train_class_pixels": [
+    311974033,
+    17804289,
+    6328486,
+    1796324,
+    2301098,
+    2209886,
+    616452,
+    679186,
+    1023526
+  ],
+  "train_class_fractions": [
+    0.9049721947355939,
+    0.051646562815171194,
+    0.01835762999151112,
+    0.0052107646816112446,
+    0.006675009735062422,
+    0.006410422573648822,
+    0.0017881998512009052,
+    0.001970178220101059,
+    0.0029690373960993845
+  ],
+  "first_window_loss": 3.242900378704071,
+  "last_window_loss": 0.13954297453165054,
+  "gradient_l2_min": 0.7540472745895386,
+  "gradient_l2_max": 59.27586364746094,
+  "zero_gradient_windows": 0,
+  "train_seconds": 608.4785239550001,
+  "validation_seconds": 16.784032056,
+  "checkpoint_seconds": 8.873159544000004,
+  "median_microstep_seconds": 0.4201260230000088,
+  "p95_microstep_seconds": 0.4768302403500059,
+  "peak_allocated_bytes": 7363910144,
+  "peak_reserved_bytes": 7577010176,
+  "restore": {
+    "event": "restore",
+    "epoch": 1,
+    "cursor": 768,
+    "updates": 96,
+    "scheduler_last_epoch": 96,
+    "strict_model_keys": "<All keys matched successfully>",
+    "optimizer_state_tensors": 668,
+    "sha256": "b6bae19b087d51502f26c1b64155e741186b55c2d0ff21230bc5f629c8d524d2"
+  },
+  "final_checkpoint": {
+    "event": "save",
+    "update": 177,
+    "cursor": 1410,
+    "sha256": "22cd84f647f6088e0d02f138e0dee98392ae5d0f74452ad00f02f2a8c8e6761b",
+    "bytes": 580309015,
+    "seconds": 2.0362811490000468
+  }
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 1.458
+Exit code: 0
