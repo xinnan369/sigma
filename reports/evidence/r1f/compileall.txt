@@ -1,0 +1,6 @@
+UTC: 2026-11-10T02:12:22.008615+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'compileall', '-q', 'experiments/r1f', 'tests/test_r1f_scene_split.py']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+
+Elapsed seconds: 0.195
+Exit code: 0

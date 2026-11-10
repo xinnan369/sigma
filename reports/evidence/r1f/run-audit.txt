@@ -1,0 +1,152 @@
+UTC: 2026-11-10T02:57:38.171032+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1f.audit_run', '--root', 'reports/evidence/r1f', '--checkpoint-dir', '<LINUX_HOME>/sigma-r1f-runs/visual-seed3407/checkpoints']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "audit": "PASS",
+  "epochs": [
+    {
+      "epoch": 1,
+      "updates": 177,
+      "samples": 1410,
+      "tail_pixels": [
+        76800,
+        76800
+      ],
+      "gradient_l2_range": [
+        0.7225081920623779,
+        61.93918228149414
+      ],
+      "zero_gradient_windows": 0,
+      "checkpoint": {
+        "event": "save",
+        "epoch": 1,
+        "cursor": 1410,
+        "updates": 177,
+        "sha256": "8499a7b269f491ea4aacd01c930bc8a973c060a1fd8d0e3de9790f2a193e31ed",
+        "bytes": 580312087,
+        "seconds": 1.25104331
+      },
+      "save_seconds": 9.344973775000142
+    },
+    {
+      "epoch": 2,
+      "updates": 177,
+      "samples": 1410,
+      "tail_pixels": [
+        172800,
+        76800
+      ],
+      "gradient_l2_range": [
+        0.31668809056282043,
+        12.738985061645508
+      ],
+      "zero_gradient_windows": 0,
+      "checkpoint": {
+        "event": "save",
+        "epoch": 2,
+        "cursor": 1410,
+        "updates": 354,
+        "sha256": "6d90e1ec0e1406c768900173b77ef7d27d476e3710518f1224ff397c0364bcf2",
+        "bytes": 580313815,
+        "seconds": 1.2800896310000098
+      },
+      "save_seconds": 8.061331968999752
+    },
+    {
+      "epoch": 3,
+      "updates": 177,
+      "samples": 1410,
+      "tail_pixels": [
+        76800,
+        172800
+      ],
+      "gradient_l2_range": [
+        0.23919221758842468,
+        6.470759868621826
+      ],
+      "zero_gradient_windows": 0,
+      "checkpoint": {
+        "event": "save",
+        "epoch": 3,
+        "cursor": 1410,
+        "updates": 531,
+        "sha256": "a03614f14a2f3fb3570c21e2f75964eddce4a38df4341cddfcb4a0d7e7de57b0",
+        "bytes": 580315415,
+        "seconds": 1.331670547000158
+      },
+      "save_seconds": 8.16370853300009
+    },
+    {
+      "epoch": 4,
+      "updates": 177,
+      "samples": 1410,
+      "tail_pixels": [
+        307200,
+        172800
+      ],
+      "gradient_l2_range": [
+        0.24989661574363708,
+        3.471579074859619
+      ],
+      "zero_gradient_windows": 0,
+      "checkpoint": {
+        "event": "save",
+        "epoch": 4,
+        "cursor": 1410,
+        "updates": 708,
+        "sha256": "803f2ab0a98cf127931d13b79edf531c61de5b15b4fe7b5c0781196afa875ab7",
+        "bytes": 580317079,
+        "seconds": 1.2920965779999278
+      },
+      "save_seconds": 9.12419437599965
+    },
+    {
+      "epoch": 5,
+      "updates": 177,
+      "samples": 1410,
+      "tail_pixels": [
+        307200,
+        307200
+      ],
+      "gradient_l2_range": [
+        0.2104114443063736,
+        3.185961961746216
+      ],
+      "zero_gradient_windows": 0,
+      "checkpoint": {
+        "event": "save",
+        "epoch": 5,
+        "cursor": 1410,
+        "updates": 885,
+        "sha256": "80de84940815950ef67b46d3aff6318654273f6dc6f1c520bb1738842d78f620",
+        "bytes": 580318807,
+        "seconds": 1.2994465880001371
+      },
+      "save_seconds": 7.828552978000516
+    }
+  ],
+  "best": {
+    "epoch": 4,
+    "sha256": "803f2ab0a98cf127931d13b79edf531c61de5b15b4fe7b5c0781196afa875ab7",
+    "bytes": 580317079
+  },
+  "last": {
+    "event": "save",
+    "epoch": 5,
+    "cursor": 1410,
+    "updates": 885,
+    "sha256": "80de84940815950ef67b46d3aff6318654273f6dc6f1c520bb1738842d78f620",
+    "bytes": 580318807,
+    "seconds": 1.2994465880001371
+  },
+  "fresh_official_VMamba_initialization": true,
+  "test_evaluation": "NOT RUN",
+  "holdout_overlap_with_r1e": 7,
+  "r1f_val_previously_in_r1e_train": 72
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 1.952
+Exit code: 0

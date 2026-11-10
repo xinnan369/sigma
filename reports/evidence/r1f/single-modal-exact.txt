@@ -1,0 +1,7 @@
+UTC: 2026-11-10T02:16:56.297795+00:00
+Command argv: ['.venv/Scripts/python', '-c', 'from pathlib import Path\nfrom collections import defaultdict\nimport hashlib, json\nimport numpy as np\nfrom PIL import Image\n\nevidence=Path("reports/evidence/r1f")\nsplit=json.loads((evidence/"split.json").read_text())\nvalidation=set(split["validation_ids"])\nids=sorted(set(split["train_originals"])|validation)\nroot=Path("<ASSETS>/MFNet")\nout={"scope":"Exact decoded single-modality originals; canonical under horizontal reflection; no test images", "modalities":{}}\nfor folder in ("RGB","Modal"):\n    groups=defaultdict(list)\n    for sample in ids:\n        with Image.open(root/folder/(sample+".png")) as im:\n            pixels=np.asarray(im)\n        key=min(hashlib.sha256(x.tobytes()).hexdigest() for x in (pixels,pixels[:,::-1]))\n        groups[key].append(sample)\n    duplicates=[v for v in groups.values() if len(v)>1]\n    cross=[v for v in duplicates if set(v)&validation and set(v)-validation]\n    out["modalities"][folder]={"originals":len(ids),"duplicate_groups":duplicates,"cross_split_groups":cross}\n(evidence/"single-modal-exact.json").write_text(json.dumps(out,indent=2)+"\\n",encoding="utf-8",newline="\\n")\nprint({k:(len(v["duplicate_groups"]),len(v["cross_split_groups"])) for k,v in out["modalities"].items()})']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{'RGB': (0, 0), 'Modal': (0, 0)}
+
+Elapsed seconds: 16.627
+Exit code: 0

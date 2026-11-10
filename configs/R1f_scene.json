@@ -1,0 +1,5 @@
+{
+  "version": "r1f-visual-split-v1",
+  "epochs": 5,
+  "split_sha256": "648ba9e27e6f020f37052d5f83d517553296351b324aa774572878ff6bf97d59"
+}
