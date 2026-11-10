@@ -1,0 +1,9 @@
+{
+  "version": "r1g-expanded-scene-v1",
+  "epochs": 5,
+  "primary_epoch": 5,
+  "bootstrap_replicates": 10000,
+  "seed": 3407,
+  "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+  "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21"
+}
