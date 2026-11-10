@@ -1,0 +1,115 @@
+UTC: 2026-11-10T13:34:25.425404+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2b.audit']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+Traceback (most recent call last):
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 1228, in ast_to_ttir
+    generator.visit(fn.parse())
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 1105, in visit
+    ret = super().visit(node)
+          ^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 303, in visit_Module
+    ast.NodeVisitor.generic_visit(self, node)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 426, in generic_visit
+    self.visit(item)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 1105, in visit
+    ret = super().visit(node)
+          ^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 376, in visit_FunctionDef
+    self.visit_compound_statement(node.body)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 298, in visit_compound_statement
+    ret_type = self.visit(stmt)
+               ^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 1105, in visit
+    ret = super().visit(node)
+          ^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 885, in visit_For
+    self.visit_compound_statement(node.body)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 298, in visit_compound_statement
+    ret_type = self.visit(stmt)
+               ^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 1105, in visit
+    ret = super().visit(node)
+          ^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 428, in visit_Assign
+    values = self.visit(node.value)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 1105, in visit
+    ret = super().visit(node)
+          ^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 1027, in visit_Call
+    return fn(*args, **extra_kwargs, **kws)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/language/core.py", line 27, in wrapper
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/language/core.py", line 1519, in associative_scan
+    return semantic.associative_scan(input, axis, make_combine_region, _builder)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/language/semantic.py", line 1352, in associative_scan
+    raise ValueError("Current implementation only support single tensor input")
+ValueError: Current implementation only support single tensor input
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<BRIDGE>/experiments/r2b/audit.py", line 73, in <module>
+    main()
+  File "<BRIDGE>/experiments/r2b/audit.py", line 69, in main
+    'cases': synthetic(extension)}, indent=2))
+             ^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2b/audit.py", line 51, in synthetic
+    h = trajectory(scan)
+        ^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2b/triton_state.py", line 60, in trajectory
+    recurrence[(batch * dim * states,)](
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/runtime/jit.py", line 532, in run
+    self.cache[device][key] = compile(
+                              ^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/compiler.py", line 543, in compile
+    next_module = compile_kernel(module)
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/compiler.py", line 435, in <lambda>
+    ast_to_ttir(src, signature, configs[0], constants, debug=debug, target=target), target))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/code_generator.py", line 1237, in ast_to_ttir
+    raise CompilationError(fn.src, node, repr(e)) from e
+triton.compiler.errors.CompilationError: at 30:60:        if homogeneous:
+            forcing = tl.full((block,), 0, tl.float32)
+        else:
+            drive = tl.load(u + offset, valid, other=0.0)
+            coeff = tl.load(b + ((batch * groups + group) * states + n) * length + step, valid, other=0.0)
+            forcing = (delta * drive) * coeff
+        if reset_t >= 0:
+            hit = (step == reset_t) & (channel >= first_channel) & (channel < end_channel)
+            value = tl.load(reset + p)
+            alpha = tl.where(hit, 0.0, alpha)
+            forcing = tl.where(hit, value, forcing)
+        mul, add = tl.associative_scan((alpha, forcing), 0, compose)
+                                                            ^
+ValueError('Current implementation only support single tensor input')
+
+Elapsed seconds: 11.136
+Exit code: 1

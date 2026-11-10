@@ -1,0 +1,20 @@
+UTC: 2026-11-10T13:41:30.552071+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2b.controls', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint', '<LINUX_HOME>/sigma-r1g-runs/expanded-seed3407/checkpoints/last.pt', '--evidence', 'reports/evidence/r2b']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<BRIDGE>/experiments/r2b/controls.py", line 223, in <module>
+    main()
+  File "<BRIDGE>/experiments/r2b/controls.py", line 219, in main
+    run(parser.parse_args())
+  File "<BRIDGE>/experiments/r2b/controls.py", line 132, in run
+    and sha256(args.init) == protocol['init_sha256']
+                             ~~~~~~~~^^^^^^^^^^^^^^^
+KeyError: 'init_sha256'
+
+Elapsed seconds: 1.850
+Exit code: 1

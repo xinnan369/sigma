@@ -1,0 +1,7 @@
+UTC: 2026-11-10T13:34:15.199988+00:00
+Command argv: ['gh', 'pr', 'view', '9', '--repo', 'xinnan369/sigma', '--json', 'state,headRefOid,mergeCommit,mergedAt,baseRefName,statusCheckRollup']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{"baseRefName":"main","headRefOid":"a38920c2ce73b27c97468ea0bc1a938cac896952","mergeCommit":{"oid":"ffae823878875fd33d309dff0e2f30cf16c3d53c"},"mergedAt":"2026-11-10T13:31:44Z","state":"MERGED","statusCheckRollup":[{"__typename":"CheckRun","completedAt":"2026-11-10T12:18:56Z","conclusion":"SUCCESS","detailsUrl":"https://github.com/xinnan369/sigma/actions/runs/42814620701/job/129824417938","name":"cpu-tests","startedAt":"2026-11-10T12:18:28Z","status":"COMPLETED","workflowName":"R0 utility tests"},{"__typename":"CheckRun","completedAt":"2026-11-10T12:18:37Z","conclusion":"SUCCESS","detailsUrl":"https://github.com/xinnan369/sigma/actions/runs/42814555311/job/129824196367","name":"cpu-tests","startedAt":"2026-11-10T12:18:01Z","status":"COMPLETED","workflowName":"R0 utility tests"}]}
+
+Elapsed seconds: 0.911
+Exit code: 0

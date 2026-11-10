@@ -1,0 +1,28 @@
+[
+  {
+    "family": "cnn",
+    "sample": "00057D",
+    "shape": [
+      1,
+      9,
+      480,
+      640
+    ],
+    "seconds": 0.359085403999984,
+    "peak_allocated_bytes": 527460864,
+    "scope": "one engineering forward; untrained fusion; no performance score"
+  },
+  {
+    "family": "attention",
+    "sample": "00057D",
+    "shape": [
+      1,
+      9,
+      480,
+      640
+    ],
+    "seconds": 0.1434069140000247,
+    "peak_allocated_bytes": 528623616,
+    "scope": "one engineering forward; untrained fusion; no performance score"
+  }
+]
