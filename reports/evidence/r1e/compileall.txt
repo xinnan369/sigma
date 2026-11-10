@@ -1,0 +1,6 @@
+UTC: 2026-11-09T13:38:19.211044+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'compileall', '-q', 'experiments/r1e', 'tests/test_r1e_convergence.py']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+
+Elapsed seconds: 0.170
+Exit code: 0
