@@ -1,0 +1,171 @@
+UTC: 2026-11-10T11:09:44.938605+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1g.audit_run', '--evidence', 'reports/evidence/r1g', '--checkpoint-dir', '<LINUX_HOME>/sigma-r1g-runs/expanded-seed3407/checkpoints']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "audit": "PASS",
+  "fresh_official_VMamba_initialization": true,
+  "epochs": [
+    {
+      "epoch": 1,
+      "updates": 157,
+      "microsteps": 1254,
+      "tail_pixels": [
+        172800,
+        172800,
+        307200,
+        307200,
+        307200,
+        76800
+      ],
+      "zero_gradient_windows": 0,
+      "gradient_l2_range": [
+        0.7005078792572021,
+        59.518497467041016
+      ],
+      "checkpoint": {
+        "event": "epoch_complete",
+        "epoch": 1,
+        "updates": 157,
+        "sha256": "19f8c6dfc10f95207d7153212df1757987d9148598176939f52e056cdcc35697",
+        "checkpoint_bytes": 580318295,
+        "checkpoint_seconds": 2.1782422170000473,
+        "overall_miou": 0.3480121064763539,
+        "foreground_miou": 0.2710725616736838
+      }
+    },
+    {
+      "epoch": 2,
+      "updates": 157,
+      "microsteps": 1254,
+      "tail_pixels": [
+        76800,
+        307200,
+        172800,
+        307200,
+        307200,
+        307200
+      ],
+      "zero_gradient_windows": 0,
+      "gradient_l2_range": [
+        0.45179346203804016,
+        15.653288841247559
+      ],
+      "checkpoint": {
+        "event": "epoch_complete",
+        "epoch": 2,
+        "updates": 314,
+        "sha256": "596cee01b31d4e5f9ed04c6052b643d81137f140ed3f1af11dd56359f413cbb5",
+        "checkpoint_bytes": 580326679,
+        "checkpoint_seconds": 1.8707458610001595,
+        "overall_miou": 0.4134435932811201,
+        "foreground_miou": 0.3446840733671284
+      }
+    },
+    {
+      "epoch": 3,
+      "updates": 157,
+      "microsteps": 1254,
+      "tail_pixels": [
+        76800,
+        307200,
+        172800,
+        172800,
+        307200,
+        76800
+      ],
+      "zero_gradient_windows": 0,
+      "gradient_l2_range": [
+        0.37493741512298584,
+        5.155047416687012
+      ],
+      "checkpoint": {
+        "event": "epoch_complete",
+        "epoch": 3,
+        "updates": 471,
+        "sha256": "eaad22a97e15a2f3aea51b554b45594f2b4569d24f2f6546e0545fc11c7601dc",
+        "checkpoint_bytes": 580335127,
+        "checkpoint_seconds": 2.352900243000022,
+        "overall_miou": 0.5217050262465728,
+        "foreground_miou": 0.4653434986055967
+      }
+    },
+    {
+      "epoch": 4,
+      "updates": 157,
+      "microsteps": 1254,
+      "tail_pixels": [
+        76800,
+        307200,
+        172800,
+        76800,
+        307200,
+        172800
+      ],
+      "zero_gradient_windows": 0,
+      "gradient_l2_range": [
+        0.32238253951072693,
+        5.465629577636719
+      ],
+      "checkpoint": {
+        "event": "epoch_complete",
+        "epoch": 4,
+        "updates": 628,
+        "sha256": "3d02b3f9622a939ad4b9cbe8686dd2ef586cdbba5cd0ce1028ca25c65501922e",
+        "checkpoint_bytes": 580343511,
+        "checkpoint_seconds": 2.290181911000218,
+        "overall_miou": 0.6219253306435708,
+        "foreground_miou": 0.577615902848392
+      }
+    },
+    {
+      "epoch": 5,
+      "updates": 157,
+      "microsteps": 1254,
+      "tail_pixels": [
+        307200,
+        307200,
+        307200,
+        172800,
+        307200,
+        307200
+      ],
+      "zero_gradient_windows": 0,
+      "gradient_l2_range": [
+        0.2980007827281952,
+        2.5063235759735107
+      ],
+      "checkpoint": {
+        "event": "epoch_complete",
+        "epoch": 5,
+        "updates": 785,
+        "sha256": "9e1573f050bd0f8319b4e8cf22927d6c31c091f4d63cbfacf666a7f85c6b5159",
+        "checkpoint_bytes": 580351959,
+        "checkpoint_seconds": 1.3735869679999269,
+        "overall_miou": 0.6114978112066285,
+        "foreground_miou": 0.5659757898024136
+      }
+    }
+  ],
+  "primary_epoch": 5,
+  "best": {
+    "epoch": 4,
+    "sha256": "3d02b3f9622a939ad4b9cbe8686dd2ef586cdbba5cd0ce1028ca25c65501922e"
+  },
+  "last": {
+    "event": "epoch_complete",
+    "epoch": 5,
+    "updates": 785,
+    "sha256": "9e1573f050bd0f8319b4e8cf22927d6c31c091f4d63cbfacf666a7f85c6b5159",
+    "checkpoint_bytes": 580351959,
+    "checkpoint_seconds": 1.3735869679999269,
+    "overall_miou": 0.6114978112066285,
+    "foreground_miou": 0.5659757898024136
+  },
+  "official_test_evaluation": "NOT RUN"
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 2.356
+Exit code: 0

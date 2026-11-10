@@ -1,0 +1,6 @@
+UTC: 2026-11-10T10:20:58.608281+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'compileall', '-q', 'experiments/r1g', 'tests/test_r1g_scene_holdout.py']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+
+Elapsed seconds: 0.189
+Exit code: 0

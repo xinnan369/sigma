@@ -1,0 +1,150 @@
+UTC: 2026-11-10T11:09:46.525211+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1g.statistics', '--evidence', 'reports/evidence/r1g']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "replicates": 10000,
+  "groups": 54,
+  "overall": {
+    "point": 0.6114978112066285,
+    "ci95": [
+      0.5278423657226132,
+      0.6356542479895173
+    ],
+    "valid_replicates": 10000,
+    "undefined_replicates": 0
+  },
+  "foreground": {
+    "point": 0.5659757898024136,
+    "ci95": [
+      0.4718477555000782,
+      0.5930133854595083
+    ],
+    "valid_replicates": 10000,
+    "undefined_replicates": 0
+  },
+  "classes": [
+    {
+      "point": 0.9756739824403474,
+      "ci95": [
+        0.9685399948718646,
+        0.9819816021028211
+      ],
+      "valid_replicates": 10000,
+      "undefined_replicates": 0,
+      "class_id": 0,
+      "truth_groups": 54,
+      "statistically_unstable": false,
+      "no_ground_truth_replicates": 0
+    },
+    {
+      "point": 0.8531953041079633,
+      "ci95": [
+        0.818265397943118,
+        0.8995892738295568
+      ],
+      "valid_replicates": 10000,
+      "undefined_replicates": 0,
+      "class_id": 1,
+      "truth_groups": 28,
+      "statistically_unstable": false,
+      "no_ground_truth_replicates": 0
+    },
+    {
+      "point": 0.697801012804031,
+      "ci95": [
+        0.6333591630994382,
+        0.7617667261130854
+      ],
+      "valid_replicates": 10000,
+      "undefined_replicates": 0,
+      "class_id": 2,
+      "truth_groups": 42,
+      "statistically_unstable": false,
+      "no_ground_truth_replicates": 0
+    },
+    {
+      "point": 0.5143084722900533,
+      "ci95": [
+        0.26934095396048396,
+        0.5958137919524003
+      ],
+      "valid_replicates": 10000,
+      "undefined_replicates": 0,
+      "class_id": 3,
+      "truth_groups": 18,
+      "statistically_unstable": false,
+      "no_ground_truth_replicates": 0
+    },
+    {
+      "point": 0.46095142862637045,
+      "ci95": [
+        0.34548017796028074,
+        0.5715190440112603
+      ],
+      "valid_replicates": 10000,
+      "undefined_replicates": 0,
+      "class_id": 4,
+      "truth_groups": 20,
+      "statistically_unstable": false,
+      "no_ground_truth_replicates": 0
+    },
+    {
+      "point": 0.5716038592703031,
+      "ci95": [
+        0.22179737135253386,
+        0.6916193281785153
+      ],
+      "valid_replicates": 10000,
+      "undefined_replicates": 0,
+      "class_id": 5,
+      "truth_groups": 6,
+      "statistically_unstable": true,
+      "no_ground_truth_replicates": 25
+    },
+    {
+      "point": 0.3920807453416149,
+      "ci95": [
+        0.07851802999364434,
+        0.4947629904358637
+      ],
+      "valid_replicates": 10000,
+      "undefined_replicates": 0,
+      "class_id": 6,
+      "truth_groups": 6,
+      "statistically_unstable": true,
+      "no_ground_truth_replicates": 28
+    },
+    {
+      "point": 0.62362414859859,
+      "ci95": [
+        0.15390933826171774,
+        0.719539052036962
+      ],
+      "valid_replicates": 10000,
+      "undefined_replicates": 0,
+      "class_id": 7,
+      "truth_groups": 7,
+      "statistically_unstable": true,
+      "no_ground_truth_replicates": 4
+    },
+    {
+      "point": 0.41424134738038204,
+      "ci95": [
+        0.053370808129807816,
+        0.4961723653139243
+      ],
+      "valid_replicates": 9995,
+      "undefined_replicates": 5,
+      "class_id": 8,
+      "truth_groups": 6,
+      "statistically_unstable": true,
+      "no_ground_truth_replicates": 18
+    }
+  ]
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 1.412
+Exit code: 0

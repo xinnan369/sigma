@@ -1,0 +1,1449 @@
+{
+  "primary_epoch": 5,
+  "secondary_best_epoch": 4,
+  "scope": "conditional on the trained model and visual groups; no test images",
+  "primary": {
+    "epoch": 5,
+    "cohorts": {
+      "all": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 54,
+        "overall": {
+          "point": 0.6114978112066285,
+          "ci95": [
+            0.5278423657226132,
+            0.6356542479895173
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5659757898024136,
+          "ci95": [
+            0.4718477555000782,
+            0.5930133854595083
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.9756739824403474,
+            "ci95": [
+              0.9685399948718646,
+              0.9819816021028211
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 54,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.8531953041079633,
+            "ci95": [
+              0.818265397943118,
+              0.8995892738295568
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 28,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.697801012804031,
+            "ci95": [
+              0.6333591630994382,
+              0.7617667261130854
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 42,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.5143084722900533,
+            "ci95": [
+              0.26934095396048396,
+              0.5958137919524003
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 18,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.46095142862637045,
+            "ci95": [
+              0.34548017796028074,
+              0.5715190440112603
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 20,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.5716038592703031,
+            "ci95": [
+              0.22179737135253386,
+              0.6916193281785153
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 5,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 25
+          },
+          {
+            "point": 0.3920807453416149,
+            "ci95": [
+              0.07851802999364434,
+              0.4947629904358637
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 6,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 28
+          },
+          {
+            "point": 0.62362414859859,
+            "ci95": [
+              0.15390933826171774,
+              0.719539052036962
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 7,
+            "truth_groups": 7,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 4
+          },
+          {
+            "point": 0.41424134738038204,
+            "ci95": [
+              0.053370808129807816,
+              0.4961723653139243
+            ],
+            "valid_replicates": 9995,
+            "undefined_replicates": 5,
+            "class_id": 8,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 18
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      },
+      "day": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 18,
+        "overall": {
+          "point": 0.5852368061311369,
+          "ci95": [
+            0.4580051921654751,
+            0.6224056115851218
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5368833607805483,
+          "ci95": [
+            0.3936175581783615,
+            0.5777520726751519
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.9720643689358471,
+            "ci95": [
+              0.9604061497944414,
+              0.9824136361008947
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 18,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.8254396734982048,
+            "ci95": [
+              0.7700738962032531,
+              0.8859142167305175
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 12,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.627562087116261,
+            "ci95": [
+              0.5532478446039213,
+              0.7204518071121074
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 16,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.5539162873380559,
+            "ci95": [
+              0.3271968751744857,
+              0.617122601683586
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 7,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.4721068656954558,
+            "ci95": [
+              0.2662266038680804,
+              0.6404460495515439
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 8,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 2
+          },
+          {
+            "point": 0.3669334667333667,
+            "ci95": [
+              0.0,
+              0.5833626214756055
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 5,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 374
+          },
+          {
+            "point": 0.3920807453416149,
+            "ci95": [
+              0.08060759734705378,
+              0.49483020968627145
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 6,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 5
+          },
+          {
+            "point": 0.6333228832565655,
+            "ci95": [
+              0.013097836872395317,
+              0.7291351272159008
+            ],
+            "valid_replicates": 9989,
+            "undefined_replicates": 11,
+            "class_id": 7,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 11
+          },
+          {
+            "point": 0.42370487726486183,
+            "ci95": [
+              0.0004960668981645525,
+              0.520979233907801
+            ],
+            "valid_replicates": 9895,
+            "undefined_replicates": 105,
+            "class_id": 8,
+            "truth_groups": 4,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 105
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      },
+      "night": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 36,
+        "overall": {
+          "point": 0.6245231959255699,
+          "ci95": [
+            0.4659654379751869,
+            0.658065684600416
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5736688745400038,
+          "ci95": [
+            0.3921817781832334,
+            0.6067165215200534
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.9805034456245326,
+            "ci95": [
+              0.9744084871885802,
+              0.984056616750348
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 36,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.8894114557291272,
+            "ci95": [
+              0.8272234007132772,
+              0.9355826924203667
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 16,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.7713731720313394,
+            "ci95": [
+              0.7217914464550068,
+              0.8046534971548238
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 26,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.2638794277929155,
+            "ci95": [
+              0.08493848821929985,
+              0.47840024493640715
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 11,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.44276403260304065,
+            "ci95": [
+              0.3642291647014661,
+              0.5377786850646389
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 12,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.7065685376770957,
+            "ci95": [
+              0.0,
+              0.8237524210860876
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 5,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 456
+          },
+          {
+            "point": null,
+            "ci95": null,
+            "valid_replicates": 0,
+            "undefined_replicates": 10000,
+            "class_id": 6,
+            "truth_groups": 0,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 10000
+          },
+          {
+            "point": 0.5776312278427934,
+            "ci95": [
+              0.0,
+              0.5849901555804347
+            ],
+            "valid_replicates": 9556,
+            "undefined_replicates": 444,
+            "class_id": 7,
+            "truth_groups": 1,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 3630
+          },
+          {
+            "point": 0.36405426810371544,
+            "ci95": [
+              0.0,
+              0.39440061179191616
+            ],
+            "valid_replicates": 9541,
+            "undefined_replicates": 459,
+            "class_id": 8,
+            "truth_groups": 2,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 1318
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      },
+      "retained_79": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 41,
+        "overall": {
+          "point": 0.5968886009896486,
+          "ci95": [
+            0.4998098808821713,
+            0.6424868918822343
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5499392017212417,
+          "ci95": [
+            0.44021847579180273,
+            0.5946444559746953
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.9724837951369025,
+            "ci95": [
+              0.964698764538743,
+              0.9804193280105562
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 41,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.8668606894947476,
+            "ci95": [
+              0.8337282784048238,
+              0.9214784591461235
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 20,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.6733142688262008,
+            "ci95": [
+              0.586534084092891,
+              0.7820700093868321
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 30,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.3513943071810432,
+            "ci95": [
+              0.17207417919451387,
+              0.4508338342641256
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 12,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.4164818162244443,
+            "ci95": [
+              0.310611158004633,
+              0.5586050716968216
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 15,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.6071851373530283,
+            "ci95": [
+              0.0,
+              0.7441697253166686
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 5,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 456
+          },
+          {
+            "point": 0.4857950985481821,
+            "ci95": [
+              0.0,
+              0.5304575600512734
+            ],
+            "valid_replicates": 9986,
+            "undefined_replicates": 14,
+            "class_id": 6,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 428
+          },
+          {
+            "point": 0.7117839148251002,
+            "ci95": [
+              0.0,
+              0.7395371900826446
+            ],
+            "valid_replicates": 9846,
+            "undefined_replicates": 154,
+            "class_id": 7,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 413
+          },
+          {
+            "point": 0.28669838131718767,
+            "ci95": [
+              0.0,
+              0.32788928744053525
+            ],
+            "valid_replicates": 9599,
+            "undefined_replicates": 401,
+            "class_id": 8,
+            "truth_groups": 2,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 1224
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      },
+      "added_78": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 13,
+        "overall": {
+          "point": 0.5924139547649476,
+          "ci95": [
+            0.4135942840044829,
+            0.6245134517055749
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5441242556214364,
+          "ci95": [
+            0.34207002991195823,
+            0.5801074683779927
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.9787315479130375,
+            "ci95": [
+              0.9671777923617536,
+              0.9863254645628667
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 13,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.7869526330761207,
+            "ci95": [
+              0.6975683896707754,
+              0.8988045070113412
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 8,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.7314641815856412,
+            "ci95": [
+              0.6799185085958432,
+              0.7795891658825644
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 12,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.5781916486576176,
+            "ci95": [
+              0.24776771644906215,
+              0.627418309728779
+            ],
+            "valid_replicates": 9999,
+            "undefined_replicates": 1,
+            "class_id": 3,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 8
+          },
+          {
+            "point": 0.5150021301198954,
+            "ci95": [
+              0.2657090537256922,
+              0.6612658710260906
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 5,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 20
+          },
+          {
+            "point": 0.5346373438995926,
+            "ci95": [
+              0.0,
+              0.6912138969143127
+            ],
+            "valid_replicates": 9995,
+            "undefined_replicates": 5,
+            "class_id": 5,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 333
+          },
+          {
+            "point": 0.36596474948990027,
+            "ci95": [
+              0.0,
+              0.49319286545068275
+            ],
+            "valid_replicates": 9974,
+            "undefined_replicates": 26,
+            "class_id": 6,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 343
+          },
+          {
+            "point": 0.3804914556567294,
+            "ci95": [
+              0.0,
+              0.5824708802749666
+            ],
+            "valid_replicates": 9988,
+            "undefined_replicates": 12,
+            "class_id": 7,
+            "truth_groups": 4,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 81
+          },
+          {
+            "point": 0.4602899024859938,
+            "ci95": [
+              0.0,
+              0.5172943747302085
+            ],
+            "valid_replicates": 9913,
+            "undefined_replicates": 87,
+            "class_id": 8,
+            "truth_groups": 4,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 87
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      }
+    }
+  },
+  "secondary": {
+    "epoch": 4,
+    "cohorts": {
+      "all": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 54,
+        "overall": {
+          "point": 0.6219253306435708,
+          "ci95": [
+            0.5298572288224033,
+            0.6434723466534776
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.577615902848392,
+          "ci95": [
+            0.47383270257305016,
+            0.6017676618658381
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.9764007530050013,
+            "ci95": [
+              0.9710474348225225,
+              0.9810530687604186
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 54,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.8448002243565294,
+            "ci95": [
+              0.8020299406937716,
+              0.8920868618171104
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 28,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.6913165148075073,
+            "ci95": [
+              0.6246913409006795,
+              0.7586737009916348
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 42,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.4401121094716017,
+            "ci95": [
+              0.2037971311623137,
+              0.5110597620022612
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 18,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.4434659622277965,
+            "ci95": [
+              0.3233934201015373,
+              0.5379041900036075
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 20,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.5578162860709304,
+            "ci95": [
+              0.19390100552551587,
+              0.6834758610601747
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 5,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 25
+          },
+          {
+            "point": 0.3830796777081468,
+            "ci95": [
+              0.07591618401446765,
+              0.4880183057689884
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 6,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 28
+          },
+          {
+            "point": 0.6001755718996437,
+            "ci95": [
+              0.11331196954575706,
+              0.7190849248670698
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 7,
+            "truth_groups": 7,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 4
+          },
+          {
+            "point": 0.6601608762449804,
+            "ci95": [
+              0.24374420251602053,
+              0.7301497656669059
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 8,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 18
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      },
+      "day": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 18,
+        "overall": {
+          "point": 0.5970929340989098,
+          "ci95": [
+            0.46948054779678317,
+            0.6268237807352248
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5499811291194239,
+          "ci95": [
+            0.4057021944413784,
+            0.5828319357731737
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.973987373934798,
+            "ci95": [
+              0.9657164085523601,
+              0.9810740765274049
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 18,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.8211311784509648,
+            "ci95": [
+              0.768731535543203,
+              0.8835951659874572
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 12,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.6171321363649619,
+            "ci95": [
+              0.5419963841176485,
+              0.7156027611887006
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 16,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.4699312773174363,
+            "ci95": [
+              0.20746728826194927,
+              0.5280207895738992
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 7,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.47703561335003913,
+            "ci95": [
+              0.2787951329677158,
+              0.5995220626757847
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 8,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 2
+          },
+          {
+            "point": 0.34220894259499196,
+            "ci95": [
+              0.0,
+              0.5673702911796522
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 5,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 374
+          },
+          {
+            "point": 0.3830796777081468,
+            "ci95": [
+              0.08099439343144077,
+              0.48732457577897015
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 6,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 5
+          },
+          {
+            "point": 0.5945212910225115,
+            "ci95": [
+              0.0009324630345011322,
+              0.7336118752270722
+            ],
+            "valid_replicates": 9989,
+            "undefined_replicates": 11,
+            "class_id": 7,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 11
+          },
+          {
+            "point": 0.6948089161463381,
+            "ci95": [
+              0.0,
+              0.742437489071516
+            ],
+            "valid_replicates": 9968,
+            "undefined_replicates": 32,
+            "class_id": 8,
+            "truth_groups": 4,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 105
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      },
+      "night": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 36,
+        "overall": {
+          "point": 0.634834742762207,
+          "ci95": [
+            0.4595688257472205,
+            0.6579180354570372
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5855795089808918,
+          "ci95": [
+            0.3853760909520764,
+            0.6108760431251118
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.9796213792314136,
+            "ci95": [
+              0.9728272831051273,
+              0.9834550548416073
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 36,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.874455231909527,
+            "ci95": [
+              0.7844881752599341,
+              0.9262874372058574
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 16,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.7685177691677373,
+            "ci95": [
+              0.7171190094629228,
+              0.8010918598556
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 26,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.247040183090533,
+            "ci95": [
+              0.07721529100063707,
+              0.46643810508278416
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 11,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.38583937744490693,
+            "ci95": [
+              0.28625667367218993,
+              0.514581197736761
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 12,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.711740905973333,
+            "ci95": [
+              0.0,
+              0.7833714981273402
+            ],
+            "valid_replicates": 9999,
+            "undefined_replicates": 1,
+            "class_id": 5,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 456
+          },
+          {
+            "point": null,
+            "ci95": null,
+            "valid_replicates": 0,
+            "undefined_replicates": 10000,
+            "class_id": 6,
+            "truth_groups": 0,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 10000
+          },
+          {
+            "point": 0.6305738476011289,
+            "ci95": [
+              0.0,
+              0.6362600854295206
+            ],
+            "valid_replicates": 9556,
+            "undefined_replicates": 444,
+            "class_id": 7,
+            "truth_groups": 1,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 3630
+          },
+          {
+            "point": 0.480889247679076,
+            "ci95": [
+              0.0,
+              0.5152907489720155
+            ],
+            "valid_replicates": 9848,
+            "undefined_replicates": 152,
+            "class_id": 8,
+            "truth_groups": 2,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 1318
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      },
+      "retained_79": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 41,
+        "overall": {
+          "point": 0.6309520427481192,
+          "ci95": [
+            0.5165184321398651,
+            0.6494013681934561
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5881566262565386,
+          "ci95": [
+            0.4582640678187817,
+            0.6087786242276435
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.973315374680764,
+            "ci95": [
+              0.9674651377529756,
+              0.9793800590581468
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 41,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.8561904771997274,
+            "ci95": [
+              0.8125497825431486,
+              0.9118973698681058
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 20,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.6646666523706388,
+            "ci95": [
+              0.5751242718597319,
+              0.7774686585340542
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 30,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.3236424497892388,
+            "ci95": [
+              0.11815774967559867,
+              0.4401410146624534
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 12,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.4575960602416538,
+            "ci95": [
+              0.37866735895641457,
+              0.5290853175299324
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 15,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.5739773809779611,
+            "ci95": [
+              0.0,
+              0.701969841371778
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 5,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 456
+          },
+          {
+            "point": 0.4710852454993251,
+            "ci95": [
+              0.0,
+              0.5420709323230649
+            ],
+            "valid_replicates": 9986,
+            "undefined_replicates": 14,
+            "class_id": 6,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 428
+          },
+          {
+            "point": 0.6771207047755721,
+            "ci95": [
+              0.0,
+              0.7506909090909091
+            ],
+            "valid_replicates": 9846,
+            "undefined_replicates": 154,
+            "class_id": 7,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 413
+          },
+          {
+            "point": 0.6809740391981923,
+            "ci95": [
+              0.0,
+              0.725755350271307
+            ],
+            "valid_replicates": 9951,
+            "undefined_replicates": 49,
+            "class_id": 8,
+            "truth_groups": 2,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 1224
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      },
+      "added_78": {
+        "resampling_unit": "frozen visual proxy group",
+        "seed": 3407,
+        "replicates": 10000,
+        "groups": 13,
+        "overall": {
+          "point": 0.5935170429250971,
+          "ci95": [
+            0.3891188099204719,
+            0.6327015527975383
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "foreground": {
+          "point": 0.5452865076376772,
+          "ci95": [
+            0.31536543269434114,
+            0.5891643830102173
+          ],
+          "valid_replicates": 10000,
+          "undefined_replicates": 0
+        },
+        "classes": [
+          {
+            "point": 0.9793613252244563,
+            "ci95": [
+              0.970693676343626,
+              0.9849410315702333
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 0,
+            "truth_groups": 13,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.7883064357177209,
+            "ci95": [
+              0.6994877203555824,
+              0.9038209615977153
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 1,
+            "truth_groups": 8,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.7278084790255992,
+            "ci95": [
+              0.6769593279913719,
+              0.778541407135237
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 2,
+            "truth_groups": 12,
+            "statistically_unstable": false,
+            "no_ground_truth_replicates": 0
+          },
+          {
+            "point": 0.4865281048765625,
+            "ci95": [
+              0.12993703491700057,
+              0.5357527248301579
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 3,
+            "truth_groups": 6,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 8
+          },
+          {
+            "point": 0.4270822382435775,
+            "ci95": [
+              0.13879056721889999,
+              0.6067317710504903
+            ],
+            "valid_replicates": 10000,
+            "undefined_replicates": 0,
+            "class_id": 4,
+            "truth_groups": 5,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 20
+          },
+          {
+            "point": 0.5408208612339281,
+            "ci95": [
+              0.0,
+              0.7159447207077667
+            ],
+            "valid_replicates": 9995,
+            "undefined_replicates": 5,
+            "class_id": 5,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 333
+          },
+          {
+            "point": 0.35796020273887613,
+            "ci95": [
+              0.0,
+              0.4852110207911725
+            ],
+            "valid_replicates": 9996,
+            "undefined_replicates": 4,
+            "class_id": 6,
+            "truth_groups": 3,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 343
+          },
+          {
+            "point": 0.3809104592054071,
+            "ci95": [
+              0.0,
+              0.6307518584736991
+            ],
+            "valid_replicates": 9988,
+            "undefined_replicates": 12,
+            "class_id": 7,
+            "truth_groups": 4,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 81
+          },
+          {
+            "point": 0.652875280059746,
+            "ci95": [
+              0.0004940286966234213,
+              0.7415764591254899
+            ],
+            "valid_replicates": 9913,
+            "undefined_replicates": 87,
+            "class_id": 8,
+            "truth_groups": 4,
+            "statistically_unstable": true,
+            "no_ground_truth_replicates": 87
+          }
+        ],
+        "undefined_policy": "Union=0 is undefined and omitted; no truth with predicted positives gives IoU=0."
+      }
+    }
+  }
+}

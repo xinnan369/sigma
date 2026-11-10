@@ -1,0 +1,175 @@
+UTC: 2026-11-10T10:15:57.750649+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r1g.partition', 'certify']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "status": "PASS",
+  "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+  "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+  "asset_manifest_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d",
+  "edge_crossings": 0,
+  "original_or_flip_crossings": 0,
+  "test_id_crossings": 0,
+  "test_pixels_read": 0,
+  "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+  "selected_file_count": 4233,
+  "class_support": {
+    "train": {
+      "images": [
+        627,
+        380,
+        534,
+        190,
+        333,
+        155,
+        17,
+        164,
+        28
+      ],
+      "pixels": [
+        177136439,
+        8793852,
+        2642271,
+        899150,
+        1265147,
+        1128299,
+        118147,
+        300441,
+        330654
+      ],
+      "groups": [
+        342,
+        185,
+        297,
+        128,
+        176,
+        92,
+        10,
+        98,
+        13
+      ],
+      "day": 320,
+      "night": 307,
+      "visual_group_count": 342
+    },
+    "validation": {
+      "images": [
+        157,
+        69,
+        132,
+        47,
+        72,
+        26,
+        16,
+        30,
+        23
+      ],
+      "pixels": [
+        44115969,
+        2108574,
+        682093,
+        128638,
+        283667,
+        185367,
+        245471,
+        121796,
+        358825
+      ],
+      "groups": [
+        54,
+        28,
+        42,
+        18,
+        20,
+        6,
+        6,
+        7,
+        6
+      ],
+      "day": 90,
+      "night": 67,
+      "visual_group_count": 54
+    },
+    "retained": {
+      "images": [
+        79,
+        45,
+        67,
+        24,
+        41,
+        18,
+        3,
+        20,
+        5
+      ],
+      "pixels": [
+        21548867,
+        1786237,
+        390947,
+        30092,
+        170501,
+        101940,
+        54263,
+        90787,
+        95166
+      ],
+      "groups": [
+        41,
+        20,
+        30,
+        12,
+        15,
+        3,
+        3,
+        3,
+        2
+      ],
+      "day": 41,
+      "night": 38,
+      "visual_group_count": 41
+    },
+    "added": {
+      "images": [
+        78,
+        24,
+        65,
+        23,
+        31,
+        8,
+        13,
+        10,
+        18
+      ],
+      "pixels": [
+        22567102,
+        322337,
+        291146,
+        98546,
+        113166,
+        83427,
+        191208,
+        31009,
+        263659
+      ],
+      "groups": [
+        13,
+        8,
+        12,
+        6,
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "day": 49,
+      "night": 29,
+      "visual_group_count": 13
+    }
+  }
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 5.591
+Exit code: 0
