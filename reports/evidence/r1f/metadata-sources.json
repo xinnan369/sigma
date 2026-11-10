@@ -1,0 +1,22 @@
+{
+  "official_project": "https://www.mi.t.u-tokyo.ac.jp/static/projects/mil_multispectral/",
+  "official_code": "https://github.com/haqishen/MFNet-pytorch",
+  "author_pdf": {
+    "url": "https://drive.google.com/file/d/1vxMh63QpdxPnG3jhzpQU0fb-2XOzHR-Z/view?usp=sharing",
+    "doi": "10.1109/IROS.2017.8206396",
+    "bytes": 1541143,
+    "sha256": "c353f0a21a89b82a359aebaa99dd05cfe0be2b1dbba8474c39d0a49e61d65684",
+    "extraction": "Windows pdftotext -layout, section IV",
+    "finding": "The original three-way dataset partition was made according to capture time order. Section IV does not provide a per-image capture timestamp or a sequence-to-filename mapping."
+  },
+  "official_dataset_directory": {
+    "url": "https://drive.google.com/drive/folders/18BQFWRfhXzSuMloUmtiBRFrr6NSrf8Fw?usp=sharing",
+    "listing_method": "Unauthenticated embeddedfolderview metadata only",
+    "root_names": ["README.txt", "anno_json", "black_list.txt", "images", "labels", "make_flip.py", "test.txt", "test_day.txt", "test_night.txt", "train.txt", "val.txt", "visual"],
+    "annotation_listing_entries": 36,
+    "example_annotation_filenames": ["001.json", "20161031_1-50.json", "20161108_1-50.json"],
+    "annotation_payload_result": "Each of the three sample requests returned Google Accounts sign-in HTML, not JSON. No sample-level mapping was obtained.",
+    "readme_result": "Download redirected to sign-in HTML; direct file view returned HTTP 401.",
+    "test_pixels_read": 0
+  }
+}

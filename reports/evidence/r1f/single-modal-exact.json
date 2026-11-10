@@ -1,0 +1,15 @@
+{
+  "scope": "Exact decoded single-modality originals; canonical under horizontal reflection; no test images",
+  "modalities": {
+    "RGB": {
+      "originals": 784,
+      "duplicate_groups": [],
+      "cross_split_groups": []
+    },
+    "Modal": {
+      "originals": 784,
+      "duplicate_groups": [],
+      "cross_split_groups": []
+    }
+  }
+}

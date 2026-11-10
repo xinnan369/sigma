@@ -1,0 +1,101 @@
+UTC: 2026-11-10T02:04:04.281805+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'OPENBLAS_NUM_THREADS=4', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r1f.scene', '--root', '<ASSETS>/MFNet', '--output', 'reports/evidence/r1f']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Loaded 784 verified original/flip triplets; mismatches=0
+Visual groups=396, edges=712, largest=19
+{
+  "status": "PASS",
+  "split_sha256": "648ba9e27e6f020f37052d5f83d517553296351b324aa774572878ff6bf97d59",
+  "support": {
+    "train": {
+      "images": [
+        705,
+        404,
+        599,
+        213,
+        364,
+        163,
+        30,
+        174,
+        46
+      ],
+      "pixels": [
+        199703541,
+        9116189,
+        2933417,
+        997696,
+        1378313,
+        1211726,
+        309355,
+        331450,
+        594313
+      ],
+      "groups": [
+        355,
+        193,
+        309,
+        134,
+        181,
+        95,
+        13,
+        102,
+        17
+      ],
+      "day": 369,
+      "night": 336
+    },
+    "validation": {
+      "images": [
+        79,
+        45,
+        67,
+        24,
+        41,
+        18,
+        3,
+        20,
+        5
+      ],
+      "pixels": [
+        21548867,
+        1786237,
+        390947,
+        30092,
+        170501,
+        101940,
+        54263,
+        90787,
+        95166
+      ],
+      "groups": [
+        41,
+        20,
+        30,
+        12,
+        15,
+        3,
+        3,
+        3,
+        2
+      ],
+      "day": 41,
+      "night": 38
+    }
+  },
+  "all_pairs": 306936,
+  "exact_pairs": 0,
+  "numeric_neighbor_pairs": 3819,
+  "geometric_candidates": 13914,
+  "geometric_checked_after_global": 13876,
+  "maximum_cross_split_correlation": {
+    "a": "00279D",
+    "b": "00305D",
+    "score": 0.7570145726203918
+  }
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 146.100
+Exit code: 0
