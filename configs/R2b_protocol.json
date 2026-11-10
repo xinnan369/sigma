@@ -1,0 +1,11 @@
+{
+  "version": "r2b-state-v1",
+  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "checkpoint_sha256": "9e1573f050bd0f8319b4e8cf22927d6c31c091f4d63cbfacf666a7f85c6b5159",
+  "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+  "primary": {"module": "concat.2", "direction": 1, "time": 1199},
+  "wrong_time": 0,
+  "state_summary_block": 128,
+  "seed": 3407,
+  "bootstrap_replicates": 10000
+}

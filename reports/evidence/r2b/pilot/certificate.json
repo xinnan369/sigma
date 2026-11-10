@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "phase": "pilot",
+  "signature": {
+    "config_sha256": "15c70c94acda405468e424d0989876e336046772f30af03696168687a6bf4b64",
+    "r2a_sha256": "c1e87b938f8af7b80aae546de881bbcee2d51c4531129cde01a3297f9c292dfc",
+    "sources": {
+      "__init__.py": "28309e9e43f9efbe39bb6ccec2bee276dacae3a56c0306edced4230dd21deddd",
+      "audit.py": "542a802686410c59d6483a01879e30464729c88c3608164e86f5d7910e405e49",
+      "instrument.py": "766c6a868d7f0652607d8299f5cbbd7f811c4758fc34d36ff5ce8e3dfb1236d1",
+      "run.py": "64ad10e53ce6e3f9dfdf1de37da3fd55004c6279eb0e0c6403fada29d694ba43",
+      "state.py": "5303bd860cc1f33003d1ac097ee47bcad87677f3db1eed241e5862e464fd03d7",
+      "triton_state.py": "57db335a5f5891a74175905869a3994d3b056d4fb3c130df0ed7dab20c8e55cc"
+    },
+    "runtime": {
+      "config": {
+        "epochs": 1,
+        "seed": 3407,
+        "precision": "fp32",
+        "microbatch": 1,
+        "accumulation": 8,
+        "lr": 6e-05,
+        "weight_decay": 0.01,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "scheduler": "constant",
+        "checkpoint_every_updates": 32,
+        "test_evaluation": false,
+        "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+        "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+        "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+        "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+      },
+      "source_sha256": {
+        "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+        "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+        "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+        "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+        "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+      },
+      "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+      "torch": "2.2.2+cu121",
+      "cuda": "12.1",
+      "cudnn": 8902,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "cv2": "4.9.0",
+      "numpy": "1.26.4",
+      "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+    },
+    "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+    "checkpoint_sha256": "9e1573f050bd0f8319b4e8cf22927d6c31c091f4d63cbfacf666a7f85c6b5159"
+  },
+  "ids": [
+    "00057D",
+    "00483D",
+    "00083D",
+    "00058D",
+    "00095D",
+    "00444D",
+    "00829N",
+    "00961N",
+    "00022N",
+    "00885N",
+    "00886N",
+    "00818N"
+  ],
+  "records_sha256": "a83ad104715ace7537126e9b8fe850e3d4cd4c9750d8444ea3b8ef87a06bbb4e",
+  "causal_chain_with_prediction_flip": 1,
+  "model_state_sha256": "2ed6a75e8fe32c17098c60957b602441f41c1eedbfccee78b7332bcdfd42297b",
+  "test_pixels_read": 0,
+  "peak_allocated_bytes": 1756933120,
+  "seconds": 32.198917107
+}

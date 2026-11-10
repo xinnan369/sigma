@@ -1,0 +1,48 @@
+UTC: 2026-11-10T13:41:31.822241+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r2b.analysis', '--evidence', 'reports/evidence/r2b']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "status": "PASS",
+  "images": 157,
+  "visual_groups": 54,
+  "replicates": 10000,
+  "seed": 3407,
+  "native_error_maxima": {
+    "pilot": {
+      "output": {
+        "max_abs": 1.9073486328125e-06,
+        "peak_relative": 7.01369742728275e-07,
+        "rms_relative": 1.7056132151083148e-07,
+        "max_mixed_ratio": 0.028434764593839645
+      },
+      "chunk_end_h": {
+        "max_abs": 6.556510925292969e-07,
+        "peak_relative": 1.4334369780044653e-06,
+        "rms_relative": 4.865741516368871e-07,
+        "max_mixed_ratio": 0.009294094517827034
+      }
+    },
+    "full": {
+      "output": {
+        "max_abs": 1.9073486328125e-06,
+        "peak_relative": 7.01369742728275e-07,
+        "rms_relative": 1.7056132151083148e-07,
+        "max_mixed_ratio": 0.04191655293107033
+      },
+      "chunk_end_h": {
+        "max_abs": 1.0132789611816406e-06,
+        "peak_relative": 2.317957296327222e-06,
+        "rms_relative": 5.754283165515517e-07,
+        "max_mixed_ratio": 0.011702923104166985
+      }
+    }
+  },
+  "pilot_chains_to_argmax": 1,
+  "full_chains_to_argmax": 14
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 1.935
+Exit code: 0
