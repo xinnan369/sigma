@@ -1,0 +1,23 @@
+{
+  "version": "r2c-matched-fusion-v1",
+  "arms": ["ssm", "cnn", "attention"],
+  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+  "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+  "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+  "r2a_config_sha256": "c1e87b938f8af7b80aae546de881bbcee2d51c4531129cde01a3297f9c292dfc",
+  "seed": 3407,
+  "epochs": 5,
+  "primary_epoch": 5,
+  "precision": "fp32",
+  "microbatch": 1,
+  "accumulation": 8,
+  "tail_size": 6,
+  "updates_per_epoch": 157,
+  "lr": 0.00006,
+  "weight_decay": 0.01,
+  "betas": [0.9, 0.999],
+  "bootstrap_replicates": 10000,
+  "primary_case": "primary",
+  "primary_rates": ["new", "net"]
+}
