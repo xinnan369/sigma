@@ -1,0 +1,31 @@
+UTC: 2026-11-10T12:14:04.530049+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2a.run', 'full', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint', '<LINUX_HOME>/sigma-r1g-runs/expanded-seed3407/checkpoints/last.pt', '--output', 'reports/evidence/r2a']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+full: 10/157 samples
+full: 20/157 samples
+full: 30/157 samples
+full: 40/157 samples
+full: 50/157 samples
+full: 60/157 samples
+full: 70/157 samples
+full: 80/157 samples
+full: 90/157 samples
+full: 100/157 samples
+full: 110/157 samples
+full: 120/157 samples
+full: 130/157 samples
+full: 140/157 samples
+full: 150/157 samples
+full: 157/157 samples
+{'status': 'PASS', 'phase': 'full', 'identity_inputs_passed': 157, 'identity_replacement_passes': 0, 'plain_forward_rechecks': 0, 'paired_predictions': 3454, 'seconds': 672.376307572, 'strict_model_keys': '<All keys matched successfully>', 'model_state_sha256': '2ed6a75e8fe32c17098c60957b602441f41c1eedbfccee78b7332bcdfd42297b', 'peak_allocated_bytes': 715615232, 'test_pixels_read': 0}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+10 20:02:51 Using backbone: V-MAMBA
+10 20:02:54 Using Mamba Decoder
+10 20:02:54 Initing weights ...
+
+Elapsed seconds: 685.511
+Exit code: 0

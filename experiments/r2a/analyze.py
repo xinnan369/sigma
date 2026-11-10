@@ -170,7 +170,7 @@ def analyze(evidence):
     n = len(groups)
     weights = np.random.default_rng(cfg['bootstrap_seed']).multinomial(
         n, np.full(n, 1 / n), size=cfg['bootstrap_replicates'])
-    summary, count_data = {}, {}
+    summary, count_data, replacement_hashes = {}, {}, {}
     out = evidence / 'analysis'
     out.mkdir(exist_ok=True)
     for name, region in by_case.items():
@@ -179,8 +179,11 @@ def analyze(evidence):
         for r in pair_rows:
             audit_pair(r, refs[r['id']], region, name, support[region]['true_count'])
         values, group_rows, count_data[name] = collect_case(pair_rows, refs, groups, weights)
-        write_json(out / f'groups-{name}.json', group_rows)
+        group_lines = ',\n'.join(json.dumps(r, separators=(',', ':')) for r in group_rows)
+        (out / f'groups-{name}.json').write_text(f'[\n{group_lines}\n]\n', encoding='utf-8', newline='\n')
         summary[name] = values
+        if name.startswith('replace.'):
+            replacement_hashes[name] = [r['prediction_sha256'] for r in pair_rows]
     primary = count_data['primary']
     for name in by_case:
         if not name.startswith('replace.'):
@@ -206,9 +209,14 @@ def analyze(evidence):
         # Compact records preserve the group-level means' sums and denominators.
         (out / f'group-responses-{name}.jsonl').write_text(
             ''.join(json.dumps(r, separators=(',', ':')) + '\n' for r in by_group), encoding='utf-8', newline='\n')
+    replacement_matches = {
+        str(i): sum(a == b for a, b in zip(replacement_hashes[f'replace.cross.{i}'],
+                                           replacement_hashes[f'replace.concat.{i}'], strict=True))
+        for i in range(4)}
     result = {'audit': 'PASS', 'images': len(ids), 'groups': n, 'bootstrap_seed': cfg['bootstrap_seed'],
               'replicates': cfg['bootstrap_replicates'], 'unit': 'paired whole visual proxy group',
               'scope': 'conditional on this trained model, frozen visual grouping, and tested conditions',
+              'same_scale_replacement_prediction_matches': replacement_matches,
               'cases': summary}
     write_json(out / 'summary.json', result)
     return result

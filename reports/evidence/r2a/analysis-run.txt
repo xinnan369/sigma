@@ -1,0 +1,67 @@
+UTC: 2026-11-10T12:17:19.268333+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-m', 'experiments.r2a.analyze', '--evidence', 'reports/evidence/r2a']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "audit": "PASS",
+  "images": 157,
+  "groups": 54,
+  "bootstrap_seed": 3407,
+  "replicates": 10000,
+  "unit": "paired whole visual proxy group",
+  "scope": "conditional on this trained model, frozen visual grouping, and tested conditions",
+  "same_scale_replacement_prediction_matches": {
+    "0": 157,
+    "1": 157,
+    "2": 157,
+    "3": 157
+  }
+}
+{
+  "counts": {
+    "pixels": 47587328,
+    "new": 33437,
+    "corrected": 30316,
+    "net": 3121,
+    "disagree": 67601
+  },
+  "rates": {
+    "new": {
+      "point": 0.0007026450402930798,
+      "ci95": [
+        0.0005333492447910808,
+        0.0008746749158197629
+      ],
+      "valid_draws": 10000
+    },
+    "corrected": {
+      "point": 0.0006370603535462213,
+      "ci95": [
+        0.0004638879029600604,
+        0.0008236831048286391
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 6.558468674685833e-05,
+      "ci95": [
+        -8.498514721503419e-05,
+        0.00018058195486441028
+      ],
+      "valid_draws": 10000
+    },
+    "disagree": {
+      "point": 0.001420567256896626,
+      "ci95": [
+        0.0010797861717039762,
+        0.0017734912080885792
+      ],
+      "valid_draws": 10000
+    }
+  }
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 26.066
+Exit code: 0

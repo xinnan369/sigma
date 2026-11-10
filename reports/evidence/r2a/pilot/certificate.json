@@ -1,0 +1,77 @@
+{
+  "status": "PASS",
+  "phase": "pilot",
+  "signature": {
+    "config_sha256": "c1e87b938f8af7b80aae546de881bbcee2d51c4531129cde01a3297f9c292dfc",
+    "checkpoint_sha256": "9e1573f050bd0f8319b4e8cf22927d6c31c091f4d63cbfacf666a7f85c6b5159",
+    "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+    "asset_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+    "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+    "runtime": {
+      "config": {
+        "epochs": 1,
+        "seed": 3407,
+        "precision": "fp32",
+        "microbatch": 1,
+        "accumulation": 8,
+        "lr": 6e-05,
+        "weight_decay": 0.01,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "scheduler": "constant",
+        "checkpoint_every_updates": 32,
+        "test_evaluation": false,
+        "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+        "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+        "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+        "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+      },
+      "source_sha256": {
+        "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+        "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+        "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+        "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+        "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+      },
+      "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+      "torch": "2.2.2+cu121",
+      "cuda": "12.1",
+      "cudnn": 8902,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "cv2": "4.9.0",
+      "numpy": "1.26.4",
+      "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+    },
+    "sources": {
+      "experiments/r2a/run.py": "def2fc203aed104725097df0986fe47b39c8cbd9cca7080d98b31237babd0d67",
+      "experiments/r2a/hooks.py": "ace4e0a2681e01a5a461e14fb074f15912db8ad9b84787e81280a19f08436e8c",
+      "experiments/r2a/metrics.py": "5145513d45ccb10994fd3ff93b2fc4c2497912d6b0a6374846c1d9b1b647fad4",
+      "experiments/exp0/perturbations.py": "2e24f9ab9c0193eb8dba790c00447bee54a1144f3d206fafea59164c812ccc1b"
+    }
+  },
+  "ids": [
+    "00057D",
+    "00483D",
+    "00083D",
+    "00058D",
+    "00095D",
+    "00444D",
+    "00829N",
+    "00961N",
+    "00022N",
+    "00885N",
+    "00886N",
+    "00818N"
+  ],
+  "identity_inputs_passed": 12,
+  "identity_replacement_passes": 96,
+  "plain_forward_rechecks": 12,
+  "paired_predictions": 264,
+  "seconds": 74.80614592,
+  "strict_model_keys": "<All keys matched successfully>",
+  "model_state_sha256": "2ed6a75e8fe32c17098c60957b602441f41c1eedbfccee78b7332bcdfd42297b",
+  "peak_allocated_bytes": 715615232,
+  "test_pixels_read": 0
+}
