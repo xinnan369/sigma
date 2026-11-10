@@ -1,0 +1,14 @@
+UTC: 2026-11-10T12:04:46.311224+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-c', "import platform, scipy, torch, subprocess; print(platform.platform()); print('SciPy', scipy.__version__); print('PyTorch', torch.__version__, 'CUDA', torch.version.cuda, 'cuDNN', torch.backends.cudnn.version()); subprocess.run(['nvidia-smi','--query-gpu=name,driver_version,memory.total','--format=csv'],check=True)"]
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+name, driver_version, memory.total [MiB]
+NVIDIA GeForce RTX 3090, 610.88, 24576 MiB
+Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35
+SciPy 1.13.0
+PyTorch 2.2.2+cu121 CUDA 12.1 cuDNN 8902
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 1.212
+Exit code: 0

@@ -1,0 +1,1262 @@
+[
+  {
+    "module": "concat.0",
+    "slot": "in0",
+    "shape_bhwc": [
+      1,
+      120,
+      160,
+      96
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.0",
+    "slot": "in1",
+    "shape_bhwc": [
+      1,
+      120,
+      160,
+      96
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.0",
+    "slot": "out0",
+    "shape_bhwc": [
+      1,
+      120,
+      160,
+      96
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.1",
+    "slot": "in0",
+    "shape_bhwc": [
+      1,
+      60,
+      80,
+      192
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.1",
+    "slot": "in1",
+    "shape_bhwc": [
+      1,
+      60,
+      80,
+      192
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.1",
+    "slot": "out0",
+    "shape_bhwc": [
+      1,
+      60,
+      80,
+      192
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.2",
+    "slot": "in0",
+    "shape_bhwc": [
+      1,
+      30,
+      40,
+      384
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.2",
+    "slot": "in1",
+    "shape_bhwc": [
+      1,
+      30,
+      40,
+      384
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.2",
+    "slot": "out0",
+    "shape_bhwc": [
+      1,
+      30,
+      40,
+      384
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.3",
+    "slot": "in0",
+    "shape_bhwc": [
+      1,
+      15,
+      20,
+      768
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.3",
+    "slot": "in1",
+    "shape_bhwc": [
+      1,
+      15,
+      20,
+      768
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "concat.3",
+    "slot": "out0",
+    "shape_bhwc": [
+      1,
+      15,
+      20,
+      768
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.0",
+    "slot": "in0",
+    "shape_bhwc": [
+      1,
+      120,
+      160,
+      96
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.0",
+    "slot": "in1",
+    "shape_bhwc": [
+      1,
+      120,
+      160,
+      96
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.0",
+    "slot": "out0",
+    "shape_bhwc": [
+      1,
+      120,
+      160,
+      96
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.0",
+    "slot": "out1",
+    "shape_bhwc": [
+      1,
+      120,
+      160,
+      96
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.1",
+    "slot": "in0",
+    "shape_bhwc": [
+      1,
+      60,
+      80,
+      192
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.1",
+    "slot": "in1",
+    "shape_bhwc": [
+      1,
+      60,
+      80,
+      192
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.1",
+    "slot": "out0",
+    "shape_bhwc": [
+      1,
+      60,
+      80,
+      192
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.1",
+    "slot": "out1",
+    "shape_bhwc": [
+      1,
+      60,
+      80,
+      192
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.2",
+    "slot": "in0",
+    "shape_bhwc": [
+      1,
+      30,
+      40,
+      384
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.2",
+    "slot": "in1",
+    "shape_bhwc": [
+      1,
+      30,
+      40,
+      384
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.2",
+    "slot": "out0",
+    "shape_bhwc": [
+      1,
+      30,
+      40,
+      384
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.2",
+    "slot": "out1",
+    "shape_bhwc": [
+      1,
+      30,
+      40,
+      384
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.3",
+    "slot": "in0",
+    "shape_bhwc": [
+      1,
+      15,
+      20,
+      768
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.3",
+    "slot": "in1",
+    "shape_bhwc": [
+      1,
+      15,
+      20,
+      768
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.3",
+    "slot": "out0",
+    "shape_bhwc": [
+      1,
+      15,
+      20,
+      768
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  },
+  {
+    "module": "cross.3",
+    "slot": "out1",
+    "shape_bhwc": [
+      1,
+      15,
+      20,
+      768
+    ],
+    "zero_response_images": 157,
+    "normalized_l2": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_response_ratio": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "inside_mean": {
+      "point": null,
+      "ci95": null,
+      "valid_draws": 0
+    },
+    "outside_mean": {
+      "point": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "valid_draws": 10000
+    },
+    "outside_area_fraction": {
+      "point": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "valid_draws": 10000
+    }
+  }
+]

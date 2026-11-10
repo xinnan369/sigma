@@ -1,0 +1,15 @@
+{
+  "version": "r2a-exp0-v1",
+  "checkpoint_sha256": "9e1573f050bd0f8319b4e8cf22927d6c31c091f4d63cbfacf666a7f85c6b5159",
+  "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+  "image_shape": [480, 640],
+  "primary": {"kind": "occlusion", "position": "center", "fill": 0},
+  "positions_y0_x0_y1_x1": {"center": [208, 288, 272, 352], "upper_left": [88, 128, 152, 192], "lower_right": [328, 448, 392, 512]},
+  "seeds": [3407, 3408, 3409],
+  "gaussian_sigma": 20,
+  "shift": {"dx": 8, "dy": 0, "fill": 0},
+  "distance_upper_bounds_px": [16, 32, 64, 128],
+  "pilot_ids": ["00057D", "00483D", "00083D", "00058D", "00095D", "00444D", "00829N", "00961N", "00022N", "00885N", "00886N", "00818N"],
+  "bootstrap_seed": 3407,
+  "bootstrap_replicates": 10000
+}

@@ -1,0 +1,17 @@
+UTC: 2026-11-10T12:00:50.395912+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2a.run', 'pilot', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint', '<LINUX_HOME>/sigma-r1g-runs/expanded-seed3407/checkpoints/last.pt', '--output', 'reports/evidence/r2a']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+pilot: 10/12 samples
+pilot: 12/12 samples
+{'status': 'PASS', 'phase': 'pilot', 'identity_inputs_passed': 12, 'identity_replacement_passes': 96, 'plain_forward_rechecks': 12, 'paired_predictions': 264, 'seconds': 74.80614592, 'strict_model_keys': '<All keys matched successfully>', 'model_state_sha256': '2ed6a75e8fe32c17098c60957b602441f41c1eedbfccee78b7332bcdfd42297b', 'peak_allocated_bytes': 715615232, 'test_pixels_read': 0}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+10 19:59:34 Using backbone: V-MAMBA
+10 19:59:37 Using Mamba Decoder
+10 19:59:37 Initing weights ...
+
+Elapsed seconds: 80.801
+Exit code: 0
