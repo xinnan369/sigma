@@ -1,0 +1,60 @@
+UTC: 2026-11-10T16:55:42.118867+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2c.analysis', '--evidence', 'reports/evidence/r2c']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "status": "PASS",
+  "images": 157,
+  "visual_groups": 54,
+  "seed": 3407,
+  "replicates": 10000,
+  "primary_case": "primary",
+  "primary_rates": [
+    "new",
+    "net"
+  ],
+  "scope": "paired visual-group uncertainty conditional on one trained checkpoint per arm"
+}
+{
+  "ssm_minus_cnn": {
+    "new": {
+      "point": -0.000142054624289895,
+      "ci95": [
+        -0.00023186972660893738,
+        -2.785530749316279e-05
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": -9.361735964666897e-05,
+      "ci95": [
+        -0.000244706297003037,
+        8.552207872829495e-05
+      ],
+      "valid_draws": 10000
+    }
+  },
+  "ssm_minus_attention": {
+    "new": {
+      "point": -1.0591054828714064e-05,
+      "ci95": [
+        -7.252668442701402e-05,
+        6.129437963735348e-05
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 0.00016619970761964193,
+      "ci95": [
+        1.5135164174155797e-05,
+        0.0004068949689513164
+      ],
+      "valid_draws": 10000
+    }
+  }
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 10.662
+Exit code: 0

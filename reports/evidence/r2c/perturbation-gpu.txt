@@ -1,0 +1,45 @@
+UTC: 2026-11-10T16:55:31.280235+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2c.evaluate', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint-dir', '<LINUX_HOME>/sigma-r2c-runs/seed3407', '--evidence', 'reports/evidence/r2c']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm: evaluated 25/157 images
+ssm: evaluated 50/157 images
+ssm: evaluated 75/157 images
+ssm: evaluated 100/157 images
+ssm: evaluated 125/157 images
+ssm: evaluated 150/157 images
+ssm: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn: evaluated 25/157 images
+cnn: evaluated 50/157 images
+cnn: evaluated 75/157 images
+cnn: evaluated 100/157 images
+cnn: evaluated 125/157 images
+cnn: evaluated 150/157 images
+cnn: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention: evaluated 25/157 images
+attention: evaluated 50/157 images
+attention: evaluated 75/157 images
+attention: evaluated 100/157 images
+attention: evaluated 125/157 images
+attention: evaluated 150/157 images
+attention: evaluated 157/157 images
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+11 00:35:10 Using backbone: V-MAMBA
+11 00:35:12 Using Mamba Decoder
+11 00:35:12 Initing weights ...
+11 00:42:08 Using backbone: V-MAMBA
+11 00:42:09 Using Mamba Decoder
+11 00:42:09 Initing weights ...
+11 00:48:46 Using backbone: V-MAMBA
+11 00:48:47 Using Mamba Decoder
+11 00:48:47 Initing weights ...
+
+Elapsed seconds: 1225.579
+Exit code: 0
