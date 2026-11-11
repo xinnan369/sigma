@@ -1,0 +1,19 @@
+UTC: 2026-11-11T10:14:12.286304+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'experiments.r2d.analysis', '--evidence', 'reports/evidence/r2d']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "status": "PASS",
+  "seeds": [
+    3407,
+    3408,
+    3409
+  ],
+  "groups": 54,
+  "draws": 10000,
+  "exploratory_seed_count": true,
+  "estimand": "equal seed mean; pool pixels within each resampled visual cohort before computing rates",
+  "resampling": "independent seed and visual-group draws; both weights shared across architectures; group weights shared across seeds because the same validation groups recur"
+}
+
+Elapsed seconds: 13.608
+Exit code: 0

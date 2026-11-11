@@ -1,0 +1,5540 @@
+{
+  "total_numel": 48276128,
+  "legacy_missing_numel": 5906688,
+  "tensor_count": 556,
+  "duplicate_count": 0,
+  "missing_count": 0,
+  "parameters": [
+    {
+      "name": "backbone.vssm.patch_embed.0.weight",
+      "numel": 4608,
+      "shape": [
+        96,
+        3,
+        4,
+        4
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.patch_embed.0.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.patch_embed.2.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.patch_embed.2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.norm.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.norm.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.x_proj_weight",
+      "numel": 29184,
+      "shape": [
+        4,
+        38,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.dt_projs_weight",
+      "numel": 4608,
+      "shape": [
+        4,
+        192,
+        6
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.dt_projs_bias",
+      "numel": 768,
+      "shape": [
+        4,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.A_logs",
+      "numel": 12288,
+      "shape": [
+        768,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.Ds",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.in_proj.weight",
+      "numel": 36864,
+      "shape": [
+        384,
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.conv2d.weight",
+      "numel": 1728,
+      "shape": [
+        192,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.conv2d.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.out_norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.out_norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.0.op.out_proj.weight",
+      "numel": 18432,
+      "shape": [
+        96,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.norm.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.norm.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.x_proj_weight",
+      "numel": 29184,
+      "shape": [
+        4,
+        38,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.dt_projs_weight",
+      "numel": 4608,
+      "shape": [
+        4,
+        192,
+        6
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.dt_projs_bias",
+      "numel": 768,
+      "shape": [
+        4,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.A_logs",
+      "numel": 12288,
+      "shape": [
+        768,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.Ds",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.in_proj.weight",
+      "numel": 36864,
+      "shape": [
+        384,
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.conv2d.weight",
+      "numel": 1728,
+      "shape": [
+        192,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.conv2d.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.out_norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.out_norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.blocks.1.op.out_proj.weight",
+      "numel": 18432,
+      "shape": [
+        96,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.downsample.reduction.weight",
+      "numel": 73728,
+      "shape": [
+        192,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.0.downsample.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.0.downsample.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.x_proj_weight",
+      "numel": 67584,
+      "shape": [
+        4,
+        44,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.dt_projs_weight",
+      "numel": 18432,
+      "shape": [
+        4,
+        384,
+        12
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.dt_projs_bias",
+      "numel": 1536,
+      "shape": [
+        4,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.A_logs",
+      "numel": 24576,
+      "shape": [
+        1536,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.Ds",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.in_proj.weight",
+      "numel": 147456,
+      "shape": [
+        768,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.conv2d.weight",
+      "numel": 3456,
+      "shape": [
+        384,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.conv2d.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.out_norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.out_norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.0.op.out_proj.weight",
+      "numel": 73728,
+      "shape": [
+        192,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.x_proj_weight",
+      "numel": 67584,
+      "shape": [
+        4,
+        44,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.dt_projs_weight",
+      "numel": 18432,
+      "shape": [
+        4,
+        384,
+        12
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.dt_projs_bias",
+      "numel": 1536,
+      "shape": [
+        4,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.A_logs",
+      "numel": 24576,
+      "shape": [
+        1536,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.Ds",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.in_proj.weight",
+      "numel": 147456,
+      "shape": [
+        768,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.conv2d.weight",
+      "numel": 3456,
+      "shape": [
+        384,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.conv2d.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.out_norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.out_norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.blocks.1.op.out_proj.weight",
+      "numel": 73728,
+      "shape": [
+        192,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.downsample.reduction.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.1.downsample.norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.1.downsample.norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.0.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.1.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.2.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.3.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.4.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.5.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.6.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.7.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.x_proj_weight",
+      "numel": 172032,
+      "shape": [
+        4,
+        56,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.A_logs",
+      "numel": 49152,
+      "shape": [
+        3072,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.blocks.8.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.downsample.reduction.weight",
+      "numel": 1179648,
+      "shape": [
+        768,
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.2.downsample.norm.weight",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.2.downsample.norm.bias",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.x_proj_weight",
+      "numel": 491520,
+      "shape": [
+        4,
+        80,
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.dt_projs_weight",
+      "numel": 294912,
+      "shape": [
+        4,
+        1536,
+        48
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.dt_projs_bias",
+      "numel": 6144,
+      "shape": [
+        4,
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.A_logs",
+      "numel": 98304,
+      "shape": [
+        6144,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.Ds",
+      "numel": 6144,
+      "shape": [
+        6144
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.in_proj.weight",
+      "numel": 2359296,
+      "shape": [
+        3072,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.conv2d.weight",
+      "numel": 13824,
+      "shape": [
+        1536,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.conv2d.bias",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.out_norm.weight",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.out_norm.bias",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.0.op.out_proj.weight",
+      "numel": 1179648,
+      "shape": [
+        768,
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.x_proj_weight",
+      "numel": 491520,
+      "shape": [
+        4,
+        80,
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.dt_projs_weight",
+      "numel": 294912,
+      "shape": [
+        4,
+        1536,
+        48
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.dt_projs_bias",
+      "numel": 6144,
+      "shape": [
+        4,
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.A_logs",
+      "numel": 98304,
+      "shape": [
+        6144,
+        16
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.Ds",
+      "numel": 6144,
+      "shape": [
+        6144
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.in_proj.weight",
+      "numel": 2359296,
+      "shape": [
+        3072,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.conv2d.weight",
+      "numel": 13824,
+      "shape": [
+        1536,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.conv2d.bias",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.out_norm.weight",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.out_norm.bias",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.layers.3.blocks.1.op.out_proj.weight",
+      "numel": 1179648,
+      "shape": [
+        768,
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.vssm.outnorm0.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.outnorm0.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.outnorm1.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.outnorm1.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.outnorm2.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.outnorm2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.outnorm3.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.vssm.outnorm3.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.0.mix.0.weight",
+      "numel": 47616,
+      "shape": [
+        248,
+        192,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.0.mix.0.bias",
+      "numel": 248,
+      "shape": [
+        248
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.0.mix.1.weight",
+      "numel": 2232,
+      "shape": [
+        248,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.0.mix.1.bias",
+      "numel": 248,
+      "shape": [
+        248
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.0.mix.3.weight",
+      "numel": 47616,
+      "shape": [
+        192,
+        248,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.0.mix.3.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.1.mix.0.weight",
+      "numel": 190464,
+      "shape": [
+        496,
+        384,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.1.mix.0.bias",
+      "numel": 496,
+      "shape": [
+        496
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.1.mix.1.weight",
+      "numel": 4464,
+      "shape": [
+        496,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.1.mix.1.bias",
+      "numel": 496,
+      "shape": [
+        496
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.1.mix.3.weight",
+      "numel": 190464,
+      "shape": [
+        384,
+        496,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.1.mix.3.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.2.mix.0.weight",
+      "numel": 768000,
+      "shape": [
+        1000,
+        768,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.2.mix.0.bias",
+      "numel": 1000,
+      "shape": [
+        1000
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.2.mix.1.weight",
+      "numel": 9000,
+      "shape": [
+        1000,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.2.mix.1.bias",
+      "numel": 1000,
+      "shape": [
+        1000
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.2.mix.3.weight",
+      "numel": 768000,
+      "shape": [
+        768,
+        1000,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.2.mix.3.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.3.mix.0.weight",
+      "numel": 3072000,
+      "shape": [
+        2000,
+        1536,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.3.mix.0.bias",
+      "numel": 2000,
+      "shape": [
+        2000
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.3.mix.1.weight",
+      "numel": 18000,
+      "shape": [
+        2000,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.3.mix.1.bias",
+      "numel": 2000,
+      "shape": [
+        2000
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.cross_mamba.3.mix.3.weight",
+      "numel": 3072000,
+      "shape": [
+        1536,
+        2000,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.cross_mamba.3.mix.3.bias",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.0.mix.0.weight",
+      "numel": 47616,
+      "shape": [
+        248,
+        192,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.0.mix.0.bias",
+      "numel": 248,
+      "shape": [
+        248
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.0.mix.1.weight",
+      "numel": 2232,
+      "shape": [
+        248,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.0.mix.1.bias",
+      "numel": 248,
+      "shape": [
+        248
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.0.mix.3.weight",
+      "numel": 23808,
+      "shape": [
+        96,
+        248,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.0.mix.3.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.1.mix.0.weight",
+      "numel": 190464,
+      "shape": [
+        496,
+        384,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.1.mix.0.bias",
+      "numel": 496,
+      "shape": [
+        496
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.1.mix.1.weight",
+      "numel": 4464,
+      "shape": [
+        496,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.1.mix.1.bias",
+      "numel": 496,
+      "shape": [
+        496
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.1.mix.3.weight",
+      "numel": 95232,
+      "shape": [
+        192,
+        496,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.1.mix.3.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.2.mix.0.weight",
+      "numel": 768000,
+      "shape": [
+        1000,
+        768,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.2.mix.0.bias",
+      "numel": 1000,
+      "shape": [
+        1000
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.2.mix.1.weight",
+      "numel": 9000,
+      "shape": [
+        1000,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.2.mix.1.bias",
+      "numel": 1000,
+      "shape": [
+        1000
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.2.mix.3.weight",
+      "numel": 384000,
+      "shape": [
+        384,
+        1000,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.2.mix.3.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.3.mix.0.weight",
+      "numel": 3072000,
+      "shape": [
+        2000,
+        1536,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.3.mix.0.bias",
+      "numel": 2000,
+      "shape": [
+        2000
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.3.mix.1.weight",
+      "numel": 18000,
+      "shape": [
+        2000,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.3.mix.1.bias",
+      "numel": 2000,
+      "shape": [
+        2000
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "backbone.channel_attn_mamba.3.mix.3.weight",
+      "numel": 1536000,
+      "shape": [
+        768,
+        2000,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "backbone.channel_attn_mamba.3.mix.3.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.0.expand.weight",
+      "numel": 1179648,
+      "shape": [
+        1536,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.0.norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.0.norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.scale1",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.scale2",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.norm1.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.norm1.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.x_proj_weight",
+      "numel": 98304,
+      "shape": [
+        4,
+        32,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.A_logs",
+      "numel": 12288,
+      "shape": [
+        3072,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.conv_blk.cab.0.weight",
+      "numel": 442368,
+      "shape": [
+        128,
+        384,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.conv_blk.cab.0.bias",
+      "numel": 128,
+      "shape": [
+        128
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.conv_blk.cab.2.weight",
+      "numel": 442368,
+      "shape": [
+        384,
+        128,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.conv_blk.cab.2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.conv_blk.cab.3.fc.0.weight",
+      "numel": 4608,
+      "shape": [
+        12,
+        384,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.conv_blk.cab.3.fc.2.weight",
+      "numel": 4608,
+      "shape": [
+        384,
+        12,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.norm2.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.0.norm2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.scale1",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.scale2",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.norm1.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.norm1.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.x_proj_weight",
+      "numel": 98304,
+      "shape": [
+        4,
+        32,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.A_logs",
+      "numel": 12288,
+      "shape": [
+        3072,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.conv_blk.cab.0.weight",
+      "numel": 442368,
+      "shape": [
+        128,
+        384,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.conv_blk.cab.0.bias",
+      "numel": 128,
+      "shape": [
+        128
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.conv_blk.cab.2.weight",
+      "numel": 442368,
+      "shape": [
+        384,
+        128,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.conv_blk.cab.2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.conv_blk.cab.3.fc.0.weight",
+      "numel": 4608,
+      "shape": [
+        12,
+        384,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.conv_blk.cab.3.fc.2.weight",
+      "numel": 4608,
+      "shape": [
+        384,
+        12,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.norm2.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.1.norm2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.scale1",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.scale2",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.norm1.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.norm1.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.x_proj_weight",
+      "numel": 98304,
+      "shape": [
+        4,
+        32,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.A_logs",
+      "numel": 12288,
+      "shape": [
+        3072,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.conv_blk.cab.0.weight",
+      "numel": 442368,
+      "shape": [
+        128,
+        384,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.conv_blk.cab.0.bias",
+      "numel": 128,
+      "shape": [
+        128
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.conv_blk.cab.2.weight",
+      "numel": 442368,
+      "shape": [
+        384,
+        128,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.conv_blk.cab.2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.conv_blk.cab.3.fc.0.weight",
+      "numel": 4608,
+      "shape": [
+        12,
+        384,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.conv_blk.cab.3.fc.2.weight",
+      "numel": 4608,
+      "shape": [
+        384,
+        12,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.norm2.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.2.norm2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.scale1",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.scale2",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.norm1.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.norm1.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.x_proj_weight",
+      "numel": 98304,
+      "shape": [
+        4,
+        32,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.dt_projs_weight",
+      "numel": 73728,
+      "shape": [
+        4,
+        768,
+        24
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.dt_projs_bias",
+      "numel": 3072,
+      "shape": [
+        4,
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.A_logs",
+      "numel": 12288,
+      "shape": [
+        3072,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.Ds",
+      "numel": 3072,
+      "shape": [
+        3072
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.in_proj.weight",
+      "numel": 589824,
+      "shape": [
+        1536,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.conv2d.weight",
+      "numel": 6912,
+      "shape": [
+        768,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.conv2d.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.out_norm.weight",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.out_norm.bias",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.op.out_proj.weight",
+      "numel": 294912,
+      "shape": [
+        384,
+        768
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.conv_blk.cab.0.weight",
+      "numel": 442368,
+      "shape": [
+        128,
+        384,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.conv_blk.cab.0.bias",
+      "numel": 128,
+      "shape": [
+        128
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.conv_blk.cab.2.weight",
+      "numel": 442368,
+      "shape": [
+        384,
+        128,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.conv_blk.cab.2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.conv_blk.cab.3.fc.0.weight",
+      "numel": 4608,
+      "shape": [
+        12,
+        384,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.conv_blk.cab.3.fc.2.weight",
+      "numel": 4608,
+      "shape": [
+        384,
+        12,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.norm2.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.blocks.3.norm2.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.upsample.linear.weight",
+      "numel": 73728,
+      "shape": [
+        192,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.1.upsample.norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.1.upsample.norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.scale1",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.scale2",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.norm1.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.norm1.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.x_proj_weight",
+      "numel": 30720,
+      "shape": [
+        4,
+        20,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.dt_projs_weight",
+      "numel": 18432,
+      "shape": [
+        4,
+        384,
+        12
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.dt_projs_bias",
+      "numel": 1536,
+      "shape": [
+        4,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.A_logs",
+      "numel": 6144,
+      "shape": [
+        1536,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.Ds",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.in_proj.weight",
+      "numel": 147456,
+      "shape": [
+        768,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.conv2d.weight",
+      "numel": 3456,
+      "shape": [
+        384,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.conv2d.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.out_norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.out_norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.op.out_proj.weight",
+      "numel": 73728,
+      "shape": [
+        192,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.conv_blk.cab.0.weight",
+      "numel": 110592,
+      "shape": [
+        64,
+        192,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.conv_blk.cab.0.bias",
+      "numel": 64,
+      "shape": [
+        64
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.conv_blk.cab.2.weight",
+      "numel": 110592,
+      "shape": [
+        192,
+        64,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.conv_blk.cab.2.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.conv_blk.cab.3.fc.0.weight",
+      "numel": 1152,
+      "shape": [
+        6,
+        192,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.conv_blk.cab.3.fc.2.weight",
+      "numel": 1152,
+      "shape": [
+        192,
+        6,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.norm2.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.0.norm2.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.scale1",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.scale2",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.norm1.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.norm1.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.x_proj_weight",
+      "numel": 30720,
+      "shape": [
+        4,
+        20,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.dt_projs_weight",
+      "numel": 18432,
+      "shape": [
+        4,
+        384,
+        12
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.dt_projs_bias",
+      "numel": 1536,
+      "shape": [
+        4,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.A_logs",
+      "numel": 6144,
+      "shape": [
+        1536,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.Ds",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.in_proj.weight",
+      "numel": 147456,
+      "shape": [
+        768,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.conv2d.weight",
+      "numel": 3456,
+      "shape": [
+        384,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.conv2d.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.out_norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.out_norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.op.out_proj.weight",
+      "numel": 73728,
+      "shape": [
+        192,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.conv_blk.cab.0.weight",
+      "numel": 110592,
+      "shape": [
+        64,
+        192,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.conv_blk.cab.0.bias",
+      "numel": 64,
+      "shape": [
+        64
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.conv_blk.cab.2.weight",
+      "numel": 110592,
+      "shape": [
+        192,
+        64,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.conv_blk.cab.2.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.conv_blk.cab.3.fc.0.weight",
+      "numel": 1152,
+      "shape": [
+        6,
+        192,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.conv_blk.cab.3.fc.2.weight",
+      "numel": 1152,
+      "shape": [
+        192,
+        6,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.norm2.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.1.norm2.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.scale1",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.scale2",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.norm1.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.norm1.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.x_proj_weight",
+      "numel": 30720,
+      "shape": [
+        4,
+        20,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.dt_projs_weight",
+      "numel": 18432,
+      "shape": [
+        4,
+        384,
+        12
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.dt_projs_bias",
+      "numel": 1536,
+      "shape": [
+        4,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.A_logs",
+      "numel": 6144,
+      "shape": [
+        1536,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.Ds",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.in_proj.weight",
+      "numel": 147456,
+      "shape": [
+        768,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.conv2d.weight",
+      "numel": 3456,
+      "shape": [
+        384,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.conv2d.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.out_norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.out_norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.op.out_proj.weight",
+      "numel": 73728,
+      "shape": [
+        192,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.conv_blk.cab.0.weight",
+      "numel": 110592,
+      "shape": [
+        64,
+        192,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.conv_blk.cab.0.bias",
+      "numel": 64,
+      "shape": [
+        64
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.conv_blk.cab.2.weight",
+      "numel": 110592,
+      "shape": [
+        192,
+        64,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.conv_blk.cab.2.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.conv_blk.cab.3.fc.0.weight",
+      "numel": 1152,
+      "shape": [
+        6,
+        192,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.conv_blk.cab.3.fc.2.weight",
+      "numel": 1152,
+      "shape": [
+        192,
+        6,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.norm2.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.2.norm2.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.scale1",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.scale2",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.norm1.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.norm1.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.x_proj_weight",
+      "numel": 30720,
+      "shape": [
+        4,
+        20,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.dt_projs_weight",
+      "numel": 18432,
+      "shape": [
+        4,
+        384,
+        12
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.dt_projs_bias",
+      "numel": 1536,
+      "shape": [
+        4,
+        384
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.A_logs",
+      "numel": 6144,
+      "shape": [
+        1536,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.Ds",
+      "numel": 1536,
+      "shape": [
+        1536
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.in_proj.weight",
+      "numel": 147456,
+      "shape": [
+        768,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.conv2d.weight",
+      "numel": 3456,
+      "shape": [
+        384,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.conv2d.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.out_norm.weight",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.out_norm.bias",
+      "numel": 384,
+      "shape": [
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.op.out_proj.weight",
+      "numel": 73728,
+      "shape": [
+        192,
+        384
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.conv_blk.cab.0.weight",
+      "numel": 110592,
+      "shape": [
+        64,
+        192,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.conv_blk.cab.0.bias",
+      "numel": 64,
+      "shape": [
+        64
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.conv_blk.cab.2.weight",
+      "numel": 110592,
+      "shape": [
+        192,
+        64,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.conv_blk.cab.2.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.conv_blk.cab.3.fc.0.weight",
+      "numel": 1152,
+      "shape": [
+        6,
+        192,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.conv_blk.cab.3.fc.2.weight",
+      "numel": 1152,
+      "shape": [
+        192,
+        6,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.norm2.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.blocks.3.norm2.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.upsample.linear.weight",
+      "numel": 18432,
+      "shape": [
+        96,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.2.upsample.norm.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.2.upsample.norm.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.scale1",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.scale2",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.norm1.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.norm1.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.x_proj_weight",
+      "numel": 10752,
+      "shape": [
+        4,
+        14,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.dt_projs_weight",
+      "numel": 4608,
+      "shape": [
+        4,
+        192,
+        6
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.dt_projs_bias",
+      "numel": 768,
+      "shape": [
+        4,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.A_logs",
+      "numel": 3072,
+      "shape": [
+        768,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.Ds",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.in_proj.weight",
+      "numel": 36864,
+      "shape": [
+        384,
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.conv2d.weight",
+      "numel": 1728,
+      "shape": [
+        192,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.conv2d.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.out_norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.out_norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.op.out_proj.weight",
+      "numel": 18432,
+      "shape": [
+        96,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.conv_blk.cab.0.weight",
+      "numel": 27648,
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.conv_blk.cab.0.bias",
+      "numel": 32,
+      "shape": [
+        32
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.conv_blk.cab.2.weight",
+      "numel": 27648,
+      "shape": [
+        96,
+        32,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.conv_blk.cab.2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.conv_blk.cab.3.fc.0.weight",
+      "numel": 288,
+      "shape": [
+        3,
+        96,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.conv_blk.cab.3.fc.2.weight",
+      "numel": 288,
+      "shape": [
+        96,
+        3,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.norm2.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.0.norm2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.scale1",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.scale2",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.norm1.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.norm1.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.x_proj_weight",
+      "numel": 10752,
+      "shape": [
+        4,
+        14,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.dt_projs_weight",
+      "numel": 4608,
+      "shape": [
+        4,
+        192,
+        6
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.dt_projs_bias",
+      "numel": 768,
+      "shape": [
+        4,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.A_logs",
+      "numel": 3072,
+      "shape": [
+        768,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.Ds",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.in_proj.weight",
+      "numel": 36864,
+      "shape": [
+        384,
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.conv2d.weight",
+      "numel": 1728,
+      "shape": [
+        192,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.conv2d.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.out_norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.out_norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.op.out_proj.weight",
+      "numel": 18432,
+      "shape": [
+        96,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.conv_blk.cab.0.weight",
+      "numel": 27648,
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.conv_blk.cab.0.bias",
+      "numel": 32,
+      "shape": [
+        32
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.conv_blk.cab.2.weight",
+      "numel": 27648,
+      "shape": [
+        96,
+        32,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.conv_blk.cab.2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.conv_blk.cab.3.fc.0.weight",
+      "numel": 288,
+      "shape": [
+        3,
+        96,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.conv_blk.cab.3.fc.2.weight",
+      "numel": 288,
+      "shape": [
+        96,
+        3,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.norm2.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.1.norm2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.scale1",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.scale2",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.norm1.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.norm1.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.x_proj_weight",
+      "numel": 10752,
+      "shape": [
+        4,
+        14,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.dt_projs_weight",
+      "numel": 4608,
+      "shape": [
+        4,
+        192,
+        6
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.dt_projs_bias",
+      "numel": 768,
+      "shape": [
+        4,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.A_logs",
+      "numel": 3072,
+      "shape": [
+        768,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.Ds",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.in_proj.weight",
+      "numel": 36864,
+      "shape": [
+        384,
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.conv2d.weight",
+      "numel": 1728,
+      "shape": [
+        192,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.conv2d.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.out_norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.out_norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.op.out_proj.weight",
+      "numel": 18432,
+      "shape": [
+        96,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.conv_blk.cab.0.weight",
+      "numel": 27648,
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.conv_blk.cab.0.bias",
+      "numel": 32,
+      "shape": [
+        32
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.conv_blk.cab.2.weight",
+      "numel": 27648,
+      "shape": [
+        96,
+        32,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.conv_blk.cab.2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.conv_blk.cab.3.fc.0.weight",
+      "numel": 288,
+      "shape": [
+        3,
+        96,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.conv_blk.cab.3.fc.2.weight",
+      "numel": 288,
+      "shape": [
+        96,
+        3,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.norm2.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.2.norm2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.scale1",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.scale2",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.norm1.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.norm1.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.x_proj_weight",
+      "numel": 10752,
+      "shape": [
+        4,
+        14,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.dt_projs_weight",
+      "numel": 4608,
+      "shape": [
+        4,
+        192,
+        6
+      ],
+      "origin": "added",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.dt_projs_bias",
+      "numel": 768,
+      "shape": [
+        4,
+        192
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.A_logs",
+      "numel": 3072,
+      "shape": [
+        768,
+        4
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.Ds",
+      "numel": 768,
+      "shape": [
+        768
+      ],
+      "origin": "added",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.in_proj.weight",
+      "numel": 36864,
+      "shape": [
+        384,
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.conv2d.weight",
+      "numel": 1728,
+      "shape": [
+        192,
+        1,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.conv2d.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.out_norm.weight",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.out_norm.bias",
+      "numel": 192,
+      "shape": [
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.op.out_proj.weight",
+      "numel": 18432,
+      "shape": [
+        96,
+        192
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.conv_blk.cab.0.weight",
+      "numel": 27648,
+      "shape": [
+        32,
+        96,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.conv_blk.cab.0.bias",
+      "numel": 32,
+      "shape": [
+        32
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.conv_blk.cab.2.weight",
+      "numel": 27648,
+      "shape": [
+        96,
+        32,
+        3,
+        3
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.conv_blk.cab.2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.conv_blk.cab.3.fc.0.weight",
+      "numel": 288,
+      "shape": [
+        3,
+        96,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.conv_blk.cab.3.fc.2.weight",
+      "numel": 288,
+      "shape": [
+        96,
+        3,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.norm2.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.layers_up.3.blocks.3.norm2.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.norm_up.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.norm_up.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.up.linear1.weight",
+      "numel": 9216,
+      "shape": [
+        96,
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.up.linear2.weight",
+      "numel": 9216,
+      "shape": [
+        96,
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    },
+    {
+      "name": "decode_head.up.norm.weight",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.up.norm.bias",
+      "numel": 96,
+      "shape": [
+        96
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.0
+    },
+    {
+      "name": "decode_head.output.weight",
+      "numel": 864,
+      "shape": [
+        9,
+        96,
+        1,
+        1
+      ],
+      "origin": "legacy",
+      "weight_decay": 0.01
+    }
+  ]
+}

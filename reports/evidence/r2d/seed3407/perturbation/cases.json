@@ -1,0 +1,100 @@
+[
+  {
+    "id": "identity",
+    "kind": "identity",
+    "position": "center"
+  },
+  {
+    "id": "primary",
+    "kind": "occlusion",
+    "position": "center",
+    "fill": 0
+  },
+  {
+    "id": "gaussian.center.3407",
+    "kind": "gaussian",
+    "position": "center",
+    "seed": 3407,
+    "sigma": 20
+  },
+  {
+    "id": "gaussian.center.3408",
+    "kind": "gaussian",
+    "position": "center",
+    "seed": 3408,
+    "sigma": 20
+  },
+  {
+    "id": "gaussian.center.3409",
+    "kind": "gaussian",
+    "position": "center",
+    "seed": 3409,
+    "sigma": 20
+  },
+  {
+    "id": "shift.center",
+    "kind": "shift_local",
+    "position": "center",
+    "dx": 8,
+    "dy": 0,
+    "fill": 0
+  },
+  {
+    "id": "gaussian.lower_right.3407",
+    "kind": "gaussian",
+    "position": "lower_right",
+    "seed": 3407,
+    "sigma": 20
+  },
+  {
+    "id": "gaussian.lower_right.3408",
+    "kind": "gaussian",
+    "position": "lower_right",
+    "seed": 3408,
+    "sigma": 20
+  },
+  {
+    "id": "gaussian.lower_right.3409",
+    "kind": "gaussian",
+    "position": "lower_right",
+    "seed": 3409,
+    "sigma": 20
+  },
+  {
+    "id": "shift.lower_right",
+    "kind": "shift_local",
+    "position": "lower_right",
+    "dx": 8,
+    "dy": 0,
+    "fill": 0
+  },
+  {
+    "id": "gaussian.upper_left.3407",
+    "kind": "gaussian",
+    "position": "upper_left",
+    "seed": 3407,
+    "sigma": 20
+  },
+  {
+    "id": "gaussian.upper_left.3408",
+    "kind": "gaussian",
+    "position": "upper_left",
+    "seed": 3408,
+    "sigma": 20
+  },
+  {
+    "id": "gaussian.upper_left.3409",
+    "kind": "gaussian",
+    "position": "upper_left",
+    "seed": 3409,
+    "sigma": 20
+  },
+  {
+    "id": "shift.upper_left",
+    "kind": "shift_local",
+    "position": "upper_left",
+    "dx": 8,
+    "dy": 0,
+    "fill": 0
+  }
+]

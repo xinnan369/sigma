@@ -1,0 +1,17 @@
+UTC: 2026-11-11T15:42:28.627911+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-c', 'import os,sys; os.environ.update(SIGMA_R1D_TEST_UPSTREAM=sys.argv[1],SIGMA_R1D_TEST_INIT=sys.argv[2]); import pytest; raise SystemExit(pytest.main(["-q","-s","tests"]))', '<LINUX_HOME>/sigma-r1-upstream', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+............................Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+Real Sigma-Tiny optimizer verified: 668 tensors, 48287360 elements
+.......................................................
+83 passed in 11.36s
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+11 23:42:20 Using backbone: V-MAMBA
+11 23:42:23 Using Mamba Decoder
+11 23:42:23 Initing weights ...
+
+Elapsed seconds: 12.189
+Exit code: 0

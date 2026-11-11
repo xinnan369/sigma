@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "family": "ssm",
+  "signature": {
+    "config_sha256": "8379e974e0e4341a75d396e77f09649477f3a805f5c5ed9decf82bcbc6a44119",
+    "runtime": {
+      "config": {
+        "epochs": 1,
+        "seed": 3407,
+        "precision": "fp32",
+        "microbatch": 1,
+        "accumulation": 8,
+        "lr": 6e-05,
+        "weight_decay": 0.01,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "scheduler": "constant",
+        "checkpoint_every_updates": 32,
+        "test_evaluation": false,
+        "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+        "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+        "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+        "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+      },
+      "source_sha256": {
+        "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+        "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+        "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+        "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+        "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+      },
+      "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+      "torch": "2.2.2+cu121",
+      "cuda": "12.1",
+      "cudnn": 8902,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "cv2": "4.9.0",
+      "numpy": "1.26.4",
+      "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+    },
+    "sources": {
+      "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764",
+      "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+      "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+      "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+      "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+      "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df",
+      "experiments/r2d/run.py": "1fabd3f60fa901a01260c04c80a189e316dfcdcdcf5687972b6cc8f2c6271c75",
+      "experiments/r2d/models.py": "dbd0b8a18f397698bce23ed4c72e8e5bdb6a2546f2afd399e0f7a45dec453acd",
+      "experiments/r2c/audit.py": "01abaaacfb8643ed769f3fa8e267ae6a3ad12677906f102dc46d2cd51edd9395",
+      "experiments/r2c/evaluate.py": "ec90b3d6f9284ad99a40e1cb5d7cea81fe66ca58812b8615cc366e8bff549290"
+    },
+    "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+    "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+    "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+    "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+    "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+    "r2d_protocol_sha256": "f549b633394ad41b9c76383ae437216716e5ae1b4ac0508e491ad408b872d52f",
+    "resource_profile_sha256": "7b014e629d97a13fe039a9ab24ae1137e553454b9c23e432868b0b0e30a99c19",
+    "seed": 3409
+  },
+  "checkpoint_sha256": "dbccb574857d49ef79f77135eea72c5145471ac44a4605256a1573123a7584e8",
+  "model_sha256": "c28e84721e6ddc289183217e6ad7402807806cb8c3a8ff3cf6d3faa80332a972",
+  "strict_model_keys": "<All keys matched successfully>",
+  "images": 157,
+  "identity_exact": 157,
+  "clean_per_image_confusion_exact": true,
+  "pair_count": 2198,
+  "test_pixels_read": 0,
+  "seconds": 423.951607842002,
+  "peak_allocated_bytes": 615988224,
+  "evidence_sha256": {
+    "clean.jsonl": "a8baeb3f71ed257ec35a7776eabfad80cf85f196f84d900c1b4d8c4e99d09a91",
+    "pairs-gaussian.center.3407.jsonl": "1b79b25ae9c08d4ae43bf5580c712cbaf07a4756e4b99a9c5e13dc67623dbde4",
+    "pairs-gaussian.center.3408.jsonl": "d22646523d3db848510d968468a8a72e6ceceb33d4b75c0984f4dc23a0573d15",
+    "pairs-gaussian.center.3409.jsonl": "cafaf47652e5dcdb4240c507fe1700677d403272a26def7cb14c1181e59017b1",
+    "pairs-gaussian.lower_right.3407.jsonl": "22f3b49f08af6c60adf44d9a1842acecbad3f785a1bb7f67df8e7e4a681cf46e",
+    "pairs-gaussian.lower_right.3408.jsonl": "d93f542c9088b0dc268cab7278b6e4fa306155a0319e5883ea3e1a3b4d4f9c8c",
+    "pairs-gaussian.lower_right.3409.jsonl": "527bd55fa45b547f78f6d1749746918e966ff0a05c4b578609859291db2e3638",
+    "pairs-gaussian.upper_left.3407.jsonl": "849987cf531617e8b529ff22ca7eebb4a678f034647a0d2f1fafcd4cba611639",
+    "pairs-gaussian.upper_left.3408.jsonl": "31c3c9233ae7192015da41ce817555b1d1dfe091fe07650b316258c09fc035d9",
+    "pairs-gaussian.upper_left.3409.jsonl": "e6679cdcf92dbbf11c4389c5ea9bd79f11ac2689ecc6b9afde686f43829f3d38",
+    "pairs-identity.jsonl": "58d0a849b60ca964824285dbdfb71ccb31d328567279e07b092006063bca4043",
+    "pairs-primary.jsonl": "e3138ddd48907f3d2aa52d3b91799e53f54df168d0544d5a1bf53c1e90de4db6",
+    "pairs-shift.center.jsonl": "05f58280f38f8d2be8a23b475a4aa5d4e5ce1ad465dba518c1269c203dc031cb",
+    "pairs-shift.lower_right.jsonl": "81aa2f66f2b2f504ba5aacddff1ff4a94c6cddf222325792ce1d5e28f8c0fe6b",
+    "pairs-shift.upper_left.jsonl": "694f936c0a387a61a5890bfe3c58a108540ef3cae0513958ae9018ee4e3c3bc0"
+  }
+}
