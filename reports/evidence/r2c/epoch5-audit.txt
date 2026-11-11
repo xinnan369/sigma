@@ -1,0 +1,17 @@
+UTC: 2026-11-10T16:35:05.522052+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2c.audit', '--through', '5', '--evidence', 'reports/evidence/r2c', '--checkpoint-dir', '<LINUX_HOME>/sigma-r2c-runs/seed3407']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "status": "PASS",
+  "through_epoch": 5,
+  "common_initial_sha256": "ce6366300859ec7abf9f352fe6f7e405d26a05c38509eed128a81f9d124cddb0",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "ec1212c4b915edf0f171cf5d3ea86708b24f71b228f3a2e75a2ed1831d9362a1",
+  "test_pixels_read": 0
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 3.402
+Exit code: 0

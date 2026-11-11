@@ -1,0 +1,73 @@
+{
+  "scope": "synthetic full-resolution eval forward; counted ops and state updates only",
+  "input_shape_each": [
+    1,
+    3,
+    480,
+    640
+  ],
+  "arms": {
+    "ssm": {
+      "common_ops_flops": {
+        "aten::conv2d": 27559719936,
+        "aten::mm": 96259276800,
+        "aten::bmm": 26895974400,
+        "aten::add": 248373888,
+        "aten::mul": 105062400
+      },
+      "common_macs": 75357485568,
+      "other_profiled_common_scalar_flops": 353436288,
+      "scan_scalar_state_updates": {
+        "common": 3008102400,
+        "fusion": 165888000
+      },
+      "scan_calls": {
+        "common": 42,
+        "fusion": 12
+      },
+      "fusion_macs": 12967695360,
+      "combined_macs": 88325180928,
+      "combined_scan_scalar_state_updates": 3173990400
+    },
+    "cnn": {
+      "common_ops_flops": {
+        "aten::conv2d": 27559719936,
+        "aten::mm": 96259276800,
+        "aten::bmm": 26895974400,
+        "aten::add": 248373888,
+        "aten::mul": 105062400
+      },
+      "common_macs": 75357485568,
+      "other_profiled_common_scalar_flops": 353436288,
+      "scan_scalar_state_updates": {
+        "common": 3008102400
+      },
+      "scan_calls": {
+        "common": 42
+      },
+      "fusion_macs": 5016729600,
+      "combined_macs": 80374215168,
+      "combined_scan_scalar_state_updates": 3008102400
+    },
+    "attention": {
+      "common_ops_flops": {
+        "aten::conv2d": 27559719936,
+        "aten::mm": 96259276800,
+        "aten::bmm": 26895974400,
+        "aten::add": 248373888,
+        "aten::mul": 105062400
+      },
+      "common_macs": 75357485568,
+      "other_profiled_common_scalar_flops": 353436288,
+      "scan_scalar_state_updates": {
+        "common": 3008102400
+      },
+      "scan_calls": {
+        "common": 42
+      },
+      "fusion_macs": 3208642560,
+      "combined_macs": 78566128128,
+      "combined_scan_scalar_state_updates": 3008102400
+    }
+  }
+}

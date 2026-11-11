@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "family": "attention",
+  "signature": {
+    "config_sha256": "eba20d348e6e115cf90113ce8adaa593552600ff387692e0bab58783991cfcba",
+    "runtime": {
+      "config": {
+        "epochs": 1,
+        "seed": 3407,
+        "precision": "fp32",
+        "microbatch": 1,
+        "accumulation": 8,
+        "lr": 6e-05,
+        "weight_decay": 0.01,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "scheduler": "constant",
+        "checkpoint_every_updates": 32,
+        "test_evaluation": false,
+        "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+        "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+        "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+        "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+      },
+      "source_sha256": {
+        "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+        "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+        "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+        "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+        "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+      },
+      "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+      "torch": "2.2.2+cu121",
+      "cuda": "12.1",
+      "cudnn": 8902,
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "cv2": "4.9.0",
+      "numpy": "1.26.4",
+      "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+    },
+    "sources": {
+      "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764",
+      "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+      "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+      "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+      "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+      "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df"
+    },
+    "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+    "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+    "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+    "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+    "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47"
+  },
+  "checkpoint_sha256": "f9df624a46e423df0d8c29ea282827e827a5d0f965984ab4cf3ff5fae6c4db11",
+  "model_sha256": "fa11e39338f03cb0a2775a73ba3756b4aad1d7340a6801599b7723233ebf670f",
+  "strict_model_keys": "<All keys matched successfully>",
+  "images": 157,
+  "identity_exact": 157,
+  "clean_per_image_confusion_exact": true,
+  "pair_count": 2198,
+  "test_pixels_read": 0,
+  "seconds": 404.4447986560008,
+  "peak_allocated_bytes": 520693760,
+  "evidence_sha256": {
+    "clean.jsonl": "df6b5e0afbb81ddd83c83ea030cf54c5832b59fd988529f4a557f26d04fd257b",
+    "pairs-gaussian.center.3407.jsonl": "7ca845744934157c8d48f8d809364078b7a6ba68b2c02703ed9cf8bbfb33d878",
+    "pairs-gaussian.center.3408.jsonl": "708a61594531c85a444ac113914c871f73e95870a25e248ec27b25f571005e49",
+    "pairs-gaussian.center.3409.jsonl": "1e841c65d3072b74a81efedb8f39cbe93b25256044e9cd868545b29fece53c42",
+    "pairs-gaussian.lower_right.3407.jsonl": "6dfc0d08b75fb0622d7b919e121b1cfbab42014a1812253c82977a00219c8060",
+    "pairs-gaussian.lower_right.3408.jsonl": "6cafa26e086017ad8929b142fa936690bc0fa4ef73b72d8165e37585d80d4332",
+    "pairs-gaussian.lower_right.3409.jsonl": "74ca39c75a4ee02b88de1e5e9b51b05686d07d394d2f24226c70f5e6a1ee761a",
+    "pairs-gaussian.upper_left.3407.jsonl": "5846149b5ffbd1d45f16eedf0d285a143c4d3aabbe72b94982cc04351ec9b89a",
+    "pairs-gaussian.upper_left.3408.jsonl": "c626d315bc42c8829cb77f2329c6c105e3a3a7ac5e32af846c0a26bce8d084db",
+    "pairs-gaussian.upper_left.3409.jsonl": "07026eb5f67cbc8b3408bdcc116e4db9154b54f5b58b6f2d7126bbfdde9f4143",
+    "pairs-identity.jsonl": "e9ab56e461025ea0153069e6c1f27444c8e2ca2e0b1d0642b564e8d748ddc3f1",
+    "pairs-primary.jsonl": "5d4debc9f52967bde26f2c9038c673d597989fa13f98a62dc41e3c4739fae383",
+    "pairs-shift.center.jsonl": "8e5fa4dee1686684bff74a9370606b050883661331329f05b680969cd2b4ebf4",
+    "pairs-shift.lower_right.jsonl": "5e529581be67af039b46ad9a85d731c6e7aab8d474d978df5dbe56b94532adc2",
+    "pairs-shift.upper_left.jsonl": "0a5391773419f9c1dee22633056f7b936e8216f2bcff8e1a0503dbf4bb8884b5"
+  }
+}
