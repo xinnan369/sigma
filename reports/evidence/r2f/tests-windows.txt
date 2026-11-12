@@ -1,0 +1,9 @@
+UTC: 2026-11-12T10:23:28.017014+00:00
+Command argv: ['.venv/Scripts/python', '-m', 'pytest', '-q']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+............................s..........................s................ [ 81%]
+s...............                                                         [100%]
+85 passed, 3 skipped in 5.57s
+
+Elapsed seconds: 6.728
+Exit code: 0

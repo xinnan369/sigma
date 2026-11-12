@@ -1,0 +1,3068 @@
+[
+  {
+    "call": [
+      "backbone.vssm.layers.0.blocks.0.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      120,
+      160
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 19200,
+    "state_dim": 16,
+    "channels": 768,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.0.blocks.1.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      120,
+      160
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 19200,
+    "state_dim": 16,
+    "channels": 768,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.1.blocks.0.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      60,
+      80
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4800,
+    "state_dim": 16,
+    "channels": 1536,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.1.blocks.1.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      60,
+      80
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4800,
+    "state_dim": 16,
+    "channels": 1536,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.0.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.1.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.2.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.3.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.4.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.5.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.6.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.7.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.8.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.3.blocks.0.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      15,
+      20
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 300,
+    "state_dim": 16,
+    "channels": 6144,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          14,
+          19
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          14,
+          19
+        ]
+      ],
+      [
+        [
+          "feature",
+          14,
+          19
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          14,
+          19
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.3.blocks.1.op",
+      0,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      15,
+      20
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 300,
+    "state_dim": 16,
+    "channels": 6144,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          14,
+          19
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          14,
+          19
+        ]
+      ],
+      [
+        [
+          "feature",
+          14,
+          19
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          14,
+          19
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.0.blocks.0.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      120,
+      160
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 19200,
+    "state_dim": 16,
+    "channels": 768,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.0.blocks.1.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      120,
+      160
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 19200,
+    "state_dim": 16,
+    "channels": 768,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.1.blocks.0.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      60,
+      80
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4800,
+    "state_dim": 16,
+    "channels": 1536,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.1.blocks.1.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      60,
+      80
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4800,
+    "state_dim": 16,
+    "channels": 1536,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.0.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.1.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.2.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.3.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.4.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.5.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.6.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.7.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.2.blocks.8.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 16,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.3.blocks.0.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      15,
+      20
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 300,
+    "state_dim": 16,
+    "channels": 6144,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          14,
+          19
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          14,
+          19
+        ]
+      ],
+      [
+        [
+          "feature",
+          14,
+          19
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          14,
+          19
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "backbone.vssm.layers.3.blocks.1.op",
+      1,
+      0
+    ],
+    "scope": "encoder",
+    "layout": "four",
+    "grid": [
+      15,
+      20
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 300,
+    "state_dim": 16,
+    "channels": 6144,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          14,
+          19
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          14,
+          19
+        ]
+      ],
+      [
+        [
+          "feature",
+          14,
+          19
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          14,
+          19
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.1.blocks.0.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 4,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.1.blocks.1.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 4,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.1.blocks.2.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 4,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.1.blocks.3.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      30,
+      40
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 1200,
+    "state_dim": 4,
+    "channels": 3072,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          29,
+          39
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          29,
+          39
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.2.blocks.0.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      60,
+      80
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4800,
+    "state_dim": 4,
+    "channels": 1536,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.2.blocks.1.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      60,
+      80
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4800,
+    "state_dim": 4,
+    "channels": 1536,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.2.blocks.2.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      60,
+      80
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4800,
+    "state_dim": 4,
+    "channels": 1536,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.2.blocks.3.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      60,
+      80
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 4800,
+    "state_dim": 4,
+    "channels": 1536,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          59,
+          79
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          59,
+          79
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.3.blocks.0.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      120,
+      160
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 19200,
+    "state_dim": 4,
+    "channels": 768,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.3.blocks.1.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      120,
+      160
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 19200,
+    "state_dim": 4,
+    "channels": 768,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.3.blocks.2.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      120,
+      160
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 19200,
+    "state_dim": 4,
+    "channels": 768,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  },
+  {
+    "call": [
+      "decode_head.layers_up.3.blocks.3.op",
+      0,
+      0
+    ],
+    "scope": "decoder",
+    "layout": "four",
+    "grid": [
+      120,
+      160
+    ],
+    "directions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "length": 19200,
+    "state_dim": 4,
+    "channels": 768,
+    "nrows": 4,
+    "endpoints": [
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          0,
+          0
+        ],
+        [
+          "feature",
+          119,
+          159
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          "feature",
+          119,
+          159
+        ],
+        [
+          "feature",
+          0,
+          0
+        ]
+      ]
+    ]
+  }
+]

@@ -1,0 +1,15 @@
+UTC: 2026-11-12T10:20:14.473606+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2f.run', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint-dir', '<LINUX_HOME>/sigma-r2d-runs', '--evidence', 'reports/evidence/r2f']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+{'triton_vs_cuda_readout': 2.3428595066070557, 'triton_vs_cuda_state': 0.025866251438856125, 'cuda_states_fused_readout_vs_cuda': 0.5210275650024414, 'cuda_states_unfused_readout_vs_cuda': 0.5210275650024414, 'cuda_basis_vs_cuda_chunk_end': 0.0023731032852083445, 'triton_vs_cuda_chunk_end': 0.008555082604289055, 'softplus_vs_cuda_probe': 0.0009661543881520629}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+12 18:20:03 Using backbone: V-MAMBA
+12 18:20:08 Using Mamba Decoder
+12 18:20:08 Initing weights ...
+
+Elapsed seconds: 37.217
+Exit code: 0
