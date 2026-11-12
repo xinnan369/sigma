@@ -1,0 +1,2 @@
+{"environment":{"cuda":"12.1","cv2":"4.9.0","extension_sha256":"833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e","gpu":"NVIDIA GeForce RTX 3090","gpu_memory_bytes":25769279488,"numpy":"1.26.4","python":"3.11.11","torch":"2.2.2+cu121","triton":"2.2.0"},"phase":"pilot","protocol_sha256":"dfc5c437f879e6e29c8532e941bf88dbac4810dc1958381d5ca537b2fcc62bc2","source_sha256":"2edd5573d335964b9e52a88c74f00d8ea0076f14593deee5b763655953c20a08"}
+PASS: resumed all 36 existing pilot rows and reproduced each compressed result byte-for-byte.
