@@ -1,0 +1,126 @@
+UTC: 2026-11-12T07:55:22.095925+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2e.run', 'pilot', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint-dir', '<LINUX_HOME>/sigma-r2d-runs', '--evidence', 'reports/evidence/r2e']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+12 15:55:09 Using backbone: V-MAMBA
+12 15:55:13 Using Mamba Decoder
+12 15:55:13 Initing weights ...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<BRIDGE>/experiments/r2e/run.py", line 211, in <module>
+    main()
+  File "<BRIDGE>/experiments/r2e/run.py", line 207, in main
+    run(parser.parse_args())
+  File "<BRIDGE>/experiments/r2e/run.py", line 180, in run
+    outcomes, layout, numeric, module = one_image(
+                                        ^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2e/run.py", line 86, in one_image
+    corrupt_logits = model(rgb, corrupt)
+                     ^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/builder.py", line 151, in forward
+    out = self.encode_decode(rgb, modal_x)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/builder.py", line 133, in encode_decode
+    x = self.backbone(rgb, modal_x)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/dual_vmamba.py", line 110, in forward
+    out = self.forward_features(x_rgb, x_e)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/dual_vmamba.py", line 85, in forward_features
+    outs_rgb = self.vssm(x_rgb) # B x C x H x W
+               ^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 2202, in forward
+    o, x = layer_forward(layer, x) # (B, H, W, C)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 2195, in layer_forward
+    x = l.blocks(x)
+        ^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/container.py", line 217, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1520, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 1722, in forward
+    return self._forward(input)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 1713, in _forward
+    x = input + self.drop_path(self.op(self.norm(input)))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1511, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/nn/modules/module.py", line 1561, in _call_impl
+    result = forward_call(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 1073, in forward
+    y = self.forward_core(x)
+        ^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 1048, in forward_corev2
+    return cross_selective_scan(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 213, in cross_selective_scan
+    ys: torch.Tensor = selective_scan(
+                       ^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 211, in selective_scan
+    return SelectiveScan.apply(u, delta, A, B, C, D, delta_bias, delta_softplus, nrows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/autograd/function.py", line 553, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/torch/cuda/amp/autocast_mode.py", line 123, in decorate_fwd
+    return fwd(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/sigma-r1-upstream/models/encoders/vmamba.py", line 61, in forward
+    out, x, *rest = selective_scan_cuda.fwd(u, delta, A, B, C, D, delta_bias, delta_softplus, nrows)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2e/paths.py", line 100, in forward
+    return callback((name, invocation, index), scope, grid, native, args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2e/run.py", line 71, in compare
+    audits[key] = verify_reference(prior, scan, base, out, prior_prefix, prefix, values)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2e/paths.py", line 120, in verify_reference
+    audits = [compare(clean, hc, clean_y, clean_prefix), compare(corrupt, hx, corrupt_y, corrupt_prefix)]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2b/audit.py", line 14, in compare
+    'output': check_close(outputs(scan, h), native_output, 'CUDA output'),
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2b/state.py", line 79, in check_close
+    raise ValueError(f'{label}: {m}')
+ValueError: CUDA output: {'max_abs': 0.0001227855682373047, 'peak_relative': 1.3121137953930884e-06, 'rms_relative': 4.806142328561691e-07, 'max_mixed_ratio': 2.466442346572876}
+
+Elapsed seconds: 44.181
+Exit code: 1
