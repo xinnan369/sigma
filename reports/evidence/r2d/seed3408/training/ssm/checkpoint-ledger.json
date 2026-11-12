@@ -1,0 +1,62 @@
+[
+  {
+    "epoch": 1,
+    "updates": 157,
+    "last_sha256": "71c0d358634891c3f2d5a4bd6a3a1838b97ee912c001caecb91c9cc26fd40cbe",
+    "best_epoch": 1,
+    "best_sha256": "71c0d358634891c3f2d5a4bd6a3a1838b97ee912c001caecb91c9cc26fd40cbe",
+    "model_sha256": "33624430da67a1681976452516b3431a7265b50f3ae76793dc61b99b3c423e6a",
+    "augmentation_rng_end_sha256": "2d571b4f1229d4319d6ff70b5780229ce72c4eb316fea1d7a5acb4663c49a12c",
+    "optimizer_state_entries": 668,
+    "scheduler_updates": 157,
+    "checkpoint_seconds": 3.3731152129985276
+  },
+  {
+    "epoch": 2,
+    "updates": 314,
+    "last_sha256": "773d571ba299b615864066fed3b021937744383ef71ccaa1b581400f83d720af",
+    "best_epoch": 2,
+    "best_sha256": "773d571ba299b615864066fed3b021937744383ef71ccaa1b581400f83d720af",
+    "model_sha256": "ea75ff4aa9366dfb6f954285e21d4a61c662be90bd477a950d17dfa1c4f11629",
+    "augmentation_rng_end_sha256": "4fe322d7a29838a87e90ed1de23ad4bd035a28d28cd477e36b188723c6fa1126",
+    "optimizer_state_entries": 668,
+    "scheduler_updates": 314,
+    "checkpoint_seconds": 2.3067226740004116
+  },
+  {
+    "epoch": 3,
+    "updates": 471,
+    "last_sha256": "8632de471c94ec37fd30042480f8d6bbc1420018a294d0b5d22726e5312e7a11",
+    "best_epoch": 3,
+    "best_sha256": "8632de471c94ec37fd30042480f8d6bbc1420018a294d0b5d22726e5312e7a11",
+    "model_sha256": "a2427749aa41c69cbfda193ce48d553e9e21aadb83326b64ca2a13ed990463e6",
+    "augmentation_rng_end_sha256": "45a8c490cdcec8f47c66c802e05825ebb258d76fe702784b0672848b227d088b",
+    "optimizer_state_entries": 668,
+    "scheduler_updates": 471,
+    "checkpoint_seconds": 2.6541941499999666
+  },
+  {
+    "epoch": 4,
+    "updates": 628,
+    "last_sha256": "fe83d12c36f5bad98c62a9d4c796a8d170967b15b10e9e576932305782ef05cc",
+    "best_epoch": 4,
+    "best_sha256": "fe83d12c36f5bad98c62a9d4c796a8d170967b15b10e9e576932305782ef05cc",
+    "model_sha256": "ccce1844889f559856bd171021fc9135382f0cd28ea0eb9bcd751c5c61080dc5",
+    "augmentation_rng_end_sha256": "47544418f7291351b8da7ec79472e536b02ea6a8a1c6d95adbce7280da4a1c33",
+    "optimizer_state_entries": 668,
+    "scheduler_updates": 628,
+    "checkpoint_seconds": 2.6006297809999523
+  },
+  {
+    "epoch": 5,
+    "updates": 785,
+    "last_sha256": "58b43cb6504220583cfdfadc5e7a04b03cdb0358dfed13758e7bbb1e07a460ef",
+    "best_epoch": 5,
+    "best_sha256": "58b43cb6504220583cfdfadc5e7a04b03cdb0358dfed13758e7bbb1e07a460ef",
+    "model_sha256": "e0e45f177d899e6cfb53db0dee93fa91c59cb17dbe8bb4172a5251a7ec261b3e",
+    "augmentation_rng_end_sha256": "b647e293bcd367aa05887c9e18d586d12e7d609fe0cb97bd24c7353acd23d76e",
+    "optimizer_state_entries": 668,
+    "scheduler_updates": 785,
+    "checkpoint_seconds": 2.8635460370005603
+  }
+]

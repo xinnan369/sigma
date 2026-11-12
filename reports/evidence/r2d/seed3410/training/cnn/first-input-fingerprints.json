@@ -1,0 +1,66 @@
+[
+  {
+    "id": "00488D",
+    "input_sha256": [
+      "7a4996986f4e18ff447c241935dfc55a45dda91f9d432ed7625313b53f268a21",
+      "2e0ee2385ea6d33e02ac48cf8b22705dbbf96f58c6f724808174cbb146aa8450",
+      "db3014305776e4c837e50d2546d9c256890e9bca31767de3d14ef2db0befd608"
+    ]
+  },
+  {
+    "id": "00828N",
+    "input_sha256": [
+      "0636a3c0565269bd2dada997291f24a6c315fb9f28dc7e95e5e9ba701a5485f7",
+      "c3be92cf551296f82bb42b3485c74c75799c52acce40e619cbfb940c7694d9f2",
+      "8afda62037ec463c4b0b2d8f55ca67cc44944b8bda1a00935f2d08544e215788"
+    ]
+  },
+  {
+    "id": "00860N",
+    "input_sha256": [
+      "22349a07b6018a5026c5b1d89f95ff593b1bdfc05dd66e1f7a420d340b81f3ee",
+      "346d32fe0f98a0320e0b029dd16fa7edc02c3794247dc618912a5c3b6e635336",
+      "e0168960fff0e773eafabf677d9fdc4ec362c4c6701eca361c92306e04b885f3"
+    ]
+  },
+  {
+    "id": "00944N",
+    "input_sha256": [
+      "0508f49e5d74d12213fbdb53a0dedad3966f45355f5ffbb5cb7713106eff6fa1",
+      "8b98cc98e120db5b90d032a91b9ac7a95a570b9cd6d825cc7dde961f74cb18a3",
+      "a879979e34e7788898de4c82a2d98b50ab1a286fd040910377b59ec80331cbb7"
+    ]
+  },
+  {
+    "id": "00315D_flip",
+    "input_sha256": [
+      "c0e81467134fef3c7197b0b9d97233ebcb5f828a584012d177e3bf0fb4944700",
+      "5bfdef4382070a85906ed34af6e7915fd03f3bd784e669c0822f045435091ea0",
+      "2c14bb1795e3af8fe4fd7cc09847869a57b0e36e6b2a4ce1173766fda513d98b"
+    ]
+  },
+  {
+    "id": "00703N",
+    "input_sha256": [
+      "616023ed3e55e56d474fe541bb4509474764a1df17b71f229b3a7e5fe30808d1",
+      "a1ab31faf34b6f27c9bdbb852f05c8c28b80fd7f79135f37e705b5ff978b4ad6",
+      "c085163f9acd9ba421e99403690f69f7c9231d7a526ef41070425f1647898f12"
+    ]
+  },
+  {
+    "id": "00723N_flip",
+    "input_sha256": [
+      "e4511b5e96c1d9ce05195e4a553640a104a343cef512486c20211d066cf0d7f6",
+      "8389f2efe33d51e007ab23da0e1e097e0fbbecdb7760bd23a99db5dd079bbac3",
+      "4461d7e9a76e126ade3836868c336ce190e9aabe1f62264d36e943ca529a417d"
+    ]
+  },
+  {
+    "id": "00139D",
+    "input_sha256": [
+      "a8f8a538685fcb2a65de51314cec5cb0a52f1d4a556f27bb51482920a16a74a1",
+      "9ab886091b0f50aedf89cdc037d18c6eaa1f83ac8158d0e1cb500ad3f1cc2d4e",
+      "e8c8c7a32115a54d6861bd5e6414be6e0b1487c7d2ed8d2f9663028e8305289a"
+    ]
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "00933N_flip",
+    "input_sha256": [
+      "4e042917002c6ac1fab57a61f8b10bef1ca01d1e6b7158ab5b6be22cca824f3f",
+      "dba2f2133efaba7ff340641fa48b36679207a1c55a824651883bda6130958793",
+      "a5f4c4836611d2ef86d1b558f1e85603f55ccca11e57fcb195f21672e75840a2"
+    ]
+  },
+  {
+    "id": "00043N_flip",
+    "input_sha256": [
+      "719572ee19b6a5e3c3e9168617d423872f2ec8cf007f4308c8f263d7baa1f347",
+      "eba1c3a50cf613830af43dbecacb8eb22a5356a04d5f001a37670213cd731696",
+      "79cb51f99213e4f177279f4a6f445d73e566cc7ae11f6fa6b74adfffa4cddbbd"
+    ]
+  },
+  {
+    "id": "00719N_flip",
+    "input_sha256": [
+      "39ef5eda913957b7c23ae30751d9029df2fb85331029801db7fa0cb89441a81d",
+      "3d5dd72983b0f8ef40672ac16c21ad54838abc22604267dd6b5c05a6b2f955d6",
+      "537e1c0e37ce17eac6151866a43dff8d21c6fce7e3a1693617dae31264abb13f"
+    ]
+  },
+  {
+    "id": "00481D_flip",
+    "input_sha256": [
+      "f91d7b8b623be46a5cd7c6c23f4629b88a41b0fab335d9325de37d60e8038143",
+      "54f44c3fe66415452537fbe315041725c960c6bdc169d6e7bc7336116b912e8a",
+      "402928d7539bf59c4c9b8a2e80e800c02d046ba7e1e0936fcc84e68546200bdd"
+    ]
+  },
+  {
+    "id": "00434D_flip",
+    "input_sha256": [
+      "dcb8e93ccc0881aa582aec024cdb8460df6985d881c0ad15b3c30d602d06a178",
+      "d35650aca3619973160b7027661d68adda2e8367df38dce482d25cda8b823473",
+      "58d2bd98b397ada3397582becca1e283fa504fb4d7bfde931b6bbba836228c61"
+    ]
+  },
+  {
+    "id": "00146D",
+    "input_sha256": [
+      "05911f2556c3c61bacdfc214bc8c50bb4e98645682c68ae9c65efe7893c168de",
+      "8696e3f4e7cd1cf90bb2ce83a8e7bf15af00608fa17918394206231c6851f109",
+      "f44f61cff73aa9efb9aa16ee6ebb15388ead6493350befb7e0604b7c4a353635"
+    ]
+  },
+  {
+    "id": "00730N",
+    "input_sha256": [
+      "1a2bb4317f8da75a209abd6201501cc5de9484ce6ccef7fdb92829ed5a0a97dc",
+      "de908fd2dc828988bed20eb9297ba09aa6eb1a7bfc79792039a956826e0cecac",
+      "b2c06113eb860c3f98764b9f4355d4604f1be2c61cef02a38792a338befdeb34"
+    ]
+  },
+  {
+    "id": "00854N_flip",
+    "input_sha256": [
+      "5dec8d631edc52eaab5384502b2843abfb71c0bed4bc4c9d4fca30dbe2d12977",
+      "921864e89c098c07104fa6df5f20938966752dabb9abd309b17f230fd2c36075",
+      "54f980b5b3be8ce80cb6490c527e38d681deade50f239f2cb7d23cf9d0108c37"
+    ]
+  }
+]

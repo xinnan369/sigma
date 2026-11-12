@@ -1,0 +1,12 @@
+{
+  "version": "r2d-matched-fusion-v1",
+  "seeds": [3407, 3408, 3409, 3410, 3411],
+  "reference_parameters": 48287360,
+  "max_parameter_fraction": 0.01,
+  "widths": {"cnn": [248, 496, 1000, 2000], "attention": [216, 440, 880, 1760]},
+  "width_search": {"denominator": 128, "min_numerator": 8, "max_numerator": 1024, "alignment": 8},
+  "training_base": "R2c_protocol.json",
+  "primary_epoch": 5,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 3407
+}

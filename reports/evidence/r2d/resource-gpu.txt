@@ -1,0 +1,36 @@
+UTC: 2026-11-11T01:40:23.960620+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2d.profile', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--evidence', 'reports/evidence/r2d']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm 48287360 155.1708984375 3.849119133000002
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn 48276128 150.5139389038086 2.8672108089999995
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention 48297344 145.4242401123047 2.9090936019999987
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+11 09:39:50 Using backbone: V-MAMBA
+11 09:39:53 Using Mamba Decoder
+11 09:39:53 Initing weights ...
+STAGE:2026-11-11 09:39:54 532:532 ActivityProfilerController.cpp:314] Completed Stage: Warm Up
+STAGE:2026-11-11 09:39:56 532:532 ActivityProfilerController.cpp:320] Completed Stage: Collection
+STAGE:2026-11-11 09:39:56 532:532 ActivityProfilerController.cpp:324] Completed Stage: Post Processing
+11 09:40:04 Using backbone: V-MAMBA
+11 09:40:05 Using Mamba Decoder
+11 09:40:05 Initing weights ...
+STAGE:2026-11-11 09:40:06 532:532 ActivityProfilerController.cpp:314] Completed Stage: Warm Up
+STAGE:2026-11-11 09:40:06 532:532 ActivityProfilerController.cpp:320] Completed Stage: Collection
+STAGE:2026-11-11 09:40:06 532:532 ActivityProfilerController.cpp:324] Completed Stage: Post Processing
+11 09:40:14 Using backbone: V-MAMBA
+11 09:40:14 Using Mamba Decoder
+11 09:40:14 Initing weights ...
+STAGE:2026-11-11 09:40:15 532:532 ActivityProfilerController.cpp:314] Completed Stage: Warm Up
+STAGE:2026-11-11 09:40:15 532:532 ActivityProfilerController.cpp:320] Completed Stage: Collection
+STAGE:2026-11-11 09:40:15 532:532 ActivityProfilerController.cpp:324] Completed Stage: Post Processing
+
+Elapsed seconds: 49.484
+Exit code: 0

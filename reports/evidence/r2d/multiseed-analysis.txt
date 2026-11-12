@@ -1,0 +1,24 @@
+UTC: 2026-11-11T15:42:13.666740+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2d.analysis', '--evidence', 'reports/evidence/r2d']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+{
+  "status": "PASS",
+  "seeds": [
+    3407,
+    3408,
+    3409,
+    3410,
+    3411
+  ],
+  "groups": 54,
+  "draws": 10000,
+  "exploratory_seed_count": false,
+  "estimand": "equal seed mean; pool pixels within each resampled visual cohort before computing rates",
+  "resampling": "independent seed and visual-group draws; both weights shared across architectures; group weights shared across seeds because the same validation groups recur"
+}
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+
+Elapsed seconds: 8.881
+Exit code: 0

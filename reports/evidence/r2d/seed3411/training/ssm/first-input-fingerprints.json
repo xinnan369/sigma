@@ -1,0 +1,66 @@
+[
+  {
+    "id": "00844N_flip",
+    "input_sha256": [
+      "297092ed496684200d62379ac56f63d4c70418068841f98587a95bbb0bca986b",
+      "744494109314f309dac91e2777673e6782ffd5cb3b2efd78513c49d777d1cf04",
+      "ca3ee8b12384dbf0b34180650cc5fc4ab95c19359a974dd25494b4ca4d2fa5a6"
+    ]
+  },
+  {
+    "id": "00342D",
+    "input_sha256": [
+      "e22712777a029c6c331fcc73c1dab86f8aa59c8f3a3076999816ee3b1923ea3f",
+      "0d8461dae6af67c490f2452702a8b706494fbb48c85ab81a40e8850132b2a352",
+      "30ed9f7e4a36d4cc1bef826e21ddc1af87856c455b0352f710200fecf4bab896"
+    ]
+  },
+  {
+    "id": "00806N_flip",
+    "input_sha256": [
+      "b6af73ff2e0d3c40735478c57f686da3ca8c0e068febb75f0abdd4588aa315fd",
+      "49cbd35c00038734100c3b02c817b5b06287c7eb03d3cb0e89636e4568f64845",
+      "87795018f04eac4542a1316db4f6bf6eff8ac49d8d53c684ea2c3aaeafed9e2a"
+    ]
+  },
+  {
+    "id": "00210D",
+    "input_sha256": [
+      "dc02ce58f74bffa5d2a7f8c82838033db59543953936e26b0ae8454e8795ac8d",
+      "023e4058db0d75e2ebb9784c849ea0169e6fd57c15ab30b81d0f42c82abf563f",
+      "71d24040623ead45f3567437936d2e5569df2ff11cc06da135eff2cb625dbe74"
+    ]
+  },
+  {
+    "id": "00374D_flip",
+    "input_sha256": [
+      "a6f6c8385d246760f54b9ac5b8bd80bd05201d324cd4d2433d3d0cdb59996a94",
+      "6387e8fb17d9d223dc8cfcd11ff3d997e1289f9817bcdbf68faf4f8907ae1994",
+      "bbf18ad30405eba403b1544ce5daf0d36b143ab9f27863f57dc443e9583785c0"
+    ]
+  },
+  {
+    "id": "00751N_flip",
+    "input_sha256": [
+      "26bbee9cd6a5ce30e6715a6dd552d83dcdca049a55082e241058e77be2d12848",
+      "6f602a21f7044fd71061dad04aa9571778ab1ec290fdf9f61cebb8403b3ba2c6",
+      "5af10d936bb85e3a00327795d5f4a2631dc3584199a3d4c803c66703ed92327f"
+    ]
+  },
+  {
+    "id": "00754N",
+    "input_sha256": [
+      "c734ae7592eb25f38bbf732af565013b7236112c6eae8541b9313ec647e9b156",
+      "7a57ca78606b409fc5c3ef5ac0b1272088cdfd726b6fb1cab07c3cbddcca9f81",
+      "3e094cc3060174f153dbb4334076ff6f7d957b98174b50a73e7533472862224e"
+    ]
+  },
+  {
+    "id": "00709N",
+    "input_sha256": [
+      "9feda9af45a43fd56e2afe58f85f05a903006af857af488b64913db90abd32b1",
+      "82fcd23a86bf44c3e82a7677ab3de452d7b3d39a07bbb22fe43679bcc884ceb0",
+      "346a5f7a9ee1a66ccbff782f5945530ed46be8d565444a74a9e928896717a1d7"
+    ]
+  }
+]

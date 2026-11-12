@@ -1,0 +1,917 @@
+UTC: 2026-11-11T15:42:04.598116+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2d.run', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--evidence', 'reports/evidence/r2d', '--checkpoint-dir', '<LINUX_HOME>/sigma-r2d-runs', '--seeds', '3408', '3409', '3410', '3411']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+R2d seed 3408 started
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm epoch 1 update 1/157 CE 3.095481
+ssm epoch 1 update 40/157 CE 0.223891
+ssm epoch 1 update 80/157 CE 0.366150
+ssm epoch 1 update 120/157 CE 0.174335
+ssm epoch 1 update 157/157 CE 0.121241
+ssm epoch 1 complete, overall mIoU 0.27894165
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn epoch 1 update 1/157 CE 4.107317
+cnn epoch 1 update 40/157 CE 0.197931
+cnn epoch 1 update 80/157 CE 0.364056
+cnn epoch 1 update 120/157 CE 0.177619
+cnn epoch 1 update 157/157 CE 0.119903
+cnn epoch 1 complete, overall mIoU 0.29708527
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention epoch 1 update 1/157 CE 4.401066
+attention epoch 1 update 40/157 CE 0.264911
+attention epoch 1 update 80/157 CE 0.387187
+attention epoch 1 update 120/157 CE 0.181596
+attention epoch 1 update 157/157 CE 0.121361
+attention epoch 1 complete, overall mIoU 0.27898367
+Training phase first completed for all three arms.
+{
+  "status": "PASS",
+  "through_epoch": 1,
+  "common_initial_sha256": "7b277cea3c826710ee93d10dc3f11325e6f7685170ecbe51f9d6c335ee84ae5d",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "b557bb69f0c86f21ff5fc935c6903b600b2d63340aaef18cd5c09477d322f0e5",
+  "test_pixels_read": 0
+}
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm epoch 2 update 1/157 CE 0.108513
+ssm epoch 2 update 40/157 CE 0.093470
+ssm epoch 2 update 80/157 CE 0.058583
+ssm epoch 2 update 120/157 CE 0.096815
+ssm epoch 2 update 157/157 CE 0.099279
+ssm epoch 2 complete, overall mIoU 0.45489542
+ssm epoch 3 update 1/157 CE 0.082693
+ssm epoch 3 update 40/157 CE 0.079140
+ssm epoch 3 update 80/157 CE 0.101125
+ssm epoch 3 update 120/157 CE 0.066343
+ssm epoch 3 update 157/157 CE 0.047634
+ssm epoch 3 complete, overall mIoU 0.58150963
+ssm epoch 4 update 1/157 CE 0.144720
+ssm epoch 4 update 40/157 CE 0.069008
+ssm epoch 4 update 80/157 CE 0.072800
+ssm epoch 4 update 120/157 CE 0.077162
+ssm epoch 4 update 157/157 CE 0.056552
+ssm epoch 4 complete, overall mIoU 0.61643122
+ssm epoch 5 update 1/157 CE 0.064454
+ssm epoch 5 update 40/157 CE 0.083201
+ssm epoch 5 update 80/157 CE 0.086355
+ssm epoch 5 update 120/157 CE 0.069669
+ssm epoch 5 update 157/157 CE 0.065659
+ssm epoch 5 complete, overall mIoU 0.62346380
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn epoch 2 update 1/157 CE 0.110222
+cnn epoch 2 update 40/157 CE 0.097394
+cnn epoch 2 update 80/157 CE 0.059504
+cnn epoch 2 update 120/157 CE 0.106840
+cnn epoch 2 update 157/157 CE 0.104020
+cnn epoch 2 complete, overall mIoU 0.44795666
+cnn epoch 3 update 1/157 CE 0.084773
+cnn epoch 3 update 40/157 CE 0.077103
+cnn epoch 3 update 80/157 CE 0.114171
+cnn epoch 3 update 120/157 CE 0.067935
+cnn epoch 3 update 157/157 CE 0.049438
+cnn epoch 3 complete, overall mIoU 0.57388939
+cnn epoch 4 update 1/157 CE 0.146895
+cnn epoch 4 update 40/157 CE 0.064558
+cnn epoch 4 update 80/157 CE 0.073654
+cnn epoch 4 update 120/157 CE 0.080425
+cnn epoch 4 update 157/157 CE 0.051161
+cnn epoch 4 complete, overall mIoU 0.62582355
+cnn epoch 5 update 1/157 CE 0.059821
+cnn epoch 5 update 40/157 CE 0.080723
+cnn epoch 5 update 80/157 CE 0.139747
+cnn epoch 5 update 120/157 CE 0.069891
+cnn epoch 5 update 157/157 CE 0.066244
+cnn epoch 5 complete, overall mIoU 0.62201448
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention epoch 2 update 1/157 CE 0.108632
+attention epoch 2 update 40/157 CE 0.095709
+attention epoch 2 update 80/157 CE 0.062647
+attention epoch 2 update 120/157 CE 0.098490
+attention epoch 2 update 157/157 CE 0.101827
+attention epoch 2 complete, overall mIoU 0.44212202
+attention epoch 3 update 1/157 CE 0.081414
+attention epoch 3 update 40/157 CE 0.076728
+attention epoch 3 update 80/157 CE 0.105274
+attention epoch 3 update 120/157 CE 0.067116
+attention epoch 3 update 157/157 CE 0.051340
+attention epoch 3 complete, overall mIoU 0.58727238
+attention epoch 4 update 1/157 CE 0.138866
+attention epoch 4 update 40/157 CE 0.065660
+attention epoch 4 update 80/157 CE 0.074189
+attention epoch 4 update 120/157 CE 0.083006
+attention epoch 4 update 157/157 CE 0.053750
+attention epoch 4 complete, overall mIoU 0.61751379
+attention epoch 5 update 1/157 CE 0.063715
+attention epoch 5 update 40/157 CE 0.091957
+attention epoch 5 update 80/157 CE 0.089835
+attention epoch 5 update 120/157 CE 0.074634
+attention epoch 5 update 157/157 CE 0.068716
+attention epoch 5 complete, overall mIoU 0.63219836
+Training phase finish completed for all three arms.
+{
+  "status": "PASS",
+  "through_epoch": 5,
+  "common_initial_sha256": "7b277cea3c826710ee93d10dc3f11325e6f7685170ecbe51f9d6c335ee84ae5d",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "bb04dcc8449b1b167cc8b3c2d80730a71da85889cc22e2a405fd079955d590fe",
+  "test_pixels_read": 0
+}
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm: evaluated 25/157 images
+ssm: evaluated 50/157 images
+ssm: evaluated 75/157 images
+ssm: evaluated 100/157 images
+ssm: evaluated 125/157 images
+ssm: evaluated 150/157 images
+ssm: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn: evaluated 25/157 images
+cnn: evaluated 50/157 images
+cnn: evaluated 75/157 images
+cnn: evaluated 100/157 images
+cnn: evaluated 125/157 images
+cnn: evaluated 150/157 images
+cnn: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention: evaluated 25/157 images
+attention: evaluated 50/157 images
+attention: evaluated 75/157 images
+attention: evaluated 100/157 images
+attention: evaluated 125/157 images
+attention: evaluated 150/157 images
+attention: evaluated 157/157 images
+{
+  "status": "PASS",
+  "images": 157,
+  "visual_groups": 54,
+  "seed": 3408,
+  "replicates": 10000,
+  "primary_case": "primary",
+  "primary_rates": [
+    "new",
+    "net"
+  ],
+  "scope": "paired visual-group uncertainty conditional on one trained checkpoint per arm"
+}
+{
+  "ssm_minus_cnn": {
+    "new": {
+      "point": 2.4607391278619385e-05,
+      "ci95": [
+        -8.169489694081555e-05,
+        0.00014824319590026782
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 0.00011963268876958169,
+      "ci95": [
+        -5.898333751139107e-05,
+        0.00034311923197421243
+      ],
+      "valid_draws": 10000
+    }
+  },
+  "ssm_minus_attention": {
+    "new": {
+      "point": -0.00014461833200636942,
+      "ci95": [
+        -0.0002965524687757282,
+        -4.290985463775425e-06
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": -2.843193885565502e-05,
+      "ci95": [
+        -0.0002547333109555498,
+        0.0002203639007879186
+      ],
+      "valid_draws": 10000
+    }
+  }
+}
+R2d seed 3408 complete
+R2d seed 3409 started
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm epoch 1 update 1/157 CE 2.748057
+ssm epoch 1 update 40/157 CE 0.351486
+ssm epoch 1 update 80/157 CE 0.162105
+ssm epoch 1 update 120/157 CE 0.109348
+ssm epoch 1 update 157/157 CE 0.175504
+ssm epoch 1 complete, overall mIoU 0.32579583
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn epoch 1 update 1/157 CE 3.482216
+cnn epoch 1 update 40/157 CE 0.340634
+cnn epoch 1 update 80/157 CE 0.167633
+cnn epoch 1 update 120/157 CE 0.117637
+cnn epoch 1 update 157/157 CE 0.158151
+cnn epoch 1 complete, overall mIoU 0.34640177
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention epoch 1 update 1/157 CE 3.315641
+attention epoch 1 update 40/157 CE 0.361081
+attention epoch 1 update 80/157 CE 0.186605
+attention epoch 1 update 120/157 CE 0.113100
+attention epoch 1 update 157/157 CE 0.169320
+attention epoch 1 complete, overall mIoU 0.32194575
+Training phase first completed for all three arms.
+{
+  "status": "PASS",
+  "through_epoch": 1,
+  "common_initial_sha256": "979e1cda3344e69d2e4062dcfe0f62595122222fa1b3ce7bff34a593d8cbe4e4",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "f3acf344bdbd29226540c336f0e4b3c1b812ce8dd408297bac5be15d224c1cae",
+  "test_pixels_read": 0
+}
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm epoch 2 update 1/157 CE 0.112297
+ssm epoch 2 update 40/157 CE 0.100491
+ssm epoch 2 update 80/157 CE 0.073292
+ssm epoch 2 update 120/157 CE 0.054631
+ssm epoch 2 update 157/157 CE 0.069945
+ssm epoch 2 complete, overall mIoU 0.45477157
+ssm epoch 3 update 1/157 CE 0.136311
+ssm epoch 3 update 40/157 CE 0.097552
+ssm epoch 3 update 80/157 CE 0.102558
+ssm epoch 3 update 120/157 CE 0.053881
+ssm epoch 3 update 157/157 CE 0.073135
+ssm epoch 3 complete, overall mIoU 0.59043550
+ssm epoch 4 update 1/157 CE 0.133289
+ssm epoch 4 update 40/157 CE 0.062023
+ssm epoch 4 update 80/157 CE 0.076670
+ssm epoch 4 update 120/157 CE 0.054584
+ssm epoch 4 update 157/157 CE 0.044279
+ssm epoch 4 complete, overall mIoU 0.56368801
+ssm epoch 5 update 1/157 CE 0.230830
+ssm epoch 5 update 40/157 CE 0.060375
+ssm epoch 5 update 80/157 CE 0.048220
+ssm epoch 5 update 120/157 CE 0.043628
+ssm epoch 5 update 157/157 CE 0.103595
+ssm epoch 5 complete, overall mIoU 0.62104504
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn epoch 2 update 1/157 CE 0.106945
+cnn epoch 2 update 40/157 CE 0.095871
+cnn epoch 2 update 80/157 CE 0.091558
+cnn epoch 2 update 120/157 CE 0.054144
+cnn epoch 2 update 157/157 CE 0.064288
+cnn epoch 2 complete, overall mIoU 0.44658684
+cnn epoch 3 update 1/157 CE 0.132711
+cnn epoch 3 update 40/157 CE 0.098796
+cnn epoch 3 update 80/157 CE 0.109737
+cnn epoch 3 update 120/157 CE 0.052606
+cnn epoch 3 update 157/157 CE 0.076090
+cnn epoch 3 complete, overall mIoU 0.60085206
+cnn epoch 4 update 1/157 CE 0.071211
+cnn epoch 4 update 40/157 CE 0.059016
+cnn epoch 4 update 80/157 CE 0.080961
+cnn epoch 4 update 120/157 CE 0.051376
+cnn epoch 4 update 157/157 CE 0.047061
+cnn epoch 4 complete, overall mIoU 0.57350566
+cnn epoch 5 update 1/157 CE 0.222092
+cnn epoch 5 update 40/157 CE 0.057809
+cnn epoch 5 update 80/157 CE 0.049043
+cnn epoch 5 update 120/157 CE 0.050495
+cnn epoch 5 update 157/157 CE 0.121398
+cnn epoch 5 complete, overall mIoU 0.64783400
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention epoch 2 update 1/157 CE 0.116906
+attention epoch 2 update 40/157 CE 0.099059
+attention epoch 2 update 80/157 CE 0.093360
+attention epoch 2 update 120/157 CE 0.059286
+attention epoch 2 update 157/157 CE 0.064111
+attention epoch 2 complete, overall mIoU 0.42653191
+attention epoch 3 update 1/157 CE 0.137421
+attention epoch 3 update 40/157 CE 0.103510
+attention epoch 3 update 80/157 CE 0.107860
+attention epoch 3 update 120/157 CE 0.048541
+attention epoch 3 update 157/157 CE 0.078871
+attention epoch 3 complete, overall mIoU 0.60011505
+attention epoch 4 update 1/157 CE 0.078715
+attention epoch 4 update 40/157 CE 0.062178
+attention epoch 4 update 80/157 CE 0.081677
+attention epoch 4 update 120/157 CE 0.050555
+attention epoch 4 update 157/157 CE 0.046867
+attention epoch 4 complete, overall mIoU 0.53474099
+attention epoch 5 update 1/157 CE 0.220811
+attention epoch 5 update 40/157 CE 0.060157
+attention epoch 5 update 80/157 CE 0.050171
+attention epoch 5 update 120/157 CE 0.045450
+attention epoch 5 update 157/157 CE 0.117932
+attention epoch 5 complete, overall mIoU 0.61086997
+Training phase finish completed for all three arms.
+{
+  "status": "PASS",
+  "through_epoch": 5,
+  "common_initial_sha256": "979e1cda3344e69d2e4062dcfe0f62595122222fa1b3ce7bff34a593d8cbe4e4",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "5e3b15ec4883bca8f94a0877e5411510a51acebd25c6e145201cfde470d76252",
+  "test_pixels_read": 0
+}
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm: evaluated 25/157 images
+ssm: evaluated 50/157 images
+ssm: evaluated 75/157 images
+ssm: evaluated 100/157 images
+ssm: evaluated 125/157 images
+ssm: evaluated 150/157 images
+ssm: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn: evaluated 25/157 images
+cnn: evaluated 50/157 images
+cnn: evaluated 75/157 images
+cnn: evaluated 100/157 images
+cnn: evaluated 125/157 images
+cnn: evaluated 150/157 images
+cnn: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention: evaluated 25/157 images
+attention: evaluated 50/157 images
+attention: evaluated 75/157 images
+attention: evaluated 100/157 images
+attention: evaluated 125/157 images
+attention: evaluated 150/157 images
+attention: evaluated 157/157 images
+{
+  "status": "PASS",
+  "images": 157,
+  "visual_groups": 54,
+  "seed": 3409,
+  "replicates": 10000,
+  "primary_case": "primary",
+  "primary_rates": [
+    "new",
+    "net"
+  ],
+  "scope": "paired visual-group uncertainty conditional on one trained checkpoint per arm"
+}
+{
+  "ssm_minus_cnn": {
+    "new": {
+      "point": -0.000196775074238251,
+      "ci95": [
+        -0.00029975400772005935,
+        -0.00010487528525513835
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 1.5550358280254777e-05,
+      "ci95": [
+        -0.00011558057444767002,
+        0.00016951373968965774
+      ],
+      "valid_draws": 10000
+    }
+  },
+  "ssm_minus_attention": {
+    "new": {
+      "point": -0.00014215969427827508,
+      "ci95": [
+        -0.0002816545344041182,
+        -4.856516216684678e-05
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 4.5915584922103635e-05,
+      "ci95": [
+        -9.638338858288515e-05,
+        0.00018904258349110601
+      ],
+      "valid_draws": 10000
+    }
+  }
+}
+R2d seed 3409 complete
+R2d seed 3410 started
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm epoch 1 update 1/157 CE 3.219775
+ssm epoch 1 update 40/157 CE 0.448789
+ssm epoch 1 update 80/157 CE 0.193918
+ssm epoch 1 update 120/157 CE 0.240719
+ssm epoch 1 update 157/157 CE 0.100999
+ssm epoch 1 complete, overall mIoU 0.29289900
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn epoch 1 update 1/157 CE 2.813222
+cnn epoch 1 update 40/157 CE 0.311517
+cnn epoch 1 update 80/157 CE 0.193860
+cnn epoch 1 update 120/157 CE 0.220452
+cnn epoch 1 update 157/157 CE 0.102667
+cnn epoch 1 complete, overall mIoU 0.29808943
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention epoch 1 update 1/157 CE 2.572133
+attention epoch 1 update 40/157 CE 0.300068
+attention epoch 1 update 80/157 CE 0.186394
+attention epoch 1 update 120/157 CE 0.236899
+attention epoch 1 update 157/157 CE 0.103433
+attention epoch 1 complete, overall mIoU 0.29153123
+Training phase first completed for all three arms.
+{
+  "status": "PASS",
+  "through_epoch": 1,
+  "common_initial_sha256": "792049feaf2e9fc8496e28319f7d350124f63318f42673bdf4d9d473125d9cbf",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "9dbf0909313a903e08191594e6fc59509470b5042f6c808717056c8672c5876b",
+  "test_pixels_read": 0
+}
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm epoch 2 update 1/157 CE 0.162455
+ssm epoch 2 update 40/157 CE 0.088034
+ssm epoch 2 update 80/157 CE 0.083331
+ssm epoch 2 update 120/157 CE 0.060992
+ssm epoch 2 update 157/157 CE 0.083868
+ssm epoch 2 complete, overall mIoU 0.43974574
+ssm epoch 3 update 1/157 CE 0.134098
+ssm epoch 3 update 40/157 CE 0.110640
+ssm epoch 3 update 80/157 CE 0.144110
+ssm epoch 3 update 120/157 CE 0.080950
+ssm epoch 3 update 157/157 CE 0.138890
+ssm epoch 3 complete, overall mIoU 0.52643715
+ssm epoch 4 update 1/157 CE 0.079456
+ssm epoch 4 update 40/157 CE 0.066970
+ssm epoch 4 update 80/157 CE 0.083559
+ssm epoch 4 update 120/157 CE 0.072475
+ssm epoch 4 update 157/157 CE 0.100890
+ssm epoch 4 complete, overall mIoU 0.58181918
+ssm epoch 5 update 1/157 CE 0.063537
+ssm epoch 5 update 40/157 CE 0.034646
+ssm epoch 5 update 80/157 CE 0.030053
+ssm epoch 5 update 120/157 CE 0.053644
+ssm epoch 5 update 157/157 CE 0.070928
+ssm epoch 5 complete, overall mIoU 0.55668356
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn epoch 2 update 1/157 CE 0.156383
+cnn epoch 2 update 40/157 CE 0.083294
+cnn epoch 2 update 80/157 CE 0.082389
+cnn epoch 2 update 120/157 CE 0.064861
+cnn epoch 2 update 157/157 CE 0.081635
+cnn epoch 2 complete, overall mIoU 0.41624632
+cnn epoch 3 update 1/157 CE 0.137357
+cnn epoch 3 update 40/157 CE 0.112635
+cnn epoch 3 update 80/157 CE 0.143632
+cnn epoch 3 update 120/157 CE 0.089517
+cnn epoch 3 update 157/157 CE 0.143205
+cnn epoch 3 complete, overall mIoU 0.50866040
+cnn epoch 4 update 1/157 CE 0.079273
+cnn epoch 4 update 40/157 CE 0.065441
+cnn epoch 4 update 80/157 CE 0.088790
+cnn epoch 4 update 120/157 CE 0.068018
+cnn epoch 4 update 157/157 CE 0.104180
+cnn epoch 4 complete, overall mIoU 0.56072036
+cnn epoch 5 update 1/157 CE 0.066239
+cnn epoch 5 update 40/157 CE 0.035030
+cnn epoch 5 update 80/157 CE 0.029220
+cnn epoch 5 update 120/157 CE 0.056678
+cnn epoch 5 update 157/157 CE 0.073187
+cnn epoch 5 complete, overall mIoU 0.51754778
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention epoch 2 update 1/157 CE 0.163022
+attention epoch 2 update 40/157 CE 0.082144
+attention epoch 2 update 80/157 CE 0.079597
+attention epoch 2 update 120/157 CE 0.063706
+attention epoch 2 update 157/157 CE 0.089540
+attention epoch 2 complete, overall mIoU 0.41469583
+attention epoch 3 update 1/157 CE 0.138692
+attention epoch 3 update 40/157 CE 0.115592
+attention epoch 3 update 80/157 CE 0.157683
+attention epoch 3 update 120/157 CE 0.084804
+attention epoch 3 update 157/157 CE 0.145777
+attention epoch 3 complete, overall mIoU 0.52055533
+attention epoch 4 update 1/157 CE 0.077394
+attention epoch 4 update 40/157 CE 0.069016
+attention epoch 4 update 80/157 CE 0.097854
+attention epoch 4 update 120/157 CE 0.069834
+attention epoch 4 update 157/157 CE 0.099124
+attention epoch 4 complete, overall mIoU 0.54809239
+attention epoch 5 update 1/157 CE 0.067585
+attention epoch 5 update 40/157 CE 0.039270
+attention epoch 5 update 80/157 CE 0.033143
+attention epoch 5 update 120/157 CE 0.052334
+attention epoch 5 update 157/157 CE 0.073032
+attention epoch 5 complete, overall mIoU 0.56216891
+Training phase finish completed for all three arms.
+{
+  "status": "PASS",
+  "through_epoch": 5,
+  "common_initial_sha256": "792049feaf2e9fc8496e28319f7d350124f63318f42673bdf4d9d473125d9cbf",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "ea9f519cb648797ea6d8e9272db2cd25704ff3f7854f6f8f61fbff487840f308",
+  "test_pixels_read": 0
+}
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm: evaluated 25/157 images
+ssm: evaluated 50/157 images
+ssm: evaluated 75/157 images
+ssm: evaluated 100/157 images
+ssm: evaluated 125/157 images
+ssm: evaluated 150/157 images
+ssm: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn: evaluated 25/157 images
+cnn: evaluated 50/157 images
+cnn: evaluated 75/157 images
+cnn: evaluated 100/157 images
+cnn: evaluated 125/157 images
+cnn: evaluated 150/157 images
+cnn: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention: evaluated 25/157 images
+attention: evaluated 50/157 images
+attention: evaluated 75/157 images
+attention: evaluated 100/157 images
+attention: evaluated 125/157 images
+attention: evaluated 150/157 images
+attention: evaluated 157/157 images
+{
+  "status": "PASS",
+  "images": 157,
+  "visual_groups": 54,
+  "seed": 3410,
+  "replicates": 10000,
+  "primary_case": "primary",
+  "primary_rates": [
+    "new",
+    "net"
+  ],
+  "scope": "paired visual-group uncertainty conditional on one trained checkpoint per arm"
+}
+{
+  "ssm_minus_cnn": {
+    "new": {
+      "point": 4.505401101738681e-05,
+      "ci95": [
+        -8.653908900946152e-05,
+        0.00020683779439353617
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 0.00018725573329101395,
+      "ci95": [
+        -4.084596878511817e-05,
+        0.0004925748440467758
+      ],
+      "valid_draws": 10000
+    }
+  },
+  "ssm_minus_attention": {
+    "new": {
+      "point": -0.0002640198668015149,
+      "ci95": [
+        -0.00038702602527065417,
+        -0.0001341498366837594
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 0.0001484849075787571,
+      "ci95": [
+        -0.0001307114629020468,
+        0.0004873795088717877
+      ],
+      "valid_draws": 10000
+    }
+  }
+}
+R2d seed 3410 complete
+R2d seed 3411 started
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm epoch 1 update 1/157 CE 3.547804
+ssm epoch 1 update 40/157 CE 0.281008
+ssm epoch 1 update 80/157 CE 0.180428
+ssm epoch 1 update 120/157 CE 0.140765
+ssm epoch 1 update 157/157 CE 0.107389
+ssm epoch 1 complete, overall mIoU 0.32919379
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn epoch 1 update 1/157 CE 2.954646
+cnn epoch 1 update 40/157 CE 0.256079
+cnn epoch 1 update 80/157 CE 0.204019
+cnn epoch 1 update 120/157 CE 0.134012
+cnn epoch 1 update 157/157 CE 0.102036
+cnn epoch 1 complete, overall mIoU 0.35056808
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention epoch 1 update 1/157 CE 2.977946
+attention epoch 1 update 40/157 CE 0.261580
+attention epoch 1 update 80/157 CE 0.221312
+attention epoch 1 update 120/157 CE 0.136432
+attention epoch 1 update 157/157 CE 0.102677
+attention epoch 1 complete, overall mIoU 0.32345535
+Training phase first completed for all three arms.
+{
+  "status": "PASS",
+  "through_epoch": 1,
+  "common_initial_sha256": "943a2dbdde6cba5520700fbc7997376b08db18284f2ad1af0b43671e12fa205c",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "753ad2aefd07f0addbc0c3545085c047ad715e2ac05a9b85696236caa747ed47",
+  "test_pixels_read": 0
+}
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm epoch 2 update 1/157 CE 0.096053
+ssm epoch 2 update 40/157 CE 0.223377
+ssm epoch 2 update 80/157 CE 0.124216
+ssm epoch 2 update 120/157 CE 0.054023
+ssm epoch 2 update 157/157 CE 0.096339
+ssm epoch 2 complete, overall mIoU 0.40857950
+ssm epoch 3 update 1/157 CE 0.049681
+ssm epoch 3 update 40/157 CE 0.102301
+ssm epoch 3 update 80/157 CE 0.103312
+ssm epoch 3 update 120/157 CE 0.082772
+ssm epoch 3 update 157/157 CE 0.083087
+ssm epoch 3 complete, overall mIoU 0.53756249
+ssm epoch 4 update 1/157 CE 0.077291
+ssm epoch 4 update 40/157 CE 0.051644
+ssm epoch 4 update 80/157 CE 0.061510
+ssm epoch 4 update 120/157 CE 0.050362
+ssm epoch 4 update 157/157 CE 0.083074
+ssm epoch 4 complete, overall mIoU 0.62487366
+ssm epoch 5 update 1/157 CE 0.064206
+ssm epoch 5 update 40/157 CE 0.064839
+ssm epoch 5 update 80/157 CE 0.082382
+ssm epoch 5 update 120/157 CE 0.101951
+ssm epoch 5 update 157/157 CE 0.051376
+ssm epoch 5 complete, overall mIoU 0.63099694
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn epoch 2 update 1/157 CE 0.092364
+cnn epoch 2 update 40/157 CE 0.216957
+cnn epoch 2 update 80/157 CE 0.113210
+cnn epoch 2 update 120/157 CE 0.057567
+cnn epoch 2 update 157/157 CE 0.103212
+cnn epoch 2 complete, overall mIoU 0.42850661
+cnn epoch 3 update 1/157 CE 0.056243
+cnn epoch 3 update 40/157 CE 0.103584
+cnn epoch 3 update 80/157 CE 0.101320
+cnn epoch 3 update 120/157 CE 0.083399
+cnn epoch 3 update 157/157 CE 0.081787
+cnn epoch 3 complete, overall mIoU 0.57476473
+cnn epoch 4 update 1/157 CE 0.074359
+cnn epoch 4 update 40/157 CE 0.047159
+cnn epoch 4 update 80/157 CE 0.062180
+cnn epoch 4 update 120/157 CE 0.047126
+cnn epoch 4 update 157/157 CE 0.090385
+cnn epoch 4 complete, overall mIoU 0.60463232
+cnn epoch 5 update 1/157 CE 0.064213
+cnn epoch 5 update 40/157 CE 0.067519
+cnn epoch 5 update 80/157 CE 0.082197
+cnn epoch 5 update 120/157 CE 0.066734
+cnn epoch 5 update 157/157 CE 0.049312
+cnn epoch 5 complete, overall mIoU 0.64799710
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention epoch 2 update 1/157 CE 0.094797
+attention epoch 2 update 40/157 CE 0.206696
+attention epoch 2 update 80/157 CE 0.115937
+attention epoch 2 update 120/157 CE 0.054973
+attention epoch 2 update 157/157 CE 0.108051
+attention epoch 2 complete, overall mIoU 0.42742093
+attention epoch 3 update 1/157 CE 0.057697
+attention epoch 3 update 40/157 CE 0.109929
+attention epoch 3 update 80/157 CE 0.099880
+attention epoch 3 update 120/157 CE 0.084665
+attention epoch 3 update 157/157 CE 0.086694
+attention epoch 3 complete, overall mIoU 0.54248509
+attention epoch 4 update 1/157 CE 0.082507
+attention epoch 4 update 40/157 CE 0.056019
+attention epoch 4 update 80/157 CE 0.065393
+attention epoch 4 update 120/157 CE 0.049754
+attention epoch 4 update 157/157 CE 0.086202
+attention epoch 4 complete, overall mIoU 0.59181274
+attention epoch 5 update 1/157 CE 0.062968
+attention epoch 5 update 40/157 CE 0.067312
+attention epoch 5 update 80/157 CE 0.079977
+attention epoch 5 update 120/157 CE 0.059231
+attention epoch 5 update 157/157 CE 0.052021
+attention epoch 5 complete, overall mIoU 0.64320749
+Training phase finish completed for all three arms.
+{
+  "status": "PASS",
+  "through_epoch": 5,
+  "common_initial_sha256": "943a2dbdde6cba5520700fbc7997376b08db18284f2ad1af0b43671e12fa205c",
+  "first_gpu_input_fingerprints_match": true,
+  "all_window_sampling_and_augmentation_replay_sha256": "e59e9723a31fb8dad3d6bec87f5ef4352dac348791a0269cc18892a6d1bcd774",
+  "test_pixels_read": 0
+}
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+ssm: evaluated 25/157 images
+ssm: evaluated 50/157 images
+ssm: evaluated 75/157 images
+ssm: evaluated 100/157 images
+ssm: evaluated 125/157 images
+ssm: evaluated 150/157 images
+ssm: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+cnn: evaluated 25/157 images
+cnn: evaluated 50/157 images
+cnn: evaluated 75/157 images
+cnn: evaluated 100/157 images
+cnn: evaluated 125/157 images
+cnn: evaluated 150/157 images
+cnn: evaluated 157/157 images
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+attention: evaluated 25/157 images
+attention: evaluated 50/157 images
+attention: evaluated 75/157 images
+attention: evaluated 100/157 images
+attention: evaluated 125/157 images
+attention: evaluated 150/157 images
+attention: evaluated 157/157 images
+{
+  "status": "PASS",
+  "images": 157,
+  "visual_groups": 54,
+  "seed": 3411,
+  "replicates": 10000,
+  "primary_case": "primary",
+  "primary_rates": [
+    "new",
+    "net"
+  ],
+  "scope": "paired visual-group uncertainty conditional on one trained checkpoint per arm"
+}
+{
+  "ssm_minus_cnn": {
+    "new": {
+      "point": 1.998431178989499e-05,
+      "ci95": [
+        -3.954950078804637e-05,
+        8.626693654769826e-05
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 4.805901268505767e-05,
+      "ci95": [
+        -0.00012076951333250204,
+        0.0002903334818063156
+      ],
+      "valid_draws": 10000
+    }
+  },
+  "ssm_minus_attention": {
+    "new": {
+      "point": 8.147126898992942e-05,
+      "ci95": [
+        -4.572153415417861e-06,
+        0.00019284933270241736
+      ],
+      "valid_draws": 10000
+    },
+    "net": {
+      "point": 0.0001387764406524359,
+      "ci95": [
+        -5.845062304376987e-05,
+        0.0004314014358903582
+      ],
+      "valid_draws": 10000
+    }
+  }
+}
+R2d seed 3411 complete
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+11 12:35:59 Using backbone: V-MAMBA
+11 12:36:17 Using Mamba Decoder
+11 12:36:17 Initing weights ...
+11 12:46:23 Using backbone: V-MAMBA
+11 12:46:24 Using Mamba Decoder
+11 12:46:24 Initing weights ...
+11 12:55:45 Using backbone: V-MAMBA
+11 12:55:46 Using Mamba Decoder
+11 12:55:46 Initing weights ...
+11 13:05:12 Using backbone: V-MAMBA
+11 13:05:13 Using Mamba Decoder
+11 13:05:13 Initing weights ...
+11 13:42:46 Using backbone: V-MAMBA
+11 13:42:46 Using Mamba Decoder
+11 13:42:46 Initing weights ...
+11 14:19:59 Using backbone: V-MAMBA
+11 14:20:00 Using Mamba Decoder
+11 14:20:00 Initing weights ...
+11 14:59:19 Using backbone: V-MAMBA
+11 14:59:20 Using Mamba Decoder
+11 14:59:20 Initing weights ...
+11 15:06:30 Using backbone: V-MAMBA
+11 15:06:31 Using Mamba Decoder
+11 15:06:31 Initing weights ...
+11 15:13:33 Using backbone: V-MAMBA
+11 15:13:34 Using Mamba Decoder
+11 15:13:34 Initing weights ...
+11 15:21:03 Using backbone: V-MAMBA
+11 15:21:04 Using Mamba Decoder
+11 15:21:04 Initing weights ...
+11 15:31:06 Using backbone: V-MAMBA
+11 15:31:07 Using Mamba Decoder
+11 15:31:07 Initing weights ...
+11 15:40:41 Using backbone: V-MAMBA
+11 15:40:42 Using Mamba Decoder
+11 15:40:42 Initing weights ...
+11 15:51:42 Using backbone: V-MAMBA
+11 15:51:43 Using Mamba Decoder
+11 15:51:43 Initing weights ...
+11 16:31:26 Using backbone: V-MAMBA
+11 16:31:27 Using Mamba Decoder
+11 16:31:27 Initing weights ...
+11 17:14:08 Using backbone: V-MAMBA
+11 17:14:09 Using Mamba Decoder
+11 17:14:09 Initing weights ...
+11 17:52:06 Using backbone: V-MAMBA
+11 17:52:07 Using Mamba Decoder
+11 17:52:07 Initing weights ...
+11 17:59:11 Using backbone: V-MAMBA
+11 17:59:12 Using Mamba Decoder
+11 17:59:12 Initing weights ...
+11 18:05:57 Using backbone: V-MAMBA
+11 18:05:58 Using Mamba Decoder
+11 18:05:58 Initing weights ...
+11 18:13:03 Using backbone: V-MAMBA
+11 18:13:04 Using Mamba Decoder
+11 18:13:04 Initing weights ...
+11 18:22:41 Using backbone: V-MAMBA
+11 18:22:42 Using Mamba Decoder
+11 18:22:42 Initing weights ...
+11 18:31:50 Using backbone: V-MAMBA
+11 18:31:50 Using Mamba Decoder
+11 18:31:51 Initing weights ...
+11 18:41:21 Using backbone: V-MAMBA
+11 18:41:22 Using Mamba Decoder
+11 18:41:22 Initing weights ...
+11 19:19:34 Using backbone: V-MAMBA
+11 19:19:34 Using Mamba Decoder
+11 19:19:35 Initing weights ...
+11 19:56:18 Using backbone: V-MAMBA
+11 19:56:18 Using Mamba Decoder
+11 19:56:18 Initing weights ...
+11 20:34:42 Using backbone: V-MAMBA
+11 20:34:43 Using Mamba Decoder
+11 20:34:43 Initing weights ...
+11 20:41:56 Using backbone: V-MAMBA
+11 20:41:57 Using Mamba Decoder
+11 20:41:57 Initing weights ...
+11 20:48:57 Using backbone: V-MAMBA
+11 20:48:58 Using Mamba Decoder
+11 20:48:58 Initing weights ...
+11 20:56:21 Using backbone: V-MAMBA
+11 20:56:22 Using Mamba Decoder
+11 20:56:22 Initing weights ...
+11 21:06:29 Using backbone: V-MAMBA
+11 21:06:29 Using Mamba Decoder
+11 21:06:30 Initing weights ...
+11 21:15:56 Using backbone: V-MAMBA
+11 21:15:56 Using Mamba Decoder
+11 21:15:56 Initing weights ...
+11 21:25:39 Using backbone: V-MAMBA
+11 21:25:40 Using Mamba Decoder
+11 21:25:40 Initing weights ...
+11 22:04:44 Using backbone: V-MAMBA
+11 22:04:45 Using Mamba Decoder
+11 22:04:45 Initing weights ...
+11 22:41:17 Using backbone: V-MAMBA
+11 22:41:18 Using Mamba Decoder
+11 22:41:18 Initing weights ...
+11 23:20:41 Using backbone: V-MAMBA
+11 23:20:41 Using Mamba Decoder
+11 23:20:41 Initing weights ...
+11 23:27:58 Using backbone: V-MAMBA
+11 23:27:59 Using Mamba Decoder
+11 23:27:59 Initing weights ...
+11 23:34:48 Using backbone: V-MAMBA
+11 23:34:49 Using Mamba Decoder
+11 23:34:49 Initing weights ...
+
+Elapsed seconds: 40062.143
+Exit code: 0
