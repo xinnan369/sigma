@@ -1,0 +1,33 @@
+UTC: 2026-11-12T07:59:01.491431+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2e.run', 'baseline', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint-dir', '<LINUX_HOME>/sigma-r2d-runs', '--evidence', 'reports/evidence/r2e']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+12 15:58:53 Using backbone: V-MAMBA
+12 15:58:57 Using Mamba Decoder
+12 15:58:57 Initing weights ...
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<BRIDGE>/experiments/r2e/run.py", line 238, in <module>
+    main()
+  File "<BRIDGE>/experiments/r2e/run.py", line 234, in main
+    run(parser.parse_args())
+  File "<BRIDGE>/experiments/r2e/run.py", line 201, in run
+    layout, hashes = baseline_trace(model, vmamba, arm, rgb, clean,
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2e/run.py", line 60, in baseline_trace
+    with intercept(model, vmamba, arm, observe):
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/contextlib.py", line 144, in __exit__
+    next(self.gen)
+  File "<BRIDGE>/experiments/r2e/paths.py", line 107, in intercept
+    require(not active and set(seen) == set(paths)
+  File "<BRIDGE>/experiments/r1g/partition.py", line 26, in require
+    raise ValueError(message)
+ValueError: Incomplete or unexpected encoder/decoder/fusion invocations
+
+Elapsed seconds: 34.985
+Exit code: 1

@@ -1,0 +1,10 @@
+{
+  "version": "r2e-scan-path-v1",
+  "seeds": [3407, 3408, 3409, 3410, 3411],
+  "pilot_seed": 3407,
+  "paths": ["h", "c", "d"],
+  "masks": [0, 1, 2, 3, 4, 5, 6, 7],
+  "bootstrap_seed": 3407,
+  "bootstrap_draws": 10000,
+  "replay_context": "clean input; jointly replace selected native scan outputs at the frozen scope"
+}
