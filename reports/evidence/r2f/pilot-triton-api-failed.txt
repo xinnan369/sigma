@@ -1,0 +1,69 @@
+UTC: 2026-11-12T10:22:02.195040+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2f.pilot', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint-dir', '<LINUX_HOME>/sigma-r2d-runs', '--evidence', 'reports/evidence/r2f']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<BRIDGE>/experiments/r2f/pilot.py", line 63, in <module>
+    main()
+  File "<BRIDGE>/experiments/r2f/pilot.py", line 48, in main
+    write_json(args.evidence / 'synthetic-replay.json', synthetic(extension.fwd))
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2f/pilot.py", line 32, in synthetic
+    'scale': scale, **validated_factor(native, *scans, *native_y).audit})
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2f/replay.py", line 69, in validated_factor
+    'readout': check_close(reconstruct(h, scan.c, skip), actual, 'CUDA native readout'),
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BRIDGE>/experiments/r2f/replay.py", line 33, in reconstruct
+    accumulate[(triton.cdiv(out.numel(), 256),)](
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/runtime/jit.py", line 532, in run
+    self.cache[device][key] = compile(
+                              ^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/compiler.py", line 484, in compile
+    fn_cache_manager = get_cache_manager(make_hash(fn, target, get_env_vars(), _device_backend, **kwargs))
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/compiler/compiler.py", line 259, in make_hash
+    key = f"{fn.cache_key}-{version_key}-{''.join(signature.values())}-{configs_key}-{constants}-{num_warps}-{num_stages}-{num_ctas}-{num_stages}-{enable_warp_specialization}-{enable_persistent}-{debug}-{target}-{env_vars_list}"
+             ^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/runtime/jit.py", line 615, in cache_key
+    dependencies_finder.visit(self.parse())
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 426, in generic_visit
+    self.visit(item)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 426, in generic_visit
+    self.visit(item)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 426, in generic_visit
+    self.visit(item)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 428, in generic_visit
+    self.visit(value)
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/runtime/jit.py", line 81, in visit_Call
+    func = self.visit(node.func)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/ast.py", line 418, in visit
+    return visitor(node)
+           ^^^^^^^^^^^^^
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/site-packages/triton/runtime/jit.py", line 78, in visit_Attribute
+    return getattr(lhs, node.attr)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'triton.language' has no attribute 'fma'
+
+Elapsed seconds: 13.001
+Exit code: 1

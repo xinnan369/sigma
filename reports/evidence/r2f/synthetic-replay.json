@@ -1,0 +1,354 @@
+[
+  {
+    "length": 33,
+    "channels": 16,
+    "groups": 1,
+    "state": 4,
+    "nrows": 1,
+    "scale": 0.01,
+    "native": [
+      {
+        "chunk_end": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        },
+        "readout": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        }
+      },
+      {
+        "chunk_end": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        },
+        "readout": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        }
+      }
+    ],
+    "hybrid": [
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "length": 300,
+    "channels": 32,
+    "groups": 2,
+    "state": 4,
+    "nrows": 2,
+    "scale": 1.0,
+    "native": [
+      {
+        "chunk_end": {
+          "max_abs": 2.384185791015625e-07,
+          "peak_relative": 6.24561380391242e-08,
+          "rms_relative": 6.469744562309643e-08,
+          "max_mixed_ratio": 0.0018336992943659425
+        },
+        "readout": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        }
+      },
+      {
+        "chunk_end": {
+          "max_abs": 2.980232238769531e-07,
+          "peak_relative": 5.8305435146621676e-08,
+          "rms_relative": 8.582971133819228e-08,
+          "max_mixed_ratio": 0.002232310129329562
+        },
+        "readout": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        }
+      }
+    ],
+    "hybrid": [
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "length": 1200,
+    "channels": 32,
+    "groups": 4,
+    "state": 16,
+    "nrows": 4,
+    "scale": 0.5,
+    "native": [
+      {
+        "chunk_end": {
+          "max_abs": 2.384185791015625e-07,
+          "peak_relative": 5.775315869982478e-08,
+          "rms_relative": 6.75605349442776e-08,
+          "max_mixed_ratio": 0.0029912046156823635
+        },
+        "readout": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        }
+      },
+      {
+        "chunk_end": {
+          "max_abs": 1.7881393432617188e-07,
+          "peak_relative": 1.2863407050645037e-07,
+          "rms_relative": 1.021281335056301e-07,
+          "max_mixed_ratio": 0.005637017544358969
+        },
+        "readout": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        }
+      }
+    ],
+    "hybrid": [
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      }
+    ]
+  },
+  {
+    "length": 2067,
+    "channels": 32,
+    "groups": 4,
+    "state": 16,
+    "nrows": 2,
+    "scale": 2.0,
+    "native": [
+      {
+        "chunk_end": {
+          "max_abs": 7.152557373046875e-07,
+          "peak_relative": 8.140023055602796e-08,
+          "rms_relative": 7.250839928474306e-08,
+          "max_mixed_ratio": 0.004492029082030058
+        },
+        "readout": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        }
+      },
+      {
+        "chunk_end": {
+          "max_abs": 1.9073486328125e-06,
+          "peak_relative": 1.9377529270059313e-07,
+          "rms_relative": 9.372563170018111e-08,
+          "max_mixed_ratio": 0.006233112420886755
+        },
+        "readout": {
+          "max_abs": 0.0,
+          "peak_relative": 0.0,
+          "rms_relative": 0.0,
+          "max_mixed_ratio": 0.0
+        }
+      }
+    ],
+    "hybrid": [
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      },
+      {
+        "max_abs": 0.0,
+        "peak_relative": 0.0,
+        "rms_relative": 0.0,
+        "max_mixed_ratio": 0.0
+      }
+    ]
+  }
+]

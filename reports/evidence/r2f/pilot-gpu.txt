@@ -1,0 +1,60 @@
+UTC: 2026-11-12T10:31:25.303891+00:00
+Command argv: ['wsl', '-d', 'Ubuntu-22.04', '--exec', 'env', 'CUDA_VISIBLE_DEVICES=0', 'OPENBLAS_NUM_THREADS=1', '<LINUX_HOME>/.venvs/sigma-r1-cu121/bin/python', '-u', '-m', 'experiments.r2f.pilot', '--upstream', '<LINUX_HOME>/sigma-r1-upstream', '--init', '<ASSETS>/pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth', '--root', '<ASSETS>/MFNet', '--checkpoint-dir', '<LINUX_HOME>/sigma-r2d-runs', '--evidence', 'reports/evidence/r2f']
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+pilot 3407/ssm 1/12
+pilot 3407/ssm 2/12
+pilot 3407/ssm 3/12
+pilot 3407/ssm 4/12
+pilot 3407/ssm 5/12
+pilot 3407/ssm 6/12
+pilot 3407/ssm 7/12
+pilot 3407/ssm 8/12
+pilot 3407/ssm 9/12
+pilot 3407/ssm 10/12
+pilot 3407/ssm 11/12
+pilot 3407/ssm 12/12
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+pilot 3407/cnn 1/12
+pilot 3407/cnn 2/12
+pilot 3407/cnn 3/12
+pilot 3407/cnn 4/12
+pilot 3407/cnn 5/12
+pilot 3407/cnn 6/12
+pilot 3407/cnn 7/12
+pilot 3407/cnn 8/12
+pilot 3407/cnn 9/12
+pilot 3407/cnn 10/12
+pilot 3407/cnn 11/12
+pilot 3407/cnn 12/12
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+pilot 3407/attention 1/12
+pilot 3407/attention 2/12
+pilot 3407/attention 3/12
+pilot 3407/attention 4/12
+pilot 3407/attention 5/12
+pilot 3407/attention 6/12
+pilot 3407/attention 7/12
+pilot 3407/attention 8/12
+pilot 3407/attention 9/12
+pilot 3407/attention 10/12
+pilot 3407/attention 11/12
+pilot 3407/attention 12/12
+wsl: �hKm0R localhost �NtM�n�FO*g\��P0R WSL0NAT !j_N�v WSL
+N/ec localhost �Nt0
+
+12 18:22:45 Using backbone: V-MAMBA
+12 18:22:49 Using Mamba Decoder
+12 18:22:49 Initing weights ...
+12 18:27:23 Using backbone: V-MAMBA
+12 18:27:24 Using Mamba Decoder
+12 18:27:24 Initing weights ...
+12 18:29:22 Using backbone: V-MAMBA
+12 18:29:23 Using Mamba Decoder
+12 18:29:23 Initing weights ...
+
+Elapsed seconds: 542.743
+Exit code: 0
