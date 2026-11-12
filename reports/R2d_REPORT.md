@@ -105,4 +105,6 @@ E．值得继续以 R2b 的内部状态干预检验局部因果路径。当前�
 
 ## 证据与测试
 
+审计证书中，`signature.seed` 是对应实验实际使用的随机种子。`runtime.config.seed` 是从基础运行配置继承的元数据字段，保留基础配置值以便核验运行环境。
+
 最终复核覆盖 15 个训练审计、75 个 epoch、32,970 条配对记录和 2,355 次 Identity。逐窗日志与推理证据文件的 SHA256 均与证书一致。Windows 测试 81 项通过、2 项跳过，WSL 83 项全部通过。[Windows](evidence/r2d/tests-windows.txt) · [WSL](evidence/r2d/tests-wsl.txt) · [最终分析日志](evidence/r2d/multiseed-analysis.txt)
