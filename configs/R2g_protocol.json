@@ -1,0 +1,52 @@
+{
+  "version": "r2g-native-fma-v1",
+  "seeds": [
+    3407,
+    3408,
+    3409,
+    3410,
+    3411
+  ],
+  "arms": [
+    "ssm",
+    "cnn",
+    "attention"
+  ],
+  "pilot_seed": 3407,
+  "images": 157,
+  "groups": 54,
+  "masks": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "bits": [
+    "h",
+    "c",
+    "d"
+  ],
+  "primary_perturbation": "R2a primary center 64x64 thermal fill=0",
+  "replay_context": "clean RGB and thermal, substitute frozen per-scan readouts from paired natural traces",
+  "bootstrap_seed": 3407,
+  "bootstrap_draws": 10000,
+  "primary_comparisons": [
+    "h-minus-c",
+    "h-minus-d",
+    "encoder-minus-decoder",
+    "fusion-minus-shared"
+  ],
+  "primary_metrics": [
+    "new",
+    "corrected",
+    "net",
+    "disagree"
+  ],
+  "r2f_head": "f469f8af64a4c02c5c6112c09e4267bb9b07ca4d",
+  "r2f_merge": "a3428a2f85ff0671a6dec423e250a67d24e19a9e"
+}
+

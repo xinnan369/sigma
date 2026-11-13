@@ -1,0 +1,1 @@
+PASS: 30 R2d endpoint files, 4,710 rows, match the frozen 157-ID / 54-group graph exactly.

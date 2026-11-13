@@ -1,0 +1,56 @@
+UTC start: 2026-11-12T12:16:20Z
+Command: python -u -m experiments.r2g.run pilot --upstream <PINNED_SIGMA> --init <VMAMBA_INIT> --root <MFNET_ROOT> --checkpoint-dir <R2D_CHECKPOINTS> --evidence <R2G_RUN>
+{"environment":{"cuda":"12.1","cv2":"4.9.0","extension_sha256":"833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e","gpu":"NVIDIA GeForce RTX 3090","gpu_memory_bytes":25769279488,"numpy":"1.26.4","python":"3.11.11","torch":"2.2.2+cu121","triton":"2.2.0"},"phase":"pilot","protocol_sha256":"dfc5c437f879e6e29c8532e941bf88dbac4810dc1958381d5ca537b2fcc62bc2","source_sha256":"2edd5573d335964b9e52a88c74f00d8ea0076f14593deee5b763655953c20a08"}
+12 20:16:36 Using backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+12 20:16:40 Using Mamba Decoder
+12 20:16:40 Initing weights ...
+pilot 3407/ssm 1/12 00057D 26.63s peak=11577402368
+pilot 3407/ssm 2/12 00483D 23.03s peak=11577721856
+pilot 3407/ssm 3/12 00083D 22.26s peak=11579802624
+pilot 3407/ssm 4/12 00058D 23.01s peak=11577721856
+pilot 3407/ssm 5/12 00095D 22.88s peak=11579802624
+pilot 3407/ssm 6/12 00444D 22.93s peak=11577721856
+pilot 3407/ssm 7/12 00829N 22.92s peak=11579802624
+pilot 3407/ssm 8/12 00961N 22.93s peak=11577721856
+pilot 3407/ssm 9/12 00022N 22.91s peak=11579802624
+pilot 3407/ssm 10/12 00885N 23.18s peak=11577721856
+pilot 3407/ssm 11/12 00886N 23.32s peak=11579802624
+pilot 3407/ssm 12/12 00818N 22.66s peak=11577721856
+12 20:21:21 Using backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+12 20:21:22 Using Mamba Decoder
+12 20:21:22 Initing weights ...
+pilot 3407/cnn 1/12 00057D 9.76s peak=10249388544
+pilot 3407/cnn 2/12 00483D 9.64s peak=10249044480
+pilot 3407/cnn 3/12 00083D 9.57s peak=10249388544
+pilot 3407/cnn 4/12 00058D 9.63s peak=10249044480
+pilot 3407/cnn 5/12 00095D 9.66s peak=10249388544
+pilot 3407/cnn 6/12 00444D 9.60s peak=10249044480
+pilot 3407/cnn 7/12 00829N 9.61s peak=10249388544
+pilot 3407/cnn 8/12 00961N 9.58s peak=10249044480
+pilot 3407/cnn 9/12 00022N 9.60s peak=10249388544
+pilot 3407/cnn 10/12 00885N 9.58s peak=10249044480
+pilot 3407/cnn 11/12 00886N 9.67s peak=10249388544
+pilot 3407/cnn 12/12 00818N 9.55s peak=10249044480
+12 20:23:20 Using backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+12 20:23:21 Using Mamba Decoder
+12 20:23:21 Initing weights ...
+pilot 3407/attention 1/12 00057D 9.82s peak=10249165824
+pilot 3407/attention 2/12 00483D 9.69s peak=10247248896
+pilot 3407/attention 3/12 00083D 9.76s peak=10249165824
+pilot 3407/attention 4/12 00058D 9.73s peak=10247248896
+pilot 3407/attention 5/12 00095D 9.72s peak=10249165824
+pilot 3407/attention 6/12 00444D 9.72s peak=10247248896
+pilot 3407/attention 7/12 00829N 9.70s peak=10249165824
+pilot 3407/attention 8/12 00961N 9.73s peak=10247248896
+pilot 3407/attention 9/12 00022N 10.17s peak=10249165824
+pilot 3407/attention 10/12 00885N 10.81s peak=10247248896
+pilot 3407/attention 11/12 00886N 10.56s peak=10249165824
+pilot 3407/attention 12/12 00818N 10.53s peak=10247248896
+Thu Nov 12 12:25:24 UTC 2026
+Exit:0
