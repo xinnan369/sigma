@@ -66,6 +66,8 @@ def grouped(rows, groups, weights):
         totals = pool([[x[k] for k in FIELDS] for x in values])
         out = {prefix + k + '_rate': ratio(totals[:, j], totals[:, 0])
                for j, k in enumerate(FIELDS) if j}
+        out[prefix + 'recovered_minus_introduced_rate'] = ratio(totals[:, 2] - totals[:, 3], totals[:, 0])
+        out[prefix + 'recovered_minus_introduced_pixels'] = totals[:, 2] - totals[:, 3]
         out[prefix + 'recovery_fraction'] = ratio(totals[:, 2], totals[:, 1])
         for k in ('induced', 'recovered', 'introduced', 'corrected'):
             out[prefix + k + '_pixels'] = totals[:, FIELDS.index(k)]
@@ -160,7 +162,8 @@ def analyze(evidence):
     # across arms, conditions and seeds.
     weights = np.vstack((np.ones((1, len(groups))), gw))
     for arm in ARMS:
-        cohort_rows = [rows for (_, a), rows in chunks if a == arm]
+        by_seed = {s: rows for (s, a), rows in chunks if a == arm}
+        cohort_rows = [by_seed[s] for s in cfg['seeds']]
         conditions = list(cohort_rows[0][0]['outcomes'])
         out = effects[arm] = {}
         for condition in ['clean', *conditions]:
