@@ -5,6 +5,7 @@ import os
 from pathlib import Path
 import subprocess
 import time
+from unittest.mock import patch
 
 import numpy as np
 import torch
@@ -34,7 +35,17 @@ def freeze(args):
     subprocess.run(['git', '-C', str(ROOT), 'diff', '--quiet', cfg['base'], '--',
                     'experiments', 'configs', 'reports/evidence/r2g',
                     ':(exclude)experiments/r2h', ':(exclude)configs/R2h_protocol.json'], check=True)
-    prior, r2a, split, frozen, fingerprint = freeze_r2g(args)
+    original_run = subprocess.run
+
+    def inherited_git_check(command, *positional, **kwargs):
+        # R2g predates R2h. Its historical comparison must exclude only this
+        # extension, already covered by the separate baseline check above.
+        if command[-1] == ':(exclude)configs/R2g_protocol.json':
+            command = [*command, ':(exclude)experiments/r2h', ':(exclude)configs/R2h_protocol.json']
+        return original_run(command, *positional, **kwargs)
+
+    with patch('experiments.r2g.run.subprocess.run', side_effect=inherited_git_check):
+        prior, r2a, split, frozen, fingerprint = freeze_r2g(args)
     cert_path = ROOT / 'reports/evidence/r2g/full/certificate.json'
     cert = read(cert_path)
     require(cert['phase'] == 'r2g-full' and cert['status'] == 'PASS' and cert['fingerprints'] == fingerprint
