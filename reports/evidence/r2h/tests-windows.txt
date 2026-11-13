@@ -1,0 +1,8 @@
+............................s..........................s................ [ 76%]
+s...s.................                                                   [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_r1d_epoch.py:114: Pinned Sigma checkout and VMamba initializer required
+SKIPPED [1] tests\test_r2b_state.py:46: Requires CUDA and Sigma selective scan
+SKIPPED [1] tests\test_r2f_numerics.py:28: CUDA basis probes require GPU
+SKIPPED [1] tests\test_r2g_attribution.py:50: could not import 'triton': No module named 'triton'
+90 passed, 4 skipped in 6.87s

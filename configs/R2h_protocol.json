@@ -1,0 +1,25 @@
+{
+  "version": "r2h-corrupt-context-v1",
+  "base": "2bebdbf363a6cb66d208dd5cd13b08ac3fd3498b",
+  "seeds": [
+    3407,
+    3408,
+    3409,
+    3410,
+    3411
+  ],
+  "primary": "encoder/6",
+  "masks": [
+    7,
+    6,
+    5,
+    3,
+    4,
+    2,
+    1,
+    0
+  ],
+  "mismatch": "next ID in sorted full frozen validation cohort, cyclic; encoder h only",
+  "bootstrap_seed": 3407,
+  "draws": 10000
+}
