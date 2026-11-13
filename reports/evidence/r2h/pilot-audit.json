@@ -1,0 +1,41 @@
+{
+  "arms": {
+    "ssm": {
+      "images": 12,
+      "seconds": 304.06411284499995,
+      "peak_bytes": 12236792832,
+      "identities": 156,
+      "mixed": {
+        "readout": 0.0,
+        "prefix": 0.023042194545269012,
+        "hybrid": 0.00414942717179656
+      },
+      "mismatch": 0.0008740883786231279
+    },
+    "cnn": {
+      "images": 12,
+      "seconds": 139.63639116500008,
+      "peak_bytes": 10909975040,
+      "identities": 48,
+      "mixed": {
+        "readout": 0.0,
+        "prefix": 0.0337136872112751,
+        "hybrid": 0.0010801292955875397
+      },
+      "mismatch": 0.001564533682540059
+    },
+    "attention": {
+      "images": 12,
+      "seconds": 144.73500402900027,
+      "peak_bytes": 10908638208,
+      "identities": 48,
+      "mixed": {
+        "readout": 0.0,
+        "prefix": 0.019543329253792763,
+        "hybrid": 0.0008317262399941683
+      },
+      "mismatch": 0.0009545814245939255
+    }
+  },
+  "estimated_full_hours": 10.692635967838315
+}

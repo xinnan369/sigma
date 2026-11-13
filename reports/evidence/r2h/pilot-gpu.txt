@@ -1,0 +1,59 @@
+warning: CRLF will be replaced by LF in reports/evidence/r2g/group-audit.txt.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in reports/evidence/r2g/pilot-audit.json.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in reports/evidence/r2g/tests-windows.txt.
+The file will have its original line endings in your working directory
+{"environment":{"cuda":"12.1","cv2":"4.9.0","extension_sha256":"833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e","gpu":"NVIDIA GeForce RTX 3090","gpu_memory_bytes":25769279488,"numpy":"1.26.4","python":"3.11.11","torch":"2.2.2+cu121","triton":"2.2.0"},"phase":"pilot","protocol_sha256":"3cb34ab23bf8bc3e3d48b0a6e486ef1a1fdf18bd10732bac0d52edbd24a76f18","source_sha256":"6960d844ac5dd08b70f0314fd4838b58b8500661b38ff9e8b178b90f918f6bc2"}
+13 10:09:08 Using backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+13 10:09:11 Using Mamba Decoder
+13 10:09:11 Initing weights ...
+pilot 3407/ssm 1/12 00057D 32.39s peak=12236014592
+pilot 3407/ssm 2/12 00483D 24.92s peak=12236243968
+pilot 3407/ssm 3/12 00083D 24.88s peak=12236407808
+pilot 3407/ssm 4/12 00058D 25.00s peak=12235129856
+pilot 3407/ssm 5/12 00095D 25.02s peak=12235670528
+pilot 3407/ssm 6/12 00444D 25.02s peak=12235392000
+pilot 3407/ssm 7/12 00829N 25.38s peak=12235129856
+pilot 3407/ssm 8/12 00961N 25.55s peak=12236489728
+pilot 3407/ssm 9/12 00022N 24.10s peak=12236588032
+pilot 3407/ssm 10/12 00885N 23.93s peak=12236792832
+pilot 3407/ssm 11/12 00886N 23.95s peak=12236424192
+pilot 3407/ssm 12/12 00818N 23.93s peak=12236317696
+13 10:14:18 Using backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+13 10:14:19 Using Mamba Decoder
+13 10:14:19 Initing weights ...
+pilot 3407/cnn 1/12 00057D 12.07s peak=10907836928
+pilot 3407/cnn 2/12 00483D 11.39s peak=10907681280
+pilot 3407/cnn 3/12 00083D 11.40s peak=10907886080
+pilot 3407/cnn 4/12 00058D 11.42s peak=10908402176
+pilot 3407/cnn 5/12 00095D 11.42s peak=10907755008
+pilot 3407/cnn 6/12 00444D 11.52s peak=10907730432
+pilot 3407/cnn 7/12 00829N 11.83s peak=10908557824
+pilot 3407/cnn 8/12 00961N 11.70s peak=10907140608
+pilot 3407/cnn 9/12 00022N 11.50s peak=10908557824
+pilot 3407/cnn 10/12 00885N 11.90s peak=10907943424
+pilot 3407/cnn 11/12 00886N 11.76s peak=10907943424
+pilot 3407/cnn 12/12 00818N 11.73s peak=10909975040
+13 10:16:41 Using backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+13 10:16:42 Using Mamba Decoder
+13 10:16:42 Initing weights ...
+pilot 3407/attention 1/12 00057D 12.25s peak=10906418176
+pilot 3407/attention 2/12 00483D 11.86s peak=10908638208
+pilot 3407/attention 3/12 00083D 11.91s peak=10906917888
+pilot 3407/attention 4/12 00058D 11.87s peak=10907474944
+pilot 3407/attention 5/12 00095D 12.00s peak=10907474944
+pilot 3407/attention 6/12 00444D 12.23s peak=10908212224
+pilot 3407/attention 7/12 00829N 12.20s peak=10907409408
+pilot 3407/attention 8/12 00961N 12.12s peak=10906917888
+pilot 3407/attention 9/12 00022N 12.07s peak=10906999808
+pilot 3407/attention 10/12 00885N 12.18s peak=10908212224
+pilot 3407/attention 11/12 00886N 11.90s peak=10908212224
+pilot 3407/attention 12/12 00818N 12.15s peak=10908212224
+Exit code: 0

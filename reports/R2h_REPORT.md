@@ -8,6 +8,8 @@ R2h 固定 R2g 的验证集和 15 份 Epoch 5 权重，使用同一张 RGB 与�
 
 ## 执行状态
 
-全量和配对统计待完成。当前不据 Pilot 或部分样本判断修复有效性。未启动训练，未读取官方测试图像。
+RTX 3090 Pilot 完成 12 张 × 三架构，252 次 Corrupt Identity 检查通过。3,312 次原生 CUDA 读出重构完全一致，13,248 次八组合核验的最大混合容差比为 0.00414943。错配对照核验 1,080 个编码器扫描读出，最大比为 0.00156453。原容差比上限为 1。逐图 GPU 耗时合计 588.44 秒，峰值分配约 11.40 GiB。WSL 94 项通过，Windows 90 项通过、4 项跳过。[Pilot 证书](evidence/r2h/pilot/certificate.json) · [审计](evidence/r2h/pilot-audit.json) · [GPU 日志](evidence/r2h/pilot-gpu.txt)
+
+独立 Pilot 通过后启动全量 GPU 实验。按 Pilot 估计逐图 GPU 耗时 10.69 小时，另计模型加载、写盘和统计。五种子全量结果和配对区间尚未产出。未启动训练，未读取官方测试图像。
 
 [冻结协议](../tasks/R2h_corrupt_context_repair.md)
