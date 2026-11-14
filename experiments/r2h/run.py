@@ -12,7 +12,7 @@ import torch
 
 from experiments.r1.assets import sha256
 from experiments.r1c.pilot import construct_model, read_sample
-from experiments.r1g.partition import ROOT, read, require
+from experiments.r1g.partition import ROOT, read, references as scene_references, require
 from experiments.r2a.metrics import digest, distance_bands
 from experiments.r2a.run import masks, model_digest, normalized_thermal, perturbed, records
 from experiments.r2b.run import verify_mapping
@@ -21,15 +21,16 @@ from experiments.r2d.models import fusion
 from experiments.r2e.run import R2D, assets
 from experiments.r2g.journal import Journal, checksum, encode
 from experiments.r2g.run import freeze as freeze_r2g, inputs, publish
+from experiments.r2h.donors import load as load_donors
+from experiments.r2h.provenance import CONFIG, bind, current, validate_gate
 from experiments.r2h.replay import image
 
 
-CONFIG = ROOT / 'configs/R2h_protocol.json'
 
 
 def freeze(args):
     cfg = read(CONFIG)
-    require(cfg['version'] == 'r2h-corrupt-context-v1' and cfg['seeds'] == list(range(3407, 3412))
+    require(cfg['version'] == 'r2h-corrupt-context-v2' and cfg['seeds'] == list(range(3407, 3412))
             and cfg['primary'] == 'encoder/6' and sorted(cfg['masks']) == list(range(8))
             and cfg['draws'] == 10000 and cfg['bootstrap_seed'] == 3407, 'R2h protocol differs')
     subprocess.run(['git', '-C', str(ROOT), 'diff', '--quiet', cfg['base'], '--',
@@ -50,15 +51,15 @@ def freeze(args):
     cert = read(cert_path)
     require(cert['phase'] == 'r2g-full' and cert['status'] == 'PASS' and cert['fingerprints'] == fingerprint
             and cert['ids'] == split['validation_ids'] and len(cert['summary']) == 15, 'R2g assets differ')
-    sources = dict(fingerprint['sources'])
-    sources.update({p.relative_to(ROOT).as_posix(): sha256(p) for p in Path(__file__).parent.glob('*.py')
-                    if p.name != 'analysis.py'})
-    fingerprint.update(protocol_sha256=sha256(CONFIG), source_sha256=checksum(encode(sources)),
-                       sources=sources, r2g_full_certificate_sha256=sha256(cert_path))
+    graph, _ = scene_references()
+    donors = load_donors(cfg, split, graph)
+    fingerprint = bind(fingerprint, current(), donors)
+    fingerprint['r2g_full_certificate_sha256'] = sha256(cert_path)
+    cfg['donors'] = donors['mapping']
     return dict(cfg, pilot_seed=prior['pilot_seed']), r2a, split, frozen, fingerprint
 
 
-def cohort(args, folder, seed, arm, ids, frozen, fingerprint, r2a, roi, bands):
+def cohort(args, folder, seed, arm, ids, frozen, fingerprint, r2a, roi, bands, donors):
     start = time.perf_counter()
     key = f'{seed}-{arm}'
     path, meta, signature = frozen[seed, arm]
@@ -66,14 +67,12 @@ def cohort(args, folder, seed, arm, ids, frozen, fingerprint, r2a, roi, bands):
     references = [{r['id']: r for r in records(prior / name)} for name in ('clean.jsonl', 'pairs-primary.jsonl')]
     require(all(set(ids) <= set(ref) and len(ref) == 157 for ref in references)
             and len({r['group'] for r in references[0].values()}) == 54, 'R2d reference cohort differs')
-    roster = sorted(references[0])
-    donors = dict(zip(roster, roster[1:] + roster[:1], strict=True))
     identity = {'phase': args.phase, 'seed': seed, 'arm': arm, 'ids': ids, 'checkpoint_sha256': meta['last_sha256'],
                 'fingerprint_sha256': checksum(encode(fingerprint))}
     with Journal(folder / f'{key}.sqlite', identity) as journal:
         completed = journal.read()
         require(not journal.read(failures=True), f'{key} has preserved failures; cohort blocked')
-        require(all(r['group'] == references[0][i]['group'] and r['cleanup'] and
+        require(all(r['group'] == references[0][i]['group'] and r['cleanup'] and r['donor']['id'] == donors[i] and
                     r['prediction_sha256']['clean'] == references[0][i]['prediction_sha256'] and
                     r['prediction_sha256']['natural_corrupt'] == references[1][i]['prediction_sha256']
                     for i, r in completed.items()), 'Resumed result differs from native reference')
@@ -155,26 +154,23 @@ def cohort(args, folder, seed, arm, ids, frozen, fingerprint, r2a, roi, bands):
             'peak_reserved': max(r['peak_reserved'] for r in rows)}
 
 
-def validate_gate(folder, fingerprint, ids, seed):
-    gate = read(folder / 'certificate.json')
-    require(gate['phase'] == 'r2h-pilot' and gate['status'] == 'PASS' and gate['fingerprints'] == fingerprint
-            and gate['ids'] == ids and {(r['seed'], r['arm']) for r in gate['summary']} == {(seed, a) for a in ARMS}
-            and len(gate['summary']) == len(ARMS), 'Independent R2h pilot gate failed')
-    for item in gate['summary']:
-        require(item['count'] == len(ids) and sha256(folder / item['records']) == item['sha256'],
-                'Independent R2h pilot evidence differs')
-    return sha256(folder / 'certificate.json')
-
-
 def run(args):
     cfg, r2a, split, frozen, fingerprint = freeze(args)
     print(encode({'phase': args.phase, 'source_sha256': fingerprint['source_sha256'],
                   'protocol_sha256': fingerprint['protocol_sha256'], 'environment': fingerprint['environment']}),
           flush=True)
     if args.phase == 'preflight':
+        with construct_model(args.upstream, args.init):
+            from models.encoders import vmamba
+
+            with torch.inference_mode():
+                for h, w in ((120, 160), (60, 80), (30, 40), (15, 20)):
+                    verify_mapping(vmamba, h, w)
+        print(encode(fingerprint), flush=True)
+        print('PASS: four scan grids and frozen assets', flush=True)
         return
     pilot = args.phase == 'pilot'
-    gate = None if pilot else validate_gate(args.evidence / 'pilot', fingerprint, r2a['pilot_ids'], cfg['pilot_seed'])
+    gate = None if pilot else validate_gate(args.evidence / 'pilot', fingerprint, r2a['pilot_ids'], cfg['pilot_seed'], ARMS)
     ids = r2a['pilot_ids'] if pilot else split['validation_ids']
     roi = masks(r2a)['center']
     require(int(roi.sum()) == 64 * 64 and r2a['primary']['fill'] == 0, 'Primary ROI differs')
@@ -186,7 +182,7 @@ def run(args):
 
     with (folder / 'writer.lock').open('a') as lock:
         fcntl.flock(lock, fcntl.LOCK_EX | fcntl.LOCK_NB)
-        summary = [cohort(args, folder, s, a, ids, frozen, fingerprint, r2a, roi, bands)
+        summary = [cohort(args, folder, s, a, ids, frozen, fingerprint, r2a, roi, bands, cfg['donors'])
                    for s in ([cfg['pilot_seed']] if pilot else cfg['seeds']) for a in ARMS]
         cert = {'phase': f'r2h-{args.phase}', 'status': 'PASS', 'ids': ids, 'summary': summary,
                 'fingerprints': fingerprint, 'pilot_gate_sha256': gate, 'official_test_pixels_read': 0}

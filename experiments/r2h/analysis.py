@@ -16,10 +16,12 @@ from experiments.r2e.paths import mobius
 from experiments.r2g.journal import checksum, encode
 from experiments.r2g.replay import scopes
 from experiments.r2h.metrics import FIELDS
-from experiments.r2h.run import ARMS, CONFIG, validate_gate
+from experiments.r2c.protocol import ARMS
+from experiments.r2h.donors import load as load_donors
+from experiments.r2h.provenance import CONFIG, current, validate_gate
 
 
-def rows_for(folder, item, ids, fp, assignments):
+def rows_for(folder, item, ids, fp, assignments, donor):
     file = folder / item['records']
     ident = item['identity']
     arm, seed = item['arm'], item['seed']
@@ -29,8 +31,6 @@ def rows_for(folder, item, ids, fp, assignments):
         'fingerprint_sha256': checksum(encode(fp))}, 'Cohort identity differs')
     expected = {'natural_corrupt', 'mismatch/6',
                 *(f'{scope}/{m}' for scope in scopes(arm) for m in range(7))}
-    order = sorted(ids)
-    donor = dict(zip(order, order[1:] + order[:1], strict=True))
     layout = sha256(folder / f'{seed}-{arm}-layout.json')
     rows = []
     with gzip.open(file, 'rt', encoding='utf-8') as stream:
@@ -133,26 +133,39 @@ def analyze(evidence):
     folder = evidence / 'full'
     cert = read(folder / 'certificate.json')
     fp = cert['fingerprints']
-    ids = read(EVIDENCE / 'split.json')['validation_ids']
+    split = read(EVIDENCE / 'split.json')
+    ids = split['validation_ids']
+    graph, _ = references()
+    donors = load_donors(cfg, split, graph)
+    live = current()
+    require(all(fp.get(k) == v for k, v in live.items() if k != 'execution_head')
+            and fp.get('donor_mapping_sha256') == donors['mapping_sha256'],
+            'Full certificate does not match current sources or donor mapping')
     pilot = read(ROOT / 'configs/R2a_exp0.json')['pilot_ids']
     cohorts = {(s, a) for s in cfg['seeds'] for a in ARMS}
     require(cert['phase'] == 'r2h-full' and cert['status'] == 'PASS' and cert['ids'] == ids
             and cert['official_test_pixels_read'] == 0 and len(cert['summary']) == len(cohorts)
             and {(r['seed'], r['arm']) for r in cert['summary']} == cohorts
             and fp['protocol_sha256'] == sha256(CONFIG)
-            and cert['pilot_gate_sha256'] == validate_gate(evidence / 'pilot', fp, pilot, 3407),
+            and cert['pilot_gate_sha256'] == validate_gate(evidence / 'pilot', fp, pilot, 3407, ARMS),
             'Full certificate differs')
-    graph, _ = references()
     assignment = {i: g[0] for g in graph['groups'] for i in g if i in ids}
     groups = sorted(set(assignment.values()))
     require(len(groups) == 54 and set(assignment) == set(ids), 'Frozen group map differs')
     sw, gw = bootstrap_weights(len(cfg['seeds']), len(groups), cfg['draws'], cfg['bootstrap_seed'])
     chunks = []
     audit = {}
+    primary_groups = {}
     for item in cert['summary']:
-        rows = rows_for(folder, item, ids, fp, assignment)
+        rows = rows_for(folder, item, ids, fp, assignment, donors['mapping'])
         key = (item['seed'], item['arm'])
         chunks.append((key, rows))
+        counts = {g: dict.fromkeys(FIELDS, 0) for g in groups}
+        for row in rows:
+            group = counts[row['group']]
+            for field, value in row['outcomes'][cfg['primary']]['outside'].items():
+                group[field] += value
+        primary_groups[f'{key[0]}/{key[1]}'] = counts
         audit[f'{key[0]}/{key[1]}'] = {
             k: max(r['numeric'][k]['maxima']['max_mixed_ratio'] for r in rows)
             for k in ('readout', 'prefix', 'hybrid')}
@@ -190,7 +203,7 @@ def analyze(evidence):
                 out[condition][k] = summarize(x[:, 0], x[:, 1:], sw)
         print(f'Analyzed {arm}', flush=True)
     write_json(evidence / 'paired-statistics.json', {'status': 'PASS', 'seeds': cfg['seeds'], 'draws': len(sw),
-               'groups': groups, 'primary': cfg['primary'], 'numeric': audit, 'effects': effects})
+               'groups': groups, 'primary': cfg['primary'], 'numeric': audit, 'primary_by_visual_group': primary_groups, 'effects': effects})
 
 
 if __name__ == '__main__':

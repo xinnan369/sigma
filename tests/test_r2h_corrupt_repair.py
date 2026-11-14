@@ -24,3 +24,40 @@ def test_no_intervention_has_zero_change_but_retains_induced_denominator():
     result = repair(clean, corrupt, corrupt, clean, np.zeros_like(clean, dtype=bool), {})['outside']
     assert result['induced'] == 1
     assert result['recovered'] == result['net_change'] == result['new_change'] == 0
+
+def test_frozen_donors(tmp_path):
+    import pytest
+    from experiments.r1g.partition import EVIDENCE, read, references
+    from experiments.r2h.donors import FILE, build, load
+    from experiments.r2h.provenance import CONFIG
+
+    split = read(EVIDENCE / 'split.json')
+    graph, _ = references()
+    cfg = read(CONFIG)
+    document = load(cfg, split, graph)
+    mapping = document['mapping']
+    groups = {i: g[0] for g in graph['groups'] for i in g}
+    assert document == build(split, graph)
+    assert len(mapping) == len(set(mapping.values())) == 157
+    assert all(i != d and i[-1] == d[-1] and groups[i] != groups[d] for i, d in mapping.items())
+    with pytest.raises(ValueError, match='Split digest'):
+        build(dict(split, split_sha256='bad'), graph)
+    with pytest.raises(ValueError, match='Graph digest'):
+        build(split, dict(graph, invalid=True))
+    tampered = tmp_path / 'donors.json'
+    tampered.write_bytes(FILE.read_bytes() + b' ')
+    with pytest.raises(ValueError, match='Frozen donor file digest'):
+        load(cfg, split, graph, tampered)
+    with pytest.raises(ValueError, match='Frozen donor file digest'):
+        load(dict(cfg, mismatch='next ID'), split, graph)
+
+
+def test_full_gate_rejects_old_implementation(tmp_path):
+    import json
+    import pytest
+    from experiments.r2h.provenance import validate_gate
+
+    (tmp_path / 'certificate.json').write_text(json.dumps(
+        {'phase': 'r2h-pilot', 'status': 'PASS', 'fingerprints': {'r2h_sources': {'analysis.py': 'old'}}}))
+    with pytest.raises(ValueError, match='pilot gate failed'):
+        validate_gate(tmp_path, {'r2h_sources': {'analysis.py': 'current'}}, [], 3407, ())
