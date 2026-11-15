@@ -13,8 +13,8 @@ def position(gen, height, width, size):
     return int(gen.integers(height - size + 1)), int(gen.integers(width - size + 1))
 
 
-def train_occlusion(thermal, mean, std, seed, name, probability, size):
-    gen = rng(seed, 1, name)
+def train_occlusion(thermal, mean, std, seed, name, probability, size, *, epoch=1):
+    gen = rng(seed, epoch, name)
     if gen.random() >= probability:
         return thermal, None
     y, x = position(gen, *thermal.shape[-2:], size)
