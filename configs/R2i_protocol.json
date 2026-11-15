@@ -1,0 +1,29 @@
+{
+  "version": "r2i-pilot-v1",
+  "seed": 3407,
+  "windows": 3,
+  "arms": [
+    "baseline",
+    "gated",
+    "control"
+  ],
+  "tracks": [
+    "clean",
+    "augmented"
+  ],
+  "accumulation": 8,
+  "train_probability": 0.5,
+  "train_roi": 64,
+  "train_rng": "SHA256(seed, epoch, sample ID) with independent NumPy PCG64",
+  "validation": [
+    "clean",
+    "primary",
+    "random_occlusion",
+    "gaussian"
+  ],
+  "random_occlusion_seed": 3407,
+  "bootstrap_seed": 3407,
+  "bootstrap_draws": 10000,
+  "primary": "center occlusion ROI-outside candidate error minus same-track natural SSM baseline error",
+  "clean_margin_pp": 0.5
+}
