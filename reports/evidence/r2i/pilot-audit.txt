@@ -1,0 +1,3 @@
+clean {'baseline': 668, 'gated': 676, 'control': 676} 628 identical sample/case/group/ROI identities
+augmented {'baseline': 668, 'gated': 676, 'control': 676} 628 identical sample/case/group/ROI identities
+PASS: execution source, protocol, coverage, nonzero gate gradients and evaluation pairing
