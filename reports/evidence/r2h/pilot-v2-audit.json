@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "pilot_sha256": "12ff8653ca39639256dfaf247e06ad793ce4ae6d82be4ef0f248718f46381fa2",
+  "arms": {
+    "ssm": {
+      "images": 12,
+      "seconds": 300.39435837599996,
+      "peak_allocated": 12236792832,
+      "identities": 156,
+      "max_mixed": {
+        "readout": 0.0,
+        "prefix": 0.023042194545269012,
+        "hybrid": 0.00414942717179656
+      },
+      "max_mismatch": 0.00032220158027485013
+    },
+    "cnn": {
+      "images": 12,
+      "seconds": 142.051867088,
+      "peak_allocated": 10909975040,
+      "identities": 48,
+      "max_mixed": {
+        "readout": 0.0,
+        "prefix": 0.0337136872112751,
+        "hybrid": 0.0010801292955875397
+      },
+      "max_mismatch": 0.0011218372965231538
+    },
+    "attention": {
+      "images": 12,
+      "seconds": 143.77164476600012,
+      "peak_allocated": 10908638208,
+      "identities": 48,
+      "max_mixed": {
+        "readout": 0.0,
+        "prefix": 0.019543329253792763,
+        "hybrid": 0.0008317262399941683
+      },
+      "max_mismatch": 0.0019612745381891727
+    }
+  },
+  "gpu_hours_estimate": 10.652338614133102
+}

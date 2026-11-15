@@ -1,0 +1,26 @@
+{
+  "version": "r2h-corrupt-context-v2",
+  "base": "2bebdbf363a6cb66d208dd5cd13b08ac3fd3498b",
+  "seeds": [
+    3407,
+    3408,
+    3409,
+    3410,
+    3411
+  ],
+  "primary": "encoder/6",
+  "masks": [
+    7,
+    6,
+    5,
+    3,
+    4,
+    2,
+    1,
+    0
+  ],
+  "mismatch": "day-night-half-rotation-v2",
+  "bootstrap_seed": 3407,
+  "draws": 10000,
+  "donor_file_sha256": "7d8cb17a571291970dd530481de53529a62e2f4a8ca6defce76a028a282897bc"
+}

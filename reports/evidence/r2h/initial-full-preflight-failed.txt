@@ -1,0 +1,28 @@
+Fri Nov 13 02:10:07 UTC 2026
+Waiting for independent R2h pilot
+warning: CRLF will be replaced by LF in reports/evidence/r2g/group-audit.txt.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in reports/evidence/r2g/pilot-audit.json.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in reports/evidence/r2g/tests-windows.txt.
+The file will have its original line endings in your working directory
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "<REPO>/experiments/r2h/run.py", line 194, in <module>
+    main()
+  File "<REPO>/experiments/r2h/run.py", line 190, in main
+    run(parser.parse_args())
+  File "<REPO>/experiments/r2h/run.py", line 159, in run
+    cfg, r2a, split, frozen, fingerprint = freeze(args)
+                                           ^^^^^^^^^^^^
+  File "<REPO>/experiments/r2h/run.py", line 37, in freeze
+    prior, r2a, split, frozen, fingerprint = freeze_r2g(args)
+                                             ^^^^^^^^^^^^^^^^
+  File "<REPO>/experiments/r2g/run.py", line 48, in freeze
+    subprocess.run(base + ['diff', '--quiet', cfg['r2f_merge'], '--', *tracked_paths,
+  File "<LINUX_HOME>/anaconda3/envs/yolov12/lib/python3.11/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', '-C', '<REPO>', 'diff', '--quiet', 'a3428a2f85ff0671a6dec423e250a67d24e19a9e', '--', 'experiments', 'configs', 'reports/evidence/r1g', 'reports/evidence/r2d', 'reports/evidence/r2f', 'reports/evidence/r2a', ':(exclude)experiments/r2g', ':(exclude)configs/R2g_protocol.json']' returned non-zero exit status 1.
+Fri Nov 13 02:19:50 UTC 2026
+full exit 1
