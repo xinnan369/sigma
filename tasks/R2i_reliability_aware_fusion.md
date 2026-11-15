@@ -12,9 +12,16 @@ Use seed 3407, R1g frozen data and native preprocessing, FP32, AdamW, learning r
 
 Evaluate all 157 internal holdout images and 54 visual groups, all arms and both tracks. Report clean, R2a centered occlusion, deterministic random 64×64 occlusion and centered Gaussian sigma 20 seed 3407. For random occlusion use the independent hash RNG with epoch 0, seeds and target ID, without the Bernoulli draw. Metric denominator is valid GT pixels outside the corresponding ROI. Compare each candidate with the baseline on the same corrupted inputs and keep paired confusion, net, new, corrected, class and distance summaries. Use 10,000 group bootstrap draws for the pilot, with no estimate of training-seed variation. This reused holdout is historical and is not a blind test. Keep the official test pixels unopened for future one-time independent confirmation.
 
-## Follow-on budget
+## Staged formal experiment
 
-Only after independent acceptance run five seeds 3407–3411 with all three arms and two training tracks, five epochs per cell, 785 updates per cell. Maintain exact tail normalization. Use the final epoch as primary and use common paired seed/group resamples. Archive per-seed, per-group results, Clean intervals, design limits and secondary multiplicity risk. The pilot launcher has a fixed three-window cap.
+The three-window pilot has a fixed engineering budget. After independent acceptance of the pilot, run only seed 3407 for the full formal budget. Every seed uses three arms and two training tracks, five epochs and 785 updates per cell with valid-pixel tail normalization. Preserve the registered architecture, split, evaluation protocol, augmentations and training hyperparameters.
+
+1. Run seed 3407. Archive all six cells, Clean mIoU, perturbation metrics, parameters and compute, submit results in a PR, then pause for independent ChatGPT acceptance.
+2. After acceptance and a decision to continue the study, add only seeds 3408 and 3409. Archive the cumulative results and pause for a second independent acceptance.
+3. After the second acceptance, add seeds 3410 and 3411. Report all five seeds and paired seed/group intervals using the final epoch as the primary endpoint.
+
+Early-stage results are observations within the evaluated seeds. A poor first-stage result can end the experiment with a documented negative outcome. Any design change requires a versioned experiment and explicit separation of exploratory and confirmatory results. A runner must never advance automatically to the next seed batch.
+
 
 ```bash
 CUDA_VISIBLE_DEVICES=0 OPENBLAS_NUM_THREADS=1 python -u -m experiments.r2i.run \
