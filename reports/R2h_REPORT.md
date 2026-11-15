@@ -1,15 +1,31 @@
 # R2h — Corrupt-Context Counterfactual State Repair
 
-R2g PR #15 的验收 Head 为 `35e19f0f57a01dd2d02cb3f6ccb9ece900f54018`，CI 2/2 成功。已合并至 `main`，合并提交 `2bebdbf363a6cb66d208dd5cd13b08ac3fd3498b`。[R2g PR](https://github.com/xinnan369/sigma/pull/15)
+R2g PR #15 已合并，合并提交为 `2bebdbf363a6cb66d208dd5cd13b08ac3fd3498b`。R2h 复用 15 份 Epoch 5 权重、157 张内部验证图和 54 个视觉代理组，使用不变的 RGB 和中心遮挡 Thermal。共享编码器 h-only 仍是预指定主实验。主要指标为相对自然 Corrupt 的 ROI 外净错误率变化，负值指真实错误减少。
 
-R2h 固定 R2g 的验证集和 15 份 Epoch 5 权重，使用同一张 RGB 与中心遮挡的 Thermal 执行自然 Corrupt 和全部修复回放。主要干预为共享编码器 mask 6，仅将 h 换回同图 Clean 值。错配对照使用冻结 ID 顺序的下一张图的 Clean 编码器 h。自然 Corrupt 用于衡量修复引入和纠正的错误，Clean 用于识别遮挡新增的错误。
+## 历史证据
 
-共享编码器 h-only 的主要指标为 ROI 外净错误率变化。报告新增错误恢复比例、修复引入错误数、分组指标和全图表现。一个干预可能同时纠正遮挡新增错误并引入更多错误。结果以净错误变化和置信区间共同判断。各干预使用固定模型及固定扫描边界，范围与交互比较涉及多重比较。
+首次 Pilot 运行的 `run.py` SHA256 为 `a4648a4b3676dcd471935c7df923eea2531b069a4877f79da100abb1102f7593`。首次全量预检因历史源码范围检查退出，随后的修复改动了 `run.py`。本地第二次 Pilot 与旧方案全量证书都记录新摘要 `2863c16f54fa5f414fa009e92f7c6812f3f5720cf3536b9218c47f4133de6112`。仓库历史证据仍对应首轮 Pilot。旧方案实际完成 2,355 条记录，独立复核显示 102/157 donor 同组。旧运行及证书保留，旧结果不计入新版科研判断。
 
-## 执行状态
+## 整改与新版闸门
 
-RTX 3090 Pilot 完成 12 张 × 三架构，252 次 Corrupt Identity 检查通过。3,312 次原生 CUDA 读出重构完全一致，13,248 次八组合核验的最大混合容差比为 0.00414943。错配对照核验 1,080 个编码器扫描读出，最大比为 0.00156453。原容差比上限为 1。逐图 GPU 耗时合计 588.44 秒，峰值分配约 11.40 GiB。WSL 94 项通过，Windows 90 项通过、4 项跳过。[Pilot 证书](evidence/r2h/pilot/certificate.json) · [审计](evidence/r2h/pilot-audit.json) · [GPU 日志](evidence/r2h/pilot-gpu.txt)
+按冻结验证 ID 的昼夜后缀分别排序，90 张昼图旋转 45 位，67 张夜图旋转 33 位。独立核对确认 157/157 对同昼夜且跨视觉组，157 个唯一 donor，零自配对。规范化映射 SHA256 为 `1e5a6391301c071acca696222c36d8ae5a5020b462997dd9158ba79da8f1449f`。运行与统计均验证文件字节、映射及冻结图和切分。
 
-首次 Pilot 通过后，全量预检因 R2g 历史源码检查将新跟踪的 R2h 文件计入差异而退出，尚未执行全量样本。已修正历史比较的范围，并用新指纹重新执行独立 Pilot。后台流程仅在新版 Pilot 通过后进入全量。[首次全量预检日志](evidence/r2h/initial-full-preflight-failed.txt)按 Pilot 估计逐图 GPU 耗时 10.69 小时，另计模型加载、写盘和统计。五种子全量结果和配对区间尚未产出。未启动训练，未读取官方测试图像。
+证书覆盖执行 Head、实验协议、映射文件和所有 R2h Python 源码，包括统计代码与新增模块。全量启动重新核验当前签名及 Pilot 证据文件哈希。数值容差、CUDA 状态恢复、原生端点、扫描布局和 Hook 清理协议沿用原设计。
 
-[冻结协议](../tasks/R2h_corrupt_context_repair.md)
+Windows 完整测试 92 项通过、4 项跳过，WSL 完整测试 96 项通过。新版运行使用独立目录，依次执行预检、独立 Pilot、全量和统计。阶段失败会中止后续启动。新版预检与独立 Pilot 均 PASS。三架构各完成 12 张，252 次 Identity 检查通过，原生读出重构零误差，八组合和错配的最大混合容差比分别为 0.00414943 与 0.00196127。逐图耗时合计 586.22 秒，峰值分配 11.40 GiB。全量通过闸门并开始落盘。
+
+[冻结映射](evidence/r2h/donors-v2.json) · [协议](../tasks/R2h_corrupt_context_repair.md) · [历史预检失败](evidence/r2h/initial-full-preflight-failed.txt)
+
+## 新版五种子结果
+
+RTX 3090 完成 2,355/2,355 个组合，逐图耗时合计 10.0147 GPU 小时。全量及统计进程退出码均为 0。全量于北京时间 11 月 14 日 19:56:47 完成，统计于 19:58:03 完成。统计验证了原生读出、分块末状态、八组合及错配读出均在冻结数值闸门内。
+
+| 架构 | 共享编码器 h-only 的 ROI 外净错误率变化（百分点） | 95% 配对 Bootstrap CI | 净错误减少的种子 |
+|---|---:|---:|---:|
+| SSM | +0.00715 | [−0.00504, +0.02112] | 1/5 |
+| CNN | +0.01329 | [−0.00102, +0.03219] | 1/5 |
+| Attention | +0.00159 | [−0.01056, +0.01503] | 2/5 |
+
+三架构的均值均为净错误增加，区间均跨零。根据预指定主指标，R2h v2 未获得共享编码器同图 h-only 修复减少真实分割错误的证据。逐种子、54 个视觉组、10,000 次重采样的主要结果，及路径对照、恢复比例、类别、距离带和 mIoU 均见完整统计。次要比较区间未经多重校正。
+
+[全量证书](evidence/r2h/full-v2/certificate.json) · [完整统计](evidence/r2h/paired-statistics-v2.json) · [GPU 日志](evidence/r2h/full-v2.txt) · [新版 Pilot](evidence/r2h/pilot-v2-audit.json)

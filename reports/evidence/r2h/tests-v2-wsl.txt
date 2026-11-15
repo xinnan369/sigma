@@ -1,0 +1,3 @@
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q -rs
+96 passed in 35.98s
+Exit code: 0
