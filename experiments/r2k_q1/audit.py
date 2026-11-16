@@ -37,7 +37,7 @@ def ap_and_brier(hist):
     accumulated=np.add.accumulate(both,axis=-1)
     tp=np.add.accumulate(positive,axis=-1)
     with np.errstate(divide='ignore',invalid='ignore'):
-        precision=np.divide(tp,accumulated,out=np.zeros_like(tp),where=accumulated>0)
+        precision=np.divide(tp,accumulated,out=np.zeros_like(tp,dtype=float),where=accumulated>0)
         ap=np.einsum('ij,ij->i',precision,positive)/positive.sum(-1)
         q=np.linspace(1,0,256)
         brier=(negative@(q*q)+positive@((1-q)**2))/both.sum(-1)
