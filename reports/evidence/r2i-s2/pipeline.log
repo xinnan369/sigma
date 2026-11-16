@@ -1,0 +1,28 @@
+b10edba391808bb028633370c8f35430e8c844a1
+Mon Nov 16 02:31:26 UTC 2026
+PASS separate GPU restore seed 3408
+Mon Nov 16 02:35:06 UTC 2026
+START 3408/clean/baseline
+PASS 3408/clean/baseline
+Mon Nov 16 03:25:59 UTC 2026
+START 3408/clean/gated
+PASS 3408/clean/gated
+Mon Nov 16 04:16:08 UTC 2026
+START 3408/clean/control
+PASS 3408/clean/control
+Mon Nov 16 05:06:20 UTC 2026
+START 3408/augmented/baseline
+PASS 3408/augmented/baseline
+Mon Nov 16 05:56:19 UTC 2026
+START 3408/augmented/gated
+PASS 3408/augmented/gated
+Mon Nov 16 06:48:48 UTC 2026
+START 3408/augmented/control
+PASS 3408/augmented/control
+clean PASS
+augmented PASS
+clean PASS
+augmented PASS
+PASS six formal cells and two-seed audit
+Mon Nov 16 07:43:13 UTC 2026
+S2 exit 0
