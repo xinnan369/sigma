@@ -1,0 +1,12 @@
+{
+  "phase": "fit",
+  "seconds": 45.659518029999994,
+  "peak_rss_kib": 301960,
+  "python": "3.11.11",
+  "numpy": "1.26.4",
+  "scipy": "1.13.0",
+  "opencv": "4.9.0",
+  "opencv_threads": 1,
+  "cuda": "not imported",
+  "exit": 0
+}
