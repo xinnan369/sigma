@@ -1,0 +1,8 @@
+CPU validation in WSL2 Ubuntu 22.04, Python 3.11.11, NumPy 1.26.4, PyTorch 2.2.2+cu121 with CUDA_VISIBLE_DEVICES empty.
+OPENBLAS_NUM_THREADS=1 python -m experiments.r2j_a.analyze --output reports/evidence/r2j-a/diagnostics.json --checkpoint-roots <S1_LOCAL_RUN> <S2_SEED3408_LOCAL_RUN>
+Start UTC 2026-11-16T13:53:35Z
+End UTC 2026-11-16T13:53:54Z
+Exit 0
+PASS: frozen strata, published group totals and post-hoc summaries.
+Windows with CUDA disabled: python -m pytest -q -rs
+109 passed, 4 skipped in 12.11s. Exit 0.
