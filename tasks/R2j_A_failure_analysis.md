@@ -1,0 +1,5 @@
+# R2j-A — Archived evidence and next hypotheses
+
+After verifying and merging accepted PR #19, analyze only frozen R2i seeds 3407 and 3408. Pair all four conditions, both tracks, and three architecture contrasts using archived pixel counts and confusions. Reconcile image and group rosters against frozen R1g/R1f inputs, report class, day/night, visual groups and distance bands. Treat subgroup intervals, scoring behavior and the clean/corrupt decomposition as exploratory. Archived comparison `new-corrected` always equals the candidate-minus-reference error count on the same ROI-exterior denominator.
+
+Optionally verify locally approved checkpoint bytes against the accepted SHA256 and load on CPU only to summarize the four reliability scoring heads. No GPU use, new training, new inference, search, official test reads or additional seeds. Preserve all accepted history. Document at most two designs with matched controls, falsification criteria and a capped next-stage pilot. Submit a PR on the task branch and stop before any further experiment.
