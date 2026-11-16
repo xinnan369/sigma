@@ -1,0 +1,1616 @@
+{
+  "status": "PASS",
+  "seed": 3408,
+  "visual_groups": [
+    "00004N",
+    "00009N",
+    "00011N",
+    "00012N",
+    "00013N",
+    "00016N",
+    "00022N",
+    "00041N",
+    "00057D",
+    "00058D",
+    "00082D",
+    "00094D",
+    "00095D",
+    "00121D",
+    "00221D",
+    "00252D",
+    "00261D",
+    "00271D",
+    "00274D",
+    "00359D",
+    "00409D",
+    "00442D",
+    "00479D",
+    "00483D",
+    "00487D",
+    "00490D",
+    "00701N",
+    "00724N",
+    "00765N",
+    "00766N",
+    "00818N",
+    "00819N",
+    "00825N",
+    "00829N",
+    "00831N",
+    "00832N",
+    "00834N",
+    "00839N",
+    "00855N",
+    "00869N",
+    "00885N",
+    "00886N",
+    "00888N",
+    "00890N",
+    "00909N",
+    "00927N",
+    "00949N",
+    "00961N",
+    "00962N",
+    "00963N",
+    "00964N",
+    "00966N",
+    "00976N",
+    "01000N"
+  ],
+  "draws": 10000,
+  "tracks": {
+    "clean": {
+      "cells": {
+        "baseline": {
+          "status": "PASS",
+          "signature": {
+            "protocol_sha256": "60c3aefb80343ff95834f3fa2724f9b73d221026fb1b24bbdedd527a8488983d",
+            "sources": {
+              "experiments/r2i/__init__.py": "50075634db0ef3e657079dcfc43551ab3ab389bf6498dcbd714282ebee288749",
+              "experiments/r2i/analysis.py": "f3cdf761b3617683b0de08cd4d76d8fdac3a3856069b77e10ab5465e3a9f8cc5",
+              "experiments/r2i/augment.py": "85559e77a9ab2263dc57c9269f64e7eb01c00ce14d4a5ab7b136fdd53d7da9e8",
+              "experiments/r2i/evaluate.py": "0660c3250e0e3656699f97e8bf91c53510a2e81308c6a51f55c24fd09b0e1d69",
+              "experiments/r2i/gate.py": "610f93fbc4124afbb4e083608b1c94020dcc090ee22873f1ba8e0a6aecaf9746",
+              "experiments/r2i/run.py": "602f864d6c1cce5da22ae1e107ceeddbd689c99c63ad13b54b99fc1961349d61",
+              "experiments/r2i_s2/__init__.py": "5c5ca7289fcfe8d60288e3bf0b07e262950f5a6cdd2cc4ea3c3180c777f8dd6e",
+              "experiments/r2i_s2/analyze.py": "69a72c7b36176c8250c5166cd89ac706300f5b53e728b0a4f4feb115e5656e06",
+              "experiments/r2i_s2/cumulative.py": "2d4eaa73ae0b3c4680630467a57e0f30cd7223de8a50db0e2015bafcd9a1c456",
+              "experiments/r2i_s2/driver.py": "feb5c90340e30167f9f376497019696be3ad7b352ad38dc3ac8bd4a544b4e956",
+              "experiments/r2i_s2/independent_audit.py": "fdae11ccac18341d323ee715c10f4196b674e5b6287e3dd3298c258c0ce1ec2b",
+              "experiments/r2i_s2/protocol.py": "2e6f589669fd859ff96de66133b37ac8ef2453a5733e7a79ae2b600fcedfaa4b",
+              "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+              "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+              "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+              "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+              "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+              "experiments/r1g/partition.py": "b99f1cf16f95b31046a16eeb2f0285b75614f2953bd3caa02790ea0a3191dbda",
+              "experiments/r2i_s1/evaluate.py": "2126ff21834c99b7fc0a4aacf744f3d78111e3512856364ff0f286311211788d"
+            },
+            "frozen_inputs": {
+              "config_sha256": "eba20d348e6e115cf90113ce8adaa593552600ff387692e0bab58783991cfcba",
+              "runtime": {
+                "config": {
+                  "epochs": 1,
+                  "seed": 3407,
+                  "precision": "fp32",
+                  "microbatch": 1,
+                  "accumulation": 8,
+                  "lr": 6e-05,
+                  "weight_decay": 0.01,
+                  "betas": [
+                    0.9,
+                    0.999
+                  ],
+                  "scheduler": "constant",
+                  "checkpoint_every_updates": 32,
+                  "test_evaluation": false,
+                  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+                  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+                  "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+                  "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+                },
+                "source_sha256": {
+                  "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+                  "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                  "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+                  "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+                  "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+                },
+                "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+                "torch": "2.2.2+cu121",
+                "cuda": "12.1",
+                "cudnn": 8902,
+                "gpu": "NVIDIA GeForce RTX 3090",
+                "cv2": "4.9.0",
+                "numpy": "1.26.4",
+                "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+              },
+              "sources": {
+                "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764",
+                "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+                "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+                "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+                "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df"
+              },
+              "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+              "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+              "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+              "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+              "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47"
+            },
+            "epochs": 5,
+            "seed": 3408,
+            "stage_sha256": "d30466e85acb74bf8b58c62502ddfdf787a1bef087dcb5138ba28cb87065bc7e",
+            "track": "clean",
+            "arm": "baseline",
+            "torch": "2.2.2+cu121",
+            "cuda": "12.1",
+            "gpu": "NVIDIA GeForce RTX 3090",
+            "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+          },
+          "checkpoint_sha256": "9e8383a730494c2f3ac918b4659e818fcb8a0bc291d14b4d049c0452c19c8762",
+          "model_sha256": "daeab9bae77c4a4e65dfda661ffc95c1df2993fe7e65fdb484483a0f19db5e83",
+          "common_initial_sha256": "3f21516a97ed06351939cdcefb16dadc677ab1b4181804b51b1dcc314efad318",
+          "coverage": 668,
+          "resources": {
+            "parameters": 48287360,
+            "gate_scalar_flops": 0,
+            "gate_tanh_calls": 0,
+            "inference_median_ms": 151.47340393066406,
+            "inference_peak_bytes": 591236096
+          },
+          "updates": 785,
+          "training_seconds": 2823.984249680995,
+          "training_peak_bytes": 7358528000,
+          "evaluation_seconds": 117.04132979300039
+        },
+        "gated": {
+          "status": "PASS",
+          "signature": {
+            "protocol_sha256": "60c3aefb80343ff95834f3fa2724f9b73d221026fb1b24bbdedd527a8488983d",
+            "sources": {
+              "experiments/r2i/__init__.py": "50075634db0ef3e657079dcfc43551ab3ab389bf6498dcbd714282ebee288749",
+              "experiments/r2i/analysis.py": "f3cdf761b3617683b0de08cd4d76d8fdac3a3856069b77e10ab5465e3a9f8cc5",
+              "experiments/r2i/augment.py": "85559e77a9ab2263dc57c9269f64e7eb01c00ce14d4a5ab7b136fdd53d7da9e8",
+              "experiments/r2i/evaluate.py": "0660c3250e0e3656699f97e8bf91c53510a2e81308c6a51f55c24fd09b0e1d69",
+              "experiments/r2i/gate.py": "610f93fbc4124afbb4e083608b1c94020dcc090ee22873f1ba8e0a6aecaf9746",
+              "experiments/r2i/run.py": "602f864d6c1cce5da22ae1e107ceeddbd689c99c63ad13b54b99fc1961349d61",
+              "experiments/r2i_s2/__init__.py": "5c5ca7289fcfe8d60288e3bf0b07e262950f5a6cdd2cc4ea3c3180c777f8dd6e",
+              "experiments/r2i_s2/analyze.py": "69a72c7b36176c8250c5166cd89ac706300f5b53e728b0a4f4feb115e5656e06",
+              "experiments/r2i_s2/cumulative.py": "2d4eaa73ae0b3c4680630467a57e0f30cd7223de8a50db0e2015bafcd9a1c456",
+              "experiments/r2i_s2/driver.py": "feb5c90340e30167f9f376497019696be3ad7b352ad38dc3ac8bd4a544b4e956",
+              "experiments/r2i_s2/independent_audit.py": "fdae11ccac18341d323ee715c10f4196b674e5b6287e3dd3298c258c0ce1ec2b",
+              "experiments/r2i_s2/protocol.py": "2e6f589669fd859ff96de66133b37ac8ef2453a5733e7a79ae2b600fcedfaa4b",
+              "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+              "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+              "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+              "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+              "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+              "experiments/r1g/partition.py": "b99f1cf16f95b31046a16eeb2f0285b75614f2953bd3caa02790ea0a3191dbda",
+              "experiments/r2i_s1/evaluate.py": "2126ff21834c99b7fc0a4aacf744f3d78111e3512856364ff0f286311211788d"
+            },
+            "frozen_inputs": {
+              "config_sha256": "eba20d348e6e115cf90113ce8adaa593552600ff387692e0bab58783991cfcba",
+              "runtime": {
+                "config": {
+                  "epochs": 1,
+                  "seed": 3407,
+                  "precision": "fp32",
+                  "microbatch": 1,
+                  "accumulation": 8,
+                  "lr": 6e-05,
+                  "weight_decay": 0.01,
+                  "betas": [
+                    0.9,
+                    0.999
+                  ],
+                  "scheduler": "constant",
+                  "checkpoint_every_updates": 32,
+                  "test_evaluation": false,
+                  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+                  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+                  "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+                  "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+                },
+                "source_sha256": {
+                  "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+                  "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                  "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+                  "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+                  "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+                },
+                "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+                "torch": "2.2.2+cu121",
+                "cuda": "12.1",
+                "cudnn": 8902,
+                "gpu": "NVIDIA GeForce RTX 3090",
+                "cv2": "4.9.0",
+                "numpy": "1.26.4",
+                "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+              },
+              "sources": {
+                "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764",
+                "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+                "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+                "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+                "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df"
+              },
+              "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+              "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+              "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+              "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+              "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47"
+            },
+            "epochs": 5,
+            "seed": 3408,
+            "stage_sha256": "d30466e85acb74bf8b58c62502ddfdf787a1bef087dcb5138ba28cb87065bc7e",
+            "track": "clean",
+            "arm": "gated",
+            "torch": "2.2.2+cu121",
+            "cuda": "12.1",
+            "gpu": "NVIDIA GeForce RTX 3090",
+            "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+          },
+          "checkpoint_sha256": "291ea8d8790b0c744c7fa11c98f90a092e97e624c96cb171a53ce971a683858e",
+          "model_sha256": "35ac27c55588c6baa8ce88e33e443a5f0b963773e5f75fb4c1ae39210158338b",
+          "common_initial_sha256": "3f21516a97ed06351939cdcefb16dadc677ab1b4181804b51b1dcc314efad318",
+          "coverage": 676,
+          "resources": {
+            "parameters": 48287376,
+            "gate_scalar_flops": 27724500,
+            "gate_tanh_calls": 25500,
+            "inference_median_ms": 150.5750274658203,
+            "inference_peak_bytes": 591240192
+          },
+          "updates": 785,
+          "training_seconds": 2782.4318107540116,
+          "training_peak_bytes": 7399239680,
+          "evaluation_seconds": 115.95176154500041
+        },
+        "control": {
+          "status": "PASS",
+          "signature": {
+            "protocol_sha256": "60c3aefb80343ff95834f3fa2724f9b73d221026fb1b24bbdedd527a8488983d",
+            "sources": {
+              "experiments/r2i/__init__.py": "50075634db0ef3e657079dcfc43551ab3ab389bf6498dcbd714282ebee288749",
+              "experiments/r2i/analysis.py": "f3cdf761b3617683b0de08cd4d76d8fdac3a3856069b77e10ab5465e3a9f8cc5",
+              "experiments/r2i/augment.py": "85559e77a9ab2263dc57c9269f64e7eb01c00ce14d4a5ab7b136fdd53d7da9e8",
+              "experiments/r2i/evaluate.py": "0660c3250e0e3656699f97e8bf91c53510a2e81308c6a51f55c24fd09b0e1d69",
+              "experiments/r2i/gate.py": "610f93fbc4124afbb4e083608b1c94020dcc090ee22873f1ba8e0a6aecaf9746",
+              "experiments/r2i/run.py": "602f864d6c1cce5da22ae1e107ceeddbd689c99c63ad13b54b99fc1961349d61",
+              "experiments/r2i_s2/__init__.py": "5c5ca7289fcfe8d60288e3bf0b07e262950f5a6cdd2cc4ea3c3180c777f8dd6e",
+              "experiments/r2i_s2/analyze.py": "69a72c7b36176c8250c5166cd89ac706300f5b53e728b0a4f4feb115e5656e06",
+              "experiments/r2i_s2/cumulative.py": "2d4eaa73ae0b3c4680630467a57e0f30cd7223de8a50db0e2015bafcd9a1c456",
+              "experiments/r2i_s2/driver.py": "feb5c90340e30167f9f376497019696be3ad7b352ad38dc3ac8bd4a544b4e956",
+              "experiments/r2i_s2/independent_audit.py": "fdae11ccac18341d323ee715c10f4196b674e5b6287e3dd3298c258c0ce1ec2b",
+              "experiments/r2i_s2/protocol.py": "2e6f589669fd859ff96de66133b37ac8ef2453a5733e7a79ae2b600fcedfaa4b",
+              "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+              "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+              "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+              "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+              "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+              "experiments/r1g/partition.py": "b99f1cf16f95b31046a16eeb2f0285b75614f2953bd3caa02790ea0a3191dbda",
+              "experiments/r2i_s1/evaluate.py": "2126ff21834c99b7fc0a4aacf744f3d78111e3512856364ff0f286311211788d"
+            },
+            "frozen_inputs": {
+              "config_sha256": "eba20d348e6e115cf90113ce8adaa593552600ff387692e0bab58783991cfcba",
+              "runtime": {
+                "config": {
+                  "epochs": 1,
+                  "seed": 3407,
+                  "precision": "fp32",
+                  "microbatch": 1,
+                  "accumulation": 8,
+                  "lr": 6e-05,
+                  "weight_decay": 0.01,
+                  "betas": [
+                    0.9,
+                    0.999
+                  ],
+                  "scheduler": "constant",
+                  "checkpoint_every_updates": 32,
+                  "test_evaluation": false,
+                  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+                  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+                  "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+                  "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+                },
+                "source_sha256": {
+                  "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+                  "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                  "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+                  "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+                  "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+                },
+                "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+                "torch": "2.2.2+cu121",
+                "cuda": "12.1",
+                "cudnn": 8902,
+                "gpu": "NVIDIA GeForce RTX 3090",
+                "cv2": "4.9.0",
+                "numpy": "1.26.4",
+                "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+              },
+              "sources": {
+                "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764",
+                "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+                "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+                "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+                "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df"
+              },
+              "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+              "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+              "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+              "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+              "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47"
+            },
+            "epochs": 5,
+            "seed": 3408,
+            "stage_sha256": "d30466e85acb74bf8b58c62502ddfdf787a1bef087dcb5138ba28cb87065bc7e",
+            "track": "clean",
+            "arm": "control",
+            "torch": "2.2.2+cu121",
+            "cuda": "12.1",
+            "gpu": "NVIDIA GeForce RTX 3090",
+            "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+          },
+          "checkpoint_sha256": "552532d21433c5904ab8dfb04ba00b8e436e57b58463102be2eb286d17bc7799",
+          "model_sha256": "0249450fbe7aa8384c9dc03e6956d86226d3580b69c864f545340b9d18f34579",
+          "common_initial_sha256": "3f21516a97ed06351939cdcefb16dadc677ab1b4181804b51b1dcc314efad318",
+          "coverage": 676,
+          "resources": {
+            "parameters": 48287376,
+            "gate_scalar_flops": 27724500,
+            "gate_tanh_calls": 25500,
+            "inference_median_ms": 151.404541015625,
+            "inference_peak_bytes": 591240192
+          },
+          "updates": 785,
+          "training_seconds": 2782.698046842015,
+          "training_peak_bytes": 7399239680,
+          "evaluation_seconds": 120.52762984500077
+        }
+      },
+      "performance": {
+        "baseline": {
+          "clean": {
+            "miou": 0.6405915509842057,
+            "foreground_miou": 0.5987302344180949,
+            "iou_0_to_8": [
+              0.9754820835130923,
+              0.8451545424069729,
+              0.6903119949062057,
+              0.49368083482970093,
+              0.447019002901921,
+              0.5996316524356234,
+              0.5744193248683803,
+              0.6130122930795239,
+              0.5266122299164321
+            ]
+          },
+          "primary": {
+            "miou": 0.637959304319348,
+            "foreground_miou": 0.5957955211080914,
+            "iou_0_to_8": [
+              0.9752695700094,
+              0.8436116434983354,
+              0.6723814257208445,
+              0.482264867384409,
+              0.4473096906928898,
+              0.5974365184343388,
+              0.5756786610388945,
+              0.6183500841928015,
+              0.5293312779022187
+            ]
+          },
+          "random_occlusion": {
+            "miou": 0.6386680752260615,
+            "foreground_miou": 0.5965952327497774,
+            "iou_0_to_8": [
+              0.9752508150363342,
+              0.8439396343466533,
+              0.6838183204273083,
+              0.4894571864133879,
+              0.444112502016054,
+              0.599464713655401,
+              0.5760653147988396,
+              0.6144410425498509,
+              0.5214631477907252
+            ]
+          },
+          "gaussian": {
+            "miou": 0.6390576488856449,
+            "foreground_miou": 0.5970196254633334,
+            "iou_0_to_8": [
+              0.9753618362641362,
+              0.8441656511112907,
+              0.6857862174578867,
+              0.48880776636713735,
+              0.44592738416375755,
+              0.5988109873438533,
+              0.5763059176763231,
+              0.6150946113114679,
+              0.5212584682749505
+            ]
+          }
+        },
+        "gated": {
+          "clean": {
+            "miou": 0.6269475903605222,
+            "foreground_miou": 0.5834549014282377,
+            "iou_0_to_8": [
+              0.974889101818799,
+              0.8543537306135764,
+              0.6889857503311067,
+              0.4601531089937765,
+              0.44404081223220554,
+              0.5811513741053906,
+              0.5774341452017989,
+              0.5880772183832401,
+              0.47344307156480636
+            ]
+          },
+          "primary": {
+            "miou": 0.6245846381410601,
+            "foreground_miou": 0.58082754592072,
+            "iou_0_to_8": [
+              0.9746413759037821,
+              0.8521265386359116,
+              0.6707703497181647,
+              0.44635000394462954,
+              0.4430011922518113,
+              0.580911349367615,
+              0.578502180667075,
+              0.5965624593826786,
+              0.4783962933978741
+            ]
+          },
+          "random_occlusion": {
+            "miou": 0.6250611284554412,
+            "foreground_miou": 0.5813593480318973,
+            "iou_0_to_8": [
+              0.9746753718437918,
+              0.852259833839701,
+              0.6829776700169106,
+              0.45398365865835394,
+              0.44178497521536164,
+              0.5814640056344401,
+              0.5775768614468166,
+              0.5888380670888472,
+              0.4719897123547478
+            ]
+          },
+          "gaussian": {
+            "miou": 0.624730465129436,
+            "foreground_miou": 0.5809849653240371,
+            "iou_0_to_8": [
+              0.9746944635726276,
+              0.8518342264057264,
+              0.68437848242326,
+              0.45204082878527035,
+              0.44080790140050646,
+              0.5824079485680889,
+              0.5782369367525366,
+              0.5917788192802167,
+              0.4663945789766912
+            ]
+          }
+        },
+        "control": {
+          "clean": {
+            "miou": 0.6217177401378288,
+            "foreground_miou": 0.5775674337287865,
+            "iou_0_to_8": [
+              0.9749201914101664,
+              0.8477893487003915,
+              0.6930083274448111,
+              0.48796299690826217,
+              0.44325814801652413,
+              0.5510324244208474,
+              0.5270648230312153,
+              0.5927095686910929,
+              0.47771383261714756
+            ]
+          },
+          "primary": {
+            "miou": 0.6196381090373957,
+            "foreground_miou": 0.5752565958695267,
+            "iou_0_to_8": [
+              0.9746902143803466,
+              0.8450911785728459,
+              0.6737842263325232,
+              0.47387769013535885,
+              0.4422039026484448,
+              0.5531392922915916,
+              0.5334510474305337,
+              0.6014119285804735,
+              0.4790935009644424
+            ]
+          },
+          "random_occlusion": {
+            "miou": 0.6201900174896268,
+            "foreground_miou": 0.5758682439454337,
+            "iou_0_to_8": [
+              0.9747642058431718,
+              0.847095582227469,
+              0.6868455660902834,
+              0.48417667655497737,
+              0.44082437503975574,
+              0.5529630044196608,
+              0.5283775285609474,
+              0.5947251533896285,
+              0.47193806528074705
+            ]
+          },
+          "gaussian": {
+            "miou": 0.6203115766629481,
+            "foreground_miou": 0.5760081408138524,
+            "iou_0_to_8": [
+              0.9747390634557133,
+              0.8451566888623773,
+              0.6882764536427181,
+              0.48147944401657683,
+              0.4415747591791149,
+              0.5541212566499313,
+              0.5314345518427152,
+              0.5975102950621481,
+              0.46851167725523785
+            ]
+          }
+        }
+      },
+      "comparisons": {
+        "gated-minus-baseline": {
+          "clean": {
+            "counts": [
+              48230400,
+              146769,
+              120271,
+              26498,
+              278804
+            ],
+            "net_rate": {
+              "point": 0.0005494045249469214,
+              "ci95": [
+                -0.0009347288048293875,
+                0.0015933736809898675
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "primary": {
+            "counts": [
+              47587328,
+              139961,
+              114043,
+              25918,
+              264808
+            ],
+            "net_rate": {
+              "point": 0.0005446407917670856,
+              "ci95": [
+                -0.0008948588941666643,
+                0.0015452492786689547
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "random_occlusion": {
+            "counts": [
+              47587328,
+              144149,
+              118536,
+              25613,
+              274395
+            ],
+            "net_rate": {
+              "point": 0.0005382315224758995,
+              "ci95": [
+                -0.0009359194002771387,
+                0.0015584077126812505
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "gaussian": {
+            "counts": [
+              47587328,
+              140695,
+              115450,
+              25245,
+              266669
+            ],
+            "net_rate": {
+              "point": 0.0005304983713311241,
+              "ci95": [
+                -0.0008852751560239154,
+                0.0015278441613826585
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point": -0.01364396062368356,
+              "ci95": [
+                -0.026166775233632544,
+                -0.00362272452402188
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            },
+            "foreground": {
+              "point": -0.015275332989857171,
+              "ci95": [
+                -0.02935439722220721,
+                -0.004046925012252506
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            }
+          }
+        },
+        "control-minus-baseline": {
+          "clean": {
+            "counts": [
+              48230400,
+              138763,
+              101908,
+              36855,
+              252339
+            ],
+            "net_rate": {
+              "point": 0.0007641446058917197,
+              "ci95": [
+                -4.587592583198049e-05,
+                0.001718687376079976
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "primary": {
+            "counts": [
+              47587328,
+              132290,
+              96748,
+              35542,
+              240064
+            ],
+            "net_rate": {
+              "point": 0.0007468795054011017,
+              "ci95": [
+                -6.270916851511927e-05,
+                0.001695772671791577
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "random_occlusion": {
+            "counts": [
+              47587328,
+              134619,
+              102122,
+              32497,
+              248327
+            ],
+            "net_rate": {
+              "point": 0.000682891882477621,
+              "ci95": [
+                -0.0001628432944179095,
+                0.0016430763836622023
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "gaussian": {
+            "counts": [
+              47587328,
+              133782,
+              95207,
+              38575,
+              239654
+            ],
+            "net_rate": {
+              "point": 0.0008106149603524703,
+              "ci95": [
+                -1.600459726527841e-05,
+                0.001781411421270109
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point": -0.01887381084637696,
+              "ci95": [
+                -0.031474447613410436,
+                -0.010121671392551634
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            },
+            "foreground": {
+              "point": -0.021162800689308425,
+              "ci95": [
+                -0.03536685042136855,
+                -0.011386062599906162
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            }
+          }
+        },
+        "gated-minus-control": {
+          "clean": {
+            "counts": [
+              48230400,
+              148332,
+              158689,
+              -10357,
+              320617
+            ],
+            "net_rate": {
+              "point": -0.0002147400809447983,
+              "ci95": [
+                -0.001859727874888462,
+                0.0009478264849321971
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "primary": {
+            "counts": [
+              47587328,
+              142431,
+              152055,
+              -9624,
+              307240
+            ],
+            "net_rate": {
+              "point": -0.00020223871363401618,
+              "ci95": [
+                -0.0018135608177234153,
+                0.0009356187275483431
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "random_occlusion": {
+            "counts": [
+              47587328,
+              146996,
+              153880,
+              -6884,
+              314474
+            ],
+            "net_rate": {
+              "point": -0.00014466036000172145,
+              "ci95": [
+                -0.001692378344118651,
+                0.0009664731374190282
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "gaussian": {
+            "counts": [
+              47587328,
+              140273,
+              153603,
+              -13330,
+              306265
+            ],
+            "net_rate": {
+              "point": -0.0002801165890213462,
+              "ci95": [
+                -0.0019386927500957558,
+                0.0008750066090562965
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point": 0.0052298502226934,
+              "ci95": [
+                -0.00850098771046692,
+                0.018389127068211247
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            },
+            "foreground": {
+              "point": 0.005887467699451254,
+              "ci95": [
+                -0.009538429472604694,
+                0.020616742891084946
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            }
+          }
+        }
+      }
+    },
+    "augmented": {
+      "cells": {
+        "baseline": {
+          "status": "PASS",
+          "signature": {
+            "protocol_sha256": "60c3aefb80343ff95834f3fa2724f9b73d221026fb1b24bbdedd527a8488983d",
+            "sources": {
+              "experiments/r2i/__init__.py": "50075634db0ef3e657079dcfc43551ab3ab389bf6498dcbd714282ebee288749",
+              "experiments/r2i/analysis.py": "f3cdf761b3617683b0de08cd4d76d8fdac3a3856069b77e10ab5465e3a9f8cc5",
+              "experiments/r2i/augment.py": "85559e77a9ab2263dc57c9269f64e7eb01c00ce14d4a5ab7b136fdd53d7da9e8",
+              "experiments/r2i/evaluate.py": "0660c3250e0e3656699f97e8bf91c53510a2e81308c6a51f55c24fd09b0e1d69",
+              "experiments/r2i/gate.py": "610f93fbc4124afbb4e083608b1c94020dcc090ee22873f1ba8e0a6aecaf9746",
+              "experiments/r2i/run.py": "602f864d6c1cce5da22ae1e107ceeddbd689c99c63ad13b54b99fc1961349d61",
+              "experiments/r2i_s2/__init__.py": "5c5ca7289fcfe8d60288e3bf0b07e262950f5a6cdd2cc4ea3c3180c777f8dd6e",
+              "experiments/r2i_s2/analyze.py": "69a72c7b36176c8250c5166cd89ac706300f5b53e728b0a4f4feb115e5656e06",
+              "experiments/r2i_s2/cumulative.py": "2d4eaa73ae0b3c4680630467a57e0f30cd7223de8a50db0e2015bafcd9a1c456",
+              "experiments/r2i_s2/driver.py": "feb5c90340e30167f9f376497019696be3ad7b352ad38dc3ac8bd4a544b4e956",
+              "experiments/r2i_s2/independent_audit.py": "fdae11ccac18341d323ee715c10f4196b674e5b6287e3dd3298c258c0ce1ec2b",
+              "experiments/r2i_s2/protocol.py": "2e6f589669fd859ff96de66133b37ac8ef2453a5733e7a79ae2b600fcedfaa4b",
+              "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+              "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+              "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+              "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+              "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+              "experiments/r1g/partition.py": "b99f1cf16f95b31046a16eeb2f0285b75614f2953bd3caa02790ea0a3191dbda",
+              "experiments/r2i_s1/evaluate.py": "2126ff21834c99b7fc0a4aacf744f3d78111e3512856364ff0f286311211788d"
+            },
+            "frozen_inputs": {
+              "config_sha256": "eba20d348e6e115cf90113ce8adaa593552600ff387692e0bab58783991cfcba",
+              "runtime": {
+                "config": {
+                  "epochs": 1,
+                  "seed": 3407,
+                  "precision": "fp32",
+                  "microbatch": 1,
+                  "accumulation": 8,
+                  "lr": 6e-05,
+                  "weight_decay": 0.01,
+                  "betas": [
+                    0.9,
+                    0.999
+                  ],
+                  "scheduler": "constant",
+                  "checkpoint_every_updates": 32,
+                  "test_evaluation": false,
+                  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+                  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+                  "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+                  "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+                },
+                "source_sha256": {
+                  "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+                  "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                  "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+                  "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+                  "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+                },
+                "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+                "torch": "2.2.2+cu121",
+                "cuda": "12.1",
+                "cudnn": 8902,
+                "gpu": "NVIDIA GeForce RTX 3090",
+                "cv2": "4.9.0",
+                "numpy": "1.26.4",
+                "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+              },
+              "sources": {
+                "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764",
+                "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+                "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+                "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+                "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df"
+              },
+              "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+              "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+              "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+              "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+              "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47"
+            },
+            "epochs": 5,
+            "seed": 3408,
+            "stage_sha256": "d30466e85acb74bf8b58c62502ddfdf787a1bef087dcb5138ba28cb87065bc7e",
+            "track": "augmented",
+            "arm": "baseline",
+            "torch": "2.2.2+cu121",
+            "cuda": "12.1",
+            "gpu": "NVIDIA GeForce RTX 3090",
+            "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+          },
+          "checkpoint_sha256": "32a090723e9e085274947a6ed5cff86b3bd2ea76a7457d62849bb11c3b531723",
+          "model_sha256": "cf8e8acd10a48f35538b0acfc0cd4d4069279d2c307087d9afb2af2ae8dfabb9",
+          "common_initial_sha256": "3f21516a97ed06351939cdcefb16dadc677ab1b4181804b51b1dcc314efad318",
+          "coverage": 668,
+          "resources": {
+            "parameters": 48287360,
+            "gate_scalar_flops": 0,
+            "gate_tanh_calls": 0,
+            "inference_median_ms": 156.45077514648438,
+            "inference_peak_bytes": 591236096
+          },
+          "updates": 785,
+          "training_seconds": 2761.3972881930076,
+          "training_peak_bytes": 7358528000,
+          "evaluation_seconds": 116.56784819300083
+        },
+        "gated": {
+          "status": "PASS",
+          "signature": {
+            "protocol_sha256": "60c3aefb80343ff95834f3fa2724f9b73d221026fb1b24bbdedd527a8488983d",
+            "sources": {
+              "experiments/r2i/__init__.py": "50075634db0ef3e657079dcfc43551ab3ab389bf6498dcbd714282ebee288749",
+              "experiments/r2i/analysis.py": "f3cdf761b3617683b0de08cd4d76d8fdac3a3856069b77e10ab5465e3a9f8cc5",
+              "experiments/r2i/augment.py": "85559e77a9ab2263dc57c9269f64e7eb01c00ce14d4a5ab7b136fdd53d7da9e8",
+              "experiments/r2i/evaluate.py": "0660c3250e0e3656699f97e8bf91c53510a2e81308c6a51f55c24fd09b0e1d69",
+              "experiments/r2i/gate.py": "610f93fbc4124afbb4e083608b1c94020dcc090ee22873f1ba8e0a6aecaf9746",
+              "experiments/r2i/run.py": "602f864d6c1cce5da22ae1e107ceeddbd689c99c63ad13b54b99fc1961349d61",
+              "experiments/r2i_s2/__init__.py": "5c5ca7289fcfe8d60288e3bf0b07e262950f5a6cdd2cc4ea3c3180c777f8dd6e",
+              "experiments/r2i_s2/analyze.py": "69a72c7b36176c8250c5166cd89ac706300f5b53e728b0a4f4feb115e5656e06",
+              "experiments/r2i_s2/cumulative.py": "2d4eaa73ae0b3c4680630467a57e0f30cd7223de8a50db0e2015bafcd9a1c456",
+              "experiments/r2i_s2/driver.py": "feb5c90340e30167f9f376497019696be3ad7b352ad38dc3ac8bd4a544b4e956",
+              "experiments/r2i_s2/independent_audit.py": "fdae11ccac18341d323ee715c10f4196b674e5b6287e3dd3298c258c0ce1ec2b",
+              "experiments/r2i_s2/protocol.py": "2e6f589669fd859ff96de66133b37ac8ef2453a5733e7a79ae2b600fcedfaa4b",
+              "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+              "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+              "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+              "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+              "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+              "experiments/r1g/partition.py": "b99f1cf16f95b31046a16eeb2f0285b75614f2953bd3caa02790ea0a3191dbda",
+              "experiments/r2i_s1/evaluate.py": "2126ff21834c99b7fc0a4aacf744f3d78111e3512856364ff0f286311211788d"
+            },
+            "frozen_inputs": {
+              "config_sha256": "eba20d348e6e115cf90113ce8adaa593552600ff387692e0bab58783991cfcba",
+              "runtime": {
+                "config": {
+                  "epochs": 1,
+                  "seed": 3407,
+                  "precision": "fp32",
+                  "microbatch": 1,
+                  "accumulation": 8,
+                  "lr": 6e-05,
+                  "weight_decay": 0.01,
+                  "betas": [
+                    0.9,
+                    0.999
+                  ],
+                  "scheduler": "constant",
+                  "checkpoint_every_updates": 32,
+                  "test_evaluation": false,
+                  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+                  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+                  "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+                  "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+                },
+                "source_sha256": {
+                  "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+                  "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                  "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+                  "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+                  "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+                },
+                "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+                "torch": "2.2.2+cu121",
+                "cuda": "12.1",
+                "cudnn": 8902,
+                "gpu": "NVIDIA GeForce RTX 3090",
+                "cv2": "4.9.0",
+                "numpy": "1.26.4",
+                "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+              },
+              "sources": {
+                "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764",
+                "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+                "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+                "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+                "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df"
+              },
+              "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+              "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+              "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+              "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+              "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47"
+            },
+            "epochs": 5,
+            "seed": 3408,
+            "stage_sha256": "d30466e85acb74bf8b58c62502ddfdf787a1bef087dcb5138ba28cb87065bc7e",
+            "track": "augmented",
+            "arm": "gated",
+            "torch": "2.2.2+cu121",
+            "cuda": "12.1",
+            "gpu": "NVIDIA GeForce RTX 3090",
+            "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+          },
+          "checkpoint_sha256": "ce0c7e6ae86407dc07571a18a8f8c96d6aa74711633d1383aba05d53ec30d06b",
+          "model_sha256": "cac7d438a1d6569502df4c209dafcb9fc35ad66076e4f826fb3e6a034ffb2e09",
+          "common_initial_sha256": "3f21516a97ed06351939cdcefb16dadc677ab1b4181804b51b1dcc314efad318",
+          "coverage": 676,
+          "resources": {
+            "parameters": 48287376,
+            "gate_scalar_flops": 27724500,
+            "gate_tanh_calls": 25500,
+            "inference_median_ms": 151.43006896972656,
+            "inference_peak_bytes": 591240192
+          },
+          "updates": 785,
+          "training_seconds": 2868.317370039016,
+          "training_peak_bytes": 7399239680,
+          "evaluation_seconds": 119.93030973700115
+        },
+        "control": {
+          "status": "PASS",
+          "signature": {
+            "protocol_sha256": "60c3aefb80343ff95834f3fa2724f9b73d221026fb1b24bbdedd527a8488983d",
+            "sources": {
+              "experiments/r2i/__init__.py": "50075634db0ef3e657079dcfc43551ab3ab389bf6498dcbd714282ebee288749",
+              "experiments/r2i/analysis.py": "f3cdf761b3617683b0de08cd4d76d8fdac3a3856069b77e10ab5465e3a9f8cc5",
+              "experiments/r2i/augment.py": "85559e77a9ab2263dc57c9269f64e7eb01c00ce14d4a5ab7b136fdd53d7da9e8",
+              "experiments/r2i/evaluate.py": "0660c3250e0e3656699f97e8bf91c53510a2e81308c6a51f55c24fd09b0e1d69",
+              "experiments/r2i/gate.py": "610f93fbc4124afbb4e083608b1c94020dcc090ee22873f1ba8e0a6aecaf9746",
+              "experiments/r2i/run.py": "602f864d6c1cce5da22ae1e107ceeddbd689c99c63ad13b54b99fc1961349d61",
+              "experiments/r2i_s2/__init__.py": "5c5ca7289fcfe8d60288e3bf0b07e262950f5a6cdd2cc4ea3c3180c777f8dd6e",
+              "experiments/r2i_s2/analyze.py": "69a72c7b36176c8250c5166cd89ac706300f5b53e728b0a4f4feb115e5656e06",
+              "experiments/r2i_s2/cumulative.py": "2d4eaa73ae0b3c4680630467a57e0f30cd7223de8a50db0e2015bafcd9a1c456",
+              "experiments/r2i_s2/driver.py": "feb5c90340e30167f9f376497019696be3ad7b352ad38dc3ac8bd4a544b4e956",
+              "experiments/r2i_s2/independent_audit.py": "fdae11ccac18341d323ee715c10f4196b674e5b6287e3dd3298c258c0ce1ec2b",
+              "experiments/r2i_s2/protocol.py": "2e6f589669fd859ff96de66133b37ac8ef2453a5733e7a79ae2b600fcedfaa4b",
+              "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+              "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+              "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+              "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+              "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+              "experiments/r1g/partition.py": "b99f1cf16f95b31046a16eeb2f0285b75614f2953bd3caa02790ea0a3191dbda",
+              "experiments/r2i_s1/evaluate.py": "2126ff21834c99b7fc0a4aacf744f3d78111e3512856364ff0f286311211788d"
+            },
+            "frozen_inputs": {
+              "config_sha256": "eba20d348e6e115cf90113ce8adaa593552600ff387692e0bab58783991cfcba",
+              "runtime": {
+                "config": {
+                  "epochs": 1,
+                  "seed": 3407,
+                  "precision": "fp32",
+                  "microbatch": 1,
+                  "accumulation": 8,
+                  "lr": 6e-05,
+                  "weight_decay": 0.01,
+                  "betas": [
+                    0.9,
+                    0.999
+                  ],
+                  "scheduler": "constant",
+                  "checkpoint_every_updates": 32,
+                  "test_evaluation": false,
+                  "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+                  "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+                  "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+                  "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d"
+                },
+                "source_sha256": {
+                  "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227",
+                  "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                  "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+                  "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+                  "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9"
+                },
+                "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+                "torch": "2.2.2+cu121",
+                "cuda": "12.1",
+                "cudnn": 8902,
+                "gpu": "NVIDIA GeForce RTX 3090",
+                "cv2": "4.9.0",
+                "numpy": "1.26.4",
+                "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+              },
+              "sources": {
+                "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764",
+                "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+                "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+                "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+                "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+                "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df"
+              },
+              "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+              "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+              "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+              "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+              "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47"
+            },
+            "epochs": 5,
+            "seed": 3408,
+            "stage_sha256": "d30466e85acb74bf8b58c62502ddfdf787a1bef087dcb5138ba28cb87065bc7e",
+            "track": "augmented",
+            "arm": "control",
+            "torch": "2.2.2+cu121",
+            "cuda": "12.1",
+            "gpu": "NVIDIA GeForce RTX 3090",
+            "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e"
+          },
+          "checkpoint_sha256": "98bf62b69d75387991b8ada6185bebd100b4a2eafea471e71ccfa97b1a523b5f",
+          "model_sha256": "3a22e0327e99d5c0ad8cc6652b46b45f5815385aa6dd7f852c2ce105f82440e0",
+          "common_initial_sha256": "3f21516a97ed06351939cdcefb16dadc677ab1b4181804b51b1dcc314efad318",
+          "coverage": 676,
+          "resources": {
+            "parameters": 48287376,
+            "gate_scalar_flops": 27724500,
+            "gate_tanh_calls": 25500,
+            "inference_median_ms": 153.67314910888672,
+            "inference_peak_bytes": 591240192
+          },
+          "updates": 785,
+          "training_seconds": 2857.9048947459887,
+          "training_peak_bytes": 7399239680,
+          "evaluation_seconds": 119.80872975000239
+        }
+      },
+      "performance": {
+        "baseline": {
+          "clean": {
+            "miou": 0.6195392275434424,
+            "foreground_miou": 0.5752011784917106,
+            "iou_0_to_8": [
+              0.9742436199572962,
+              0.8307983473062783,
+              0.6921465867871832,
+              0.4890761278543319,
+              0.450271079645662,
+              0.5505330126729093,
+              0.519400924630129,
+              0.5835953093812375,
+              0.48578803965595385
+            ]
+          },
+          "primary": {
+            "miou": 0.61589617950627,
+            "foreground_miou": 0.5711423686717494,
+            "iou_0_to_8": [
+              0.9739266661824354,
+              0.829264714014817,
+              0.6822446450699239,
+              0.4851290168218795,
+              0.4494986413659943,
+              0.544462208130693,
+              0.521296487119438,
+              0.5816909809379427,
+              0.47555225591330624
+            ]
+          },
+          "random_occlusion": {
+            "miou": 0.6176598765908792,
+            "foreground_miou": 0.5731152454050574,
+            "iou_0_to_8": [
+              0.9740169260774538,
+              0.8294206457253035,
+              0.6883686069565552,
+              0.4858980853622065,
+              0.44699406730403063,
+              0.5496933683251519,
+              0.518005456083837,
+              0.5840713491637208,
+              0.4824703843196539
+            ]
+          },
+          "gaussian": {
+            "miou": 0.6162088674002396,
+            "foreground_miou": 0.5715048567420784,
+            "iou_0_to_8": [
+              0.9738409526655298,
+              0.827971828772371,
+              0.6871086961198911,
+              0.4860753885723428,
+              0.44806613581677884,
+              0.5479287572543526,
+              0.5216928910451295,
+              0.5839731973272055,
+              0.46922195902855507
+            ]
+          }
+        },
+        "gated": {
+          "clean": {
+            "miou": 0.6100745226479628,
+            "foreground_miou": 0.5645752676355306,
+            "iou_0_to_8": [
+              0.9740685627474214,
+              0.8385691435971,
+              0.6905297992688966,
+              0.46710874329328195,
+              0.4487678895383995,
+              0.5336673431836826,
+              0.5094598683712838,
+              0.5810992701991825,
+              0.44740008363241757
+            ]
+          },
+          "primary": {
+            "miou": 0.6068429658620176,
+            "foreground_miou": 0.5609738341791082,
+            "iou_0_to_8": [
+              0.9737960193252931,
+              0.8376587658431799,
+              0.6805559045714703,
+              0.46620151831443274,
+              0.44720707060427817,
+              0.5276393701901131,
+              0.5079334307614304,
+              0.5827642517814727,
+              0.43783036136648773
+            ]
+          },
+          "random_occlusion": {
+            "miou": 0.6085717997614771,
+            "foreground_miou": 0.5629078567123416,
+            "iou_0_to_8": [
+              0.9738833441545622,
+              0.83758543055215,
+              0.6873692265384937,
+              0.46770270439699596,
+              0.44430555871204946,
+              0.5337384669110088,
+              0.5082171305318525,
+              0.5823474759987612,
+              0.4419968600574205
+            ]
+          },
+          "gaussian": {
+            "miou": 0.6071256327767779,
+            "foreground_miou": 0.5612969984539541,
+            "iou_0_to_8": [
+              0.9737547073593685,
+              0.8371849398896497,
+              0.6856922067022859,
+              0.46790109489509873,
+              0.4458136702694474,
+              0.5322308833480818,
+              0.5074766876989223,
+              0.5806364151733997,
+              0.43344008965474695
+            ]
+          }
+        },
+        "control": {
+          "clean": {
+            "miou": 0.6115670432501242,
+            "foreground_miou": 0.5662829250922592,
+            "iou_0_to_8": [
+              0.9738399885130439,
+              0.8349038924880869,
+              0.6907548242461947,
+              0.512003948435315,
+              0.443277538272593,
+              0.5344247083775185,
+              0.5045338090448447,
+              0.5764334958281973,
+              0.4339311840453239
+            ]
+          },
+          "primary": {
+            "miou": 0.6080163209113723,
+            "foreground_miou": 0.5623343543067616,
+            "iou_0_to_8": [
+              0.9734720537482583,
+              0.832930286560913,
+              0.6808241557455162,
+              0.5046065214349023,
+              0.44246961904328436,
+              0.531098674482727,
+              0.5073550534048133,
+              0.5772046073817191,
+              0.42218591640021713
+            ]
+          },
+          "random_occlusion": {
+            "miou": 0.6096365114639211,
+            "foreground_miou": 0.5641402384147796,
+            "iou_0_to_8": [
+              0.9736066958570524,
+              0.8332701519030247,
+              0.6868977460988797,
+              0.5069411340673651,
+              0.44079153988980146,
+              0.534924757289604,
+              0.5043182085408362,
+              0.5769851617309244,
+              0.428993207797801
+            ]
+          },
+          "gaussian": {
+            "miou": 0.6088960106275542,
+            "foreground_miou": 0.563319138145176,
+            "iou_0_to_8": [
+              0.9735109904865802,
+              0.8321051909110033,
+              0.6861611595880573,
+              0.5060557078267388,
+              0.4412673489273832,
+              0.534220198384686,
+              0.5076258938793896,
+              0.5759534383156645,
+              0.42316416732848516
+            ]
+          }
+        }
+      },
+      "comparisons": {
+        "gated-minus-baseline": {
+          "clean": {
+            "counts": [
+              48230400,
+              104356,
+              89837,
+              14519,
+              202875
+            ],
+            "net_rate": {
+              "point": 0.0003010342024946921,
+              "ci95": [
+                -0.00041936087279937154,
+                0.0008270550975741224
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "primary": {
+            "counts": [
+              47587328,
+              98673,
+              87370,
+              11303,
+              194302
+            ],
+            "net_rate": {
+              "point": 0.0002375212157320537,
+              "ci95": [
+                -0.0005233503942610389,
+                0.0008170270065126089
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "random_occlusion": {
+            "counts": [
+              47587328,
+              101623,
+              88531,
+              13092,
+              198896
+            ],
+            "net_rate": {
+              "point": 0.00027511525757445345,
+              "ci95": [
+                -0.0005073689303613431,
+                0.0008364979420788647
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "gaussian": {
+            "counts": [
+              47587328,
+              98844,
+              89430,
+              9414,
+              196358
+            ],
+            "net_rate": {
+              "point": 0.000197825774122052,
+              "ci95": [
+                -0.0005575668624256253,
+                0.0007831254576172753
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point": -0.00946470489547957,
+              "ci95": [
+                -0.019851872254609763,
+                -0.0019469836719631331
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            },
+            "foreground": {
+              "point": -0.010625910856180032,
+              "ci95": [
+                -0.022332136628561552,
+                -0.0022223337566156477
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            }
+          }
+        },
+        "control-minus-baseline": {
+          "clean": {
+            "counts": [
+              48230400,
+              89989,
+              64679,
+              25310,
+              161555
+            ],
+            "net_rate": {
+              "point": 0.0005247727574309979,
+              "ci95": [
+                -0.00012293567483299627,
+                0.0011819550502447432
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "primary": {
+            "counts": [
+              47587328,
+              87985,
+              61739,
+              26246,
+              156356
+            ],
+            "net_rate": {
+              "point": 0.0005515333830048201,
+              "ci95": [
+                -0.00011402788409892265,
+                0.0012419338973904401
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "random_occlusion": {
+            "counts": [
+              47587328,
+              87748,
+              63567,
+              24181,
+              158133
+            ],
+            "net_rate": {
+              "point": 0.0005081394778038388,
+              "ci95": [
+                -0.00014837828647970726,
+                0.001180687326468371
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "gaussian": {
+            "counts": [
+              47587328,
+              83554,
+              61708,
+              21846,
+              151552
+            ],
+            "net_rate": {
+              "point": 0.00045907179323033225,
+              "ci95": [
+                -0.0001320323933710739,
+                0.0010558950695065286
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point": -0.00797218429331814,
+              "ci95": [
+                -0.0135725048472118,
+                -0.0006074137905085104
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            },
+            "foreground": {
+              "point": -0.008918253399451403,
+              "ci95": [
+                -0.015231653353266317,
+                -0.0007067610001353475
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            }
+          }
+        },
+        "gated-minus-control": {
+          "clean": {
+            "counts": [
+              48230400,
+              83746,
+              94537,
+              -10791,
+              186141
+            ],
+            "net_rate": {
+              "point": -0.00022373855493630572,
+              "ci95": [
+                -0.0007612728447823348,
+                0.0002675345650087707
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "primary": {
+            "counts": [
+              47587328,
+              77399,
+              92342,
+              -14943,
+              177111
+            ],
+            "net_rate": {
+              "point": -0.0003140121672727664,
+              "ci95": [
+                -0.0008463652271070958,
+                0.00012860065799028797
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "random_occlusion": {
+            "counts": [
+              47587328,
+              82255,
+              93344,
+              -11089,
+              183563
+            ],
+            "net_rate": {
+              "point": -0.00023302422022938542,
+              "ci95": [
+                -0.0007765160919956138,
+                0.00022522162994575079
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "gaussian": {
+            "counts": [
+              47587328,
+              80271,
+              92703,
+              -12432,
+              180047
+            ],
+            "net_rate": {
+              "point": -0.00026124601910828025,
+              "ci95": [
+                -0.0008066806971190839,
+                0.00017583741548299607
+              ],
+              "valid_draws": 10000
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point": -0.001492520602161429,
+              "ci95": [
+                -0.009664394883166538,
+                0.005797713090257144
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            },
+            "foreground": {
+              "point": -0.0017076574567286285,
+              "ci95": [
+                -0.010874602671386551,
+                0.006462394210832187
+              ],
+              "valid_draws": 10000,
+              "noninferiority": false
+            }
+          }
+        }
+      }
+    }
+  },
+  "test_pixels_read": 0
+}

@@ -1,0 +1,2 @@
+PYTEST_DISABLE_PLUGIN_AUTOLOAD=1 python -m pytest -q -rs
+106 passed, 4 skipped in 14.00s
