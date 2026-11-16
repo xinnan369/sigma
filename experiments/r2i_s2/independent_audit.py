@@ -242,6 +242,6 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser()
     for option in ('run','data','output'):
         parser.add_argument('--'+option,type=Path,required=True)
-    parser.add_argument('--seed',type=int,choices=(3407,3408,3409),required=True)
+    parser.add_argument('--seed',type=int,choices=(3407,3408),required=True)
     args=parser.parse_args()
     main(args.run,args.data,args.output,args.seed)

@@ -11,8 +11,8 @@ from experiments.r2i_s2.driver import verify_history
 from experiments.r2i_s2.protocol import require_seed
 
 
-@pytest.mark.parametrize('seed', [3408, 3409])
-def test_five_epochs_deterministic_and_paired(seed):
+def test_five_epochs_deterministic_and_paired():
+    seed = 3408
     ids = [str(i) for i in range(1254)]
     sampler = EpochSampler(1254, require_seed(seed))
     rows = []
@@ -26,7 +26,7 @@ def test_five_epochs_deterministic_and_paired(seed):
             sampler.advance_epoch()
     for _arm in ('baseline', 'gated', 'control'):
         assert verify_history(rows, ids, seed, complete=True).order == sampler.order
-    wrong = 3409 if seed == 3408 else 3408
+    wrong = 3407
     with pytest.raises(ValueError, match='ordering'):
         verify_history(rows, ids, wrong, complete=True)
 
@@ -37,10 +37,10 @@ def test_seed_and_epoch_aware_augmentation():
     def position(seed, epoch):
         return train_occlusion(*args, seed, '00057D', 1., 64, epoch=epoch)[1]
     assert position(3408, 2) == position(3408, 2)
-    assert len({tuple(position(s,e)) for s in (3408,3409) for e in (1,2)}) == 4
+    assert len({tuple(position(s,e)) for s in (3407,3408) for e in (1,2)}) == 4
 
 
-@pytest.mark.parametrize('seed', [0,3407,3410,3411])
+@pytest.mark.parametrize('seed', [0,3407,3409,3410,3411])
 def test_refuse_unapproved_seed(seed):
     with pytest.raises(ValueError, match='not approved'):
         require_seed(seed)
@@ -52,7 +52,7 @@ import sys, torch
 from pathlib import Path
 from experiments.r1d.state import EpochSampler, save
 from experiments.r2i_s2.driver import restart
-seed=3409
+seed=3408
 torch.manual_seed(seed)
 model=torch.nn.Linear(2,1)
 opt=torch.optim.AdamW(model.parameters(),lr=6e-5)

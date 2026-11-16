@@ -2,8 +2,7 @@
   "parent": "configs/R2i_protocol.json",
   "parent_sha256": "60c3aefb80343ff95834f3fa2724f9b73d221026fb1b24bbdedd527a8488983d",
   "training_seeds": [
-    3408,
-    3409
+    3408
   ],
   "version": "r2i-s2-v1",
   "stage": "S2"

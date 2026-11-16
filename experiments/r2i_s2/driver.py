@@ -178,7 +178,7 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser()
     for key in ('root', 'init', 'upstream', 'output'):
         p.add_argument('--' + key, type=lambda s: Path(s).resolve(), required=True)
-    p.add_argument('--seed', type=int, choices=(3408, 3409), required=True)
+    p.add_argument('--seed', type=int, choices=(3408,), required=True)
     p.add_argument('--track', choices=('clean', 'augmented'), required=True)
     p.add_argument('--arm', choices=('baseline', 'gated', 'control'), required=True)
     p.add_argument('--resume', action='store_true')

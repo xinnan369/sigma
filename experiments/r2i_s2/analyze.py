@@ -129,6 +129,6 @@ if __name__ == '__main__':
     p=argparse.ArgumentParser()
     p.add_argument('--root',type=Path,required=True)
     p.add_argument('--output',type=Path,required=True)
-    p.add_argument('--seed',type=int,choices=(3408,3409),required=True)
+    p.add_argument('--seed',type=int,choices=(3408,),required=True)
     args=p.parse_args()
     analyze(args.root,args.output / f'seed{args.seed}',args.seed)

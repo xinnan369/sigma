@@ -9,7 +9,7 @@ from experiments.r1g.partition import read, require
 from experiments.r2d.analysis import bootstrap_weights, summarize
 from experiments.r2i_s2.independent_audit import jac
 
-COHORT = (3407, 3408, 3409)
+COHORT = (3407, 3408)
 
 
 def estimate(points_and_groups, seed):
@@ -25,7 +25,7 @@ def paired_stats(audits):
     require(tuple(a['seed'] for a in audits) == COHORT
             and all(a['status'] == 'PASS' and a['groups'] == 54 and a['group_order'] == group_order for a in audits),
             'Independent audit cohort differs')
-    seeds, groups = bootstrap_weights(3, 54, 10000, 3407)
+    seeds, groups = bootstrap_weights(len(COHORT), 54, 10000, 3407)
     weights = np.vstack((np.ones((1,54)), groups))
     output = {}
     for track in ('clean','augmented'):
@@ -38,8 +38,7 @@ def paired_stats(audits):
                 rows = [t['contrasts'][name][case] for t in data]
                 pixels = np.stack([weights @ np.asarray(r['group_counts']) for r in rows])
                 denom = pixels[:,:,0]
-                require(np.all(denom > 0) and np.array_equal(denom[0], denom[1])
-                        and np.array_equal(denom[0], denom[2]), 'Paired denominators differ')
+                require(np.all(denom > 0) and all(np.array_equal(denom[0], row) for row in denom[1:]), 'Paired denominators differ')
                 out[case] = {k:estimate(pixels[:,:,j]/denom,seeds)
                              for j,k in enumerate(('new','corrected','net','disagree'),1)}
                 out[case]['exploratory_did'] = estimate(
@@ -64,7 +63,7 @@ def paired_stats(audits):
 
 if __name__ == '__main__':
     p=argparse.ArgumentParser()
-    p.add_argument('--audit',type=Path,nargs=3,required=True)
+    p.add_argument('--audit',type=Path,nargs=2,required=True)
     p.add_argument('--output',type=Path,required=True)
     a=p.parse_args()
     write_json(a.output,paired_stats([read(path) for path in a.audit]))

@@ -4,7 +4,7 @@ from experiments.r1g.partition import ROOT, read, require
 
 CONFIG = ROOT / 'configs/R2i_protocol.json'
 STAGE = ROOT / 'configs/R2i_S2_protocol.json'
-SEEDS = (3408, 3409)
+SEEDS = (3408,)
 PARENT_SHA = '60c3aefb80343ff95834f3fa2724f9b73d221026fb1b24bbdedd527a8488983d'
 
 
