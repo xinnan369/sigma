@@ -1,3 +1,4 @@
+import os
 import subprocess
 import sys
 
@@ -73,4 +74,5 @@ else:
     assert all(p['step'].item()==1 for p in opt.state.values())
 """
     for command in ('save', 'load'):
-        subprocess.run([sys.executable, '-c', code, str(tmp_path/'state.pt'), command], check=True)
+        subprocess.run([sys.executable, '-c', code, str(tmp_path/'state.pt'), command], check=True,
+                       env={**os.environ, 'CUDA_VISIBLE_DEVICES': ''})
