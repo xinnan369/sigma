@@ -1,0 +1,1432 @@
+{
+  "status": "PASS",
+  "seed": 3407,
+  "groups": 54,
+  "draws": 10000,
+  "tracks": {
+    "clean": {
+      "training": {
+        "baseline": [
+          {
+            "epoch": 1,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              172800,
+              172800,
+              307200,
+              307200,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308598880
+          },
+          {
+            "epoch": 2,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              307200,
+              307200,
+              307200
+            ],
+            "valid_pixels": 314032640
+          },
+          {
+            "epoch": 3,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              172800,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308903840
+          },
+          {
+            "epoch": 4,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              76800,
+              307200,
+              172800
+            ],
+            "valid_pixels": 305793600
+          },
+          {
+            "epoch": 5,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              307200,
+              307200,
+              307200,
+              172800,
+              307200,
+              307200
+            ],
+            "valid_pixels": 315760160
+          }
+        ],
+        "gated": [
+          {
+            "epoch": 1,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              172800,
+              172800,
+              307200,
+              307200,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308598880
+          },
+          {
+            "epoch": 2,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              307200,
+              307200,
+              307200
+            ],
+            "valid_pixels": 314032640
+          },
+          {
+            "epoch": 3,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              172800,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308903840
+          },
+          {
+            "epoch": 4,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              76800,
+              307200,
+              172800
+            ],
+            "valid_pixels": 305793600
+          },
+          {
+            "epoch": 5,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              307200,
+              307200,
+              307200,
+              172800,
+              307200,
+              307200
+            ],
+            "valid_pixels": 315760160
+          }
+        ],
+        "control": [
+          {
+            "epoch": 1,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              172800,
+              172800,
+              307200,
+              307200,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308598880
+          },
+          {
+            "epoch": 2,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              307200,
+              307200,
+              307200
+            ],
+            "valid_pixels": 314032640
+          },
+          {
+            "epoch": 3,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              172800,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308903840
+          },
+          {
+            "epoch": 4,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              76800,
+              307200,
+              172800
+            ],
+            "valid_pixels": 305793600
+          },
+          {
+            "epoch": 5,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              307200,
+              307200,
+              307200,
+              172800,
+              307200,
+              307200
+            ],
+            "valid_pixels": 315760160
+          }
+        ]
+      },
+      "contrasts": {
+        "gated-minus-baseline": {
+          "clean": {
+            "counts": {
+              "pixels": 48230400,
+              "new": 86943,
+              "corrected": 121031,
+              "net": -34088,
+              "disagree": 217060
+            },
+            "rates": {
+              "new": 0.0018026597332802547,
+              "corrected": 0.0025094338840233547,
+              "net": -0.0007067741507430998,
+              "disagree": 0.0045004810244161355
+            },
+            "net_rate_point_low_high": [
+              -0.0007067741507430998,
+              -0.001675119719328704,
+              -3.95550479872656e-05
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              },
+              "gated": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              },
+              "control": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              }
+            }
+          },
+          "primary": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 84608,
+              "corrected": 119769,
+              "net": -35161,
+              "disagree": 212900
+            },
+            "rates": {
+              "new": 0.0017779523153726975,
+              "corrected": 0.002516825487659236,
+              "net": -0.0007388731722865381,
+              "disagree": 0.004473880105224651
+            },
+            "net_rate_point_low_high": [
+              -0.0007388731722865381,
+              -0.001737936268682065,
+              -4.0680455071019174e-05
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -5.6506639750817694e-05,
+              -0.00014607456409674091,
+              2.878562273398699e-05
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 31591,
+                "corrected": 28797,
+                "net": 2794,
+                "disagree": 63806
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 31651,
+                "corrected": 31546,
+                "net": 105,
+                "disagree": 66916
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 30875,
+                "corrected": 26375,
+                "net": 4500,
+                "disagree": 60641
+              }
+            }
+          },
+          "random_occlusion": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 85437,
+              "corrected": 123424,
+              "net": -37987,
+              "disagree": 218072
+            },
+            "rates": {
+              "new": 0.0017953729194461181,
+              "corrected": 0.0025936316491650888,
+              "net": -0.0007982587297189705,
+              "disagree": 0.004582564501205027
+            },
+            "net_rate_point_low_high": [
+              -0.0007982587297189705,
+              -0.0018597066903474002,
+              -7.723404071739296e-05
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -6.760203052375625e-05,
+              -0.00017557538562021433,
+              3.029701701136441e-06
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 27600,
+                "corrected": 17363,
+                "net": 10237,
+                "disagree": 46860
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 25842,
+                "corrected": 18822,
+                "net": 7020,
+                "disagree": 46771
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 25578,
+                "corrected": 16228,
+                "net": 9350,
+                "disagree": 43560
+              }
+            }
+          },
+          "gaussian": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 85636,
+              "corrected": 117968,
+              "net": -32332,
+              "disagree": 211957
+            },
+            "rates": {
+              "new": 0.001799554704983646,
+              "corrected": 0.002478979277844724,
+              "net": -0.0006794245728610777,
+              "disagree": 0.004454063905416164
+            },
+            "net_rate_point_low_high": [
+              -0.0006794245728610777,
+              -0.0016537631169590947,
+              5.568024667376495e-06
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              2.9419596746427955e-06,
+              -7.350426603607612e-05,
+              8.653408455610323e-05
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 28846,
+                "corrected": 27336,
+                "net": 1510,
+                "disagree": 59440
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 28849,
+                "corrected": 27199,
+                "net": 1650,
+                "disagree": 59437
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 28916,
+                "corrected": 25167,
+                "net": 3749,
+                "disagree": 57177
+              }
+            }
+          }
+        },
+        "gated-minus-control": {
+          "clean": {
+            "counts": {
+              "pixels": 48230400,
+              "new": 115801,
+              "corrected": 105197,
+              "net": 10604,
+              "disagree": 232630
+            },
+            "rates": {
+              "new": 0.002400996052282378,
+              "corrected": 0.0021811347200106157,
+              "net": 0.0002198613322717622,
+              "disagree": 0.004823306462314225
+            },
+            "net_rate_point_low_high": [
+              0.0002198613322717622,
+              -0.0006689452684630907,
+              0.0010138270675203367
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "primary": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 109163,
+              "corrected": 104642,
+              "net": 4521,
+              "disagree": 224649
+            },
+            "rates": {
+              "new": 0.002293951028307368,
+              "corrected": 0.0021989467448140817,
+              "net": 9.500428349328627e-05,
+              "disagree": 0.00472077356392021
+            },
+            "net_rate_point_low_high": [
+              9.500428349328627e-05,
+              -0.0007915719236704275,
+              0.0008878519915985603
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -9.235651978610776e-05,
+              -0.0002998158696646781,
+              1.929909687317428e-05
+            ]
+          },
+          "random_occlusion": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 113449,
+              "corrected": 106449,
+              "net": 7000,
+              "disagree": 231543
+            },
+            "rates": {
+              "new": 0.0023840170223467893,
+              "corrected": 0.0022369190386146496,
+              "net": 0.00014709798373213978,
+              "disagree": 0.004865644063898692
+            },
+            "net_rate_point_low_high": [
+              0.00014709798373213978,
+              -0.0007977257295196145,
+              0.0009551367807262328
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -4.896261458512653e-05,
+              -0.00013945739152816983,
+              1.5707044872268404e-05
+            ]
+          },
+          "gaussian": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 110476,
+              "corrected": 103659,
+              "net": 6817,
+              "disagree": 224653
+            },
+            "rates": {
+              "new": 0.002321542407255982,
+              "corrected": 0.002178289985098554,
+              "net": 0.00014325242215742812,
+              "disagree": 0.0047208576199109144
+            },
+            "net_rate_point_low_high": [
+              0.00014325242215742812,
+              -0.0007506125027189253,
+              0.0009544072668729341
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -4.4108381121965915e-05,
+              -0.00022776467013222384,
+              6.28051967927693e-05
+            ]
+          }
+        },
+        "control-minus-baseline": {
+          "clean": {
+            "counts": {
+              "pixels": 48230400,
+              "new": 66017,
+              "corrected": 110709,
+              "net": -44692,
+              "disagree": 186978
+            },
+            "rates": {
+              "new": 0.0013687840034501061,
+              "corrected": 0.002295419486464968,
+              "net": -0.000926635483014862,
+              "disagree": 0.003876766520700637
+            },
+            "net_rate_point_low_high": [
+              -0.000926635483014862,
+              -0.001897710804693944,
+              -0.00023463837387580503
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              },
+              "gated": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              },
+              "control": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              }
+            }
+          },
+          "primary": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 64026,
+              "corrected": 103708,
+              "net": -39682,
+              "disagree": 177091
+            },
+            "rates": {
+              "new": 0.0013454422152048544,
+              "corrected": 0.002179319670984679,
+              "net": -0.0008338774557798244,
+              "disagree": 0.0037213898624440522
+            },
+            "net_rate_point_low_high": [
+              -0.0008338774557798244,
+              -0.001722636102069788,
+              -0.00021053512591268588
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              3.5849880035290065e-05,
+              -6.132392739743922e-05,
+              0.0001941261635170326
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 31591,
+                "corrected": 28797,
+                "net": 2794,
+                "disagree": 63806
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 31651,
+                "corrected": 31546,
+                "net": 105,
+                "disagree": 66916
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 30875,
+                "corrected": 26375,
+                "net": 4500,
+                "disagree": 60641
+              }
+            }
+          },
+          "random_occlusion": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 65271,
+              "corrected": 110258,
+              "net": -44987,
+              "disagree": 185812
+            },
+            "rates": {
+              "new": 0.0013716046423114994,
+              "corrected": 0.0023169613557626097,
+              "net": -0.0009453567134511103,
+              "disagree": 0.0039046529361766225
+            },
+            "net_rate_point_low_high": [
+              -0.0009453567134511103,
+              -0.001980084182543199,
+              -0.00020375689796554866
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -1.8639415938629712e-05,
+              -0.00012876874158158225,
+              6.511840186686531e-05
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 27600,
+                "corrected": 17363,
+                "net": 10237,
+                "disagree": 46860
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 25842,
+                "corrected": 18822,
+                "net": 7020,
+                "disagree": 46771
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 25578,
+                "corrected": 16228,
+                "net": 9350,
+                "disagree": 43560
+              }
+            }
+          },
+          "gaussian": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 64185,
+              "corrected": 103334,
+              "net": -39149,
+              "disagree": 177017
+            },
+            "rates": {
+              "new": 0.0013487834408353416,
+              "corrected": 0.0021714604358538474,
+              "net": -0.0008226769950185058,
+              "disagree": 0.003719834826616027
+            },
+            "net_rate_point_low_high": [
+              -0.0008226769950185058,
+              -0.0016957292917612436,
+              -0.00020635056481844836
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              4.705034079660871e-05,
+              -6.930692545541306e-05,
+              0.00021644031415907675
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 28846,
+                "corrected": 27336,
+                "net": 1510,
+                "disagree": 59440
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 28849,
+                "corrected": 27199,
+                "net": 1650,
+                "disagree": 59437
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 28916,
+                "corrected": 25167,
+                "net": 3749,
+                "disagree": 57177
+              }
+            }
+          }
+        }
+      }
+    },
+    "augmented": {
+      "training": {
+        "baseline": [
+          {
+            "epoch": 1,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              172800,
+              172800,
+              307200,
+              307200,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308598880
+          },
+          {
+            "epoch": 2,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              307200,
+              307200,
+              307200
+            ],
+            "valid_pixels": 314032640
+          },
+          {
+            "epoch": 3,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              172800,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308903840
+          },
+          {
+            "epoch": 4,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              76800,
+              307200,
+              172800
+            ],
+            "valid_pixels": 305793600
+          },
+          {
+            "epoch": 5,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              307200,
+              307200,
+              307200,
+              172800,
+              307200,
+              307200
+            ],
+            "valid_pixels": 315760160
+          }
+        ],
+        "gated": [
+          {
+            "epoch": 1,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              172800,
+              172800,
+              307200,
+              307200,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308598880
+          },
+          {
+            "epoch": 2,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              307200,
+              307200,
+              307200
+            ],
+            "valid_pixels": 314032640
+          },
+          {
+            "epoch": 3,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              172800,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308903840
+          },
+          {
+            "epoch": 4,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              76800,
+              307200,
+              172800
+            ],
+            "valid_pixels": 305793600
+          },
+          {
+            "epoch": 5,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              307200,
+              307200,
+              307200,
+              172800,
+              307200,
+              307200
+            ],
+            "valid_pixels": 315760160
+          }
+        ],
+        "control": [
+          {
+            "epoch": 1,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              172800,
+              172800,
+              307200,
+              307200,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308598880
+          },
+          {
+            "epoch": 2,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              307200,
+              307200,
+              307200
+            ],
+            "valid_pixels": 314032640
+          },
+          {
+            "epoch": 3,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              172800,
+              307200,
+              76800
+            ],
+            "valid_pixels": 308903840
+          },
+          {
+            "epoch": 4,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              76800,
+              307200,
+              172800,
+              76800,
+              307200,
+              172800
+            ],
+            "valid_pixels": 305793600
+          },
+          {
+            "epoch": 5,
+            "updates": 157,
+            "records": 1254,
+            "tail_pixels": [
+              307200,
+              307200,
+              307200,
+              172800,
+              307200,
+              307200
+            ],
+            "valid_pixels": 315760160
+          }
+        ]
+      },
+      "contrasts": {
+        "gated-minus-baseline": {
+          "clean": {
+            "counts": {
+              "pixels": 48230400,
+              "new": 50008,
+              "corrected": 50711,
+              "net": -703,
+              "disagree": 107135
+            },
+            "rates": {
+              "new": 0.001036856422505308,
+              "corrected": 0.0010514322916666667,
+              "net": -1.4575869161358812e-05,
+              "disagree": 0.002221316845806794
+            },
+            "net_rate_point_low_high": [
+              -1.4575869161358812e-05,
+              -0.00041878250038783114,
+              0.00026970376575093623
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              },
+              "gated": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              },
+              "control": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              }
+            }
+          },
+          "primary": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 48556,
+              "corrected": 51087,
+              "net": -2531,
+              "disagree": 105721
+            },
+            "rates": {
+              "new": 0.0010203556711568256,
+              "corrected": 0.001073542099274832,
+              "net": -5.318642811800654e-05,
+              "disagree": 0.002221620848306507
+            },
+            "net_rate_point_low_high": [
+              -5.318642811800654e-05,
+              -0.0004870912227632268,
+              0.0002378699681254268
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -3.8539671737820626e-05,
+              -9.474416843149728e-05,
+              -3.877372988978811e-06
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 32355,
+                "corrected": 30014,
+                "net": 2341,
+                "disagree": 65976
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 31000,
+                "corrected": 30493,
+                "net": 507,
+                "disagree": 65064
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 33551,
+                "corrected": 30719,
+                "net": 2832,
+                "disagree": 68273
+              }
+            }
+          },
+          "random_occlusion": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 48400,
+              "corrected": 51545,
+              "net": -3145,
+              "disagree": 106372
+            },
+            "rates": {
+              "new": 0.0010170774875193666,
+              "corrected": 0.0010831665102104494,
+              "net": -6.60890226910828e-05,
+              "disagree": 0.002235300960793596
+            },
+            "net_rate_point_low_high": [
+              -6.60890226910828e-05,
+              -0.0004955101257978204,
+              0.00021489557046874662
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -4.616775289421587e-05,
+              -0.00011494416096466877,
+              5.758595037414926e-07
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 27172,
+                "corrected": 19644,
+                "net": 7528,
+                "disagree": 48809
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 25560,
+                "corrected": 20229,
+                "net": 5331,
+                "disagree": 47956
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 26050,
+                "corrected": 19931,
+                "net": 6119,
+                "disagree": 48110
+              }
+            }
+          },
+          "gaussian": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 48940,
+              "corrected": 50263,
+              "net": -1323,
+              "disagree": 105522
+            },
+            "rates": {
+              "new": 0.0010284250462644173,
+              "corrected": 0.0010562265651897916,
+              "net": -2.780151892537442e-05,
+              "disagree": 0.002217439062768979
+            },
+            "net_rate_point_low_high": [
+              -2.780151892537442e-05,
+              -0.00045683223768550914,
+              0.00026322212986673815
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -1.31547625451885e-05,
+              -6.174876047922924e-05,
+              1.8598047946964392e-05
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 29893,
+                "corrected": 28570,
+                "net": 1323,
+                "disagree": 62142
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 28567,
+                "corrected": 27870,
+                "net": 697,
+                "disagree": 60064
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 30245,
+                "corrected": 27611,
+                "net": 2634,
+                "disagree": 61816
+              }
+            }
+          }
+        },
+        "gated-minus-control": {
+          "clean": {
+            "counts": {
+              "pixels": 48230400,
+              "new": 40815,
+              "corrected": 56536,
+              "net": -15721,
+              "disagree": 103174
+            },
+            "rates": {
+              "new": 0.0008462504976114649,
+              "corrected": 0.0011722067409766453,
+              "net": -0.00032595624336518046,
+              "disagree": 0.0021391902202760084
+            },
+            "net_rate_point_low_high": [
+              -0.00032595624336518046,
+              -0.0005084998664835974,
+              -0.00012698938278924855
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              0.0,
+              0.0,
+              0.0
+            ]
+          },
+          "primary": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 38939,
+              "corrected": 56631,
+              "net": -17692,
+              "disagree": 101064
+            },
+            "rates": {
+              "new": 0.0008182640555065416,
+              "corrected": 0.0011900437023906868,
+              "net": -0.0003717796468841453,
+              "disagree": 0.0021237586611292823
+            },
+            "net_rate_point_low_high": [
+              -0.0003717796468841453,
+              -0.0005995307941108722,
+              -0.00015125775808553257
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -4.8857544596746426e-05,
+              -0.00012068190371215358,
+              -1.0300188629094873e-06
+            ]
+          },
+          "random_occlusion": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 39769,
+              "corrected": 56426,
+              "net": -16657,
+              "disagree": 101994
+            },
+            "rates": {
+              "new": 0.0008357056735776382,
+              "corrected": 0.0011857358328671028,
+              "net": -0.00035003015928946463,
+              "disagree": 0.0021433016789679806
+            },
+            "net_rate_point_low_high": [
+              -0.00035003015928946463,
+              -0.0005556323824220178,
+              -0.00013080234132261604
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -1.6559030168703736e-05,
+              -5.584242864516302e-05,
+              2.0081200093600644e-05
+            ]
+          },
+          "gaussian": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 39029,
+              "corrected": 56333,
+              "net": -17304,
+              "disagree": 100996
+            },
+            "rates": {
+              "new": 0.0008201553152973834,
+              "corrected": 0.001183781531083233,
+              "net": -0.00036362621578584956,
+              "disagree": 0.002122329709287313
+            },
+            "net_rate_point_low_high": [
+              -0.00036362621578584956,
+              -0.0005925895078027947,
+              -0.00013951088706778733
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -4.070411349845068e-05,
+              -0.00010616930864918124,
+              5.82670489658865e-06
+            ]
+          }
+        },
+        "control-minus-baseline": {
+          "clean": {
+            "counts": {
+              "pixels": 48230400,
+              "new": 59314,
+              "corrected": 44296,
+              "net": 15018,
+              "disagree": 108849
+            },
+            "rates": {
+              "new": 0.0012298052680467092,
+              "corrected": 0.0009184248938428874,
+              "net": 0.0003113803742038217,
+              "disagree": 0.0022568545979299364
+            },
+            "net_rate_point_low_high": [
+              0.0003113803742038217,
+              -0.0001960810256961767,
+              0.0006974220387380351
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              0.0,
+              0.0,
+              0.0
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              },
+              "gated": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              },
+              "control": {
+                "pixels": 48230400,
+                "new": 0,
+                "corrected": 0,
+                "net": 0,
+                "disagree": 0
+              }
+            }
+          },
+          "primary": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 59284,
+              "corrected": 44123,
+              "net": 15161,
+              "disagree": 108524
+            },
+            "rates": {
+              "new": 0.001245793838225168,
+              "corrected": 0.0009272006194590291,
+              "net": 0.00031859321876613877,
+              "disagree": 0.002280523083792391
+            },
+            "net_rate_point_low_high": [
+              0.00031859321876613877,
+              -0.00020643748796890196,
+              0.000737966415459796
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              1.0317872858925805e-05,
+              -4.371165279460019e-05,
+              7.448186889165113e-05
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 32355,
+                "corrected": 30014,
+                "net": 2341,
+                "disagree": 65976
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 31000,
+                "corrected": 30493,
+                "net": 507,
+                "disagree": 65064
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 33551,
+                "corrected": 30719,
+                "net": 2832,
+                "disagree": 68273
+              }
+            }
+          },
+          "random_occlusion": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 59338,
+              "corrected": 45826,
+              "net": 13512,
+              "disagree": 110512
+            },
+            "rates": {
+              "new": 0.001246928594099673,
+              "corrected": 0.0009629874575012911,
+              "net": 0.0002839411365983818,
+              "disagree": 0.002322298911172319
+            },
+            "net_rate_point_low_high": [
+              0.0002839411365983818,
+              -0.0002619645822782913,
+              0.0006869679374261638
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              -2.9608722725512136e-05,
+              -8.873933427052088e-05,
+              1.0963199228862218e-05
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 27172,
+                "corrected": 19644,
+                "net": 7528,
+                "disagree": 48809
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 25560,
+                "corrected": 20229,
+                "net": 5331,
+                "disagree": 47956
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 26050,
+                "corrected": 19931,
+                "net": 6119,
+                "disagree": 48110
+              }
+            }
+          },
+          "gaussian": {
+            "counts": {
+              "pixels": 47587328,
+              "new": 59173,
+              "corrected": 43192,
+              "net": 15981,
+              "disagree": 107342
+            },
+            "rates": {
+              "new": 0.0012434612844831297,
+              "corrected": 0.0009076365876226545,
+              "net": 0.0003358246968604751,
+              "disagree": 0.0022556845385393355
+            },
+            "net_rate_point_low_high": [
+              0.0003358246968604751,
+              -0.0001871893521012931,
+              0.0007601170802445975
+            ],
+            "exploratory_corrupt_minus_clean_difference": [
+              2.754935095326218e-05,
+              -3.4616444561932536e-05,
+              9.975003466176255e-05
+            ],
+            "exploratory_within_model": {
+              "baseline": {
+                "pixels": 47587328,
+                "new": 29893,
+                "corrected": 28570,
+                "net": 1323,
+                "disagree": 62142
+              },
+              "gated": {
+                "pixels": 47587328,
+                "new": 28567,
+                "corrected": 27870,
+                "net": 697,
+                "disagree": 60064
+              },
+              "control": {
+                "pixels": 47587328,
+                "new": 30245,
+                "corrected": 27611,
+                "net": 2634,
+                "disagree": 61816
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

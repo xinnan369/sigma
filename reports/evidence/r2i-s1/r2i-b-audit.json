@@ -1,0 +1,709 @@
+{
+  "status": "PASS_ARCHIVE_AUDIT",
+  "seed": 3407,
+  "images": 157,
+  "visual_groups": 54,
+  "bootstrap_draws": 10000,
+  "checkpoint_sha256_verified": true,
+  "source_sha256_verified": true,
+  "pixel_predictions_and_GT_verified": true,
+  "warnings": [
+    "Statistical intervals are conditional on one seed (3407) and the historical visual grouping.",
+    "Difference-in-differences is exploratory, NOT the frozen H1 primary endpoint.",
+    "This CPU audit does not rerun forward inference or prove sensor acquisition independence."
+  ],
+  "tracks": {
+    "clean": {
+      "clean_miou_pp": {
+        "baseline": {
+          "overall": 60.01373942445481,
+          "foreground": 55.327733240911094
+        },
+        "gated": {
+          "overall": 60.37353421962693,
+          "foreground": 55.72251399421222
+        },
+        "control": {
+          "overall": 60.96332520080331,
+          "foreground": 56.38723626192663
+        }
+      },
+      "comparisons": {
+        "gated-minus-baseline": {
+          "clean": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.07067741507430998,
+              "ci95_pp": [
+                -0.16453554784201146,
+                -0.004164411698004295
+              ]
+            },
+            "outside_counts": {
+              "pixels": 48230400,
+              "new": 86943,
+              "corrected": 121031,
+              "net": -34088,
+              "disagree": 217060
+            }
+          },
+          "primary": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.07388731722865381,
+              "ci95_pp": [
+                -0.17051091508897648,
+                -0.003969393849764958
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 84608,
+              "corrected": 119769,
+              "net": -35161,
+              "disagree": 212900
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.005650663975081769,
+              "ci95_pp": [
+                -0.014611892186139659,
+                0.002948185946614769
+              ]
+            }
+          },
+          "random_occlusion": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.07982587297189705,
+              "ci95_pp": [
+                -0.18255678640613587,
+                -0.008218552512165269
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 85437,
+              "corrected": 123424,
+              "net": -37987,
+              "disagree": 218072
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.006760203052375625,
+              "ci95_pp": [
+                -0.01737354471190926,
+                8.294762974143203e-05
+              ]
+            }
+          },
+          "gaussian": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.06794245728610776,
+              "ci95_pp": [
+                -0.1625578058504197,
+                0.0004710229171784574
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 85636,
+              "corrected": 117968,
+              "net": -32332,
+              "disagree": 211957
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": 0.00029419596746427956,
+              "ci95_pp": [
+                -0.007336552790238714,
+                0.008583310858127031
+              ]
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point_pp": 0.3597947951721192,
+              "ci95_pp": [
+                -0.077504745728382,
+                0.7749546638197105
+              ],
+              "noninferior_at_0_5_pp": true,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            },
+            "foreground": {
+              "point_pp": 0.39478075330112716,
+              "ci95_pp": [
+                -0.09339883738609916,
+                0.8546602376349984
+              ],
+              "noninferior_at_0_5_pp": true,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            }
+          }
+        },
+        "control-minus-baseline": {
+          "clean": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.09266354830148621,
+              "ci95_pp": [
+                -0.193799047360475,
+                -0.02225333001368269
+              ]
+            },
+            "outside_counts": {
+              "pixels": 48230400,
+              "new": 66017,
+              "corrected": 110709,
+              "net": -44692,
+              "disagree": 186978
+            }
+          },
+          "primary": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.08338774557798244,
+              "ci95_pp": [
+                -0.1748592484243316,
+                -0.020568579147927896
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 64026,
+              "corrected": 103708,
+              "net": -39682,
+              "disagree": 177091
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": 0.0035849880035290064,
+              "ci95_pp": [
+                -0.006245108257340988,
+                0.019378344408861978
+              ]
+            }
+          },
+          "random_occlusion": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.09453567134511104,
+              "ci95_pp": [
+                -0.2025176350965601,
+                -0.020194667118055305
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 65271,
+              "corrected": 110258,
+              "net": -44987,
+              "disagree": 185812
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.0018639415938629712,
+              "ci95_pp": [
+                -0.012764737445098087,
+                0.006310406787899518
+              ]
+            }
+          },
+          "gaussian": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.08226769950185057,
+              "ci95_pp": [
+                -0.17132877440050734,
+                -0.020680748694874646
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 64185,
+              "corrected": 103334,
+              "net": -39149,
+              "disagree": 177017
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": 0.004705034079660871,
+              "ci95_pp": [
+                -0.006849225934919294,
+                0.021793834104467648
+              ]
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point_pp": 0.9495857763484938,
+              "ci95_pp": [
+                0.006868912447064173,
+                2.147342878798121
+              ],
+              "noninferior_at_0_5_pp": true,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            },
+            "foreground": {
+              "point_pp": 1.0595030210155398,
+              "ci95_pp": [
+                0.0030371431869777627,
+                2.4067270891154857
+              ],
+              "noninferior_at_0_5_pp": true,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            }
+          }
+        },
+        "gated-minus-control": {
+          "clean": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": 0.02198613322717622,
+              "ci95_pp": [
+                -0.06811382838350993,
+                0.10204855308772769
+              ]
+            },
+            "outside_counts": {
+              "pixels": 48230400,
+              "new": 115801,
+              "corrected": 105197,
+              "net": 10604,
+              "disagree": 232630
+            }
+          },
+          "primary": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": 0.009500428349328627,
+              "ci95_pp": [
+                -0.08103913073103759,
+                0.08867992033963418
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 109163,
+              "corrected": 104642,
+              "net": 4521,
+              "disagree": 224649
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.009235651978610777,
+              "ci95_pp": [
+                -0.0295710639041221,
+                0.0019102446290088556
+              ]
+            }
+          },
+          "random_occlusion": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": 0.014709798373213978,
+              "ci95_pp": [
+                -0.08103064033103012,
+                0.095994831254841
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 113449,
+              "corrected": 106449,
+              "net": 7000,
+              "disagree": 231543
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.004896261458512653,
+              "ci95_pp": [
+                -0.013786705963687139,
+                0.0015082525309635631
+              ]
+            }
+          },
+          "gaussian": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": 0.014325242215742811,
+              "ci95_pp": [
+                -0.07649782038124607,
+                0.09559631598525602
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 110476,
+              "corrected": 103659,
+              "net": 6817,
+              "disagree": 224653
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.004410838112196592,
+              "ci95_pp": [
+                -0.02266056668127555,
+                0.006457730474160779
+              ]
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point_pp": -0.5897909811763746,
+              "ci95_pp": [
+                -2.018309520824355,
+                0.3935559763700748
+              ],
+              "noninferior_at_0_5_pp": false,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            },
+            "foreground": {
+              "point_pp": -0.6647222677144127,
+              "ci95_pp": [
+                -2.269146628449422,
+                0.43480782656308803
+              ],
+              "noninferior_at_0_5_pp": false,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            }
+          }
+        }
+      },
+      "single_seed_screening_flags": {
+        "H1_gated_vs_baseline_ci_upper_below_zero": true,
+        "H2_gated_vs_rgb_scoring_control_ci_upper_below_zero": false,
+        "H3_clean_overall_noninferior": true,
+        "H3_clean_foreground_noninferior": true,
+        "not_cross_seed_confirmation": true
+      }
+    },
+    "augmented": {
+      "clean_miou_pp": {
+        "baseline": {
+          "overall": 60.05622234358964,
+          "foreground": 55.36764637973619
+        },
+        "gated": {
+          "overall": 59.84788047359735,
+          "foreground": 55.134446195181475
+        },
+        "control": {
+          "overall": 59.501489343121015,
+          "foreground": 54.74824307358559
+        }
+      },
+      "comparisons": {
+        "gated-minus-baseline": {
+          "clean": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.0014575869161358812,
+              "ci95_pp": [
+                -0.04240143554337853,
+                0.02687603759765625
+              ]
+            },
+            "outside_counts": {
+              "pixels": 48230400,
+              "new": 50008,
+              "corrected": 50711,
+              "net": -703,
+              "disagree": 107135
+            }
+          },
+          "primary": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.005318642811800655,
+              "ci95_pp": [
+                -0.04981861596743542,
+                0.024017181924288474
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 48556,
+              "corrected": 51087,
+              "net": -2531,
+              "disagree": 105721
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.0038539671737820628,
+              "ci95_pp": [
+                -0.009421106674180784,
+                -0.0003188370174331271
+              ]
+            }
+          },
+          "random_occlusion": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.00660890226910828,
+              "ci95_pp": [
+                -0.05036285156317331,
+                0.021070998921586027
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 48400,
+              "corrected": 51545,
+              "net": -3145,
+              "disagree": 106372
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.0046167752894215874,
+              "ci95_pp": [
+                -0.011448881478481127,
+                0.0001472145650648348
+              ]
+            }
+          },
+          "gaussian": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.0027801518925374418,
+              "ci95_pp": [
+                -0.046020327934437645,
+                0.02643787109100066
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 48940,
+              "corrected": 50263,
+              "net": -1323,
+              "disagree": 105522
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.00131547625451885,
+              "ci95_pp": [
+                -0.006233325072291571,
+                0.0018623152917753856
+              ]
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point_pp": -0.2083418699922901,
+              "ci95_pp": [
+                -0.6061498326866895,
+                0.4010359213909417
+              ],
+              "noninferior_at_0_5_pp": false,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            },
+            "foreground": {
+              "point_pp": -0.23320018455471603,
+              "ci95_pp": [
+                -0.6842179277104915,
+                0.45011846821840706
+              ],
+              "noninferior_at_0_5_pp": false,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            }
+          }
+        },
+        "control-minus-baseline": {
+          "clean": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": 0.031138037420382167,
+              "ci95_pp": [
+                -0.01886326598720285,
+                0.06989585474917763
+              ]
+            },
+            "outside_counts": {
+              "pixels": 48230400,
+              "new": 59314,
+              "corrected": 44296,
+              "net": 15018,
+              "disagree": 108849
+            }
+          },
+          "primary": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": 0.031859321876613875,
+              "ci95_pp": [
+                -0.02048046896812877,
+                0.0739496621812879
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 59284,
+              "corrected": 44123,
+              "net": 15161,
+              "disagree": 108524
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": 0.0010317872858925804,
+              "ci95_pp": [
+                -0.004334912386708781,
+                0.007446848308154569
+              ]
+            }
+          },
+          "random_occlusion": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": 0.028394113659838183,
+              "ci95_pp": [
+                -0.025882266950107667,
+                0.06824049569272525
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 59338,
+              "corrected": 45826,
+              "net": 13512,
+              "disagree": 110512
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.0029608722725512136,
+              "ci95_pp": [
+                -0.009037223638656652,
+                0.0010849059425414363
+              ]
+            }
+          },
+          "gaussian": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": 0.033582469686047514,
+              "ci95_pp": [
+                -0.019099986608674208,
+                0.07678531856414839
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 59173,
+              "corrected": 43192,
+              "net": 15981,
+              "disagree": 107342
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": 0.002754935095326218,
+              "ci95_pp": [
+                -0.003388724701320207,
+                0.009989288800230055
+              ]
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point_pp": -0.5547330004686213,
+              "ci95_pp": [
+                -0.997039000557902,
+                0.14892583936019504
+              ],
+              "noninferior_at_0_5_pp": false,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            },
+            "foreground": {
+              "point_pp": -0.619403306150601,
+              "ci95_pp": [
+                -1.1173516720798602,
+                0.1668126165050339
+              ],
+              "noninferior_at_0_5_pp": false,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            }
+          }
+        },
+        "gated-minus-control": {
+          "clean": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.032595624336518046,
+              "ci95_pp": [
+                -0.05091745832380009,
+                -0.012866370879554476
+              ]
+            },
+            "outside_counts": {
+              "pixels": 48230400,
+              "new": 40815,
+              "corrected": 56536,
+              "net": -15721,
+              "disagree": 103174
+            }
+          },
+          "primary": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.03717796468841453,
+              "ci95_pp": [
+                -0.059811936801486006,
+                -0.015464268091214022
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 38939,
+              "corrected": 56631,
+              "net": -17692,
+              "disagree": 101064
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.004885754459674643,
+              "ci95_pp": [
+                -0.01200488805758043,
+                -2.772110808749702e-05
+              ]
+            }
+          },
+          "random_occlusion": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.03500301592894646,
+              "ci95_pp": [
+                -0.055617276887600264,
+                -0.013256185583337087
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 39769,
+              "corrected": 56426,
+              "net": -16657,
+              "disagree": 101994
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.0016559030168703736,
+              "ci95_pp": [
+                -0.005590501187091165,
+                0.0020702372451659673
+              ]
+            }
+          },
+          "gaussian": {
+            "candidate_minus_reference_net_error": {
+              "point_pp": -0.036362621578584955,
+              "ci95_pp": [
+                -0.059256462357766354,
+                -0.01399918974094642
+              ]
+            },
+            "outside_counts": {
+              "pixels": 47587328,
+              "new": 39029,
+              "corrected": 56333,
+              "net": -17304,
+              "disagree": 100996
+            },
+            "exploratory_difference_in_differences": {
+              "point_pp": -0.004070411349845067,
+              "ci95_pp": [
+                -0.010742816571893282,
+                0.0005914353033396433
+              ]
+            }
+          },
+          "clean_noninferiority": {
+            "overall": {
+              "point_pp": 0.3463911304763312,
+              "ci95_pp": [
+                0.05887222523528219,
+                0.6454563553477506
+              ],
+              "noninferior_at_0_5_pp": true,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            },
+            "foreground": {
+              "point_pp": 0.386203121595885,
+              "ci95_pp": [
+                0.06447848770401862,
+                0.7215484172301383
+              ],
+              "noninferior_at_0_5_pp": true,
+              "interpretation": "conditional on one trained seed and proxy visual groups"
+            }
+          }
+        }
+      },
+      "single_seed_screening_flags": {
+        "H1_gated_vs_baseline_ci_upper_below_zero": false,
+        "H2_gated_vs_rgb_scoring_control_ci_upper_below_zero": true,
+        "H3_clean_overall_noninferior": false,
+        "H3_clean_foreground_noninferior": false,
+        "not_cross_seed_confirmation": true
+      }
+    }
+  }
+}
