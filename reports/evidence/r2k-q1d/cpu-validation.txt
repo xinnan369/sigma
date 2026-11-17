@@ -1,0 +1,5 @@
+WSL2 Ubuntu 22.04, CUDA_VISIBLE_DEVICES empty, OPENBLAS_NUM_THREADS=1, OMP_NUM_THREADS=1, MKL_NUM_THREADS=1.
+python -u -m experiments.r2k_q1d.diagnose --root <MFNET_TRAIN_ASSETS> --local <ORIGINAL_Q1_RUN> --output reports/evidence/r2k-q1d/post-hoc.json
+POST-HOC PASS: accepted hashes, aligned logits and archived Holdout scores reproduced. Exit 0.
+WSL full CPU test suite: python -m pytest -q -rs
+116 passed, 3 skipped in 32.52s. Exit 0.
