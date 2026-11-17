@@ -1,0 +1,9 @@
+WSL2 Ubuntu 22.04. CUDA_VISIBLE_DEVICES empty; OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1.
+Before image execution: python -m pytest -q tests/test_r2k_q1v2.py
+3 passed in 1.57s. Exit 0.
+python -u -m experiments.r2k_q1v2.run --root <ORIGINAL_TRAINING_ASSETS> --local <P0_LOCAL> --evidence reports/evidence/r2k-q1v2-p0
+TRAIN-SIDE CPU COMPLETE. Exit 0.
+python -u -m experiments.r2k_q1v2.audit --repo . --local <P0_LOCAL> --evidence reports/evidence/r2k-q1v2-p0 --output reports/evidence/r2k-q1v2-p0/cpu-audit.json
+PASS. Exit 0.
+Full CPU suite: python -m pytest -q -rs
+119 passed, 3 skipped in 32.18s. Exit 0.

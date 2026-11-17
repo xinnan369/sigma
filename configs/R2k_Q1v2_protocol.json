@@ -1,0 +1,48 @@
+{
+  "version": "r2k-q1v2-p0-v1",
+  "parent": "configs/R2k_Q1_protocol.json",
+  "parent_sha256": "314826e1fe47905a9cf18216a1c861299c02c9203883b771a84ea024f733ab48",
+  "seed": 3407,
+  "roles": [
+    "fit",
+    "calibration"
+  ],
+  "families": [
+    "healthy",
+    "occlusion",
+    "gaussian"
+  ],
+  "blur_entirely_held_out": true,
+  "scales": [
+    3,
+    9,
+    21
+  ],
+  "grid": {
+    "stride": 8,
+    "offset": 4
+  },
+  "epsilon": 0.0001,
+  "minimum_coarse_gradient": 0.003,
+  "observability_policy": "indicator only; every grid point retained",
+  "logistic_parameters": 7,
+  "platt_parameters": 2,
+  "negative_constant": "fit/calibration prevalence: use calibration grid prevalence for reporting",
+  "ablation": "replace fine/coarse gradient ratio and high/mid energy ratio by local mean and local variance; same remaining features and descriptor computation",
+  "external_minimum": {
+    "groups": 40,
+    "per_daynight": 15,
+    "positive_blur_groups": 15
+  },
+  "external_gate": {
+    "ap_delta_ci_low_gt": 0,
+    "balanced_brier_delta_ci_high_lt": 0,
+    "healthy_fpr_max": 0.07,
+    "day_night_low_texture_fpr_max": 0.1,
+    "recall_min": 0.2,
+    "healthy_calibration_fpr_target": 0.05,
+    "bootstrap_group_draws": 10000,
+    "alpha": 0.05
+  },
+  "external_status": "BLOCKED_NO_INDEPENDENT_DATA"
+}
