@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "train-side engineering only",
+  "images_fit": 376,
+  "images_calibration": 124,
+  "groups_fit": 205,
+  "groups_calibration": 69,
+  "holdout_or_blur_reads": 0,
+  "paired_rgb_verified": true,
+  "checked_heads": 5,
+  "calibration_ap_brier_and_threshold_recomputed": true,
+  "frozen_parameters_sha256": "fbc78757c2711558623d4c11f7efdc3693c70bb1711e7b5e105de63b161b6e08"
+}
