@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "read_only": true,
+  "fit_calibration_family_isolation": true,
+  "train_heldout_group_isolation": true,
+  "parameters_each": 7,
+  "verified_holdout_rows": 381,
+  "calibration_fpr": {
+    "thermal": 0.049400201612903226,
+    "rgb": 0.0,
+    "shuffle": 0.0
+  },
+  "bootstrap_replicates_verified": 10000,
+  "metrics": [
+    "AUPRC",
+    "Brier",
+    "recall",
+    "healthy FPR",
+    "paired differences"
+  ],
+  "seconds": 5.936498502999996,
+  "peak_rss_kib": 444816,
+  "exit": 0
+}
