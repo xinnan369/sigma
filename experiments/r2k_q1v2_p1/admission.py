@@ -15,6 +15,9 @@ PINS = {
 }
 ARMS = ('thermal', 'rgb', 'q1', 'ablated', 'shuffle', 'constant')
 HASH = re.compile(r'[0-9a-f]{64}')
+INPUT_SHAPE = (480, 640)
+PRIMARY = 'PRIMARY_SYNTHETIC_BLUR_READY'
+SECONDARY = 'SECONDARY_PHYSICAL_DEFOCUS_READY'
 
 
 def require(condition, message):
@@ -59,22 +62,63 @@ def timestamp(s):
     return parsed
 
 
-def file_record(file, root):
+def file_record(file, root, image_arm=None):
     name=file['path']
     rel=PurePosixPath(name)
     require(bool(name) and not rel.is_absolute() and '.'!=name and '..' not in rel.parts
             and ':' not in name and '\\' not in name and bool(HASH.fullmatch(file['sha256'])),
             'Unsafe or malformed file manifest')
     if root is not None:
-        target=(root/rel).resolve(strict=True)
-        require(target.is_relative_to(root.resolve()) and target.is_file() and sha(target)==file['sha256'],
+        target=(root/rel).resolve()
+        require(target.is_relative_to(root.resolve()) and target.is_file(),
                 'File missing, outside archive, or different SHA256')
+        payload=target.read_bytes()
+        require(hashlib.sha256(payload).hexdigest()==file['sha256'], 'File SHA256 differs')
+        if image_arm is not None:
+            check_image(payload, image_arm)
     return file['sha256']
+
+
+def check_image(payload, arm):
+    import cv2
+    import numpy as np
+
+    # Inspect the native representation. Grayscale decoding alone could silently downcast uint16.
+    image=cv2.imdecode(np.frombuffer(payload,dtype=np.uint8),cv2.IMREAD_UNCHANGED)
+    require(image is not None and image.dtype==np.uint8 and image.shape[:2]==INPUT_SHAPE
+            and (image.ndim==2 or (arm=='rgb' and image.ndim==3 and image.shape[2]==3)),
+            f'PROTOCOL_CHANGE_REQUIRED: Incompatible P0 {arm} format; expected native 8-bit 640x480 on the paired grid')
+
+
+def defocus_issues(evidence, by_id, historical, root):
+    if not isinstance(evidence,dict) or evidence.get('controlled') is not True:
+        return ['controlled_defocus_evidence_missing']
+    try:
+        file_record(evidence['instrument_log'],root)
+        pairs=evidence['pairs']
+        require(isinstance(pairs,list) and pairs,'Missing instrument-labelled pairs')
+        seen=set()
+        for pair in pairs:
+            frame=pair['intact_id']
+            require(frame in by_id and frame not in seen and pair['sensor']==by_id[frame]['sensor']
+                    and pair['intact_label']=='intact' and pair['defocus_label']=='controlled_defocus'
+                    and isinstance(pair['log_entry'],str) and pair['log_entry'].strip()
+                    and isinstance(pair['intact_setting'],str) and pair['intact_setting'].strip()
+                    and isinstance(pair['defocus_setting'],str) and pair['defocus_setting'].strip()
+                    and pair['intact_setting']!=pair['defocus_setting'],
+                    'Invalid instrument-labelled pair')
+            seen.add(frame)
+            digest=file_record(pair['defocus_thermal'],root,'thermal')
+            require(digest!=by_id[frame]['thermal']['sha256'] and digest not in historical,
+                    'Defocus bytes match an intact or historical input')
+    except (KeyError,TypeError,ValueError,OSError):
+        return ['invalid_physical_defocus_evidence']
+    return []
 
 
 def preflight(metadata, historical, root=None):
     """Return evidence readiness; a human reviewer still approves any acquisition."""
-    require(metadata['schema']=='rgbt-p1-v1' and metadata['source_url'].startswith('https://'), 'Source metadata differs')
+    require(metadata['schema']=='rgbt-p1r-v1' and metadata['source_url'].startswith('https://'), 'Source metadata differs')
     rights=metadata['rights']
     review=metadata['duplicate_review']
     records=metadata['frames']
@@ -85,7 +129,7 @@ def preflight(metadata, historical, root=None):
                 'Frame identifiers or attestations are missing')
         require(row['illumination'] in ('day','night') and row['thermal_state']=='intact'
                 and type(row['supports_frozen_blur']) is bool
-                and row['registration'] in ('registered','calibrated'),
+                and row['registration']=='registered',
                 'Invalid capture lighting, state, alignment or blur eligibility')
         timestamp(row['capture_time'])
     by_id={r['id']:r for r in records}
@@ -94,7 +138,8 @@ def preflight(metadata, historical, root=None):
     for name in ('research','local_derivatives','local_audit'):
         if rights.get(name) is not True:
             issues.append('unverified_right:'+name)
-    if not rights.get('terms_url') or not rights.get('review_receipt'):
+    if (not isinstance(rights.get('terms_url'),str) or not rights['terms_url'].startswith('https://')
+            or not isinstance(rights.get('review_receipt'),str) or not rights['review_receipt'].strip()):
         issues.append('missing_terms_or_authorized_review')
     if root is None:
         issues.append('original_bytes_not_verified')
@@ -102,8 +147,9 @@ def preflight(metadata, historical, root=None):
         issues.append('near_duplicate_review_pending')
     if review.get('historical_scope')!='all_available_mfnet_and_historical_rgbt':
         issues.append('historical_scope_pending')
-    if not metadata.get('physical_defocus_receipt'):
-        issues.append('physical_defocus_secondary_pending')
+    if metadata.get('input_representation')!='provider_native_p0_grid':
+        issues.append('PROTOCOL_CHANGE_REQUIRED')
+    read_root=root if not issues else None
     grouped={}
     file_groups={}
     overlap=set(review.get('historical_matches',[]))
@@ -116,7 +162,9 @@ def preflight(metadata, historical, root=None):
             if grouped.setdefault(identity,g)!=g:
                 issues.append('split_'+key+':'+r[key])
         for arm in ('rgb','thermal'):
-            h=file_record(r[arm],root)
+            # Resolve and hash originals only when the submitted evidence declares rights
+            # and native input compatibility. The reviewer must verify those declarations.
+            h=file_record(r[arm],read_root,arm)
             if h in historical:
                 overlap.add(r['id'])
             if file_groups.setdefault(h,g)!=g:
@@ -134,7 +182,11 @@ def preflight(metadata, historical, root=None):
             'positive_blur_groups':len({r['group'] for r in records if r['supports_frozen_blur']})}
     minima={'groups':40,'day':15,'night':15,'positive_blur_groups':15}
     issues.extend('support_below_minimum:'+k for k,v in counts.items() if v<minima[k])
+    secondary=defocus_issues(metadata.get('physical_defocus'),by_id,historical,read_root if not issues else None)
     return {'status':'BLOCKED' if issues else 'READY_FOR_INDEPENDENT_REVIEW','support':counts,
+            'gates':{PRIMARY:not issues,SECONDARY:not issues and not secondary},
+            'secondary_issues':secondary,
+            'scientific_admission':'PENDING_INDEPENDENT_REVIEW',
             'required_exclusions':sorted(overlap),'issues':sorted(set(issues)),
             'real_quality_evaluation':'NOT_RUN'}
 

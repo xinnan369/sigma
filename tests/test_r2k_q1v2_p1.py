@@ -1,16 +1,27 @@
-from copy import deepcopy
 import hashlib
 
+import cv2
 import numpy as np
 import pytest
 
-from experiments.r2k_q1v2_p1.admission import ARMS, archive_hashes, preflight
+from experiments.r2k_q1v2_p1.admission import ARMS, PRIMARY, SECONDARY, archive_hashes, preflight
 from experiments.r2k_q1v2_p1.statistics import decision, quantities, summarize_pairs
 
 
+def save_fixture(root, name, payload):
+    (root/name).write_bytes(payload)
+    return {'path':name,'sha256':hashlib.sha256(payload).hexdigest()}
+
+
+def png(value, shape=(480,640), dtype=np.uint8):
+    ok,encoded=cv2.imencode('.png',np.full(shape,value,dtype=dtype))
+    assert ok
+    return encoded.tobytes()
+
+
 def metadata(tmp_path):
-    doc={'schema':'rgbt-p1-v1','source_url':'https://example.invalid/synthetic',
-         'physical_defocus_receipt':'synthetic-log',
+    doc={'schema':'rgbt-p1r-v1','source_url':'https://example.invalid/synthetic',
+         'input_representation':'provider_native_p0_grid',
          'rights':{'research':True,'local_derivatives':True,'local_audit':True,
                    'terms_url':'https://example.invalid/terms','review_receipt':'synthetic-only'},
          'duplicate_review':{'complete':True,'receipt':'synthetic-only','method':'test edges',
@@ -21,11 +32,8 @@ def metadata(tmp_path):
              'capture_time':'2026-01-01T16:00:00+00:00','illumination':'day' if i<20 else 'night',
              'illumination_receipt':'synthetic-log','alignment_receipt':'synthetic-log',
              'registration':'registered','thermal_state':'intact','supports_frozen_blur':True}
-        for a in ('rgb','thermal'):
-            p=tmp_path/f'{i}-{a}.bin'
-            payload=f'generated fixture {i} {a}'.encode()
-            p.write_bytes(payload)
-            row[a]={'path':p.name,'sha256':hashlib.sha256(payload).hexdigest()}
+        row['rgb']=save_fixture(tmp_path,f'{i}-rgb.png',png(i,(480,640,3)))
+        row['thermal']=save_fixture(tmp_path,f'{i}-thermal.png',png(i+40))
         doc['frames'].append(row)
     return doc
 
@@ -34,10 +42,13 @@ def test_metadata_counts_and_byte_overlap(tmp_path):
     x=metadata(tmp_path)
     ready=preflight(x,archive_hashes(),tmp_path)
     assert ready['status']=='READY_FOR_INDEPENDENT_REVIEW'
+    assert ready['scientific_admission']=='PENDING_INDEPENDENT_REVIEW'
+    assert ready['gates']=={PRIMARY:True,SECONDARY:False}
     assert ready['support']=={'groups':40,'day':20,'night':20,'positive_blur_groups':40}
     match=x['frames'][0]['rgb']['sha256']
     out=preflight(x,{match},tmp_path)
     assert out['status']=='BLOCKED' and out['required_exclusions']==['f0']
+    assert out['gates']=={PRIMARY:False,SECONDARY:False}
     assert preflight(x,set())['status']=='BLOCKED'
 
 
@@ -62,6 +73,44 @@ def test_manifest_checks_actual_bytes_and_traversal(tmp_path):
     x['frames'][0]['rgb']['path']='../secret'
     with pytest.raises(ValueError,match='Unsafe'):
         preflight(x,set(),tmp_path)
+
+
+def test_physical_defocus_evidence_is_verified_separately(tmp_path):
+    x=metadata(tmp_path)
+    x['physical_defocus_receipt']='self-attested'
+    assert not preflight(x,set(),tmp_path)['gates'][SECONDARY]
+    x['physical_defocus']={
+        'controlled':True,'instrument_log':save_fixture(tmp_path,'instrument.csv',b'fixture settings'),
+        'pairs':[{'intact_id':'f0','sensor':'fixture','intact_label':'intact',
+                  'defocus_label':'controlled_defocus','log_entry':'fixture-row',
+                  'intact_setting':'A','defocus_setting':'B',
+                  'defocus_thermal':save_fixture(tmp_path,'defocus.png',png(111))}],
+    }
+    assert preflight(x,set(),tmp_path)['gates']=={PRIMARY:True,SECONDARY:True}
+    (tmp_path/'instrument.csv').write_bytes(b'changed')
+    assert preflight(x,set(),tmp_path)['gates']=={PRIMARY:True,SECONDARY:False}
+    x['rights'].pop('local_audit')
+    assert preflight(x,set(),tmp_path)['gates']=={PRIMARY:False,SECONDARY:False}
+
+
+@pytest.mark.parametrize('payload',[png(500,dtype=np.uint16),png(20,(512,640)),png(20,(480,640,3))])
+def test_native_thermal_rejects_format_even_with_valid_hash(tmp_path,payload):
+    x=metadata(tmp_path)
+    x['frames'][0]['thermal']=save_fixture(tmp_path,'unsupported.png',payload)
+    with pytest.raises(ValueError,match='Incompatible P0 thermal'):
+        preflight(x,set(),tmp_path)
+
+
+def test_support_and_representation_gate(tmp_path):
+    x=metadata(tmp_path)
+    x['frames']=x['frames'][:34]
+    for row in x['frames'][14:]:
+        row['supports_frozen_blur']=False
+    out=preflight(x,set(),tmp_path)
+    assert set(out['issues'])=={'support_below_minimum:groups','support_below_minimum:night',
+                               'support_below_minimum:positive_blur_groups'}
+    x['input_representation']='resize_and_requantize'
+    assert 'PROTOCOL_CHANGE_REQUIRED' in preflight(x,set(),tmp_path)['issues']
 
 
 def synthetic_pairs():
