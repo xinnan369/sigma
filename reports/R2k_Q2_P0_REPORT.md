@@ -32,3 +32,14 @@ python -m experiments.r2k_q2.synthetic_cases
 ```
 
 专项单测 **4 通过**，上述命令退出码均为 0。[合成计数和统计 JSON](evidence/r2k-q2-p0/synthetic.json)只含数值，无图像。下一阶段需要独立验收，冻结采集身份和执行工件后才可提出 Fit 计划；本 PR 不开始后续阶段。
+
+## P0R 独立审查整改
+
+- `Q2_P0 = ENGINEERING_PASS`
+- `Q2_CONFIRMATORY = BLOCKED`
+
+预注册 v1.1 把两个问题分开：主比较使用与候选共享 D 监督位置的 **O-matched** 普通头；现实部署比较使用所有设备状态有效点监督 D 的 **Full-support** 普通头。主终点为真实参考 O=1 支持上的候选减 O-matched AUROC；相对 Full-support 的全队列选择性风险仍是必要部署闸门。参考 O 不进入任何推理输入。两组普通头的架构、数据顺序、优化器步数和 Calibration 规则一致，候选也遵守共同训练及计算预算。
+
+冻结 U 的五折组外错误标签、O=0 处理、全 Fit 重训后的共享层冻结、Calibration 兼容性检查，以及健康和失焦两种真实状态的覆盖审计。未进行实际拟合或数据准入。原七组反例、数学证明与历史证据未修改。
+
+Windows CPU：`python -m pytest -q tests/test_r2k_q2_synthetic.py tests/test_r2k_q2_protocol.py`，**12 通过，退出码 0**。新增检查全部用合成标签和虚拟组，覆盖五折互斥、O=0 监督、推理输入隔离、分层权重、预算与无接受样本时风险未定义。本结果仅验收工程协议检查，等待独立科研审查；未启动 Q2-P1 或 GPU。
