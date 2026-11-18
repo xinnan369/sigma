@@ -4,7 +4,7 @@
   "metrics": {
     "q1": {
       "threshold_bin": 7,
-      "healthy_fpr": 0.2701236979166667,
+      "clean_input_flag_rate": 0.2701236979166667,
       "blur": {
         "all": {
           "ap": 0.02504799418681243,
@@ -52,7 +52,7 @@
     },
     "thermal": {
       "threshold_bin": 6,
-      "healthy_fpr": 0.13728841145833334,
+      "clean_input_flag_rate": 0.13728841145833334,
       "blur": {
         "all": {
           "ap": 0.028178361591940235,
@@ -100,7 +100,7 @@
     },
     "rgb": {
       "threshold_bin": 7,
-      "healthy_fpr": 0.00337890625,
+      "clean_input_flag_rate": 0.00337890625,
       "blur": {
         "all": {
           "ap": 0.030921511769384617,
@@ -149,7 +149,7 @@
   },
   "roster_sha256": "6423d4d805e42728b6a147dd5b40da2b626a21d6c51dd4ae85ee9f94a3796e9e",
   "protocol_sha256": "63ee875064abc4664ba13bce4f78f23f7e0b92247d9e0f836537867183a14346",
-  "per_image_sha256": "7e07a92fbeb2a8f008145a8ef22f9eb1ce869392da176216da2901b376c86705",
+  "per_image_sha256": "2ef7161332fb550dd62f0128a2047cc4e7b6d955301c046a771fb2a9bbafa043",
   "opencv": "4.9.0",
   "numpy": "1.26.4",
   "python": "3.11.11",

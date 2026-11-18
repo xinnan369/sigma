@@ -79,3 +79,19 @@ def test_history_scope_refuses_old_holdout_and_validation():
     p['partitions']['holdout']['images']['a']='group'
     with pytest.raises(ValueError):
         fit_calibration_ids(p,[])
+
+def test_archived_clean_input_flags_are_counts_not_health_labels():
+    import hashlib
+    base=pilot.ROOT/'reports/evidence/llvip-pilot'
+    for folder in (base,base/'p4'):
+        stats=pilot.read(folder/'results.json')
+        ledger=(folder/'per-image.jsonl').read_bytes()
+        assert hashlib.sha256(ledger).hexdigest()==stats['per_image_sha256']
+        rows=[__import__('json').loads(line) for line in ledger.splitlines()]
+        assert len(rows)==64 and sum(len(r['blur']) for r in rows)==128
+        for arm, result in stats['metrics'].items():
+            flagged=sum(r['clean_input_flagged'][arm] for r in rows)
+            points=sum(r['clean_input_points'] for r in rows)
+            assert points==64*4800
+            assert result['clean_input_flag_rate']==flagged/points
+            assert 'healthy_fpr' not in result

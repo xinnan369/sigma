@@ -1,0 +1,25 @@
+{
+  "R2k_Q1v2_LLVIP_PILOT": "COMPLETED_NEGATIVE",
+  "R2k_Q1v2_CONFIRMATORY": "BLOCKED",
+  "archive_scope": "Metadata-only migration; neither run was repeated",
+  "original_commit": "1524cbd916ee808975c5bb534353ecd7566b2638",
+  "original_p4_execution_protocol_sha256": "63ee875064abc4664ba13bce4f78f23f7e0b92247d9e0f836537867183a14346",
+  "archival_protocol_sha256": "cb3e430636068707e65d71b1edc4414458df2eecfa9d149a419c0670e0af9f44",
+  "original_evidence_file_sha256": {
+    "reports/evidence/llvip-pilot/per-image.jsonl": "77641acc069d3d01de46db515c9aa0420d961e45a6f37bb26fa6aa4775acad80",
+    "reports/evidence/llvip-pilot/results.json": "0eb99a72b573d149cb90e3909c2eba7b7f34f6d36933e3d14964e6b06be8e9f4",
+    "reports/evidence/llvip-pilot/p4/per-image.jsonl": "7e07a92fbeb2a8f008145a8ef22f9eb1ce869392da176216da2901b376c86705",
+    "reports/evidence/llvip-pilot/p4/results.json": "b282fc05714f773a6662279f379a7ce8f3d0ab2c28936d94899b564fe8d0f0ba"
+  },
+  "archival_evidence_file_sha256": {
+    "reports/evidence/llvip-pilot/per-image.jsonl": "1bf9c10600bbef8e0e79ceb7b85c5d8c568bed798058c85eac2be9b8590ff137",
+    "reports/evidence/llvip-pilot/results.json": "7d1e5ce1af6e0843c0287f2931b899758b6d32bdbccf7d6e2e67d9b3f5413d41",
+    "reports/evidence/llvip-pilot/p4/per-image.jsonl": "2ef7161332fb550dd62f0128a2047cc4e7b6d955301c046a771fb2a9bbafa043",
+    "reports/evidence/llvip-pilot/p4/results.json": "c4d2baca32b50fe0e1f1454a605533c764aa2ebb9a95d6a047e374c2055e209f"
+  },
+  "field_renames": {
+    "healthy_fpr": "clean_input_flag_rate",
+    "healthy_flagged": "clean_input_flagged",
+    "healthy_points": "clean_input_points"
+  }
+}

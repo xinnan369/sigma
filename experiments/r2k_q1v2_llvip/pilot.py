@@ -109,9 +109,9 @@ def evaluate(root, roster, old, p0, heads):
         clean={a:timed_predict(rgb if a=='rgb' else thermal,a,p0,heads) for a in heads}
         healthy={a:pair[0] for a,pair in clean.items()}
         record={'id':i,'adapted_sha256':{'rgb':sha(rgb.tobytes()),'thermal':sha(thermal.tobytes())},
-                'healthy_flagged':{a:int((p>=heads[a][2]).sum()) for a,p in healthy.items()},
+                'clean_input_flagged':{a:int((p>=heads[a][2]).sum()) for a,p in healthy.items()},
                 'clean_inference_ns':{a:pair[1] for a,pair in clean.items()},
-                'healthy_points':int(thermal[model.grid(thermal)].size),'blur':[]}
+                'clean_input_points':int(thermal[model.grid(thermal)].size),'blur':[]}
         for tier in range(2):
             changed, mask, _, _=model.degrade(thermal,'blur',old,i,tier)
             x,y,x1,y1=roi_coordinates(old,i,tier)
@@ -159,7 +159,7 @@ def summarize(rows, heads):
                        'tied_difference_fraction':float(delta[255]/n),
                        'prediction_bins_changed':sum(b['changed_output_bins'] for b in selected)}
         result[a]={'threshold_bin':threshold,
-                   'healthy_fpr':sum(r['healthy_flagged'][a] for r in rows)/sum(r['healthy_points'] for r in rows),
+                   'clean_input_flag_rate':sum(r['clean_input_flagged'][a] for r in rows)/sum(r['clean_input_points'] for r in rows),
                    'blur':out}
     return result
 

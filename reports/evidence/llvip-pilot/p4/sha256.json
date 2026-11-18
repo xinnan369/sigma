@@ -1,8 +1,8 @@
 {
   "reports/evidence/llvip-pilot/p4/roster.json": "6423d4d805e42728b6a147dd5b40da2b626a21d6c51dd4ae85ee9f94a3796e9e",
-  "reports/evidence/llvip-pilot/p4/per-image.jsonl": "7e07a92fbeb2a8f008145a8ef22f9eb1ce869392da176216da2901b376c86705",
-  "reports/evidence/llvip-pilot/p4/results.json": "b282fc05714f773a6662279f379a7ce8f3d0ab2c28936d94899b564fe8d0f0ba",
+  "reports/evidence/llvip-pilot/p4/per-image.jsonl": "2ef7161332fb550dd62f0128a2047cc4e7b6d955301c046a771fb2a9bbafa043",
+  "reports/evidence/llvip-pilot/p4/results.json": "c4d2baca32b50fe0e1f1454a605533c764aa2ebb9a95d6a047e374c2055e209f",
   "reports/evidence/llvip-pilot/p4/run.log": "1ade2a85a0f475033fe114d9572539d7673eb8f5390a32875c603736e1fdbdce",
   "reports/evidence/llvip-pilot/p4-history.json": "b7b904e6fbd2d9d97da0a927c9935ef713a8f0ed4676a835392ebb693b35e577",
-  "configs/R2k_Q1v2_LLVIP_PILOT.json": "63ee875064abc4664ba13bce4f78f23f7e0b92247d9e0f836537867183a14346"
+  "configs/R2k_Q1v2_LLVIP_PILOT.json": "cb3e430636068707e65d71b1edc4414458df2eecfa9d149a419c0670e0af9f44"
 }
