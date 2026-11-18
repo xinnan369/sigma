@@ -1,0 +1,68 @@
+{
+  "scope": "EXPLORATORY_LLVIP_PILOT",
+  "seed": 3407,
+  "pairs": 64,
+  "partition": "test",
+  "roster_order": "lexical SHA256 of UTF-8 seed/llvip-test/image_id; take first 64 valid pairs",
+  "opencv_version": "4.9.0",
+  "conversion": {
+    "source_wh": [
+      1280,
+      1024
+    ],
+    "decode": "IMREAD_COLOR | IMREAD_IGNORE_ORIENTATION (uint8 BGR)",
+    "crop_xyxy_half_open": [
+      0,
+      32,
+      1280,
+      992
+    ],
+    "resize_wh": [
+      640,
+      480
+    ],
+    "interpolation": "INTER_AREA",
+    "color_after_resize": "COLOR_BGR2GRAY",
+    "conversion_source_sha256_lf": "0002d6a9ff6bb03dcf489cfeb632c41a1119cf04c28e57f0d81ae02bd3bf783d"
+  },
+  "blur": {
+    "tiers": [
+      [
+        7,
+        1.6
+      ],
+      [
+        17,
+        4.0
+      ]
+    ],
+    "roi_size": 96,
+    "margin": 12,
+    "protocol": "Frozen Q1 degrade: RNG keyed with seed, id, blur, tier; use full-frame Gaussian then paste only ROI"
+  },
+  "manifest_sha256": "e99ac4e7f3058c9f27c13c7913a029f3a76896d770f07aab8d4243d9a9979198",
+  "parent_protocol_sha256": {
+    "q1": "314826e1fe47905a9cf18216a1c861299c02c9203883b771a84ea024f733ab48",
+    "p0": "7207e245def001e4f7ad5ef31e4e138a6704b5f682bb2b630c64533e641d92bd"
+  },
+  "assets_sha256": {
+    "q1": "0d8a9bfd4cf190f19525e3e685a8f12d62ce81d89422d726613380267ebaba6e",
+    "p0": "fbc78757c2711558623d4c11f7efdc3693c70bb1711e7b5e105de63b161b6e08"
+  },
+  "source_sha256_lf": {
+    "experiments/r2k_q1/__init__.py": "71fcfe026a5d8497086247062c35b21fa6c9681532329dd7b4f6a293180027a9",
+    "experiments/r2k_q1/audit.py": "15081160b30b8a3a606a25056725d9373f99b7d9d347f0dea64294f4565d6795",
+    "experiments/r2k_q1/metrics.py": "28c55e1915a89d11e3dfe5ece8c5eafb0f02b3f3591a4719da0e5e5225142160",
+    "experiments/r2k_q1/model.py": "faf9cd57cfe2aa3bfdbb65fc2572f674f355fb16d0c0750402e773a614869983",
+    "experiments/r2k_q1/protocol.py": "bb62c314a66709c4d03218256d784fbd7c17252455ec5dda5b51a4cbb06fc3e2",
+    "experiments/r2k_q1/run.py": "d40d6f835e1e82528f18ea95d768f610a7fb8248e2eee9438b2153e1b50520ee",
+    "experiments/r2k_q1v2/__init__.py": "f223ad86a4c3f0282ecfe5acccddfa5633b89a90487a4d347085becaa338397f",
+    "experiments/r2k_q1v2/audit.py": "c7f4ed10f0214b5383898c97c85a6b04d565ae4d79ea29b51e78d97b80e7a66a",
+    "experiments/r2k_q1v2/features.py": "8458438becfc917f8a4945e046fad3d2dafa5e76ce87599a3b225b7a02186294",
+    "experiments/r2k_q1v2/run.py": "3c5ef8024a6079a9e35b5d44806974ea98079ddeed5e5982dc9f8204f6f81342",
+    "experiments/r2k_q1v2_llvip/pilot.py": "0002d6a9ff6bb03dcf489cfeb632c41a1119cf04c28e57f0d81ae02bd3bf783d",
+    "experiments/r2k_q1v2_llvip/scan.py": "456650cce8c2641d58296a4fe401541be7787fb3c6ad352c6f719a8f6c98a976",
+    "experiments/r2k_q1v2_llvip/__init__.py": "ce3248a995d967278fd4453a623a7afcdbe70d075dd076c89237bea3bd4cf733"
+  },
+  "statistics": "Descriptive grid aggregates only; no confidence intervals/significance or confirmatory gate"
+}

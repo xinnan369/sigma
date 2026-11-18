@@ -1,0 +1,160 @@
+{
+  "scope": "EXPLORATORY_LLVIP_PILOT",
+  "pairs": 64,
+  "metrics": {
+    "q1": {
+      "threshold_bin": 7,
+      "healthy_fpr": 0.2701236979166667,
+      "blur": {
+        "all": {
+          "ap": 0.02504799418681243,
+          "brier": 0.10827699900579106,
+          "balanced_brier": 0.509082738824328,
+          "positive_fraction": 0.03,
+          "roi_points": 18432,
+          "points": 614400,
+          "roi_recall": 0.1513129340277778,
+          "mean_roi_bad_probability_change": -0.06368527879901961,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.03624131944444445,
+          "tied_difference_fraction": 0.5528428819444444,
+          "prediction_bins_changed": 9348
+        },
+        "tier0": {
+          "ap": 0.026543156902084683,
+          "brier": 0.10701003615396322,
+          "balanced_brier": 0.49442526382699914,
+          "positive_fraction": 0.03,
+          "roi_points": 9216,
+          "points": 307200,
+          "roi_recall": 0.2156032986111111,
+          "mean_roi_bad_probability_change": -0.06119706563180828,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.03797743055555555,
+          "tied_difference_fraction": 0.5518663194444444,
+          "prediction_bins_changed": 4685
+        },
+        "tier1": {
+          "ap": 0.02449054508987856,
+          "brier": 0.10954396185761887,
+          "balanced_brier": 0.5237402138216565,
+          "positive_fraction": 0.03,
+          "roi_points": 9216,
+          "points": 307200,
+          "roi_recall": 0.08702256944444445,
+          "mean_roi_bad_probability_change": -0.06617349196623094,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.034505208333333336,
+          "tied_difference_fraction": 0.5538194444444444,
+          "prediction_bins_changed": 4663
+        }
+      }
+    },
+    "thermal": {
+      "threshold_bin": 6,
+      "healthy_fpr": 0.13728841145833334,
+      "blur": {
+        "all": {
+          "ap": 0.028178361591940235,
+          "brier": 0.09691307785266884,
+          "balanced_brier": 0.5154844543026175,
+          "positive_fraction": 0.03,
+          "roi_points": 18432,
+          "points": 614400,
+          "roi_recall": 0.057779947916666664,
+          "mean_roi_bad_probability_change": -0.035211567265795204,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.059136284722222224,
+          "tied_difference_fraction": 0.7794053819444444,
+          "prediction_bins_changed": 5134
+        },
+        "tier0": {
+          "ap": 0.028783584609778604,
+          "brier": 0.09620936398660772,
+          "balanced_brier": 0.5104805507758603,
+          "positive_fraction": 0.03,
+          "roi_points": 9216,
+          "points": 307200,
+          "roi_recall": 0.06803385416666667,
+          "mean_roi_bad_probability_change": -0.04182070397603486,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.006618923611111111,
+          "tied_difference_fraction": 0.8018663194444444,
+          "prediction_bins_changed": 2304
+        },
+        "tier1": {
+          "ap": 0.027854063109545288,
+          "brier": 0.09761679171872999,
+          "balanced_brier": 0.5204883578293749,
+          "positive_fraction": 0.03,
+          "roi_points": 9216,
+          "points": 307200,
+          "roi_recall": 0.047526041666666664,
+          "mean_roi_bad_probability_change": -0.028602430555555555,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.11165364583333333,
+          "tied_difference_fraction": 0.7569444444444444,
+          "prediction_bins_changed": 2830
+        }
+      }
+    },
+    "rgb": {
+      "threshold_bin": 7,
+      "healthy_fpr": 0.00337890625,
+      "blur": {
+        "all": {
+          "ap": 0.030921511769384617,
+          "brier": 0.02916072013568499,
+          "balanced_brier": 0.4783654382319966,
+          "positive_fraction": 0.03,
+          "roi_points": 18432,
+          "points": 614400,
+          "roi_recall": 0.004665798611111111,
+          "mean_roi_bad_probability_change": 0.0,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.0,
+          "tied_difference_fraction": 1.0,
+          "prediction_bins_changed": 0
+        },
+        "tier0": {
+          "ap": 0.030011606484136342,
+          "brier": 0.029167587986992184,
+          "balanced_brier": 0.4784775067065744,
+          "positive_fraction": 0.03,
+          "roi_points": 9216,
+          "points": 307200,
+          "roi_recall": 0.004557291666666667,
+          "mean_roi_bad_probability_change": 0.0,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.0,
+          "tied_difference_fraction": 1.0,
+          "prediction_bins_changed": 0
+        },
+        "tier1": {
+          "ap": 0.031923200451060854,
+          "brier": 0.0291538522843778,
+          "balanced_brier": 0.47825336975741883,
+          "positive_fraction": 0.03,
+          "roi_points": 9216,
+          "points": 307200,
+          "roi_recall": 0.004774305555555556,
+          "mean_roi_bad_probability_change": 0.0,
+          "median_roi_bad_probability_change": 0.0,
+          "positive_difference_fraction": 0.0,
+          "tied_difference_fraction": 1.0,
+          "prediction_bins_changed": 0
+        }
+      }
+    }
+  },
+  "roster_sha256": "d82858c8a1d2e609cbe4143486f102a5345ca686d3c19d403e8396e5d6b10c7f",
+  "protocol_sha256": "27eb3032e7976bd3b110e97582eebc1de2cc642bcad89bd8212540f7fe5e5e87",
+  "per_image_sha256": "77641acc069d3d01de46db515c9aa0420d961e45a6f37bb26fa6aa4775acad80",
+  "opencv": "4.9.0",
+  "numpy": "1.26.4",
+  "python": "3.11.11",
+  "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+  "opencv_threads": 1,
+  "seconds": 5.452415784000003,
+  "peak_rss_kib": 156764
+}
