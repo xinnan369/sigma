@@ -1,0 +1,710 @@
+{
+  "scope": "EXPLORATORY_LLVIP_PILOT",
+  "protocol_sha256": "63ee875064abc4664ba13bce4f78f23f7e0b92247d9e0f836537867183a14346",
+  "pairs": [
+    {
+      "id": "230384",
+      "rgb": {
+        "path": "visible/test/230384.jpg",
+        "sha256": "a64cd9dd43d9382a4ae42d9f7459ef25f79ac636d5f3f0fcb8d1d3d0e11dc13b"
+      },
+      "thermal": {
+        "path": "infrared/test/230384.jpg",
+        "sha256": "449764a2a42eccfc3fabeb4c89a831ddfd2a36d41ffdc2d112e6f6408e46045c"
+      }
+    },
+    {
+      "id": "190305",
+      "rgb": {
+        "path": "visible/test/190305.jpg",
+        "sha256": "a2689f7688d18bdbfa90b3b275a43c46a5f00e348d6bde8f9ab5180bda7519f2"
+      },
+      "thermal": {
+        "path": "infrared/test/190305.jpg",
+        "sha256": "cd9c54d48b957cf414418a93b48d96ed15dfb62e90792eadc2b28daab5ade142"
+      }
+    },
+    {
+      "id": "210076",
+      "rgb": {
+        "path": "visible/test/210076.jpg",
+        "sha256": "7acfb185aeb82db2e981b7d405b98ace58e1a7ac39ec450f13a958ca1189a72c"
+      },
+      "thermal": {
+        "path": "infrared/test/210076.jpg",
+        "sha256": "6a5c54520d2b8233ce685af81bf597806a1e2bcb23a315f7e2d19c5007695aba"
+      }
+    },
+    {
+      "id": "230035",
+      "rgb": {
+        "path": "visible/test/230035.jpg",
+        "sha256": "6805d747b4cbda5ed9a0d2dd556478a566efe464a3f87e599f6a125bebf52631"
+      },
+      "thermal": {
+        "path": "infrared/test/230035.jpg",
+        "sha256": "df19a7acf4d9da7abc7a9cc3136bad9645cde850eceda8f26b58ca9f18f35d20"
+      }
+    },
+    {
+      "id": "260137",
+      "rgb": {
+        "path": "visible/test/260137.jpg",
+        "sha256": "8ec2bf809892e92e99f975c04bdf1549f1f20c46ef6ee5fbe782cd348ec92f46"
+      },
+      "thermal": {
+        "path": "infrared/test/260137.jpg",
+        "sha256": "f5cd4a8bb7942059537190a2ec1f37388034b0dbd5adeef25f3f76b86bfecba8"
+      }
+    },
+    {
+      "id": "240285",
+      "rgb": {
+        "path": "visible/test/240285.jpg",
+        "sha256": "f94c60b49417d857acf62736ef235fe31c6a7961ebcda12df774f8f9fe990caf"
+      },
+      "thermal": {
+        "path": "infrared/test/240285.jpg",
+        "sha256": "1a6dc7b019c0f7cfb043a488f95da1222600586ec9c40114c0d72c81d1452f3b"
+      }
+    },
+    {
+      "id": "240235",
+      "rgb": {
+        "path": "visible/test/240235.jpg",
+        "sha256": "f764ce9cddd065a3daca62558ca36ed7439608c6afc4b9ad31c35d6d21079b80"
+      },
+      "thermal": {
+        "path": "infrared/test/240235.jpg",
+        "sha256": "1045fa1f2f8a51c4aee87fda537c9c5c6d51eb7d9c150487bdf9cc82a6273e17"
+      }
+    },
+    {
+      "id": "210026",
+      "rgb": {
+        "path": "visible/test/210026.jpg",
+        "sha256": "71ea48c28b41b67c0c0674fb178b2f3d471ca851c7aa4e782e317853b1588fc6"
+      },
+      "thermal": {
+        "path": "infrared/test/210026.jpg",
+        "sha256": "001a49eeb6060235d18d50d51bcd4cb2eae71c3f8c9c8f68b9084284c4044815"
+      }
+    },
+    {
+      "id": "220361",
+      "rgb": {
+        "path": "visible/test/220361.jpg",
+        "sha256": "24c38ff74f14bf5762d9130699a5ae5b07af32d4aae506ddc4fe3c92224ed85d"
+      },
+      "thermal": {
+        "path": "infrared/test/220361.jpg",
+        "sha256": "bb027fc6d7604c0d15cc7732fdb485368827d76be9ae768c724acaf32cc4222c"
+      }
+    },
+    {
+      "id": "190245",
+      "rgb": {
+        "path": "visible/test/190245.jpg",
+        "sha256": "9d79f33aaf0c55a67f7d9133cd1c11b6d692a3012fc42869c72f83eb2a8db1d8"
+      },
+      "thermal": {
+        "path": "infrared/test/190245.jpg",
+        "sha256": "166d3d657c03f62a9da6c453fa18e64f09b0d0a01946df8b865be66cc00d14ab"
+      }
+    },
+    {
+      "id": "210112",
+      "rgb": {
+        "path": "visible/test/210112.jpg",
+        "sha256": "cf181e46abec4a157634c9912583d4fdd457e08995b87d83757dd1b09744b7fc"
+      },
+      "thermal": {
+        "path": "infrared/test/210112.jpg",
+        "sha256": "54a4f5cb5feda24b45b5fcef1934ccc8f96bd3dc98c9036cd8ba72160521dd43"
+      }
+    },
+    {
+      "id": "210434",
+      "rgb": {
+        "path": "visible/test/210434.jpg",
+        "sha256": "51e34dc96583bb77ebcd4957c53fee26f02789b2012a34f8b06c76cfc89d5d2d"
+      },
+      "thermal": {
+        "path": "infrared/test/210434.jpg",
+        "sha256": "ff92b8e700d1e5d8e35e9c0b24bfe84dc2b6b2eef643322e0ee5adf8161775dd"
+      }
+    },
+    {
+      "id": "190220",
+      "rgb": {
+        "path": "visible/test/190220.jpg",
+        "sha256": "05506f34332d2c4183d2c8f99a0489eea338c628996d233fb51c5395963871a6"
+      },
+      "thermal": {
+        "path": "infrared/test/190220.jpg",
+        "sha256": "cf35d290f24bec268a44a344e3e51262b34e1798bff166523c8c091465c8ba91"
+      }
+    },
+    {
+      "id": "200036",
+      "rgb": {
+        "path": "visible/test/200036.jpg",
+        "sha256": "a2c5470169c455704dbe247ea5b770410dd92edff0630c2860880fb4171c0004"
+      },
+      "thermal": {
+        "path": "infrared/test/200036.jpg",
+        "sha256": "075e8bc4de8643448ee80395b147d4d9963672271d77ff0cdf5c6dabf8d802f0"
+      }
+    },
+    {
+      "id": "210243",
+      "rgb": {
+        "path": "visible/test/210243.jpg",
+        "sha256": "97162d3cbdc26b52e35c3aa377212e7816036c904b821c3ea63da78a987ace22"
+      },
+      "thermal": {
+        "path": "infrared/test/210243.jpg",
+        "sha256": "5fed0542fbf9844fd20e38b5f2c8a1f86dbf7b5d72ab4c4536f4f71ece8a3be6"
+      }
+    },
+    {
+      "id": "210379",
+      "rgb": {
+        "path": "visible/test/210379.jpg",
+        "sha256": "95ab040fcf5b26b67341e279ee583f83b1364ca5f0163afc58f7677ceaf736d5"
+      },
+      "thermal": {
+        "path": "infrared/test/210379.jpg",
+        "sha256": "e55ddf8406e6c846c110d2edd555f49a673487b2a113f30c7baaf101594ad340"
+      }
+    },
+    {
+      "id": "210332",
+      "rgb": {
+        "path": "visible/test/210332.jpg",
+        "sha256": "bf9b9d731cec86ce1369214f1448da8d08df0ab3d56a4156c597955d68281d1c"
+      },
+      "thermal": {
+        "path": "infrared/test/210332.jpg",
+        "sha256": "164332daf83bc545d9b624d72b763189b374f9b4d5c77ea018a6ed8ef0c49cde"
+      }
+    },
+    {
+      "id": "200233",
+      "rgb": {
+        "path": "visible/test/200233.jpg",
+        "sha256": "2f738af18a41b371f36665530085bcf2020533f6520a2eec30cfc10ff4da33bf"
+      },
+      "thermal": {
+        "path": "infrared/test/200233.jpg",
+        "sha256": "41b3fe5569f38706a815fe30f1bc6bb171a6893ba09db8093b38934b00819726"
+      }
+    },
+    {
+      "id": "230027",
+      "rgb": {
+        "path": "visible/test/230027.jpg",
+        "sha256": "1205ba57336e4ab6814a4f3a7f4b9eb715c34cdfd478c469e57409865cebf459"
+      },
+      "thermal": {
+        "path": "infrared/test/230027.jpg",
+        "sha256": "0b5a6bb77994e74d5d1fafd062c25bd0f33b0dc35267b2843ca05f6f37e1521a"
+      }
+    },
+    {
+      "id": "260042",
+      "rgb": {
+        "path": "visible/test/260042.jpg",
+        "sha256": "c8fc1228fc597b192da31b2c2754817be33ea7a5358fca3ba3f315f3a8a76607"
+      },
+      "thermal": {
+        "path": "infrared/test/260042.jpg",
+        "sha256": "810b5845e69403004604edcbb3fd4254bc0876ce5c41a6e31ec4ad0b40d994c5"
+      }
+    },
+    {
+      "id": "190444",
+      "rgb": {
+        "path": "visible/test/190444.jpg",
+        "sha256": "c8c879fe31d8525132fcfdee9c3549a3fe610a948caaff906a24f4a89219984a"
+      },
+      "thermal": {
+        "path": "infrared/test/190444.jpg",
+        "sha256": "5781371d0c255c00ed62203d90681a53e4f5af311d29f243634626191cc15533"
+      }
+    },
+    {
+      "id": "230460",
+      "rgb": {
+        "path": "visible/test/230460.jpg",
+        "sha256": "de61efd0a395a363ae91d117d7182ce5b66d979ca8758f6f266f0ae0bdf52a53"
+      },
+      "thermal": {
+        "path": "infrared/test/230460.jpg",
+        "sha256": "dc7789314eebf2b5d17b587fcea940661201672389ccb7688a2b2f0b89567922"
+      }
+    },
+    {
+      "id": "200319",
+      "rgb": {
+        "path": "visible/test/200319.jpg",
+        "sha256": "9b7e6de4eb8d6a55f76d4f489bd88ec607d188727b93332e7a575accbe970efa"
+      },
+      "thermal": {
+        "path": "infrared/test/200319.jpg",
+        "sha256": "5042c3b5ed8da6383f9489e67bc86af73d1e0b5cde5ec630ceda8753587e3370"
+      }
+    },
+    {
+      "id": "190773",
+      "rgb": {
+        "path": "visible/test/190773.jpg",
+        "sha256": "43ff02ec9d87b6808ae35819323e9cb7ad17c64bf6b4f908e0e4e78678f3a40d"
+      },
+      "thermal": {
+        "path": "infrared/test/190773.jpg",
+        "sha256": "bba2075195dbd1075ddb3649a1b0b8f5ceb223acaec6c81c8d16fb3dac277c6e"
+      }
+    },
+    {
+      "id": "200152",
+      "rgb": {
+        "path": "visible/test/200152.jpg",
+        "sha256": "f6f21761fd41615f11c99b9605dc3659c3e624758bfc745d7c5562b72b5f97d2"
+      },
+      "thermal": {
+        "path": "infrared/test/200152.jpg",
+        "sha256": "a5507a0a6713945c453a858421a07fd5a6a5680a4f15127f8336ab6db82f9e61"
+      }
+    },
+    {
+      "id": "240087",
+      "rgb": {
+        "path": "visible/test/240087.jpg",
+        "sha256": "bdc395640dd8825cfac2ba3e6091a72df8b093f151787c8ce559d569993e6462"
+      },
+      "thermal": {
+        "path": "infrared/test/240087.jpg",
+        "sha256": "e0b44e227a363351a033f86d61afdac8e174b0c46bb10ebcc82d6cea2e1eace5"
+      }
+    },
+    {
+      "id": "190116",
+      "rgb": {
+        "path": "visible/test/190116.jpg",
+        "sha256": "320a23804089f1828404a9e68d46fd4dd07f7b057f5cb25e29387f09b69d51b3"
+      },
+      "thermal": {
+        "path": "infrared/test/190116.jpg",
+        "sha256": "b71ec0074bf237f288f0653839c4dc21accd95b956405a9ba362d53bcd293406"
+      }
+    },
+    {
+      "id": "200264",
+      "rgb": {
+        "path": "visible/test/200264.jpg",
+        "sha256": "c6153a4cb9565b80ecacd40b9f190a0eb6393fec75b37f78057893e4ff66b645"
+      },
+      "thermal": {
+        "path": "infrared/test/200264.jpg",
+        "sha256": "d477a182c0437c128a7ef2ed050bf9e1785f46b4ea0886f4af72af004da8ba07"
+      }
+    },
+    {
+      "id": "260483",
+      "rgb": {
+        "path": "visible/test/260483.jpg",
+        "sha256": "c1953cdae8d4c56902783185cd9760317a4ef619f2f18c312b70fec0d7634df0"
+      },
+      "thermal": {
+        "path": "infrared/test/260483.jpg",
+        "sha256": "e4aef6fdcc5331d2b88b2c0fb7dede65b462c0e1712426a6234e7a8ad54281c2"
+      }
+    },
+    {
+      "id": "190039",
+      "rgb": {
+        "path": "visible/test/190039.jpg",
+        "sha256": "349e19198c7a536fe18f2b95a1f9a69884113e4f84dc3c3883e1913f096bc0fb"
+      },
+      "thermal": {
+        "path": "infrared/test/190039.jpg",
+        "sha256": "6c5b3e1e26a04c4eabc37437727421340119004ca2dd695b12d8dae257473115"
+      }
+    },
+    {
+      "id": "260307",
+      "rgb": {
+        "path": "visible/test/260307.jpg",
+        "sha256": "4dc9005900f9d7a73aa9936dc862385e7bc4931c97b2d04246c7a5e0c0e16227"
+      },
+      "thermal": {
+        "path": "infrared/test/260307.jpg",
+        "sha256": "877dffc0350b2ec8364bb9b5bc8f2a81ef125753c9dc430e128c336229546e6d"
+      }
+    },
+    {
+      "id": "210419",
+      "rgb": {
+        "path": "visible/test/210419.jpg",
+        "sha256": "1c665457e52230254e2a66345fc6aca9469136b116af04465efabc34c14f338f"
+      },
+      "thermal": {
+        "path": "infrared/test/210419.jpg",
+        "sha256": "c971dc2d7212add97b94321d8393085de23b53fac53a2cd61db0952523b7e43e"
+      }
+    },
+    {
+      "id": "190342",
+      "rgb": {
+        "path": "visible/test/190342.jpg",
+        "sha256": "1aaf3636784e3c7d1f5c3cc4212c6faec3f56c46abaff32defdd6c9aca3e26b3"
+      },
+      "thermal": {
+        "path": "infrared/test/190342.jpg",
+        "sha256": "5f327760ab6deb3104264813c4db76cc081a2eca405f8d97ebced0e966aa4e20"
+      }
+    },
+    {
+      "id": "260138",
+      "rgb": {
+        "path": "visible/test/260138.jpg",
+        "sha256": "d6c16ef34c0b0a67eb8c5b01970f1bb60712562b2913a31282a2de01f50e517a"
+      },
+      "thermal": {
+        "path": "infrared/test/260138.jpg",
+        "sha256": "3f4e5b30ba6ebfba86494242707b55e1c5bec139f35f1f6dc5b2f85bd6592f95"
+      }
+    },
+    {
+      "id": "240114",
+      "rgb": {
+        "path": "visible/test/240114.jpg",
+        "sha256": "f0196e7527a804e021664083b9e9f297738b43aca12ec5f32da5eb90e4852cc0"
+      },
+      "thermal": {
+        "path": "infrared/test/240114.jpg",
+        "sha256": "24b62ac2717a3991cd1357da414e5f96ee0a6a41e16c753066ffa4127622a63c"
+      }
+    },
+    {
+      "id": "190042",
+      "rgb": {
+        "path": "visible/test/190042.jpg",
+        "sha256": "a1830aef1203e482b3bd53f6c4bd6c237e1e3445691ad9c728033f922b4a84b9"
+      },
+      "thermal": {
+        "path": "infrared/test/190042.jpg",
+        "sha256": "27bc7a414e08a9047a043cc7ebd52aa8af9266c5e977cb5bc6d30e1580690531"
+      }
+    },
+    {
+      "id": "240283",
+      "rgb": {
+        "path": "visible/test/240283.jpg",
+        "sha256": "b182f46a95bd7b8ef5f7873bbea2459aedd379ba8742f8296c5d39324255827a"
+      },
+      "thermal": {
+        "path": "infrared/test/240283.jpg",
+        "sha256": "a81bec23394c12ba595b73ca0a78fc74c5704026a91a522a6d15dc3ae918fbec"
+      }
+    },
+    {
+      "id": "210416",
+      "rgb": {
+        "path": "visible/test/210416.jpg",
+        "sha256": "182e6ca7b83c8c1414fad5942ca61941e3b0067cb30ad06f8666562e3bedc50e"
+      },
+      "thermal": {
+        "path": "infrared/test/210416.jpg",
+        "sha256": "7bc4f3d8e9fd1e2575781d2d67ed4cb1356d2e09e2ce902eb97dd5261999b4ec"
+      }
+    },
+    {
+      "id": "260454",
+      "rgb": {
+        "path": "visible/test/260454.jpg",
+        "sha256": "844bc1e173aa44526296769f4ef894362b7a5bdc017a25706197ef52f898328f"
+      },
+      "thermal": {
+        "path": "infrared/test/260454.jpg",
+        "sha256": "a2cf3eed8d1641f25a40012b60792c2fd4ff3738bf6fbcbcb31cf823d087ddc8"
+      }
+    },
+    {
+      "id": "240143",
+      "rgb": {
+        "path": "visible/test/240143.jpg",
+        "sha256": "513d3311321b7119b3440572236c36a39d504af8306c30c1204cecda4cde205a"
+      },
+      "thermal": {
+        "path": "infrared/test/240143.jpg",
+        "sha256": "edbd477b22f44a4c417eebe175d39532999412cc2ffc0aa8195094c48a65bf0d"
+      }
+    },
+    {
+      "id": "230255",
+      "rgb": {
+        "path": "visible/test/230255.jpg",
+        "sha256": "d6ca4f2fdb4aed10b056c87cdbf9e2747337ebbf693f2d90dacc646e3618fb0c"
+      },
+      "thermal": {
+        "path": "infrared/test/230255.jpg",
+        "sha256": "9c74e267bb47b7f04da7bc44f6561cc758a398ec82abbb2fef074eced3825797"
+      }
+    },
+    {
+      "id": "190254",
+      "rgb": {
+        "path": "visible/test/190254.jpg",
+        "sha256": "5b923330d68cd5b2b76f9479c213f58bd3b04adf7289f9ee3d3b1cec999262ba"
+      },
+      "thermal": {
+        "path": "infrared/test/190254.jpg",
+        "sha256": "c8f1a3fd015e2886a4471a378b97416da7c016288dde7d5e14f0ca9f27bb8f7f"
+      }
+    },
+    {
+      "id": "210308",
+      "rgb": {
+        "path": "visible/test/210308.jpg",
+        "sha256": "b8686db07760d2f52224285b1949a18949bebabe376712a47df1c08c958494d2"
+      },
+      "thermal": {
+        "path": "infrared/test/210308.jpg",
+        "sha256": "429754517d68fabc22af6b3cce25f3b6566734d4e555b537082add3da7e8cee9"
+      }
+    },
+    {
+      "id": "260303",
+      "rgb": {
+        "path": "visible/test/260303.jpg",
+        "sha256": "2d09649f212c83ca31a0d964b0fcdd6b1e48d472c4d76b407376b7ea17bbed05"
+      },
+      "thermal": {
+        "path": "infrared/test/260303.jpg",
+        "sha256": "0c25b82fe268fe2cf49130c0ea1287b64ffc22b2aacd299c7def57183370895d"
+      }
+    },
+    {
+      "id": "190308",
+      "rgb": {
+        "path": "visible/test/190308.jpg",
+        "sha256": "a7fa04d41abc5cd0982a8c8c04204e5e964969bb5a061079cb37f9e7759aa19b"
+      },
+      "thermal": {
+        "path": "infrared/test/190308.jpg",
+        "sha256": "0fa837eeac5ce00c5cefa05e6e66bce380974012ff61b06e6dc252ab3d71a2bd"
+      }
+    },
+    {
+      "id": "190237",
+      "rgb": {
+        "path": "visible/test/190237.jpg",
+        "sha256": "838d06bb0b7bbaec3211c866aed4068964d7ca8cf207d9d34c099af40621580c"
+      },
+      "thermal": {
+        "path": "infrared/test/190237.jpg",
+        "sha256": "5436f89e30e5e6881ef1673c4ac4f7ee3063c7cbc74e062756cfed393c70d195"
+      }
+    },
+    {
+      "id": "210369",
+      "rgb": {
+        "path": "visible/test/210369.jpg",
+        "sha256": "3d03368d2edba7480b3a021907e1d6e473d72cf0a75ef08a7d6fcb437eeb1ce5"
+      },
+      "thermal": {
+        "path": "infrared/test/210369.jpg",
+        "sha256": "db45bd84c728d88067b97f6920ae78f3209eb682c89b66f0718d1fd73a3a8d4b"
+      }
+    },
+    {
+      "id": "240071",
+      "rgb": {
+        "path": "visible/test/240071.jpg",
+        "sha256": "df2aa31cad71f08054bd5e0ae1f019e9a5efcead4778e1c0dc422e539a2cd296"
+      },
+      "thermal": {
+        "path": "infrared/test/240071.jpg",
+        "sha256": "04d6fa59368f60a35656edb45b08aa7d1c351ff2aea0128be6d610be8b741ce2"
+      }
+    },
+    {
+      "id": "200088",
+      "rgb": {
+        "path": "visible/test/200088.jpg",
+        "sha256": "1bfe2d56b158ba9e8ce45a8f212c566ea5a5e0c438eabea3f4e3e8e2fd0276bd"
+      },
+      "thermal": {
+        "path": "infrared/test/200088.jpg",
+        "sha256": "a1e23ab2cd2da4bad15cd4afa5e6900a534f1ef7625483aae98538b714efaab6"
+      }
+    },
+    {
+      "id": "210267",
+      "rgb": {
+        "path": "visible/test/210267.jpg",
+        "sha256": "88b2ce3b22cda62867ebda7f665b1ab56ead63b2b5467654210e4605da382060"
+      },
+      "thermal": {
+        "path": "infrared/test/210267.jpg",
+        "sha256": "5ffff4419fb43764f377bf6ba190df3f2d9543db768569f917ee5dc8c430e9a4"
+      }
+    },
+    {
+      "id": "220158",
+      "rgb": {
+        "path": "visible/test/220158.jpg",
+        "sha256": "22a38283aae4a0d5a4994c9257039aaf897432dcaca4f83ad221f06a9966ce91"
+      },
+      "thermal": {
+        "path": "infrared/test/220158.jpg",
+        "sha256": "1e4a8fc78ffcd2f5779278f226f560ac717faeb689660c8549be3e8c2731b5b8"
+      }
+    },
+    {
+      "id": "210250",
+      "rgb": {
+        "path": "visible/test/210250.jpg",
+        "sha256": "7b22fa6b3cd261440d0b6bc4f47eca74e80f539d17fcd857c9ec1beeaa8c836d"
+      },
+      "thermal": {
+        "path": "infrared/test/210250.jpg",
+        "sha256": "16a95e6b4b669aee237bc77eb15699721876dd4bf468fbfdf6285258aed9b777"
+      }
+    },
+    {
+      "id": "190251",
+      "rgb": {
+        "path": "visible/test/190251.jpg",
+        "sha256": "7f0258f2a1722aca687701f42fef1e242e2d0f796d57310a91a7da94e4341421"
+      },
+      "thermal": {
+        "path": "infrared/test/190251.jpg",
+        "sha256": "83e137905d6ae65d6a536cd12e661e9404f548cb29bd26a585b130c552985fe4"
+      }
+    },
+    {
+      "id": "210053",
+      "rgb": {
+        "path": "visible/test/210053.jpg",
+        "sha256": "5e3c0c76349dc0ef8632f67693df4529a9f3d49ef9888a3dde3885e8e48b45ad"
+      },
+      "thermal": {
+        "path": "infrared/test/210053.jpg",
+        "sha256": "73e3976de0abba347a8cef21b90a07a3542fd7ecd436ef439c2928c14bd8b651"
+      }
+    },
+    {
+      "id": "230432",
+      "rgb": {
+        "path": "visible/test/230432.jpg",
+        "sha256": "297b2d2bf0e0521b54aa6a1628e64f31bbece06fa9ddc149d88e01cc63cc1ffa"
+      },
+      "thermal": {
+        "path": "infrared/test/230432.jpg",
+        "sha256": "6a6d715cf4b6d94725683aeaab377529072f9f1a128b3854300e418453bc1c46"
+      }
+    },
+    {
+      "id": "240172",
+      "rgb": {
+        "path": "visible/test/240172.jpg",
+        "sha256": "cc5e7013497f5d916d9eb527dcd80912700a26df14ed307f29ef1018663b722a"
+      },
+      "thermal": {
+        "path": "infrared/test/240172.jpg",
+        "sha256": "63ab80ccfffb917158acddd7fd27db4f0f91558cd1111cd6ec7b1e886de1e335"
+      }
+    },
+    {
+      "id": "190746",
+      "rgb": {
+        "path": "visible/test/190746.jpg",
+        "sha256": "5a1085e68a2bde0edd7dc31410c609c749a059201fe3e571cbd98e78382c3744"
+      },
+      "thermal": {
+        "path": "infrared/test/190746.jpg",
+        "sha256": "d82403e9e4d85026b8e683d2e4178423353fae8dc55e76242675a7a93c3a8d72"
+      }
+    },
+    {
+      "id": "240121",
+      "rgb": {
+        "path": "visible/test/240121.jpg",
+        "sha256": "9d1bcf0df89a776e58e77df21bfeac0cbbf290b413b68a1c5a72d47a5e751eea"
+      },
+      "thermal": {
+        "path": "infrared/test/240121.jpg",
+        "sha256": "eb5de82b172363ee345ec560537482997dfbb634c160483db4fe8919d2701e48"
+      }
+    },
+    {
+      "id": "230224",
+      "rgb": {
+        "path": "visible/test/230224.jpg",
+        "sha256": "108d57e0aef9e1d04e56fd853baceaeeddfd079bbfae37ec46d5ca352c2c19cb"
+      },
+      "thermal": {
+        "path": "infrared/test/230224.jpg",
+        "sha256": "537765ccb031d01565e7b48e68f72c46b88a28679db5c4e1a1f20566058fa2f2"
+      }
+    },
+    {
+      "id": "190027",
+      "rgb": {
+        "path": "visible/test/190027.jpg",
+        "sha256": "0acb2049dafcb68b934460db8c54967e58d59503d81f42128100a3f404d059e2"
+      },
+      "thermal": {
+        "path": "infrared/test/190027.jpg",
+        "sha256": "bbfa1db9f338ee89cd59d894592af7b1352ee8f60691a840ff1e9ac1bd94408e"
+      }
+    },
+    {
+      "id": "230292",
+      "rgb": {
+        "path": "visible/test/230292.jpg",
+        "sha256": "01966a9d0a562f87d83c199da6ed273f92681000321fc75852708c01e99f55ca"
+      },
+      "thermal": {
+        "path": "infrared/test/230292.jpg",
+        "sha256": "1628acb7542a8c8b14b7907c574856652727baa4c4b387f1588488e0431b7382"
+      }
+    },
+    {
+      "id": "200213",
+      "rgb": {
+        "path": "visible/test/200213.jpg",
+        "sha256": "491b298105310ba8b2a9c4a28d2ec7b7a050d1b2044e9408ae6ccc6b928719e9"
+      },
+      "thermal": {
+        "path": "infrared/test/200213.jpg",
+        "sha256": "91b68a11e04d181b8bcf8b96bf676a3e335847e070237c2da8ab565793067f4b"
+      }
+    },
+    {
+      "id": "210143",
+      "rgb": {
+        "path": "visible/test/210143.jpg",
+        "sha256": "7513ad2638c45902cbf88b20e46613c05249b758f42ac6121bebe0c1c515fd48"
+      },
+      "thermal": {
+        "path": "infrared/test/210143.jpg",
+        "sha256": "99648d7571ecf9dff04dd9969c8c271013c1629d87af5dfa215cc65a7ef00882"
+      }
+    },
+    {
+      "id": "190521",
+      "rgb": {
+        "path": "visible/test/190521.jpg",
+        "sha256": "4a8bc03506961a5071f872675f82e919e65e2d001bb82010af348d16e324b3dc"
+      },
+      "thermal": {
+        "path": "infrared/test/190521.jpg",
+        "sha256": "a1860904ceef619fc5521c9164a3115fc895980b8724867347651de1bc8f1930"
+      }
+    }
+  ]
+}

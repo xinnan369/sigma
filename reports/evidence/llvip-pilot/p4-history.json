@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "records": 4706,
+  "sha256_hits": [],
+  "fit_calibration_only_perceptual": {
+    "visible": {
+      "eligible_originals": 500,
+      "hashed": 500,
+      "pairs_at_hamming_le_6": 0,
+      "left_images_with_hit": 0,
+      "minimum_distance": 8
+    },
+    "infrared": {
+      "eligible_originals": 500,
+      "hashed": 500,
+      "pairs_at_hamming_le_6": 0,
+      "left_images_with_hit": 0,
+      "minimum_distance": 10
+    }
+  },
+  "holdout_pixel_reads": 0,
+  "official_mfnet_test_pixel_reads": 0,
+  "manifest_sha256": "e99ac4e7f3058c9f27c13c7913a029f3a76896d770f07aab8d4243d9a9979198",
+  "historical_metadata_sha256": {
+    "reports/evidence/r1c/manifest.json": "36410fb1f3c5e452613b2520d6540e6b9f080be64ada850a3ce1c60bce8cf543",
+    "reports/evidence/r1b/data-manifest.json": "96e875b6e9e4887a594b63f6343dc9b5284f1a94810cbe3dc9cfeb2bc401f761",
+    "configs/R2k_Q1_protocol.json": "314826e1fe47905a9cf18216a1c861299c02c9203883b771a84ea024f733ab48",
+    "reports/evidence/r1f/split.json": "586ecb28b1f295a1e5d1734f3847faa4c173c49db74f31fde312891223df0a54",
+    "reports/evidence/r1g/split.json": "47568bac630282df599a8a260438adb2146092a7fe673873e2ee9b7900c050e5"
+  },
+  "implementation_sha256_lf": "44e7802470498b8e7f6f7ab13df8290fba99b62bcfe7533709d4111006584c11"
+}

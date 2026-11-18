@@ -1,0 +1,302 @@
+{
+  "status": "PASS",
+  "original_release_file_records_equal": 46465,
+  "comparison": "All per-file fields match by relative path. The new manifest uses case-sensitive POSIX lexical order and JSONL; the old scanner used Windows Path ordering. The added ambiguous_ids lists are empty. Historical MFNet comparisons remain the archived P3 results.",
+  "rescan_summary": {
+    "files": 46465,
+    "decode_errors": [],
+    "zip_crc32_mismatches": [],
+    "pairing": {
+      "train": {
+        "visible_ids": 12025,
+        "thermal_ids": 12025,
+        "paired_ids": 12025,
+        "visible_only": [],
+        "thermal_only": [],
+        "ambiguous_ids": [],
+        "dimension_mismatch_ids": [],
+        "id_prefix2_counts": {
+          "01": 597,
+          "02": 500,
+          "03": 473,
+          "04": 473,
+          "05": 428,
+          "06": 515,
+          "07": 452,
+          "08": 1518,
+          "09": 1258,
+          "10": 1313,
+          "11": 468,
+          "12": 461,
+          "13": 500,
+          "14": 558,
+          "15": 603,
+          "16": 567,
+          "17": 512,
+          "18": 406,
+          "25": 423
+        },
+        "visible": {
+          "files": 12025,
+          "spec_counts": {
+            "JPEG 1280x1024 RGB 3ch 8bit": 12025
+          },
+          "bytes_min_p05_median_p95_max": [
+            48065.0,
+            68434.2,
+            142767.0,
+            366457.0,
+            380601.0
+          ],
+          "exif_capture_timestamp_present": 0
+        },
+        "infrared": {
+          "files": 12025,
+          "spec_counts": {
+            "JPEG 1280x1024 RGB 3ch 8bit": 12025
+          },
+          "bytes_min_p05_median_p95_max": [
+            42115.0,
+            53493.8,
+            87531.0,
+            140012.6,
+            154324.0
+          ],
+          "exif_capture_timestamp_present": 0
+        }
+      },
+      "test": {
+        "visible_ids": 3463,
+        "thermal_ids": 3463,
+        "paired_ids": 3463,
+        "visible_only": [],
+        "thermal_only": [],
+        "ambiguous_ids": [],
+        "dimension_mismatch_ids": [],
+        "id_prefix2_counts": {
+          "19": 827,
+          "20": 319,
+          "21": 436,
+          "22": 381,
+          "23": 467,
+          "24": 500,
+          "26": 533
+        },
+        "visible": {
+          "files": 3463,
+          "spec_counts": {
+            "JPEG 1280x1024 RGB 3ch 8bit": 3463
+          },
+          "bytes_min_p05_median_p95_max": [
+            69162.0,
+            77285.7,
+            125260.0,
+            303710.99999999994,
+            320720.0
+          ],
+          "exif_capture_timestamp_present": 0
+        },
+        "infrared": {
+          "files": 3463,
+          "spec_counts": {
+            "JPEG 1280x1024 RGB 3ch 8bit": 3463
+          },
+          "bytes_min_p05_median_p95_max": [
+            49882.0,
+            60913.0,
+            75514.0,
+            130467.9,
+            139450.0
+          ],
+          "exif_capture_timestamp_present": 0
+        }
+      }
+    },
+    "duplicate_split_ids": [],
+    "duplicates": {
+      "sha256": {
+        "groups": 3,
+        "extra_files": 3,
+        "affected_files": 6,
+        "cross_split_groups": 0,
+        "groups_paths": [
+          [
+            "infrared/train/040179.jpg",
+            "infrared/train/040230.jpg"
+          ],
+          [
+            "infrared/train/140103.jpg",
+            "infrared/train/140165.jpg"
+          ],
+          [
+            "visible/test/260037.jpg",
+            "visible/test/260173.jpg"
+          ]
+        ],
+        "cross_split_paths": []
+      },
+      "pixel_sha256": {
+        "groups": 3,
+        "extra_files": 3,
+        "affected_files": 6,
+        "cross_split_groups": 0,
+        "groups_paths": [
+          [
+            "infrared/train/040179.jpg",
+            "infrared/train/040230.jpg"
+          ],
+          [
+            "infrared/train/140103.jpg",
+            "infrared/train/140165.jpg"
+          ],
+          [
+            "visible/test/260037.jpg",
+            "visible/test/260173.jpg"
+          ]
+        ],
+        "cross_split_paths": []
+      }
+    },
+    "perceptual_train_test": {
+      "visible": {
+        "pairs_at_hamming_le_6": 7,
+        "minimum_distance": 4,
+        "left_images_with_hit": 1,
+        "candidate_paths": [
+          [
+            "visible/test/240280.jpg",
+            "visible/train/110170.jpg",
+            4
+          ],
+          [
+            "visible/test/240280.jpg",
+            "visible/train/010353.jpg",
+            6
+          ],
+          [
+            "visible/test/240280.jpg",
+            "visible/train/110091.jpg",
+            6
+          ],
+          [
+            "visible/test/240280.jpg",
+            "visible/train/110172.jpg",
+            6
+          ],
+          [
+            "visible/test/240280.jpg",
+            "visible/train/110256.jpg",
+            6
+          ],
+          [
+            "visible/test/240280.jpg",
+            "visible/train/110467.jpg",
+            6
+          ],
+          [
+            "visible/test/240280.jpg",
+            "visible/train/110481.jpg",
+            6
+          ]
+        ]
+      },
+      "infrared": {
+        "pairs_at_hamming_le_6": 0,
+        "minimum_distance": 10,
+        "left_images_with_hit": 0,
+        "candidate_paths": []
+      }
+    },
+    "annotation": {
+      "files": 15488,
+      "classes": {
+        "person": 42437
+      },
+      "segmented_counts": {
+        "0": 15488
+      },
+      "raw_dims": {
+        "1280x1024": 15488
+      },
+      "filename_mismatch_count": 0,
+      "invalid_boxes": 5,
+      "files_with_invalid_boxes": [
+        [
+          "Annotations/020118.xml",
+          1
+        ],
+        [
+          "Annotations/020236.xml",
+          1
+        ],
+        [
+          "Annotations/090437.xml",
+          1
+        ],
+        [
+          "Annotations/091180.xml",
+          1
+        ],
+        [
+          "Annotations/170350.xml",
+          1
+        ]
+      ],
+      "images_without_annotations": [],
+      "annotations_without_images": []
+    }
+  },
+  "review_status": [
+    {
+      "test": "visible/test/240280.jpg",
+      "train": "visible/train/110170.jpg",
+      "distance": 4,
+      "decision": "UNKNOWN"
+    },
+    {
+      "test": "visible/test/240280.jpg",
+      "train": "visible/train/010353.jpg",
+      "distance": 6,
+      "decision": "UNKNOWN"
+    },
+    {
+      "test": "visible/test/240280.jpg",
+      "train": "visible/train/110091.jpg",
+      "distance": 6,
+      "decision": "UNKNOWN"
+    },
+    {
+      "test": "visible/test/240280.jpg",
+      "train": "visible/train/110172.jpg",
+      "distance": 6,
+      "decision": "UNKNOWN"
+    },
+    {
+      "test": "visible/test/240280.jpg",
+      "train": "visible/train/110256.jpg",
+      "distance": 6,
+      "decision": "UNKNOWN"
+    },
+    {
+      "test": "visible/test/240280.jpg",
+      "train": "visible/train/110467.jpg",
+      "distance": 6,
+      "decision": "UNKNOWN"
+    },
+    {
+      "test": "visible/test/240280.jpg",
+      "train": "visible/train/110481.jpg",
+      "distance": 6,
+      "decision": "UNKNOWN"
+    }
+  ],
+  "environment": {
+    "platform": "Windows 11",
+    "python": "3.13.2",
+    "pillow": "12.2.0",
+    "numpy": "2.3.5",
+    "scipy": "1.17.1",
+    "workers": 4,
+    "exit_code": 0
+  }
+}
