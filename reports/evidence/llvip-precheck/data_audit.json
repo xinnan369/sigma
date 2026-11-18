@@ -1,0 +1,342 @@
+{
+  "status": "PROTOCOL_CHANGE_REQUIRED",
+  "independent_auxiliary_admission": "BLOCKED",
+  "manifest_sha256": "e99ac4e7f3058c9f27c13c7913a029f3a76896d770f07aab8d4243d9a9979198",
+  "execution": {
+    "python": "3.13.2 (tags/v3.13.2:4f8bb39, Feb  4 2025, 15:23:48) [MSC v.1942 64 bit (AMD64)]",
+    "pillow": "12.2.0",
+    "numpy": "2.3.5",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "threads": 4,
+    "seconds": 288.34,
+    "scanner_sha256": "cfa026a030b60ce814e958b84cf9730bb160088d2eb911567fc1b44cc40b1b69",
+    "scipy": "1.17.1",
+    "scan_exit_code": 0,
+    "supplemental_manifest_crosscheck": "digest, unique paths, duplicate groups and all cross-split pHash flags verified"
+  },
+  "source": {
+    "archive_bytes": 4003858172,
+    "files": 46465,
+    "payload_bytes": 4054277998,
+    "zip_crc32_mismatches": [],
+    "archive_payload_redecompression": "NOT RUN",
+    "package_license_file_present": false
+  },
+  "decode_errors": [],
+  "layout_unexpected": [],
+  "pairing": {
+    "train": {
+      "visible_ids": 12025,
+      "thermal_ids": 12025,
+      "paired_ids": 12025,
+      "visible_only": [],
+      "thermal_only": [],
+      "dimension_mismatch_ids": [],
+      "id_prefix2_counts": {
+        "01": 597,
+        "02": 500,
+        "03": 473,
+        "04": 473,
+        "05": 428,
+        "06": 515,
+        "07": 452,
+        "08": 1518,
+        "09": 1258,
+        "10": 1313,
+        "11": 468,
+        "12": 461,
+        "13": 500,
+        "14": 558,
+        "15": 603,
+        "16": 567,
+        "17": 512,
+        "18": 406,
+        "25": 423
+      },
+      "visible": {
+        "files": 12025,
+        "spec_counts": {
+          "JPEG 1280x1024 RGB 3ch 8bit": 12025
+        },
+        "bytes_min_p05_median_p95_max": [
+          48065.0,
+          68434.2,
+          142767.0,
+          366457.0,
+          380601.0
+        ],
+        "exif_capture_timestamp_present": 0
+      },
+      "infrared": {
+        "files": 12025,
+        "spec_counts": {
+          "JPEG 1280x1024 RGB 3ch 8bit": 12025
+        },
+        "bytes_min_p05_median_p95_max": [
+          42115.0,
+          53493.8,
+          87531.0,
+          140012.6,
+          154324.0
+        ],
+        "exif_capture_timestamp_present": 0
+      }
+    },
+    "test": {
+      "visible_ids": 3463,
+      "thermal_ids": 3463,
+      "paired_ids": 3463,
+      "visible_only": [],
+      "thermal_only": [],
+      "dimension_mismatch_ids": [],
+      "id_prefix2_counts": {
+        "19": 827,
+        "20": 319,
+        "21": 436,
+        "22": 381,
+        "23": 467,
+        "24": 500,
+        "26": 533
+      },
+      "visible": {
+        "files": 3463,
+        "spec_counts": {
+          "JPEG 1280x1024 RGB 3ch 8bit": 3463
+        },
+        "bytes_min_p05_median_p95_max": [
+          69162.0,
+          77285.7,
+          125260.0,
+          303710.99999999994,
+          320720.0
+        ],
+        "exif_capture_timestamp_present": 0
+      },
+      "infrared": {
+        "files": 3463,
+        "spec_counts": {
+          "JPEG 1280x1024 RGB 3ch 8bit": 3463
+        },
+        "bytes_min_p05_median_p95_max": [
+          49882.0,
+          60913.0,
+          75514.0,
+          130467.9,
+          139450.0
+        ],
+        "exif_capture_timestamp_present": 0
+      }
+    }
+  },
+  "duplicate_split_ids": [],
+  "duplicate_modality_keys": [],
+  "duplicates": {
+    "sha256": {
+      "groups": 3,
+      "extra_files": 3,
+      "affected_files": 6,
+      "cross_split_groups": 0,
+      "cross_split_paths": [],
+      "groups_paths": [
+        [
+          "infrared/train/040179.jpg",
+          "infrared/train/040230.jpg"
+        ],
+        [
+          "infrared/train/140103.jpg",
+          "infrared/train/140165.jpg"
+        ],
+        [
+          "visible/test/260037.jpg",
+          "visible/test/260173.jpg"
+        ]
+      ]
+    },
+    "pixel_sha256": {
+      "groups": 3,
+      "extra_files": 3,
+      "affected_files": 6,
+      "cross_split_groups": 0,
+      "cross_split_paths": [],
+      "groups_paths": [
+        [
+          "infrared/train/040179.jpg",
+          "infrared/train/040230.jpg"
+        ],
+        [
+          "infrared/train/140103.jpg",
+          "infrared/train/140165.jpg"
+        ],
+        [
+          "visible/test/260037.jpg",
+          "visible/test/260173.jpg"
+        ]
+      ]
+    }
+  },
+  "annotation": {
+    "files": 15488,
+    "classes": {
+      "person": 42437
+    },
+    "images_without_annotations": [],
+    "annotations_without_images": [],
+    "filename_mismatch_count": 0,
+    "segmented_counts": {
+      "0": 15488
+    },
+    "invalid_boxes": 5,
+    "raw_dims": {
+      "1280x1024": 15488
+    },
+    "files_with_invalid_boxes": [
+      [
+        "Annotations/020118.xml",
+        1
+      ],
+      [
+        "Annotations/020236.xml",
+        1
+      ],
+      [
+        "Annotations/090437.xml",
+        1
+      ],
+      [
+        "Annotations/091180.xml",
+        1
+      ],
+      [
+        "Annotations/170350.xml",
+        1
+      ]
+    ]
+  },
+  "perceptual_method": "63-bit grayscale DCT pHash (LANCZOS thumbnail 32x32, 8x8 block minus DC), Hamming <=6 flags candidates; no human adjudication; excludes historical holdout pixels",
+  "perceptual_train_test": {
+    "visible": {
+      "pairs_at_hamming_le_6": 7,
+      "left_images_with_hit": 1,
+      "minimum_distance": 4,
+      "candidate_paths": [
+        [
+          "visible/test/240280.jpg",
+          "visible/train/110170.jpg",
+          4
+        ],
+        [
+          "visible/test/240280.jpg",
+          "visible/train/010353.jpg",
+          6
+        ],
+        [
+          "visible/test/240280.jpg",
+          "visible/train/110091.jpg",
+          6
+        ],
+        [
+          "visible/test/240280.jpg",
+          "visible/train/110172.jpg",
+          6
+        ],
+        [
+          "visible/test/240280.jpg",
+          "visible/train/110256.jpg",
+          6
+        ],
+        [
+          "visible/test/240280.jpg",
+          "visible/train/110467.jpg",
+          6
+        ],
+        [
+          "visible/test/240280.jpg",
+          "visible/train/110481.jpg",
+          6
+        ]
+      ]
+    },
+    "infrared": {
+      "pairs_at_hamming_le_6": 0,
+      "left_images_with_hit": 0,
+      "minimum_distance": 10,
+      "candidate_paths": []
+    }
+  },
+  "historical": {
+    "manifests": {
+      "reports/evidence/r1c/manifest.json": "36410fb1f3c5e452613b2520d6540e6b9f080be64ada850a3ce1c60bce8cf543",
+      "reports/evidence/r1b/data-manifest.json": "96e875b6e9e4887a594b63f6343dc9b5284f1a94810cbe3dc9cfeb2bc401f761"
+    },
+    "partition_metadata_sha256": {
+      "configs/R2k_Q1_protocol.json": "314826e1fe47905a9cf18216a1c861299c02c9203883b771a84ea024f733ab48",
+      "reports/evidence/r1f/split.json": "586ecb28b1f295a1e5d1734f3847faa4c173c49db74f31fde312891223df0a54",
+      "reports/evidence/r1g/split.json": "47568bac630282df599a8a260438adb2146092a7fe673873e2ee9b7900c050e5"
+    },
+    "records": 4706,
+    "sha256_hits": [],
+    "q1_fit_images": 376,
+    "q1_calibration_images": 124,
+    "q1_holdout_metadata_only": 127,
+    "r1g_validation_metadata_only": 157,
+    "r1f_archived_split_keys": [
+      "graph_sha256",
+      "r1c_files_sha256",
+      "scope",
+      "split_sha256",
+      "train_ids",
+      "train_originals",
+      "validation_ids"
+    ],
+    "fit_calibration_only_perceptual": {
+      "visible": {
+        "eligible_originals": 500,
+        "hashed": 500,
+        "missing_or_digest_mismatch": [],
+        "screen": {
+          "pairs_at_hamming_le_6": 0,
+          "left_images_with_hit": 0,
+          "minimum_distance": 8,
+          "examples_first_20": []
+        }
+      },
+      "infrared": {
+        "eligible_originals": 500,
+        "hashed": 500,
+        "missing_or_digest_mismatch": [],
+        "screen": {
+          "pairs_at_hamming_le_6": 0,
+          "left_images_with_hit": 0,
+          "minimum_distance": 10,
+          "examples_first_20": []
+        }
+      }
+    }
+  },
+  "p0": {
+    "required": {
+      "width": 640,
+      "height": 480,
+      "bits_per_sample": 8,
+      "mode": "L"
+    },
+    "compatible_thermal_count": 0
+  },
+  "metadata": {
+    "official_reported_scenes": 26,
+    "official_reported_dark_scenes": 24,
+    "official_reported_daytime_scenes": 2,
+    "verified_independent_groups": null,
+    "verified_day_night_frames": null,
+    "rights_derivative_blur": "confirmation required",
+    "model_inference": "NOT RUN",
+    "gpu": "NOT RUN",
+    "group_support_disposition": "insufficient; filename prefixes are unverified proxies",
+    "confirmed_blur_positive_groups": null,
+    "external_source_references": [
+      "https://bupt-ai-cz.github.io/LLVIP/",
+      "https://github.com/bupt-ai-cz/LLVIP/blob/main/Term%20of%20Use%20and%20License.md",
+      "https://arxiv.org/html/2108.10831"
+    ]
+  }
+}
