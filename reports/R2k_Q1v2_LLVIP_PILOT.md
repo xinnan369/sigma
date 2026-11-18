@@ -44,3 +44,25 @@ python -m experiments.r2k_q1v2_llvip.pilot evaluate --manifest reports/evidence/
 There are no independent-group confidence intervals, pixel-level significance claims or confirmatory PASS. The sample could include related views. The LLVIP adapter changes the image domain and may interact with the quality features; this run cannot attribute the response to the adapter, sensor, scene content or the head independently. The original P3 rights and scene-metadata limitations remain open; no image derivatives were retained or distributed. A larger same-protocol run is not recommended on this evidence. Any proposed further work needs separate review of rights, scene grouping and its scientific purpose.
 
 Evidence: [reproduced audit](evidence/llvip-pilot/audit-reproduction.json), [full metrics and resources](evidence/llvip-pilot/results.json).
+
+## P4 measured repeat
+
+P4 reran all 64 identical official-test pairs with three conditions (Clean, Weak Gaussian Blur, Strong Gaussian Blur), preserving the previous result files. The ordered roster and all per-image scientific fields, including adapted-input hashes, ROI coordinates, blur prediction hashes and histograms, match the earlier run exactly; only timing fields were added to per-image records. No models were refit and no scores or thresholds were changed.
+
+| Head | Weak ROI recall | Strong ROI recall | Clean median latency | Weak median latency | Strong median latency |
+|---|---:|---:|---:|---:|---:|
+| Q1 six-descriptor Thermal | 21.56% | 8.70% | 3.89 ms | 3.94 ms | 4.10 ms |
+| Q1v2 multiscale Thermal | 6.80% | 4.75% | 8.41 ms | 8.79 ms | 8.49 ms |
+| P0 RGB-only | 0.46% | 0.48% | 9.23 ms | 9.03 ms | 8.74 ms |
+
+Latency measures one head's feature calculation through quantized prediction, excluding decoding, the adapter, blur synthesis and evidence writes. Each of the 576 timed invocations is in the [P4 per-image ledger](evidence/llvip-pilot/p4/per-image.jsonl). Timing includes the first call; median and P95 are in the [P4 results](evidence/llvip-pilot/p4/results.json). WSL2 evaluation completed with exit 0 in **7.19 s wall**, **5.76 s process CPU**, and **152.8 MiB peak process RSS**. [Full evaluation log](evidence/llvip-pilot/p4/run.log), [ordered 64-pair roster and input SHA256](evidence/llvip-pilot/p4/roster.json), and [historical comparison](evidence/llvip-pilot/p4-history.json) are archived. Four targeted Windows tests passed.
+
+The new historical comparison reproduced zero SHA256 overlaps against 4,706 archived MFNet RGB/Thermal digests and zero pHash matches (Hamming ≤6) against the 500 permitted Fit/Calibration originals per modality. It verifies archived manifest/config hashes and each opened original. Historic Holdout, R1g validation and official MFNet test were not opened; older partitions only contribute already archived metadata or SHA256. The seven LLVIP cross-split pHash candidates remain UNKNOWN.
+
+The actual P4 evaluation used the commands above with `PILOT_OUTPUT=reports/evidence/llvip-pilot/p4`, `python=$HOME/.venvs/sigma-r1-cu121/bin/python` (executable path; no CUDA calls), and redirected combined evaluation output through `tee "$PILOT_OUTPUT/run.log"` with `set -o pipefail`. The historical comparison used native Windows Python:
+
+```powershell
+python -m experiments.r2k_q1v2_llvip.history --manifest reports/evidence/llvip-precheck/file_manifest.json --historical-root D:/download/sigma-r1-assets/MFNet --output reports/evidence/llvip-pilot/p4-history.json
+```
+
+Synthetic ROI labels do not establish detection of real physical blur. The repeat verifies execution on the same cohort, not generalization to new data. No formal confidence intervals were computed without verified independent scene groups.

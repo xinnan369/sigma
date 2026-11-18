@@ -68,3 +68,14 @@ def test_roster_deterministic_and_excludes_unpaired_and_wrong_dimensions():
                v['thermal']['path'].endswith(v['id']+'.jpg') for v in r)
     with pytest.raises(ValueError):
         pilot.chosen_roster(rows,3407,3)
+
+def test_history_scope_refuses_old_holdout_and_validation():
+    from experiments.r2k_q1v2_llvip.history import fit_calibration_ids
+    p={'partitions':{k:{'images':{ident:'group'}} for k,ident in
+                     [('fit','a'),('calibration','b'),('holdout','h')]}}
+    assert fit_calibration_ids(p,['v'])==['a','b']
+    with pytest.raises(ValueError):
+        fit_calibration_ids(p,['b'])
+    p['partitions']['holdout']['images']['a']='group'
+    with pytest.raises(ValueError):
+        fit_calibration_ids(p,[])

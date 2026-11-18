@@ -88,6 +88,12 @@ def predict(frame, arm, cfg, heads):
     return model.probabilities(model.logits(features,head),cal)
 
 
+def timed_predict(frame, arm, cfg, heads):
+    start=time.perf_counter_ns()
+    scores=predict(frame,arm,cfg,heads)
+    return scores,time.perf_counter_ns()-start
+
+
 def roi_coordinates(cfg,i,tier):
     gen=model.rng(cfg['seed'],i,'blur',tier)
     size,m=cfg['roi']['size'],cfg['roi']['margin']
@@ -100,9 +106,11 @@ def evaluate(root, roster, old, p0, heads):
     for sample in roster:
         i=sample['id']
         rgb, thermal=(transformed(root,sample[k]) for k in ('rgb','thermal'))
-        healthy={a:predict(rgb if a=='rgb' else thermal,a,p0,heads) for a in heads}
+        clean={a:timed_predict(rgb if a=='rgb' else thermal,a,p0,heads) for a in heads}
+        healthy={a:pair[0] for a,pair in clean.items()}
         record={'id':i,'adapted_sha256':{'rgb':sha(rgb.tobytes()),'thermal':sha(thermal.tobytes())},
                 'healthy_flagged':{a:int((p>=heads[a][2]).sum()) for a,p in healthy.items()},
+                'clean_inference_ns':{a:pair[1] for a,pair in clean.items()},
                 'healthy_points':int(thermal[model.grid(thermal)].size),'blur':[]}
         for tier in range(2):
             changed, mask, _, _=model.degrade(thermal,'blur',old,i,tier)
@@ -113,11 +121,11 @@ def evaluate(root, roster, old, p0, heads):
                 raise ValueError('ROI mapping or support mismatch')
             arms={}
             for a in heads:
-                scores=predict(rgb if a=='rgb' else changed,a,p0,heads)
+                scores,latency=timed_predict(rgb if a=='rgb' else changed,a,p0,heads)
                 if a=='rgb' and not np.array_equal(scores,healthy[a]):
                     raise ValueError('RGB-only prediction changed')
                 difference=scores[mask].astype(int)-healthy[a][mask]
-                arms[a]={'histogram':metrics.distribution(mask,scores).tolist(),
+                arms[a]={'inference_ns':latency,'histogram':metrics.distribution(mask,scores).tolist(),
                          'delta_bins_sum':int(difference.sum()),
                          'delta_bins_histogram':np.bincount(difference+255,minlength=511).tolist(),
                          'changed_output_bins':int((scores!=healthy[a]).sum()),
@@ -125,6 +133,7 @@ def evaluate(root, roster, old, p0, heads):
             record['blur'].append({'tier':tier,'roi_xyxy': [x,y,x1,y1],
                                    'positive_points':int(mask.sum()),'arms':arms})
         result.append(record)
+        print(f'PAIR {len(result)}/{len(roster)} {i}: clean, weak, strong PASS',flush=True)
     return result
 
 
@@ -162,6 +171,7 @@ def main():
         p.add_argument('--'+name,type=Path)
     a=p.parse_args()
     begin=time.perf_counter()
+    cpu_begin=time.process_time()
     cfg=read(CONFIG)
     cv2.setNumThreads(1)
     if cv2.__version__ != cfg['opencv_version']:
@@ -185,11 +195,19 @@ def main():
             raise ValueError('Parent protocol changed')
     old,p0=(read(paths[n]) for n in ('q1','p0'))
     heads=load_heads(cfg,a.q1,a.p0)
+    print(SCOPE, 'preflight PASS: frozen roster, source, protocol, and parameter digests', flush=True)
     rows=evaluate(a.root,roster,old,p0,heads)
     with (a.output/'per-image.jsonl').open('x',encoding='utf-8',newline='\n') as f:
         for r in rows:
             f.write(json.dumps(r,separators=(',',':'))+'\n')
     import resource  # Pilot runs under WSL/Linux for process peak RSS.
+    latency={}
+    for arm in heads:
+        ns={'clean':[r['clean_inference_ns'][arm] for r in rows]}
+        ns.update({label:[r['blur'][tier]['arms'][arm]['inference_ns'] for r in rows]
+                   for tier,label in enumerate(('weak','strong'))})
+        latency[arm]={k:{'median_ms':float(np.median(v)/1e6),
+                         'p95_ms':float(np.percentile(v,95)/1e6)} for k,v in ns.items()}
     dump(a.output/'results.json',{'scope':SCOPE,'pairs':len(rows),'metrics':summarize(rows,heads),
                                   'roster_sha256':digest(roster_path),
                                   'protocol_sha256':digest(CONFIG),
@@ -198,6 +216,8 @@ def main():
                                   'python':platform.python_version(),'platform':platform.platform(),
                                   'opencv_threads':cv2.getNumThreads(),
                                   'seconds':time.perf_counter()-begin,
+                                  'process_cpu_seconds':time.process_time()-cpu_begin,
+                                  'inference_latency':latency,
                                   'peak_rss_kib':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss})
     print(SCOPE, len(rows), 'pairs completed', flush=True)
 

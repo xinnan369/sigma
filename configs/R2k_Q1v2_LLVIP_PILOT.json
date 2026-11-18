@@ -23,7 +23,7 @@
     ],
     "interpolation": "INTER_AREA",
     "color_after_resize": "COLOR_BGR2GRAY",
-    "conversion_source_sha256_lf": "0002d6a9ff6bb03dcf489cfeb632c41a1119cf04c28e57f0d81ae02bd3bf783d"
+    "conversion_source_sha256_lf": "d63261db3ed9e9d589f359c814d8e4be18db1a802e653654e6b591e46d6f5c25"
   },
   "blur": {
     "tiers": [
@@ -60,9 +60,11 @@
     "experiments/r2k_q1v2/audit.py": "c7f4ed10f0214b5383898c97c85a6b04d565ae4d79ea29b51e78d97b80e7a66a",
     "experiments/r2k_q1v2/features.py": "8458438becfc917f8a4945e046fad3d2dafa5e76ce87599a3b225b7a02186294",
     "experiments/r2k_q1v2/run.py": "3c5ef8024a6079a9e35b5d44806974ea98079ddeed5e5982dc9f8204f6f81342",
-    "experiments/r2k_q1v2_llvip/pilot.py": "0002d6a9ff6bb03dcf489cfeb632c41a1119cf04c28e57f0d81ae02bd3bf783d",
+    "experiments/r2k_q1v2_llvip/pilot.py": "d63261db3ed9e9d589f359c814d8e4be18db1a802e653654e6b591e46d6f5c25",
     "experiments/r2k_q1v2_llvip/scan.py": "456650cce8c2641d58296a4fe401541be7787fb3c6ad352c6f719a8f6c98a976",
-    "experiments/r2k_q1v2_llvip/__init__.py": "ce3248a995d967278fd4453a623a7afcdbe70d075dd076c89237bea3bd4cf733"
+    "experiments/r2k_q1v2_llvip/__init__.py": "ce3248a995d967278fd4453a623a7afcdbe70d075dd076c89237bea3bd4cf733",
+    "experiments/r2k_q1v2_llvip/history.py": "44e7802470498b8e7f6f7ab13df8290fba99b62bcfe7533709d4111006584c11"
   },
-  "statistics": "Descriptive grid aggregates only; no confidence intervals/significance or confirmatory gate"
+  "statistics": "Descriptive grid aggregates only; no confidence intervals/significance or confirmatory gate",
+  "revision": "P4: latency and logging; frozen transforms, parameters and cohort unchanged"
 }
