@@ -64,3 +64,7 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=0 python -u -m exp
 12 个未匹配框输在重叠或并列竞争，全部位于 [64,128)，例如 Fit 010112 与 Validation 020127。Validation 150032 的一个变换后 3×21.5 px 框没有合格点。未匹配目标的宽、高、sqrt(area) 分位数和全部 ID/坐标见证据。两张零正点 Fit 图 100030/100033 原本无 GT。总体匹配率 99.96%，但极小框验证支持很少，stride 32 验证无正样本，不能据总体数字宣称这些分层可靠。不改变已冻结分配、尺度或数据；若未来小框支持增加后仍存在漏配，可另提跨尺度候选点或更细网格的独立对照。未匹配框全部保留在验证 COCO GT 中。
 
 Windows CPU 全套 157 通过、7 跳过，compileall 退出 0。RTX 3090 按整改后源码重跑合成预检：四臂通过，D 的三尺度 Cross/Concat 扫描反向 90 次；全模型参数与 MAC 逐项与原证据一致，差异仍为 0.01714% 和 0.00313%。新测四臂五种子计算部分约 15.64 小时（同前述范围，不含数据加载、优化器、验证和保存；不是正式训练用时）。旧 GPU 证据保留，新[日志](evidence/r3-d1/review/gpu.log)、[计数与实测](evidence/r3-d1/review/gpu.json)和[校验回执](evidence/r3-d1/review/verification.json)单独归档。未执行 optimizer.step()。
+
+## D1B 执行器与恢复闸门
+
+执行器已实现并通过 CPU 测试；[D1B 独立报告](R3_D1B_TRAINING_RUNNER.md)记录恢复机制和 RTX 3090 复验。A/B/C 通过跨进程逐位等价，D 的 checkpoint 本身能逐位恢复，但固定的原生 Selective Scan 反向重放存在浮点差异，最终训练轨迹不逐位一致。D 正式入口因此阻断。D1A 架构、数据划分和合成前后向证据保留；未进行正式训练。

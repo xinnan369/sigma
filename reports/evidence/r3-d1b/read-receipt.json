@@ -1,0 +1,181 @@
+{
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "official_test_reads": 0,
+  "environment": {
+    "python": "3.13.2",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.3.5",
+    "opencv": "4.13.0",
+    "cpu_threads": 1
+  },
+  "rows": [
+    {
+      "role": "fit",
+      "id": "010001",
+      "file_sha256": {
+        "visible/train/010001.jpg": "91f5533e4f67a6974065ba90bf68255ab393a5ef47bb78d994b1251f8ef01aaf",
+        "infrared/train/010001.jpg": "87b143759f8558c3db387c045c3ec045f4954319b4ce58053ab6732a1fd64a5c",
+        "Annotations/010001.xml": "059e5a1f8da3e96ccd32676bc68fa84d655fb2a500d588e1ea2bcd58a976538a"
+      },
+      "flip_seed3407_epoch0": false,
+      "raw": {
+        "rgb": {
+          "shape": [
+            1024,
+            1280,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256": "2e172b2208509d57179e00a7a87a22abab5245ccdbe39fab10311832fff6c5e4"
+        },
+        "thermal": {
+          "shape": [
+            1024,
+            1280
+          ],
+          "dtype": "uint8",
+          "sha256": "efa16fe2f32192f7d546ce17a2547afa392978b7ff53785bd1096266638b979a"
+        }
+      },
+      "gt": 6,
+      "transformed_boxes": [
+        [
+          143.5,
+          278.0,
+          175.5,
+          395.0
+        ],
+        [
+          175.5,
+          259.5,
+          212.0,
+          385.0
+        ],
+        [
+          233.0,
+          247.5,
+          275.0,
+          371.0
+        ],
+        [
+          350.0,
+          241.0,
+          380.5,
+          356.5
+        ],
+        [
+          352.0,
+          322.5,
+          403.0,
+          461.0
+        ],
+        [
+          562.0,
+          75.0,
+          598.0,
+          186.5
+        ]
+      ],
+      "normalized": {
+        "rgb": {
+          "shape": [
+            3,
+            640,
+            640
+          ],
+          "dtype": "float32",
+          "sha256": "9340fa002f2a57c43662cd51c6ce0595a574e5c125e7146414cbe8554a6542b8"
+        },
+        "thermal": {
+          "shape": [
+            3,
+            640,
+            640
+          ],
+          "dtype": "float32",
+          "sha256": "764f44f66df30ccc1a83155e3db0befb6e1d112cc2512835a303cda868ede9d4"
+        },
+        "boxes": {
+          "shape": [
+            6,
+            4
+          ],
+          "dtype": "float32",
+          "sha256": "438dc61f227e8e4b36c2b20456b15b01d9b642f3feeabd8e3a4dafe227f57b6a"
+        }
+      }
+    },
+    {
+      "role": "validation",
+      "id": "020001",
+      "file_sha256": {
+        "visible/train/020001.jpg": "954d91c47559b3cae96a9196e17f985423c42c776757e309ded0dbe7f9f02496",
+        "infrared/train/020001.jpg": "1acf2be59c58761a84301def1dc5d407193594559e4b963ee42c088ea82959d4",
+        "Annotations/020001.xml": "ccc6b2c9dd957c20d77d18e4aa2a3661a96dd1092202bf68420e117f3b3d9d3a"
+      },
+      "flip_seed3407_epoch0": false,
+      "raw": {
+        "rgb": {
+          "shape": [
+            1024,
+            1280,
+            3
+          ],
+          "dtype": "uint8",
+          "sha256": "49ff226dc46c019106c03777bc72b3073f3049dde28053341ff200070c0212f3"
+        },
+        "thermal": {
+          "shape": [
+            1024,
+            1280
+          ],
+          "dtype": "uint8",
+          "sha256": "0ec91f9d8b1b66692b607c77c3b54b688baec7881a0622a01d24ea3db4a6a3cd"
+        }
+      },
+      "gt": 2,
+      "transformed_boxes": [
+        [
+          204.0,
+          386.5,
+          251.0,
+          519.5
+        ],
+        [
+          472.0,
+          272.0,
+          530.0,
+          410.5
+        ]
+      ],
+      "normalized": {
+        "rgb": {
+          "shape": [
+            3,
+            640,
+            640
+          ],
+          "dtype": "float32",
+          "sha256": "fa356ffd6700adde82bd97321c2b3673952dd073c58068551c168da05fea836e"
+        },
+        "thermal": {
+          "shape": [
+            3,
+            640,
+            640
+          ],
+          "dtype": "float32",
+          "sha256": "f6b462c329b58fd64c81269d0e19ac3e1473d1f94977295434e5e802ca9ade41"
+        },
+        "boxes": {
+          "shape": [
+            2,
+            4
+          ],
+          "dtype": "float32",
+          "sha256": "1a4917030ff7c43c994dbf093d529cd661e6376e4fef98d2df204396496ba107"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 202, in <module>
+    print(json.dumps(worker(a) if a.phase else audit(a.upstream,a.output),sort_keys=True))
+                     ^^^^^^^^^
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 105, in worker
+    compare(saved['model'],{k:v.detach().cpu() for k,v in m.state_dict().items()},'restored_model')
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 23, in compare
+    raise AssertionError(f'{key}: type differs')
+AssertionError: restored_model: type differs
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 202, in <module>
+    print(json.dumps(worker(a) if a.phase else audit(a.upstream,a.output),sort_keys=True))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 163, in audit
+    raise RuntimeError(f'Worker failed: {arm}/{phase}')
+RuntimeError: Worker failed: A/resume
+Exit code: 1

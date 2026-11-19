@@ -1,0 +1,19 @@
+A PASS exact model, BN, optimizer, RNG and committed event bytes
+B PASS exact model, BN, optimizer, RNG and committed event bytes
+C PASS exact model, BN, optimizer, RNG and committed event bytes
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 212, in <module>
+    print(json.dumps(worker(a) if a.phase else audit(a.upstream,a.output),sort_keys=True))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 166, in audit
+    compare(c,r)
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 36, in compare
+    compare(a[k],b[k],f'{key}/{k}')
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 36, in compare
+    compare(a[k],b[k],f'{key}/{k}')
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 28, in compare
+    raise AssertionError(f'{key}: tensor differs bitwise')
+AssertionError: state/model/rgb.layers.0.0.weight: tensor differs bitwise
+Exit code: 1
