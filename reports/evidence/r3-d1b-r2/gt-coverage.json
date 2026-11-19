@@ -1,0 +1,321 @@
+{
+  "status": "MEASURED_UNCHANGED_PROTOCOL",
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "geometry": "train seed 3407 epoch 0; both flips verified per Fit GT; Validation no flip",
+  "official_test_reads": 0,
+  "image_pixel_reads": 0,
+  "environment": {
+    "python": "3.13.2",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.3.5",
+    "opencv": "4.13.0",
+    "cpu_threads": 1
+  },
+  "roles": {
+    "fit": {
+      "totals": {
+        "images": 9926,
+        "gt": 28547,
+        "matched": 28540,
+        "unmatched": 7,
+        "zero_positive_images": 2,
+        "positive_stride_8": 90027,
+        "positive_stride_16": 150737,
+        "positive_stride_32": 27,
+        "lost_tie_or_overlap": 7
+      },
+      "by_sqrt_area": {
+        "[32,64)": {
+          "gt": 10194,
+          "matched": 10194,
+          "unmatched": 0,
+          "match_rate": 1.0
+        },
+        "[64,128)": {
+          "gt": 18123,
+          "matched": 18116,
+          "unmatched": 7,
+          "match_rate": 0.9996137504828119
+        },
+        "[16,32)": {
+          "gt": 217,
+          "matched": 217,
+          "unmatched": 0,
+          "match_rate": 1.0
+        },
+        "[8,16)": {
+          "gt": 10,
+          "matched": 10,
+          "unmatched": 0,
+          "match_rate": 1.0
+        },
+        "[128,inf)": {
+          "gt": 3,
+          "matched": 3,
+          "unmatched": 0,
+          "match_rate": 1.0
+        }
+      },
+      "unmatched_size_quantiles": {
+        "percentiles": [
+          0,
+          25,
+          50,
+          75,
+          100
+        ],
+        "width": [
+          42.0,
+          43.5,
+          56.0,
+          61.75,
+          71.5
+        ],
+        "height": [
+          110.0,
+          110.75,
+          114.0,
+          129.75,
+          139.0
+        ],
+        "sqrt_area": [
+          68.43244934082031,
+          76.48558044433594,
+          78.48566436767578,
+          84.73311233520508,
+          92.79951477050781
+        ]
+      },
+      "representative_unmatched": [
+        {
+          "id": "010112",
+          "gt_index": 6,
+          "xyxy": [
+            338.5,
+            334.0,
+            381.5,
+            464.0
+          ],
+          "sqrt_area": 74.76630401611328,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "010158",
+          "gt_index": 4,
+          "xyxy": [
+            322.5,
+            325.0,
+            389.0,
+            454.5
+          ],
+          "sqrt_area": 92.79951477050781,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "010361",
+          "gt_index": 1,
+          "xyxy": [
+            547.5,
+            338.5,
+            591.5,
+            477.5
+          ],
+          "sqrt_area": 78.2048568725586,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "030171",
+          "gt_index": 1,
+          "xyxy": [
+            314.5,
+            106.5,
+            386.0,
+            220.5
+          ],
+          "sqrt_area": 90.28289031982422,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "030344",
+          "gt_index": 0,
+          "xyxy": [
+            260.5,
+            82.0,
+            317.5,
+            192.0
+          ],
+          "sqrt_area": 79.18333435058594,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "060142",
+          "gt_index": 4,
+          "xyxy": [
+            75.0,
+            310.0,
+            131.0,
+            420.0
+          ],
+          "sqrt_area": 78.48566436767578,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "060414",
+          "gt_index": 0,
+          "xyxy": [
+            251.5,
+            309.0,
+            293.5,
+            420.5
+          ],
+          "sqrt_area": 68.43244934082031,
+          "reason": "lost_tie_or_overlap"
+        }
+      ]
+    },
+    "validation": {
+      "totals": {
+        "images": 2087,
+        "gt": 5536,
+        "matched": 5530,
+        "unmatched": 6,
+        "zero_positive_images": 0,
+        "positive_stride_8": 5272,
+        "positive_stride_16": 41060,
+        "positive_stride_32": 0,
+        "lost_tie_or_overlap": 5,
+        "no_eligible_point": 1
+      },
+      "by_sqrt_area": {
+        "[64,128)": {
+          "gt": 4920,
+          "matched": 4915,
+          "unmatched": 5,
+          "match_rate": 0.9989837398373984
+        },
+        "[32,64)": {
+          "gt": 594,
+          "matched": 594,
+          "unmatched": 0,
+          "match_rate": 1.0
+        },
+        "[16,32)": {
+          "gt": 19,
+          "matched": 19,
+          "unmatched": 0,
+          "match_rate": 1.0
+        },
+        "[8,16)": {
+          "gt": 3,
+          "matched": 2,
+          "unmatched": 1,
+          "match_rate": 0.6666666666666666
+        }
+      },
+      "unmatched_size_quantiles": {
+        "percentiles": [
+          0,
+          25,
+          50,
+          75,
+          100
+        ],
+        "width": [
+          3.0,
+          43.25,
+          44.5,
+          49.5,
+          68.0
+        ],
+        "height": [
+          21.5,
+          87.5,
+          126.75,
+          134.875,
+          138.0
+        ],
+        "sqrt_area": [
+          8.03118896484375,
+          72.3761157989502,
+          75.79055404663086,
+          77.38190841674805,
+          81.42481231689453
+        ]
+      },
+      "representative_unmatched": [
+        {
+          "id": "020127",
+          "gt_index": 4,
+          "xyxy": [
+            102.5,
+            415.0,
+            153.5,
+            545.0
+          ],
+          "sqrt_area": 81.42481231689453,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "050393",
+          "gt_index": 7,
+          "xyxy": [
+            221.5,
+            64.5,
+            289.5,
+            140.0
+          ],
+          "sqrt_area": 71.65193939208984,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "140276",
+          "gt_index": 1,
+          "xyxy": [
+            597.0,
+            121.0,
+            640.0,
+            259.0
+          ],
+          "sqrt_area": 77.03246307373047,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "140373",
+          "gt_index": 1,
+          "xyxy": [
+            235.0,
+            224.5,
+            280.0,
+            348.0
+          ],
+          "sqrt_area": 74.54864501953125,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "140492",
+          "gt_index": 0,
+          "xyxy": [
+            538.5,
+            163.0,
+            582.5,
+            299.5
+          ],
+          "sqrt_area": 77.4983901977539,
+          "reason": "lost_tie_or_overlap"
+        },
+        {
+          "id": "150032",
+          "gt_index": 1,
+          "xyxy": [
+            0.5,
+            291.0,
+            3.5,
+            312.5
+          ],
+          "sqrt_area": 8.03118896484375,
+          "reason": "no_eligible_point"
+        }
+      ]
+    }
+  }
+}
