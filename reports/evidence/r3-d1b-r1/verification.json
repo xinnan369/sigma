@@ -1,0 +1,41 @@
+{
+  "baseline": "b7a44916cc0c8f07261261a5798ab58ff506483c",
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "exit_codes": {
+    "cpu": 0,
+    "compileall": 0,
+    "numerics": 0,
+    "resume": 0
+  },
+  "files_sha256": {
+    "compileall.log": "0710e520f5344f14f31480b751bb71cfa9a26ad392ef9f5457606140a92e3c21",
+    "cpu.log": "d59d6487d78d19e60602918b7a6dcffcf712762eca1b683ab659d7ae44b7b5bc",
+    "initial-resume-counter.log": "87866f02f2458dc461f78b6b34f1ca24b4f788bc5e30cd6937d2f1f10ca8cdcf",
+    "numerics.json": "24e25cc82f297692829af6f138c701eaab39384614863c103879548aeca39244",
+    "numerics.log": "14d2be5229be03848993863e0e57ce61701bf61e4010544af3d585ccb56b9742",
+    "resume.json": "5f8207720c2b0c5a8997a0516c1ea2ff0383974e69be754346d664c5860107b7",
+    "resume.log": "f13df9ce59708dc565999b89544b030453294e3d493e5f714bbd1df5546b672b"
+  },
+  "committed_source_sha256_lf": {
+    "docs/R3_D1_DETECTION_PROTOCOL.md": "3bcb83c1c58c99b18d7e21debd8cd70306b6fd2dbb20ded9a6a06ae1e20ebc25",
+    "experiments/r3_d0/llvip.py": "37eb66fc14f554af83c64210052d30128dcdb8577ff7042b80097f698d0027b4",
+    "experiments/r3_d1/authorization.py": "2e071dbed0bfa93baa1187fdc304581930f22baeb10c1d6ba02806006afcaddc",
+    "experiments/r3_d1/budget.py": "275acca7634ae5c0eb6af613a8cd3f607659f0c8487f117e0cf147edea5bf901",
+    "experiments/r3_d1/checkpoint.py": "0016d876351a673c38dbc559b0b2572cd21c0c481d575c2d161511bcb32bf1e8",
+    "experiments/r3_d1/coco.py": "b3f9a0ceccb5984265944f25e5de3cfcd678671302643507b7840c8d11963de0",
+    "experiments/r3_d1/coverage.py": "c1cfb83b90e2f441f31aaf7bb64d0252be3c545c7b53879d48eecb095480c10d",
+    "experiments/r3_d1/data.py": "a90308bc2c324b97d256c845e58eb9f78593d8504f1eb50fdf8289ec0698730d",
+    "experiments/r3_d1/deterministic_audit.py": "c5de6cb8012de8c0c41af32eaa3b4a98e13511590cfd047e706a5bcfaa6003d1",
+    "experiments/r3_d1/deterministic_scan/__init__.py": "9de1189925690226403789dd7dd982c58a70fd765c4d521cb5f760994f2bf8b0",
+    "experiments/r3_d1/evaluate.py": "69958d9701a67d511468ccd767017f493f7c6a163e7ad6f82d2f5d4776115ee4",
+    "experiments/r3_d1/fcos.py": "4dfe01d04d227c8667d7c744fb66ab171027566fd529163300e898cdcbc10759",
+    "experiments/r3_d1/model.py": "d678fb55a2fb647e0dba24f5f605f39c301f8aa8312c7d3b156776c0d922de3f",
+    "experiments/r3_d1/plan.py": "ee423d24c933691783e2fa38dde2dd7b9f1ca9d58ea71f95c60f246abda8c78b",
+    "experiments/r3_d1/preflight.py": "271b1a5c581479d3b36b5991014c39e7e613f903317b41c8f76ccf1206be243b",
+    "experiments/r3_d1/resume_audit.py": "49c38da01dbde227180779aacba3af8e61da51ebf8d195749fc5b147f3354d9c",
+    "experiments/r3_d1/train.py": "a25f0c45f18e909a754be292fd82a9c44b6610c1b405aceaa3c4be3e3d5a9c9b",
+    "experiments/r3_d1/upstream.py": "5e754ea7f94eed34d53fbaa84fc7f5c41aca18e96b1ee6ed4d48f9d0d2882ffb",
+    "experiments/r3_d1/review_registry.py": "7f1059c69aa899a9167766f6f585fd306f4068549177c31d95ec7e17b0f7bcd1",
+    "tests/test_r3_d1_deterministic.py": "624a8680bd9ab0a668ec1454f6b07c73ef2ddad454d107cad773ccab47cb39f4"
+  }
+}
