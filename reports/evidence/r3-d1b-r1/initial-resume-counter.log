@@ -1,0 +1,21 @@
+A PASS exact model, BN, optimizer, RNG and committed event bytes
+B PASS exact model, BN, optimizer, RNG and committed event bytes
+C PASS exact model, BN, optimizer, RNG and committed event bytes
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 221, in <module>
+    print(json.dumps(worker(a) if a.phase else audit(a.upstream,a.output,a.backend),sort_keys=True))
+                     ^^^^^^^^^
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 138, in worker
+    raise AssertionError(f'Unexpected native calls {calls}')
+AssertionError: Unexpected native calls {'fwd': 18, 'bwd': 72}
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 221, in <module>
+    print(json.dumps(worker(a) if a.phase else audit(a.upstream,a.output,a.backend),sort_keys=True))
+                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba多模态/sigma/experiments/r3_d1/resume_audit.py", line 170, in audit
+    raise RuntimeError(f'Worker failed: {arm}/{phase}')
+RuntimeError: Worker failed: D/continuous

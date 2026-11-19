@@ -13,6 +13,8 @@ import cv2
 import numpy as np
 import torch
 
+from .authorization import require_authorization
+from .deterministic_scan import VERSION, installed
 from .checkpoint import Checkpoints, Events, digest, hashfile, run_lock, write_json
 from .data import DevelopmentData, SPLIT_SHA256, flipped
 from .evaluate import improves, validate
@@ -73,10 +75,11 @@ def driver():
 
 
 def signature(seed,arm,source,env):
-    files=list(Path(__file__).parent.glob('*.py'))+[
+    # The independently reviewed allowlist must not hash the receipt it authorizes.
+    files=[p for p in Path(__file__).parent.rglob('*.py') if p.name!='review_registry.py']+[
         ROOT/'docs/R3_D1_DETECTION_PROTOCOL.md',ROOT/'experiments/r3_d0/llvip.py']
     return dict(schema='r3-d1b-v1',seed=seed,arm=arm,cuda=True,split_sha256=SPLIT_SHA256,
-                upstream=source,environment=env,precision='fp32',optimizer='AdamW',
+                upstream=source,environment=env,deterministic_backend=VERSION,precision='fp32',optimizer='AdamW',
                 lr=.0003,betas=[.9,.999],eps=1e-8,conv_decay=.01,other_decay=0.,
                 scheduler=None,epochs=EPOCHS,batch=4,updates_per_epoch=UPDATES,
                 fit=FIT_COUNT,validation=VALIDATION_COUNT,cnn_widths=list(WIDTHS),
@@ -163,8 +166,7 @@ def update(model,opt,rgb,thermal,boxes):
 def train(args):
     if not args.authorize_formal_training:
         raise ValueError('Formal run requires explicit authorization flag')
-    if args.arm=='D':
-        raise RuntimeError('BLOCKED: pinned native scan is not bitwise reproducible on RTX 3090')
+    require_authorization(args.authorization,args.arm,args.seed)
     out=external(args.output)/args.arm/str(args.seed)
     if not torch.cuda.is_available() or torch.cuda.device_count()!=1:
         raise ValueError('Expose exactly one CUDA GPU')
@@ -172,13 +174,14 @@ def train(args):
     env=runtime(True)
     if env['cublas_workspace'] not in (':4096:8',':16:8'):
         raise ValueError('Set CUBLAS_WORKSPACE_CONFIG before starting')
-    vm,_,source=load_sigma(args.upstream)
+    vm,core,source=load_sigma(args.upstream)
     sig=signature(args.seed,args.arm,source,env)
+    require_authorization(args.authorization,args.arm,args.seed,sig)
     data=DevelopmentData(args.root,args.split)
     roster=data.ids('fit')
     if len(data.ids('validation'))!=VALIDATION_COUNT:
         raise ValueError('Frozen validation count differs')
-    with run_lock(out):
+    with run_lock(out), installed(core):
         ledger=out/'checkpoint-ledger.json'
         if args.resume!=ledger.exists() or (not args.resume and any(
                 p.name!='run.lock' for p in out.iterdir())):
@@ -247,6 +250,7 @@ if __name__=='__main__':
         parser.add_argument('--'+key,type=Path,required=True)
     parser.add_argument('--seed',type=int,choices=SEEDS,required=True)
     parser.add_argument('--arm',choices=list('ABCD'),required=True)
+    parser.add_argument('--authorization',type=Path)
     parser.add_argument('--resume',action='store_true')
     parser.add_argument('--authorize-formal-training',action='store_true')
     train(parser.parse_args())

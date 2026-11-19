@@ -1,5 +1,6 @@
 """Bounded cross-process audit using only synthetic tensors; never opens LLVIP."""
 import argparse
+from contextlib import nullcontext
 import json
 import os
 from pathlib import Path
@@ -13,7 +14,8 @@ import torch
 
 from .checkpoint import Checkpoints, Events, rng_state, run_lock, write_json
 from .model import Detector
-from .plan import WIDTHS, optimizer
+from .deterministic_scan import installed
+from .plan import WIDTHS, epoch_indices, optimizer
 from .train import external, optimizer_cursor, reproducible, runtime, signature, update
 from .upstream import load_sigma
 
@@ -72,32 +74,43 @@ def worker(args):
     upstream,core,fingerprints=load_sigma(args.upstream)
     env=runtime(True)
     sig=signature(3407,args.arm,fingerprints,env)
-    sig['schema']='r3-d1b-synthetic-only-v1'
+    sig['schema']='r3-d1b-r1-synthetic-only-v1'
+    sig['audit_backend']=args.backend
     m=Detector(args.arm,widths=WIDTHS,upstream=upstream).cuda().train()
     opt=optimizer(m)
     calls=dict(fwd=0,bwd=0)
     probe=None
     restored_exact=None
+    scan_states=[]
 
     def trace(name,original):
         def traced(*a,**k):
             nonlocal probe
             calls[name]+=1
-            if args.arm=='D' and args.phase=='continuous' and name=='bwd' and probe is None:
+            if args.arm=='D' and args.phase=='continuous' and name=='bwd' and probe is None and args.backend=='native':
                 probe=isolate_native_backward(original,a,k)
-            return original(*a,**k)
+            value=original(*a,**k)
+            if name=='fwd':
+                import hashlib
+                scan_states.append(hashlib.sha256(value[1].detach().cpu().contiguous().numpy().tobytes()).hexdigest())
+            return value
         return traced
 
+    order=[v.tolist() for v in epoch_indices(3407,0)[:2]]
+    from .checkpoint import digest
+    def progress(update):
+        return dict(update=update,order=order,order_sha256=digest(order))
     original={k:getattr(core,k) for k in calls}
     for k,v in original.items():
         setattr(core,k,trace(k,v))
     try:
-        with run_lock(args.work),Events(args.work/'events.jsonl',resume=args.phase=='resume') as events:
+        with (installed(core) if args.backend=='deterministic' and args.arm=='D'
+              else nullcontext()),run_lock(args.work),Events(args.work/'events.jsonl',resume=args.phase=='resume') as events:
             ck=Checkpoints(args.work)
-            p={'update':0}
+            p=progress(0)
             if args.phase=='resume':
                 def check(p):
-                    if p!={'update':1}:
+                    if p!=progress(1):
                         raise AssertionError('Synthetic cursor differs')
                 p=ck.restore(m,opt,sig,events,check,lambda p:optimizer_cursor(opt,m,p['update']))
                 saved=snapshot(args.work)
@@ -116,9 +129,10 @@ def worker(args):
                 y=torch.rand(4,3,640,640,device='cuda')-bias
                 gt=[torch.tensor([[12,90,44,130],[140,200,230,294],[300,140,460,350]],
                                  dtype=torch.float32,device='cuda')]*4
+                scan_states.clear()
                 result=update(m,opt,x if args.arm!='B' else None,y if args.arm!='A' else None,gt)
-                p={'update':p['update']+1}
-                events.append(dict(**p,**result))
+                p=progress(p['update']+1)
+                events.append(dict(update=p['update'],synthetic_indices=order[p['update']-1],scan_state_sha256=list(scan_states),**result))
             optimizer_cursor(opt,m,end)
             ck.commit(m,opt,sig,p,events)
             if args.phase=='interrupt':
@@ -126,7 +140,9 @@ def worker(args):
     finally:
         for k,v in original.items():
             setattr(core,k,v)
-    if calls!={k:(9*(2 if args.phase=='continuous' else 1) if args.arm=='D' else 0) for k in calls}:
+    scans=9*(2 if args.phase=='continuous' else 1) if args.arm=='D' else 0
+    expected_bwd=scans*(4 if args.backend=='deterministic' else 1)
+    if calls!=dict(fwd=scans,bwd=expected_bwd):
         raise AssertionError(f'Unexpected native calls {calls}')
     return dict(arm=args.arm,phase=args.phase,updates=p['update'],native_calls=calls,native_backward_probe=probe,restored_before_update_exact=restored_exact)
 
@@ -137,20 +153,20 @@ def snapshot(root):
     return torch.load(ck._path(entry['last']),map_location='cpu',weights_only=False)
 
 
-def audit(upstream,output):
+def audit(upstream,output,backend="native"):
     if not torch.cuda.is_available() or torch.cuda.device_count()!=1:
         raise SystemExit('BLOCKED: requires one CUDA device')
     with tempfile.TemporaryDirectory(prefix='sigma-d1b-synthetic-') as t:
         work=external(t)
         result={'status':'PASS_SYNTHETIC_ONLY','arms':{},'official_test_pixel_reads':0,
-                'real_llvip_optimizer_updates':0,'formal_training_started':False}
+                'real_llvip_optimizer_updates':0,'formal_training_started':False,'backend':backend}
         for arm in 'ABCD':
             row={'workers':[]}
             result['arms'][arm]=row
             for phase in ('continuous','interrupt','resume'):
                 d=work/(arm+('-continuous' if phase=='continuous' else '-resumed'))
                 cmd=[sys.executable,'-m',__spec__.name,'--upstream',str(upstream),
-                     '--work',str(d),'--phase',phase,'--arm',arm]
+                     '--work',str(d),'--phase',phase,'--arm',arm,'--backend',backend]
                 proc=subprocess.run(cmd,text=True,capture_output=True)
                 if proc.stderr:
                     print(proc.stderr,end='',file=sys.stderr)
@@ -206,7 +222,8 @@ if __name__=='__main__':
     p.add_argument('--output',type=Path)
     p.add_argument('--work',type=Path)
     p.add_argument('--phase',choices=('continuous','interrupt','resume'))
+    p.add_argument('--backend',choices=('native','deterministic'),default='native')
     p.add_argument('--arm',choices=list('ABCD'))
     a=p.parse_args()
     os.environ.setdefault('CUBLAS_WORKSPACE_CONFIG',':4096:8')
-    print(json.dumps(worker(a) if a.phase else audit(a.upstream,a.output),sort_keys=True))
+    print(json.dumps(worker(a) if a.phase else audit(a.upstream,a.output,a.backend),sort_keys=True))
