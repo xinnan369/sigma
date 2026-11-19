@@ -8,7 +8,7 @@ from pathlib import Path
 import numpy as np
 from PIL import Image
 
-from .scan import dump, phash
+from .scan import _popcount, dump, phash
 
 ROOT = Path(__file__).resolve().parents[2]
 MANIFESTS = ('reports/evidence/r1c/manifest.json', 'reports/evidence/r1b/data-manifest.json')
@@ -67,7 +67,7 @@ def compare(rows, historical_root, archived):
         for r in imgs:
             if r['modality'] != mod:
                 continue
-            dist = np.bitwise_count(vec ^ np.uint64(int(r['phash63'],16)))
+            dist = _popcount(vec ^ np.uint64(int(r['phash63'],16)))
             hits = int((dist<=6).sum())
             pairs += hits
             left += bool(hits)
