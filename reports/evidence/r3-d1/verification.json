@@ -1,0 +1,41 @@
+{
+  "baseline": "a7a28b519acb173e01aad00b9d55742885ec87bc",
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "execution_source_sha256_lf": {
+    "budget.py": "275acca7634ae5c0eb6af613a8cd3f607659f0c8487f117e0cf147edea5bf901",
+    "coco.py": "b3f9a0ceccb5984265944f25e5de3cfcd678671302643507b7840c8d11963de0",
+    "data.py": "211571b9037111d8197293ce9043734d2861c5067c4f1d481113392978d9ae11",
+    "fcos.py": "fc37d400958c3ff2a406e928cffbf25ac9e2c0344d9e186087535308e1f89998",
+    "model.py": "d678fb55a2fb647e0dba24f5f605f39c301f8aa8312c7d3b156776c0d922de3f",
+    "plan.py": "ee423d24c933691783e2fa38dde2dd7b9f1ca9d58ea71f95c60f246abda8c78b",
+    "preflight.py": "271b1a5c581479d3b36b5991014c39e7e613f903317b41c8f76ccf1206be243b",
+    "upstream.py": "5e754ea7f94eed34d53fbaa84fc7f5c41aca18e96b1ee6ed4d48f9d0d2882ffb"
+  },
+  "hash_note": "gpu.json hashes actual checkout bytes; canonical LF hashes correspond to committed Git blobs.",
+  "commands": {
+    "cpu": "python -m pytest -q -rs tests",
+    "compile": "python -m compileall -q experiments/r3_d1",
+    "gpu": "python -u -m experiments.r3_d1.preflight --upstream <PINNED_SIGMA> --output reports/evidence/r3-d1/gpu.json"
+  },
+  "exit_codes": {
+    "cpu": 0,
+    "compile": 0,
+    "gpu": 0
+  },
+  "files_sha256": {
+    "gpu.json": "3c7bc364bcee950e5c1ca0c4e05cfa93a437552badda869348d1cf3049f174f6",
+    "gpu.log": "acefb3f397db972ece0132548fcd4ced4452938765cc557cb2f14a8437e806ba",
+    "cpu.log": "10231c3d2e5395b268eada52f7ecff57a79d7139b6dcdf800ce52069c5d3d504"
+  },
+  "real_data_check": {
+    "fit": {
+      "id": "010001",
+      "boxes": 6
+    },
+    "validation": {
+      "id": "020001",
+      "boxes": 2
+    },
+    "official_test_pixel_reads": 0
+  }
+}
