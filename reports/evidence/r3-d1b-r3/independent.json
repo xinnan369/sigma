@@ -1,0 +1,159 @@
+{
+  "status": "HOLD",
+  "head": "3ce9a30c1521df6143cec8d371d5d0b6be579434",
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "signature_count": 20,
+  "independently_rebuilt_orders": 50,
+  "active_contract": {
+    "revision": "D1B-R1",
+    "status": "ACTIVE",
+    "backend": "sigma-r3-exclusive-block-pairwise-v1",
+    "supersedes": "D_NATIVE_BACKWARD_BLOCKED",
+    "superseded_rule_active": false,
+    "forward": "PINNED_NATIVE_UNCHANGED",
+    "backward": "EXCLUSIVE_SAMPLE_CHANNEL_SLOTS_FIXED_PAIRWISE_REDUCTION",
+    "comparison": {
+      "scope": "NATIVE_VS_DETERMINISTIC_ONLY",
+      "atol": 2e-05,
+      "rtol": 0.0002
+    },
+    "repeat_backward": "BITWISE",
+    "checkpoint_resume": "BITWISE",
+    "formal_training": "INDEPENDENT_AUTHORIZATION_REQUIRED"
+  },
+  "numerical": {
+    "historical": {
+      "raw_cases": 16,
+      "native_changed": [
+        "dA",
+        "dB",
+        "dC",
+        "dD",
+        "ddelta_bias"
+      ],
+      "raw_max_mixed_ratio": 0.008162327110767365,
+      "detector_max_abs": {
+        "4": {
+          "gradients": 6.48200511932373e-07,
+          "inputs": 1.3969838619232178e-09
+        },
+        "2": {
+          "gradients": 7.227063179016113e-07,
+          "inputs": 2.7939677238464355e-09
+        }
+      },
+      "parameter_tensors": 155
+    },
+    "rerun": {
+      "raw_cases": 16,
+      "native_changed": [
+        "dA",
+        "dB",
+        "dC",
+        "dD",
+        "ddelta_bias"
+      ],
+      "raw_max_mixed_ratio": 0.005223053507506847,
+      "detector_max_abs": {
+        "4": {
+          "gradients": 8.568167686462402e-07,
+          "inputs": 1.3969838619232178e-09
+        },
+        "2": {
+          "gradients": 7.152557373046875e-07,
+          "inputs": 3.026798367500305e-09
+        }
+      },
+      "parameter_tensors": 155
+    }
+  },
+  "resume_arms": [
+    "A",
+    "B",
+    "C",
+    "D"
+  ],
+  "development_totals": {
+    "fit": {
+      "images": 9926,
+      "gt": 28547,
+      "matched": 28540,
+      "unmatched": 7,
+      "zero_positive_images": 2,
+      "positive_stride_8": 90027,
+      "positive_stride_16": 150737,
+      "positive_stride_32": 27,
+      "lost_tie_or_overlap": 7
+    },
+    "validation": {
+      "images": 2087,
+      "gt": 5536,
+      "matched": 5530,
+      "unmatched": 6,
+      "zero_positive_images": 0,
+      "positive_stride_8": 5272,
+      "positive_stride_16": 41060,
+      "positive_stride_32": 0,
+      "lost_tie_or_overlap": 5,
+      "no_eligible_point": 1
+    }
+  },
+  "coverage_ledger_sha256": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd",
+  "exit_codes": {
+    "resume": 0,
+    "data": 0,
+    "cpu-windows": 0,
+    "cpu-fix-preview": 0,
+    "audit-unit": 0,
+    "compileall": 0,
+    "numerics": 0,
+    "cpu": 1
+  },
+  "fresh_file_sha256": {
+    "audit-unit.log": "6faf8cd036899be7a6b20a26ed7f978fdbbb7fd0f9f571e4b90c1b883e63d3e0",
+    "compileall.log": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d",
+    "cpu-fix-preview.log": "dbe67d8f2301c56adcb41cec80bd0e82a3757d7e8ba04dd9a4230097bf09dafc",
+    "cpu-windows.log": "ef8fa35ecfe108bd92639f3273d41e9c9608cb28aad49b2316f677e19d3901cd",
+    "cpu.log": "9a6b33b623e7996a0bbc9cbd71109f83c2996bf01fae246d3098e5b61a840e2f",
+    "data-integrity.json": "cfe3183ecb044b17cbcfeda901d82f5d94e616bad6a8caa98a7fa6bb03a6549b",
+    "data.log": "d11f166c64aa83dfabc101ee4d35c90c304db84ecac51a36387eeec1a2212d07",
+    "gt-coverage.json": "c2e8a71a9c93f33cdbf3f46a79c6a72f3bf906a77ff11343191e7afb8ea23df9",
+    "gt-per-image.jsonl": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd",
+    "numerics.json": "191c11d2412c3df73de1c0304ea1a71c15f8d6bf47b8e775d08246d1a740fd85",
+    "numerics.log": "3acfbca58b6350f03cd56b2a1cb3d7ef4dfa2dc1a3e7c9aa714b562020598960",
+    "resume.json": "06f3cdf0daf879090d5d8156e221618f386324cdad5df2e2bbc9748247074d78",
+    "resume.log": "42c1c59b7f4447f4f4e0cf364d2256c708893c02d599d35f7fd508b4d8d2870f"
+  },
+  "runtime": {
+    "cpu_threads": 1,
+    "cublas_workspace": ":4096:8",
+    "cuda_build": "12.1",
+    "cudnn": 8902,
+    "deterministic": true,
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "gpu": {
+      "bytes": 25769279488,
+      "capability": [
+        8,
+        6
+      ],
+      "driver": "610.88",
+      "name": "NVIDIA GeForce RTX 3090",
+      "visible_devices": 1
+    },
+    "numpy": "1.26.4",
+    "opencv": "4.9.0",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "pycocotools": "2.0.10",
+    "python": "3.11.11",
+    "torch": "2.2.2+cu121"
+  },
+  "registry_empty": true,
+  "authorized": false,
+  "official_test_reads": 0,
+  "real_llvip_updates": 0
+}

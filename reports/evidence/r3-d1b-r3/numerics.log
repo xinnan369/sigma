@@ -1,0 +1,27 @@
+raw 4 80 128
+raw 4 80 256
+raw 4 40 128
+raw 4 40 256
+raw 4 20 128
+raw 4 20 256
+raw 4 7 128
+raw 4 7 256
+model A/4
+model B/4
+model C/4
+model D/4
+raw 2 80 128
+raw 2 80 256
+raw 2 40 128
+raw 2 40 256
+raw 2 20 128
+raw 2 20 256
+raw 2 7 128
+raw 2 7 256
+model A/2
+model B/2
+model C/2
+model D/2
+PASS numerical and repeat audits
+
+Exit code: 0
