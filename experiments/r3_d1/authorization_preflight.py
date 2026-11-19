@@ -1,5 +1,7 @@
 """Read-only candidate issuance. Never installs a receipt or starts training."""
 import argparse
+import hashlib
+import re
 import json
 import os
 from pathlib import Path
@@ -16,7 +18,7 @@ from .model import SEEDS
 from .train import ROOT, batches, reproducible, runtime, signature
 from .upstream import load_sigma
 
-BASE='e1d0d462f84791f0b888fdae8dab25629b2aee9f'
+BASE='e7f782258be07e3d9718fa19190fe47705e074fe'
 D0=ROOT/'reports/evidence/r3-d0/split.json'
 PROTOCOL='docs/R3_D1_DETECTION_PROTOCOL.md'
 EXPECTED={'fit':(9926,28547,28540,7,2,[90027,150737,27]),
@@ -123,6 +125,131 @@ def verify_resume(r,base_sig):
                     for x,(f,b) in zip(workers,calls,strict=True)),f'Invalid native scan calls: {arm}')
 
 
+ACTIVE_MARKER='<!-- BEGIN D1B-R1 ACTIVE CONTRACT -->'
+END_MARKER='<!-- END D1B-R1 ACTIVE CONTRACT -->'
+ATOL,RTOL=2e-5,2e-4
+BACKEND='sigma-r3-exclusive-block-pairwise-v1'
+ACTIVE_CONTRACT=dict(revision='D1B-R1',status='ACTIVE',backend=BACKEND,
+    supersedes='D_NATIVE_BACKWARD_BLOCKED',superseded_rule_active=False,
+    forward='PINNED_NATIVE_UNCHANGED',
+    backward='EXCLUSIVE_SAMPLE_CHANNEL_SLOTS_FIXED_PAIRWISE_REDUCTION',
+    comparison=dict(scope='NATIVE_VS_DETERMINISTIC_ONLY',atol=ATOL,rtol=RTOL),
+    repeat_backward='BITWISE',checkpoint_resume='BITWISE',
+    formal_training='INDEPENDENT_AUTHORIZATION_REQUIRED')
+
+
+def unique_keys(pairs):
+    d=dict(pairs)
+    require(len(d)==len(pairs),'Duplicate protocol field')
+    return d
+
+
+def verify_protocol(text):
+    require(text.count(ACTIVE_MARKER)==text.count(END_MARKER)==1,
+            'Expected one active D1B-R1 contract')
+    body,tail=text.split(ACTIVE_MARKER)
+    segment,remainder=tail.split(END_MARKER)
+    region=re.fullmatch(r'\s*```json\s*([\s\S]+?)\s*```\s*',segment)
+    require(region is not None and not remainder.strip(),'Invalid or nonfinal active contract')
+    contract=json.loads(region[1],object_pairs_hook=unique_keys)
+    require(digest(contract)==digest(ACTIVE_CONTRACT),'Active backend or acceptance standard differs')
+    declaration='旧 D 臂 BLOCKED 条款已由本修订正式取代，不再是现行规则。'
+    require(body.count(declaration)==1,'Missing explicit old-rule supersession')
+    heading='## D1B-R1 确定性后端（现行修订）'
+    require(body.count(heading)==1,'Missing unique active amendment heading')
+    prior,amendment=body.split(heading)
+    for marker in ('sigma-r3-exclusive-block-pairwise-v1','atol=2e-5','rtol=2e-4',
+                   '仍须逐位一致','独立验收登记的可信回执'):
+        require(marker in amendment,f'Missing normative amendment declaration: {marker}')
+    # Refuse the obsolete current-rule sentence and competing blocking declarations.
+    remaining=prior+'\n'+amendment.replace(declaration,'')
+    conflict=r'显式阻止\s*D\s*的正式运行|(?:D\s*臂?|arm\s+D)[^。\n]{0,35}(?:BLOCKED|仍禁止|仍阻断|不得启动|禁止正式)|旧\s*D[^。\n]{0,35}(?:继续有效|仍有效)'
+    require(not re.search(conflict,remaining,re.I),'Obsolete D block remains in active prose')
+    return contract
+
+
+def verify_numerics(n,base_sig):
+    require(n.get('status')=='PASS' and n.get('version')==BACKEND
+            and n.get('tolerance')==dict(atol=ATOL,rtol=RTOL,replays=4)
+            and n.get('official_test_reads')==n.get('real_llvip_updates')==0,
+            'Invalid numerical evidence scope or tolerances')
+    for k in ('environment','upstream','source_sha256'):
+        require(n[k]==base_sig[k],f'Numerical fingerprint differs: {k}')
+    expected={(b,d,hw*hw*f,g) for b in (4,2) for hw in (80,40,20,7)
+              for d,g,f in ((128,1,1),(256,2,2))}
+    rows=n['raw']
+    require(len(rows)==16 and {(*r['shape'],r['groups']) for r in rows}==expected,
+            'Numerical case matrix differs')
+    require(all(all(r.get(k) is True for k in ('numerical_pass','forward_bitwise',
+                'scan_buffer_bitwise','deterministic_bitwise'))
+                and len(r['candidate_vs_native'])==5
+                and all(set(a)=={'du','ddelta','dA','dB','dC','dD','ddelta_bias'}
+                        and all(v['close'] is True and 0<=v['mixed_ratio']<=1
+                                for v in a.values()) for a in r['candidate_vs_native'])
+                for r in rows),'Raw numerical gate failed')
+    for batch in (4,2):
+        r=n['detector'][f'D/{batch}']
+        require(r['detector_forward_bitwise'] is True and r['deterministic_repeat_bitwise'] is True
+                and set(r['inputs'])=={'rgb','thermal'} and bool(r['gradients'])
+                and all(v['close'] is True and 0<=v['mixed_ratio']<=1 for k in ('inputs','gradients') for v in r[k].values()),
+                'Detector numerical gate failed')
+
+
+def independent_digest(value):
+    # Separate from the runner digest implementation; includes the terminal LF.
+    wire=json.dumps(value,sort_keys=True,separators=(',',':'),allow_nan=False)
+    return hashlib.sha256((wire+'\n').encode('utf-8')).hexdigest()
+
+
+def independent_orders(roster):
+    require(len(roster)==len(set(roster))==9926,'Unexpected Fit roster')
+    result={}
+    for seed in SEEDS:
+        result[seed]=[]
+        for epoch in range(10):
+            rng=np.random.Generator(np.random.PCG64(np.random.SeedSequence([seed,epoch])))
+            ids=[roster[int(i)] for i in rng.permutation(9926)]
+            window=[ids[k:k+4] for k in range(0,9926,4)]
+            require(len(window)==2482 and len(window[-1])==2,'Independent batch shape differs')
+            result[seed].append(independent_digest(window))
+    require(len({h for rows in result.values() for h in rows})==50,'Epoch digests not distinct')
+    return result
+
+
+def independent_signature(seed,arm,src,env):
+    """Bind the approved v1 contract independently of train.signature()."""
+    files={p.relative_to(ROOT).as_posix():hashfile(p)
+           for p in (ROOT/'experiments/r3_d1').rglob('*.py')
+           if p.name!='review_registry.py'}
+    files.update({rel:hashfile(ROOT/rel) for rel in (PROTOCOL,'experiments/r3_d0/llvip.py')})
+    return dict(schema='r3-d1b-v1',seed=seed,arm=arm,cuda=True,split_sha256=SPLIT_SHA256,
+                upstream=src,environment=env,deterministic_backend=BACKEND,precision='fp32',
+                optimizer='AdamW',lr=.0003,betas=[.9,.999],eps=1e-8,conv_decay=.01,
+                other_decay=0.,scheduler=None,epochs=10,batch=4,updates_per_epoch=2482,
+                fit=9926,validation=2087,cnn_widths=[158,370,18],source_sha256=files)
+
+
+def verify_persisted(path,roster,src,env):
+    doc=read(path)
+    require(doc.get('baseline')==BASE,'Signature ledger baseline differs')
+    runs=doc['runs']
+    require(set(runs)=={f'{a}/{s}' for a in 'ABCD' for s in SEEDS},'Wrong run matrix')
+    orders=independent_orders(roster)
+    hashes={}
+    for arm in 'ABCD':
+        for seed in SEEDS:
+            key=f'{arm}/{seed}'
+            row=runs[key]
+            fresh=independent_signature(seed,arm,src,env)
+            require(row['signature']==fresh,f'Persisted signature fields differ: {key}')
+            check=independent_digest(fresh)
+            require(check==row['sha256']==digest(fresh),f'Persisted signature SHA256 differs: {key}')
+            require(row['fit_orders']==orders[seed],f'Independent epoch order differs: {key}')
+            hashes[key]=check
+    require(len(set(hashes.values()))==20,'Run signatures collide')
+    return hashes,orders
+
+
 def issue(upstream,out):
     require(hashfile(D0)==SPLIT_SHA256,'Frozen split hash differs')
     from .review_registry import TRUSTED_RECEIPTS
@@ -131,8 +258,14 @@ def issue(upstream,out):
     reproducible(3407,True)
     _,_,src=load_sigma(upstream)
     env=runtime(True)
+    protocol=ROOT/PROTOCOL
+    pp=hashfile(protocol)
+    contract=verify_protocol(protocol.read_text(encoding='utf-8'))
+    npath=out/'numerics.json'
+    base_sig=signature(3407,'D',src,env)
+    verify_numerics(read(npath),base_sig)
     rpath=out/'resume.json'
-    verify_resume(read(rpath),signature(3407,'D',src,env))
+    verify_resume(read(rpath),base_sig)
     datasha=verify_data(out)
     executions={}
     roster=tuple(read(D0)['fit'])
@@ -140,26 +273,32 @@ def issue(upstream,out):
     for arm in 'ABCD':
         for seed in SEEDS:
             s=signature(seed,arm,src,env)
-            require(s==signature(seed,arm,src,env),'Signature is not repeatable')
             require(s['arm']==arm and s['seed']==seed and s['epochs']==10 and s['batch']==4
                     and s['updates_per_epoch']==2482 and s['deterministic_backend']
                     =='sigma-r3-exclusive-block-pairwise-v1','Frozen run contract differs')
             executions[f'{arm}/{seed}']=dict(signature=s,sha256=digest(s),fit_orders=sampled[seed])
-    roots={v['sha256'] for v in executions.values()}
-    require(len(roots)==20,'Run signatures collide')
-    pp=hashfile(ROOT/PROTOCOL)
-    write_json(out/'run-signatures.json',dict(baseline=BASE,runs=executions))
     path=out/'authorization-candidate.json'
     require(not path.exists(),'Candidate already exists')
+    ledger=out/'run-signatures.json'
+    write_json(ledger,dict(baseline=BASE,runs=executions))
+    hashes,orders=verify_persisted(ledger,roster,src,env)
+    require(hashfile(protocol)==pp,'Protocol changed during issuance')
+    verification=out/'signature-verification.json'
+    write_json(verification,dict(status='PASS',signature_count=len(hashes),
+        independently_recomputed_epoch_order_count=sum(map(len,orders.values())),
+        persisted_ledger_sha256=hashfile(ledger),active_contract=contract,
+        protocol_sha256=pp,numerics_sha256=hashfile(npath)))
     receipt=dict(schema='r3-d1b-r1-authorization-v1',baseline=BASE,split_sha256=SPLIT_SHA256,
                  disposition='CANDIDATE_NOT_TRUSTED',gates=dict.fromkeys(REQUIRED,'PASS'),
-                 run_signatures={k:v['sha256'] for k,v in executions.items()},
+                 run_signatures=hashes,
                  data_integrity_sha256=datasha,protocol_sha256=pp,
                  gate_evidence={**{a:dict(file='resume.json',sha256=hashfile(rpath),record=f'arms/{a}')
                                    for a in 'ABCD'},
                      'data_integrity':dict(file='data-integrity.json',sha256=datasha),
                      'protocol_signature':dict(file='run-signatures.json',
-                         sha256=hashfile(out/'run-signatures.json'),protocol_sha256=pp)})
+                         sha256=hashfile(ledger),protocol_sha256=pp,
+                         verification_file=verification.name,verification_sha256=hashfile(verification),
+                         numerics_file=npath.name,numerics_sha256=hashfile(npath))})
     write_json(path,receipt)
     for arm in 'ABCD':
         try:

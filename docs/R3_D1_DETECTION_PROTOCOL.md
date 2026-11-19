@@ -6,7 +6,7 @@
 
 种子 3407–3411；每个种子每臂独立随机初始化，不用预训练权重，不共享训练过的权重。公共塔和共享 FCOS 头使用 SHA256(seed/模块名) 的前 8 个字节大端整数种子和 Kaiming normal fan_in/ReLU、BN 默认标度和偏置、卷积 bias=0。Sigma 融合按对应模块种子调用上游构造器，保留 Δ/A/D 原始初始化。CNN 使用同一模块命名策略，但保持其卷积初始化。所有臂接受同一 seed/epoch 自动排序及增强。模型、算子和预算见[设计及预检](../reports/R3_D1_DETECTION_DESIGN.md)。
 
-每臂每种子固定 10 Epoch，单设备 FP32、关闭 TF32，batch 4，NumPy PCG64(SeedSequence([seed,epoch])) 对 Fit 遍历一次；每轮 2,481 个四图批次与 1 个两图尾批，尾批按实际图数平均，不跨轮。每批一次 AdamW 更新，恒定 lr=3e−4、betas (.9,.999)、eps 1e−8，Conv2d weight 的 decay=.01，其它参数 decay=0；全部可训练参数均覆盖。不早停，不在本轮保存或更新权重。正式跑前另需签署恢复、训练驱动和实际总资源审计；本 PR 没有启动训练的 CLI。
+每臂每种子固定 10 Epoch，单设备 FP32、关闭 TF32，batch 4，NumPy PCG64(SeedSequence([seed,epoch])) 对 Fit 遍历一次；每轮 2,481 个四图批次与 1 个两图尾批，尾批按实际图数平均，不跨轮。每批一次 AdamW 更新，恒定 lr=3e−4、betas (.9,.999)、eps 1e−8，Conv2d weight 的 decay=.01，其它参数 decay=0；全部可训练参数均覆盖。不早停。本轮只进行授权预检，不保存或更新正式训练权重。正式训练入口须通过下文独立授权。
 
 FCOS：五层卷积塔 stride 2，通道 16/32/64/64/64；取 stride 8/16/32，三尺度共享同一 3×3 Conv 64→64 + BN + SiLU、1×1 Conv 64→6。每格中心为 (index+.5)×stride，剔除 padding。按变换后 sqrt(area) 分层 [0,64)、[64,128)、[128,∞)；格中心严格落入框及半径 1.5×stride 的中心区，竞争时取最小面积、再取 XML 顺序。无匹配的目标不设置虚假中心；正式报告未匹配 GT 数。回归距离为 stride×softplus(raw)，centerness GT 为 sqrt(min(l,r)/max(l,r) × min(t,b)/max(t,b))。每帧 focal BCE α=.25、γ=2 和 center BCE 除以 max(正样本数,1)，GIoU 按 centerness 加权除以权重和（无正样本则 0）；三项等权，跨实际批图平均。
 
@@ -22,4 +22,32 @@ FCOS：五层卷积塔 stride 2，通道 16/32/64/64/64；取 stride 8/16/32，�
 
 执行器沿用上述实验规则。每 100 个全局更新和每轮 Validation 完成后，在清空梯度时提交一次。每个臂和种子使用独立仓库外输出及进程锁。日志先 fsync，内容寻址 checkpoint 写入并 fsync 后原子发布 ledger；last/best 通过独立文件投影，若进程停在 ledger 发布之后可恢复旧投影。恢复校验已提交前缀，仅截断其后的未提交字节。未提交更新可在同一游标重放；第一次提交前中断没有可恢复 checkpoint，不自动重置。仅用 Validation 预测和完整原坐标 GT 选模；AP 与预测摘要按轮提交。不得把库中入口或授权参数视作本轮训练批准。
 
-D 的严格逐位恢复轨迹未通过；固定 CUDA 扩展重放反向非确定，本执行器显式阻止 D 的正式运行，不改架构、不换算子、不放宽比较标准。参见 [D1B 审计报告](../reports/R3_D1B_TRAINING_RUNNER.md)。
+## D1B-R1 确定性后端（现行修订）
+
+原版固定 Sigma CUDA backward 在跨 block 原子累加 dA、dB、dC、dD 和 ddelta_bias 时，浮点累加的顺序不固定。相同输入反向重放出现差异，旧 D 臂逐位恢复闸门因此失败；该结果保留在 [D1B 历史报告](../reports/R3_D1B_TRAINING_RUNNER.md)。
+
+现行 D 臂使用 `sigma-r3-exclusive-block-pairwise-v1`。保持原生 Sigma 前向及前向数学定义不变；CUDA backward 按样本拆分，并为每通道提供独立的 B/C 梯度槽，消除跨 block 对同一槽的竞争。再以固定配对二叉树归约通道和样本维度，不更换模型或冻结参数。旧 D 臂 BLOCKED 条款已由本修订正式取代，不再是现行规则。
+
+只在**原版与确定性版**数值对照中使用 `atol=2e-5`、`rtol=2e-4`。同版本重复反向及跨进程断点恢复仍须逐位一致；不使用容差判定重放或恢复。
+
+RTX 3090 已通过 FP32 三融合尺度和额外网格、batch 4/2 的原生级及整模型数值与重复检查，以及 A/B/C/D 跨进程逐位恢复；见 [R1 数值与恢复报告](../reports/R3_D1B_R1_DETERMINISTIC_SCAN.md)。授权预检还需重跑并绑定当前源码、协议与环境。合成验收通过不构成训练许可：四臂必须同时通过六项闸门，并持有独立验收登记的可信回执后才可启动正式训练。
+
+以下 JSON 为本修订的机器可读验收条款，必须与正文一致：
+
+<!-- BEGIN D1B-R1 ACTIVE CONTRACT -->
+```json
+{
+  "revision": "D1B-R1",
+  "status": "ACTIVE",
+  "backend": "sigma-r3-exclusive-block-pairwise-v1",
+  "supersedes": "D_NATIVE_BACKWARD_BLOCKED",
+  "superseded_rule_active": false,
+  "forward": "PINNED_NATIVE_UNCHANGED",
+  "backward": "EXCLUSIVE_SAMPLE_CHANNEL_SLOTS_FIXED_PAIRWISE_REDUCTION",
+  "comparison": {"scope": "NATIVE_VS_DETERMINISTIC_ONLY", "atol": 2e-5, "rtol": 2e-4},
+  "repeat_backward": "BITWISE",
+  "checkpoint_resume": "BITWISE",
+  "formal_training": "INDEPENDENT_AUTHORIZATION_REQUIRED"
+}
+```
+<!-- END D1B-R1 ACTIVE CONTRACT -->
