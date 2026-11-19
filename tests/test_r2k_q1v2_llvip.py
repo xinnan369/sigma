@@ -95,3 +95,10 @@ def test_archived_clean_input_flags_are_counts_not_health_labels():
             assert points==64*4800
             assert result['clean_input_flag_rate']==flagged/points
             assert 'healthy_fpr' not in result
+
+
+def test_numpy_1x_popcount_has_same_hamming_counts(monkeypatch):
+    monkeypatch.delattr(np, 'bitwise_count', raising=False)
+    values = np.array([0, 1, 2**63, 2**64-1, 0xFF00FF00FF00FF00], dtype=np.uint64)
+    assert scan._popcount(values).tolist() == [0, 1, 1, 64, 32]
+    assert scan._popcount(values[:0]).size == 0
