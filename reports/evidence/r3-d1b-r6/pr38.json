@@ -1,0 +1,32 @@
+{
+  "baseRefName": "codex/R3-D1B-R3-independent-authorization-audit",
+  "headRefOid": "e32c15d73c2d06ab384fb13f1f133f37a6d05835",
+  "mergeCommit": {
+    "oid": "758e4f42f7038a7cff446525ba92fe73bad3f242"
+  },
+  "mergedAt": "2026-11-19T12:02:41Z",
+  "state": "MERGED",
+  "statusCheckRollup": [
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-19T11:45:51Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/xinnan369/sigma/actions/runs/44517544216/job/135537363867",
+      "name": "cpu-tests",
+      "startedAt": "2026-11-19T11:44:48Z",
+      "status": "COMPLETED",
+      "workflowName": "R0 utility tests"
+    },
+    {
+      "__typename": "CheckRun",
+      "completedAt": "2026-11-19T11:45:33Z",
+      "conclusion": "SUCCESS",
+      "detailsUrl": "https://github.com/xinnan369/sigma/actions/runs/44517487337/job/135537166922",
+      "name": "cpu-tests",
+      "startedAt": "2026-11-19T11:44:25Z",
+      "status": "COMPLETED",
+      "workflowName": "R0 utility tests"
+    }
+  ],
+  "url": "https://github.com/xinnan369/sigma/pull/38"
+}

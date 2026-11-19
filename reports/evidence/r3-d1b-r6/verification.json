@@ -1,0 +1,17 @@
+{
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "explicit_approval_recorded": false,
+  "files_sha256": {
+    "approval-candidate-review.json": "d03b69fd1d42ad4cfb54b3dc0c60ce408c6885525b81f585e250e1957976ccdc",
+    "pr38.json": "b81954dc45580b9759e6213239f3f68491de312f2d2ae8c1271c345b2258eb80",
+    "verification.log": "49c98a91324dc1c5a8489a996014e8a2817fefbe38ba18891d3ff0ab71fa407d"
+  },
+  "merge_commit": "758e4f42f7038a7cff446525ba92fe73bad3f242",
+  "r5_manifest_sha256": "0f74e0d01f167ade2f2505f9009322afa60f8b262d0962c1375d0bae1910c175",
+  "schema": "r3-d1b-r6-approval-evidence-v1",
+  "status": "BLOCKED",
+  "technical_verification": "PASS",
+  "tree": "eafb72260a3488f070d0d7a7b834bf17b7a2ec1c",
+  "trusted_registry_changed": false,
+  "verification_exit_code": 0
+}
