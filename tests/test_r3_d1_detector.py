@@ -93,3 +93,75 @@ def test_frozen_sampler_optimizer_and_checkpoint_ties():
     sum(parts.values()).backward()
     assert all(p.grad is not None and torch.isfinite(p.grad).all() for p in m.parameters())
     assert checkpoint_key(dict(ap50_95=.4,ap50=.6),0)>checkpoint_key(dict(ap50_95=.4,ap50=.6),1)
+
+
+def test_development_data_verifies_and_parses_once_and_refuses_test_before_open(tmp_path,monkeypatch):
+    import hashlib
+    import json
+    from pathlib import Path
+    import cv2
+    import numpy as np
+    from experiments.r3_d1 import data
+
+    ids=['010001','010002']
+    roles=dict(fit=ids,validation=[])
+    files={}
+    ok,jpeg=cv2.imencode('.jpg',np.zeros((1024,1280,3),np.uint8))
+    assert ok
+    for i in ids:
+        files[i]={f'{m}/train/{i}.jpg':jpeg.tobytes() for m in ('visible','infrared')}
+        files[i][f'Annotations/{i}.xml']=(f'<annotation><filename>{i}.jpg</filename><size>'
+                                         '<width>1280</width><height>1024</height></size></annotation>').encode()
+    for rr in files.values():
+        for rel,b in rr.items():
+            p=tmp_path/rel
+            p.parent.mkdir(parents=True,exist_ok=True)
+            p.write_bytes(b)
+    src=tmp_path/'split.json'
+    raw=json.dumps(dict(**roles,development_sha256={
+        i:{p:hashlib.sha256(b).hexdigest() for p,b in rr.items()} for i,rr in files.items()})).encode()
+    src.write_bytes(raw)
+    monkeypatch.setattr(data,'SPLIT_SHA256',hashlib.sha256(raw).hexdigest())
+    open_orig=Path.read_bytes
+    loads_orig=json.loads
+    calls=[]
+    parses=[]
+    def read(p):
+        calls.append(p)
+        return open_orig(p)
+    def parse(b,*a,**k):
+        parses.append(b)
+        return loads_orig(b,*a,**k)
+    monkeypatch.setattr(Path,'read_bytes',read)
+    monkeypatch.setattr(data.json,'loads',parse)
+    ds=data.DevelopmentData(tmp_path,src)
+    for i in ids:
+        rgb,t,b=ds.read_pair(i,'fit')
+        assert rgb.shape==t.shape==(3,640,640) and b.shape==(0,4)
+    assert calls.count(src)==1 and parses==[raw] and len(calls)==7
+    before=list(calls)
+    for reader in (ds.read_pair,ds.read_boxes):
+        with pytest.raises(ValueError,match='not admitted'):
+            reader('240280','test')
+    assert calls==before
+    src.write_bytes(raw+b' ')
+    with pytest.raises(ValueError,match='Frozen D0 split changed'):
+        data.DevelopmentData(tmp_path,src)
+    assert parses==[raw]
+    # A cached valid manifest still verifies all newly opened file bytes.
+    (tmp_path/'Annotations/010002.xml').write_bytes(b'modified')
+    with pytest.raises(ValueError,match='Frozen file hash differs'):
+        ds.read_pair('010002','fit')
+    with pytest.raises(ValueError,match='Frozen file hash differs'):
+        ds.read_boxes('010002','fit')
+
+
+def test_coverage_distinguishes_overlap_losers_from_no_eligible_points():
+    from experiments.r3_d1.coverage import coverage, points_by_level
+    p=points_by_level()
+    b=torch.tensor([[64.,80.,104.,120.],[64.,80.,104.,120.],[0.,65.,1.,66.]])
+    wins,eligible,levels=coverage(b,p)
+    assert wins.tolist()==[9,0,0] and eligible.tolist()==[9,9,0]
+    assert levels==[9,0,0]
+    assert fcos.targets(p[0],b,0)[0].sum().item()==levels[0]
+    assert coverage(b[:0],p)[2]==[0,0,0]

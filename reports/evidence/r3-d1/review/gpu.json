@@ -1,0 +1,434 @@
+{
+  "upstream": {
+    "commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+    "source_sha256": {
+      "models/encoders/vmamba.py": "e91389cd7c6561df00c63d1d9549694ba5dba2ff20d154fcd814fcd36054241e",
+      "models/encoders/dual_vmamba.py": "2dcda26a436993eefa007827343a556b665e8d1af21360e2746ffa51b3298b05",
+      "models/encoders/selective_scan/selective_scan/selective_scan_interface.py": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753"
+    },
+    "source_file": "/home/xinnan/sigma-r1-upstream/models/encoders/vmamba.py",
+    "extension_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan_cuda_core.cpython-311-x86_64-linux-gnu.so",
+    "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e",
+    "wrapper_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan/selective_scan_interface.py",
+    "wrapper_sha256": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753",
+    "extension_version": "0.0.1"
+  },
+  "runtime": {
+    "python": "3.11.11",
+    "torch": "2.2.2+cu121",
+    "cuda": "12.1",
+    "cudnn": 8902,
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_memory_bytes": 25769279488,
+    "timm": "0.4.12",
+    "einops": "0.8.1",
+    "cpu_threads": 1
+  },
+  "counts": {
+    "D": {
+      "parameters": 490022,
+      "mac": 1771173888,
+      "ops": {
+        "conv_mac": 1059379200,
+        "BatchNorm2d_elements": 6528000,
+        "SiLU_elements": 10828848,
+        "linear_mac": 576319488,
+        "bias_add": 4351200,
+        "scan_state_updates": 25804800,
+        "scan_mac": 58060800,
+        "scan_exp": 25804800,
+        "scan_A_exp": 6144,
+        "scan_input_multiply": 77414400,
+        "scan_delta_softplus": 6451200,
+        "scan_delta_bias_add": 6451200,
+        "LayerNorm_elements": 4300800,
+        "pool_input_elements": 2150400,
+        "Sigmoid_elements": 768,
+        "functional_projection_mac": 77414400,
+        "fusion_residual_merge_add": 6451200,
+        "fusion_gate_multiply": 2150400
+      },
+      "scan_calls": [
+        {
+          "shape": [
+            1,
+            128,
+            6400
+          ],
+          "group_count": 1,
+          "state": 4
+        },
+        {
+          "shape": [
+            1,
+            128,
+            6400
+          ],
+          "group_count": 1,
+          "state": 4
+        },
+        {
+          "shape": [
+            1,
+            256,
+            12800
+          ],
+          "group_count": 2,
+          "state": 4
+        },
+        {
+          "shape": [
+            1,
+            128,
+            1600
+          ],
+          "group_count": 1,
+          "state": 4
+        },
+        {
+          "shape": [
+            1,
+            128,
+            1600
+          ],
+          "group_count": 1,
+          "state": 4
+        },
+        {
+          "shape": [
+            1,
+            256,
+            3200
+          ],
+          "group_count": 2,
+          "state": 4
+        },
+        {
+          "shape": [
+            1,
+            128,
+            400
+          ],
+          "group_count": 1,
+          "state": 4
+        },
+        {
+          "shape": [
+            1,
+            128,
+            400
+          ],
+          "group_count": 1,
+          "state": 4
+        },
+        {
+          "shape": [
+            1,
+            256,
+            800
+          ],
+          "group_count": 2,
+          "state": 4
+        }
+      ],
+      "initial_state_sha256": "1ed0ed2a6f203fb583770dee790d0d72a5e055a92fc7f037ce8e897648a74c2c"
+    },
+    "A": {
+      "parameters": 135062,
+      "mac": 666777600,
+      "ops": {
+        "conv_mac": 666777600,
+        "BatchNorm2d_elements": 3532800,
+        "SiLU_elements": 3532800,
+        "bias_add": 50400
+      },
+      "scan_calls": [],
+      "initial_state_sha256": "17b6521f848044a644b17f1fa2b6e10a5bfe43ce66c9726bec46bd727d29918d"
+    },
+    "B": {
+      "parameters": 135062,
+      "mac": 666777600,
+      "ops": {
+        "conv_mac": 666777600,
+        "BatchNorm2d_elements": 3532800,
+        "SiLU_elements": 3532800,
+        "bias_add": 50400
+      },
+      "scan_calls": [],
+      "initial_state_sha256": "68053010a0c37b96ce0fb2ac46109f23de75ec52758b8e61e4363afa71868408"
+    },
+    "C": {
+      "parameters": 489938,
+      "mac": 1771118400,
+      "ops": {
+        "conv_mac": 1771118400,
+        "BatchNorm2d_elements": 6528000,
+        "SiLU_elements": 6528000,
+        "bias_add": 8104800,
+        "GELU_elements": 3220800,
+        "fusion_residual_merge_add": 2150400
+      },
+      "scan_calls": [],
+      "initial_state_sha256": "b170e95a11d5c4fe7c2cccf5f1454e28f492dc956c3fa63ccbb521196e42dc82"
+    }
+  },
+  "search": {
+    "widths": [
+      158,
+      370,
+      18
+    ],
+    "parameters": 489938,
+    "mac": 1771118400
+  },
+  "source_sha256": {
+    "budget.py": "4855cbb0fe82699ee9b1366b20f91a2457c2f6c00ee4a947db33c4ad26e9cc0e",
+    "coco.py": "469daaf485e16d1a62c7691f2fb03f3cb48f93b849baae2f760309b1a3ea62dd",
+    "coverage.py": "08b0b6c8c8bc0905d5ca38ea08a7736deb0acc42741c9b8f9f14fa15550e730a",
+    "data.py": "a90308bc2c324b97d256c845e58eb9f78593d8504f1eb50fdf8289ec0698730d",
+    "fcos.py": "4dfe01d04d227c8667d7c744fb66ab171027566fd529163300e898cdcbc10759",
+    "model.py": "fa61615c381cac85efd571c7766a523f9c95ab8aa715c476208cc9f992183414",
+    "plan.py": "2d18917ed428a32267b5dd6c80d417e241faf19ce59f640d714aea3f00da3bd8",
+    "preflight.py": "271b1a5c581479d3b36b5991014c39e7e613f903317b41c8f76ccf1206be243b",
+    "upstream.py": "ce379f471a1172ebd6c24ae4fed25ab1bafb68c20db6760e7442214325274356"
+  },
+  "official_test_reads": 0,
+  "optimizer_updates": 0,
+  "seeds": [
+    3407,
+    3408,
+    3409,
+    3410,
+    3411
+  ],
+  "budget_difference": {
+    "parameters": 0.0001714208749811208,
+    "mac": 3.132837513919462e-05
+  },
+  "common_init_equal_seeds": [
+    3407,
+    3408,
+    3409,
+    3410,
+    3411
+  ],
+  "profiles": {
+    "A": {
+      "model": {
+        "median_ms": 0.6677470000004959,
+        "p95_ms": 0.9425641000001761,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "model_and_cpu_decode": {
+        "median_ms": 25.041390999999358,
+        "p95_ms": 29.041903649999945,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "preprocess_model_and_decode": {
+        "median_ms": 34.06244650000012,
+        "p95_ms": 41.820961100000346,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "peak_inference_allocated_bytes": 36926464,
+      "synthetic_forward_backward": [
+        {
+          "batch": 4,
+          "loss": {
+            "cls": 41.087100982666016,
+            "box": 0.9118313193321228,
+            "center": 0.8102839589118958
+          },
+          "nonzero_gradient_tensors_per_fusion_scale": {}
+        },
+        {
+          "batch": 2,
+          "loss": {
+            "cls": 41.087100982666016,
+            "box": 0.9118313193321228,
+            "center": 0.8102839589118958
+          },
+          "nonzero_gradient_tensors_per_fusion_scale": {}
+        }
+      ],
+      "training_step_median_seconds": {
+        "4": 0.11788209750000078,
+        "2": 0.04179736700000092
+      },
+      "peak_training_allocated_bytes": 220852736,
+      "unallocated_adam_state_bytes": 1080496,
+      "five_seed_compute_only_hours": 4.062601128673638
+    },
+    "B": {
+      "model": {
+        "median_ms": 0.812405499997837,
+        "p95_ms": 1.8056877499992297,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "model_and_cpu_decode": {
+        "median_ms": 25.393014500000533,
+        "p95_ms": 30.29428469999935,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "preprocess_model_and_decode": {
+        "median_ms": 34.533275499999405,
+        "p95_ms": 44.018111700002294,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "peak_inference_allocated_bytes": 36926464,
+      "synthetic_forward_backward": [
+        {
+          "batch": 4,
+          "loss": {
+            "cls": 41.47750473022461,
+            "box": 0.9165871143341064,
+            "center": 0.8513080477714539
+          },
+          "nonzero_gradient_tensors_per_fusion_scale": {}
+        },
+        {
+          "batch": 2,
+          "loss": {
+            "cls": 41.47750473022461,
+            "box": 0.9165871143341064,
+            "center": 0.8513079285621643
+          },
+          "nonzero_gradient_tensors_per_fusion_scale": {}
+        }
+      ],
+      "training_step_median_seconds": {
+        "4": 0.12892998750000118,
+        "2": 0.04319890599999887
+      },
+      "peak_training_allocated_bytes": 220852736,
+      "unallocated_adam_state_bytes": 1080496,
+      "five_seed_compute_only_hours": 4.443312470743096
+    },
+    "C": {
+      "model": {
+        "median_ms": 2.4706389999984424,
+        "p95_ms": 4.233269150000929,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "model_and_cpu_decode": {
+        "median_ms": 28.958568500002002,
+        "p95_ms": 33.941015549993736,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "preprocess_model_and_decode": {
+        "median_ms": 42.343405000000445,
+        "p95_ms": 56.35657879999911,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "peak_inference_allocated_bytes": 53198848,
+      "synthetic_forward_backward": [
+        {
+          "batch": 4,
+          "loss": {
+            "cls": 42.3550910949707,
+            "box": 0.9097850322723389,
+            "center": 0.7685932517051697
+          },
+          "nonzero_gradient_tensors_per_fusion_scale": {}
+        },
+        {
+          "batch": 2,
+          "loss": {
+            "cls": 42.35509490966797,
+            "box": 0.9097850322723389,
+            "center": 0.7685932517051697
+          },
+          "nonzero_gradient_tensors_per_fusion_scale": {}
+        }
+      ],
+      "training_step_median_seconds": {
+        "4": 0.09092970000000378,
+        "2": 0.04748816900000108
+      },
+      "peak_training_allocated_bytes": 594633216,
+      "unallocated_adam_state_bytes": 3919504,
+      "five_seed_compute_only_hours": 3.133945470402908
+    },
+    "D": {
+      "model": {
+        "median_ms": 6.529467500001829,
+        "p95_ms": 9.941926650004973,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "model_and_cpu_decode": {
+        "median_ms": 31.34052100000062,
+        "p95_ms": 36.05426764999927,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "preprocess_model_and_decode": {
+        "median_ms": 39.44555150000184,
+        "p95_ms": 53.852282650001015,
+        "warmup": 20,
+        "measurements": 100
+      },
+      "peak_inference_allocated_bytes": 113605120,
+      "synthetic_forward_backward": [
+        {
+          "batch": 4,
+          "loss": {
+            "cls": 41.09572219848633,
+            "box": 0.9142309427261353,
+            "center": 0.8133249878883362
+          },
+          "nonzero_gradient_tensors_per_fusion_scale": {
+            "cross": [
+              20,
+              20,
+              20
+            ],
+            "concat": [
+              20,
+              20,
+              20
+            ]
+          }
+        },
+        {
+          "batch": 2,
+          "loss": {
+            "cls": 41.09572219848633,
+            "box": 0.91423100233078,
+            "center": 0.8133249878883362
+          },
+          "nonzero_gradient_tensors_per_fusion_scale": {
+            "cross": [
+              20,
+              20,
+              20
+            ],
+            "concat": [
+              20,
+              20,
+              20
+            ]
+          }
+        }
+      ],
+      "training_step_median_seconds": {
+        "4": 0.1161450995000024,
+        "2": 0.06340052399999863
+      },
+      "peak_training_allocated_bytes": 1086733312,
+      "unallocated_adam_state_bytes": 3920176,
+      "five_seed_compute_only_hours": 4.003047116437582,
+      "native_cuda_backward_calls": 90
+    }
+  },
+  "status": "PASS_SYNTHETIC_ONLY",
+  "five_seed_all_arms_compute_only_hours": 15.642906186257223
+}

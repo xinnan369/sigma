@@ -13,3 +13,7 @@ FCOS：五层卷积塔 stride 2，通道 16/32/64/64/64；取 stride 8/16/32，�
 推理分数 sqrt(sigmoid(person)×sigmoid(center))，按 stride 8/16/32、行列次序打破同分；逆变换、剪裁到 1280×1024，移除零面积、无效预测；原网格 NMS IoU>.65，最多 100 个，未加置信度阈值。pycocotools==2.0.10、单 person、COCO bbox、全部面积、maxDets=[1,10,100]、IoU .50:.05:.95、101 召回点；AP50 和 AP50:95 分别报告。每 Epoch 只用 Validation clean AP50:95 选 checkpoint，AP50 为同分次则，再选最早 Epoch。零检测是合法输入，GT 无支持不作为评分 0。
 
 资源：分别记录完整模型参数量、语义 MAC（非 kernel FLOP），单图推理 median/P95、显存、真实训练耗时。合成预检时延不得写成 LLVIP 实测。后续经授权才可使用 D0 冻结退化协议，并与原始 clean 检测 AP 分开报告。未授权不对真实图像生成退化版本。
+
+### D1A 整改后的读取与覆盖核查
+
+每个 DevelopmentData 实例只在初始化时读取、校验并解析 D0 split；每次读样本仍核验两张 JPEG 与 XML。独立覆盖审计只读开发侧校验后的 XML，按训练同一获胜规则记录每张图与每个尺度的正点数、未匹配 GT 和原因。覆盖不改变标注或实验协议；验证评价仍使用全部有效 GT，不按目标分配结果过滤。官方 test 角色在文件打开前被拒绝。

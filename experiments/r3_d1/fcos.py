@@ -15,11 +15,11 @@ def valid(points):
     return ((points[:,0]>=0)&(points[:,0]<640)&(points[:,1]>=64)&(points[:,1]<576))
 
 
-def targets(points, boxes, level):
-    dist=points.new_zeros((len(points),4))
-    pos=torch.zeros(len(points),dtype=torch.bool,device=points.device)
+def assignments(points, boxes, level, *, audit=False):
+    """Return winning GT index per location (-1 for background) and eligible counts."""
     if boxes.numel()==0:
-        return pos,dist
+        return (torch.full((len(points),),-1,device=points.device,dtype=torch.long),
+                torch.zeros(0,device=points.device,dtype=torch.long) if audit else None)
     boxes=boxes.to(points)
     xy0,xy1=boxes[:,:2],boxes[:,2:]
     wh=xy1-xy0
@@ -35,8 +35,14 @@ def targets(points, boxes, level):
     hit=((p>low)&(p<high)).all(-1)&assigned&valid(points)[:,None]
     sizes=wh.prod(1).expand(len(points),-1).masked_fill(~hit,float('inf'))
     best,index=sizes.min(1)  # tie: first annotation
-    pos=best.isfinite()
-    boxes=boxes[index[pos]]
+    return index.masked_fill(~best.isfinite(),-1),hit.sum(0) if audit else None
+
+
+def targets(points, boxes, level):
+    index,_=assignments(points,boxes,level)
+    pos=index>=0
+    dist=points.new_zeros((len(points),4))
+    boxes=boxes.to(points)[index[pos]]
     dist[pos]=torch.cat((points[pos]-boxes[:,:2],boxes[:,2:]-points[pos]),1)
     return pos,dist
 

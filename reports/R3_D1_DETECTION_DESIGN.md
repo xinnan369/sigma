@@ -39,3 +39,28 @@ OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 CUDA_VISIBLE_DEVICES=0 python -u -m exp
 ```
 
 未生成 LLVIP 真实图像退化产物，未上传图像或权重。此工程预检不说明检测效果或跨真实场景泛化。正式训练、验证整集和官方 test 都未运行；等待独立审核。
+
+## D1A 独立验收整改：缓存与 GT 覆盖
+
+读取器现在每个 DevelopmentData 实例只打开、SHA256 校验并解析一次 D0 split。后续读样本继续验证 RGB JPEG、Thermal JPEG 和 XML 的文件 SHA256。缓存不跨实例，新建实例会拒绝被修改的清单。Fit 010001 和 Validation 020001 的[真实读取回执](evidence/r3-d1/review/read-receipt.json)保存文件、解码内容与归一化张量摘要、尺寸、dtype 和变换后的全部框。两张原始输入分别为 RGB 1024×1280×3、Thermal 1024×1280，uint8；归一化后均为 float32 3×640×640。Fit 有 6 框，Validation 有 2 框。文件未上传，单测验证 test 角色在文件读取前被拒绝。
+
+独立覆盖命令只打开 Fit/Validation XML（逐份校验），使用与损失同一 FCOS 分配原语的获胜 GT 索引，不以“至少有一个候选点”代替真正获胜。对每个 Fit ID 校验了翻转前后逐 GT 获胜数与候选数一致；Validation 不翻转。测试图像读取 0。完整输出见[覆盖汇总](evidence/r3-d1/review/gt-coverage.json)和[逐图记录](evidence/r3-d1/review/gt-per-image.jsonl)。
+
+| 分区 | 总 GT | 匹配 GT | 未匹配 GT | stride 8 / 16 / 32 正点数 | 零正点图 |
+|---|---:|---:|---:|---:|---:|
+| Fit | 28,547 | 28,540 | 7 | 90,027 / 150,737 / 27 | 2 |
+| Validation | 5,536 | 5,530 | 6 | 5,272 / 41,060 / 0 | 0 |
+
+按变换后 sqrt(area) 分箱，表中为匹配/总量，未显示的区间无支持：
+
+| 区间 | Fit | Validation |
+|---|---:|---:|
+| [8,16) | 10/10 | 2/3 |
+| [16,32) | 217/217 | 19/19 |
+| [32,64) | 10,194/10,194 | 594/594 |
+| [64,128) | 18,116/18,123 | 4,915/4,920 |
+| [128,∞) | 3/3 | 0/0（无支持） |
+
+12 个未匹配框输在重叠或并列竞争，全部位于 [64,128)，例如 Fit 010112 与 Validation 020127。Validation 150032 的一个变换后 3×21.5 px 框没有合格点。未匹配目标的宽、高、sqrt(area) 分位数和全部 ID/坐标见证据。两张零正点 Fit 图 100030/100033 原本无 GT。总体匹配率 99.96%，但极小框验证支持很少，stride 32 验证无正样本，不能据总体数字宣称这些分层可靠。不改变已冻结分配、尺度或数据；若未来小框支持增加后仍存在漏配，可另提跨尺度候选点或更细网格的独立对照。未匹配框全部保留在验证 COCO GT 中。
+
+Windows CPU 全套 157 通过、7 跳过，compileall 退出 0。RTX 3090 按整改后源码重跑合成预检：四臂通过，D 的三尺度 Cross/Concat 扫描反向 90 次；全模型参数与 MAC 逐项与原证据一致，差异仍为 0.01714% 和 0.00313%。新测四臂五种子计算部分约 15.64 小时（同前述范围，不含数据加载、优化器、验证和保存；不是正式训练用时）。旧 GPU 证据保留，新[日志](evidence/r3-d1/review/gpu.log)、[计数与实测](evidence/r3-d1/review/gpu.json)和[校验回执](evidence/r3-d1/review/verification.json)单独归档。未执行 optimizer.step()。
