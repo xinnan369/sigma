@@ -95,6 +95,16 @@ def pair_inventory(rows, split):
     return stats, {i:(v[i][0], t[i][0]) for i in shared if i not in rejected}
 
 
+def _popcount(values):
+    """Population count over uint64 Hamming distances, including NumPy 1.x."""
+    if hasattr(np, 'bitwise_count'):
+        return np.bitwise_count(values)
+    # A byte lookup is endian independent because all eight counts are summed.
+    table = np.array([b.bit_count() for b in range(256)], dtype=np.uint8)
+    octets = np.ascontiguousarray(values).view(np.uint8).reshape(-1, 8)
+    return table[octets].sum(axis=1, dtype=np.uint8).reshape(values.shape)
+
+
 def summarize(rows):
     images = [r for r in rows if 'modality' in r and 'error' not in r]
     annotations = [r for r in rows if r.get('kind') == 'voc']
@@ -120,7 +130,7 @@ def summarize(rows):
         hits = []
         minimum = None
         for r in test:
-            dist = np.bitwise_count(h ^ np.uint64(int(r['phash63'],16)))
+            dist = _popcount(h ^ np.uint64(int(r['phash63'],16)))
             if len(dist):
                 minimum = int(dist.min()) if minimum is None else min(minimum,int(dist.min()))
             hits.extend([r['path'],train[j]['path'],int(dist[j])] for j in np.flatnonzero(dist<=6))
