@@ -1,5 +1,9 @@
 # R3-D1B-R3 — Independent Authorization Audit
 
+**R4 当前结论为技术门禁 PASS。** 可以提交独立正式授权申请。信任登记仍为空，正式训练仍被阻断。下文首先保留 R3 的历史 HOLD 记录，随后列出 R4 复验。
+
+## R3 历史审计
+
 **结论：HOLD。** RTX 3090 数值、恢复、开发数据和回执签名均独立复验通过，但基线在固定 WSL CUDA 环境下的完整 CPU 测试有一项失败。暂不进入授权签发；没有登记候选，没有启动正式训练。
 
 - 审计 Head：`3ce9a30c1521df6143cec8d371d5d0b6be579434`（PR #34）。
@@ -36,3 +40,30 @@ python -m experiments.r3_d1.resume_audit --backend deterministic --upstream <PIN
 python -m experiments.r3_d1.authorization_preflight data --root <EXISTING_LLVIP> --output <FRESH>
 python -m experiments.r3_d1_r3.independent_audit --fresh <FRESH> --output <FRESH>/independent.json
 ```
+
+
+## R4 CPU 门禁复验
+
+PR #35 修复 NumPy 1.x 的 LLVIP 感知哈希位计数。字节查表的总和最大为 64，适用于完整的 uint64 范围。补丁仅涉及两个历史扫描模块和一份 CPU 单测。R2R 分支快进到 `04c12f1fb4ca9fb403a0a3ec72e3ab0fb35a8d8f`，R3 审计分支整合后为 `aa6f081126fc0da517b5e4a7dc111c5cdbe0a62c`。候选对应的签名生产源码、协议、数据切分、上游二进制及信任登记保持原样。
+
+| 门禁 | R4 结果 | 证据来源 |
+|---|---|---|
+| CPU 全套测试 | PASS，207 通过、3 跳过、1 条依赖弃用警告，89.42 秒 | 固定 WSL 环境在整合提交上重新执行 |
+| 编译检查 | PASS，退出码 0 | 固定 WSL 环境重新执行 |
+| CUDA 数值、整模型及四臂跨进程恢复 | PASS，16 个原生级数值用例、batch 4/2 的整模型和 A/B/C/D 逐位恢复 | 保留 R3 RTX 3090 实测；核验原始日志与 JSON 的 SHA256 后独立复判 |
+| LLVIP 开发数据与 FCOS | PASS，Fit 9,926 对、Validation 2,087 对；逐图覆盖账本 SHA256 一致 | 保留 R3 开发数据实测及逐图账本；重新核验文件和计数 |
+| 回执、协议、运行签名 | PASS，候选 SHA256 一致，独立复算 20 组签名与 50 个 Epoch 顺序摘要 | 本轮独立执行，重新校验源码、冻结切分及本机 Sigma CUDA 扩展 |
+| 数据与训练边界 | PASS，官方 Test 像素读取 0，真实 LLVIP optimizer update 0 | 本轮仅执行 CPU 套件与证据审计；复核历史证据边界 |
+
+新 CPU 运行使用 WSL2 固定虚拟环境，Python 3.11.11、NumPy 1.26.4、PyTorch 2.2.2+cu121，隐藏 CUDA，OMP 和 OpenBLAS 均为单线程。三项原有跳过分别需要 pinned Sigma 与 VMamba 初始化、CUDA selective scan、或 CUDA 状态基向量探针。D1B 的独立 GPU 数值和恢复门禁由上表的 R3 证据覆盖。
+
+```sh
+export CUDA_VISIBLE_DEVICES="" OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+python -m pytest -q -rs tests
+python -m compileall -q experiments/r3_d1
+python -m experiments.r3_d1_r3.cpu_gate_closure --previous <R3_EXTERNAL_EVIDENCE> --rerun <NEW_R4_EXTERNAL_DIR>
+```
+
+本轮外部证据目录为 `/mnt/d/work/sigma-r4-cpu-gate-xoGmBX`。复算器要求新 CPU 日志、退出码、测试提交记录和运行环境位于新目录。从原 R3 归档 Git blobs 提取保留项目，逐文件匹配原 R3 运行摘要。原始逐图账本取自既有 D1 审计归档。新日志、各门禁结果及 SHA256 见 [R4 独立结果](evidence/r3-d1b-r4/closure.json)、[CPU 日志](evidence/r3-d1b-r4/cpu.log) 和 [证据清单](evidence/r3-d1b-r4/verification.json)。
+
+候选回执 SHA256 仍为 `eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa`。本轮消除了 R3 的 CPU HOLD。技术复验完成，等待独立签发；`TRUSTED_RECEIPTS=frozenset()`，正式训练未启动。
