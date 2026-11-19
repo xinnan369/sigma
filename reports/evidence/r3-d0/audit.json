@@ -1,0 +1,250 @@
+{
+  "pairs": {
+    "train": 12025,
+    "test": 3463
+  },
+  "jpeg_sha256_rechecked": 30976,
+  "xml_sha256_rechecked": 15488,
+  "annotation_totals": {
+    "train": {
+      "person": 34135,
+      "invalid": 5,
+      "difficult": 0
+    },
+    "test": {
+      "person": 8302,
+      "invalid": 0,
+      "difficult": 0
+    }
+  },
+  "invalid_annotations": [
+    {
+      "id": "020118",
+      "official_split": "train",
+      "xml_sha256": "6ff32107473b6a3dd8df530cdf2348792bf98238ee715a752803b1ceb1028933",
+      "object_index_zero_based": 1,
+      "xyxy": [
+        1025,
+        249,
+        1025,
+        250
+      ]
+    },
+    {
+      "id": "020236",
+      "official_split": "train",
+      "xml_sha256": "726b0dee23d3ca984c51768c4fc72929325150819f241aefc9f7b341198898a2",
+      "object_index_zero_based": 5,
+      "xyxy": [
+        1103,
+        325,
+        1103,
+        326
+      ]
+    },
+    {
+      "id": "090437",
+      "official_split": "train",
+      "xml_sha256": "030cc6856720d64c79b3e3fafcfe3203156fe026c4d855e0d6d7f94687f4eacc",
+      "object_index_zero_based": 1,
+      "xyxy": [
+        74,
+        863,
+        74,
+        870
+      ]
+    },
+    {
+      "id": "091180",
+      "official_split": "train",
+      "xml_sha256": "dddf30dc306e8836f37605ac19b2564bebe648da17ab0058e1d0b8f05b82732a",
+      "object_index_zero_based": 2,
+      "xyxy": [
+        404,
+        290,
+        404,
+        291
+      ]
+    },
+    {
+      "id": "170350",
+      "official_split": "train",
+      "xml_sha256": "7e5761719e4a0ff17ea8289f7de031f1a1655764f94af40eae4f7283afbf1b73",
+      "object_index_zero_based": 0,
+      "xyxy": [
+        695,
+        950,
+        695,
+        957
+      ]
+    }
+  ],
+  "cross_split_candidates": [
+    {
+      "official_test": "240280",
+      "official_train": "110170",
+      "rgb_hamming": 4,
+      "thermal_hamming": 32,
+      "exact_in_either_modality": false,
+      "verdict": "UNKNOWN"
+    },
+    {
+      "official_test": "240280",
+      "official_train": "010353",
+      "rgb_hamming": 6,
+      "thermal_hamming": 28,
+      "exact_in_either_modality": false,
+      "verdict": "UNKNOWN"
+    },
+    {
+      "official_test": "240280",
+      "official_train": "110091",
+      "rgb_hamming": 6,
+      "thermal_hamming": 34,
+      "exact_in_either_modality": false,
+      "verdict": "UNKNOWN"
+    },
+    {
+      "official_test": "240280",
+      "official_train": "110172",
+      "rgb_hamming": 6,
+      "thermal_hamming": 32,
+      "exact_in_either_modality": false,
+      "verdict": "UNKNOWN"
+    },
+    {
+      "official_test": "240280",
+      "official_train": "110256",
+      "rgb_hamming": 6,
+      "thermal_hamming": 30,
+      "exact_in_either_modality": false,
+      "verdict": "UNKNOWN"
+    },
+    {
+      "official_test": "240280",
+      "official_train": "110467",
+      "rgb_hamming": 6,
+      "thermal_hamming": 32,
+      "exact_in_either_modality": false,
+      "verdict": "UNKNOWN"
+    },
+    {
+      "official_test": "240280",
+      "official_train": "110481",
+      "rgb_hamming": 6,
+      "thermal_hamming": 34,
+      "exact_in_either_modality": false,
+      "verdict": "UNKNOWN"
+    }
+  ],
+  "historic_pilot_test_ids": [
+    "230384",
+    "190305",
+    "210076",
+    "230035",
+    "260137",
+    "240285",
+    "240235",
+    "210026",
+    "220361",
+    "190245",
+    "210112",
+    "210434",
+    "190220",
+    "200036",
+    "210243",
+    "210379",
+    "210332",
+    "200233",
+    "230027",
+    "260042",
+    "190444",
+    "230460",
+    "200319",
+    "190773",
+    "200152",
+    "240087",
+    "190116",
+    "200264",
+    "260483",
+    "190039",
+    "260307",
+    "210419",
+    "190342",
+    "260138",
+    "240114",
+    "190042",
+    "240283",
+    "210416",
+    "260454",
+    "240143",
+    "230255",
+    "190254",
+    "210308",
+    "260303",
+    "190308",
+    "190237",
+    "210369",
+    "240071",
+    "200088",
+    "210267",
+    "220158",
+    "210250",
+    "190251",
+    "210053",
+    "230432",
+    "240172",
+    "190746",
+    "240121",
+    "230224",
+    "190027",
+    "230292",
+    "200213",
+    "210143",
+    "190521"
+  ],
+  "official_test_exposure": {
+    "xml_read": 3463,
+    "person_annotations_counted": 8302,
+    "images_pixel_decoded": 0,
+    "detection_inferences": 0,
+    "detection_metric_computations": 0,
+    "model_selections": 0,
+    "historical_thermal_pilot_pairs": 64
+  },
+  "candidate_test_id_previously_seen": false,
+  "cross_prefix_dual_phash_edges": {
+    "01-25": 1,
+    "03-25": 4,
+    "04-25": 48,
+    "06-25": 239,
+    "07-25": 91,
+    "08-25": 138,
+    "09-25": 141,
+    "10-25": 7020,
+    "11-25": 63,
+    "12-25": 7764,
+    "13-25": 530,
+    "16-25": 400,
+    "17-25": 941,
+    "18-25": 1376
+  },
+  "development": {
+    "fit": {
+      "pairs": 9926,
+      "boxes": 28547
+    },
+    "validation": {
+      "pairs": 2087,
+      "boxes": 5536
+    }
+  },
+  "manifest_sha256": "e99ac4e7f3058c9f27c13c7913a029f3a76896d770f07aab8d4243d9a9979198",
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "environment": {
+    "python": "3.13.2",
+    "numpy": "2.3.5",
+    "opencv": "4.13.0",
+    "hash_workers": 4
+  }
+}

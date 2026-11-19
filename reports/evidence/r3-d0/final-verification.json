@@ -1,0 +1,28 @@
+{
+  "targeted.log": {
+    "command": "python -m pytest -q tests/test_r3_d0_llvip.py",
+    "exit_code": 0,
+    "sha256": "aa14d887a4b65d03fcb17f75012df8b96d2294d692247778495a9a5e6a554460"
+  },
+  "cpu-suite.log": {
+    "command": "python -m pytest -q tests",
+    "exit_code": 0,
+    "sha256": "40e54c539c479f02692814fb70739ac9c4d2d4119366552e834b931f5ff82b9f"
+  },
+  "compileall.log": {
+    "command": "python -m compileall -q experiments/r3_d0",
+    "exit_code": 0,
+    "sha256": "0710e520f5344f14f31480b751bb71cfa9a26ad392ef9f5457606140a92e3c21"
+  },
+  "reaudit.log": {
+    "command": "python -u -m experiments.r3_d0.audit --root <local-LLVIP> --output reports/evidence/r3-d0",
+    "exit_code": 0,
+    "sha256": "b9d5f1f03fd36472067de24a6324acd029b36a8a45ffe6ec379811c839691679"
+  },
+  "audit.json": {
+    "sha256": "58f7400ee37464c4224ec8a68715df013e1dbc8c636cb991a2974a706056f32f"
+  },
+  "split.json": {
+    "sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4"
+  }
+}

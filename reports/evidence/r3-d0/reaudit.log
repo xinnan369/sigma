@@ -1,0 +1,2 @@
+PASS inventory {'train': Counter({'person': 34135, 'invalid': 5, 'difficult': 0}), 'test': Counter({'person': 8302, 'invalid': 0, 'difficult': 0})} development 9926 2087 groups ['02', '05', '14', '15']
+Exit code: 0
