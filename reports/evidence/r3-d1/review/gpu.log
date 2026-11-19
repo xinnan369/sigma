@@ -1,0 +1,10 @@
+D count 490022 1771173888
+A count 135062 666777600
+B count 135062 666777600
+C count 489938 1771118400
+profiling A
+profiling B
+profiling C
+profiling D
+PASS synthetic GPU A/B/C/D; no optimizer updates
+Exit code: 0

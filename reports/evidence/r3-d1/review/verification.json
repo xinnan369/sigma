@@ -1,0 +1,42 @@
+{
+  "prior_head": "4371711c4a9c643b2a230b917620a7e72afcd738",
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "commands": {
+    "cpu": "python -m pytest -q -rs tests",
+    "compileall": "python -m compileall -q experiments/r3_d1",
+    "gpu": "python -u -m experiments.r3_d1.preflight --upstream <PINNED_SIGMA> --output reports/evidence/r3-d1/review/gpu.json",
+    "read": "python -u -m experiments.r3_d1.coverage read --root <LOCAL_LLVIP> --split reports/evidence/r3-d0/split.json --output reports/evidence/r3-d1/review",
+    "coverage": "python -u -m experiments.r3_d1.coverage coverage --root <LOCAL_LLVIP> --split reports/evidence/r3-d0/split.json --output reports/evidence/r3-d1/review"
+  },
+  "exit_codes": {
+    "cpu": 0,
+    "compileall": 0,
+    "gpu": 0,
+    "read": 0,
+    "coverage": 0
+  },
+  "gpu_counts_equal_prior": true,
+  "coverage_per_image_totals_verified": true,
+  "execution_source_sha256_lf": {
+    "budget.py": "275acca7634ae5c0eb6af613a8cd3f607659f0c8487f117e0cf147edea5bf901",
+    "coco.py": "b3f9a0ceccb5984265944f25e5de3cfcd678671302643507b7840c8d11963de0",
+    "coverage.py": "c1cfb83b90e2f441f31aaf7bb64d0252be3c545c7b53879d48eecb095480c10d",
+    "data.py": "a90308bc2c324b97d256c845e58eb9f78593d8504f1eb50fdf8289ec0698730d",
+    "fcos.py": "4dfe01d04d227c8667d7c744fb66ab171027566fd529163300e898cdcbc10759",
+    "model.py": "d678fb55a2fb647e0dba24f5f605f39c301f8aa8312c7d3b156776c0d922de3f",
+    "plan.py": "ee423d24c933691783e2fa38dde2dd7b9f1ca9d58ea71f95c60f246abda8c78b",
+    "preflight.py": "271b1a5c581479d3b36b5991014c39e7e613f903317b41c8f76ccf1206be243b",
+    "upstream.py": "5e754ea7f94eed34d53fbaa84fc7f5c41aca18e96b1ee6ed4d48f9d0d2882ffb"
+  },
+  "files_sha256": {
+    "compileall.log": "0710e520f5344f14f31480b751bb71cfa9a26ad392ef9f5457606140a92e3c21",
+    "coverage.log": "1a86f77256cfdcfd8945bfdecf136d3015e222a72e642367abb205aca5176dea",
+    "cpu.log": "eb71f2d40fe0c3ff9ba46e9c09313069014028755183c56fc112801cc67e600e",
+    "gpu.json": "b130743516c5d305f163135e8fdbfd95ab6a632cff1c6be77943584c11e8cac9",
+    "gpu.log": "acefb3f397db972ece0132548fcd4ced4452938765cc557cb2f14a8437e806ba",
+    "gt-coverage.json": "0b61c846080a833509c16b4e5544bc7de7f41b7711a8ecef76e1e759cf824a5e",
+    "gt-per-image.jsonl": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd",
+    "read-receipt.json": "b962ba50af717c8c8d2d2dc90f760cbad2337b83b70baff8ac4252b145354efd",
+    "read.log": "d6a1befa3f34d7049697aae9a999537897f5884e49c7832591a8a4232cf9ba85"
+  }
+}
