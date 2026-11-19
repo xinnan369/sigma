@@ -1,0 +1,13 @@
+............................s..........................s................ [ 36%]
+s...s........................s..s....................................... [ 73%]
+...................................................                      [100%]
+=========================== short test summary info ===========================
+SKIPPED [1] tests\test_r2k_q1d.py:4: could not import 'resource': No module named 'resource'
+SKIPPED [1] tests\test_r1d_epoch.py:114: Pinned Sigma checkout and VMamba initializer required
+SKIPPED [1] tests\test_r2b_state.py:46: Requires CUDA and Sigma selective scan
+SKIPPED [1] tests\test_r2f_numerics.py:28: CUDA basis probes require GPU
+SKIPPED [1] tests\test_r2g_attribution.py:50: could not import 'triton': No module named 'triton'
+SKIPPED [1] tests\test_r2k_q1.py:43: could not import 'resource': No module named 'resource'
+SKIPPED [1] tests\test_r2k_q1v2.py:42: could not import 'resource': No module named 'resource'
+189 passed, 7 skipped in 22.99s
+Exit code: 0
