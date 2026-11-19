@@ -1,0 +1,32 @@
+{
+  "active_arm_seed": "A/3407",
+  "authorized_training_commit": "460bb30d296470fb5d91e658a5a363abb2f88588",
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "checkpoint_ledger_sha256_at_observation": "b30720e7d63e7c698007e290b54eb6226298e154740350cba59ad85c844b2b89",
+  "committed_updates": 100,
+  "event_log_committed_prefix_sha256": "dd245c77db7b6661886485eb6fe6142c6186b778c60246490ed1d4967473c5e7",
+  "initial_preflight": {
+    "reason": "Replaced slow WSL Git index refresh with direct signature source hashes",
+    "state_sha256": "a4d9cfee224a3c5872e08b7bcadaafdfa9dd5a5fa74146840bd02a03d28088de",
+    "status": "STOPPED_BEFORE_ANY_TRAINING_WORKER"
+  },
+  "last_checkpoint_sha256_at_observation": "72496ec808958b5a9ea1aabc1ef288150e5fe11771b436e0f4c9fae2ac038b9b",
+  "launch_sha256": {
+    "launch2.sh": "8a75bcfcf1ec9943d5484d74bde2917d1e562bfa017f68040e3fd709f4acba27",
+    "launch_batch2.py": "85e76d67e18ce896ce78178654d89faf354c3a012a7cc2dd168689dd1323e467"
+  },
+  "observed_fit_pair_reads": 672,
+  "observed_peak_gpu_allocated_bytes": 213353984,
+  "observed_updates": 168,
+  "observed_utc": "2026-11-19T14:58:30.657723+00:00",
+  "output_root": "D:/work/sigma-r3-d1-formal",
+  "queued": [
+    "B/3407",
+    "C/3407",
+    "D/3407"
+  ],
+  "runtime_signature_sha256": "9de4350b8eb555a86b6227085be2c37b9bcec1f412c617caaa668dbd5e58c72c",
+  "schema": "r3-d1b-r6-startup-observation-v1",
+  "status": "RUNNING",
+  "validation_epochs_completed": 0
+}
