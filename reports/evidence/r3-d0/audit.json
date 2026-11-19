@@ -203,6 +203,15 @@
     "210143",
     "190521"
   ],
+  "official_test_exposure": {
+    "xml_read": 3463,
+    "person_annotations_counted": 8302,
+    "images_pixel_decoded": 0,
+    "detection_inferences": 0,
+    "detection_metric_computations": 0,
+    "model_selections": 0,
+    "historical_thermal_pilot_pairs": 64
+  },
   "candidate_test_id_previously_seen": false,
   "cross_prefix_dual_phash_edges": {
     "01-25": 1,

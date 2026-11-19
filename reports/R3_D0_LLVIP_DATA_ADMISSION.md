@@ -47,3 +47,11 @@ python -m pytest -q tests/test_r3_d0_llvip.py
 ```
 
 证据：[审计 JSON](evidence/r3-d0/audit.json) · [固定划分与数据摘要](evidence/r3-d0/split.json)。划分 SHA256：`bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4`。
+
+## D0 最终 Test 暴露记录
+
+R3-D0 本地审计解析官方 test VOC XML **3,463 份**，统计其中 **8,302 个 person 标注**。JPEG 仅做文件字节 SHA256，test 像素解码 **0**、检测推理 **0**、检测指标计算 **0**、模型选择 **0**。历史 Thermal Pilot 接触过同一批 **64 对**官方 test 图像。因此未来正式获准评价时须同时报告完整官方 test 指标与剔除历史 64 对后的敏感性分析，不称完全盲测；官方 train/test 划分不变。
+
+[R3-D1 具体设计](R3_D1_DETECTION_DESIGN.md)已冻结为设计稿；当前不训练。
+
+最终复验：专项 **5 passed**，完整 CPU 套件 **149 passed, 7 skipped**；compileall 和全量数据重审也均退出 0。原 split 文件逐字节保持不变；[命令、退出码及 SHA256](evidence/r3-d0/final-verification.json)与完整日志一同归档。

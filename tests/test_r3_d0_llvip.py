@@ -74,3 +74,46 @@ def test_reader_hashes_release_bytes_and_refuses_changes(tmp_path):
     (tmp_path/rels[0]).write_bytes(b'changed')
     with pytest.raises(ValueError,match='Frozen file hash differs'):
         read_development_pair(tmp_path,ident,'fit',split)
+
+def test_frozen_release_partitions_and_hashes():
+    import hashlib
+    import json
+    from pathlib import Path
+
+    evidence=Path(__file__).resolve().parents[1]/'reports/evidence'
+    folder=evidence/'r3-d0'
+    raw=(folder/'split.json').read_bytes()
+    split=json.loads(raw)
+    audit=json.loads((folder/'audit.json').read_bytes())
+    assert hashlib.sha256(raw).hexdigest()==audit['split_sha256']==(
+        'bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4')
+    archive=(evidence/'llvip-precheck/file_manifest.json').read_bytes()
+    assert hashlib.sha256(archive).hexdigest()==audit['manifest_sha256']
+    rows={r['path']:r for r in json.loads(archive)['files']}
+    official={s:{Path(p).stem for p in rows if p.startswith(f'visible/{s}/')}
+              for s in ('train','test')}
+    fit,val,q=(set(split[k]) for k in ('fit','validation','quarantine'))
+    assert (len(fit),len(val),len(q))==(9926,2087,12)
+    assert not (fit&val or fit&q or val&q)
+    assert fit|val|q==official['train'] and not (fit|val)&official['test']
+    seen=set()
+    for group, ids in split['proxy_components'].items():
+        members=set(ids)
+        assert len(members)==len(ids) and not members&seen
+        assert members <= (val if group in split['validation_components'] else fit)
+        seen.update(members)
+    assert seen==fit|val
+    suspicious={r['official_train'] for r in audit['cross_split_candidates']
+                if r['verdict']=='UNKNOWN'}
+    invalid={r['id'] for r in audit['invalid_annotations']}
+    assert len(suspicious)==7 and len(invalid)==5 and suspicious|invalid==q
+    assert set(split['development_sha256'])==fit|val
+    for i in fit|val:
+        expected={p:rows[p]['sha256'] for p in
+                  (f'visible/train/{i}.jpg', f'infrared/train/{i}.jpg', f'Annotations/{i}.xml')}
+        assert split['development_sha256'][i]==expected
+    assert audit['official_test_exposure']==dict(xml_read=3463,person_annotations_counted=8302,
+        images_pixel_decoded=0,detection_inferences=0,detection_metric_computations=0,
+        model_selections=0,historical_thermal_pilot_pairs=64)
+    assert len(set(audit['historic_pilot_test_ids']))==64
+    assert set(audit['historic_pilot_test_ids'])<=official['test']

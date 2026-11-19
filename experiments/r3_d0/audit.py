@@ -170,6 +170,11 @@ def run(root,out):
                               xml_sha256_rechecked=len(seen),annotation_totals=totals,
                               invalid_annotations=invalid,cross_split_candidates=candidates,
                               historic_pilot_test_ids=pilot[0],
+                              official_test_exposure=dict(xml_read=len(ids['test']),
+                                  person_annotations_counted=totals['test']['person'],
+                                  images_pixel_decoded=0, detection_inferences=0,
+                                  detection_metric_computations=0, model_selections=0,
+                                  historical_thermal_pilot_pairs=len(pilot[0])),
                               candidate_test_id_previously_seen=any(r['official_test'] in pilot[0]
                                                                    for r in candidates),
                               cross_prefix_dual_phash_edges=dict(edge_counts),
