@@ -1,0 +1,1548 @@
+{
+  "archived_cpu": {
+    "exit_code": 0,
+    "passed": 207,
+    "skipped": 3
+  },
+  "authorized": false,
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "checked_archive_sha256": {
+    "docs/R3_D1_DETECTION_PROTOCOL.md": "ff9e193482eb0cc808a428a5c1c662516d43bd7d1d0e603d0b3b8edc3d9028db",
+    "experiments/r3_d1/review_registry.py": "7f1059c69aa899a9167766f6f585fd306f4068549177c31d95ec7e17b0f7bcd1",
+    "reports/evidence/r3-d0/audit.json": "58f7400ee37464c4224ec8a68715df013e1dbc8c636cb991a2974a706056f32f",
+    "reports/evidence/r3-d0/compileall.log": "0710e520f5344f14f31480b751bb71cfa9a26ad392ef9f5457606140a92e3c21",
+    "reports/evidence/r3-d0/cpu-suite.log": "40e54c539c479f02692814fb70739ac9c4d2d4119366552e834b931f5ff82b9f",
+    "reports/evidence/r3-d0/final-verification.json": "15d4e808cd3bcf0ce57399141ae9b73e25cc851600fb3c636bd49cfd4b59ffc7",
+    "reports/evidence/r3-d0/reaudit.log": "b9d5f1f03fd36472067de24a6324acd029b36a8a45ffe6ec379811c839691679",
+    "reports/evidence/r3-d0/split.json": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+    "reports/evidence/r3-d0/targeted.log": "aa14d887a4b65d03fcb17f75012df8b96d2294d692247778495a9a5e6a554460",
+    "reports/evidence/r3-d1/review/compileall.log": "0710e520f5344f14f31480b751bb71cfa9a26ad392ef9f5457606140a92e3c21",
+    "reports/evidence/r3-d1/review/coverage.log": "1a86f77256cfdcfd8945bfdecf136d3015e222a72e642367abb205aca5176dea",
+    "reports/evidence/r3-d1/review/cpu.log": "eb71f2d40fe0c3ff9ba46e9c09313069014028755183c56fc112801cc67e600e",
+    "reports/evidence/r3-d1/review/gpu.json": "b130743516c5d305f163135e8fdbfd95ab6a632cff1c6be77943584c11e8cac9",
+    "reports/evidence/r3-d1/review/gpu.log": "acefb3f397db972ece0132548fcd4ced4452938765cc557cb2f14a8437e806ba",
+    "reports/evidence/r3-d1/review/gt-coverage.json": "0b61c846080a833509c16b4e5544bc7de7f41b7711a8ecef76e1e759cf824a5e",
+    "reports/evidence/r3-d1/review/gt-per-image.jsonl": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd",
+    "reports/evidence/r3-d1/review/read-receipt.json": "b962ba50af717c8c8d2d2dc90f760cbad2337b83b70baff8ac4252b145354efd",
+    "reports/evidence/r3-d1/review/read.log": "d6a1befa3f34d7049697aae9a999537897f5884e49c7832591a8a4232cf9ba85",
+    "reports/evidence/r3-d1/review/verification.json": "908193ed8acaa4706c0fb134e2ab76cb8076bada8df9861ddc86d9e17f5a91db",
+    "reports/evidence/r3-d1b-r2r/authorization-candidate.json": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+    "reports/evidence/r3-d1b-r2r/compileall.log": "0710e520f5344f14f31480b751bb71cfa9a26ad392ef9f5457606140a92e3c21",
+    "reports/evidence/r3-d1b-r2r/cpu.log": "234bd6e0690872ca41e883fed3a8985883efb8ae0a01ee2a601b66c39217407c",
+    "reports/evidence/r3-d1b-r2r/data-integrity.json": "58237919512d0952f0cd2536824d6983b31dc02f057c600f0a1b624aafd92cde",
+    "reports/evidence/r3-d1b-r2r/data.log": "41a7c39f6f3a7d1483fe03eb61c3660aea0d8f337c4ee34c74ae061032b2709b",
+    "reports/evidence/r3-d1b-r2r/gt-coverage.json": "0b61c846080a833509c16b4e5544bc7de7f41b7711a8ecef76e1e759cf824a5e",
+    "reports/evidence/r3-d1b-r2r/issue.log": "e5d84f8bcbc963a08d5ccc973c59c697cc5e09fc4db759b182da28ca1aa4abc4",
+    "reports/evidence/r3-d1b-r2r/numerics.json": "f744d6aba7c4f268474311cc3c708de447d2e5519cf04424219ca65a1e3fb175",
+    "reports/evidence/r3-d1b-r2r/numerics.log": "14d2be5229be03848993863e0e57ce61701bf61e4010544af3d585ccb56b9742",
+    "reports/evidence/r3-d1b-r2r/resume.json": "06f3cdf0daf879090d5d8156e221618f386324cdad5df2e2bbc9748247074d78",
+    "reports/evidence/r3-d1b-r2r/resume.log": "af63383d87bd7bf6683958e712da4569368cf3244d36915454ff0a7d3fc1397e",
+    "reports/evidence/r3-d1b-r2r/run-signatures.json": "989d84e6a9558271381f0bc0f7cb73d7115e15744a27033b8f968102ca625a66",
+    "reports/evidence/r3-d1b-r2r/signature-verification.json": "76aa7b007a3d8d5b90eb2aa6a4e3a13a35d38cb71204af6f95607126a0fdc1bc",
+    "reports/evidence/r3-d1b-r2r/verification.json": "ad158e24c2750d19f2ae967a25119703565c44f86b2084bc1572370c41b8b457",
+    "reports/evidence/r3-d1b-r3/audit-unit.log": "7149c42cad610539a96d0836091d79c177382d5dba4bef44c8e6c081636da687",
+    "reports/evidence/r3-d1b-r3/compileall.log": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d",
+    "reports/evidence/r3-d1b-r3/cpu-fix-preview.log": "dbe67d8f2301c56adcb41cec80bd0e82a3757d7e8ba04dd9a4230097bf09dafc",
+    "reports/evidence/r3-d1b-r3/cpu-original.log.raw": "9a6b33b623e7996a0bbc9cbd71109f83c2996bf01fae246d3098e5b61a840e2f",
+    "reports/evidence/r3-d1b-r3/cpu-windows.log": "068c990e0ad896085375b0d7cbb0ec52c467960ebdf40b79f2b36179adf55dba",
+    "reports/evidence/r3-d1b-r3/cpu.log": "795f97cefce0f41d91c72a80f49c64aaf9f418370d4575ce0eebf20cbdc84ede",
+    "reports/evidence/r3-d1b-r3/data-integrity.json": "cfe3183ecb044b17cbcfeda901d82f5d94e616bad6a8caa98a7fa6bb03a6549b",
+    "reports/evidence/r3-d1b-r3/data.log": "d11f166c64aa83dfabc101ee4d35c90c304db84ecac51a36387eeec1a2212d07",
+    "reports/evidence/r3-d1b-r3/gt-coverage.json": "c2e8a71a9c93f33cdbf3f46a79c6a72f3bf906a77ff11343191e7afb8ea23df9",
+    "reports/evidence/r3-d1b-r3/independent.json": "fcb265275f027741db4d6a6239541ae94c087c1a2ddb906ab781212539e73dfb",
+    "reports/evidence/r3-d1b-r3/numerics.json": "191c11d2412c3df73de1c0304ea1a71c15f8d6bf47b8e775d08246d1a740fd85",
+    "reports/evidence/r3-d1b-r3/numerics.log": "3acfbca58b6350f03cd56b2a1cb3d7ef4dfa2dc1a3e7c9aa714b562020598960",
+    "reports/evidence/r3-d1b-r3/resume.json": "06f3cdf0daf879090d5d8156e221618f386324cdad5df2e2bbc9748247074d78",
+    "reports/evidence/r3-d1b-r3/resume.log": "42c1c59b7f4447f4f4e0cf364d2256c708893c02d599d35f7fd508b4d8d2870f",
+    "reports/evidence/r3-d1b-r3/verification.json": "43a89ba72dd3cf4c626ca6d0eb25c3103409641aeaff4ff0d4fa8210bde64b72",
+    "reports/evidence/r3-d1b-r4/closure.json": "72585139a3a80111b133bf833bada80e8e46b8ff999a5167ab3f08bcaaedde85",
+    "reports/evidence/r3-d1b-r4/closure.log": "0bd90ac89bbabbb3b13a3db71729303817ceb898287a6c88a25c24b0f4716cf2",
+    "reports/evidence/r3-d1b-r4/compileall.log": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d",
+    "reports/evidence/r3-d1b-r4/cpu.log": "873203f6e433b54ba1890244e769e6723071183045d2e5c36237b29027e09cd4",
+    "reports/evidence/r3-d1b-r4/environment.log": "162369d04ba6c5dcad46fc9cb6d36b2571fda253d06528a11d33c56f48d58686",
+    "reports/evidence/r3-d1b-r4/tested-head.json": "0113494f35fa7dc646f5ea736825f694a6617324dfb1154ec8f5ba3dcfa9ae1b",
+    "reports/evidence/r3-d1b-r4/verification.json": "12e8605977fcf52f6af0828296ad0f9737a7be99e9fe1e423d82be4e099b0f24"
+  },
+  "cli_rejection": {
+    "argv": [
+      "-m",
+      "experiments.r3_d1.train",
+      "--root",
+      "/mnt/d/work/sigma-r5-audit-01362cc8/accepted-run/forbidden-data",
+      "--split",
+      "/mnt/d/work/sigma-r5-audit-01362cc8/accepted-run/forbidden-split",
+      "--upstream",
+      "/mnt/d/work/sigma-r5-audit-01362cc8/accepted-run/forbidden-upstream",
+      "--output",
+      "/mnt/d/work/sigma-r5-audit-01362cc8/accepted-run/forbidden-output",
+      "--seed",
+      "3407",
+      "--arm",
+      "D",
+      "--authorize-formal-training",
+      "--authorization",
+      "/mnt/c/Users/xinnan/Documents/ChatGPT/mamba\u591a\u6a21\u6001/sigma/reports/evidence/r3-d1b-r2r/authorization-candidate.json",
+      "--resume"
+    ],
+    "error": "ValueError: Formal training blocked for all arms: unreviewed authorization",
+    "exit_code": 1
+  },
+  "evidence_rechecked_only": [
+    "cuda_backward_numerics",
+    "four_arm_bitwise_resume"
+  ],
+  "formal_training_started": false,
+  "fresh_cpu": {
+    "exit_code": 0,
+    "passed": 207,
+    "skipped": 3
+  },
+  "fresh_data_sha256": {
+    "data-integrity.json": "cfe3183ecb044b17cbcfeda901d82f5d94e616bad6a8caa98a7fa6bb03a6549b",
+    "gt-coverage.json": "c2e8a71a9c93f33cdbf3f46a79c6a72f3bf906a77ff11343191e7afb8ea23df9",
+    "gt-per-image.jsonl": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd"
+  },
+  "fresh_development_totals": {
+    "fit": {
+      "gt": 28547,
+      "images": 9926,
+      "lost_tie_or_overlap": 7,
+      "matched": 28540,
+      "positive_stride_16": 150737,
+      "positive_stride_32": 27,
+      "positive_stride_8": 90027,
+      "unmatched": 7,
+      "zero_positive_images": 2
+    },
+    "validation": {
+      "gt": 5536,
+      "images": 2087,
+      "lost_tie_or_overlap": 5,
+      "matched": 5530,
+      "no_eligible_point": 1,
+      "positive_stride_16": 41060,
+      "positive_stride_32": 0,
+      "positive_stride_8": 5272,
+      "unmatched": 6,
+      "zero_positive_images": 0
+    }
+  },
+  "gates": {
+    "A": "PASS",
+    "B": "PASS",
+    "C": "PASS",
+    "D": "PASS",
+    "data_integrity": "PASS",
+    "protocol_signature": "PASS"
+  },
+  "historical_gates": {
+    "active_contract": {
+      "backend": "sigma-r3-exclusive-block-pairwise-v1",
+      "backward": "EXCLUSIVE_SAMPLE_CHANNEL_SLOTS_FIXED_PAIRWISE_REDUCTION",
+      "checkpoint_resume": "BITWISE",
+      "comparison": {
+        "atol": 2e-05,
+        "rtol": 0.0002,
+        "scope": "NATIVE_VS_DETERMINISTIC_ONLY"
+      },
+      "formal_training": "INDEPENDENT_AUTHORIZATION_REQUIRED",
+      "forward": "PINNED_NATIVE_UNCHANGED",
+      "repeat_backward": "BITWISE",
+      "revision": "D1B-R1",
+      "status": "ACTIVE",
+      "superseded_rule_active": false,
+      "supersedes": "D_NATIVE_BACKWARD_BLOCKED"
+    },
+    "authorized": false,
+    "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+    "coverage_ledger_sha256": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd",
+    "development_totals": {
+      "fit": {
+        "gt": 28547,
+        "images": 9926,
+        "lost_tie_or_overlap": 7,
+        "matched": 28540,
+        "positive_stride_16": 150737,
+        "positive_stride_32": 27,
+        "positive_stride_8": 90027,
+        "unmatched": 7,
+        "zero_positive_images": 2
+      },
+      "validation": {
+        "gt": 5536,
+        "images": 2087,
+        "lost_tie_or_overlap": 5,
+        "matched": 5530,
+        "no_eligible_point": 1,
+        "positive_stride_16": 41060,
+        "positive_stride_32": 0,
+        "positive_stride_8": 5272,
+        "unmatched": 6,
+        "zero_positive_images": 0
+      }
+    },
+    "exit_codes": {
+      "compileall": 0,
+      "cpu": 0,
+      "data": 0,
+      "numerics": 0,
+      "resume": 0
+    },
+    "fresh_file_sha256": {
+      "compileall.log": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d",
+      "cpu.log": "873203f6e433b54ba1890244e769e6723071183045d2e5c36237b29027e09cd4",
+      "data-integrity.json": "cfe3183ecb044b17cbcfeda901d82f5d94e616bad6a8caa98a7fa6bb03a6549b",
+      "data.log": "d11f166c64aa83dfabc101ee4d35c90c304db84ecac51a36387eeec1a2212d07",
+      "gt-coverage.json": "c2e8a71a9c93f33cdbf3f46a79c6a72f3bf906a77ff11343191e7afb8ea23df9",
+      "gt-per-image.jsonl": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd",
+      "numerics.json": "191c11d2412c3df73de1c0304ea1a71c15f8d6bf47b8e775d08246d1a740fd85",
+      "numerics.log": "3acfbca58b6350f03cd56b2a1cb3d7ef4dfa2dc1a3e7c9aa714b562020598960",
+      "resume.json": "06f3cdf0daf879090d5d8156e221618f386324cdad5df2e2bbc9748247074d78",
+      "resume.log": "42c1c59b7f4447f4f4e0cf364d2256c708893c02d599d35f7fd508b4d8d2870f"
+    },
+    "head": "3ce9a30c1521df6143cec8d371d5d0b6be579434",
+    "independently_rebuilt_orders": 50,
+    "numerical": {
+      "historical": {
+        "detector_max_abs": {
+          "2": {
+            "gradients": 7.227063179016113e-07,
+            "inputs": 2.7939677238464355e-09
+          },
+          "4": {
+            "gradients": 6.48200511932373e-07,
+            "inputs": 1.3969838619232178e-09
+          }
+        },
+        "native_changed": [
+          "dA",
+          "dB",
+          "dC",
+          "dD",
+          "ddelta_bias"
+        ],
+        "parameter_tensors": 155,
+        "raw_cases": 16,
+        "raw_max_mixed_ratio": 0.008162327110767365
+      },
+      "rerun": {
+        "detector_max_abs": {
+          "2": {
+            "gradients": 7.152557373046875e-07,
+            "inputs": 3.026798367500305e-09
+          },
+          "4": {
+            "gradients": 8.568167686462402e-07,
+            "inputs": 1.3969838619232178e-09
+          }
+        },
+        "native_changed": [
+          "dA",
+          "dB",
+          "dC",
+          "dD",
+          "ddelta_bias"
+        ],
+        "parameter_tensors": 155,
+        "raw_cases": 16,
+        "raw_max_mixed_ratio": 0.005223053507506847
+      }
+    },
+    "official_test_reads": 0,
+    "real_llvip_updates": 0,
+    "registry_empty": true,
+    "resume_arms": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "runtime": {
+      "cpu_threads": 1,
+      "cublas_workspace": ":4096:8",
+      "cuda_build": "12.1",
+      "cudnn": 8902,
+      "deterministic": true,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "0",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "gpu": {
+        "bytes": 25769279488,
+        "capability": [
+          8,
+          6
+        ],
+        "driver": "610.88",
+        "name": "NVIDIA GeForce RTX 3090",
+        "visible_devices": 1
+      },
+      "numpy": "1.26.4",
+      "opencv": "4.9.0",
+      "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+      "pycocotools": "2.0.10",
+      "python": "3.11.11",
+      "torch": "2.2.2+cu121"
+    },
+    "signature_count": 20,
+    "status": "PASS"
+  },
+  "launch_plan": {
+    "epoch_orders": {
+      "3407": [
+        "89184021d674ce3ea5f3f9361a38e24dd41a1958da5707a742696c4c57bcc7da",
+        "b3231a2335246ba417db9e4fd0618109f7856f87078a79a121cd79eb6de3c227",
+        "178b1a23ea94bc6c7746d7530535537a458459e9cdfe58e58634b056e997526e",
+        "67fef62ff0b0b71eb9651a0b20c17250bc1c457583d40b21c7a0358315e06545",
+        "b552fda9d0a97864480d518a2a7fa9fd070a43cfc4f2b7dae02d87ef4faf503c",
+        "34b263a63233939022ad9160e65d0183fcdf359b70f22da76539f42b45f85bc9",
+        "2c8f58a2a9eb4a97144bebdeba9fa5cde8281c4d70e729e1f216bf4cd3506818",
+        "06846da53c086b6e27b3d2903a1ecb281c7ac6554e7150cb56190aa5d512b61e",
+        "8fb02cd67363e857a1e8810bc021818a917299b84092df159ab1b0fbf3c859c0",
+        "98f75c217995bdcd6d14f6a040934786e9207d5079e8808798e3294f239498f2"
+      ],
+      "3408": [
+        "d7045290fad361df5ba9e9d6d44887b4dd31c21153c12b324bd4f4427de52c85",
+        "5f74b4a6ab816081252168b2f169d05fd5b1491b7b4077e2fc3c499ce9f37e0b",
+        "2229ccf6c38fb5a5b8214022a6ac9497aa566ed7862cb0a83f314fab61c3007f",
+        "7b414334c732705dc667dc47eaec9a96aec3dc558712096a9ae694d66a1cc405",
+        "435c2045df02d2e1c79530d3be75bd8c12a31b3daecb993f89ebd4261f0c95f7",
+        "4324ae91756872e8ce109eff650842a81f027bf05a6fe48107a7734754942e1f",
+        "027f06a1b1508cff9ec7a27eb1d9974a84ea54f6bba2d1a7511ca34e80f93c12",
+        "b5c002492c6ecd9ed18106c0fff30cc6a28dc60e43821461fb184aced3a54895",
+        "623bd7e49cf5aded566cf4e73fbf4b5f386ffeaa02272151b16ec0fa8f2972f8",
+        "0a31480b9ea971dfba38ac74a4009dd76875cc78d1742bf9fd7e3be85c994314"
+      ],
+      "3409": [
+        "a22b89b9b516b07c5e3b18144d22ff279de4029f4428fed9d167b3e94ff3d717",
+        "a0768b9e780182085d3fe042fa2cab30a0e5367fce5e244a990ece851aca3175",
+        "5c51bce5db43f9a8d7ca1e45da72fe89a7fa9cc4207e1705190bfdfd5fc3ee9d",
+        "832343aab54084fbeb203b30e410bbbe11f30830cb4b1be272092feb898e50fb",
+        "b7c51799258014c493d4c77fde028b41c328b6048c50f3767e0aef102376c324",
+        "4a71a96d57fba7a664e1cbde13333033b6301177ccdcdba2ac0c5fbde1c0c736",
+        "8133fd8faea1bc43a6197c5912f1f4d644080b15b7b8bf8a1469c4eddb190f85",
+        "3a402f7d7781fd3053441317ae1599f2418a87eef47b6d5e212112507c53b90c",
+        "77de669bdb2f120ccd5c1eb6c0034b5096cdf18f80fe331c303268979321b10d",
+        "047e74595ceb8a7ecd64296e183fd32daa1cf534e10f8573b36175638ca7a39d"
+      ],
+      "3410": [
+        "f3e37a1026176151f5234560216665240acdbedd7881b980c67bf7658a00a536",
+        "58f5e8ad3e59e172c1d92dfdc9772c5eea82dad1302f21236ba738c0d95b1712",
+        "1e6bfc35f1164a6dbb1304a46e997bdd5ebe85d964fedab03b60913bb8cef6ff",
+        "7170a88473403f22570bd60629ae82d7260d265d95617e2d7d2b0bb5e97ea669",
+        "22fd1538a85fc547244b170cfe3543cf8306ef52bb23ab21ef1f61891068d7c4",
+        "a61afc5437190ba690c47216a53f2defda051c61f7782de42c20df930f663644",
+        "c968346dc6f629be2fe6d29b1e40921e4455d92b58cb03388ea08b6b904d631a",
+        "fc0c1a5612253e287973bf43ead4f3ed90ecf1253b051dd9d9441f633fb7467e",
+        "3136ada484ca10cb5585904d4e2f129f319535e6e0f679eed7e1ea550cbc04c8",
+        "5ca8f059ad9e492d22363b10dbc69fc92f7647a55fe23405b5d8c84f12726658"
+      ],
+      "3411": [
+        "7d7797b6ade124f52b24b4700dbfd00462d44f1eaa0796e0c894793f5f2893e1",
+        "388a9db05fd792e0a52ff22f5baae5f5903aa9a8eb5a0d67985a1b24505018cd",
+        "2ef2b4f0aec9fe4f8e5f35c7e473541c614f7546fcf5083df6dc035be19be944",
+        "ad3b8c8aaa46e2f8445f5182aeab972b6ef34a7bcdfd6c6b834620fa9a67214f",
+        "49281bb5bc93a1341463371953a4547106e813742216180ba5b22259ba1c275d",
+        "b0b6f40a606bc62ffd813a6b438a5732c8b96c53d612bedcd62d43c769c0dbf8",
+        "c20900a1e73ad4097993127bbb31b8b429138662e3eb283f04dc3cb58e53a267",
+        "a073f3530c291913a93e88500fb4b9d131c4c5ac2b05733dec0c032eebcf3817",
+        "c861b2c9b39da0ba930aef5f6d70253668caeb17732b0951d6dbc276b372a378",
+        "fedbd9f7033aefa3a9e2cff490a16f512e8f61ff72dabe74c4fd76f33ba5dea9"
+      ]
+    },
+    "estimated_compute_hours": 19.443384120694624,
+    "fair_budget_relative": {
+      "mac": 3.132837513919462e-05,
+      "parameters": 0.0001714208749811208
+    },
+    "gpu_free_bytes": 24154996736,
+    "gpu_total_bytes": 25769279488,
+    "merged_source_sha256": {
+      "docs/R3_D1_DETECTION_PROTOCOL.md": "ff9e193482eb0cc808a428a5c1c662516d43bd7d1d0e603d0b3b8edc3d9028db",
+      "experiments/r3_d0/llvip.py": "abd62b9540b5e92e639a0a9d875a8445115e25391576dfc87b9e9f2f367b922b",
+      "experiments/r3_d1/authorization.py": "2e071dbed0bfa93baa1187fdc304581930f22baeb10c1d6ba02806006afcaddc",
+      "experiments/r3_d1/authorization_preflight.py": "5d536eff08dcb4290254ccbd30f0276400570d83e71ad4207083d798f569f1d8",
+      "experiments/r3_d1/budget.py": "4855cbb0fe82699ee9b1366b20f91a2457c2f6c00ee4a947db33c4ad26e9cc0e",
+      "experiments/r3_d1/checkpoint.py": "0016d876351a673c38dbc559b0b2572cd21c0c481d575c2d161511bcb32bf1e8",
+      "experiments/r3_d1/coco.py": "469daaf485e16d1a62c7691f2fb03f3cb48f93b849baae2f760309b1a3ea62dd",
+      "experiments/r3_d1/coverage.py": "08b0b6c8c8bc0905d5ca38ea08a7736deb0acc42741c9b8f9f14fa15550e730a",
+      "experiments/r3_d1/data.py": "a90308bc2c324b97d256c845e58eb9f78593d8504f1eb50fdf8289ec0698730d",
+      "experiments/r3_d1/deterministic_audit.py": "c5de6cb8012de8c0c41af32eaa3b4a98e13511590cfd047e706a5bcfaa6003d1",
+      "experiments/r3_d1/deterministic_scan/__init__.py": "5c87e5d2a9c8ca08e2f9d478ac47f333465b412d605d3abba487823219d7da44",
+      "experiments/r3_d1/evaluate.py": "2afc84be7ef9ef15bf1c81a84df349aa52d29f5e96abd160ee6f3b5544128cf1",
+      "experiments/r3_d1/fcos.py": "4dfe01d04d227c8667d7c744fb66ab171027566fd529163300e898cdcbc10759",
+      "experiments/r3_d1/model.py": "fa61615c381cac85efd571c7766a523f9c95ab8aa715c476208cc9f992183414",
+      "experiments/r3_d1/plan.py": "2d18917ed428a32267b5dd6c80d417e241faf19ce59f640d714aea3f00da3bd8",
+      "experiments/r3_d1/preflight.py": "271b1a5c581479d3b36b5991014c39e7e613f903317b41c8f76ccf1206be243b",
+      "experiments/r3_d1/resume_audit.py": "49c38da01dbde227180779aacba3af8e61da51ebf8d195749fc5b147f3354d9c",
+      "experiments/r3_d1/train.py": "a25f0c45f18e909a754be292fd82a9c44b6610c1b405aceaa3c4be3e3d5a9c9b",
+      "experiments/r3_d1/upstream.py": "ce379f471a1172ebd6c24ae4fed25ab1bafb68c20db6760e7442214325274356"
+    },
+    "model_counts": {
+      "A": {
+        "initial_state_sha256": "17b6521f848044a644b17f1fa2b6e10a5bfe43ce66c9726bec46bd727d29918d",
+        "mac": 666777600,
+        "ops": {
+          "BatchNorm2d_elements": 3532800,
+          "SiLU_elements": 3532800,
+          "bias_add": 50400,
+          "conv_mac": 666777600
+        },
+        "parameters": 135062,
+        "scan_calls": []
+      },
+      "B": {
+        "initial_state_sha256": "68053010a0c37b96ce0fb2ac46109f23de75ec52758b8e61e4363afa71868408",
+        "mac": 666777600,
+        "ops": {
+          "BatchNorm2d_elements": 3532800,
+          "SiLU_elements": 3532800,
+          "bias_add": 50400,
+          "conv_mac": 666777600
+        },
+        "parameters": 135062,
+        "scan_calls": []
+      },
+      "C": {
+        "initial_state_sha256": "b170e95a11d5c4fe7c2cccf5f1454e28f492dc956c3fa63ccbb521196e42dc82",
+        "mac": 1771118400,
+        "ops": {
+          "BatchNorm2d_elements": 6528000,
+          "GELU_elements": 3220800,
+          "SiLU_elements": 6528000,
+          "bias_add": 8104800,
+          "conv_mac": 1771118400,
+          "fusion_residual_merge_add": 2150400
+        },
+        "parameters": 489938,
+        "scan_calls": []
+      },
+      "D": {
+        "initial_state_sha256": "1ed0ed2a6f203fb583770dee790d0d72a5e055a92fc7f037ce8e897648a74c2c",
+        "mac": 1771173888,
+        "ops": {
+          "BatchNorm2d_elements": 6528000,
+          "LayerNorm_elements": 4300800,
+          "SiLU_elements": 10828848,
+          "Sigmoid_elements": 768,
+          "bias_add": 4351200,
+          "conv_mac": 1059379200,
+          "functional_projection_mac": 77414400,
+          "fusion_gate_multiply": 2150400,
+          "fusion_residual_merge_add": 6451200,
+          "linear_mac": 576319488,
+          "pool_input_elements": 2150400,
+          "scan_A_exp": 6144,
+          "scan_delta_bias_add": 6451200,
+          "scan_delta_softplus": 6451200,
+          "scan_exp": 25804800,
+          "scan_input_multiply": 77414400,
+          "scan_mac": 58060800,
+          "scan_state_updates": 25804800
+        },
+        "parameters": 490022,
+        "scan_calls": [
+          {
+            "group_count": 1,
+            "shape": [
+              1,
+              128,
+              6400
+            ],
+            "state": 4
+          },
+          {
+            "group_count": 1,
+            "shape": [
+              1,
+              128,
+              6400
+            ],
+            "state": 4
+          },
+          {
+            "group_count": 2,
+            "shape": [
+              1,
+              256,
+              12800
+            ],
+            "state": 4
+          },
+          {
+            "group_count": 1,
+            "shape": [
+              1,
+              128,
+              1600
+            ],
+            "state": 4
+          },
+          {
+            "group_count": 1,
+            "shape": [
+              1,
+              128,
+              1600
+            ],
+            "state": 4
+          },
+          {
+            "group_count": 2,
+            "shape": [
+              1,
+              256,
+              3200
+            ],
+            "state": 4
+          },
+          {
+            "group_count": 1,
+            "shape": [
+              1,
+              128,
+              400
+            ],
+            "state": 4
+          },
+          {
+            "group_count": 1,
+            "shape": [
+              1,
+              128,
+              400
+            ],
+            "state": 4
+          },
+          {
+            "group_count": 2,
+            "shape": [
+              1,
+              256,
+              800
+            ],
+            "state": 4
+          }
+        ]
+      }
+    },
+    "output_disk_free_bytes": 290976661504,
+    "output_root": "/mnt/d/work/sigma-r3-d1-formal",
+    "run_signatures": {
+      "A/3407": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/A/3407",
+        "signature_sha256": "9de4350b8eb555a86b6227085be2c37b9bcec1f412c617caaa668dbd5e58c72c",
+        "updates_per_epoch": 2482
+      },
+      "A/3408": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/A/3408",
+        "signature_sha256": "57c1f6ea8567d2600c8d787420c5e20712ba4d15fd17538b7ea4b2fcd33461a9",
+        "updates_per_epoch": 2482
+      },
+      "A/3409": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/A/3409",
+        "signature_sha256": "982f0cafd566dccdafa75c55f57384f083bd278540e70adf3bae309121721cd3",
+        "updates_per_epoch": 2482
+      },
+      "A/3410": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/A/3410",
+        "signature_sha256": "978bdd982268d953e58458302d7f3872cd8e45a99e7c36c2f86fdd56615baba6",
+        "updates_per_epoch": 2482
+      },
+      "A/3411": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/A/3411",
+        "signature_sha256": "a715b45b9743a57fd24aa768f80684d8970ecafee6aa4b14e2a329c9118fbe49",
+        "updates_per_epoch": 2482
+      },
+      "B/3407": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/B/3407",
+        "signature_sha256": "3cb48ba7eba9c18227451f27815f957b2556c8ea759733b5b6ecf2cb83e0dccd",
+        "updates_per_epoch": 2482
+      },
+      "B/3408": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/B/3408",
+        "signature_sha256": "f80dc04a857bb406aa177c71655fa24c11d337273b9fe76db1490894e81576bf",
+        "updates_per_epoch": 2482
+      },
+      "B/3409": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/B/3409",
+        "signature_sha256": "0edeb43b0f747aa6bdcd5767b8abfa55ce7ca07f6b771db0bbfad60fa084e27e",
+        "updates_per_epoch": 2482
+      },
+      "B/3410": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/B/3410",
+        "signature_sha256": "70fb31641d054d85ba6c613729ec65c7764704bf6758efd2b11658f24882a1a5",
+        "updates_per_epoch": 2482
+      },
+      "B/3411": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/B/3411",
+        "signature_sha256": "5e7079197e95060424e11881bf135474e13ddc76c870fac47632cf25a1b46650",
+        "updates_per_epoch": 2482
+      },
+      "C/3407": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/C/3407",
+        "signature_sha256": "9a596f17cad224d7196226309a67e0f8036e8f11e9a187790b039607d7fd9dbc",
+        "updates_per_epoch": 2482
+      },
+      "C/3408": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/C/3408",
+        "signature_sha256": "d4fa4cdf99e4871073df42641adac9a56182a31d596302238647422ae767c022",
+        "updates_per_epoch": 2482
+      },
+      "C/3409": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/C/3409",
+        "signature_sha256": "8edf4b883ced9967c1b9e05943a7cba4fa2470e79e912b38f7d50ac138be2bcf",
+        "updates_per_epoch": 2482
+      },
+      "C/3410": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/C/3410",
+        "signature_sha256": "dba9e6fe7e974829938eaec0dfd7d143ccd454250d023da6c528d339c5119b49",
+        "updates_per_epoch": 2482
+      },
+      "C/3411": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/C/3411",
+        "signature_sha256": "2216bdd365967802480a0492b09776954378b40e1f996b5bec6ac9ba1fce28aa",
+        "updates_per_epoch": 2482
+      },
+      "D/3407": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/D/3407",
+        "signature_sha256": "a28b004765e54d3da99751e539650676e2f5eb00b76e68b90e385c108dde8473",
+        "updates_per_epoch": 2482
+      },
+      "D/3408": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/D/3408",
+        "signature_sha256": "5af8f709dc899389ca26c878b33a7180f87677c60b598b7e4dce7ef0b650317d",
+        "updates_per_epoch": 2482
+      },
+      "D/3409": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/D/3409",
+        "signature_sha256": "fa6c377a22b82e8bb59d8fcb80a47d441648d266f7aacfa13c3d9e6fbf94ac7a",
+        "updates_per_epoch": 2482
+      },
+      "D/3410": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/D/3410",
+        "signature_sha256": "a1475ab6a4d144300cfd0e0cc1af1aedd5f6334431a2c22e2c94a75a1ee0ce3c",
+        "updates_per_epoch": 2482
+      },
+      "D/3411": {
+        "batch": 4,
+        "epochs": 10,
+        "output": "/mnt/d/work/sigma-r3-d1-formal/D/3411",
+        "signature_sha256": "c2850bcdda6c9e805e68478e97039d9e540be09779d9807b023214d999194425",
+        "updates_per_epoch": 2482
+      }
+    },
+    "runtime": {
+      "cpu_threads": 1,
+      "cublas_workspace": ":4096:8",
+      "cuda_build": "12.1",
+      "cudnn": 8902,
+      "deterministic": true,
+      "environment": {
+        "CUDA_VISIBLE_DEVICES": "0",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "gpu": {
+        "bytes": 25769279488,
+        "capability": [
+          8,
+          6
+        ],
+        "driver": "610.88",
+        "name": "NVIDIA GeForce RTX 3090",
+        "visible_devices": 1
+      },
+      "numpy": "1.26.4",
+      "opencv": "4.9.0",
+      "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+      "pycocotools": "2.0.10",
+      "python": "3.11.11",
+      "torch": "2.2.2+cu121"
+    },
+    "timing_by_arm": {
+      "A": {
+        "batch2": {
+          "adamw_ms": 1.8483359999983406,
+          "backward_ms": 27.739532999998318,
+          "baseline_allocated_note": "includes inputs, one reference gradient snapshot and cloned initial state",
+          "forward_ms": 1.6173310000020535,
+          "loss_ms": 23.99528200000134,
+          "peak_allocated_bytes": 299162112,
+          "peak_reserved_bytes": 383778816,
+          "update_ms": 56.54856800000019
+        },
+        "batch4": {
+          "adamw_ms": 1.7895770000002642,
+          "backward_ms": 47.67492599999912,
+          "baseline_allocated_note": "includes inputs, one reference gradient snapshot and cloned initial state",
+          "forward_ms": 1.751833000000147,
+          "loss_ms": 55.760671000001594,
+          "peak_allocated_bytes": 296802304,
+          "peak_reserved_bytes": 346030080,
+          "update_ms": 107.26293200000114
+        },
+        "compute_hours": 3.696887261944484
+      },
+      "B": {
+        "batch2": {
+          "adamw_ms": 2.022998000001053,
+          "backward_ms": 26.935892000000905,
+          "baseline_allocated_note": "includes inputs, one reference gradient snapshot and cloned initial state",
+          "forward_ms": 1.4044449999985886,
+          "loss_ms": 32.159286999998926,
+          "peak_allocated_bytes": 268237824,
+          "peak_reserved_bytes": 352321536,
+          "update_ms": 65.00380299999975
+        },
+        "batch4": {
+          "adamw_ms": 1.8239760000007266,
+          "backward_ms": 53.555474999999575,
+          "baseline_allocated_note": "includes inputs, one reference gradient snapshot and cloned initial state",
+          "forward_ms": 1.5845689999984813,
+          "loss_ms": 51.470404999999886,
+          "peak_allocated_bytes": 317814272,
+          "peak_reserved_bytes": 369098752,
+          "update_ms": 108.23595100000105
+        },
+        "compute_hours": 3.730533308805592
+      },
+      "C": {
+        "batch2": {
+          "adamw_ms": 4.810593999998503,
+          "backward_ms": 47.32863999999992,
+          "baseline_allocated_note": "includes inputs, one reference gradient snapshot and cloned initial state",
+          "forward_ms": 5.054721000000484,
+          "loss_ms": 26.563334999998744,
+          "peak_allocated_bytes": 484090880,
+          "peak_reserved_bytes": 526385152,
+          "update_ms": 87.60449000000037
+        },
+        "batch4": {
+          "adamw_ms": 4.212617000000307,
+          "backward_ms": 68.01097499999997,
+          "baseline_allocated_note": "includes inputs, one reference gradient snapshot and cloned initial state",
+          "forward_ms": 5.329723000002673,
+          "loss_ms": 65.59890399999802,
+          "peak_allocated_bytes": 749177344,
+          "peak_reserved_bytes": 832569344,
+          "update_ms": 143.15221900000097
+        },
+        "compute_hours": 4.934003608736145
+      },
+      "D": {
+        "batch2": {
+          "adamw_ms": 8.960650999998876,
+          "backward_ms": 65.6993270000008,
+          "baseline_allocated_note": "includes inputs, one reference gradient snapshot and cloned initial state",
+          "forward_ms": 14.214586999997891,
+          "loss_ms": 31.746610999999092,
+          "peak_allocated_bytes": 933587968,
+          "peak_reserved_bytes": 1059061760,
+          "update_ms": 120.9826740000004
+        },
+        "batch4": {
+          "adamw_ms": 10.197858000001503,
+          "backward_ms": 117.61034599999931,
+          "baseline_allocated_note": "includes inputs, one reference gradient snapshot and cloned initial state",
+          "forward_ms": 13.66110200000037,
+          "loss_ms": 53.28924399999835,
+          "peak_allocated_bytes": 1453702656,
+          "peak_reserved_bytes": 1658847232,
+          "update_ms": 205.4736530000021
+        },
+        "compute_hours": 7.081959941208405
+      }
+    },
+    "upstream": {
+      "commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+      "extension_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan_cuda_core.cpython-311-x86_64-linux-gnu.so",
+      "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e",
+      "extension_version": "0.0.1",
+      "source_file": "/home/xinnan/sigma-r1-upstream/models/encoders/vmamba.py",
+      "source_sha256": {
+        "models/encoders/dual_vmamba.py": "2dcda26a436993eefa007827343a556b665e8d1af21360e2746ffa51b3298b05",
+        "models/encoders/selective_scan/selective_scan/selective_scan_interface.py": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753",
+        "models/encoders/vmamba.py": "e91389cd7c6561df00c63d1d9549694ba5dba2ff20d154fcd814fcd36054241e"
+      },
+      "wrapper_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan/selective_scan_interface.py",
+      "wrapper_sha256": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753"
+    }
+  },
+  "merged_commit": "70456bf60630cdeb593115316c9997021bd067dc",
+  "merged_tree": "1c352ab618d5249f3eeded6d001260df76d69666",
+  "negative_authorization_probes": [
+    [
+      "A",
+      3407,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3407,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3407,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3407,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3407,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3407,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3408,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3408,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3408,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3408,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3408,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3408,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3409,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3409,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3409,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3409,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3409,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3409,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3410,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3410,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3410,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3410,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3410,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3410,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3411,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3411,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3411,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "A",
+      3411,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "A",
+      3411,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "A",
+      3411,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3407,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3407,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3407,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3407,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3407,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3407,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3408,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3408,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3408,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3408,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3408,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3408,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3409,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3409,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3409,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3409,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3409,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3409,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3410,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3410,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3410,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3410,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3410,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3410,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3411,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3411,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3411,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "B",
+      3411,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "B",
+      3411,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "B",
+      3411,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3407,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3407,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3407,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3407,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3407,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3407,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3408,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3408,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3408,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3408,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3408,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3408,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3409,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3409,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3409,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3409,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3409,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3409,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3410,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3410,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3410,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3410,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3410,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3410,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3411,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3411,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3411,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "C",
+      3411,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "C",
+      3411,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "C",
+      3411,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3407,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3407,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3407,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3407,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3407,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3407,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3408,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3408,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3408,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3408,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3408,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3408,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3409,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3409,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3409,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3409,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3409,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3409,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3410,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3410,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3410,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3410,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3410,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3410,
+      true,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3411,
+      false,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3411,
+      false,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3411,
+      false,
+      "unreviewed authorization"
+    ],
+    [
+      "D",
+      3411,
+      true,
+      "explicit authorization flag"
+    ],
+    [
+      "D",
+      3411,
+      true,
+      "no reviewed authorization"
+    ],
+    [
+      "D",
+      3411,
+      true,
+      "unreviewed authorization"
+    ]
+  ],
+  "official_test_pixel_reads": 0,
+  "r4_head": "f800f26ca15b4cafe9b4f38e5cdc031a93f0e5e1",
+  "real_llvip_optimizer_updates": 0,
+  "reran": [
+    "cpu",
+    "compileall",
+    "development_data_and_fcos",
+    "synthetic_model_forwards",
+    "live_runtime_fingerprints",
+    "signatures_and_orders",
+    "authorization_rejections"
+  ],
+  "status": "PASS"
+}
