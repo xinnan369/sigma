@@ -1,0 +1,37 @@
+warning: CRLF will be replaced by LF in experiments/r2k_q1v2_llvip/__init__.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/budget.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/coco.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/coverage.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/deterministic_scan/__init__.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/evaluate.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/model.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/plan.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/review_registry.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in experiments/r3_d1/upstream.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in tests/test_r2k_q2_protocol.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in tests/test_r2k_q2_synthetic.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in tests/test_r3_d0_llvip.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in tests/test_r3_d1_authorization_preflight.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in tests/test_r3_d1_design.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in tests/test_r3_d1_detector.py.
+The file will have its original line endings in your working directory
+warning: CRLF will be replaced by LF in tests/test_r3_d1_deterministic.py.
+The file will have its original line endings in your working directory
+PASS: all technical gates; no authorization issued
+
+Exit code: 0

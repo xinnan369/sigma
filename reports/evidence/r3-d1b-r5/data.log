@@ -1,0 +1,7 @@
+fit {'pairs': 9926, 'verified_jpeg_files': 19852, 'verified_xml_files': 9926, 'valid_gt': 28547, 'roster_sha256': 'a63905058b686828f01b96445016a126f40315edaf6effdef17f20a6c51985a6'}
+validation {'pairs': 2087, 'verified_jpeg_files': 4174, 'verified_xml_files': 2087, 'valid_gt': 5536, 'roster_sha256': '2f3f2b4589165e400e477fb8145fec3c2865db169926ebff7b54dc353c3ac8e1'}
+fit {'images': 9926, 'gt': 28547, 'matched': 28540, 'unmatched': 7, 'zero_positive_images': 2, 'positive_stride_8': 90027, 'positive_stride_16': 150737, 'positive_stride_32': 27, 'lost_tie_or_overlap': 7}
+validation {'images': 2087, 'gt': 5536, 'matched': 5530, 'unmatched': 6, 'zero_positive_images': 0, 'positive_stride_8': 5272, 'positive_stride_16': 41060, 'positive_stride_32': 0, 'lost_tie_or_overlap': 5, 'no_eligible_point': 1}
+PASS development-only bytes, paired decode, XML and FCOS matches
+
+Exit code: 0

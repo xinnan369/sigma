@@ -1,0 +1,16 @@
+............................s..........................s................ [ 34%]
+s....................................................................... [ 68%]
+..................................................................       [100%]
+=============================== warnings summary ===============================
+tests/test_r1c_training.py::test_optimizer_covers_raw_ssm_parameters_once_and_preserves_legacy
+  /home/xinnan/anaconda3/envs/yolov12/lib/python3.11/site-packages/onnxruntime/capi/_pybind_state.py:28: DeprecationWarning: invalid escape sequence '\S'
+    "(other than %SystemRoot%\System32), "
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_r1d_epoch.py:114: Pinned Sigma checkout and VMamba initializer required
+SKIPPED [1] tests/test_r2b_state.py:46: Requires CUDA and Sigma selective scan
+SKIPPED [1] tests/test_r2f_numerics.py:28: CUDA basis probes require GPU
+207 passed, 3 skipped, 1 warning in 115.55s (0:01:55)
+
+Exit code: 0

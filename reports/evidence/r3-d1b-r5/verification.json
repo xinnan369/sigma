@@ -1,0 +1,29 @@
+{
+  "archived_bytes_verified": 55,
+  "authorized": false,
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "exit_codes": {
+    "compileall": 0,
+    "cpu": 0,
+    "development_data": 0,
+    "review": 0
+  },
+  "files_sha256": {
+    "authorization-review.json": "f5cb24f2081630808971ddbd8d9fd245d6bcd2355c5538309b5a8edc6e2ca19e",
+    "compileall.log": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d",
+    "cpu.log": "90304c90663bc0e1bc5a6b7b30b651e82ffe096d9a592b36ab75a21a159471b4",
+    "data-integrity.json": "cfe3183ecb044b17cbcfeda901d82f5d94e616bad6a8caa98a7fa6bb03a6549b",
+    "data.log": "d11f166c64aa83dfabc101ee4d35c90c304db84ecac51a36387eeec1a2212d07",
+    "gt-coverage.json": "c2e8a71a9c93f33cdbf3f46a79c6a72f3bf906a77ff11343191e7afb8ea23df9",
+    "pr37.json": "2948b5c2ef6822528ea6ab65d513ae8fc3132d0452e34d1a2d1049ee34f1eeb2",
+    "review.log": "7f809f0413dca04eaf4a0011550eb0873f09dcf0fea3ce2ee6dca1c405cd60b3"
+  },
+  "fresh_ledger_reference": {
+    "path": "reports/evidence/r3-d1/review/gt-per-image.jsonl",
+    "sha256": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd"
+  },
+  "merged_commit": "70456bf60630cdeb593115316c9997021bd067dc",
+  "merged_tree": "1c352ab618d5249f3eeded6d001260df76d69666",
+  "schema": "r3-d1b-r5-evidence-v1",
+  "status": "PASS"
+}

@@ -1,0 +1,25 @@
+{
+  "audited_head": "3ce9a30c1521df6143cec8d371d5d0b6be579434",
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "independent_exit_code": 1,
+  "disposition": "HOLD",
+  "archive_normalization": "LF for log files; cpu.log has pytest presentation whitespace trimmed, cpu-original.log.raw preserves original WSL bytes",
+  "files_sha256": {
+    "audit-unit.log": "7149c42cad610539a96d0836091d79c177382d5dba4bef44c8e6c081636da687",
+    "compileall.log": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d",
+    "cpu-fix-preview.log": "dbe67d8f2301c56adcb41cec80bd0e82a3757d7e8ba04dd9a4230097bf09dafc",
+    "cpu-windows.log": "068c990e0ad896085375b0d7cbb0ec52c467960ebdf40b79f2b36179adf55dba",
+    "cpu.log": "795f97cefce0f41d91c72a80f49c64aaf9f418370d4575ce0eebf20cbdc84ede",
+    "data-integrity.json": "cfe3183ecb044b17cbcfeda901d82f5d94e616bad6a8caa98a7fa6bb03a6549b",
+    "data.log": "d11f166c64aa83dfabc101ee4d35c90c304db84ecac51a36387eeec1a2212d07",
+    "gt-coverage.json": "c2e8a71a9c93f33cdbf3f46a79c6a72f3bf906a77ff11343191e7afb8ea23df9",
+    "independent.json": "fcb265275f027741db4d6a6239541ae94c087c1a2ddb906ab781212539e73dfb",
+    "numerics.json": "191c11d2412c3df73de1c0304ea1a71c15f8d6bf47b8e775d08246d1a740fd85",
+    "numerics.log": "3acfbca58b6350f03cd56b2a1cb3d7ef4dfa2dc1a3e7c9aa714b562020598960",
+    "resume.json": "06f3cdf0daf879090d5d8156e221618f386324cdad5df2e2bbc9748247074d78",
+    "resume.log": "42c1c59b7f4447f4f4e0cf364d2256c708893c02d599d35f7fd508b4d8d2870f",
+    "cpu-original.log.raw": "9a6b33b623e7996a0bbc9cbd71109f83c2996bf01fae246d3098e5b61a840e2f"
+  },
+  "coverage_ledger_reference": "reports/evidence/r3-d1/review/gt-per-image.jsonl",
+  "coverage_ledger_sha256": "6bef3d384796f98c8f2b8d5f406083b35d4d33202b34c9b2e158762319ba71cd"
+}

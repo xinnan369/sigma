@@ -10,6 +10,7 @@ from experiments.r3_d1.checkpoint import digest
 from experiments.r3_d1.data import SPLIT_SHA256
 from experiments.r3_d1.deterministic_scan import fixed_sum, installed
 from experiments.r3_d1.model import SEEDS
+from experiments.r3_d1.review_registry import RunApproval
 from experiments.r3_d1.train import train
 
 
@@ -44,7 +45,8 @@ def test_require_all_gates_even_for_reviewed_hash(monkeypatch,tmp_path,missing):
     p=tmp_path/'review.json'
     raw=json.dumps(receipt).encode()
     p.write_bytes(raw)
-    monkeypatch.setattr(authorization,'TRUSTED_RECEIPTS',frozenset({hashlib.sha256(raw).hexdigest()}))
+    approved = {f'{arm}/3407': RunApproval(digest(sig), digest(sig)) for arm in 'ABCD'}
+    monkeypatch.setattr(authorization, 'TRUSTED_RECEIPTS', {hashlib.sha256(raw).hexdigest(): approved})
     for arm in 'ABCD':
         with pytest.raises(ValueError,match='incomplete review gates'):
             authorization.require_authorization(p,arm,3407,sig)
@@ -60,7 +62,8 @@ def test_full_review_receipt_binds_signature(monkeypatch,tmp_path):
     p.write_bytes(raw)
     with pytest.raises(ValueError,match='unreviewed'):
         authorization.require_authorization(p,'A',3407,sig)
-    monkeypatch.setattr(authorization,'TRUSTED_RECEIPTS',frozenset({hashlib.sha256(raw).hexdigest()}))
-    authorization.require_authorization(p,'D',3411,sig)
+    approved = {f'{arm}/3407': RunApproval(digest(sig), digest(sig)) for arm in 'ABCD'}
+    monkeypatch.setattr(authorization, 'TRUSTED_RECEIPTS', {hashlib.sha256(raw).hexdigest(): approved})
+    authorization.require_authorization(p,'D',3407,sig)
     with pytest.raises(ValueError,match='signature mismatch'):
-        authorization.require_authorization(p,'D',3411,{})
+        authorization.require_authorization(p,'D',3407,{})

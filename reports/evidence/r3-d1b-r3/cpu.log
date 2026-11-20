@@ -1,0 +1,88 @@
+............................s..........................s................ [ 34%]
+s...................................F................................... [ 69%]
+..............................................................           [100%]
+=================================== FAILURES ===================================
+_____________ test_scan_pairs_duplicates_malformed_and_annotation ______________
+
+tmp_path = PosixPath('/tmp/pytest-of-xinnan/pytest-0/test_scan_pairs_duplicates_mal0')
+
+    def test_scan_pairs_duplicates_malformed_and_annotation(tmp_path):
+        for m,s,i in [('visible','train','a'),('infrared','train','a'),
+                      ('visible','test','a'),('infrared','test','a'),('visible','test','b')]:
+            p=tmp_path/m/s/(i+'.jpg')
+            p.parent.mkdir(parents=True,exist_ok=True)
+            Image.new('RGB',(16,16)).save(p)
+        bad=tmp_path/'visible/test/bad.jpg'
+        bad.write_bytes(b'invalid')
+        xml=tmp_path/'Annotations/a.xml'
+        xml.parent.mkdir()
+        xml.write_text('<annotation><filename>a.jpg</filename><size><width>16</width>'
+                       '<height>16</height></size><segmented>0</segmented><object><name>person</name>'
+                       '<bndbox><xmin>2</xmin><xmax>2</xmax><ymin>1</ymin><ymax>4</ymax>'
+                       '</bndbox></object></annotation>')
+        rows=[scan.inspect(tmp_path,p) for p in sorted(tmp_path.rglob('*')) if p.is_file()]
+>       s=scan.summarize(rows)
+
+tests/test_r2k_q1v2_llvip.py:40:
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+experiments/r2k_q1v2_llvip/scan.py:123: in summarize
+    dist = np.bitwise_count(h ^ np.uint64(int(r['phash63'],16)))
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+attr = 'bitwise_count'
+
+    def __getattr__(attr):
+        # Warn for expired attributes, and return a dummy function
+        # that always raises an exception.
+        import warnings
+        import math
+        try:
+            msg = __expired_functions__[attr]
+        except KeyError:
+            pass
+        else:
+            warnings.warn(msg, DeprecationWarning, stacklevel=2)
+
+            def _expired(*args, **kwds):
+                raise RuntimeError(msg)
+
+            return _expired
+
+        # Emit warnings for deprecated attributes
+        try:
+            val, msg = __deprecated_attrs__[attr]
+        except KeyError:
+            pass
+        else:
+            warnings.warn(msg, DeprecationWarning, stacklevel=2)
+            return val
+
+        if attr in __future_scalars__:
+            # And future warnings for those that will change, but also give
+            # the AttributeError
+            warnings.warn(
+                f"In the future `np.{attr}` will be defined as the "
+                "corresponding NumPy scalar.", FutureWarning, stacklevel=2)
+
+        if attr in __former_attrs__:
+            raise AttributeError(__former_attrs__[attr])
+
+        if attr == 'testing':
+            import numpy.testing as testing
+            return testing
+        elif attr == 'Tester':
+            "Removed in NumPy 1.25.0"
+            raise RuntimeError("Tester was removed in NumPy 1.25.")
+
+>       raise AttributeError("module {!r} has no attribute "
+                             "{!r}".format(__name__, attr))
+E       AttributeError: module 'numpy' has no attribute 'bitwise_count'
+
+/home/xinnan/anaconda3/envs/yolov12/lib/python3.11/site-packages/numpy/__init__.py:333: AttributeError
+=========================== short test summary info ============================
+SKIPPED [1] tests/test_r1d_epoch.py:114: Pinned Sigma checkout and VMamba initializer required
+SKIPPED [1] tests/test_r2b_state.py:46: Requires CUDA and Sigma selective scan
+SKIPPED [1] tests/test_r2f_numerics.py:28: CUDA basis probes require GPU
+1 failed, 202 passed, 3 skipped in 25.24s
+
+Exit code: 1
