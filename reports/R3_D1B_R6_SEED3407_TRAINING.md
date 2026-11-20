@@ -1,6 +1,6 @@
 # R3-D1B-R6 — Seed 3407 正式训练与授权审批
 
-**R6 已进入真实训练。** 获批回执已登记。A/3407 正在执行，B、C、D 已进入顺序队列。
+**R6 首批训练已完成。** A、B、C、D 的 seed 3407 实验均完成 10 Epoch，共 99,280 次真实 AdamW 更新。训练报告与证据提交 PR #39，等待独立验收。
 
 ## 审批依据
 
@@ -17,14 +17,36 @@
 3. 上述检查通过后，仅运行 Seed 3407 的四个实验。每组独立开始，采用同一固定 10 Epoch、batch 4、FP32、AdamW 配置，以及审查通过的 Sigma CUDA 扩展和确定性 backward。
 4. 使用仓库外独立输出目录，按冻结协议保存事件日志、optimizer、RNG、checkpoint 和运行签名。中断后仅从校验通过的 checkpoint 续跑。只用 Fit 更新参数及用 Validation 选模。
 
-## 首批实验记录
+## 首批实验结果
 
-| 实验 | 计划 Epoch | 计划更新 | 实际更新 | Validation AP50 / AP50:95 | 最优 checkpoint、耗时、显存 |
-|---|---:|---:|---:|---|---|
-| A/3407 | 10 | 24,820 | 168（启动快照） | 首轮尚未完成 | 已核验第 100 次更新的 checkpoint |
-| B/3407 | 10 | 24,820 | 0 | NOT RUN | NOT RUN |
-| C/3407 | 10 | 24,820 | 0 | NOT RUN | NOT RUN |
-| D/3407 | 10 | 24,820 | 0 | NOT RUN | NOT RUN |
+批次于北京时间 2026 年 11 月 19 日 22:57:00 启动，11 月 20 日 09:38:08 完成，墙钟用时约 **10 小时 41 分**。四臂均在 RTX 3090 上独立完成 24,820 次更新，无恢复记录。各臂耗时包含数据读取、checkpoint 和 Validation。峰值显存是训练事件中 PyTorch 记录的最大已分配显存。
+
+| 实验 | 最佳 Epoch | 最佳 AP50 | 最佳 AP50:95 | Epoch 10 AP50 | Epoch 10 AP50:95 | 墙钟耗时 | 显存峰值 MiB |
+|---|---:|---:|---:|---:|---:|---:|---:|
+| A/3407 | 9 | 31.85% | 10.27% | 16.23% | 5.14% | 2:32:54 | 203.5 |
+| B/3407 | 9 | 67.74% | 27.00% | 64.77% | 25.83% | 2:25:37 | 203.5 |
+| C/3407 | 8 | 86.24% | 42.39% | 85.11% | 41.08% | 2:35:23 | 555.5 |
+| D/3407 | 9 | 54.22% | 24.34% | 45.03% | 19.14% | 3:07:11 | 1226.5 |
+
+最佳 checkpoint 按冻结规则选择，以 AP50:95 为首要排序指标，其次 AP50，再取较早 Epoch。轮次以 1 起算。四臂每轮均完成 2,482 次更新，最后一批为 2 张。独立复核逐事件重算 40 个训练损失与 40 个 Fit 批次顺序摘要，逐轮将机器记录的 AP 与 COCO 输出比对。每臂读取 Fit 99,260 对次和 Validation 20,870 对次，合计 397,040 和 83,480 对次。官方 Test 像素读取为 0，依据为冻结读取器的角色检查、签名批序和完整的 Validation 记录。
+
+四臂的 best/last 文件及内容寻址 checkpoint 均与终态 ledger 的 SHA256 一致。终态事件日志长度和完整哈希与 ledger 一致，逐事件 loss 及梯度指标均为有限值。原始权重、训练事件日志和独立输出目录保存在本机。归档记录各轮损失、AP50、AP50:95、预测摘要、验证用时、完整 checkpoint 哈希与运行签名。[机器可读完整结果](evidence/r3-d1b-r6/completed/final-training-audit.json) · [证据 SHA256](evidence/r3-d1b-r6/completed/final-verification.json) · [A 日志](evidence/r3-d1b-r6/completed/A-3407-validation.log) · [B 日志](evidence/r3-d1b-r6/completed/B-3407-validation.log) · [C 日志](evidence/r3-d1b-r6/completed/C-3407-validation.log) · [D 日志](evidence/r3-d1b-r6/completed/D-3407-validation.log)
+
+seed 3407 上，D 的最佳 AP50:95 比 C 低 **18.04 个百分点**，两者在第 10 轮的差距为 **21.93 个百分点**。比较限于这次训练和冻结内部 Validation，其余随机种子尚未运行。
+
+## 执行证据
+
+正式训练提交为 `460bb30d296470fb5d91e658a5a363abb2f88588`。WSL2 使用固定虚拟环境和单张 RTX 3090，FP32，batch 4，AdamW，seed 3407。终态环境指纹与审查记录一致，四个训练进程均退出 0。以下以 A 臂为例。
+
+```sh
+export CUDA_VISIBLE_DEVICES=0 CUBLAS_WORKSPACE_CONFIG=:4096:8
+export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
+/home/xinnan/.venvs/sigma-r1-cu121/bin/python -u -m experiments.r3_d1.train \
+  --root /mnt/d/BaiduNetdiskDownload/LLVIP/LLVIP \
+  --split reports/evidence/r3-d0/split.json --upstream /home/xinnan/sigma-r1-upstream \
+  --output /mnt/d/work/sigma-r3-d1-formal --seed 3407 --arm A \
+  --authorize-formal-training --authorization reports/evidence/r3-d1b-r2r/authorization-candidate.json
+```
 
 登记后重新验证 20 组签名，并实测 10 个拒绝情形。全套测试覆盖损坏 checkpoint、恢复签名与事件前缀校验。原授权单测改为检查合成回执确实未登记，并继续验证所有臂拒绝该回执。模型、训练器、损失、评估和数据切分 SHA 保持冻结。
 

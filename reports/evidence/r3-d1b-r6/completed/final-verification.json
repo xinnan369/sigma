@@ -1,0 +1,12 @@
+{
+  "files_sha256": {
+    "A-3407-validation.log": "046fc30012ad65cf6e983b0a172d359ab9515d9c5df3f7425bcf73454f19b0aa",
+    "B-3407-validation.log": "430479d48e45c9671c3d780a608267c7d326c71117146b1d9a29f55de918e7d3",
+    "C-3407-validation.log": "5b92c878812b1ce01aaa581cb30d7c18ad29d34ff78bd3b44dde6affc1dc5003",
+    "D-3407-validation.log": "9914a653409f4342ceee478de60e107f10f2c1b572af46420cc476cea0551819",
+    "final-training-audit.json": "8fab5af625ddefd923e13e5b14aad9a2372c2bdd1f0d79658913579ce1e6a1b4"
+  },
+  "finalizer_sha256": "574b07f70972d9a2cd956615d9c80840c419d43d6f145e5780e177a107763b4f",
+  "schema": "r3-d1b-r6-training-evidence-v1",
+  "status": "PASS"
+}
