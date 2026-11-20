@@ -1,0 +1,31 @@
+{
+  "additional_local_audit_script_sha256": {
+    "approved_gates.py": "63b74b7b0d7da6f8743d0a36c3d76e308be25605b4b986c66ce9c09bce186de4",
+    "launch.sh": "8d03962966a631cb6f2ffd047382006122ba12330995168cdefa483528c12496",
+    "launch_batch.py": "8da098ce18997c9a1a23f289524b7fc4ce7c5b3ebc174343496d24d49bcfa885",
+    "verify.sh": "738f5a6e4c4d61ead03043e83c5cd1554579c6be9e731adca264c7089da9617c"
+  },
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "checked_run_signatures": 20,
+  "cpu": {
+    "exit_code": 0,
+    "passed": 207,
+    "skipped": 3
+  },
+  "files_sha256": {
+    "approved-cpu.log": "59dfe7823993dd6f23e99741f3cbad967cfbff7e3f4e1453fcec6f0aea7b5129",
+    "approved-gates.json": "85bfc2065efc7a6731abb32c704c628a86b5b29b4f9f6c27010939d366e62e01",
+    "approved-gates.log": "3cab6492c182b9d9c611c8dd0d1551f72508ddff031cc13a2bbcdf6e985d54b9",
+    "human-approval.json": "68318dab76b2b667bb9fb67ea603d2a79140349dfc7a2ed2767a172e92e948c3"
+  },
+  "launch_scope": [
+    "A/3407",
+    "B/3407",
+    "C/3407",
+    "D/3407"
+  ],
+  "negative_authorization_rejections": 10,
+  "output_root": "D:/work/sigma-r3-d1-formal",
+  "schema": "r3-d1b-r6-post-approval-gates-v1",
+  "status": "PASS"
+}

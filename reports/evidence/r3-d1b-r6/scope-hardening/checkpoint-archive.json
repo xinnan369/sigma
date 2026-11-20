@@ -1,0 +1,562 @@
+{
+  "approval_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "backend": "sigma-r3-exclusive-block-pairwise-v1",
+  "batch_files": [
+    {
+      "bytes": 5990,
+      "path": "A-3407-summary.json",
+      "sha256": "d728929de2653f6adbe90078da2df38d4af46cab73c6e127c4d796ab4b4caa91"
+    },
+    {
+      "bytes": 12050,
+      "path": "A-3407.log",
+      "sha256": "046fc30012ad65cf6e983b0a172d359ab9515d9c5df3f7425bcf73454f19b0aa"
+    },
+    {
+      "bytes": 5983,
+      "path": "B-3407-summary.json",
+      "sha256": "8321f17dc2739c40f116b3de525a0c8afff364e0fb1bd0b325d0c0608cdf0e62"
+    },
+    {
+      "bytes": 12050,
+      "path": "B-3407.log",
+      "sha256": "430479d48e45c9671c3d780a608267c7d326c71117146b1d9a29f55de918e7d3"
+    },
+    {
+      "bytes": 28250,
+      "path": "batch-status.json",
+      "sha256": "4898d07d48e7ec1a6d59dcde4187bd4e8d4c7223250c262f0cada6ff8f670cba"
+    },
+    {
+      "bytes": 28250,
+      "path": "batch-summary.json",
+      "sha256": "4898d07d48e7ec1a6d59dcde4187bd4e8d4c7223250c262f0cada6ff8f670cba"
+    },
+    {
+      "bytes": 0,
+      "path": "batch.lock",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 5984,
+      "path": "C-3407-summary.json",
+      "sha256": "521c3c08df0e955249a6f6326dec3f805103e4d9af4a9c5f6e4b10fae6dc33e7"
+    },
+    {
+      "bytes": 12050,
+      "path": "C-3407.log",
+      "sha256": "5b92c878812b1ce01aaa581cb30d7c18ad29d34ff78bd3b44dde6affc1dc5003"
+    },
+    {
+      "bytes": 5998,
+      "path": "D-3407-summary.json",
+      "sha256": "18de766d10700f28df9d99ca61fcf22858031db856f84a74ea95345aa8322108"
+    },
+    {
+      "bytes": 12050,
+      "path": "D-3407.log",
+      "sha256": "9914a653409f4342ceee478de60e107f10f2c1b572af46420cc476cea0551819"
+    }
+  ],
+  "checked_at": "2026-11-20T04:06:13.052688+00:00",
+  "checkpoint_file_count": 16,
+  "full_size_files_kept_locally": true,
+  "historical_completed_at": "2026-11-20T09:38:08+08:00",
+  "historical_report_sha256": "8fab5af625ddefd923e13e5b14aad9a2372c2bdd1f0d79658913579ce1e6a1b4",
+  "historical_training_commit": "460bb30d296470fb5d91e658a5a363abb2f88588",
+  "local_original_root": "D:/work/sigma-r3-d1-formal",
+  "official_test_pixel_reads_verifying_now": 0,
+  "optimizer_updates_verifying_now": 0,
+  "protocol_sha256": "ff9e193482eb0cc808a428a5c1c662516d43bd7d1d0e603d0b3b8edc3d9028db",
+  "run_archives": {
+    "A/3407": {
+      "best_ap50": 0.31852191106966515,
+      "best_ap50_95": 0.10270315418708521,
+      "best_epoch": 9,
+      "checkpoint": {
+        "best": {
+          "alias": "A/3407/best.pt",
+          "object": "A/3407/checkpoint-objects/c1ebc128862146f3e16dd230a9cfd42ee688e70858d64e1c996438eb14b1ed6f.pt",
+          "sha256": "c1ebc128862146f3e16dd230a9cfd42ee688e70858d64e1c996438eb14b1ed6f"
+        },
+        "last": {
+          "alias": "A/3407/last.pt",
+          "object": "A/3407/checkpoint-objects/99a12ec93a6a4f2c22d09ee94197010e1909fe104e3c590796e18ea956ff1e43.pt",
+          "sha256": "99a12ec93a6a4f2c22d09ee94197010e1909fe104e3c590796e18ea956ff1e43"
+        }
+      },
+      "environment": {
+        "cpu_threads": 1,
+        "cublas_workspace": ":4096:8",
+        "cuda_build": "12.1",
+        "cudnn": 8902,
+        "deterministic": true,
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "0",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "gpu": {
+          "bytes": 25769279488,
+          "capability": [
+            8,
+            6
+          ],
+          "driver": "610.88",
+          "name": "NVIDIA GeForce RTX 3090",
+          "visible_devices": 1
+        },
+        "numpy": "1.26.4",
+        "opencv": "4.9.0",
+        "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+        "pycocotools": "2.0.10",
+        "python": "3.11.11",
+        "torch": "2.2.2+cu121"
+      },
+      "event_records": 24830,
+      "events_jsonl": {
+        "bytes": 8359462,
+        "path": "A/3407/events.jsonl",
+        "sha256": "93a571f10ee22dd2a637657f15738be1fb0f98c992385aae06ff8bbd1c9d9be6"
+      },
+      "files": [
+        {
+          "bytes": 1853418,
+          "path": "A/3407/best.pt",
+          "sha256": "c1ebc128862146f3e16dd230a9cfd42ee688e70858d64e1c996438eb14b1ed6f"
+        },
+        {
+          "bytes": 519,
+          "path": "A/3407/checkpoint-ledger.json",
+          "sha256": "e4582245099d56ecd42c05fece7afcbc3ea192d92eb03036cb5fc267b3135fd3"
+        },
+        {
+          "bytes": 1673514,
+          "path": "A/3407/checkpoint-objects/99a12ec93a6a4f2c22d09ee94197010e1909fe104e3c590796e18ea956ff1e43.pt",
+          "sha256": "99a12ec93a6a4f2c22d09ee94197010e1909fe104e3c590796e18ea956ff1e43"
+        },
+        {
+          "bytes": 1853418,
+          "path": "A/3407/checkpoint-objects/c1ebc128862146f3e16dd230a9cfd42ee688e70858d64e1c996438eb14b1ed6f.pt",
+          "sha256": "c1ebc128862146f3e16dd230a9cfd42ee688e70858d64e1c996438eb14b1ed6f"
+        },
+        {
+          "bytes": 3518,
+          "path": "A/3407/epochs.json",
+          "sha256": "6896f43c58c52d47010ff190d91ab505e4b4b34e7ea21f89db61031ec75236f5"
+        },
+        {
+          "bytes": 8359462,
+          "path": "A/3407/events.jsonl",
+          "sha256": "93a571f10ee22dd2a637657f15738be1fb0f98c992385aae06ff8bbd1c9d9be6"
+        },
+        {
+          "bytes": 176,
+          "path": "A/3407/initialization.json",
+          "sha256": "3392e040f17fb276dcc40372c56300df39adc671b9cb78fc6ecc46e418d8c6d3"
+        },
+        {
+          "bytes": 1673514,
+          "path": "A/3407/last.pt",
+          "sha256": "99a12ec93a6a4f2c22d09ee94197010e1909fe104e3c590796e18ea956ff1e43"
+        },
+        {
+          "bytes": 25,
+          "path": "A/3407/resume-audit.json",
+          "sha256": "a2ed69b2fb5e56a7a96e01e10274612e901ef4fdecb6909876f25bde18eeadb9"
+        },
+        {
+          "bytes": 0,
+          "path": "A/3407/run.lock",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 485,
+          "path": "A/3407/runtime.json",
+          "sha256": "55ac584b902df6cc5553a5d8df1c035c5a6c0519afc5ebfd0bcf52e80e0915ed"
+        }
+      ],
+      "signed_runtime_sha256": "9de4350b8eb555a86b6227085be2c37b9bcec1f412c617caaa668dbd5e58c72c",
+      "updates": 24820,
+      "validation_epochs": 10
+    },
+    "B/3407": {
+      "best_ap50": 0.6774201861524145,
+      "best_ap50_95": 0.2699826424552061,
+      "best_epoch": 9,
+      "checkpoint": {
+        "best": {
+          "alias": "B/3407/best.pt",
+          "object": "B/3407/checkpoint-objects/a893e93d52c2696f52d742c0cd5eee63c59a553c9d1d6a98f3e583c2eea64888.pt",
+          "sha256": "a893e93d52c2696f52d742c0cd5eee63c59a553c9d1d6a98f3e583c2eea64888"
+        },
+        "last": {
+          "alias": "B/3407/last.pt",
+          "object": "B/3407/checkpoint-objects/5810e2f981e91129e565a7352483978995ef4abda2938db66659f8dbf9d51acb.pt",
+          "sha256": "5810e2f981e91129e565a7352483978995ef4abda2938db66659f8dbf9d51acb"
+        }
+      },
+      "environment": {
+        "cpu_threads": 1,
+        "cublas_workspace": ":4096:8",
+        "cuda_build": "12.1",
+        "cudnn": 8902,
+        "deterministic": true,
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "0",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "gpu": {
+          "bytes": 25769279488,
+          "capability": [
+            8,
+            6
+          ],
+          "driver": "610.88",
+          "name": "NVIDIA GeForce RTX 3090",
+          "visible_devices": 1
+        },
+        "numpy": "1.26.4",
+        "opencv": "4.9.0",
+        "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+        "pycocotools": "2.0.10",
+        "python": "3.11.11",
+        "torch": "2.2.2+cu121"
+      },
+      "event_records": 24830,
+      "events_jsonl": {
+        "bytes": 8364864,
+        "path": "B/3407/events.jsonl",
+        "sha256": "496891079bd45909abc271ed4b4ff2e2766375fec410b749d8ff398e4a360992"
+      },
+      "files": [
+        {
+          "bytes": 1853674,
+          "path": "B/3407/best.pt",
+          "sha256": "a893e93d52c2696f52d742c0cd5eee63c59a553c9d1d6a98f3e583c2eea64888"
+        },
+        {
+          "bytes": 519,
+          "path": "B/3407/checkpoint-ledger.json",
+          "sha256": "3efe17d2aeeec47dc91c4edbf6f2cbdd296442a4dacd33b7ecdb62ac471a51a6"
+        },
+        {
+          "bytes": 1673706,
+          "path": "B/3407/checkpoint-objects/5810e2f981e91129e565a7352483978995ef4abda2938db66659f8dbf9d51acb.pt",
+          "sha256": "5810e2f981e91129e565a7352483978995ef4abda2938db66659f8dbf9d51acb"
+        },
+        {
+          "bytes": 1853674,
+          "path": "B/3407/checkpoint-objects/a893e93d52c2696f52d742c0cd5eee63c59a553c9d1d6a98f3e583c2eea64888.pt",
+          "sha256": "a893e93d52c2696f52d742c0cd5eee63c59a553c9d1d6a98f3e583c2eea64888"
+        },
+        {
+          "bytes": 3514,
+          "path": "B/3407/epochs.json",
+          "sha256": "3d4178045c9fdfd92a96a72ebde78bff085b244e7e6ab204c25104640152aab8"
+        },
+        {
+          "bytes": 8364864,
+          "path": "B/3407/events.jsonl",
+          "sha256": "496891079bd45909abc271ed4b4ff2e2766375fec410b749d8ff398e4a360992"
+        },
+        {
+          "bytes": 176,
+          "path": "B/3407/initialization.json",
+          "sha256": "356d5472647706a859d5c8f93907995fccbf3ac14c58c52a05abb3f4033e8ae1"
+        },
+        {
+          "bytes": 1673706,
+          "path": "B/3407/last.pt",
+          "sha256": "5810e2f981e91129e565a7352483978995ef4abda2938db66659f8dbf9d51acb"
+        },
+        {
+          "bytes": 25,
+          "path": "B/3407/resume-audit.json",
+          "sha256": "a2ed69b2fb5e56a7a96e01e10274612e901ef4fdecb6909876f25bde18eeadb9"
+        },
+        {
+          "bytes": 0,
+          "path": "B/3407/run.lock",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 485,
+          "path": "B/3407/runtime.json",
+          "sha256": "55ac584b902df6cc5553a5d8df1c035c5a6c0519afc5ebfd0bcf52e80e0915ed"
+        }
+      ],
+      "signed_runtime_sha256": "3cb48ba7eba9c18227451f27815f957b2556c8ea759733b5b6ecf2cb83e0dccd",
+      "updates": 24820,
+      "validation_epochs": 10
+    },
+    "C/3407": {
+      "best_ap50": 0.8623752992650336,
+      "best_ap50_95": 0.4238598243532933,
+      "best_epoch": 8,
+      "checkpoint": {
+        "best": {
+          "alias": "C/3407/best.pt",
+          "object": "C/3407/checkpoint-objects/c6fcd3ba3aa3fdf2cbc8fdb4e00a13c20826b7612bcb1f6d2ed68826ae73d87a.pt",
+          "sha256": "c6fcd3ba3aa3fdf2cbc8fdb4e00a13c20826b7612bcb1f6d2ed68826ae73d87a"
+        },
+        "last": {
+          "alias": "C/3407/last.pt",
+          "object": "C/3407/checkpoint-objects/3f7f10fc43a9d62dfb113021877510e97b42446279d2bc44100c1346b34cac6f.pt",
+          "sha256": "3f7f10fc43a9d62dfb113021877510e97b42446279d2bc44100c1346b34cac6f"
+        }
+      },
+      "environment": {
+        "cpu_threads": 1,
+        "cublas_workspace": ":4096:8",
+        "cuda_build": "12.1",
+        "cudnn": 8902,
+        "deterministic": true,
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "0",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "gpu": {
+          "bytes": 25769279488,
+          "capability": [
+            8,
+            6
+          ],
+          "driver": "610.88",
+          "name": "NVIDIA GeForce RTX 3090",
+          "visible_devices": 1
+        },
+        "numpy": "1.26.4",
+        "opencv": "4.9.0",
+        "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+        "pycocotools": "2.0.10",
+        "python": "3.11.11",
+        "torch": "2.2.2+cu121"
+      },
+      "event_records": 24830,
+      "events_jsonl": {
+        "bytes": 8373353,
+        "path": "C/3407/events.jsonl",
+        "sha256": "e2a42f8248c5015f30e05b5300c624dac279567717210781bb78b2a209e4547f"
+      },
+      "files": [
+        {
+          "bytes": 6181108,
+          "path": "C/3407/best.pt",
+          "sha256": "c6fcd3ba3aa3fdf2cbc8fdb4e00a13c20826b7612bcb1f6d2ed68826ae73d87a"
+        },
+        {
+          "bytes": 519,
+          "path": "C/3407/checkpoint-ledger.json",
+          "sha256": "9803b9392adb24ac2a3e93a5f10a30e1019811c732b81996758eb5460c0e021d"
+        },
+        {
+          "bytes": 5998772,
+          "path": "C/3407/checkpoint-objects/3f7f10fc43a9d62dfb113021877510e97b42446279d2bc44100c1346b34cac6f.pt",
+          "sha256": "3f7f10fc43a9d62dfb113021877510e97b42446279d2bc44100c1346b34cac6f"
+        },
+        {
+          "bytes": 6181108,
+          "path": "C/3407/checkpoint-objects/c6fcd3ba3aa3fdf2cbc8fdb4e00a13c20826b7612bcb1f6d2ed68826ae73d87a.pt",
+          "sha256": "c6fcd3ba3aa3fdf2cbc8fdb4e00a13c20826b7612bcb1f6d2ed68826ae73d87a"
+        },
+        {
+          "bytes": 3515,
+          "path": "C/3407/epochs.json",
+          "sha256": "d6fefcb616c560d37234aeb7120d88d111d4b5bf39ea5c0bcfe16a25fbe27185"
+        },
+        {
+          "bytes": 8373353,
+          "path": "C/3407/events.jsonl",
+          "sha256": "e2a42f8248c5015f30e05b5300c624dac279567717210781bb78b2a209e4547f"
+        },
+        {
+          "bytes": 176,
+          "path": "C/3407/initialization.json",
+          "sha256": "1a67b8e497bfcc07bd3a36f4459ea764199bfbefa1e096b285aaf42bae95aec4"
+        },
+        {
+          "bytes": 5998772,
+          "path": "C/3407/last.pt",
+          "sha256": "3f7f10fc43a9d62dfb113021877510e97b42446279d2bc44100c1346b34cac6f"
+        },
+        {
+          "bytes": 25,
+          "path": "C/3407/resume-audit.json",
+          "sha256": "a2ed69b2fb5e56a7a96e01e10274612e901ef4fdecb6909876f25bde18eeadb9"
+        },
+        {
+          "bytes": 0,
+          "path": "C/3407/run.lock",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 485,
+          "path": "C/3407/runtime.json",
+          "sha256": "55ac584b902df6cc5553a5d8df1c035c5a6c0519afc5ebfd0bcf52e80e0915ed"
+        }
+      ],
+      "signed_runtime_sha256": "9a596f17cad224d7196226309a67e0f8036e8f11e9a187790b039607d7fd9dbc",
+      "updates": 24820,
+      "validation_epochs": 10
+    },
+    "D/3407": {
+      "best_ap50": 0.5422270339345089,
+      "best_ap50_95": 0.24342639042219402,
+      "best_epoch": 9,
+      "checkpoint": {
+        "best": {
+          "alias": "D/3407/best.pt",
+          "object": "D/3407/checkpoint-objects/55094a2415437d3923c3c82b5518605e41e85d6a80e09f8407380b2288e2624e.pt",
+          "sha256": "55094a2415437d3923c3c82b5518605e41e85d6a80e09f8407380b2288e2624e"
+        },
+        "last": {
+          "alias": "D/3407/last.pt",
+          "object": "D/3407/checkpoint-objects/1d9e58ce7bbefba199b62c20f9f9123963ac16a99baab21e320389b19ad91004.pt",
+          "sha256": "1d9e58ce7bbefba199b62c20f9f9123963ac16a99baab21e320389b19ad91004"
+        }
+      },
+      "environment": {
+        "cpu_threads": 1,
+        "cublas_workspace": ":4096:8",
+        "cuda_build": "12.1",
+        "cudnn": 8902,
+        "deterministic": true,
+        "environment": {
+          "CUDA_VISIBLE_DEVICES": "0",
+          "OMP_NUM_THREADS": "1",
+          "OPENBLAS_NUM_THREADS": "1"
+        },
+        "gpu": {
+          "bytes": 25769279488,
+          "capability": [
+            8,
+            6
+          ],
+          "driver": "610.88",
+          "name": "NVIDIA GeForce RTX 3090",
+          "visible_devices": 1
+        },
+        "numpy": "1.26.4",
+        "opencv": "4.9.0",
+        "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+        "pycocotools": "2.0.10",
+        "python": "3.11.11",
+        "torch": "2.2.2+cu121"
+      },
+      "event_records": 24830,
+      "events_jsonl": {
+        "bytes": 8397860,
+        "path": "D/3407/events.jsonl",
+        "sha256": "c8a6696f3931eef4601064672bfb1b0d42248ea08e031d9e29417ca482481fe7"
+      },
+      "files": [
+        {
+          "bytes": 6288660,
+          "path": "D/3407/best.pt",
+          "sha256": "55094a2415437d3923c3c82b5518605e41e85d6a80e09f8407380b2288e2624e"
+        },
+        {
+          "bytes": 519,
+          "path": "D/3407/checkpoint-ledger.json",
+          "sha256": "50a67e858d6f68595e5a3ba9b2d005112224ac7703cc52c80e503b4066536e71"
+        },
+        {
+          "bytes": 6102036,
+          "path": "D/3407/checkpoint-objects/1d9e58ce7bbefba199b62c20f9f9123963ac16a99baab21e320389b19ad91004.pt",
+          "sha256": "1d9e58ce7bbefba199b62c20f9f9123963ac16a99baab21e320389b19ad91004"
+        },
+        {
+          "bytes": 6288660,
+          "path": "D/3407/checkpoint-objects/55094a2415437d3923c3c82b5518605e41e85d6a80e09f8407380b2288e2624e.pt",
+          "sha256": "55094a2415437d3923c3c82b5518605e41e85d6a80e09f8407380b2288e2624e"
+        },
+        {
+          "bytes": 3524,
+          "path": "D/3407/epochs.json",
+          "sha256": "76ccc69d9c48b78e16b9e909a190d08b93ee0ed427d057ed4d23227cc0b8adf4"
+        },
+        {
+          "bytes": 8397860,
+          "path": "D/3407/events.jsonl",
+          "sha256": "c8a6696f3931eef4601064672bfb1b0d42248ea08e031d9e29417ca482481fe7"
+        },
+        {
+          "bytes": 176,
+          "path": "D/3407/initialization.json",
+          "sha256": "b1188bb0f700ad7d29f6e27e1401f94e0d631b97f990848a65b9f5e6cea1b67d"
+        },
+        {
+          "bytes": 6102036,
+          "path": "D/3407/last.pt",
+          "sha256": "1d9e58ce7bbefba199b62c20f9f9123963ac16a99baab21e320389b19ad91004"
+        },
+        {
+          "bytes": 25,
+          "path": "D/3407/resume-audit.json",
+          "sha256": "a2ed69b2fb5e56a7a96e01e10274612e901ef4fdecb6909876f25bde18eeadb9"
+        },
+        {
+          "bytes": 0,
+          "path": "D/3407/run.lock",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 485,
+          "path": "D/3407/runtime.json",
+          "sha256": "55ac584b902df6cc5553a5d8df1c035c5a6c0519afc5ebfd0bcf52e80e0915ed"
+        }
+      ],
+      "signed_runtime_sha256": "a28b004765e54d3da99751e539650676e2f5eb00b76e68b90e385c108dde8473",
+      "updates": 24820,
+      "validation_epochs": 10
+    }
+  },
+  "runtime_environment": {
+    "cpu_threads": 1,
+    "cublas_workspace": ":4096:8",
+    "cuda_build": "12.1",
+    "cudnn": 8902,
+    "deterministic": true,
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "gpu": {
+      "bytes": 25769279488,
+      "capability": [
+        8,
+        6
+      ],
+      "driver": "610.88",
+      "name": "NVIDIA GeForce RTX 3090",
+      "visible_devices": 1
+    },
+    "numpy": "1.26.4",
+    "opencv": "4.9.0",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "pycocotools": "2.0.10",
+    "python": "3.11.11",
+    "torch": "2.2.2+cu121"
+  },
+  "schema": "r3-d1b-r6-local-checkpoint-archive-v1",
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "status": "PASS",
+  "upstream": {
+    "commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+    "extension_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan_cuda_core.cpython-311-x86_64-linux-gnu.so",
+    "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e",
+    "extension_version": "0.0.1",
+    "source_file": "/home/xinnan/sigma-r1-upstream/models/encoders/vmamba.py",
+    "source_sha256": {
+      "models/encoders/dual_vmamba.py": "2dcda26a436993eefa007827343a556b665e8d1af21360e2746ffa51b3298b05",
+      "models/encoders/selective_scan/selective_scan/selective_scan_interface.py": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753",
+      "models/encoders/vmamba.py": "e91389cd7c6561df00c63d1d9549694ba5dba2ff20d154fcd814fcd36054241e"
+    },
+    "wrapper_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan/selective_scan_interface.py",
+    "wrapper_sha256": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753"
+  }
+}

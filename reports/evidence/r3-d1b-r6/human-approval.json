@@ -1,0 +1,18 @@
+{
+  "approval_message": "批准实验，开始吧",
+  "approval_source": "explicit user approval in the Codex task conversation",
+  "approved_proposal_head": "be48428dc0c14b46eeb3e858e58108e67bfcc77b",
+  "approved_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "authorization_pr": 39,
+  "candidate_path": "reports/evidence/r3-d1b-r2r/authorization-candidate.json",
+  "independent_review_merge_commit": "758e4f42f7038a7cff446525ba92fe73bad3f242",
+  "independent_technical_review_pr": 38,
+  "launch_scope": [
+    "A/3407",
+    "B/3407",
+    "C/3407",
+    "D/3407"
+  ],
+  "recorded_at_utc": "2026-11-19T14:45:21.428545+00:00",
+  "schema": "r3-d1b-r6-human-approval-v1"
+}

@@ -41,9 +41,9 @@ def test_candidate_cannot_promote_invalid_recovery(fault):
 def test_candidate_is_not_authority_for_any_arm(tmp_path):
     from types import SimpleNamespace
     from experiments.r3_d1.review_registry import TRUSTED_RECEIPTS
-    assert TRUSTED_RECEIPTS==frozenset()
     candidate=tmp_path/'candidate.json'
     r2.write_json(candidate,dict(schema='r3-d1b-r1-authorization-v1',gates=dict.fromkeys(r2.REQUIRED,'PASS')))
+    assert r2.hashfile(candidate) not in TRUSTED_RECEIPTS
     for arm in 'ABCD':
         with pytest.raises(ValueError,match='unreviewed authorization'):
             train(SimpleNamespace(authorize_formal_training=True,authorization=candidate,
