@@ -1,0 +1,165 @@
+{
+  "approval_recorded_at_utc": "2026-11-20T05:17:04.488114+00:00",
+  "approval_source": "explicit user approval in the Codex task conversation",
+  "approved_new_run_keys": [
+    "A/3408",
+    "B/3408",
+    "C/3408",
+    "D/3408",
+    "A/3409",
+    "B/3409",
+    "C/3409",
+    "D/3409",
+    "A/3410",
+    "B/3410",
+    "C/3410",
+    "D/3410",
+    "A/3411",
+    "B/3411",
+    "C/3411",
+    "D/3411"
+  ],
+  "authorization_source_sha256": "d71821c150c64453358654eb3eacc79b0423a89437d71dd9bb09f959618c607c",
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "environment": {
+    "cpu_threads": 1,
+    "cublas_workspace": ":4096:8",
+    "cuda_build": "12.1",
+    "cudnn": 8902,
+    "deterministic": true,
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "gpu": {
+      "bytes": 25769279488,
+      "capability": [
+        8,
+        6
+      ],
+      "driver": "610.88",
+      "name": "NVIDIA GeForce RTX 3090",
+      "visible_devices": 1
+    },
+    "numpy": "1.26.4",
+    "opencv": "4.9.0",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "pycocotools": "2.0.10",
+    "python": "3.11.11",
+    "torch": "2.2.2+cu121"
+  },
+  "prior_r6_run_keys": [
+    "A/3407",
+    "B/3407",
+    "C/3407",
+    "D/3407"
+  ],
+  "protocol_sha256": "ff9e193482eb0cc808a428a5c1c662516d43bd7d1d0e603d0b3b8edc3d9028db",
+  "r5_independent_review_pr": 38,
+  "r5_merge_commit": "758e4f42f7038a7cff446525ba92fe73bad3f242",
+  "r5_review_sha256": "f5cb24f2081630808971ddbd8d9fd245d6bcd2355c5538309b5a8edc6e2ca19e",
+  "r6_merge_commit": "e005dd1e9e4aaaa73eaaed14f2fef2edad465aaf",
+  "r6_merge_tree": "152e32f958fdcdbe81a9655460426523dc565a8b",
+  "r6_reviewed_head": "c4ec764a12bb5b9fb1971934c47ec3c7ce6bcae7",
+  "registry_sha256": "e751a74c5e343d804d40a7bb0bb165385c0d8da188ce68550a9e50d62c6b6cc0",
+  "runtime_signatures": {
+    "A/3407": {
+      "receipt_signature_sha256": "9de4350b8eb555a86b6227085be2c37b9bcec1f412c617caaa668dbd5e58c72c",
+      "runtime_signature_sha256": "d8690f32b4d5be1512f1c80afb0ae71bf76eb823f4398ef374d985d4efcdcdca"
+    },
+    "A/3408": {
+      "receipt_signature_sha256": "57c1f6ea8567d2600c8d787420c5e20712ba4d15fd17538b7ea4b2fcd33461a9",
+      "runtime_signature_sha256": "07b079dc329bc99b7d00b53bcea33ac2f57a8020b5e0401c94f0e97690ec0f1d"
+    },
+    "A/3409": {
+      "receipt_signature_sha256": "982f0cafd566dccdafa75c55f57384f083bd278540e70adf3bae309121721cd3",
+      "runtime_signature_sha256": "a6d0c427eb965059c4f74f861e4641fe235de669bc84c3cfc7363b15fcf81958"
+    },
+    "A/3410": {
+      "receipt_signature_sha256": "978bdd982268d953e58458302d7f3872cd8e45a99e7c36c2f86fdd56615baba6",
+      "runtime_signature_sha256": "b4ff9b6011526f85b027c1cd991bc3ffc6f3384377220dccc0285db7addeae3c"
+    },
+    "A/3411": {
+      "receipt_signature_sha256": "a715b45b9743a57fd24aa768f80684d8970ecafee6aa4b14e2a329c9118fbe49",
+      "runtime_signature_sha256": "88c3cc1fc16e4c3db012ebd5b43a0ed358490dc98bb835f28f3159bec54de3d4"
+    },
+    "B/3407": {
+      "receipt_signature_sha256": "3cb48ba7eba9c18227451f27815f957b2556c8ea759733b5b6ecf2cb83e0dccd",
+      "runtime_signature_sha256": "f3ed70596cd5bf1ac4a2f9c821a0330d1c72172e12285759e80b6bcb15a9db02"
+    },
+    "B/3408": {
+      "receipt_signature_sha256": "f80dc04a857bb406aa177c71655fa24c11d337273b9fe76db1490894e81576bf",
+      "runtime_signature_sha256": "241540b30de42a6083ba8dfa934d0e34cd4ac8c01017588d2e9f79bb78c7c536"
+    },
+    "B/3409": {
+      "receipt_signature_sha256": "0edeb43b0f747aa6bdcd5767b8abfa55ce7ca07f6b771db0bbfad60fa084e27e",
+      "runtime_signature_sha256": "ace90dd2cfd17682e634c43605aa42f4d15a9b62e7026129fa754e205e46b923"
+    },
+    "B/3410": {
+      "receipt_signature_sha256": "70fb31641d054d85ba6c613729ec65c7764704bf6758efd2b11658f24882a1a5",
+      "runtime_signature_sha256": "08ef1702f45721349510c95db212ccc44f873c9d1f0345a2d00034460ffdd99a"
+    },
+    "B/3411": {
+      "receipt_signature_sha256": "5e7079197e95060424e11881bf135474e13ddc76c870fac47632cf25a1b46650",
+      "runtime_signature_sha256": "f5b86025d044183b0a1c1823e83244f5cb5328b444b7ae8f6800fce7b89c032b"
+    },
+    "C/3407": {
+      "receipt_signature_sha256": "9a596f17cad224d7196226309a67e0f8036e8f11e9a187790b039607d7fd9dbc",
+      "runtime_signature_sha256": "dbf70af2ebeb102d2d4c727ca06d2799fcb9400077ca024ba1b283faeb1fd18f"
+    },
+    "C/3408": {
+      "receipt_signature_sha256": "d4fa4cdf99e4871073df42641adac9a56182a31d596302238647422ae767c022",
+      "runtime_signature_sha256": "c07464daca819d6f5641e4d5656e29e273cfacde28e719e9589b661b439ef3fc"
+    },
+    "C/3409": {
+      "receipt_signature_sha256": "8edf4b883ced9967c1b9e05943a7cba4fa2470e79e912b38f7d50ac138be2bcf",
+      "runtime_signature_sha256": "755bdb82f7d470f6821a6fdecda3ff6ccd80e39df4657fb65f85323c15420362"
+    },
+    "C/3410": {
+      "receipt_signature_sha256": "dba9e6fe7e974829938eaec0dfd7d143ccd454250d023da6c528d339c5119b49",
+      "runtime_signature_sha256": "fb47d2514e0af4c5c44c94f185d62923504dfee8f6801def6c6e62023773d5d0"
+    },
+    "C/3411": {
+      "receipt_signature_sha256": "2216bdd365967802480a0492b09776954378b40e1f996b5bec6ac9ba1fce28aa",
+      "runtime_signature_sha256": "abc53372c1d47738a696c74af7ffda61c751072b4ff6674e0a39fc588bbd79e0"
+    },
+    "D/3407": {
+      "receipt_signature_sha256": "a28b004765e54d3da99751e539650676e2f5eb00b76e68b90e385c108dde8473",
+      "runtime_signature_sha256": "d0c030a7f5bd67b9060af48c099a431125cf5ede21e540b2e8cfa356063bb483"
+    },
+    "D/3408": {
+      "receipt_signature_sha256": "5af8f709dc899389ca26c878b33a7180f87677c60b598b7e4dce7ef0b650317d",
+      "runtime_signature_sha256": "bc7fc8e221de9586a53cbb168092c89872684f568b10c75a863f6b95eb7dd7e1"
+    },
+    "D/3409": {
+      "receipt_signature_sha256": "fa6c377a22b82e8bb59d8fcb80a47d441648d266f7aacfa13c3d9e6fbf94ac7a",
+      "runtime_signature_sha256": "e4f09ce97e25d7509e4e527cc05d46e6106d6343a976a1be5a4cbd83e81b9451"
+    },
+    "D/3410": {
+      "receipt_signature_sha256": "a1475ab6a4d144300cfd0e0cc1af1aedd5f6334431a2c22e2c94a75a1ee0ce3c",
+      "runtime_signature_sha256": "e30527262a4cbe6c2ca73e0e8f98377734ded1f1cc4f622e388dd177f9515367"
+    },
+    "D/3411": {
+      "receipt_signature_sha256": "c2850bcdda6c9e805e68478e97039d9e540be09779d9807b023214d999194425",
+      "runtime_signature_sha256": "5d5d9fab04b887420b6027ac86158b80b1fc2dd463820cb7cb6af11f99db1048"
+    }
+  },
+  "schema": "r3-d1b-r7-scope-extension-v1",
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "status": "APPROVED",
+  "upstream": {
+    "commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+    "extension_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan_cuda_core.cpython-311-x86_64-linux-gnu.so",
+    "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e",
+    "extension_version": "0.0.1",
+    "source_file": "/home/xinnan/sigma-r1-upstream/models/encoders/vmamba.py",
+    "source_sha256": {
+      "models/encoders/dual_vmamba.py": "2dcda26a436993eefa007827343a556b665e8d1af21360e2746ffa51b3298b05",
+      "models/encoders/selective_scan/selective_scan/selective_scan_interface.py": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753",
+      "models/encoders/vmamba.py": "e91389cd7c6561df00c63d1d9549694ba5dba2ff20d154fcd814fcd36054241e"
+    },
+    "wrapper_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan/selective_scan_interface.py",
+    "wrapper_sha256": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "approval_file_sha256": "41cb5e33709458438de44046876c76f397a5b24f9b3c29087b698617167ff074",
+  "approval_recomputation_sha256": "072273fad033fd21c0cf8f8d6697e7972d4c425a542e43a041038bfb59aba750",
+  "approved_cases": 20,
+  "compileall": {
+    "command": "python -m compileall -q experiments/r3_d1 experiments/r3_d1_r7",
+    "exit_code": 0
+  },
+  "cpu": {
+    "command": "python -m pytest -q -rs tests",
+    "exit_code": 0,
+    "passed": 257,
+    "skipped": 3
+  },
+  "files_sha256": {
+    "compileall.log": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d",
+    "cpu.log": "bbcf2b6ee2302f9ddb0b0542aae592b977d3d0e7ab64f54af98bfccbde48f449"
+  },
+  "launch_code_sha256": {
+    "publish_after_completion.ps1": "6c3f46b8c16bc3f5814878d82f0e0333bf67c453403eeb6ad32ca148b4578bff",
+    "run_remaining.py": "2b9c6567c17f0ede3cef025e5af1c3f1dd10317fb3ce070f040fec54cd7622d2"
+  },
+  "receipt_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "scheduled_new_cases": 16,
+  "scheduled_new_updates": 397120,
+  "status": "PASS"
+}
