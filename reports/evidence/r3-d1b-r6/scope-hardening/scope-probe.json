@@ -1,0 +1,95 @@
+{
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "hardened_authorization_source_sha256": "d71821c150c64453358654eb3eacc79b0423a89437d71dd9bb09f959618c607c",
+  "original_authorization_source_sha256": "2e071dbed0bfa93baa1187fdc304581930f22baeb10c1d6ba02806006afcaddc",
+  "registry_sha256": "fe13ee42f8ea65ee442f0d3ca84c91bab5b6b21c2da3028fba17f7d9ddeeab68",
+  "run_matrix": {
+    "A/3407": {
+      "hardened_runtime_signature": "d8690f32b4d5be1512f1c80afb0ae71bf76eb823f4398ef374d985d4efcdcdca",
+      "original_receipt_signature": "9de4350b8eb555a86b6227085be2c37b9bcec1f412c617caaa668dbd5e58c72c",
+      "status": "ALLOWED"
+    },
+    "A/3408": {
+      "original_receipt_signature": "57c1f6ea8567d2600c8d787420c5e20712ba4d15fd17538b7ea4b2fcd33461a9",
+      "status": "DENIED"
+    },
+    "A/3409": {
+      "original_receipt_signature": "982f0cafd566dccdafa75c55f57384f083bd278540e70adf3bae309121721cd3",
+      "status": "DENIED"
+    },
+    "A/3410": {
+      "original_receipt_signature": "978bdd982268d953e58458302d7f3872cd8e45a99e7c36c2f86fdd56615baba6",
+      "status": "DENIED"
+    },
+    "A/3411": {
+      "original_receipt_signature": "a715b45b9743a57fd24aa768f80684d8970ecafee6aa4b14e2a329c9118fbe49",
+      "status": "DENIED"
+    },
+    "B/3407": {
+      "hardened_runtime_signature": "f3ed70596cd5bf1ac4a2f9c821a0330d1c72172e12285759e80b6bcb15a9db02",
+      "original_receipt_signature": "3cb48ba7eba9c18227451f27815f957b2556c8ea759733b5b6ecf2cb83e0dccd",
+      "status": "ALLOWED"
+    },
+    "B/3408": {
+      "original_receipt_signature": "f80dc04a857bb406aa177c71655fa24c11d337273b9fe76db1490894e81576bf",
+      "status": "DENIED"
+    },
+    "B/3409": {
+      "original_receipt_signature": "0edeb43b0f747aa6bdcd5767b8abfa55ce7ca07f6b771db0bbfad60fa084e27e",
+      "status": "DENIED"
+    },
+    "B/3410": {
+      "original_receipt_signature": "70fb31641d054d85ba6c613729ec65c7764704bf6758efd2b11658f24882a1a5",
+      "status": "DENIED"
+    },
+    "B/3411": {
+      "original_receipt_signature": "5e7079197e95060424e11881bf135474e13ddc76c870fac47632cf25a1b46650",
+      "status": "DENIED"
+    },
+    "C/3407": {
+      "hardened_runtime_signature": "dbf70af2ebeb102d2d4c727ca06d2799fcb9400077ca024ba1b283faeb1fd18f",
+      "original_receipt_signature": "9a596f17cad224d7196226309a67e0f8036e8f11e9a187790b039607d7fd9dbc",
+      "status": "ALLOWED"
+    },
+    "C/3408": {
+      "original_receipt_signature": "d4fa4cdf99e4871073df42641adac9a56182a31d596302238647422ae767c022",
+      "status": "DENIED"
+    },
+    "C/3409": {
+      "original_receipt_signature": "8edf4b883ced9967c1b9e05943a7cba4fa2470e79e912b38f7d50ac138be2bcf",
+      "status": "DENIED"
+    },
+    "C/3410": {
+      "original_receipt_signature": "dba9e6fe7e974829938eaec0dfd7d143ccd454250d023da6c528d339c5119b49",
+      "status": "DENIED"
+    },
+    "C/3411": {
+      "original_receipt_signature": "2216bdd365967802480a0492b09776954378b40e1f996b5bec6ac9ba1fce28aa",
+      "status": "DENIED"
+    },
+    "D/3407": {
+      "hardened_runtime_signature": "d0c030a7f5bd67b9060af48c099a431125cf5ede21e540b2e8cfa356063bb483",
+      "original_receipt_signature": "a28b004765e54d3da99751e539650676e2f5eb00b76e68b90e385c108dde8473",
+      "status": "ALLOWED"
+    },
+    "D/3408": {
+      "original_receipt_signature": "5af8f709dc899389ca26c878b33a7180f87677c60b598b7e4dce7ef0b650317d",
+      "status": "DENIED"
+    },
+    "D/3409": {
+      "original_receipt_signature": "fa6c377a22b82e8bb59d8fcb80a47d441648d266f7aacfa13c3d9e6fbf94ac7a",
+      "status": "DENIED"
+    },
+    "D/3410": {
+      "original_receipt_signature": "a1475ab6a4d144300cfd0e0cc1af1aedd5f6334431a2c22e2c94a75a1ee0ce3c",
+      "status": "DENIED"
+    },
+    "D/3411": {
+      "original_receipt_signature": "c2850bcdda6c9e805e68478e97039d9e540be09779d9807b023214d999194425",
+      "status": "DENIED"
+    }
+  },
+  "runtime_fingerprint_basis": "Archived signed environment and actual hardened source bytes in WSL",
+  "status": "PASS",
+  "training_started": false
+}

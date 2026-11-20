@@ -1,0 +1,50 @@
+{
+  "allowed": [
+    "A/3407",
+    "B/3407",
+    "C/3407",
+    "D/3407"
+  ],
+  "audit_scripts_sha256": {
+    "check_scope.py": "6aa21778062d32f71700476d50c4801a673dbc084d675f070d2180931347e4c8",
+    "checkpoint_archive.py": "b379b7cd3e4a63491c6bdba814f5e1c8a34abb504a1d7d8777635460a38f8097",
+    "test.sh": "d21b53602f8a7a746b444d4d2437e04b1491acd0856234b1830f2866782f9c58"
+  },
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "cpu": {
+    "command": "python -m pytest -q -rs tests",
+    "environment": "Ubuntu-22.04 WSL2 /home/xinnan/.venvs/sigma-r1-cu121/bin/python; CUDA hidden",
+    "exit_code": 0,
+    "passed_new": 27,
+    "passed_preexisting": 207,
+    "passed_total": 234,
+    "skipped": 3
+  },
+  "denied": [
+    "A/3408",
+    "A/3409",
+    "A/3410",
+    "A/3411",
+    "B/3408",
+    "B/3409",
+    "B/3410",
+    "B/3411",
+    "C/3408",
+    "C/3409",
+    "C/3410",
+    "C/3411",
+    "D/3408",
+    "D/3409",
+    "D/3410",
+    "D/3411"
+  ],
+  "files_sha256": {
+    "checkpoint-archive.json": "25567798e9fc8c8e085b5347c47b1fb10e939cb7c61c28ce9b41742365986100",
+    "cpu.log": "2b2b2fa1a0bdde15f581aba3aca30df37fe8b06e08c4181cc2bb744c75e4facf",
+    "scope-probe.json": "004c0c647f972a7127eb3d9a0b745b7c9c07dbf906f29a193fed0b2e7d71d003"
+  },
+  "historical_report_sha256": "8fab5af625ddefd923e13e5b14aad9a2372c2bdd1f0d79658913579ce1e6a1b4",
+  "historical_training_commit": "460bb30d296470fb5d91e658a5a363abb2f88588",
+  "schema": "r3-d1b-r6-scope-hardening-verification-v1",
+  "status": "PASS"
+}

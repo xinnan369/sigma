@@ -53,3 +53,13 @@ export OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1
 RTX 3090 固定 WSL 环境的全套 CPU 测试为 207 通过、3 跳过、0 失败。首批输出目录为仓库外的 `D:/work/sigma-r3-d1-formal`，四臂按 A、B、C、D 顺序执行。已审计的 launcher 对每臂的正式运行签名、最后 ledger、事件批序和 checkpoint 哈希进行核验。 [授权后检查清单](evidence/r3-d1b-r6/approved-verification.json)
 
 启动阶段的 WSL Git 索引扫描在训练工作进程创建前中止，随后改为读取被冻结的源码 SHA256 并从第一步启动 A/3407。启动快照记录已提交事件前缀、检查点 SHA256 和当时的更新次序。 [启动证据](evidence/r3-d1b-r6/startup-observation.json)
+
+## R6 授权范围加固与原件复核
+
+训练入口现在按候选回执 SHA256 查询独立登记的运行键，仅允许 `A/3407`、`B/3407`、`C/3407`、`D/3407`。候选文件仍保留完整的 20 个审查签名。启动和恢复均先检查人工批准范围，再核对实际运行签名，未批准的 16 个运行键在访问 GPU、数据或 checkpoint 前被拒绝。完整检查还验证回执的原始对应签名和冻结 split，恢复不会跳过运行签名校验。[逐运行键探测](evidence/r3-d1b-r6/scope-hardening/scope-probe.json)
+
+原回执和历史训练指纹保留。因为 `authorization.py` 自身属于签名源码，登记同时绑定每个获批运行的原始回执签名与加固后的运行签名。独立复算确认两者的输入只差这一文件的原始字节 SHA256。旧 checkpoint 仍以原训练签名验证，加固后的训练器会拒绝用旧签名直接恢复。这四臂已经完成，本轮没有训练或续跑。
+
+固定 WSL 环境执行 `python -m pytest -q -rs tests`，**234 通过、3 跳过、0 失败**。原有 207 项已复验，另有 27 项覆盖获批范围、其余 16 项的启动与恢复拒绝、错误运行签名、错误 split 和未登记回执。WSL 离线复算还直接使用真实运行器签名函数，确认 4 个允许运行与 16 个拒绝运行。该探测使用已审查环境指纹与现场源码字节，未启动 GPU 训练。[完整 CPU 日志](evidence/r3-d1b-r6/scope-hardening/cpu.log)
+
+四组已归档 AP、逐轮损失、99,280 次更新和历史审计文件均保持原样。本轮重新核对四臂的终态 ledger、`best.pt`、`last.pt` 及其内容寻址对象，共 **16 个 checkpoint 文件**（8 个对象与 8 个别名）。四个完整 `events.jsonl` 分别与终态 ledger 及历史 SHA256 一致，各有 24,830 条记录。运行环境、运行签名、COCO 验证日志和批次摘要也通过复核。原始 checkpoint 和完整事件日志仍位于本机 `D:/work/sigma-r3-d1-formal`，Git 归档提供相对路径、字节数、SHA256、每臂环境和扩展指纹。[本机原件清单](evidence/r3-d1b-r6/scope-hardening/checkpoint-archive.json) · [归档证据哈希](evidence/r3-d1b-r6/scope-hardening/verification.json)
