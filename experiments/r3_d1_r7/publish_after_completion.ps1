@@ -1,10 +1,13 @@
 param(
     [Parameter(Mandatory=$true)][string]$Checkout,
     [Parameter(Mandatory=$true)][string]$Commit,
+    [string]$StateCommit,
+    [ValidateRange(3408, 3411)][int]$LastSeed = 3409,
     [switch]$ResumeBatch,
     [switch]$PublishOnly
 )
 $ErrorActionPreference = 'Stop'
+if (-not $StateCommit) { $StateCommit = $Commit }
 $branch = 'codex/R3-D1B-R7-remaining-four-seeds'
 $base = 'codex/R3-D1B-R3-independent-authorization-audit'
 $repo = 'xinnan369/sigma'
@@ -29,15 +32,23 @@ if (-not $PublishOnly) {
         PYTHONDONTWRITEBYTECODE=1 /home/xinnan/.venvs/sigma-r1-cu121/bin/python -u `
         -m experiments.r3_d1_r7.run_remaining --output /mnt/d/work/sigma-r3-d1-r7-formal `
         --data /mnt/d/BaiduNetdiskDownload/LLVIP/LLVIP --upstream /home/xinnan/sigma-r1-upstream `
-        --commit $Commit @extra
+        --commit $StateCommit --last-seed $LastSeed @extra
     if ($LASTEXITCODE -ne 0) { throw "Training or audit exited $LASTEXITCODE. Evidence preserved at $out" }
+    if ($LastSeed -lt 3411) {
+        $stage = Get-Content -LiteralPath "$out/stage-through-$LastSeed-summary.json" -Raw | ConvertFrom-Json
+        if ($stage.status -ne 'STAGE_COMPLETE' -or $stage.last_scheduled_seed -ne $LastSeed) {
+            throw 'The requested stage did not complete its audit'
+        }
+        Write-Output "Completed the audited stage through seed $LastSeed"
+        return
+    }
 }
 
 $batch = Get-Content -LiteralPath "$out/batch-summary.json" -Raw | ConvertFrom-Json
 $matrix = Get-Content -LiteralPath "$Checkout/$proof/five-seed-audit.json" -Raw | ConvertFrom-Json
 $manifest = Get-Content -LiteralPath "$Checkout/$proof/verification.json" -Raw | ConvertFrom-Json
-if ($batch.status -ne 'COMPLETE' -or $batch.commit -ne $Commit -or $batch.new_updates -ne 397120 `
-    -or $matrix.status -ne 'PASS' -or $matrix.training_commit -ne $Commit -or $matrix.runs.Count -ne 20 `
+if ($batch.status -ne 'COMPLETE' -or $batch.commit -ne $StateCommit -or $batch.new_updates -ne 397120 `
+    -or $matrix.status -ne 'PASS' -or $matrix.training_commit -ne $StateCommit -or $matrix.runs.Count -ne 20 `
     -or $matrix.all_updates -ne 496400 -or $matrix.official_test_pixel_reads -ne 0 -or $manifest.status -ne 'PASS') {
     throw 'The complete five-seed proof is required to publish'
 }
@@ -100,6 +111,6 @@ foreach ($attempt in 1..3) {
     if ($attempt -lt 3) { Start-Sleep -Seconds 30 }
 }
 if (-not $pr) { throw "Final evidence pushed at $published. Creating the PR failed" }
-[pscustomobject]@{status='OPEN'; pr=$pr; head=$published; trainingCommit=$Commit} |
+[pscustomobject]@{status='OPEN'; pr=$pr; head=$published; trainingCommit=$StateCommit} |
     ConvertTo-Json -Compress | Set-Content -LiteralPath "$out/publication.json" -Encoding utf8NoBOM
 Write-Output $pr

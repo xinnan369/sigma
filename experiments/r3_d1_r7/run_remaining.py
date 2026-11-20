@@ -232,7 +232,7 @@ def seed_audit(output, seed, runs):
 
 
 def recover_parent(output, state, approved):
-    if state['status']=='STOPPED':
+    if state['status'] in ('STOPPED', 'STAGE_COMPLETE'):
         return
     require(state['status']=='RUNNING', 'A completed batch cannot be relaunched')
     key = state.get('active')
@@ -255,8 +255,14 @@ def recover_parent(output, state, approved):
                     interruption_verified_at=local_time(time.time()))
 
 
+def scheduled_runs(last_seed):
+    return [(arm, seed) for arm, seed in RUNS if seed <= last_seed]
+
+
 def run(args):
     approved, ledger, fit = validate_approval()
+    scheduled = scheduled_runs(args.last_seed)
+    keys = {f'{arm}/{seed}' for arm, seed in scheduled}
     args.output = args.output.resolve()
     require(not args.output.is_relative_to(REPO) and args.data.is_dir() and args.upstream.is_dir(),
             'External output or frozen assets are invalid')
@@ -268,13 +274,17 @@ def run(args):
         if args.resume_batch:
             state = read(status)
             require(state['commit']==args.commit,'Recovery commit differs')
+            require(set(state['attempts']) <= keys and set(state['runs']) <= keys,
+                    'Existing work extends beyond the requested seed stage')
             recover_parent(args.output,state,approved)
-            write(status,state)
         else:
             state = dict(status='RUNNING',commit=args.commit,started_at=local_time(time.time()),
                          approved_scope=approved['approved_new_run_keys'],attempts={},runs={})
-            write(status,state)
-        for arm, seed in RUNS:
+        state.update(status='RUNNING', last_scheduled_seed=args.last_seed,
+                     scheduled_run_keys=[f'{arm}/{seed}' for arm, seed in scheduled])
+        state.pop('error',None)
+        write(status,state)
+        for arm, seed in scheduled:
             key = f'{arm}/{seed}'
             try:
                 state['runs'][key] = launch(args,state,(arm,seed),approved,ledger,fit)
@@ -285,13 +295,19 @@ def run(args):
                 state.update(status='STOPPED',active=key,active_pid=None,error=str(exc))
                 write(status,state)
                 raise
-        state.update(status='COMPLETE',active=None,active_pid=None,completed_at=local_time(time.time()),
+        full = args.last_seed == max(SEEDS)
+        state.update(status='COMPLETE' if full else 'STAGE_COMPLETE',
+                     active=None,active_pid=None,completed_at=local_time(time.time()),
                      new_updates=sum(r['updates'] for r in state['runs'].values()))
-        state.pop('error',None)
-        require(state['new_updates']==397120,'Wrong new update count')
+        require(state['new_updates'] == len(scheduled)*EPOCHS*UPDATES_PER_EPOCH,
+                'Wrong scheduled update count')
         write(status,state)
-        write(args.output/'batch-summary.json',state)
-        finalize(args.output,state,approved)
+        if full:
+            write(args.output/'batch-summary.json',state)
+            finalize(args.output,state,approved)
+        else:
+            write(args.output/f'stage-through-{args.last_seed}-summary.json',state)
+            print(f'PASS stage through {args.last_seed}: {len(scheduled)} audited runs')
 
 
 def final_rows(state):
@@ -407,4 +423,5 @@ if __name__ == '__main__':
         parser.add_argument(f'--{option}',type=Path,required=True)
     parser.add_argument('--commit',required=True)
     parser.add_argument('--resume-batch',action='store_true')
+    parser.add_argument('--last-seed',type=int,choices=SEEDS,default=3409)
     run(parser.parse_args())

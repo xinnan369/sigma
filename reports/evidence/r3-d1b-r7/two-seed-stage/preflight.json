@@ -1,0 +1,28 @@
+{
+  "baseline_seed_reused": 3407,
+  "deferred_seeds": [
+    3410,
+    3411
+  ],
+  "files_sha256": {
+    "compileall.log": "7d1f29c33554f1f3d9e2bcc75251dbd09efefa887e9bb2ddf9fa97b30835df8d",
+    "cpu.log": "b10572f4754a5358cc5f7d4ca9608d8f64583ab5536e0f2130034a18593b705f"
+  },
+  "final_five_seed_publication": false,
+  "historical_training_commit": "09bdb5d5019f810c5abbb964fbf463524e6a9ec2",
+  "passed": 257,
+  "planned_updates": 198560,
+  "scheduled_new_runs": [
+    "A/3408",
+    "B/3408",
+    "C/3408",
+    "D/3408",
+    "A/3409",
+    "B/3409",
+    "C/3409",
+    "D/3409"
+  ],
+  "skipped": 3,
+  "stage_authorization": "user restricted the first phase to two new random seeds",
+  "status": "PASS"
+}

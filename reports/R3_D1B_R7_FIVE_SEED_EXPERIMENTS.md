@@ -19,3 +19,7 @@ PR #39 的验收 Head 为 `c4ec764a12bb5b9fb1971934c47ec3c7ce6bcae7`，Push 和 
 启动前在固定 WSL 环境执行 `python -m pytest -q -rs tests` 与 `python -m compileall -q experiments/r3_d1 experiments/r3_d1_r7`。授权测试覆盖 20 个获批运行、错误臂与种子、错误签名与 split、未登记回执以及未授权恢复。CPU 和编译结果随证据归档。[测试与启动闸门](evidence/r3-d1b-r7/preflight-verification.json)
 
 固定 WSL 的 CPU 套件实测 257 通过、3 跳过，编译检查退出 0。
+
+## 本轮调度缩为两个新增种子
+
+按用户指令，本阶段只调度 3408、3409，各执行 A、B、C、D，计划 198,560 次更新。3407 沿用既有结果，3410 与 3411 暂缓调度。原授权登记和实验协议保留。两种子的单独审计汇总写入本机 stage-through-3409-summary.json。阶段结束时暂停，完整五种子报告与 PR 仍等待剩余两个种子运行及独立核验。

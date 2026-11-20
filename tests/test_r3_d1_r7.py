@@ -8,6 +8,7 @@ from experiments.r3_d1_r7 import run_remaining as r7
 
 def test_new_queue_order_excludes_historical_seed():
     assert r7.RUNS == [(arm, seed) for seed in (3408, 3409, 3410, 3411) for arm in 'ABCD']
+    assert r7.scheduled_runs(3409) == [(arm, seed) for seed in (3408, 3409) for arm in 'ABCD']
 
 
 def test_statistics_pair_exact_seed_and_distinguish_endpoints():
