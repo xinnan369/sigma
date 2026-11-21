@@ -1,0 +1,9 @@
+{
+  "root": "D:/download/sigma-r1-assets/MFNet",
+  "test_pairs": 393,
+  "test_txt_sha256": "a236aa6ac7e55ec6b5e419b55c6934439611453939eee2c0bf7b0f0c34917c9d",
+  "expected_files": 1179,
+  "validated_files": 1179,
+  "issues": [],
+  "mode": "file byte verification only; no image decoding or model evaluation"
+}

@@ -1,0 +1,96 @@
+{
+  "auditor_sha256": "cfce4551ce8528a6196ce807075357c0c3f29421af58faa85e97d01af157829d",
+  "class_support": [
+    112023545,
+    4854504,
+    1345972,
+    1261567,
+    602620,
+    355314,
+    17794,
+    85246,
+    183038
+  ],
+  "count_per_run": 120729600,
+  "input_contract_sha256": "7628994427e50e4aa0b67ba077f5996599ac8464fc7f06223e6510d4d9fa3d6e",
+  "status": "PASS",
+  "summary_sha256": "233c82b898b898b7d2d823f028f65cd82759b871b4d2feae1ef4d3de7b7c37e0",
+  "total_per_image_records": 5895,
+  "verified_runs": {
+    "attention/3407": {
+      "checkpoint_sha256": "8f243cbfd307bb054dd65f2a4f9fc511281504684bf0e6548ea13f4d77a917d8",
+      "event_sha256": "a30149f147091287ec74641ed1104a7c13adcf73211f49fdfeec5b31307ccabd",
+      "sample_count": 393
+    },
+    "attention/3408": {
+      "checkpoint_sha256": "a48c8e13a57e0e9f83d89ce87cdb01e044749edc4986add07b03e56c28cc54bc",
+      "event_sha256": "283aa092d163e367ac6b5515ebe08f8b04fbef2c9902dcbd1f0818dbdf07f021",
+      "sample_count": 393
+    },
+    "attention/3409": {
+      "checkpoint_sha256": "b0c04cb87ff168242f9f2fa2b784c00f38c27ef3c2e5033c0454023cc379174f",
+      "event_sha256": "4c2b93392e126d9139ca59bd81ed4e6a3b40bac2fd835ab679a57742bf61363f",
+      "sample_count": 393
+    },
+    "attention/3410": {
+      "checkpoint_sha256": "efe61bea5c6b8525fe183479b67935a8569de1dab05128dc7964d9c1603b5bcd",
+      "event_sha256": "3414423b328798c25fdee36b63daf1fadc14fb76908ae98c71168f0af7786df4",
+      "sample_count": 393
+    },
+    "attention/3411": {
+      "checkpoint_sha256": "dd635e1f1d2b0af6ceba9e4701800e07d027def3480ad9cae4979d5b7428568f",
+      "event_sha256": "1006db24c9e4814f3f87ab472b118576b40a3ea5aca897bc6e288321dd44cabb",
+      "sample_count": 393
+    },
+    "cnn/3407": {
+      "checkpoint_sha256": "e4bd6c762c26fb2bcbe608186e3c83d33a66bbf9ac06cec89fcdffd60a5965cf",
+      "event_sha256": "e78eb2d70593a9ffd9700061c23ce143450fb4c9d04208d336703f375ec5133e",
+      "sample_count": 393
+    },
+    "cnn/3408": {
+      "checkpoint_sha256": "942612f9a7485c14c791fdefb5f279981288efbf8489ce4124f5cfc65b04fbf6",
+      "event_sha256": "ccfda21732322cb36e6e31214b7e7674f8da588d7816864099d9e5c45e342e1a",
+      "sample_count": 393
+    },
+    "cnn/3409": {
+      "checkpoint_sha256": "7855a39d9ac4ebd9d107a184f454e0fecf01d42b972390d1afb9923cce8a47a5",
+      "event_sha256": "c8a5928ffb9805eda262616902eb36aca2376cbb04fd11be5f767a39624a11d4",
+      "sample_count": 393
+    },
+    "cnn/3410": {
+      "checkpoint_sha256": "c9eddd9366d1649c4e96158d20d10ce3e72f77f9546d052aaa40fa5cf6a48071",
+      "event_sha256": "b5d7e1c4de4918c521a501582e265c45e03f8a9bce4ac3f38a82addcdfea2813",
+      "sample_count": 393
+    },
+    "cnn/3411": {
+      "checkpoint_sha256": "38e69efef21eaaa68270077841317a3bf48945eec3c250385431af1f20125193",
+      "event_sha256": "726ad70e6f6e202522625dc44ad74b0fa3a4786498bd9416594a5f94fbca0e0f",
+      "sample_count": 393
+    },
+    "ssm/3407": {
+      "checkpoint_sha256": "105835ea7c5d52758e3fd683c6bc154d01879c2c722d8c7e1cdde26d0550ce1f",
+      "event_sha256": "96f18503c0d6985e64e6e3ca02d42ababa2d85b46e2a4ef4267c282704475749",
+      "sample_count": 393
+    },
+    "ssm/3408": {
+      "checkpoint_sha256": "58b43cb6504220583cfdfadc5e7a04b03cdb0358dfed13758e7bbb1e07a460ef",
+      "event_sha256": "550eb95c64956555e8c60a225639402c3c5471792d544449ff6479b0cc948f28",
+      "sample_count": 393
+    },
+    "ssm/3409": {
+      "checkpoint_sha256": "dbccb574857d49ef79f77135eea72c5145471ac44a4605256a1573123a7584e8",
+      "event_sha256": "27777a7601312edbe9bd5053fa4274d123e6f9c185ecdcb0353f7da49ad1aebc",
+      "sample_count": 393
+    },
+    "ssm/3410": {
+      "checkpoint_sha256": "29fdb7b8e60f3a601e5b5e9d4c9b35f60eb506111c2eb67e14d778d0aec7da7e",
+      "event_sha256": "bff272f5e0f1a89364a6710beab34f8220cbe8f347e12f8d783aa4875e6dcb0f",
+      "sample_count": 393
+    },
+    "ssm/3411": {
+      "checkpoint_sha256": "0fcddc06d37542995a68de8a054d117a6912d3c829df4b0fbeaaa38c8d3938d1",
+      "event_sha256": "34a1161684b2287c846c3c4ee2a3248f4a5854ae2d6497e99ec8f89befece80e",
+      "sample_count": 393
+    }
+  }
+}

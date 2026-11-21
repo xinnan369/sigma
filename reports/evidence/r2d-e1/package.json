@@ -1,0 +1,11 @@
+{
+  "package_filename": "R2d_MFNet_Official_Test_393_Package.zip",
+  "package_sha256": "ce111f2b13d19f9f15a87cd70db224d691b6f0591da0c833d21095d5dacbcbc1",
+  "imported_members_sha256": {
+    "experiments/r2d_official_test/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/r2d_official_test/run.py": "b7f4dfd0fc4d23e15323e9e3b7a991b03ea6ca86db6a51020c15493a452abda9",
+    "experiments/r2d_official_test/metrics.py": "8fd04578fc187bd597f29601b4dcb762143beb6a7380b43e602443c93704a1ea",
+    "tests/test_r2d_official_test.py": "029b656f3e04de577b368e32799c0bc077dd6819ec12ebaa786845dc8d882c19",
+    "docs/R2D_MFNET_OFFICIAL_TEST_PROTOCOL.md": "403ac7af0eec1e6bdacb0dbbc47b1bf54bd9f39608000662d6e960d72b09965f"
+  }
+}

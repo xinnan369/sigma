@@ -1,0 +1,4 @@
+name, driver_version, memory.total [MiB], memory.free [MiB]
+NVIDIA GeForce RTX 3090, 610.88, 24576 MiB, 18717 MiB
+
+Exit code: 0

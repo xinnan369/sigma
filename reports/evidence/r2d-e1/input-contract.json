@@ -1,0 +1,112 @@
+{
+  "arms": [
+    "ssm",
+    "cnn",
+    "attention"
+  ],
+  "checkpoint_sha256": {
+    "attention/3407": "8f243cbfd307bb054dd65f2a4f9fc511281504684bf0e6548ea13f4d77a917d8",
+    "attention/3408": "a48c8e13a57e0e9f83d89ce87cdb01e044749edc4986add07b03e56c28cc54bc",
+    "attention/3409": "b0c04cb87ff168242f9f2fa2b784c00f38c27ef3c2e5033c0454023cc379174f",
+    "attention/3410": "efe61bea5c6b8525fe183479b67935a8569de1dab05128dc7964d9c1603b5bcd",
+    "attention/3411": "dd635e1f1d2b0af6ceba9e4701800e07d027def3480ad9cae4979d5b7428568f",
+    "cnn/3407": "e4bd6c762c26fb2bcbe608186e3c83d33a66bbf9ac06cec89fcdffd60a5965cf",
+    "cnn/3408": "942612f9a7485c14c791fdefb5f279981288efbf8489ce4124f5cfc65b04fbf6",
+    "cnn/3409": "7855a39d9ac4ebd9d107a184f454e0fecf01d42b972390d1afb9923cce8a47a5",
+    "cnn/3410": "c9eddd9366d1649c4e96158d20d10ce3e72f77f9546d052aaa40fa5cf6a48071",
+    "cnn/3411": "38e69efef21eaaa68270077841317a3bf48945eec3c250385431af1f20125193",
+    "ssm/3407": "105835ea7c5d52758e3fd683c6bc154d01879c2c722d8c7e1cdde26d0550ce1f",
+    "ssm/3408": "58b43cb6504220583cfdfadc5e7a04b03cdb0358dfed13758e7bbb1e07a460ef",
+    "ssm/3409": "dbccb574857d49ef79f77135eea72c5145471ac44a4605256a1573123a7584e8",
+    "ssm/3410": "29fdb7b8e60f3a601e5b5e9d4c9b35f60eb506111c2eb67e14d778d0aec7da7e",
+    "ssm/3411": "0fcddc06d37542995a68de8a054d117a6912d3c829df4b0fbeaaa38c8d3938d1"
+  },
+  "dataset": "MFNet official test",
+  "frozen_393": {
+    "class_pixel_counts": [
+      112023545,
+      4854504,
+      1345972,
+      1261567,
+      602620,
+      355314,
+      17794,
+      85246,
+      183038
+    ],
+    "file_count": 1179,
+    "ignore_255_pixel_count": 0,
+    "sample_count": 393,
+    "test_pixel_decodes_in_preflight": 0,
+    "test_records_sha256": "8230b56c0b3ae7b1999be317feb973d1cc8b599fd811f82d0e3c2c09f2c1429c",
+    "test_txt_sha256": "a236aa6ac7e55ec6b5e419b55c6934439611453939eee2c0bf7b0f0c34917c9d",
+    "training_validation_overlap_count": 0
+  },
+  "metrics_sha256": "8fd04578fc187bd597f29601b4dcb762143beb6a7380b43e602443c93704a1ea",
+  "notes": "Official MFNet holdout; NOT cross-dataset testing",
+  "runner_sha256": "395c2c65bee67ec246ddd71e6e46153c92ef92d3254622469cffd40635082e38",
+  "runtime": {
+    "config_sha256": "eba20d348e6e115cf90113ce8adaa593552600ff387692e0bab58783991cfcba",
+    "graph_sha256": "eeef7f60543b90410e81c04cdd4e1caf03cf4594b051e24a4def4f93338a8baf",
+    "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+    "runtime": {
+      "config": {
+        "accumulation": 8,
+        "betas": [
+          0.9,
+          0.999
+        ],
+        "checkpoint_every_updates": 32,
+        "epochs": 1,
+        "files_sha256": "981e56ff3c783f4659e41ca235bd568ff9919a078661d8d929e3fdff0633591d",
+        "init_sha256": "dbc0cc4f5ec0e45db5fba7c939d2c7d9b617e891ac10766912a8d604c37c5e47",
+        "lr": 6e-05,
+        "microbatch": 1,
+        "precision": "fp32",
+        "scheduler": "constant",
+        "seed": 3407,
+        "split_sha256": "397a4fa60b692a59cc4747b72807f7514416ea304c2af556c8b5fc259d75f8e3",
+        "test_evaluation": false,
+        "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+        "weight_decay": 0.01
+      },
+      "cuda": "12.1",
+      "cudnn": 8902,
+      "cv2": "4.9.0",
+      "gpu": "NVIDIA GeForce RTX 3090",
+      "numpy": "1.26.4",
+      "python": "3.11.11 | packaged by conda-forge | (main, Mar  3 2025, 20:43:55) [GCC 13.3.0]",
+      "selective_scan_cuda_core_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e",
+      "source_sha256": {
+        "experiments/r1c/data.py": "517fe014ed30fa0086c0d1ea209ca74afefdd5db610dad78fabb0b19edd9e6f9",
+        "experiments/r1c/pilot.py": "c166482d014a0bf9b8ba9ecef1a6e4e2f05a24747d3f177c518a99b2d1902852",
+        "experiments/r1c/state.py": "793248387d9cace76e6140b32a41ddc8ef61c59548a5f763ed0f61ad9ddf2f3f",
+        "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+        "experiments/r1d/train.py": "243f27f30ebdb5af16f4c2a5e648e5d141f0965328f6b95b15dba068805f4227"
+      },
+      "torch": "2.2.2+cu121"
+    },
+    "selected_assets_sha256": "0bfb07b58fc37cb53fd38e3655c96d31da39bfdaf30b0426edd20ac8abfbac21",
+    "sources": {
+      "experiments/r1d/state.py": "0cd0931cb94750b53f9e62e754be82f844a6c90e3c10afd78216f13471fe56c4",
+      "experiments/r1e/state.py": "b3fd4b571fc6ab0614605c3dc280788f3444c158a4b4ac98533b7eb97a6296df",
+      "experiments/r1g/train.py": "2e89817fe82796919c9f3f6219e510392211ded5f417e5c4e72fc1c7231d037d",
+      "experiments/r2b/controls.py": "d0a6d44efa15c4e3b3144b23d8cde5a3cae7ad5e1787fd0484e686266d59b479",
+      "experiments/r2c/protocol.py": "6bcb6651bd8b4d66a1ba3e0739981cf67e9b1450a89101e14474a9a46d7bac05",
+      "experiments/r2c/train.py": "3385c1e62fdd12e867e5689c05b0134f2ec3d4d417223e3509ea41dccd001764"
+    },
+    "split_sha256": "4e6508427b401f055ce1878dd99cb2420c6e485a22f172e23d369448095d24c3",
+    "upstream_commit": "98ba3c6938d29169bbd27f91519084bb462561df"
+  },
+  "seeds": [
+    3407,
+    3408,
+    3409,
+    3410,
+    3411
+  ],
+  "selection_rule": "Fixed Epoch 5 from R2d; no best-epoch selection",
+  "status": "INPUTS_VERIFIED",
+  "test_time_adaptation": false,
+  "test_time_training": false
+}
