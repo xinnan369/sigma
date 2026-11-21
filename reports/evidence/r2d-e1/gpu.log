@@ -1,0 +1,213 @@
+official test: loading ssm/3407
+[32m21 17:27:39 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:27:41 [0mUsing Mamba Decoder
+[32m21 17:27:41 [0mIniting weights ...
+official test ssm/3407: 50/393
+official test ssm/3407: 100/393
+official test ssm/3407: 150/393
+official test ssm/3407: 200/393
+official test ssm/3407: 250/393
+official test ssm/3407: 300/393
+official test ssm/3407: 350/393
+official test ssm/3407: 393/393
+official test: loading cnn/3407
+[32m21 17:30:54 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:30:55 [0mUsing Mamba Decoder
+[32m21 17:30:55 [0mIniting weights ...
+official test cnn/3407: 50/393
+official test cnn/3407: 100/393
+official test cnn/3407: 150/393
+official test cnn/3407: 200/393
+official test cnn/3407: 250/393
+official test cnn/3407: 300/393
+official test cnn/3407: 350/393
+official test cnn/3407: 393/393
+official test: loading attention/3407
+[32m21 17:33:53 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:33:54 [0mUsing Mamba Decoder
+[32m21 17:33:54 [0mIniting weights ...
+official test attention/3407: 50/393
+official test attention/3407: 100/393
+official test attention/3407: 150/393
+official test attention/3407: 200/393
+official test attention/3407: 250/393
+official test attention/3407: 300/393
+official test attention/3407: 350/393
+official test attention/3407: 393/393
+official test: loading ssm/3408
+[32m21 17:37:02 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:37:03 [0mUsing Mamba Decoder
+[32m21 17:37:03 [0mIniting weights ...
+official test ssm/3408: 50/393
+official test ssm/3408: 100/393
+official test ssm/3408: 150/393
+official test ssm/3408: 200/393
+official test ssm/3408: 250/393
+official test ssm/3408: 300/393
+official test ssm/3408: 350/393
+official test ssm/3408: 393/393
+official test: loading cnn/3408
+[32m21 17:40:14 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:40:16 [0mUsing Mamba Decoder
+[32m21 17:40:16 [0mIniting weights ...
+official test cnn/3408: 50/393
+official test cnn/3408: 100/393
+official test cnn/3408: 150/393
+official test cnn/3408: 200/393
+official test cnn/3408: 250/393
+official test cnn/3408: 300/393
+official test cnn/3408: 350/393
+official test cnn/3408: 393/393
+official test: loading attention/3408
+[32m21 17:43:19 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:43:20 [0mUsing Mamba Decoder
+[32m21 17:43:20 [0mIniting weights ...
+official test attention/3408: 50/393
+official test attention/3408: 100/393
+official test attention/3408: 150/393
+official test attention/3408: 200/393
+official test attention/3408: 250/393
+official test attention/3408: 300/393
+official test attention/3408: 350/393
+official test attention/3408: 393/393
+official test: loading ssm/3409
+[32m21 17:46:27 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:46:28 [0mUsing Mamba Decoder
+[32m21 17:46:28 [0mIniting weights ...
+official test ssm/3409: 50/393
+official test ssm/3409: 100/393
+official test ssm/3409: 150/393
+official test ssm/3409: 200/393
+official test ssm/3409: 250/393
+official test ssm/3409: 300/393
+official test ssm/3409: 350/393
+official test ssm/3409: 393/393
+official test: loading cnn/3409
+[32m21 17:49:34 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:49:35 [0mUsing Mamba Decoder
+[32m21 17:49:35 [0mIniting weights ...
+official test cnn/3409: 50/393
+official test cnn/3409: 100/393
+official test cnn/3409: 150/393
+official test cnn/3409: 200/393
+official test cnn/3409: 250/393
+official test cnn/3409: 300/393
+official test cnn/3409: 350/393
+official test cnn/3409: 393/393
+official test: loading attention/3409
+[32m21 17:52:39 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:52:40 [0mUsing Mamba Decoder
+[32m21 17:52:40 [0mIniting weights ...
+official test attention/3409: 50/393
+official test attention/3409: 100/393
+official test attention/3409: 150/393
+official test attention/3409: 200/393
+official test attention/3409: 250/393
+official test attention/3409: 300/393
+official test attention/3409: 350/393
+official test attention/3409: 393/393
+official test: loading ssm/3410
+[32m21 17:55:48 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:55:49 [0mUsing Mamba Decoder
+[32m21 17:55:49 [0mIniting weights ...
+official test ssm/3410: 50/393
+official test ssm/3410: 100/393
+official test ssm/3410: 150/393
+official test ssm/3410: 200/393
+official test ssm/3410: 250/393
+official test ssm/3410: 300/393
+official test ssm/3410: 350/393
+official test ssm/3410: 393/393
+official test: loading cnn/3410
+[32m21 17:59:00 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 17:59:01 [0mUsing Mamba Decoder
+[32m21 17:59:02 [0mIniting weights ...
+official test cnn/3410: 50/393
+official test cnn/3410: 100/393
+official test cnn/3410: 150/393
+official test cnn/3410: 200/393
+official test cnn/3410: 250/393
+official test cnn/3410: 300/393
+official test cnn/3410: 350/393
+official test cnn/3410: 393/393
+official test: loading attention/3410
+[32m21 18:01:58 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 18:01:59 [0mUsing Mamba Decoder
+[32m21 18:01:59 [0mIniting weights ...
+official test attention/3410: 50/393
+official test attention/3410: 100/393
+official test attention/3410: 150/393
+official test attention/3410: 200/393
+official test attention/3410: 250/393
+official test attention/3410: 300/393
+official test attention/3410: 350/393
+official test attention/3410: 393/393
+official test: loading ssm/3411
+[32m21 18:05:09 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 18:05:10 [0mUsing Mamba Decoder
+[32m21 18:05:10 [0mIniting weights ...
+official test ssm/3411: 50/393
+official test ssm/3411: 100/393
+official test ssm/3411: 150/393
+official test ssm/3411: 200/393
+official test ssm/3411: 250/393
+official test ssm/3411: 300/393
+official test ssm/3411: 350/393
+official test ssm/3411: 393/393
+official test: loading cnn/3411
+[32m21 18:08:21 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 18:08:22 [0mUsing Mamba Decoder
+[32m21 18:08:22 [0mIniting weights ...
+official test cnn/3411: 50/393
+official test cnn/3411: 100/393
+official test cnn/3411: 150/393
+official test cnn/3411: 200/393
+official test cnn/3411: 250/393
+official test cnn/3411: 300/393
+official test cnn/3411: 350/393
+official test cnn/3411: 393/393
+official test: loading attention/3411
+[32m21 18:11:26 [0mUsing backbone: V-MAMBA
+Successfully load ckpt pretrained/vmamba/vssmtiny_dp01_ckpt_epoch_292.pth
+incompatible: _IncompatibleKeys(missing_keys=['outnorm0.weight', 'outnorm0.bias', 'outnorm1.weight', 'outnorm1.bias', 'outnorm2.weight', 'outnorm2.bias', 'outnorm3.weight', 'outnorm3.bias'], unexpected_keys=['classifier.norm.weight', 'classifier.norm.bias', 'classifier.head.weight', 'classifier.head.bias'])
+[32m21 18:11:27 [0mUsing Mamba Decoder
+[32m21 18:11:27 [0mIniting weights ...
+official test attention/3411: 50/393
+official test attention/3411: 100/393
+official test attention/3411: 150/393
+official test attention/3411: 200/393
+official test attention/3411: 250/393
+official test attention/3411: 300/393
+official test attention/3411: 350/393
+official test attention/3411: 393/393
+{"status": "COMPLETE", "summary": "/mnt/d/work/sigma-r2d-e1/output\r/summary.json", "arms": 15, "samples_each": 393}
+
+Exit code: 0

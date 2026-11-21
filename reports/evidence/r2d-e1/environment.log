@@ -1,0 +1,13 @@
+PRETTY_NAME="Ubuntu 22.04.5 LTS"
+Linux 5.15.167.4-microsoft-standard-WSL2
+4844924abda45124cac21420becd434c61a1ddf1
+98ba3c6938d29169bbd27f91519084bb462561df
+Python: 3.11.11
+PyTorch: 2.2.2+cu121
+CUDA build: 12.1
+cuDNN: 8902
+NumPy: 1.26.4
+OpenCV: 4.9.0
+selective_scan_cuda_core: /home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan_cuda_core.cpython-311-x86_64-linux-gnu.so
+selective_scan_cuda_core SHA256: 833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e
+Exit code: 0
