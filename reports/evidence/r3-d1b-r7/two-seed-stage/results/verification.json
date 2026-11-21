@@ -1,0 +1,84 @@
+{
+  "candidate_sha256": "eb002f9b3e4c82bdb6bbab6bb205f8ff5f88c0ddb13cc03b47d0796c9550effa",
+  "checked_at_utc": "2026-11-21T05:22:12.997845+00:00",
+  "completed_at": "2026-11-21T13:14:20+08:00",
+  "completed_runs": [
+    "A/3408",
+    "B/3408",
+    "C/3408",
+    "D/3408",
+    "A/3409",
+    "B/3409",
+    "C/3409",
+    "D/3409"
+  ],
+  "controller_commit": "2de8bc7fb94949a33c973af7bae113b9b7a15a56",
+  "deferred_seeds": [
+    3410,
+    3411
+  ],
+  "environment": {
+    "cpu_threads": 1,
+    "cublas_workspace": ":4096:8",
+    "cuda_build": "12.1",
+    "cudnn": 8902,
+    "deterministic": true,
+    "environment": {
+      "CUDA_VISIBLE_DEVICES": "0",
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1"
+    },
+    "gpu": {
+      "bytes": 25769279488,
+      "capability": [
+        8,
+        6
+      ],
+      "driver": "610.88",
+      "name": "NVIDIA GeForce RTX 3090",
+      "visible_devices": 1
+    },
+    "numpy": "1.26.4",
+    "opencv": "4.9.0",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.35",
+    "pycocotools": "2.0.10",
+    "python": "3.11.11",
+    "torch": "2.2.2+cu121"
+  },
+  "files_sha256": {
+    "scope-change-audit.json": "5190d3835b90169d15d70df5a715e557aef2ff7709c26b68cbbb3820d90c18e8",
+    "seed-3408-audit.json": "50ca73a13b7187fdaf7fb0927647781e97be3990f40a6902423f62bfcd92ac53",
+    "seed-3409-audit.json": "359057798c1e2ab020b7179835391b98e0a0ff943ba51748f22a0e03b531555a"
+  },
+  "local_run_root": "D:/work/sigma-r3-d1-r7-formal",
+  "official_test_pixel_reads": 0,
+  "protocol_sha256": "ff9e193482eb0cc808a428a5c1c662516d43bd7d1d0e603d0b3b8edc3d9028db",
+  "raw_stage_summary_sha256": "7e2369a2912ff90a961a202617a3f6acc545ecafcb214ef015da23d1546c7860",
+  "schema": "r3-d1b-r7-two-seed-results-v1",
+  "seeds": [
+    3408,
+    3409
+  ],
+  "split_sha256": "bd1090cb2ad4696db3ba2f8e984788204c433a7e0cab656073c5e2b67e53e3d4",
+  "started_at": "2026-11-20T13:24:57+08:00",
+  "status": "PASS",
+  "train_commit": "09bdb5d5019f810c5abbb964fbf463524e6a9ec2",
+  "updates": 198560,
+  "upstream": {
+    "commit": "98ba3c6938d29169bbd27f91519084bb462561df",
+    "extension_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan_cuda_core.cpython-311-x86_64-linux-gnu.so",
+    "extension_sha256": "833021baeecf26b84d5ecba208417893a9eda202c38854fd9a9737c8ccd7513e",
+    "extension_version": "0.0.1",
+    "source_file": "/home/xinnan/sigma-r1-upstream/models/encoders/vmamba.py",
+    "source_sha256": {
+      "models/encoders/dual_vmamba.py": "2dcda26a436993eefa007827343a556b665e8d1af21360e2746ffa51b3298b05",
+      "models/encoders/selective_scan/selective_scan/selective_scan_interface.py": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753",
+      "models/encoders/vmamba.py": "e91389cd7c6561df00c63d1d9549694ba5dba2ff20d154fcd814fcd36054241e"
+    },
+    "wrapper_file": "/home/xinnan/.venvs/sigma-r1-cu121/lib/python3.11/site-packages/selective_scan/selective_scan_interface.py",
+    "wrapper_sha256": "116edbf7bcf6def48729d527f4ba958f0fb0fe7e446bfa45f9a1734dff6a4753"
+  },
+  "verified_local_process_logs": 9,
+  "verified_local_run_files": 85,
+  "weights_and_full_event_logs_kept_locally": true
+}

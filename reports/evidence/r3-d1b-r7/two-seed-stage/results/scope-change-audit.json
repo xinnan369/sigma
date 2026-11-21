@@ -1,0 +1,23 @@
+{
+  "active": "A/3408",
+  "checkpoint_sha256": "8b54e2e635561e9f03898b8f715a5a939ab6707c52e1fcdc433a3fc7f52f71d0",
+  "last_scheduled_seed": 3409,
+  "latest_observed_update": 2383,
+  "original_attempt_exit": -15,
+  "original_event_log_sha256": "6dcee67a334fff3e9f6a934f260b761c71344cc220bdba6549f6102b234295cd",
+  "recorded_utc": "2026-11-20T05:37:03.002057+00:00",
+  "resumed_from_update": 2300,
+  "scheduled_run_keys": [
+    "A/3408",
+    "B/3408",
+    "C/3408",
+    "D/3408",
+    "A/3409",
+    "B/3409",
+    "C/3409",
+    "D/3409"
+  ],
+  "scheduler_commit": "2de8bc7fb94949a33c973af7bae113b9b7a15a56",
+  "status": "RESUMED",
+  "uncommitted_update_records_preserved_in_original": 0
+}
